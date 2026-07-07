@@ -770,6 +770,13 @@ tbody tr:hover .sticky-col {
   text-decoration: underline;
 }
 
+/* Best-effort, unverified Korean name shown next to the wiki (English) name. */
+.item-name-ko {
+  color: var(--muted);
+  font-style: italic;
+  font-weight: 400;
+}
+
 .item-icon {
   width: 32px;
   height: 32px;

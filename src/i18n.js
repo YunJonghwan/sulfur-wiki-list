@@ -301,3 +301,71 @@ export function t(entry, lang) {
   if (!entry) return ''
   return entry[lang] || entry.en || ''
 }
+
+// Best-effort Korean names for items, keyed by the exact English wiki name.
+// UNVERIFIED against the game's actual in-game Korean text — there's no
+// accessible source for the official strings (no Korean sulfur.wiki.gg, and
+// community translations found so far are themselves guesses, not official
+// text). Treat these as a rough phonetic/semantic guess to make searching in
+// Korean possible, not as ground truth. Fix entries here as mismatches with
+// the real in-game names are found; missing names just fall back to English.
+export const ITEM_NAME_KO = {
+  // Weapons
+  '.357 Balthazar': '.357 발타자르',
+  '1889 Mario': '1889 마리오',
+  'Arbiter 2': '아비터 2',
+  Augusta: '어거스타',
+  'Beck 8': '벡 8',
+  Blackwater: '블랙워터',
+  'Breacher 8': '브리처 8',
+  'Bronco 89': '브롱코 89',
+  'Catacoil Rapid X': '카타코일 래피드 X',
+  Cavalier: '캐벌리어',
+  'Chat-Pardeur 98': '샤파르되르 98',
+  'Chimera Rapid': '키메라 래피드',
+  Corpsemaker: '콥스메이커',
+  'Deathstar PG': '데스스타 PG',
+  'Dolphin 99': '돌핀 99',
+  'Drifter 9': '드리프터 9',
+  Duhar: '두하르',
+  Farsight: '파사이트',
+  Ferryman: '페리맨',
+  Flicker: '플리커',
+  'Flock 76': '플록 76',
+  Gravekeeper: '그레이브키퍼',
+  "Hell 'N' Back": '헬 앤 백',
+  'Impala Gravita': '임팔라 그라비타',
+  'Knop .22': '크노프 .22',
+  Longboy: '롱보이',
+  'M11A2 Fisk': 'M11A2 피스크',
+  'M182 Pierre-Fusil': 'M182 피에르퓌질',
+  'M3 Termite': 'M3 터마이트',
+  Majordome: '마조돔',
+  Mossman: '모스맨',
+  'Neuraxis F22': '뉴럭시스 F22',
+  'P38 Dirk': 'P38 더크',
+  'Palehorse Topclipper': '페일호스 탑클리퍼',
+  'Ploika Compact': '플로이카 컴팩트',
+  'Rektor 100rd': '렉토르 100rd',
+  'Rokua .308': '로쿠아 .308',
+  Salamander: '샐러맨더',
+  'Snut .38': '스누트 .38',
+  'Socom 9': '소콤 9',
+  'Socom ACR': '소콤 ACR',
+  Songbird: '송버드',
+  'Star & Witness': '스타 & 위트니스',
+  'Tailor Marksman MKII': '테일러 마크스맨 MKII',
+  'Terrier URB.': '테리어 URB.',
+  'Type 80 Typhoon': '타입 80 타이푼',
+  Unknown: '알 수 없음',
+  Valet: '발레',
+  Vrede: '브레데',
+  Warpig: '워피그',
+  Wingman: '윙맨',
+  'Wyatt PULSAR': '와이어트 펄사',
+}
+
+export function nameKo(name, lang) {
+  if (lang !== 'ko') return null
+  return ITEM_NAME_KO[name] || null
+}

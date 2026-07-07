@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { UI, COLUMN_KO, t, groupLabel, axisLabel } from '../i18n.js'
+import { UI, COLUMN_KO, t, groupLabel, axisLabel, nameKo } from '../i18n.js'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -44,7 +44,8 @@ function valueTone(raw) {
   return ''
 }
 
-function ItemCell({ it }) {
+function ItemCell({ it, lang }) {
+  const ko = nameKo(it.name, lang)
   return (
     <a className="item-link" href={it.page} target="_blank" rel="noreferrer">
       {imageUrl(it.icon) && (
@@ -60,7 +61,10 @@ function ItemCell({ it }) {
           }}
         />
       )}
-      <span>{it.name}</span>
+      <span>
+        {it.name}
+        {ko && <span className="item-name-ko"> ({ko})</span>}
+      </span>
     </a>
   )
 }
@@ -122,11 +126,13 @@ export default function DataTable({ data, lang }) {
     if (!q) return data.items
     return data.items.filter((it) => {
       if (it.name.toLowerCase().includes(q)) return true
+      const ko = nameKo(it.name, lang)
+      if (ko && ko.includes(search.trim())) return true
       return Object.values(it.fields).some((v) =>
         String(v).toLowerCase().includes(q),
       )
     })
-  }, [data.items, search])
+  }, [data.items, search, lang])
 
   const base = useMemo(() => {
     if (!abilityKey || !onlyWith) return searched
@@ -232,7 +238,7 @@ export default function DataTable({ data, lang }) {
             {items.map((it) => (
               <tr key={it.name}>
                 <td className="col-item sticky-col">
-                  <ItemCell it={it} />
+                  <ItemCell it={it} lang={lang} />
                 </td>
                 <td>
                   <div className="chips">
@@ -292,7 +298,7 @@ export default function DataTable({ data, lang }) {
           {items.map((it) => (
             <tr key={it.name}>
               <td className="col-item sticky-col">
-                <ItemCell it={it} />
+                <ItemCell it={it} lang={lang} />
               </td>
               {cols.map((col) => {
                 const raw = it.fields[col.key]

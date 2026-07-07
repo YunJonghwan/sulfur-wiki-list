@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { UI, COLUMN_KO, t, groupLabel, axisLabel } from '../i18n.js'
+import { UI, COLUMN_KO, t, groupLabel, axisLabel, nameKo } from '../i18n.js'
 
 const BASE = import.meta.env.BASE_URL
 const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy'])
@@ -12,9 +12,11 @@ function fieldsOf(item) {
   return item?.fields || {}
 }
 
-function matchesSearch(item, q) {
+function matchesSearch(item, q, rawQuery, lang) {
   if (!q) return true
   if (item.name.toLowerCase().includes(q)) return true
+  const ko = nameKo(item.name, lang)
+  if (ko && ko.includes(rawQuery)) return true
   return Object.values(fieldsOf(item)).some((v) => String(v).toLowerCase().includes(q))
 }
 
@@ -69,12 +71,13 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
   const axis = axes.find((a) => a.key === axisKey) || axes[0] || null
 
   const filtered = useMemo(() => {
-    const q = search.trim().toLowerCase()
+    const rawQuery = search.trim()
+    const q = rawQuery.toLowerCase()
     let items = activeSection ? activeSection.items : []
-    if (q) items = items.filter((it) => matchesSearch(it, q))
+    if (q) items = items.filter((it) => matchesSearch(it, q, rawQuery, lang))
     if (axis && groupValue) items = items.filter((it) => hasGroup(it, axis.key, groupValue))
     return items
-  }, [activeSection, search, axis, groupValue])
+  }, [activeSection, search, axis, groupValue, lang])
 
   function labelText(key) {
     if (lang === 'ko' && COLUMN_KO[key]) return COLUMN_KO[key]
@@ -94,7 +97,10 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
             {imageUrl(value.icon) && (
               <img className="item-icon" src={imageUrl(value.icon)} alt="" width="24" height="24" />
             )}
-            <span className="picker-trigger-name">{value.name}</span>
+            <span className="picker-trigger-name">
+              {value.name}
+              {nameKo(value.name, lang) && <span className="item-name-ko"> ({nameKo(value.name, lang)})</span>}
+            </span>
           </>
         ) : (
           <span className="picker-placeholder">{t(UI.empty, lang)}</span>
@@ -201,7 +207,10 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
                       {imageUrl(it.icon) && (
                         <img className="item-icon" src={imageUrl(it.icon)} alt="" width="32" height="32" />
                       )}
-                      <span className="picker-tile-name">{it.name}</span>
+                      <span className="picker-tile-name">
+                        {it.name}
+                        {nameKo(it.name, lang) && <span className="item-name-ko"> ({nameKo(it.name, lang)})</span>}
+                      </span>
                     </div>
                     <div className="chips">
                       {Object.entries(fieldsOf(it)).map(([k, v]) => {
