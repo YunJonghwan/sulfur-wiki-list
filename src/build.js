@@ -104,16 +104,23 @@ export function computePlayerStats(gearItems) {
   return out
 }
 
-const GEAR_META = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'Durability'])
+const GEAR_META = new Set([
+  'GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'Durability', 'SubType', 'Type',
+])
 const PLAYER_STAT_KEYS = new Set(PLAYER_STATS.map((s) => s.key))
 
 // Equipment/passive fields that aren't one of the aggregated PLAYER_STATS
 // (weapon-class damage bonuses, on-hit effects, flavor flags…) — shown
 // as-is so every selected gear piece's effect is visible somewhere.
+//
+// The same item can be equipped in more than one slot (e.g. two identical
+// boots in both footwear slots), and its effect really does apply twice —
+// so instead of collapsing duplicates into a single entry, plain numeric
+// modifiers are stacked (×2 the value) and non-numeric ones keep a "×N"
+// count, rather than silently hiding the repeat.
 export function computeGearExtras(gearItems) {
   const items = gearItems.filter(Boolean)
-  const extras = []
-  const seen = new Set()
+  const groups = new Map()
   for (const it of items) {
     const f = fieldsOf(it)
     for (const [k, v] of Object.entries(f)) {
@@ -122,10 +129,28 @@ export function computeGearExtras(gearItems) {
       // unless the value is conditional (e.g. "while crouching"), in which
       // case it was deliberately left out of the sum and belongs here.
       if (PLAYER_STAT_KEYS.has(k) && isPlainModifier(v)) continue
-      const tag = `${it.name}:${k}:${v}`
-      if (seen.has(tag)) continue
-      seen.add(tag)
-      extras.push({ from: it.name, key: k, value: v })
+      const gkey = `${it.name}::${k}::${v}`
+      const existing = groups.get(gkey)
+      if (existing) existing.count += 1
+      else groups.set(gkey, { from: it.name, key: k, value: v, count: 1 })
+    }
+  }
+
+  const extras = []
+  for (const g of groups.values()) {
+    if (g.count === 1) {
+      extras.push({ from: g.from, key: g.key, value: g.value })
+      continue
+    }
+    const from = `${g.from} ×${g.count}`
+    const m = g.value.match(/^([+-]?)(\d+(?:\.\d+)?)(%?)/)
+    if (m && isPlainModifier(g.value)) {
+      const signed = (m[1] === '-' ? -1 : 1) * parseFloat(m[2])
+      const total = Math.round(signed * g.count * 100) / 100
+      const suffix = g.value.slice(m[0].length)
+      extras.push({ from, key: g.key, value: `${total >= 0 ? '+' : ''}${total}${m[3]}${suffix}` })
+    } else {
+      extras.push({ from, key: g.key, value: g.value })
     }
   }
   return extras
