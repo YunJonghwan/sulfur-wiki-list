@@ -1,6 +1,6 @@
 {
   "kind": "oil",
-  "generated": "2026-07-07T13:01:48.103902+00:00",
+  "generated": "2026-07-07T13:44:42.355374+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -262,7 +262,7 @@
         {
           "value": "buff",
           "label": "Buff",
-          "count": 18
+          "count": 14
         },
         {
           "value": "buff+constraint",
@@ -644,20 +644,6 @@
         "SoldBy": "Kevin"
       },
       "icon": "icons/oil/bullet/Big_Tax_Oil.png"
-    },
-    {
-      "name": "Bigger Bullet Oil (DEMO)",
-      "page": "https://sulfur.wiki.gg/wiki/Bigger_Bullet_Oil_%28DEMO%29",
-      "image": "Bigger bullet oil.png",
-      "groups": {
-        "ability": [],
-        "composition": "buff"
-      },
-      "fields": {
-        "GridSize": "1x1",
-        "BuyVal": "Priceless"
-      },
-      "icon": "icons/oil/misc/Bigger_bullet_oil.png"
     },
     {
       "name": "Birth Oil",
@@ -3136,20 +3122,6 @@
       "icon": "icons/oil/damage/No_Need_Oil.png"
     },
     {
-      "name": "Oil of Yin (DEMO)",
-      "page": "https://sulfur.wiki.gg/wiki/Oil_of_Yin_%28DEMO%29",
-      "image": "oil of yin.png",
-      "groups": {
-        "ability": [],
-        "composition": "buff"
-      },
-      "fields": {
-        "GridSize": "1x1",
-        "BuyVal": "Priceless"
-      },
-      "icon": "icons/oil/misc/oil_of_yin.png"
-    },
-    {
       "name": "Out of the Box Oil",
       "page": "https://sulfur.wiki.gg/wiki/Out_of_the_Box_Oil",
       "image": "Out_of_the_Box_Oil.png",
@@ -4746,34 +4718,6 @@
         "SoldBy": "Kevin"
       },
       "icon": "icons/oil/bullet/Too_Much_Oil.png"
-    },
-    {
-      "name": "Translucent Oil (DEMO)",
-      "page": "https://sulfur.wiki.gg/wiki/Translucent_Oil_%28DEMO%29",
-      "image": "Translucent Oil.png",
-      "groups": {
-        "ability": [],
-        "composition": "buff"
-      },
-      "fields": {
-        "GridSize": "1x1",
-        "BuyVal": "Priceless"
-      },
-      "icon": "icons/oil/misc/Translucent_Oil.png"
-    },
-    {
-      "name": "Triple Oil (DEMO)",
-      "page": "https://sulfur.wiki.gg/wiki/Triple_Oil_%28DEMO%29",
-      "image": "Triple Oil.png",
-      "groups": {
-        "ability": [],
-        "composition": "buff"
-      },
-      "fields": {
-        "GridSize": "1x2",
-        "BuyVal": "Priceless"
-      },
-      "icon": "icons/oil/misc/Triple_Oil.png"
     },
     {
       "name": "Trusty Old Oil",

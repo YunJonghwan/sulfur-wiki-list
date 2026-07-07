@@ -62,12 +62,28 @@ function fieldsOf(item) {
   return item && item.fields ? item.fields : {}
 }
 
+// True for values that are just a number (+ optional short unit like "s")
+// with no extra condition attached, e.g. "+0.5s" or "+20%". False for
+// conditional text like "+100% while crouching" or "+20% after eating" —
+// those aren't safe to fold into a flat sum, since they don't always apply.
+function isPlainModifier(raw) {
+  if (typeof raw !== 'string') return false
+  const m = raw.match(/^[+-]?\d+(?:\.\d+)?%?/)
+  if (!m) return false
+  const rest = raw.slice(m[0].length).trim()
+  return rest === '' || /^[a-z]{1,3}$/i.test(rest)
+}
+
 // Aggregate a numeric stat across a list of items (sums the parsed numbers).
+// Conditional values (see isPlainModifier) are skipped here and surfaced
+// as-is via computeGearExtras instead, so their condition stays visible.
 function sumStat(items, key) {
   let total = 0
   let found = false
   for (const it of items) {
-    const p = parseNum(fieldsOf(it)[key])
+    const raw = fieldsOf(it)[key]
+    if (!isPlainModifier(raw)) continue
+    const p = parseNum(raw)
     if (p) {
       total += p.num
       found = true
@@ -86,6 +102,33 @@ export function computePlayerStats(gearItems) {
     out.push({ key: stat.key, value, percent: stat.percent, cap: stat.cap })
   }
   return out
+}
+
+const GEAR_META = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'Durability'])
+const PLAYER_STAT_KEYS = new Set(PLAYER_STATS.map((s) => s.key))
+
+// Equipment/passive fields that aren't one of the aggregated PLAYER_STATS
+// (weapon-class damage bonuses, on-hit effects, flavor flags…) — shown
+// as-is so every selected gear piece's effect is visible somewhere.
+export function computeGearExtras(gearItems) {
+  const items = gearItems.filter(Boolean)
+  const extras = []
+  const seen = new Set()
+  for (const it of items) {
+    const f = fieldsOf(it)
+    for (const [k, v] of Object.entries(f)) {
+      if (!v || GEAR_META.has(k)) continue
+      // Player-stat keys are already summed into the flat total above —
+      // unless the value is conditional (e.g. "while crouching"), in which
+      // case it was deliberately left out of the sum and belongs here.
+      if (PLAYER_STAT_KEYS.has(k) && isPlainModifier(v)) continue
+      const tag = `${it.name}:${k}:${v}`
+      if (seen.has(tag)) continue
+      seen.add(tag)
+      extras.push({ from: it.name, key: k, value: v })
+    }
+  }
+  return extras
 }
 
 // Compute final weapon stats given enchants (oils/scroll) and gear bonuses.

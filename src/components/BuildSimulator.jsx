@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t } from '../i18n.js'
-import { computeWeapon, computePlayerStats } from '../build.js'
+import { computeWeapon, computePlayerStats, computeGearExtras } from '../build.js'
 import ItemPicker from './ItemPicker.jsx'
 
 const BASE = import.meta.env.BASE_URL
@@ -70,12 +70,12 @@ export default function BuildSimulator({ lang }) {
   const gearItems = [head, chest, feet[0], feet[1], ...passives]
   const result = computeWeapon(weapon, activeEnchants, gearItems)
   const playerStats = computePlayerStats(gearItems)
+  const gearExtras = computeGearExtras(gearItems)
 
   // Names already used, to prevent duplicate oils / multiple scrolls.
   const usedOils = new Set(
     activeEnchants.filter((e) => e?.type === 'oil').map((e) => e.item.name),
   )
-  const hasScroll = activeEnchants.some((e) => e?.type === 'scroll')
 
   const weaponSections = [{ key: 'weapon', items: data.weapon.items }]
   const enchantSections = [
@@ -89,9 +89,15 @@ export default function BuildSimulator({ lang }) {
   ]
 
   function enchantDisabled(item, sectionKey, idx) {
-    const current = activeEnchants[idx]?.item?.name
-    if (sectionKey === 'oil') return usedOils.has(item.name) && current !== item.name
-    if (sectionKey === 'scroll') return hasScroll && current !== item.name
+    if (sectionKey === 'oil') {
+      const current = activeEnchants[idx]?.item?.name
+      return usedOils.has(item.name) && current !== item.name
+    }
+    if (sectionKey === 'scroll') {
+      // Only one scroll total across all slots — but freely swappable within
+      // the slot that already holds it.
+      return activeEnchants.some((e, i) => i !== idx && e?.type === 'scroll')
+    }
     return false
   }
 
@@ -263,19 +269,39 @@ export default function BuildSimulator({ lang }) {
 
         <div className="result-card">
           <h3>{t(UI.playerResult, lang)}</h3>
-          {playerStats.length === 0 ? (
+          {playerStats.length === 0 && gearExtras.length === 0 ? (
             <p className="notice">—</p>
           ) : (
-            <table className="result-table">
-              <tbody>
-                {playerStats.map((s) => (
-                  <tr key={s.key}>
-                    <td>{labelFor(s.key)}</td>
-                    <td className={s.value >= 0 ? 'pos' : 'neg'}>{fmtStat(s)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <>
+              {playerStats.length > 0 && (
+                <table className="result-table">
+                  <tbody>
+                    {playerStats.map((s) => (
+                      <tr key={s.key}>
+                        <td>{labelFor(s.key)}</td>
+                        <td className={s.value >= 0 ? 'pos' : 'neg'}>{fmtStat(s)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+
+              {gearExtras.length > 0 && (
+                <div className="extras">
+                  <div className="extras-title">{t(UI.otherEffects, lang)}</div>
+                  <div className="chips">
+                    {gearExtras.map((x, i) => (
+                      <span key={i} className={`chip ${tone(x.value)}`}>
+                        <b>
+                          {x.from} · {labelFor(x.key)}
+                        </b>
+                        {x.value}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>

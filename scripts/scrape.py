@@ -851,12 +851,20 @@ def load_pages(refresh: bool) -> dict[str, str]:
     return pages
 
 
+CUT_CONTENT_RE = re.compile(r"\[\[\s*Category\s*:\s*Cut[ _]Content\s*\]\]", re.IGNORECASE)
+
+
 def build(refresh: bool = False) -> None:
     pages = load_pages(refresh)
 
     buckets: dict[str, list[dict]] = {k: [] for k in TARGET_KINDS}
 
     for title, wikitext in pages.items():
+        # Skip items removed from the live game (e.g. old demo-only oils) —
+        # their infobox is usually incomplete since the effect text lives in
+        # free-form prose instead of structured fields.
+        if CUT_CONTENT_RE.search(wikitext):
+            continue
         body = extract_infobox(wikitext)
         if body is None:
             continue
