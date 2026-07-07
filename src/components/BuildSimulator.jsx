@@ -77,15 +77,12 @@ export default function BuildSimulator({ lang }) {
     activeEnchants.filter((e) => e?.type === 'oil').map((e) => e.item.name),
   )
 
-  const weaponSections = [{ key: 'weapon', items: data.weapon.items }]
+  const weaponSections = [
+    { key: 'weapon', items: data.weapon.items, axes: data.weapon.axes },
+  ]
   const enchantSections = [
     { key: 'scroll', label: t(UI.scrollOpt, lang), items: data.scroll.items },
-    {
-      key: 'oil',
-      label: t(UI.oilOpt, lang),
-      items: data.oil.items,
-      axis: data.oil.axes?.find((a) => a.key === 'ability'),
-    },
+    { key: 'oil', label: t(UI.oilOpt, lang), items: data.oil.items, axes: data.oil.axes },
   ]
 
   function enchantDisabled(item, sectionKey, idx) {

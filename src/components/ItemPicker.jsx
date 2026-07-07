@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { UI, COLUMN_KO, t, groupLabel } from '../i18n.js'
+import { UI, COLUMN_KO, t, groupLabel, axisLabel } from '../i18n.js'
 
 const BASE = import.meta.env.BASE_URL
 const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy'])
@@ -32,18 +32,27 @@ function valueTone(raw) {
 
 // Icon-grid item picker used by the build simulator slots. Replaces native
 // <select> so items can be browsed by icon + key stats instead of by
-// memorizing names, with an optional search box and group-pill filter.
+// memorizing names, with a search box and optional axis/group-pill filters
+// (e.g. weapon class/ammo, oil ability) mirroring the main data tables.
 export default function ItemPicker({ lang, value, sections, isDisabled, onSelect, onClear, labelFor }) {
   const [open, setOpen] = useState(false)
   const [search, setSearch] = useState('')
   const [sectionKey, setSectionKey] = useState(sections[0]?.key)
+  const [axisKey, setAxisKey] = useState(sections[0]?.axes?.[0]?.key || '')
   const [groupValue, setGroupValue] = useState('')
+
+  function switchSection(key) {
+    setSectionKey(key)
+    const sect = sections.find((s) => s.key === key)
+    setAxisKey(sect?.axes?.[0]?.key || '')
+    setGroupValue('')
+  }
 
   useEffect(() => {
     if (!open) return
     setSearch('')
-    setGroupValue('')
-    setSectionKey(sections[0]?.key)
+    switchSection(sections[0]?.key)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open])
 
   useEffect(() => {
@@ -56,7 +65,8 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
   }, [open])
 
   const activeSection = sections.find((s) => s.key === sectionKey) || sections[0]
-  const axis = activeSection?.axis
+  const axes = activeSection?.axes || []
+  const axis = axes.find((a) => a.key === axisKey) || axes[0] || null
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -131,12 +141,26 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
                   <button
                     key={s.key}
                     className={s.key === sectionKey ? 'active' : ''}
+                    onClick={() => switchSection(s.key)}
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {axes.length > 1 && (
+              <div className="axis-switch picker-tabs">
+                {axes.map((a) => (
+                  <button
+                    key={a.key}
+                    className={a.key === axis?.key ? 'active' : ''}
                     onClick={() => {
-                      setSectionKey(s.key)
+                      setAxisKey(a.key)
                       setGroupValue('')
                     }}
                   >
-                    {s.label}
+                    {axisLabel(a.key, a.label, lang)}
                   </button>
                 ))}
               </div>
