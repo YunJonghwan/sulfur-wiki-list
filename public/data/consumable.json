@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-07T14:27:49.581882+00:00",
+  "generated": "2026-07-07T14:42:12.572374+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -192,6 +192,23 @@
           "count": 1
         }
       ]
+    },
+    {
+      "key": "craftable",
+      "label": "Acquisition",
+      "multi": false,
+      "values": [
+        {
+          "value": "craftable",
+          "label": "Craftable",
+          "count": 137
+        },
+        {
+          "value": "farmed",
+          "label": "Found / Farmed",
+          "count": 65
+        }
+      ]
     }
   ],
   "items": [
@@ -200,7 +217,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Admiral_White_Extra_Strong",
       "image": "Admiral White Extra Strong.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -217,7 +235,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Americano",
       "image": "Americano.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -234,7 +253,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Anti-Poison_Gum",
       "image": "Anti-Poison Gum.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -250,7 +270,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Aspic",
       "image": "Aspic.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -265,7 +286,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Banana",
       "image": "Banana.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×1",
@@ -280,7 +302,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Banana_Bread",
       "image": "Banana Bread.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -295,7 +318,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Banana_Sulfs",
       "image": "Banana Sulfs.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -310,7 +334,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bark_Bread",
       "image": "Bark_Bread.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -325,7 +350,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Beans",
       "image": "Beans.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -340,7 +366,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Beef_Jerky",
       "image": "Beef_Jerky.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -356,7 +383,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Berries",
       "image": "Berries.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -372,7 +400,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Berry_Jam",
       "image": "Berry Jam.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -388,7 +417,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29",
       "image": "Berry Jam (Unsweetened).png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -403,7 +433,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Berry_Milkshake",
       "image": "Berry Milkshake.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -419,7 +450,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Biscuits_And_Gravy",
       "image": "Biscuits And Gravy.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -435,7 +467,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Black_Pepper",
       "image": "Black Pepper.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "SubType": "Food, Ingredient",
@@ -451,7 +484,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Blood",
       "image": "Blood.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -466,7 +500,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Blood_of_the_Earth_Mother",
       "image": "Blood of the Earth Mother.png",
       "groups": {
-        "type": "Amulet Recharge"
+        "type": "Amulet Recharge",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -481,7 +516,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Boba_Tea",
       "image": "Boba Tea.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -499,7 +535,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bottled_Caviar",
       "image": "Bottled Caviar.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -515,7 +552,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bottled_Water",
       "image": "Bottled Water.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x2",
@@ -533,7 +571,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bread",
       "image": "Bread.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -548,7 +587,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bread_Sandwich",
       "image": "Bread Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -563,7 +603,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Broth",
       "image": "Broth.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -578,7 +619,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Buddy_Sandwich",
       "image": "Buddy Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -593,7 +635,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Butter",
       "image": "Butter.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -609,7 +652,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich",
       "image": "Butter Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -624,7 +668,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Buttermilk",
       "image": "Buttermilk.png",
       "groups": {
-        "type": "Milk"
+        "type": "Milk",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -640,7 +685,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Buttermilk_Pancakes",
       "image": "Buttermilk Pancakes.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -655,7 +701,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cacao",
       "image": "Cacao.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "SubType": "Food, Ingredient",
@@ -670,7 +717,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cactus",
       "image": "Cactus.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "SubType": "Food, Ingredient",
@@ -686,7 +734,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cactus_Softdrink",
       "image": "Cactus Softdrink.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x2",
@@ -700,7 +749,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Candy_Cane",
       "image": "Candy_Cane.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -715,7 +765,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cappucino",
       "image": "Cappucino.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -733,7 +784,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cereal",
       "image": "Cereal.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×2",
@@ -749,7 +801,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cevapi",
       "image": "Cevapi.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -766,7 +819,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cheese",
       "image": "Cheese.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -783,7 +837,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cheese_Sandwich",
       "image": "Cheese_Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -800,7 +855,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cheese_Tops",
       "image": "Cheese Tops.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "Heal": "25 health over 10 seconds",
@@ -816,7 +872,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cheeseburger",
       "image": "Cheeseburger.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -832,7 +889,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball",
       "image": "Chocolate Ball.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -848,7 +906,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Chocolate_Bar",
       "image": "Chocolate Bar.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×1",
@@ -864,7 +923,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Chocolate_Milkshake",
       "image": "Chocolate Milkshake.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -880,7 +940,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake",
       "image": "Chocolate_Mudcake.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -895,7 +956,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup",
       "image": "Chocolate Syrup.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -910,7 +972,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice",
       "image": "Christmas Spice.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -924,7 +987,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Coffee",
       "image": "Coffee.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -939,7 +1003,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cordon_Bleu",
       "image": "Cordon_Bleu.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -954,7 +1019,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cotton_Candy",
       "image": "Cotton Candy.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -970,7 +1036,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cuisses_De_Grenouille",
       "image": "Cuisses De Grenouille.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -985,7 +1052,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Currywurst",
       "image": "Currywurst.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1000,7 +1068,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Delicacies_of_the_Forest",
       "image": "Delicacies of the Forest.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1017,7 +1086,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Dimmie",
       "image": "Dimmie.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -1032,7 +1102,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Dopp_I_Grytan",
       "image": "Dopp I Grytan.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1048,7 +1119,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Double_Cheeseburger",
       "image": "Double Cheeseburger.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1062,7 +1134,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Dumpling",
       "image": "Dumpling.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1078,7 +1151,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Earthworm",
       "image": "Earthworm.png",
       "groups": {
-        "type": "Other"
+        "type": "Other",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1093,7 +1167,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Eating_as_Royals",
       "image": "Eating as Royals.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1110,7 +1185,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Egg",
       "image": "Egg.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1127,7 +1203,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Egg_Toddy",
       "image": "Egg Toddy.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1144,7 +1221,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Energy_Gum",
       "image": "Energy Gum.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1161,7 +1239,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Escargot",
       "image": "Escargot.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1177,7 +1256,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Fatberg_Chunk",
       "image": "Fatberg Chunk.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1193,7 +1273,8 @@
       "page": "https://sulfur.wiki.gg/wiki/First_Aid_Kit",
       "image": "First Aid Kit.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x2",
@@ -1208,7 +1289,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Fish",
       "image": "Fish.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -1223,7 +1305,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips",
       "image": "Fish And Chips.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1239,7 +1322,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Flat_Sandfish",
       "image": "Flat Sandfish.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1255,7 +1339,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Flour",
       "image": "Flour.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1270,7 +1355,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Fondue",
       "image": "Fondue.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -1285,7 +1371,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Food_for_Desert_Survival",
       "image": "Food for Desert Survival.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1302,7 +1389,8 @@
       "page": "https://sulfur.wiki.gg/wiki/French_Hotdog",
       "image": "French Hotdog.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -1318,7 +1406,8 @@
       "page": "https://sulfur.wiki.gg/wiki/French_Toast",
       "image": "French Toast.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1333,7 +1422,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Fried_Blood_Pudding",
       "image": "Fried Blood Pudding.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1349,7 +1439,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Fried_Mushroom",
       "image": "Fried_Mushroom.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1364,7 +1455,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Frog_Leg",
       "image": "Frog Leg.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1380,7 +1472,8 @@
       "page": "https://sulfur.wiki.gg/wiki/From_the_Cellar",
       "image": "From the Cellar.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1396,7 +1489,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Full_English_Breakfast",
       "image": "Full English Breakfast.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1411,7 +1505,8 @@
       "page": "https://sulfur.wiki.gg/wiki/GABBA_FOODMAKE",
       "image": "GABBA FOODMAKE.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1427,7 +1522,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Gonster",
       "image": "Gonster.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -1444,7 +1540,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon",
       "image": "Graved Salmon.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1460,7 +1557,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Gravy",
       "image": "Gravy.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1475,7 +1573,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Green_Tea",
       "image": "Green Tea.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1494,7 +1593,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Green_Tea_Gum",
       "image": "Green Tea Gum.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1510,7 +1610,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Grilled_Cactus",
       "image": "Grilled Cactus.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1526,7 +1627,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Grilled_Poultry",
       "image": "Grilled_Poultry.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1541,7 +1643,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Guild_Approved_Cuisine",
       "image": "Guild Approved Cuisine.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -1557,7 +1660,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Haggis",
       "image": "Haggis.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1572,7 +1676,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hard_Bread",
       "image": "Hard Bread.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1587,7 +1692,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hardshell_Taco",
       "image": "Hardshell Taco.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1603,7 +1709,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hazelnut",
       "image": "Hazelnut.png",
       "groups": {
-        "type": "Nut"
+        "type": "Nut",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1619,7 +1726,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Health_Potion",
       "image": "Health Potion.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1636,7 +1744,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Herbal_Tea",
       "image": "Herbal Tea.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1654,7 +1763,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Herbs",
       "image": "Herbs.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1669,7 +1779,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Holy_Toast",
       "image": "Holy_Toast.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1684,7 +1795,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Holy_Water",
       "image": "Holy Water.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -1701,7 +1813,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hot_Pot",
       "image": "Hot Pot.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "3×2",
@@ -1716,7 +1829,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hot_Sauce",
       "image": "Hot Sauce.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1732,7 +1846,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hot_Snacks",
       "image": "Hot Snacks.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1748,7 +1863,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation",
       "image": "Jansson's Temptation.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×3",
@@ -1765,7 +1881,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Jello",
       "image": "Jello.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1781,7 +1898,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Julmust",
       "image": "Julmust.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -1798,7 +1916,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Karl-Oskar",
       "image": "Karl-Oskar.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1812,7 +1931,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Kidney_Pie",
       "image": "Kidney Pie.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1828,7 +1948,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Kidney_Stone",
       "image": "Kidney Stone.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1843,7 +1964,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Kombucha",
       "image": "Kombucha.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1861,7 +1983,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Lackerol_Cactus",
       "image": "Lackerol Cactus.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -1877,7 +2000,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Latte",
       "image": "Latte.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1894,7 +2018,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Lemonade",
       "image": "Lemonade.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1912,7 +2037,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Leverpastej",
       "image": "Leverpastej.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -1928,7 +2054,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Liquor",
       "image": "Liquor.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -1945,7 +2072,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Liver_P%C3%A2t%C3%A9_Sandwich",
       "image": "Liver Pâté Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -1959,7 +2087,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Low_Fat_Milk",
       "image": "Low Fat Milk.png",
       "groups": {
-        "type": "Milk"
+        "type": "Milk",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -1977,7 +2106,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Lussekatt",
       "image": "Lussekatt.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x2",
@@ -1992,7 +2122,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Lutfisk",
       "image": "Lutfisk.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2008,7 +2139,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mac%27n%27Cheese",
       "image": "Mac'n'Cheese.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2024,7 +2156,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Maki",
       "image": "Maki.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2039,7 +2172,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Marshmallows",
       "image": "Marshmallows.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2055,7 +2189,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mashed_Potatoes",
       "image": "Mashed Potatoes.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2070,7 +2205,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Matcha",
       "image": "Matcha.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2086,7 +2222,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Meat_Skewer",
       "image": "Meat Skewer.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2102,7 +2239,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Meringue",
       "image": "Meringue.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2116,7 +2254,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mineral_Water",
       "image": "Mineral Water.png",
       "groups": {
-        "type": "Water"
+        "type": "Water",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2134,7 +2273,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mochi",
       "image": "Mochi.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2148,7 +2288,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mulled_Wine",
       "image": "Mulled Wine.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2166,7 +2307,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mushroom_Omelette",
       "image": "Mushroom Omelette.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2181,7 +2323,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mushroom_Skewer",
       "image": "Mushroom Skewer.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2196,7 +2339,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup",
       "image": "Mushroom_Soup.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2212,7 +2356,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mycota_Squamata",
       "image": "Mycota Squamata.png",
       "groups": {
-        "type": "Mushroom"
+        "type": "Mushroom",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2228,7 +2373,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Mystery_Meat",
       "image": "Mystery Meat.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2244,7 +2390,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Nashville_Hot_Chicken",
       "image": "Nashville Hot Chicken.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2260,7 +2407,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Nigiri",
       "image": "Nigiri.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2275,7 +2423,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Nuggets",
       "image": "Nuggets.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2290,7 +2439,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Nut_Mix",
       "image": "Nut Mix.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2306,7 +2456,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Nut_Spread",
       "image": "Nut Spread.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×2",
@@ -2322,7 +2473,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Oats",
       "image": "Oats.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2337,7 +2489,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Omelette",
       "image": "Omelette.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2353,7 +2506,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Onigiri",
       "image": "Onigiri.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2369,7 +2523,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Peanut",
       "image": "Peanut.png",
       "groups": {
-        "type": "Nut"
+        "type": "Nut",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -2385,7 +2540,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter",
       "image": "Peanut Butter.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×2",
@@ -2401,7 +2557,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich",
       "image": "Peanutbutter Jelly Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2416,7 +2573,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Sandwich",
       "image": "Peanutbutter Sandwich.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2431,7 +2589,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pickled_Herring_Platter",
       "image": "Pickled Herring Platter.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2446,7 +2605,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pilk",
       "image": "Pilk.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2463,7 +2623,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pine_Nuts",
       "image": "Pine Nuts.png",
       "groups": {
-        "type": "Nut"
+        "type": "Nut",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2479,7 +2640,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pizza",
       "image": "Pizza.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x2",
@@ -2497,7 +2659,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pizza_Slice",
       "image": "Pizza Slice.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -2513,7 +2676,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Porridge",
       "image": "Porridge.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2530,7 +2694,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Potato",
       "image": "Potato.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2545,7 +2710,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Potato_Salad",
       "image": "Potato Salad.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2560,7 +2726,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Poutine",
       "image": "Poutine.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2576,7 +2743,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Puffed_Rice_Cakes",
       "image": "Puffed Rice Cakes.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2592,7 +2760,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pyttipanna",
       "image": "Pyttipanna.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2607,7 +2776,8 @@
       "page": "https://sulfur.wiki.gg/wiki/P%C3%B6lsa",
       "image": "Pölsa.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2622,7 +2792,8 @@
       "page": "https://sulfur.wiki.gg/wiki/P%C3%B8lse",
       "image": "Pølse.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2638,7 +2809,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Raclette",
       "image": "Raclette.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2653,7 +2825,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Ramen",
       "image": "Ramen.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2669,7 +2842,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Red_Wine",
       "image": "Red Wine.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "SubType": "Beverage, Ingredient",
@@ -2686,7 +2860,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Rhubarb",
       "image": "Rhubarb.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2701,7 +2876,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Pie",
       "image": "Rhubarb Pie.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2716,7 +2892,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Porridge",
       "image": "Rhubarb Porridge.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2731,7 +2908,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Sauce",
       "image": "Rhubarb Sauce.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2746,7 +2924,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Rice",
       "image": "Rice.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -2762,7 +2941,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge",
       "image": "Rice Porridge.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2777,7 +2957,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Risalamande",
       "image": "Risalamande.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2792,7 +2973,8 @@
       "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp",
       "image": "Rödsopp.png",
       "groups": {
-        "type": "Mushroom"
+        "type": "Mushroom",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2809,7 +2991,8 @@
       "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp_Paste",
       "image": "Rödsopp Paste.png",
       "groups": {
-        "type": "Drug Remedy"
+        "type": "Drug Remedy",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2825,7 +3008,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Salt",
       "image": "Salt.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2841,7 +3025,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Salted_Fish",
       "image": "Salted Fish.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2857,7 +3042,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Salted_Sandfish",
       "image": "Salted Sandfish.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -2873,7 +3059,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sashimi",
       "image": "Sashimi.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2888,7 +3075,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sausage_Omelette",
       "image": "Sausage Omelette.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -2903,7 +3091,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sausage_On_Stick",
       "image": "Sausage On Stick.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2918,7 +3107,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sausage_Soup",
       "image": "Sausage Soup.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -2934,7 +3124,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Seaweed",
       "image": "Seaweed.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x1",
@@ -2949,7 +3140,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Shav%27Wani_Delights",
       "image": "Shav'Wani Delights.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -2965,7 +3157,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk",
       "image": "Skimmed Milk.png",
       "groups": {
-        "type": "Milk"
+        "type": "Milk",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2982,7 +3175,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Soda",
       "image": "Slurf.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3000,7 +3194,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Solution",
       "image": "Solution.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3016,7 +3211,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Spaghetti",
       "image": "Spaghetti.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -3031,7 +3227,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Spaghetti_Bolognese",
       "image": "Spaghetti Bolognese.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -3046,7 +3243,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Spanish_Omelette",
       "image": "Spanish Omelette.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x2",
@@ -3061,7 +3259,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage",
       "image": "Spicy Sausage.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -3077,7 +3276,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sports_Drink",
       "image": "Sports Drink.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1x2",
@@ -3096,7 +3296,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Stew",
       "image": "Stew.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -3111,7 +3312,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Stout",
       "image": "Stout.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -3128,7 +3330,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sugar",
       "image": "Sugar.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Ingredient",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -3144,7 +3347,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sulf_Cola",
       "image": "Sulf Cola.png",
       "groups": {
-        "type": "Beverage"
+        "type": "Beverage",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",
@@ -3162,7 +3366,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Surstromming",
       "image": "Surstromming.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3177,7 +3382,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Swedish_Pancakes",
       "image": "Swedish Pancakes.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -3192,7 +3398,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Sweet_Gum",
       "image": "Sweet Gum.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3208,7 +3415,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Swing-Ding",
       "image": "Swing-Ding.png",
       "groups": {
-        "type": "Mushroom"
+        "type": "Mushroom",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3223,7 +3431,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Tastes_from_the_Sewers%E2%84%A2",
       "image": "Tastes from the Sewers™.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -3240,7 +3449,8 @@
       "page": "https://sulfur.wiki.gg/wiki/The_Chequered_Cookbook",
       "image": "The Chequered Cookbook.png",
       "groups": {
-        "type": "Manual"
+        "type": "Manual",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "2×2",
@@ -3256,7 +3466,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Toast_Skagen",
       "image": "Toast Skagen.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3272,7 +3483,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Tongue_On_Stick",
       "image": "Tongue On Stick.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2x1",
@@ -3287,7 +3499,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Tori_Ramen",
       "image": "Tori Ramen.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -3304,7 +3517,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Tube_Caviar",
       "image": "Tube Caviar.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -3320,7 +3534,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Unagi",
       "image": "Unagi.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "2×1",
@@ -3336,7 +3551,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Vacuum_Cleaner",
       "image": "Vacuum Cleaner.png",
       "groups": {
-        "type": "Dessert"
+        "type": "Dessert",
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3351,7 +3567,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell",
       "image": "Velvet Bell.png",
       "groups": {
-        "type": "Mushroom"
+        "type": "Mushroom",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3366,7 +3583,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Walnut",
       "image": "Walnut.png",
       "groups": {
-        "type": "Food"
+        "type": "Food",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3382,7 +3600,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Whole_Milk",
       "image": "Whole Milk.png",
       "groups": {
-        "type": "Milk"
+        "type": "Milk",
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×2",

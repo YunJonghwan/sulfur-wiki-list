@@ -69,6 +69,7 @@ export const AXIS_KO = {
   composition: '구성',
   type: '종류',
   stage: '단계',
+  craftable: '획득 방법',
 }
 
 // Korean labels for sub-group values. Missing values fall back to English.
@@ -108,6 +109,9 @@ export const GROUP_KO = {
   // scroll stage (1 = base elemental, 2 = combined from two Stage 1 scrolls)
   stage2: '2단계 (결합)',
   stage1: '1단계 (기본)',
+  // consumable acquisition (조합/요리 가능 여부)
+  craftable: '조합 가능',
+  farmed: '파밍/구매 전용',
   // consumable
   Food: '음식',
   Beverage: '음료',

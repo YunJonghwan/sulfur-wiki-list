@@ -664,7 +664,7 @@ AXIS_KEYS_BY_KIND = {
     "scroll": ["stage"],
     "attachment": ["type"],
     "equipment": ["type"],
-    "consumable": ["type"],
+    "consumable": ["type", "craftable"],
 }
 
 AXIS_LABELS = {
@@ -674,7 +674,10 @@ AXIS_LABELS = {
     "composition": "Composition",
     "type": "Type",
     "stage": "Stage",
+    "craftable": "Acquisition",
 }
+
+CRAFTABLE_LABELS = {"craftable": "Craftable", "farmed": "Found / Farmed"}
 
 # Stage 1 scrolls are the 9 base elemental scrolls (random drops / vendors);
 # every other scroll is Stage 2, made by combining two Stage 1 scrolls at
@@ -690,6 +693,16 @@ STAGE_LABELS = {"stage1": "Stage 1 (Base)", "stage2": "Stage 2 (Combined)"}
 
 def scroll_stage(title: str) -> str:
     return "stage1" if title in STAGE_1_SCROLLS else "stage2"
+
+
+# Consumables with this category can be cooked/combined from ingredients at
+# a cooking station; everything else must be found, farmed, or bought.
+COOKABLE_RE = re.compile(r"\[\[\s*Category\s*:\s*Cookables\s*\]\]", re.IGNORECASE)
+
+
+def consumable_craftable(wikitext: str) -> str:
+    return "craftable" if COOKABLE_RE.search(wikitext) else "farmed"
+
 
 # Axes where an item can belong to several groups at once (e.g. an oil that
 # modifies both Damage and Recoil shows up under each ability).
@@ -721,6 +734,7 @@ VALUE_ORDER = {
     ],
     # Combined (Stage 2) scrolls listed before base (Stage 1) ones.
     "stage": ["stage2", "stage1"],
+    "craftable": ["craftable", "farmed"],
 }
 
 
@@ -788,6 +802,8 @@ def value_label(axis: str, value: str) -> str:
         return COMPOSITION_LABELS.get(value, value)
     if axis == "stage":
         return STAGE_LABELS.get(value, value)
+    if axis == "craftable":
+        return CRAFTABLE_LABELS.get(value, value)
     return value
 
 
@@ -799,7 +815,7 @@ def oil_ability_keys(fields: dict[str, str]) -> list[str]:
     ]
 
 
-def item_groups(kind: str, fields: dict[str, str], title: str) -> dict[str, object]:
+def item_groups(kind: str, fields: dict[str, str], title: str, wikitext: str) -> dict[str, object]:
     if kind == "oil":
         return {
             "ability": oil_ability_keys(fields),
@@ -810,6 +826,8 @@ def item_groups(kind: str, fields: dict[str, str], title: str) -> dict[str, obje
     label = display_subtype(fields.get("SubType", ""))
     if kind == "weapon":
         return {"class": label, "ammo": fields.get("Ammo") or "—"}
+    if kind == "consumable":
+        return {"type": label, "craftable": consumable_craftable(wikitext)}
     return {"type": label}
 
 
@@ -900,7 +918,7 @@ def build(refresh: bool = False) -> None:
             "name": title,
             "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
             "image": image,
-            "groups": item_groups(kind, fields, title),
+            "groups": item_groups(kind, fields, title, wikitext),
             "fields": {k: v for k, v in fields.items()
                        if k not in ("kind", "image", "title")},
         }
