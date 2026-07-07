@@ -130,9 +130,15 @@ export default function DataTable({ data, lang }) {
 
   const groupOf = (it) => (currentAxis ? it.groups?.[currentAxis.key] : undefined)
 
+  // Whether an item belongs to a group value (supports multi-membership axes).
+  const hasGroup = (it, value) => {
+    const g = groupOf(it)
+    return Array.isArray(g) ? g.includes(value) : g === value
+  }
+
   const tabItems = useMemo(() => {
     if (subMode !== 'tabs' || !selectedGroup) return sortedBase
-    return sortedBase.filter((it) => groupOf(it) === selectedGroup)
+    return sortedBase.filter((it) => hasGroup(it, selectedGroup))
   }, [sortedBase, subMode, selectedGroup, currentAxis])
 
   // Groups present in the current (filtered) data, preserving axis order.
@@ -141,11 +147,12 @@ export default function DataTable({ data, lang }) {
     const counts = new Map()
     for (const it of sortedBase) {
       const g = groupOf(it)
-      if (g) counts.set(g, (counts.get(g) || 0) + 1)
+      const vals = Array.isArray(g) ? g : g ? [g] : []
+      for (const v of vals) counts.set(v, (counts.get(v) || 0) + 1)
     }
     return currentAxis.values
       .filter((v) => counts.has(v.value))
-      .map((v) => ({ value: v.value, count: counts.get(v.value) }))
+      .map((v) => ({ value: v.value, label: v.label, count: counts.get(v.value) }))
   }, [currentAxis, sortedBase])
 
   function toggleGridSort(key) {
@@ -380,7 +387,7 @@ export default function DataTable({ data, lang }) {
                   className={selectedGroup === g.value ? 'pill active' : 'pill'}
                   onClick={() => setSelectedGroup(g.value)}
                 >
-                  {groupLabel(g.value, lang)} ({g.count})
+                  {groupLabel(g.value, g.label, lang)} ({g.count})
                 </button>
               ))}
             </div>
@@ -393,10 +400,11 @@ export default function DataTable({ data, lang }) {
           {presentGroups.map((g) => (
             <section key={g.value} className="group-section">
               <h3 className="group-heading">
-                {groupLabel(g.value, lang)} <span className="g-count">({g.count})</span>
+                {groupLabel(g.value, g.label, lang)}{' '}
+                <span className="g-count">({g.count})</span>
               </h3>
               <div className="table-scroll">
-                {renderTable(sortedBase.filter((it) => groupOf(it) === g.value))}
+                {renderTable(sortedBase.filter((it) => hasGroup(it, g.value)))}
               </div>
             </section>
           ))}
