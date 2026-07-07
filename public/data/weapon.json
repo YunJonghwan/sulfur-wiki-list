@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-07T15:00:44.289874+00:00",
+  "generated": "2026-07-07T18:51:06.302698+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -17,18 +17,6 @@
       "label": "Ammunition"
     },
     {
-      "key": "Mode",
-      "label": "Mode"
-    },
-    {
-      "key": "Mag",
-      "label": "Magazine Size"
-    },
-    {
-      "key": "Weight",
-      "label": "Weight"
-    },
-    {
       "key": "Damage",
       "label": "Damage"
     },
@@ -43,6 +31,18 @@
     {
       "key": "Recoil",
       "label": "Recoil"
+    },
+    {
+      "key": "Mode",
+      "label": "Mode"
+    },
+    {
+      "key": "Mag",
+      "label": "Magazine Size"
+    },
+    {
+      "key": "Weight",
+      "label": "Weight"
     },
     {
       "key": "Durability",

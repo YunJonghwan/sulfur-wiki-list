@@ -45,8 +45,9 @@ TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable",
 # The frontend only shows columns that at least one item actually populates.
 KIND_COLUMNS: dict[str, list[str]] = {
     "weapon": [
-        "GridSize", "SubType", "Ammo", "Mode", "Mag", "Weight",
-        "Damage", "RPM", "Spread", "Recoil", "Durability",
+        "GridSize", "SubType", "Ammo",
+        "Damage", "RPM", "Spread", "Recoil",
+        "Mode", "Mag", "Weight", "Durability",
         "SellVal", "BuyVal", "SoldBy",
     ],
     "oil": [

@@ -7,6 +7,14 @@ const BASE = import.meta.env.BASE_URL
 // real stat modifiers/effects show. Still visible in the full grid view.
 const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy'])
 
+// Raw field each axis groups by. When that axis is the active grouping, every
+// row in a section/table already shares the same value (it's the group
+// heading), so the matching column is redundant and gets hidden — unless a
+// *different* axis is active, in which case the field varies within a group
+// and is worth showing (e.g. grouping weapons by class still needs an Ammo
+// column, since one class spans several ammo types).
+const AXIS_FIELD = { class: 'SubType', ammo: 'Ammo', type: 'SubType' }
+
 function imageUrl(icon) {
   if (!icon) return null
   return BASE + icon
@@ -116,6 +124,7 @@ export default function DataTable({ data, lang }) {
   const [selectedGroup, setSelectedGroup] = useState('')
 
   const currentAxis = axes.find((a) => a.key === axisKey) || axes[0] || null
+  const hiddenField = currentAxis ? AXIS_FIELD[currentAxis.key] : null
 
   // Weapons use the dense sortable grid; every other category stays in the
   // compact chip view (sortable via the toolbar dropdown / group selection).
@@ -142,9 +151,12 @@ export default function DataTable({ data, lang }) {
     })
   }, [searched, abilityKey, onlyWith])
 
-  // Columns that at least one of the given rows populates (hides blank columns).
+  // Columns that at least one of the given rows populates (hides blank columns),
+  // minus whichever field the current grouping axis already shows as the heading.
   const columnsFor = (items) =>
-    columns.filter((col) => items.some((it) => it.fields[col.key]))
+    columns.filter(
+      (col) => col.key !== hiddenField && items.some((it) => it.fields[col.key]),
+    )
 
   const sortedBase = useMemo(() => {
     const items = [...base]
@@ -244,7 +256,7 @@ export default function DataTable({ data, lang }) {
                   <div className="chips">
                     {columns.map((col) => {
                       const raw = it.fields[col.key]
-                      if (!raw || META_KEYS.has(col.key)) return null
+                      if (!raw || META_KEYS.has(col.key) || col.key === hiddenField) return null
                       const tone = valueTone(raw)
                       const sel = col.key === abilityKey ? ' sel' : ''
                       return (
