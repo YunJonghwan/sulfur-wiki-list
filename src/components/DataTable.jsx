@@ -44,6 +44,50 @@ function compareValues(a, b, dir = 'asc') {
   return dir === 'asc' ? res : -res
 }
 
+// Muzzle Attachment has no structured field distinguishing recoil
+// compensators from silencers from barrel extensions, so within that single
+// "종류" group (matching what the game itself shows as one flat list),
+// items are manually clustered by function and only sorted by name inside
+// each cluster — the section stays one list, just reordered for comparison.
+const MUZZLE_FOCUS_ORDER = {
+  'A12C Muzzle Brake': 0,
+  'Breznik BMD': 0,
+  'Breznik BMD (Tactical)': 0,
+  'Haukland Flash Hider': 0,
+  'Warmage Compensator': 0,
+  'Aftermarket Haukland Silencer': 1,
+  'Haukland Silencer': 1,
+  'M87 "Albatross" Silencer': 1,
+  'SR-P3 Silencer': 1,
+  'Barrel Extension 2"': 2,
+  'Barrel Extension 4"': 2,
+  'Barrel Extension 6"': 2,
+  'Improvised Barrel Extension': 2,
+  'Shrouded Barrel Extension': 2,
+}
+
+const RICHNESS_EXCLUDE = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'SubType', 'Zoom'])
+
+// How many real ability/effect fields an item has — used as the default
+// tiebreak so variants with a bonus on top of the base effect (e.g. a
+// laser sight color that also grants crit chance) surface before purely
+// cosmetic ones.
+function richness(it) {
+  return Object.keys(it.fields).filter((k) => !RICHNESS_EXCLUDE.has(k)).length
+}
+
+// Default browse order for the attachment tab: muzzle attachments cluster
+// by function first, everything else (and ties within a muzzle cluster)
+// falls back to richness, then name.
+function attachmentCompare(a, b) {
+  const fa = MUZZLE_FOCUS_ORDER[a.name] ?? -1
+  const fb = MUZZLE_FOCUS_ORDER[b.name] ?? -1
+  if (fa !== fb) return fa - fb
+  const rDiff = richness(b) - richness(a)
+  if (rDiff !== 0) return rDiff
+  return a.name.localeCompare(b.name)
+}
+
 function columnLabel(col, lang) {
   if (lang === 'ko' && COLUMN_KO[col.key]) return COLUMN_KO[col.key]
   return col.label
@@ -177,11 +221,13 @@ export default function DataTable({ data, lang }) {
       items.sort((a, b) =>
         compareValues(a.fields[abilityKey], b.fields[abilityKey], abilityDir),
       )
+    } else if (data.kind === 'attachment') {
+      items.sort(attachmentCompare)
     } else {
       items.sort((a, b) => a.name.localeCompare(b.name))
     }
     return items
-  }, [base, view, abilityKey, abilityDir, gridSortKey, gridSortDir])
+  }, [base, view, abilityKey, abilityDir, gridSortKey, gridSortDir, data.kind])
 
   const groupOf = (it) => (currentAxis ? it.groups?.[currentAxis.key] : undefined)
 

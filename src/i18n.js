@@ -133,7 +133,7 @@ export const GROUP_KO = {
   Sight: '조준경',
   'Laser Sight': '레이저',
   'Chamber Attachment': '챔버',
-  Attachment: '부착물',
+  Attachment: '보험',
   // misc (organs / crafting materials / valuables)
   Organ: '장기',
   Valuables: '귀중품',
@@ -171,6 +171,7 @@ export const COLUMN_KO = {
   Durability: '내구도',
   CritChance: '치명타 확률',
   CritADS: '조준 시 치명타',
+  Zoom: '배율',
   RldSpeed: '재장전 속도',
   BltSpeed: '탄속',
   BltDrop: '탄 낙차',

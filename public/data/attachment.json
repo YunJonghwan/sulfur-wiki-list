@@ -1,6 +1,6 @@
 {
   "kind": "attachment",
-  "generated": "2026-07-07T19:01:07.241869+00:00",
+  "generated": "2026-07-07T19:53:53.581117+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -11,6 +11,10 @@
     {
       "key": "SubType",
       "label": "Type"
+    },
+    {
+      "key": "Zoom",
+      "label": "Zoom Factor"
     },
     {
       "key": "ModeChange",
@@ -159,7 +163,8 @@
         "SubType": "Sight",
         "CritADS": "+20%",
         "SellVal": "250",
-        "SoldBy": "Ralphie"
+        "SoldBy": "Ralphie",
+        "Zoom": "×4"
       },
       "icon": "icons/attachment/sight/Assault_Scope.png"
     },
@@ -263,7 +268,8 @@
         "SubType": "Sight",
         "CritADS": "+20%",
         "SellVal": "250",
-        "SoldBy": "Ralphie"
+        "SoldBy": "Ralphie",
+        "Zoom": "×2"
       },
       "icon": "icons/attachment/sight/Compact_Sight.png"
     },
@@ -331,7 +337,8 @@
         "SubType": "Sight",
         "CritADS": "+10%",
         "SellVal": "115",
-        "SoldBy": "Ralphie"
+        "SoldBy": "Ralphie",
+        "Zoom": "×1"
       },
       "icon": "icons/attachment/sight/Holographic_Sight.png"
     },
@@ -347,7 +354,8 @@
         "SubType": "Sight",
         "CritADS": "+25%",
         "SellVal": "275",
-        "SoldBy": "Ralphie, Jaques De Fector"
+        "SoldBy": "Ralphie, Jaques De Fector",
+        "Zoom": "×8"
       },
       "icon": "icons/attachment/sight/Hunting_Scope.png"
     },
@@ -664,7 +672,8 @@
         "SubType": "Sight",
         "CritADS": "+10%",
         "SellVal": "140",
-        "SoldBy": "Ralphie"
+        "SoldBy": "Ralphie",
+        "Zoom": "×12"
       },
       "icon": "icons/attachment/sight/Recon_Scope.png"
     },
@@ -680,7 +689,8 @@
         "SubType": "Sight",
         "CritADS": "+15%",
         "SellVal": "160",
-        "SoldBy": "Ralphie"
+        "SoldBy": "Ralphie",
+        "Zoom": "×1"
       },
       "icon": "icons/attachment/sight/Reflex_Sight.png"
     },
@@ -713,7 +723,8 @@
         "SubType": "Sight",
         "CritADS": "+30%",
         "SellVal": "350",
-        "SoldBy": "Ralphie"
+        "SoldBy": "Ralphie",
+        "Zoom": "×12"
       },
       "icon": "icons/attachment/sight/Sniper_Scope.png"
     },

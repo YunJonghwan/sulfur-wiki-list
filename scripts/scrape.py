@@ -70,7 +70,7 @@ KIND_COLUMNS: dict[str, list[str]] = {
         "SellVal", "BuyVal", "SoldBy",
     ],
     "attachment": [
-        "GridSize", "SubType",
+        "GridSize", "SubType", "Zoom",
         "ModeChange", "CritADS", "MoveAccuracy", "SilFire", "Spread",
         "Recoil", "Dmg", "CritChance", "BltSpeed", "MaxDrb", "RPM", "Speed",
         "Charisma",
@@ -148,6 +148,7 @@ LABELS: dict[str, str] = {
     "SwimSpeed": "Swim Speed",
     "CritChance": "Crit Chance",
     "CritADS": "Crit Chance down sight",
+    "Zoom": "Zoom Factor",
     "MoveAccuracy": "Accuracy while moving",
     "BltSpeed": "Bullet Speed",
     "BltDrop": "Bullet Drop",
@@ -491,6 +492,20 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
         else:
             ingredients.append({"name": val, "qty": qty, "wildcard": False})
     return ingredients
+
+
+# Sight/scope magnification isn't a structured infobox field — it's only
+# mentioned in the description prose ("...with a 12x zoom factor...").
+# Reflex/Holographic sights mention no zoom at all (they're unmagnified red
+# dots), so those default to ×1 rather than being left blank.
+ZOOM_RE = re.compile(r"(\d+(?:\.\d+)?)\s*x\s+zoom factor", re.IGNORECASE)
+
+
+def attachment_zoom(fields: dict[str, str], wikitext: str) -> str | None:
+    if display_subtype(fields.get("SubType", "")) != "Sight":
+        return None
+    m = ZOOM_RE.search(wikitext)
+    return f"×{m.group(1)}" if m else "×1"
 
 
 def consumable_recipe(wikitext: str) -> dict[str, object] | None:
@@ -1044,6 +1059,10 @@ def build(refresh: bool = False) -> None:
         kind = fields.get("kind", "").strip().lower()
         if kind not in buckets:
             continue
+        if kind == "attachment":
+            zoom = attachment_zoom(fields, wikitext)
+            if zoom:
+                fields["Zoom"] = zoom
         image = fields.get("image", f"{title}.png")
         item = {
             "name": title,
