@@ -70,17 +70,21 @@ export default function DataTable({ data, lang }) {
   const axes = data.axes || []
 
   const [search, setSearch] = useState('')
-  const [view, setView] = useState('compact') // 'compact' | 'grid'
   const [abilityKey, setAbilityKey] = useState('') // selected stat for sort/filter
   const [abilityDir, setAbilityDir] = useState('desc')
   const [onlyWith, setOnlyWith] = useState(false)
   const [gridSortKey, setGridSortKey] = useState('__name')
   const [gridSortDir, setGridSortDir] = useState('asc')
   const [axisKey, setAxisKey] = useState(axes[0]?.key || '')
-  const [subMode, setSubMode] = useState('tabs') // 'tabs' | 'sections'
   const [selectedGroup, setSelectedGroup] = useState('')
 
   const currentAxis = axes.find((a) => a.key === axisKey) || axes[0] || null
+
+  // View is automatic: weapons always use the sortable grid; other categories
+  // show the compact overview for "All" and switch to a sortable grid once a
+  // specific sub-group is picked (focused comparison).
+  const view =
+    data.kind === 'weapon' ? 'grid' : selectedGroup ? 'grid' : 'compact'
 
   const searched = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -101,11 +105,9 @@ export default function DataTable({ data, lang }) {
     })
   }, [searched, abilityKey, onlyWith])
 
-  // Columns that at least one currently-visible row populates (hides blanks).
-  const visibleColumns = useMemo(
-    () => columns.filter((col) => base.some((it) => it.fields[col.key])),
-    [columns, base],
-  )
+  // Columns that at least one of the given rows populates (hides blank columns).
+  const columnsFor = (items) =>
+    columns.filter((col) => items.some((it) => it.fields[col.key]))
 
   const sortedBase = useMemo(() => {
     const items = [...base]
@@ -137,9 +139,9 @@ export default function DataTable({ data, lang }) {
   }
 
   const tabItems = useMemo(() => {
-    if (subMode !== 'tabs' || !selectedGroup) return sortedBase
+    if (!selectedGroup) return sortedBase
     return sortedBase.filter((it) => hasGroup(it, selectedGroup))
-  }, [sortedBase, subMode, selectedGroup, currentAxis])
+  }, [sortedBase, selectedGroup, currentAxis])
 
   // Groups present in the current (filtered) data, preserving axis order.
   const presentGroups = useMemo(() => {
@@ -175,6 +177,7 @@ export default function DataTable({ data, lang }) {
   }
 
   function renderTable(items) {
+    const cols = columnsFor(items)
     if (view === 'compact') {
       return (
         <table className="compact-table">
@@ -230,7 +233,7 @@ export default function DataTable({ data, lang }) {
               {t(UI.itemColumn, lang)}
               {gridIndicator('__name')}
             </th>
-            {visibleColumns.map((col) => (
+            {cols.map((col) => (
               <th
                 key={col.key}
                 className="sortable"
@@ -249,7 +252,7 @@ export default function DataTable({ data, lang }) {
               <td className="col-item sticky-col">
                 <ItemCell it={it} />
               </td>
-              {visibleColumns.map((col) => {
+              {cols.map((col) => {
                 const raw = it.fields[col.key]
                 return (
                   <td key={col.key} className={valueTone(raw)}>
@@ -261,7 +264,7 @@ export default function DataTable({ data, lang }) {
           ))}
           {items.length === 0 && (
             <tr>
-              <td className="empty" colSpan={visibleColumns.length + 1}>
+              <td className="empty" colSpan={cols.length + 1}>
                 {t(UI.noResults, lang)}
               </td>
             </tr>
@@ -271,7 +274,7 @@ export default function DataTable({ data, lang }) {
     )
   }
 
-  const shownCount = subMode === 'tabs' ? tabItems.length : sortedBase.length
+  const shownCount = selectedGroup ? tabItems.length : sortedBase.length
 
   return (
     <div className="table-panel">
@@ -284,58 +287,45 @@ export default function DataTable({ data, lang }) {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <div className="view-switch" role="group">
-          <button
-            className={view === 'compact' ? 'active' : ''}
-            onClick={() => setView('compact')}
-          >
-            {t(UI.viewCompact, lang)}
-          </button>
-          <button
-            className={view === 'grid' ? 'active' : ''}
-            onClick={() => setView('grid')}
-          >
-            {t(UI.viewGrid, lang)}
-          </button>
-        </div>
-
-        <div className="ability-control">
-          <label>
-            {t(UI.sortBy, lang)}:{' '}
-            <select
-              value={abilityKey}
-              onChange={(e) => setAbilityKey(e.target.value)}
-            >
-              <option value="">{t(UI.none, lang)}</option>
-              {columns.map((col) => (
-                <option key={col.key} value={col.key}>
-                  {columnLabel(col, lang)}
-                </option>
-              ))}
-            </select>
-          </label>
-          {abilityKey && (
-            <>
-              <button
-                className="dir-btn"
-                title={t(abilityDir === 'asc' ? UI.asc : UI.desc, lang)}
-                onClick={() =>
-                  setAbilityDir((d) => (d === 'asc' ? 'desc' : 'asc'))
-                }
+        {view === 'compact' && (
+          <div className="ability-control">
+            <label>
+              {t(UI.sortBy, lang)}:{' '}
+              <select
+                value={abilityKey}
+                onChange={(e) => setAbilityKey(e.target.value)}
               >
-                {abilityDir === 'asc' ? '▲' : '▼'}
-              </button>
-              <label className="only-with">
-                <input
-                  type="checkbox"
-                  checked={onlyWith}
-                  onChange={(e) => setOnlyWith(e.target.checked)}
-                />
-                {t(UI.onlyWith, lang)}
-              </label>
-            </>
-          )}
-        </div>
+                <option value="">{t(UI.none, lang)}</option>
+                {columns.map((col) => (
+                  <option key={col.key} value={col.key}>
+                    {columnLabel(col, lang)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            {abilityKey && (
+              <>
+                <button
+                  className="dir-btn"
+                  title={t(abilityDir === 'asc' ? UI.asc : UI.desc, lang)}
+                  onClick={() =>
+                    setAbilityDir((d) => (d === 'asc' ? 'desc' : 'asc'))
+                  }
+                >
+                  {abilityDir === 'asc' ? '▲' : '▼'}
+                </button>
+                <label className="only-with">
+                  <input
+                    type="checkbox"
+                    checked={onlyWith}
+                    onChange={(e) => setOnlyWith(e.target.checked)}
+                  />
+                  {t(UI.onlyWith, lang)}
+                </label>
+              </>
+            )}
+          </div>
+        )}
 
         <span className="count">
           {shownCount} {t(UI.count, lang)}
@@ -358,44 +348,27 @@ export default function DataTable({ data, lang }) {
             </div>
           )}
 
-          <div className="submode-switch" role="group">
+          <div className="group-pills">
             <button
-              className={subMode === 'tabs' ? 'active' : ''}
-              onClick={() => setSubMode('tabs')}
+              className={selectedGroup === '' ? 'pill active' : 'pill'}
+              onClick={() => setSelectedGroup('')}
             >
-              {t(UI.subTabs, lang)}
+              {t(UI.all, lang)} ({sortedBase.length})
             </button>
-            <button
-              className={subMode === 'sections' ? 'active' : ''}
-              onClick={() => setSubMode('sections')}
-            >
-              {t(UI.subSections, lang)}
-            </button>
-          </div>
-
-          {subMode === 'tabs' && (
-            <div className="group-pills">
+            {presentGroups.map((g) => (
               <button
-                className={selectedGroup === '' ? 'pill active' : 'pill'}
-                onClick={() => setSelectedGroup('')}
+                key={g.value}
+                className={selectedGroup === g.value ? 'pill active' : 'pill'}
+                onClick={() => setSelectedGroup(g.value)}
               >
-                {t(UI.all, lang)} ({sortedBase.length})
+                {groupLabel(g.value, g.label, lang)} ({g.count})
               </button>
-              {presentGroups.map((g) => (
-                <button
-                  key={g.value}
-                  className={selectedGroup === g.value ? 'pill active' : 'pill'}
-                  onClick={() => setSelectedGroup(g.value)}
-                >
-                  {groupLabel(g.value, g.label, lang)} ({g.count})
-                </button>
-              ))}
-            </div>
-          )}
+            ))}
+          </div>
         </div>
       )}
 
-      {subMode === 'sections' && currentAxis ? (
+      {selectedGroup === '' && currentAxis ? (
         <div className="sections">
           {presentGroups.map((g) => (
             <section key={g.value} className="group-section">
