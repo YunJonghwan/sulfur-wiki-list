@@ -1,0 +1,1116 @@
+{
+  "kind": "weapon",
+  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "SubType",
+      "label": "Type"
+    },
+    {
+      "key": "Ammo",
+      "label": "Ammunition"
+    },
+    {
+      "key": "Mode",
+      "label": "Mode"
+    },
+    {
+      "key": "Mag",
+      "label": "Magazine Size"
+    },
+    {
+      "key": "Weight",
+      "label": "Weight"
+    },
+    {
+      "key": "Damage",
+      "label": "Damage"
+    },
+    {
+      "key": "RPM",
+      "label": "Rate of Fire"
+    },
+    {
+      "key": "Spread",
+      "label": "Spread"
+    },
+    {
+      "key": "Recoil",
+      "label": "Recoil"
+    },
+    {
+      "key": "Durability",
+      "label": "Durability"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    }
+  ],
+  "items": [
+    {
+      "name": ".357 Balthazar",
+      "page": "https://sulfur.wiki.gg/wiki/.357_Balthazar",
+      "image": ".357 Balthazar.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Revolver",
+        "Ammo": "7.62mm",
+        "Mode": "Double Action",
+        "Mag": "4",
+        "Weight": "5",
+        "Damage": "160",
+        "RPM": "80",
+        "Spread": "2",
+        "Recoil": "20",
+        "Durability": "2500",
+        "SellVal": "1600",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "1889 Mario",
+      "page": "https://sulfur.wiki.gg/wiki/1889_Mario",
+      "image": "1889 Mario.png",
+      "fields": {
+        "GridSize": "5×2",
+        "SubType": "Shotgun",
+        "Ammo": "12Ga",
+        "Mode": "Break Action",
+        "Mag": "2",
+        "Weight": "16",
+        "Damage": "40×8",
+        "RPM": "500",
+        "Spread": "4",
+        "Recoil": "10",
+        "Durability": "2500",
+        "SellVal": "600",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Arbiter 2",
+      "page": "https://sulfur.wiki.gg/wiki/Arbiter_2",
+      "image": "Arbiter 2.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Shotgun",
+        "Ammo": "12Ga",
+        "Mode": "Break Action",
+        "Mag": "3",
+        "Weight": "8",
+        "Damage": "40×8×3",
+        "RPM": "45",
+        "Spread": "10",
+        "Recoil": "30",
+        "Durability": "1800",
+        "SellVal": "300",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Augusta",
+      "page": "https://sulfur.wiki.gg/wiki/Augusta",
+      "image": "Augusta.png",
+      "fields": {
+        "GridSize": "5×2",
+        "SubType": "Shotgun",
+        "Ammo": "Energy Cell",
+        "Mode": "Break Action",
+        "Mag": "6",
+        "Weight": "16",
+        "Damage": "50×3×3",
+        "RPM": "500",
+        "Spread": "4",
+        "Recoil": "0",
+        "Durability": "1800",
+        "SellVal": "1500",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Beck 8",
+      "page": "https://sulfur.wiki.gg/wiki/Beck_8",
+      "image": "Beck 8.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Semi",
+        "Mag": "26",
+        "Weight": "8",
+        "Damage": "60",
+        "RPM": "800",
+        "Spread": "3",
+        "Recoil": "3",
+        "Durability": "2250",
+        "SellVal": "900"
+      }
+    },
+    {
+      "name": "Blackwater",
+      "page": "https://sulfur.wiki.gg/wiki/Blackwater",
+      "image": "Blackwater.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Revolver",
+        "Ammo": ".50 BMG",
+        "Mode": "Semi-automatic",
+        "Mag": "12",
+        "Weight": "5",
+        "Damage": "320",
+        "RPM": "200",
+        "Spread": "2",
+        "Recoil": "35",
+        "Durability": "3000",
+        "SellVal": "1600"
+      }
+    },
+    {
+      "name": "Breacher 8",
+      "page": "https://sulfur.wiki.gg/wiki/Breacher_8",
+      "image": "Breacher 8.png",
+      "fields": {
+        "GridSize": "5×2",
+        "SubType": "Shotgun",
+        "Ammo": "12Ga",
+        "Mode": "Special",
+        "Mag": "8",
+        "Weight": "35",
+        "Damage": "40×8(×1-8)",
+        "RPM": "Variable",
+        "Spread": "10",
+        "Recoil": "20",
+        "Durability": "1200",
+        "SellVal": "950"
+      }
+    },
+    {
+      "name": "Bronco 89",
+      "page": "https://sulfur.wiki.gg/wiki/Bronco_89",
+      "image": "bronco 89.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Manual Cocking",
+        "Mag": "10",
+        "Weight": "5",
+        "Damage": "90",
+        "RPM": "80",
+        "Spread": "2",
+        "Recoil": "4",
+        "Durability": "2500",
+        "SellVal": "750",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Catacoil Rapid X",
+      "page": "https://sulfur.wiki.gg/wiki/Catacoil_Rapid_X",
+      "image": "Catacoil Rapid X.png",
+      "fields": {
+        "GridSize": "3x2",
+        "SubType": "Assault Rifle",
+        "Ammo": "Energy Cell",
+        "Mode": "Automatic",
+        "Mag": "30",
+        "Weight": "8",
+        "Damage": "60",
+        "RPM": "893",
+        "Spread": "2.5",
+        "Recoil": "0",
+        "Durability": "3300",
+        "SellVal": "4000",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Cavalier",
+      "page": "https://sulfur.wiki.gg/wiki/Cavalier",
+      "image": "Cavalier.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Burst (3)",
+        "Mag": "30",
+        "Weight": "5",
+        "Damage": "60",
+        "RPM": "400",
+        "Spread": "3",
+        "Recoil": "1",
+        "Durability": "2700",
+        "SellVal": "2000"
+      }
+    },
+    {
+      "name": "Chat-Pardeur 98",
+      "page": "https://sulfur.wiki.gg/wiki/Chat-Pardeur_98",
+      "image": "Chat-Pardeur 98.png",
+      "fields": {
+        "GridSize": "5×2",
+        "SubType": "Light Machine Gun",
+        "Ammo": "7.62mm",
+        "Mode": "Auto",
+        "Mag": "20",
+        "Weight": "35",
+        "Damage": "120",
+        "RPM": "400",
+        "Spread": "3",
+        "Recoil": "3",
+        "Durability": "3200",
+        "SellVal": "1750"
+      }
+    },
+    {
+      "name": "Chimera Rapid",
+      "page": "https://sulfur.wiki.gg/wiki/Chimera_Rapid",
+      "image": "Chimera Rapid.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "SMG",
+        "Ammo": "5.56mm",
+        "Mode": "Automatic",
+        "Mag": "22",
+        "Weight": "8",
+        "Damage": "88",
+        "RPM": "750",
+        "Spread": "3",
+        "Recoil": "2",
+        "Durability": "2800",
+        "SellVal": "2000"
+      }
+    },
+    {
+      "name": "Corpsemaker",
+      "page": "https://sulfur.wiki.gg/wiki/Corpsemaker",
+      "image": "Corpsemaker.png",
+      "fields": {
+        "GridSize": "3x2",
+        "SubType": "Assault Rifle",
+        "Ammo": "5.56mm",
+        "Mode": "Auto",
+        "Mag": "30",
+        "Weight": "16",
+        "Damage": "96",
+        "RPM": "666",
+        "Spread": "2.5",
+        "Recoil": "3",
+        "Durability": "3200",
+        "SellVal": "2000",
+        "SoldBy": "Stiffleg, Haukland Rep., Qiosk"
+      }
+    },
+    {
+      "name": "D4RT",
+      "page": "https://sulfur.wiki.gg/wiki/D4RT",
+      "image": "D4RT.png",
+      "fields": {
+        "GridSize": "6×2",
+        "SubType": "Sniper",
+        "Ammo": "Energy Cell",
+        "Mode": "Break Action",
+        "Mag": "1",
+        "Weight": "16",
+        "Damage": "500",
+        "RPM": "100",
+        "Spread": "1.5",
+        "Recoil": "0",
+        "Durability": "4000",
+        "SellVal": "1600",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Deathstar PG",
+      "page": "https://sulfur.wiki.gg/wiki/Deathstar_PG",
+      "image": "Deathstar PG.png",
+      "fields": {
+        "GridSize": "3x2",
+        "SubType": "Submachine Gun",
+        "Ammo": "5.56mm",
+        "Mode": "Semi",
+        "Mag": "15",
+        "Weight": "8",
+        "Damage": "80",
+        "RPM": "450",
+        "Spread": "2",
+        "Recoil": "1.5",
+        "Durability": "3600",
+        "SellVal": "1600"
+      }
+    },
+    {
+      "name": "Dolphin 99",
+      "page": "https://sulfur.wiki.gg/wiki/Dolphin_99",
+      "image": "Dolphin 99.png",
+      "fields": {
+        "GridSize": "6×2",
+        "SubType": "Sniper",
+        "Ammo": ".50 BMG",
+        "Mode": "Manual Cocking",
+        "Mag": "5",
+        "Weight": "16",
+        "Damage": "500",
+        "RPM": "100",
+        "Spread": "1.5",
+        "Recoil": "8",
+        "Durability": "1000",
+        "SellVal": "1600",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "Drifter 9",
+      "page": "https://sulfur.wiki.gg/wiki/Drifter_9",
+      "image": "Drifter 9.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Submachine Gun",
+        "Ammo": "9mm",
+        "Mode": "Automatic",
+        "Mag": "20",
+        "Weight": "8",
+        "Damage": "60",
+        "RPM": "350",
+        "Spread": "3",
+        "Recoil": "2",
+        "Durability": "3300",
+        "SellVal": "250",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Duhar",
+      "page": "https://sulfur.wiki.gg/wiki/Duhar",
+      "image": "Duhar.png",
+      "fields": {
+        "GridSize": "5x2",
+        "SubType": "Light Machine Gun",
+        "Ammo": "7.62mm",
+        "Mode": "Auto",
+        "Mag": "40",
+        "Weight": "16",
+        "Damage": "100",
+        "RPM": "1400",
+        "Spread": "4",
+        "Recoil": "2",
+        "Durability": "2500",
+        "SellVal": "4000",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Farsight",
+      "page": "https://sulfur.wiki.gg/wiki/Farsight",
+      "image": "Farsight.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Rifle",
+        "Ammo": "5.56mm",
+        "Mode": "Semi",
+        "Mag": "8",
+        "Weight": "16",
+        "Damage": "176",
+        "RPM": "450",
+        "Spread": "2",
+        "Recoil": "2.5",
+        "Durability": "2000",
+        "SellVal": "2750",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Ferryman",
+      "page": "https://sulfur.wiki.gg/wiki/Ferryman",
+      "image": "Ferryman.png",
+      "fields": {
+        "GridSize": "3x2",
+        "SubType": "Submachine Gun",
+        "Ammo": ".50 BMG",
+        "Mode": "Automatic",
+        "Mag": "20",
+        "Weight": "16",
+        "Damage": "300",
+        "RPM": "580",
+        "Spread": "2",
+        "Recoil": "12",
+        "Durability": "2000",
+        "SellVal": "4500",
+        "SoldBy": "Haukland Rep., Qiosk"
+      }
+    },
+    {
+      "name": "Flicker",
+      "page": "https://sulfur.wiki.gg/wiki/Flicker",
+      "image": "flicker.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Semi",
+        "Mag": "5",
+        "Weight": "0",
+        "Damage": "60",
+        "RPM": "200",
+        "Spread": "3",
+        "Recoil": "10",
+        "Durability": "800",
+        "SellVal": "1000",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Flock 76",
+      "page": "https://sulfur.wiki.gg/wiki/Flock_76",
+      "image": "Flock 76.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Shotgun",
+        "Ammo": "12Ga",
+        "Mode": "Auto",
+        "Mag": "10",
+        "Weight": "8",
+        "Damage": "40×8",
+        "RPM": "470",
+        "Spread": "7",
+        "Recoil": "17",
+        "Durability": "2100",
+        "SellVal": "1750",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Gravekeeper",
+      "page": "https://sulfur.wiki.gg/wiki/Gravekeeper",
+      "image": "Gravekeeper.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "5.56mm",
+        "Mode": "Semi",
+        "Mag": "7",
+        "Weight": "5",
+        "Damage": "80",
+        "RPM": "300",
+        "Spread": "2",
+        "Recoil": "4",
+        "Durability": "3000",
+        "SellVal": "500",
+        "SoldBy": "Stiffleg, Haukland Rep., Qiosk"
+      }
+    },
+    {
+      "name": "Hell 'N' Back",
+      "page": "https://sulfur.wiki.gg/wiki/Hell_%27N%27_Back",
+      "image": "Hell 'N' Back.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Pistol",
+        "Ammo": "7.62mm",
+        "Mode": "Semi",
+        "Mag": "14",
+        "Weight": "5",
+        "Damage": "100",
+        "RPM": "450",
+        "Spread": "2.5",
+        "Recoil": "12",
+        "Durability": "2000",
+        "SellVal": "1500",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Impala Gravita",
+      "page": "https://sulfur.wiki.gg/wiki/Impala_Gravita",
+      "image": "Impala Gravita.png",
+      "fields": {
+        "GridSize": "5x2",
+        "SubType": "Sniper",
+        "Ammo": "7.62mm",
+        "Mode": "Manual Bowstring Action",
+        "Mag": "8",
+        "Weight": "16",
+        "Damage": "400",
+        "RPM": "100",
+        "Spread": "1",
+        "Recoil": "20",
+        "Durability": "2200",
+        "SellVal": "1600",
+        "SoldBy": "Stiffleg, Jaques De Fector, Qiosk"
+      }
+    },
+    {
+      "name": "Knop .22",
+      "page": "https://sulfur.wiki.gg/wiki/Knop_.22",
+      "image": "Knop .22.png",
+      "fields": {
+        "GridSize": "4x2",
+        "SubType": "Rifle",
+        "Ammo": "9mm",
+        "Mode": "Single",
+        "Mag": "1",
+        "Weight": "5",
+        "Damage": "120",
+        "RPM": "480",
+        "Spread": "2",
+        "Recoil": "3",
+        "Durability": "3000",
+        "SellVal": "750",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Longboy",
+      "page": "https://sulfur.wiki.gg/wiki/Longboy",
+      "image": "Longboy.png",
+      "fields": {
+        "GridSize": "7×2",
+        "SubType": "Sniper",
+        "Ammo": ".50 BMG",
+        "Mode": "Semi-Automatic",
+        "Mag": "6",
+        "Weight": "25",
+        "Damage": "400",
+        "RPM": "100",
+        "Spread": "1",
+        "Recoil": "8",
+        "Durability": "1200",
+        "SellVal": "4500",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "M11A2 Fisk",
+      "page": "https://sulfur.wiki.gg/wiki/M11A2_Fisk",
+      "image": "M11A2 Fisk.png",
+      "fields": {
+        "GridSize": "4x2",
+        "SubType": "Assault Rifle",
+        "Ammo": "5.56mm",
+        "Mode": "Automatic",
+        "Mag": "30",
+        "Weight": "16",
+        "Damage": "96",
+        "RPM": "740",
+        "Spread": "2",
+        "Recoil": "2",
+        "Durability": "3000",
+        "SellVal": "3850",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "M182 Pierre-Fusil",
+      "page": "https://sulfur.wiki.gg/wiki/M182_Pierre-Fusil",
+      "image": "M182 Pierre-Fusil.png",
+      "fields": {
+        "GridSize": "5x2",
+        "SubType": "Rifle",
+        "Ammo": "7.62mm",
+        "Mode": "Semi",
+        "Mag": "6",
+        "Weight": "16",
+        "Damage": "200",
+        "RPM": "350",
+        "Spread": "1",
+        "Recoil": "5",
+        "Durability": "2200",
+        "SellVal": "2500",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "M3 Termite",
+      "page": "https://sulfur.wiki.gg/wiki/M3_Termite",
+      "image": "M3 Termite.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Submachine Gun",
+        "Ammo": "9mm",
+        "Mode": "Burst (3)",
+        "Mag": "30",
+        "Weight": "8",
+        "Damage": "66",
+        "RPM": "800",
+        "Spread": "2.5",
+        "Recoil": "1",
+        "Durability": "3000",
+        "SellVal": "700",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Majordome",
+      "page": "https://sulfur.wiki.gg/wiki/Majordome",
+      "image": "Majordome.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Shotgun",
+        "Ammo": "12Ga",
+        "Mode": "Semi",
+        "Mag": "6",
+        "Weight": "16",
+        "Damage": "40×8",
+        "RPM": "350",
+        "Spread": "3.5",
+        "Recoil": "17",
+        "Durability": "2200",
+        "SellVal": "4000",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Mossman",
+      "page": "https://sulfur.wiki.gg/wiki/Mossman",
+      "image": "Mossman.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Shotgun",
+        "Ammo": "12Ga",
+        "Mode": "Pump Action",
+        "Mag": "6",
+        "Weight": "16",
+        "Damage": "40×8",
+        "RPM": "80",
+        "Spread": "5",
+        "Recoil": "15",
+        "Durability": "2400",
+        "SellVal": "750",
+        "SoldBy": "Stiffleg, Skrip, Qiosk"
+      }
+    },
+    {
+      "name": "Neuraxis F22",
+      "page": "https://sulfur.wiki.gg/wiki/Neuraxis_F22",
+      "image": "Neuraxis F22.png",
+      "fields": {
+        "GridSize": "5x2",
+        "SubType": "Light Machine Gun",
+        "Ammo": "Energy Cell",
+        "Mode": "Auto",
+        "Mag": "100",
+        "Weight": "25",
+        "Damage": "50",
+        "RPM": "400",
+        "Spread": "20",
+        "Recoil": "0",
+        "Durability": "4200",
+        "SellVal": "2500",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "P38 Dirk",
+      "page": "https://sulfur.wiki.gg/wiki/P38_Dirk",
+      "image": "P38 Dirk.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Semi",
+        "Mag": "7",
+        "Weight": "5",
+        "Damage": "60",
+        "RPM": "450",
+        "Spread": "2",
+        "Recoil": "2",
+        "Durability": "2000",
+        "SellVal": "1"
+      }
+    },
+    {
+      "name": "Palehorse Topclipper",
+      "page": "https://sulfur.wiki.gg/wiki/Palehorse_Topclipper",
+      "image": "Palehorse Topclipper.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Revolver",
+        "Ammo": "5.56mm",
+        "Mode": "Single Action",
+        "Mag": "7",
+        "Weight": "5",
+        "Damage": "128",
+        "RPM": "80",
+        "Spread": "2",
+        "Recoil": "9",
+        "Durability": "2800",
+        "SellVal": "1500",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Ploika Compact",
+      "page": "https://sulfur.wiki.gg/wiki/Ploika_Compact",
+      "image": "Ploika Compact.png",
+      "fields": {
+        "GridSize": "2x2",
+        "SubType": "Submachine Gun",
+        "Ammo": "9mm",
+        "Mode": "Auto",
+        "Mag": "40",
+        "Weight": "8",
+        "Damage": "60",
+        "RPM": "1500",
+        "Spread": "5",
+        "Recoil": "3",
+        "Durability": "3900",
+        "SellVal": "455",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Rektor 100rd",
+      "page": "https://sulfur.wiki.gg/wiki/Rektor_100rd",
+      "image": "Rektor 100rd.png",
+      "fields": {
+        "GridSize": "5x2",
+        "SubType": "Light Machine Gun",
+        "Ammo": "7.62mm",
+        "Mode": "Auto",
+        "Mag": "100",
+        "Weight": "35",
+        "Damage": "100",
+        "RPM": "800",
+        "Spread": "4",
+        "Recoil": "2",
+        "Durability": "3400",
+        "SellVal": "4000",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "Rokua .308",
+      "page": "https://sulfur.wiki.gg/wiki/Rokua_.308",
+      "image": "Rokua .308.png",
+      "fields": {
+        "GridSize": "5x2",
+        "SubType": "Sniper",
+        "Ammo": "7.62mm",
+        "Mode": "Bolt Action",
+        "Mag": "5",
+        "Weight": "25",
+        "Damage": "200",
+        "RPM": "480",
+        "Spread": "1",
+        "Recoil": "5",
+        "Durability": "3500",
+        "SellVal": "3500",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Salamander",
+      "page": "https://sulfur.wiki.gg/wiki/Salamander",
+      "image": "Salamander.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Pistol",
+        "Ammo": "7.62mm",
+        "Mode": "Semi",
+        "Mag": "8",
+        "Weight": "5",
+        "Damage": "120",
+        "RPM": "170",
+        "Spread": "1.5",
+        "Recoil": "15",
+        "Durability": "2000",
+        "SellVal": "2500",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Snut .38",
+      "page": "https://sulfur.wiki.gg/wiki/Snut_.38",
+      "image": "Snut .38.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Revolver",
+        "Ammo": "9mm",
+        "Mode": "Single Action",
+        "Mag": "6",
+        "Weight": "5",
+        "Damage": "96",
+        "RPM": "80",
+        "Spread": "2.5",
+        "Recoil": "5",
+        "Durability": "3300",
+        "SellVal": "250",
+        "SoldBy": "Stiffleg, Skrip, Qiosk"
+      }
+    },
+    {
+      "name": "Socom 9",
+      "page": "https://sulfur.wiki.gg/wiki/Socom_9",
+      "image": "Socom 9.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Semi",
+        "Mag": "12",
+        "Weight": "5",
+        "Damage": "60",
+        "RPM": "600",
+        "Spread": "2",
+        "Recoil": "2",
+        "Durability": "2200",
+        "SellVal": "950",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Socom ACR",
+      "page": "https://sulfur.wiki.gg/wiki/Socom_ACR",
+      "image": "Socom ACR.png",
+      "fields": {
+        "GridSize": "4×2",
+        "SubType": "Assault Rifle",
+        "Ammo": "9mm",
+        "Mode": "Burst (2)",
+        "Mag": "42",
+        "Weight": "16",
+        "Damage": "72",
+        "RPM": "900",
+        "Spread": "2",
+        "Recoil": "1.5",
+        "Durability": "4700",
+        "SellVal": "1750",
+        "BuyVal": "3500"
+      }
+    },
+    {
+      "name": "Songbird",
+      "page": "https://sulfur.wiki.gg/wiki/Songbird",
+      "image": "Songbird.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Submachine Gun",
+        "Ammo": "9mm",
+        "Mode": "Auto",
+        "Mag": "40",
+        "Weight": "8",
+        "Damage": "60",
+        "RPM": "950",
+        "Spread": "3.5",
+        "Recoil": "2.5",
+        "Durability": "4700",
+        "SellVal": "3250",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Star & Witness",
+      "page": "https://sulfur.wiki.gg/wiki/Star_%26_Witness",
+      "image": "Star & Witness.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "9mm",
+        "Mode": "Semi",
+        "Mag": "30",
+        "Weight": "5",
+        "Damage": "60",
+        "RPM": "600",
+        "Spread": "2.5",
+        "Recoil": "2",
+        "Durability": "2100",
+        "SellVal": "1250",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Tailor Marksman MKII",
+      "page": "https://sulfur.wiki.gg/wiki/Tailor_Marksman_MKII",
+      "image": "Tailor Marksman MKII.png",
+      "fields": {
+        "GridSize": "4x2",
+        "SubType": "Rifle",
+        "Ammo": "5.56mm",
+        "Mode": "Single Action",
+        "Mag": "8",
+        "Weight": "8",
+        "Damage": "160",
+        "RPM": "80",
+        "Spread": "2",
+        "Recoil": "10",
+        "Durability": "2800",
+        "SellVal": "1750",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Terrier URB.",
+      "page": "https://sulfur.wiki.gg/wiki/Terrier_URB.",
+      "image": "Terrier URB..png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Pistol",
+        "Ammo": "5.56mm",
+        "Mode": "Semi",
+        "Mag": "14",
+        "Weight": "5",
+        "Damage": "104",
+        "RPM": "800",
+        "Spread": "2.5",
+        "Recoil": "5",
+        "Durability": "3700",
+        "SellVal": "1500"
+      }
+    },
+    {
+      "name": "Type 80 Typhoon",
+      "page": "https://sulfur.wiki.gg/wiki/Type_80_Typhoon",
+      "image": "Type 80 Typhoon.png",
+      "fields": {
+        "GridSize": "4x2",
+        "SubType": "Assault Rifle",
+        "Ammo": "7.62mm",
+        "Mode": "Automatic",
+        "Mag": "20",
+        "Weight": "16",
+        "Damage": "120",
+        "RPM": "575",
+        "Spread": "1.5",
+        "Recoil": "4",
+        "Durability": "2700",
+        "SellVal": "2500",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Unknown",
+      "page": "https://sulfur.wiki.gg/wiki/Unknown",
+      "image": "unknown.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Pistol",
+        "Ammo": "Energy Cell",
+        "Mode": "Semi",
+        "Mag": "10",
+        "Weight": "5",
+        "Damage": "50",
+        "RPM": "600",
+        "Spread": "1",
+        "Recoil": "0",
+        "Durability": "4000",
+        "SellVal": "1200",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "Valet",
+      "page": "https://sulfur.wiki.gg/wiki/Valet",
+      "image": "Valet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Submachine Gun",
+        "Ammo": "9mm",
+        "Mode": "Automatic",
+        "Mag": "24",
+        "Weight": "8",
+        "Damage": "72",
+        "RPM": "600",
+        "Spread": "2.5",
+        "Recoil": "2",
+        "Durability": "3000",
+        "SellVal": "2400",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "Vrede",
+      "page": "https://sulfur.wiki.gg/wiki/Vrede",
+      "image": "Vrede.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Submachine Gun",
+        "Ammo": "9mm",
+        "Mode": "Automatic",
+        "Mag": "30",
+        "Weight": "8",
+        "Damage": "60",
+        "RPM": "800",
+        "Spread": "2.5",
+        "Recoil": "2",
+        "Durability": "3900",
+        "SellVal": "1500",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Warpig",
+      "page": "https://sulfur.wiki.gg/wiki/Warpig",
+      "image": "Warpig.png",
+      "fields": {
+        "GridSize": "5×2",
+        "SubType": "Light Machine Gun",
+        "Ammo": "5.56mm",
+        "Mode": "Auto",
+        "Mag": "55",
+        "Weight": "16",
+        "Damage": "80",
+        "RPM": "600",
+        "Spread": "2.5",
+        "Recoil": "3",
+        "Durability": "3500",
+        "SellVal": "3500"
+      }
+    },
+    {
+      "name": "Wingman",
+      "page": "https://sulfur.wiki.gg/wiki/Wingman",
+      "image": "Wingman.png",
+      "fields": {
+        "GridSize": "4×2",
+        "SubType": "Assault Rifle",
+        "Ammo": "7.62mm",
+        "Mode": "Auto",
+        "Mag": "18",
+        "Weight": "16",
+        "Damage": "120",
+        "RPM": "500",
+        "Spread": "1.5",
+        "Recoil": "5",
+        "Durability": "3300",
+        "SellVal": "3000",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Wyatt PULSAR",
+      "page": "https://sulfur.wiki.gg/wiki/Wyatt_PULSAR",
+      "image": "Wyatt PULSAR.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Revolver",
+        "Ammo": "Energy Cell",
+        "Mode": "Semi/Charge",
+        "Mag": "18",
+        "Weight": "5",
+        "Damage": "80",
+        "RPM": "200",
+        "Spread": "1.5",
+        "Recoil": "0",
+        "Durability": "3600",
+        "SellVal": "1000",
+        "SoldBy": "Stiffleg"
+      }
+    }
+  ]
+}

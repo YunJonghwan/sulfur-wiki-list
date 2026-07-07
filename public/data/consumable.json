@@ -1,0 +1,1276 @@
+{
+  "kind": "consumable",
+  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "SubType",
+      "label": "Type"
+    },
+    {
+      "key": "Theme",
+      "label": "Theme"
+    },
+    {
+      "key": "Recipes",
+      "label": "Recipes Included"
+    },
+    {
+      "key": "Heal",
+      "label": "Healing"
+    },
+    {
+      "key": "RmvFire",
+      "label": "Removes Fire"
+    },
+    {
+      "key": "RmvFrost",
+      "label": "Removes Frost"
+    },
+    {
+      "key": "RmvPsn",
+      "label": "Removes Poison"
+    },
+    {
+      "key": "Charisma",
+      "label": "Charisma"
+    },
+    {
+      "key": "Coyote",
+      "label": "Coyote Time"
+    },
+    {
+      "key": "CritADS",
+      "label": "Crit Chance down sight"
+    },
+    {
+      "key": "Sprint",
+      "label": "Sprint Bonus"
+    },
+    {
+      "key": "MoveAccuracy",
+      "label": "Accuracy while moving"
+    },
+    {
+      "key": "JumpPwr",
+      "label": "Jump Power"
+    },
+    {
+      "key": "ExtraJumps",
+      "label": "Extra Jumps"
+    },
+    {
+      "key": "Speed",
+      "label": "Movement Speed"
+    },
+    {
+      "key": "FireRst",
+      "label": "Fire Resistance"
+    },
+    {
+      "key": "FrostRst",
+      "label": "Frost Resistance"
+    },
+    {
+      "key": "PsnRst",
+      "label": "Poison Resistance"
+    },
+    {
+      "key": "ElecRst",
+      "label": "Electric Resistance"
+    },
+    {
+      "key": "MeleeDmg",
+      "label": "Melee Damage"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    },
+    {
+      "key": "SlowMo",
+      "label": "Slow Motion"
+    }
+  ],
+  "items": [
+    {
+      "name": "Admiral White Extra Strong",
+      "page": "https://sulfur.wiki.gg/wiki/Admiral_White_Extra_Strong",
+      "image": "Admiral White Extra Strong.png",
+      "fields": {
+        "GridSize": "1x1",
+        "Speed": "+50% for 7 seconds",
+        "SlowMo": "+400% for 7 seconds",
+        "SubType": "Drug & Remedy",
+        "SellVal": "90",
+        "SoldBy": "Blond Magus, Qiosk"
+      }
+    },
+    {
+      "name": "Americano",
+      "page": "https://sulfur.wiki.gg/wiki/Americano",
+      "image": "Americano.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Beverage",
+        "Heal": "15 health over 10 seconds",
+        "RmvFrost": "✔",
+        "RmvPsn": "✔",
+        "SellVal": "18"
+      }
+    },
+    {
+      "name": "Anti-Poison Gum",
+      "page": "https://sulfur.wiki.gg/wiki/Anti-Poison_Gum",
+      "image": "Anti-Poison Gum.png",
+      "fields": {
+        "GridSize": "1×1",
+        "PsnRst": "+80 for 120 seconds",
+        "SubType": "Drug & Remedy",
+        "SellVal": "40",
+        "SoldBy": "Blond Magus, Qiosk"
+      }
+    },
+    {
+      "name": "Aspic",
+      "page": "https://sulfur.wiki.gg/wiki/Aspic",
+      "image": "Aspic.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Food",
+        "Heal": "15 health over 0.1 seconds",
+        "SellVal": "45"
+      }
+    },
+    {
+      "name": "Banana",
+      "page": "https://sulfur.wiki.gg/wiki/Banana",
+      "image": "Banana.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "10 Health over 10 seconds",
+        "SellVal": "15"
+      }
+    },
+    {
+      "name": "Banana Bread",
+      "page": "https://sulfur.wiki.gg/wiki/Banana_Bread",
+      "image": "Banana Bread.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Food",
+        "Heal": "30 Health over 10 seconds",
+        "SellVal": "45"
+      }
+    },
+    {
+      "name": "Banana Sulfs",
+      "page": "https://sulfur.wiki.gg/wiki/Banana_Sulfs",
+      "image": "Banana Sulfs.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food",
+        "Heal": "20 health over 1 seconds",
+        "SellVal": "10"
+      }
+    },
+    {
+      "name": "Bark Bread",
+      "page": "https://sulfur.wiki.gg/wiki/Bark_Bread",
+      "image": "Bark_Bread.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "10 health over 10 seconds",
+        "SellVal": "25"
+      }
+    },
+    {
+      "name": "Beans",
+      "page": "https://sulfur.wiki.gg/wiki/Beans",
+      "image": "Beans.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "25 health over 10 seconds",
+        "SellVal": "60"
+      }
+    },
+    {
+      "name": "Beef Jerky",
+      "page": "https://sulfur.wiki.gg/wiki/Beef_Jerky",
+      "image": "Beef_Jerky.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "10 health over 10 seconds",
+        "SellVal": "30",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Berries",
+      "page": "https://sulfur.wiki.gg/wiki/Berries",
+      "image": "Berries.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "10 health over 10 seconds",
+        "SellVal": "20",
+        "SoldBy": "Jaques De Fector"
+      }
+    },
+    {
+      "name": "Berry Jam",
+      "page": "https://sulfur.wiki.gg/wiki/Berry_Jam",
+      "image": "Berry Jam.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "15 health over 1 seconds",
+        "SellVal": "45",
+        "SoldBy": "Jaques De Fector"
+      }
+    },
+    {
+      "name": "Berry Jam (Unsweetened)",
+      "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29",
+      "image": "Berry Jam (Unsweetened).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "10 Health over 2.5 seconds",
+        "SellVal": "35"
+      }
+    },
+    {
+      "name": "Biscuits And Gravy",
+      "page": "https://sulfur.wiki.gg/wiki/Biscuits_And_Gravy",
+      "image": "Biscuits And Gravy.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "25 health over 10 seconds",
+        "SellVal": "65",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Black Pepper",
+      "page": "https://sulfur.wiki.gg/wiki/Black_Pepper",
+      "image": "Black Pepper.png",
+      "fields": {
+        "SubType": "Food, Ingredient",
+        "GridSize": "1×1",
+        "SellVal": "15",
+        "Heal": "1 health over 10 seconds",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Blood",
+      "page": "https://sulfur.wiki.gg/wiki/Blood",
+      "image": "Blood.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Ingredient",
+        "Heal": "5 health over 10 seconds",
+        "SellVal": "30"
+      }
+    },
+    {
+      "name": "Blood of the Earth Mother",
+      "page": "https://sulfur.wiki.gg/wiki/Blood_of_the_Earth_Mother",
+      "image": "Blood of the Earth Mother.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Amulet Recharge",
+        "SellVal": "500",
+        "SoldBy": "Rat Queen"
+      }
+    },
+    {
+      "name": "Boba Tea",
+      "page": "https://sulfur.wiki.gg/wiki/Boba_Tea",
+      "image": "Boba Tea.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Beverage",
+        "Heal": "15 health over 10 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓",
+        "SellVal": "30",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Bottled Caviar",
+      "page": "https://sulfur.wiki.gg/wiki/Bottled_Caviar",
+      "image": "Bottled Caviar.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "25 health over 10 seconds",
+        "SellVal": "60",
+        "SoldBy": "Bill"
+      }
+    },
+    {
+      "name": "Bread",
+      "page": "https://sulfur.wiki.gg/wiki/Bread",
+      "image": "Bread.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "SellVal": "45",
+        "Heal": "15 health over 10 seconds"
+      }
+    },
+    {
+      "name": "Broth",
+      "page": "https://sulfur.wiki.gg/wiki/Broth",
+      "image": "Broth.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "10 health over 10 seconds",
+        "SellVal": "30"
+      }
+    },
+    {
+      "name": "Buddy Sandwich",
+      "page": "https://sulfur.wiki.gg/wiki/Buddy_Sandwich",
+      "image": "Buddy Sandwich.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Food",
+        "Heal": "15 health over 5 seconds",
+        "SellVal": "500"
+      }
+    },
+    {
+      "name": "Butter",
+      "page": "https://sulfur.wiki.gg/wiki/Butter",
+      "image": "Butter.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "15 health over 10 seconds",
+        "SellVal": "30",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Butter Sandwich",
+      "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich",
+      "image": "Butter Sandwich.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Food, Ingredient",
+        "SellVal": "30",
+        "Heal": "15 health over 5 seconds"
+      }
+    },
+    {
+      "name": "Buttermilk",
+      "page": "https://sulfur.wiki.gg/wiki/Buttermilk",
+      "image": "Buttermilk.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Milk, Ingredient",
+        "SellVal": "25",
+        "Heal": "15 health over 10 seconds",
+        "MoveAccuracy": "+50% for 120 seconds"
+      }
+    },
+    {
+      "name": "Cacao",
+      "page": "https://sulfur.wiki.gg/wiki/Cacao",
+      "image": "Cacao.png",
+      "fields": {
+        "SubType": "Food, Ingredient",
+        "GridSize": "1×1",
+        "Heal": "5 health over 10 seconds",
+        "SellVal": "20"
+      }
+    },
+    {
+      "name": "Cactus",
+      "page": "https://sulfur.wiki.gg/wiki/Cactus",
+      "image": "Cactus.png",
+      "fields": {
+        "SubType": "Food, Ingredient",
+        "GridSize": "2×1",
+        "Heal": "3 Health over 10 seconds",
+        "SellVal": "20",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Candy Cane",
+      "page": "https://sulfur.wiki.gg/wiki/Candy_Cane",
+      "image": "Candy_Cane.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Sweets, Food",
+        "SellVal": "45",
+        "Heal": "20 health over 0.1 seconds"
+      }
+    },
+    {
+      "name": "Cappucino",
+      "page": "https://sulfur.wiki.gg/wiki/Cappucino",
+      "image": "Cappucino.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Beverage",
+        "Heal": "+35 health over 10 seconds",
+        "RmvPsn": "✓",
+        "RmvFrost": "✓",
+        "SellVal": "18",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Cevapi",
+      "page": "https://sulfur.wiki.gg/wiki/Cevapi",
+      "image": "Cevapi.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Food",
+        "SellVal": "110",
+        "BuyVal": "220",
+        "SoldBy": "?",
+        "Heal": "25 health over 10 seconds"
+      }
+    },
+    {
+      "name": "Cheeseburger",
+      "page": "https://sulfur.wiki.gg/wiki/Cheeseburger",
+      "image": "Cheeseburger.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food",
+        "Heal": "+45 health over 10 seconds",
+        "SellVal": "125",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Chocolate Ball",
+      "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball",
+      "image": "Chocolate Ball.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Sweets, Food",
+        "Heal": "+20 health over 10 seconds",
+        "SellVal": "43",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Delicacies of the Forest",
+      "page": "https://sulfur.wiki.gg/wiki/Delicacies_of_the_Forest",
+      "image": "Delicacies of the Forest.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Forest",
+        "Recipes": "205",
+        "SellVal": "7500",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Double Cheeseburger",
+      "page": "https://sulfur.wiki.gg/wiki/Double_Cheeseburger",
+      "image": "Double Cheeseburger.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "300",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Eating as Royals",
+      "page": "https://sulfur.wiki.gg/wiki/Eating_as_Royals",
+      "image": "Eating as Royals.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Castle",
+        "Recipes": "237",
+        "SellVal": "10000",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Egg Toddy",
+      "page": "https://sulfur.wiki.gg/wiki/Egg_Toddy",
+      "image": "Egg Toddy.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Beverage",
+        "Heal": "10 health over 10 seconds",
+        "RmvPsn": "✓",
+        "Charisma": "+30 for 240 seconds",
+        "SellVal": "90"
+      }
+    },
+    {
+      "name": "Energy Gum",
+      "page": "https://sulfur.wiki.gg/wiki/Energy_Gum",
+      "image": "Energy Gum.png",
+      "fields": {
+        "GridSize": "1×1",
+        "FireRst": "+50 for 90 seconds",
+        "FrostRst": "+50 for 90 seconds",
+        "ElecRst": "+50 for 90 seconds",
+        "SellVal": "40",
+        "SubType": "Drug & Remedy"
+      }
+    },
+    {
+      "name": "Escargot",
+      "page": "https://sulfur.wiki.gg/wiki/Escargot",
+      "image": "Escargot.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "+30 health over 2.5 seconds",
+        "SellVal": "150",
+        "SoldBy": "Stiffleg, Qiosk"
+      }
+    },
+    {
+      "name": "Fish And Chips",
+      "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips",
+      "image": "Fish And Chips.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "50 health over 5 seconds",
+        "SellVal": "125",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "Food for Desert Survival",
+      "page": "https://sulfur.wiki.gg/wiki/Food_for_Desert_Survival",
+      "image": "Food for Desert Survival.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Desert",
+        "Recipes": "120",
+        "SellVal": "7500",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "French Toast",
+      "page": "https://sulfur.wiki.gg/wiki/French_Toast",
+      "image": "French Toast.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food",
+        "Heal": "+15 Health over 5 seconds",
+        "SellVal": "75"
+      }
+    },
+    {
+      "name": "Fried Mushroom",
+      "page": "https://sulfur.wiki.gg/wiki/Fried_Mushroom",
+      "image": "Fried_Mushroom.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "+15 health over 4 seconds",
+        "SellVal": "65"
+      }
+    },
+    {
+      "name": "From the Cellar",
+      "page": "https://sulfur.wiki.gg/wiki/From_the_Cellar",
+      "image": "From the Cellar.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Dungeon",
+        "Recipes": "462",
+        "SellVal": "7500"
+      }
+    },
+    {
+      "name": "GABBA FOODMAKE",
+      "page": "https://sulfur.wiki.gg/wiki/GABBA_FOODMAKE",
+      "image": "GABBA FOODMAKE.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Caves, Goblins",
+        "Recipes": "301",
+        "SellVal": "5000"
+      }
+    },
+    {
+      "name": "Gonster",
+      "page": "https://sulfur.wiki.gg/wiki/Gonster",
+      "image": "Gonster.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Beverage",
+        "Heal": "10 health over 10 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓",
+        "SellVal": "20"
+      }
+    },
+    {
+      "name": "Graved Salmon",
+      "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon",
+      "image": "Graved Salmon.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "20 health over 0.1 seconds",
+        "SellVal": "45",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Gravy",
+      "page": "https://sulfur.wiki.gg/wiki/Gravy",
+      "image": "Gravy.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "20 health over 10 seconds",
+        "SellVal": "30"
+      }
+    },
+    {
+      "name": "Green Tea",
+      "page": "https://sulfur.wiki.gg/wiki/Green_Tea",
+      "image": "Green Tea.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Beverages, Drug & Remedy, Ingredient",
+        "Heal": "10 health over 5 seconds",
+        "RmvFrost": "✓",
+        "RmvPsn": "✓",
+        "MeleeDmg": "+150% for 60 seconds",
+        "SellVal": "40",
+        "SoldBy": "Qiosk"
+      }
+    },
+    {
+      "name": "Green Tea Gum",
+      "page": "https://sulfur.wiki.gg/wiki/Green_Tea_Gum",
+      "image": "Green Tea Gum.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Heal": "10 health over 1 seconds",
+        "MeleeDmg": "+120% for 120 seconds",
+        "SubType": "Drug & Remedy",
+        "SellVal": "40"
+      }
+    },
+    {
+      "name": "Grilled Poultry",
+      "page": "https://sulfur.wiki.gg/wiki/Grilled_Poultry",
+      "image": "Grilled_Poultry.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "100 health over 5 seconds",
+        "SellVal": "200"
+      }
+    },
+    {
+      "name": "Guild Approved Cuisine",
+      "page": "https://sulfur.wiki.gg/wiki/Guild_Approved_Cuisine",
+      "image": "Guild Approved Cuisine.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Black Guild",
+        "Recipes": "371",
+        "SellVal": "7500"
+      }
+    },
+    {
+      "name": "Haggis",
+      "page": "https://sulfur.wiki.gg/wiki/Haggis",
+      "image": "Haggis.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "+20 health over 10 seconds",
+        "SellVal": "15"
+      }
+    },
+    {
+      "name": "Herbal Tea",
+      "page": "https://sulfur.wiki.gg/wiki/Herbal_Tea",
+      "image": "Herbal Tea.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Beverage",
+        "Heal": "10 health over 5 seconds",
+        "Sprint": "+2 for 10 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓",
+        "SellVal": "35"
+      }
+    },
+    {
+      "name": "Herbs",
+      "page": "https://sulfur.wiki.gg/wiki/Herbs",
+      "image": "Herbs.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Ingredient",
+        "Heal": "3 health over 2.5 seconds",
+        "SellVal": "10"
+      }
+    },
+    {
+      "name": "Holy Toast",
+      "page": "https://sulfur.wiki.gg/wiki/Holy_Toast",
+      "image": "Holy_Toast.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Coyote": "90 seconds",
+        "SellVal": "125"
+      }
+    },
+    {
+      "name": "Hot Pot",
+      "page": "https://sulfur.wiki.gg/wiki/Hot_Pot",
+      "image": "Hot Pot.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Food",
+        "Heal": "50 health over 4 seconds",
+        "SellVal": "150"
+      }
+    },
+    {
+      "name": "Hot Sauce",
+      "page": "https://sulfur.wiki.gg/wiki/Hot_Sauce",
+      "image": "Hot Sauce.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Ingredient",
+        "Heal": "5 health over 2.5 seconds",
+        "FrostRst": "+0.5 for 240 seconds",
+        "SellVal": "90"
+      }
+    },
+    {
+      "name": "Jansson's Temptation",
+      "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation",
+      "image": "Jansson's Temptation.png",
+      "fields": {
+        "GridSize": "1×3",
+        "SubType": "Food",
+        "Heal": "45 health over 7 seconds",
+        "SellVal": "100",
+        "BuyVal": "200",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Julmust",
+      "page": "https://sulfur.wiki.gg/wiki/Julmust",
+      "image": "Julmust.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Beverage",
+        "Heal": "18 health over 1 second",
+        "CritADS": "+100% for 15 seconds",
+        "SellVal": "45",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Karl-Oskar",
+      "page": "https://sulfur.wiki.gg/wiki/Karl-Oskar",
+      "image": "Karl-Oskar.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "5",
+        "SubType": "Food, Mushroom, Ingredient"
+      }
+    },
+    {
+      "name": "Kombucha",
+      "page": "https://sulfur.wiki.gg/wiki/Kombucha",
+      "image": "Kombucha.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "30",
+        "SubType": "Beverage",
+        "Heal": "+15 health over 3 seconds",
+        "Coyote": "+90 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓"
+      }
+    },
+    {
+      "name": "Latte",
+      "page": "https://sulfur.wiki.gg/wiki/Latte",
+      "image": "Latte.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Beverage",
+        "Heal": "+30 health over 10 seconds",
+        "RmvFrost": "✓",
+        "RmvPsn": "✓",
+        "SellVal": "18"
+      }
+    },
+    {
+      "name": "Liquor",
+      "page": "https://sulfur.wiki.gg/wiki/Liquor",
+      "image": "Liquor.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Beverages, Drug & Remedy",
+        "RmvFrost": "✓",
+        "RmvPsn": "✓",
+        "Charisma": "+5 over 60 seconds",
+        "SellVal": "30"
+      }
+    },
+    {
+      "name": "Mac'n'Cheese",
+      "page": "https://sulfur.wiki.gg/wiki/Mac%27n%27Cheese",
+      "image": "Mac'n'Cheese.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Heal": "+30 health over 10 seconds",
+        "SellVal": "45",
+        "SoldBy": "Rat Queen",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Meringue",
+      "page": "https://sulfur.wiki.gg/wiki/Meringue",
+      "image": "Meringue.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "20",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Mineral Water",
+      "page": "https://sulfur.wiki.gg/wiki/Mineral_Water",
+      "image": "Mineral Water.png",
+      "fields": {
+        "GridSize": "1×2",
+        "MoveAccuracy": "+50% for 180 seconds",
+        "FireRst": "+0.5 for 180 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓",
+        "SellVal": "60",
+        "SubType": "Water, Ingredient"
+      }
+    },
+    {
+      "name": "Mochi",
+      "page": "https://sulfur.wiki.gg/wiki/Mochi",
+      "image": "Mochi.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Sweets, Food",
+        "SellVal": "33"
+      }
+    },
+    {
+      "name": "Nigiri",
+      "page": "https://sulfur.wiki.gg/wiki/Nigiri",
+      "image": "Nigiri.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "105",
+        "SoldBy": "Qiosk, Bill",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Nuggets",
+      "page": "https://sulfur.wiki.gg/wiki/Nuggets",
+      "image": "Nuggets.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "40",
+        "SubType": "Food",
+        "Heal": "25 health over 10 seconds"
+      }
+    },
+    {
+      "name": "Oats",
+      "page": "https://sulfur.wiki.gg/wiki/Oats",
+      "image": "Oats.png",
+      "fields": {
+        "GridSize": "1×2",
+        "Heal": "+10 health over 3 seconds",
+        "SellVal": "30",
+        "SubType": "Food, Ingredient"
+      }
+    },
+    {
+      "name": "Omelette",
+      "page": "https://sulfur.wiki.gg/wiki/Omelette",
+      "image": "Omelette.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Heal": "+22 health over 5 seconds",
+        "SellVal": "25",
+        "SoldBy": "Stiffleg",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Onigiri",
+      "page": "https://sulfur.wiki.gg/wiki/Onigiri",
+      "image": "Onigiri.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Heal": "+35 health over 3 seconds",
+        "SellVal": "105",
+        "SoldBy": "Stiffleg, Qiosk",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Peanutbutter Jelly Sandwich",
+      "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich",
+      "image": "Peanutbutter Jelly Sandwich.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food",
+        "Heal": "+35 health over 5 seconds",
+        "SellVal": "65"
+      }
+    },
+    {
+      "name": "Pickled Herring Platter",
+      "page": "https://sulfur.wiki.gg/wiki/Pickled_Herring_Platter",
+      "image": "Pickled Herring Platter.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "20 health over 0.1 second",
+        "SellVal": "45"
+      }
+    },
+    {
+      "name": "Pilk",
+      "page": "https://sulfur.wiki.gg/wiki/Pilk",
+      "image": "Pilk.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Beverage",
+        "Heal": "+30 health over 10 seconds",
+        "RmvFire": "✓",
+        "ExtraJumps": "+3 for 30 seconds",
+        "SellVal": "200"
+      }
+    },
+    {
+      "name": "Pizza",
+      "page": "https://sulfur.wiki.gg/wiki/Pizza",
+      "image": "Pizza.png",
+      "fields": {
+        "GridSize": "2x2",
+        "SubType": "Food, Ingredient",
+        "Heal": "+150 health over 10 seconds",
+        "JumpPwr": "-10% for 15 seconds",
+        "Speed": "-10% for 15 seconds",
+        "SellVal": "200",
+        "SoldBy": "Bill"
+      }
+    },
+    {
+      "name": "Potato",
+      "page": "https://sulfur.wiki.gg/wiki/Potato",
+      "image": "Potato.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "5 health over 3 seconds",
+        "SellVal": "30"
+      }
+    },
+    {
+      "name": "Potato Salad",
+      "page": "https://sulfur.wiki.gg/wiki/Potato_Salad",
+      "image": "Potato Salad.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Food, Ingredient",
+        "SellVal": "45",
+        "Heal": "15 health over 0.1 seconds"
+      }
+    },
+    {
+      "name": "Poutine",
+      "page": "https://sulfur.wiki.gg/wiki/Poutine",
+      "image": "Poutine.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "+35 health over 5 seconds",
+        "SellVal": "113",
+        "BuyVal": "230"
+      }
+    },
+    {
+      "name": "Pølse",
+      "page": "https://sulfur.wiki.gg/wiki/P%C3%B8lse",
+      "image": "Pølse.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "15 health over 3 seconds",
+        "SellVal": "25",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "Raclette",
+      "page": "https://sulfur.wiki.gg/wiki/Raclette",
+      "image": "Raclette.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "50 health over 4 seconds",
+        "SellVal": "150"
+      }
+    },
+    {
+      "name": "Ramen",
+      "page": "https://sulfur.wiki.gg/wiki/Ramen",
+      "image": "Ramen.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Heal": "+40 health over 4 seconds",
+        "FrostRst": "+0.5 for 60 seconds",
+        "SellVal": "75",
+        "SubType": "Food"
+      }
+    },
+    {
+      "name": "Rhubarb",
+      "page": "https://sulfur.wiki.gg/wiki/Rhubarb",
+      "image": "Rhubarb.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Ingredient",
+        "Heal": "6 health over 10 seconds",
+        "SellVal": "20"
+      }
+    },
+    {
+      "name": "Rhubarb Porridge",
+      "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Porridge",
+      "image": "Rhubarb Porridge.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "25 health over 4 seconds",
+        "SellVal": "10"
+      }
+    },
+    {
+      "name": "Rice",
+      "page": "https://sulfur.wiki.gg/wiki/Rice",
+      "image": "Rice.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Food, Ingredient",
+        "Heal": "5 health over 5 seconds",
+        "Speed": "-50% for 5 seconds",
+        "SellVal": "13"
+      }
+    },
+    {
+      "name": "Risalamande",
+      "page": "https://sulfur.wiki.gg/wiki/Risalamande",
+      "image": "Risalamande.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Dessert, Food",
+        "Heal": "25 health over 5 seconds",
+        "SellVal": "45"
+      }
+    },
+    {
+      "name": "Salt",
+      "page": "https://sulfur.wiki.gg/wiki/Salt",
+      "image": "Salt.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Ingredient",
+        "Heal": "+1 health over 2 seconds",
+        "SellVal": "5",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Sashimi",
+      "page": "https://sulfur.wiki.gg/wiki/Sashimi",
+      "image": "Sashimi.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food, Ingredient",
+        "Heal": "45 health over 4 seconds",
+        "SellVal": "110"
+      }
+    },
+    {
+      "name": "Shav'Wani Delights",
+      "page": "https://sulfur.wiki.gg/wiki/Shav%27Wani_Delights",
+      "image": "Shav'Wani Delights.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Shav'Wa",
+        "Recipes": "169",
+        "SellVal": "7500"
+      }
+    },
+    {
+      "name": "Solution",
+      "page": "https://sulfur.wiki.gg/wiki/Solution",
+      "image": "Solution.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Ingredient",
+        "Heal": "2.5 health over 2.5 seconds",
+        "SellVal": "20",
+        "SoldBy": "Ralphie, Grossberg"
+      }
+    },
+    {
+      "name": "Stout",
+      "page": "https://sulfur.wiki.gg/wiki/Stout",
+      "image": "Stout.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SellVal": "20",
+        "SubType": "Beverage",
+        "Heal": "15 health over 10 seconds",
+        "RmvPsn": "✓",
+        "RmvFire": "✓"
+      }
+    },
+    {
+      "name": "Sugar",
+      "page": "https://sulfur.wiki.gg/wiki/Sugar",
+      "image": "Sugar.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Ingredient",
+        "Heal": "10 health over 10 seconds",
+        "SellVal": "15",
+        "SoldBy": "Grossberg"
+      }
+    },
+    {
+      "name": "Sulf Cola",
+      "page": "https://sulfur.wiki.gg/wiki/Sulf_Cola",
+      "image": "Sulf Cola.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Beverage",
+        "Heal": "30 health over 4 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓",
+        "ExtraJumps": "+1 for 20 seconds",
+        "SellVal": "150"
+      }
+    },
+    {
+      "name": "Surstromming",
+      "page": "https://sulfur.wiki.gg/wiki/Surstromming",
+      "image": "Surstromming.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Food",
+        "Heal": "50 health over 50 seconds",
+        "SellVal": "175"
+      }
+    },
+    {
+      "name": "Tastes from the Sewers™",
+      "page": "https://sulfur.wiki.gg/wiki/Tastes_from_the_Sewers%E2%84%A2",
+      "image": "Tastes from the Sewers™.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Sewers",
+        "Recipes": "126",
+        "SellVal": "7500",
+        "SoldBy": "Stiffleg"
+      }
+    },
+    {
+      "name": "The Chequered Cookbook",
+      "page": "https://sulfur.wiki.gg/wiki/The_Chequered_Cookbook",
+      "image": "The Chequered Cookbook.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Manual",
+        "Theme": "Town",
+        "Recipes": "43",
+        "SellVal": "15000"
+      }
+    },
+    {
+      "name": "Unagi",
+      "page": "https://sulfur.wiki.gg/wiki/Unagi",
+      "image": "Unagi.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Food",
+        "Heal": "60 health over 10 seconds",
+        "ElecRst": "+10 for 60 seconds",
+        "SellVal": "200"
+      }
+    },
+    {
+      "name": "Whole Milk",
+      "page": "https://sulfur.wiki.gg/wiki/Whole_Milk",
+      "image": "Whole Milk.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Milk, Ingredient",
+        "Heal": "20 health over 8 seconds",
+        "RmvFire": "✓",
+        "MoveAccuracy": "+50% over 90 seconds",
+        "SellVal": "20"
+      }
+    }
+  ]
+}

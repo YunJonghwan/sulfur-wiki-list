@@ -1,0 +1,567 @@
+{
+  "kind": "attachment",
+  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "SubType",
+      "label": "Type"
+    },
+    {
+      "key": "ModeChange",
+      "label": "Change Firing Mode to"
+    },
+    {
+      "key": "CritADS",
+      "label": "Crit Chance down sight"
+    },
+    {
+      "key": "MoveAccuracy",
+      "label": "Accuracy while moving"
+    },
+    {
+      "key": "SilFire",
+      "label": "Silences Fire"
+    },
+    {
+      "key": "Spread",
+      "label": "Spread"
+    },
+    {
+      "key": "Recoil",
+      "label": "Recoil"
+    },
+    {
+      "key": "Dmg",
+      "label": "Damage"
+    },
+    {
+      "key": "CritChance",
+      "label": "Crit Chance"
+    },
+    {
+      "key": "BltSpeed",
+      "label": "Bullet Speed"
+    },
+    {
+      "key": "MaxDrb",
+      "label": "Max Durability"
+    },
+    {
+      "key": "RPM",
+      "label": "Rate of Fire"
+    },
+    {
+      "key": "Speed",
+      "label": "Movement Speed"
+    },
+    {
+      "key": "Charisma",
+      "label": "Charisma"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    }
+  ],
+  "items": [
+    {
+      "name": "A12C Muzzle Brake",
+      "page": "https://sulfur.wiki.gg/wiki/A12C_Muzzle_Brake",
+      "image": "A12C Muzzle Brake.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SellVal": "240",
+        "BuyVal": "480",
+        "SoldBy": "Ralphie",
+        "SubType": "Muzzle attachment",
+        "Recoil": "-35%"
+      }
+    },
+    {
+      "name": "Aftermarket Haukland Silencer",
+      "page": "https://sulfur.wiki.gg/wiki/Aftermarket_Haukland_Silencer",
+      "image": "Aftermarket Haukland Silencer.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Muzzle Attachment",
+        "SilFire": "✓",
+        "CritChance": "+25%",
+        "RPM": "-15%",
+        "SellVal": "740",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Assault Scope",
+      "page": "https://sulfur.wiki.gg/wiki/Assault_Scope",
+      "image": "Assault_Scope.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Sight",
+        "CritADS": "+20%",
+        "SellVal": "250",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Barrel Extension 2\"",
+      "page": "https://sulfur.wiki.gg/wiki/Barrel_Extension_2%22",
+      "image": "Barrel Extension 2\".png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-10%",
+        "BltSpeed": "+10%",
+        "Speed": "-5%",
+        "SellVal": "480",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Barrel Extension 4\"",
+      "page": "https://sulfur.wiki.gg/wiki/Barrel_Extension_4%22",
+      "image": "Barrel Extension 4\".png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-25%",
+        "BltSpeed": "+25%",
+        "Speed": "-10%",
+        "SellVal": "240",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Barrel Extension 6\"",
+      "page": "https://sulfur.wiki.gg/wiki/Barrel_Extension_6%22",
+      "image": "Barrel Extension 6\".png",
+      "fields": {
+        "GridSize": "3×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-50%",
+        "BltSpeed": "+40%",
+        "Speed": "-20%",
+        "SellVal": "240",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Breznik BMD",
+      "page": "https://sulfur.wiki.gg/wiki/Breznik_BMD",
+      "image": "Breznik BMD.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-15%",
+        "Recoil": "-20%",
+        "SellVal": "240",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Breznik BMD (Tactical)",
+      "page": "https://sulfur.wiki.gg/wiki/Breznik_BMD_%28Tactical%29",
+      "image": "Breznik BMD (Tactical).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-15%",
+        "Recoil": "-20%",
+        "SellVal": "240",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Compact Sight",
+      "page": "https://sulfur.wiki.gg/wiki/Compact_Sight",
+      "image": "Compact_Sight.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Sight",
+        "CritADS": "+20%",
+        "SellVal": "250",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Gun Crank",
+      "page": "https://sulfur.wiki.gg/wiki/Gun_Crank",
+      "image": "Gun Crank.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Chamber Attachment",
+        "ModeChange": "Automatic",
+        "SellVal": "340",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Haukland Flash Hider",
+      "page": "https://sulfur.wiki.gg/wiki/Haukland_Flash_Hider",
+      "image": "Haukland Flash Hider.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Muzzle Attachments",
+        "Spread": "-0.2",
+        "Recoil": "-20%",
+        "SellVal": "240",
+        "SoldBy": "Ralphie, Haukland Rep."
+      }
+    },
+    {
+      "name": "Haukland Silencer",
+      "page": "https://sulfur.wiki.gg/wiki/Haukland_Silencer",
+      "image": "Haukland Silencer.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Muzzle Attachment",
+        "SilFire": "✓",
+        "Recoil": "-10%",
+        "CritChance": "+20%",
+        "RPM": "-10%",
+        "SellVal": "445",
+        "SoldBy": "Ralphie, Haukland Rep."
+      }
+    },
+    {
+      "name": "Holographic Sight",
+      "page": "https://sulfur.wiki.gg/wiki/Holographic_Sight",
+      "image": "Holographic Sight.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Sight",
+        "CritADS": "+10%",
+        "SellVal": "115",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Hunting Scope",
+      "page": "https://sulfur.wiki.gg/wiki/Hunting_Scope",
+      "image": "Hunting Scope.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Sight",
+        "CritADS": "+25%",
+        "SellVal": "275",
+        "SoldBy": "Ralphie, Jaques De Fector"
+      }
+    },
+    {
+      "name": "Improvised Barrel Extension",
+      "page": "https://sulfur.wiki.gg/wiki/Improvised_Barrel_Extension",
+      "image": "Improvised Barrel Extension.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "+0.1",
+        "MaxDrb": "+15%",
+        "SellVal": "150",
+        "SoldBy": "Ralphie, Skrip"
+      }
+    },
+    {
+      "name": "Insurance",
+      "page": "https://sulfur.wiki.gg/wiki/Insurance",
+      "image": "Insurance.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Attachment",
+        "SellVal": "5000",
+        "BuyVal": "10000",
+        "SoldBy": "Haukland Salesman, Ralphie, Stiffleg, Qiosk, Bill"
+      }
+    },
+    {
+      "name": "Laser Sight (Bone)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Bone%29",
+      "image": "Laser Sight (Bone).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Denim Blue)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Denim_Blue%29",
+      "image": "Laser Sight (Denim Blue).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Gold)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Gold%29",
+      "image": "Laser Sight (Gold).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "CritChance": "+20%",
+        "SellVal": "5000"
+      }
+    },
+    {
+      "name": "Laser Sight (Green)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Green%29",
+      "image": "Laser Sight (Green).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "140",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Laser Sight (Light Blue)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Light_Blue%29",
+      "image": "Laser Sight (Light Blue).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Lime)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Lime%29",
+      "image": "Laser Sight (Lime).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "Charisma": "+2",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Magenta)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Magenta%29",
+      "image": "Laser Sight (Magenta).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Orange)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Orange%29",
+      "image": "Laser Sight (Orange).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Poop)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Poop%29",
+      "image": "Laser Sight (Poop).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Purple)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Purple%29",
+      "image": "Laser Sight (Purple).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Red)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Red%29",
+      "image": "Laser Sight (Red).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "140",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Laser Sight (Rose Pink)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Rose_Pink%29",
+      "image": "Laser Sight (Rose Pink).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Tangerine)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Tangerine%29",
+      "image": "Laser Sight (Tangerine).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Teal)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Teal%29",
+      "image": "Laser Sight (Teal).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250"
+      }
+    },
+    {
+      "name": "Laser Sight (Yellow)",
+      "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Yellow%29",
+      "image": "Laser Sight (Yellow).png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Laser Sights",
+        "MoveAccuracy": "+50%",
+        "SellVal": "250",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "M87 \"Albatross\" Silencer",
+      "page": "https://sulfur.wiki.gg/wiki/M87_%22Albatross%22_Silencer",
+      "image": "M87 \"Albatross\" Silencer.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Muzzle Attachment",
+        "SilFire": "✓",
+        "Spread": "+0.25",
+        "Dmg": "+15%",
+        "CritChance": "+15%",
+        "MaxDrb": "-10%",
+        "SellVal": "275",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Priming Bolt",
+      "page": "https://sulfur.wiki.gg/wiki/Priming_Bolt",
+      "image": "Priming Bolt.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Chamber Attachment",
+        "ModeChange": "Semiautomatic",
+        "Dmg": "+10%",
+        "Spread": "-0.1",
+        "SellVal": "340",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Recon Scope",
+      "page": "https://sulfur.wiki.gg/wiki/Recon_Scope",
+      "image": "Recon_Scope.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Sight",
+        "CritADS": "+10%",
+        "SellVal": "140",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Reflex Sight",
+      "page": "https://sulfur.wiki.gg/wiki/Reflex_Sight",
+      "image": "Reflex Sight.png",
+      "fields": {
+        "GridSize": "1x1",
+        "SubType": "Sight",
+        "CritADS": "+15%",
+        "SellVal": "160",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Shrouded Barrel Extension",
+      "page": "https://sulfur.wiki.gg/wiki/Shrouded_Barrel_Extension",
+      "image": "Shrouded Barrel Extension.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-0.2",
+        "MaxDrb": "+20%",
+        "SellVal": "240",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Sniper Scope",
+      "page": "https://sulfur.wiki.gg/wiki/Sniper_Scope",
+      "image": "Sniper_Scope.png",
+      "fields": {
+        "GridSize": "2x1",
+        "SubType": "Sight",
+        "CritADS": "+30%",
+        "SellVal": "350",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "SR-P3 Silencer",
+      "page": "https://sulfur.wiki.gg/wiki/SR-P3_Silencer",
+      "image": "SR-P3 Silencer.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Muzzle Attachment",
+        "SilFire": "✓",
+        "Recoil": "-20%",
+        "CritChance": "+10%",
+        "RPM": "-10%",
+        "SellVal": "290",
+        "SoldBy": "Ralphie"
+      }
+    },
+    {
+      "name": "Warmage Compensator",
+      "page": "https://sulfur.wiki.gg/wiki/Warmage_Compensator",
+      "image": "Warmage Compensator.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SubType": "Muzzle Attachment",
+        "Spread": "-0.15",
+        "Recoil": "-25%",
+        "SellVal": "480",
+        "SoldBy": "Ralphie"
+      }
+    }
+  ]
+}

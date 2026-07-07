@@ -1,0 +1,3032 @@
+{
+  "kind": "oil",
+  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "Dmg",
+      "label": "Damage"
+    },
+    {
+      "key": "RPM",
+      "label": "Rate of Fire"
+    },
+    {
+      "key": "CritChance",
+      "label": "Crit Chance"
+    },
+    {
+      "key": "Spread",
+      "label": "Spread"
+    },
+    {
+      "key": "Recoil",
+      "label": "Recoil"
+    },
+    {
+      "key": "RldSpeed",
+      "label": "Reload Speed"
+    },
+    {
+      "key": "BltSpeed",
+      "label": "Bullet Speed"
+    },
+    {
+      "key": "BltPen",
+      "label": "Bullet Penetrations"
+    },
+    {
+      "key": "BltSize",
+      "label": "Bullet Size"
+    },
+    {
+      "key": "BltBounces",
+      "label": "Bullet Bounces"
+    },
+    {
+      "key": "BltBounciness",
+      "label": "Bullet Bounciness"
+    },
+    {
+      "key": "ProjecAmnt",
+      "label": "Projectile Amount"
+    },
+    {
+      "key": "AmmoConsume",
+      "label": "Ammo Consume Chance"
+    },
+    {
+      "key": "MaxDrb",
+      "label": "Max Durability"
+    },
+    {
+      "key": "BltDrop",
+      "label": "Bullet Drop"
+    },
+    {
+      "key": "Drag",
+      "label": "Drag Multiplier"
+    },
+    {
+      "key": "AmmoExConsume",
+      "label": "Extra Ammo Consume Chance"
+    },
+    {
+      "key": "Speed",
+      "label": "Movement Speed"
+    },
+    {
+      "key": "JumpPwr",
+      "label": "Jump Power"
+    },
+    {
+      "key": "LootChance",
+      "label": "Loot Chance"
+    },
+    {
+      "key": "MoveAccuracy",
+      "label": "Accuracy while moving"
+    },
+    {
+      "key": "AimDisabled",
+      "label": "Disable Aim"
+    },
+    {
+      "key": "NoMoney",
+      "label": "No Money drops"
+    },
+    {
+      "key": "NoOrgans",
+      "label": "No Organs drop"
+    },
+    {
+      "key": "NoDrb",
+      "label": "Does not increase durability loss"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    },
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    }
+  ],
+  "items": [
+    {
+      "name": "Action Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Action_Oil",
+      "image": "Action Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "+100%",
+        "RldSpeed": "+80%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Add Damage Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Add_Damage_Oil",
+      "image": "Add Damage Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+15",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Aimless Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Aimless_Oil",
+      "image": "Aimless Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+30%",
+        "AimDisabled": "✓",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Airsoft Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Airsoft_Oil",
+      "image": "Airsoft Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-15",
+        "Drag": "+7",
+        "RldSpeed": "+120%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Altruistic Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Altruistic_Oil",
+      "image": "Altruistic_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.7",
+        "LootChance": "-30%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Arkanoid Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Arkanoid_Oil",
+      "image": "Arkanoid Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "-80%",
+        "BltBounces": "+10",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Arrow Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Arrow_Oil",
+      "image": "Arrow Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+80%",
+        "Dmg": "-15%",
+        "SellVal": "100",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Artery Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Artery_Oil",
+      "image": "Artery_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+10%",
+        "BltSize": "-50%",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Artillery Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Artillery_Oil",
+      "image": "Artillery Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-2",
+        "BltDrop": "×15",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Ascetic Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Ascetic_Oil",
+      "image": "Ascetic Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30",
+        "NoMoney": "✓",
+        "SellVal": "175",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Assassin Dart Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Assassin_Dart_Oil",
+      "image": "Assassin Dart Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+70%",
+        "Speed": "-25%",
+        "SellVal": "125",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Attack Speed Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Attack_Speed_Oil",
+      "image": "Attack Speed Oil.png",
+      "fields": {
+        "GridSize": "1x1",
+        "RPM": "+20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Axe Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Axe_Oil",
+      "image": "Axe Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+25%",
+        "BltDrop": "×10",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bad Planet Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bad_Planet_Oil",
+      "image": "Bad Planet Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "JumpPwr": "-30%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bandit Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bandit_Oil",
+      "image": "Bandit Oil.png",
+      "fields": {
+        "GridSize": "1×2",
+        "BltBounces": "+2",
+        "NoMoney": "X",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "BB Oil",
+      "page": "https://sulfur.wiki.gg/wiki/BB_Oil",
+      "image": "BB Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+30%",
+        "BltSize": "-70%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Big Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Big_Oil",
+      "image": "Big Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltDrop": "×20",
+        "BltSpeed": "-20%",
+        "Dmg": "+35",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Big Tax Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Big_Tax_Oil",
+      "image": "Big Tax Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+100%",
+        "NoMoney": "X",
+        "NoDrb": "✓",
+        "SellVal": "110",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bigger Bullet Oil (DEMO)",
+      "page": "https://sulfur.wiki.gg/wiki/Bigger_Bullet_Oil_%28DEMO%29",
+      "image": "Bigger bullet oil.png",
+      "fields": {
+        "GridSize": "1x1",
+        "BuyVal": "Priceless"
+      }
+    },
+    {
+      "name": "Birth Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Birth_Oil",
+      "image": "Birth Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+300%",
+        "MaxDrb": "-30%",
+        "NoDrb": "✓",
+        "SellVal": "50",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Black Friday Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Black_Friday_Oil",
+      "image": "Black Friday Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "-30%",
+        "ProjecAmnt": "+200%",
+        "Dmg": "-30%",
+        "Spread": "+30%",
+        "SellVal": "150",
+        "BuyVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Blindfold Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Blindfold_Oil",
+      "image": "Blindfold_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+20%",
+        "Spread": "+2",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Blurt Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Blurt_Oil",
+      "image": "Blurt Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+40%",
+        "BltSpeed": "-20%",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bolt Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bolt_Oil",
+      "image": "Bolt Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+60%",
+        "Dmg": "-15",
+        "SellVal": "185",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bombard Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bombard_Oil",
+      "image": "Bombard Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-10%",
+        "ProjecAmnt": "+200%",
+        "BltDrop": "×10",
+        "Spread": "+1.4",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Boomstick Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Boomstick_Oil",
+      "image": "Boomstick Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-25%",
+        "Spread": "+150%",
+        "Recoil": "+200%",
+        "ProjecAmnt": "+200%",
+        "AimDisabled": "✓",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Boulder Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Boulder_Oil",
+      "image": "Boulder Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20%",
+        "BltBounces": "+1",
+        "BltBounciness": "+0.8",
+        "BltDrop": "×10",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bowl Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bowl_Oil",
+      "image": "Bowl Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.75",
+        "BltSpeed": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Braced Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Braced_Oil",
+      "image": "Braced Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-30%",
+        "JumpPwr": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Brute Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Brute_Oil",
+      "image": "Brute Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30",
+        "Spread": "+0.7",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bulk Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bulk_Oil",
+      "image": "Bulk Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-40%",
+        "BltDrop": "×15",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Bystander Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Bystander_Oil",
+      "image": "Bystander Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "AimDisabled": "✓",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Carefree Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Carefree_Oil",
+      "image": "Carefree Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-20%",
+        "Spread": "+1",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Careful Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Careful_Oil",
+      "image": "Careful Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.7",
+        "RPM": "-25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Careless Splitter Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Careless_Splitter_Oil",
+      "image": "Careless Splitter Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-25%",
+        "ProjecAmnt": "+300%",
+        "Recoil": "+200%",
+        "Spread": "+200%",
+        "MaxDrb": "-75%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Cartoon Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Cartoon_Oil",
+      "image": "Cartoon_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "+200%",
+        "BltBounces": "+6",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Casual Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Casual_Oil",
+      "image": "Casual_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-30%",
+        "LootChance": "-20%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Cheap Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Cheap_Oil",
+      "image": "Cheap Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-20%",
+        "AmmoConsume": "-30%",
+        "SellVal": "350",
+        "BuyVal": "700",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Chonk Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Chonk_Oil",
+      "image": "Chonk Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "+0.3",
+        "BltSize": "+100%",
+        "NoDrb": "✓",
+        "SellVal": "100",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Chub Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Chub_Oil",
+      "image": "Chub Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-20%",
+        "BltSize": "+100%",
+        "NoDrb": "✓",
+        "SellVal": "50",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Clump Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Clump_Oil",
+      "image": "Clump Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+200%",
+        "AmmoExConsume": "+30%",
+        "NoDrb": "✓",
+        "SellVal": "88",
+        "BuyVal": "175",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Collateral Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Collateral_Oil",
+      "image": "Collateral Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "+100%",
+        "BltPen": "+2",
+        "SellVal": "175",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Complicated Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Complicated_Oil",
+      "image": "Complicated Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30%",
+        "RldSpeed": "-25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Compo Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Compo_Oil",
+      "image": "Compo Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RldSpeed": "+160%",
+        "Speed": "-60%",
+        "Spread": "-10%",
+        "Recoil": "-10%",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Confidence Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Confidence_Oil",
+      "image": "Confidence Oil.png",
+      "fields": {
+        "GridSize": "1×2",
+        "CritChance": "+20%",
+        "RldSpeed": "-25%",
+        "SellVal": "375",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Congestion Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Congestion_Oil",
+      "image": "Congestion Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+100%",
+        "LootChance": "-50%",
+        "NoDrb": "✓",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Considerate Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Considerate_Oil",
+      "image": "Considerate Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "Dmg": "-25",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Contained Force Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Contained_Force_Oil",
+      "image": "Contained Force Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-45%",
+        "MaxDrb": "-10%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Critical Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Critical_Oil",
+      "image": "Crit oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+15%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Cycle Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Cycle_Oil",
+      "image": "Cycle Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "+1",
+        "RldSpeed": "+90%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Damage Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Damage_Oil",
+      "image": "Damage Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20%",
+        "SellVal": "650",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Dart Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Dart_Oil",
+      "image": "Dart Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+50%",
+        "JumpPwr": "-20%",
+        "SellVal": "115",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Dead Center Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Dead_Center_Oil",
+      "image": "Dead_Center_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-2",
+        "Recoil": "+1",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Delayed Hyper Tube Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Delayed_Hyper_Tube_Oil",
+      "image": "Delayed Hyper Tube Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+100%",
+        "RPM": "-50%",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Dense Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Dense_Oil",
+      "image": "Dense_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+30%",
+        "JumpPwr": "-20%",
+        "NoDrb": "✓",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Detune Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Detune_Oil",
+      "image": "Detune_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-25%",
+        "MaxDrb": "+50%",
+        "NoDrb": "✓",
+        "SellVal": "175",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Diesel Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Diesel_Oil",
+      "image": "Diesel Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+50%",
+        "Recoil": "+30%",
+        "SellVal": "113",
+        "BuyVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Discharge Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Discharge_Oil",
+      "image": "Discharge Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30",
+        "AmmoExConsume": "+30%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Disposable Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Disposable_Oil",
+      "image": "Disposable Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+50",
+        "MaxDrb": "-75%",
+        "SellVal": "325",
+        "BuyVal": "650",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Division Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Division_Oil",
+      "image": "Division Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-20%",
+        "ProjecAmnt": "+100%",
+        "Spread": "+1.7",
+        "BltSize": "-70%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Do-over Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Do-over_Oil",
+      "image": "Do-over Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-20%",
+        "RPM": "-25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Double Fire Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Double_Fire_Oil",
+      "image": "Double Fire Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+50%",
+        "AmmoExConsume": "+25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Double Lock Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Double_Lock_Oil",
+      "image": "Double Lock Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RldSpeed": "+60%",
+        "RPM": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Double Nothing Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Double_Nothing_Oil",
+      "image": "Double_Nothing_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-25%",
+        "ProjecAmnt": "+100%",
+        "LootChance": "-100%",
+        "Spread": "+0.7",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Dum Dum Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Dum_Dum_Oil",
+      "image": "Dum Dum Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+22%",
+        "NoOrgans": "X",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Dynamic Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Dynamic_Oil",
+      "image": "Dynaimc Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-15",
+        "RldSpeed": "+100%",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Easy Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Easy_Oil",
+      "image": "Easy Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-20%",
+        "NoMoney": "✓",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Easy Plop Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Easy_Plop_Oil",
+      "image": "Easy Plop Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-65%",
+        "BltDrop": "×5",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Elephant Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Elephant_Oil",
+      "image": "Elephant Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "ProjecAmnt": "+200%",
+        "Dmg": "-25%",
+        "Recoil": "+10%",
+        "Speed": "-50%",
+        "BltDrop": "×10",
+        "BltSize": "+200%",
+        "Spread": "+2",
+        "SellVal": "325",
+        "BuyVal": "650",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Exotic Barrel Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Exotic_Barrel_Oil",
+      "image": "Exotic Barrel Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-2",
+        "MaxDrb": "-25%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Expander Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Expander_Oil",
+      "image": "Expander Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20",
+        "NoOrgans": "X",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Extra Powder Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Extra_Powder_Oil",
+      "image": "Extra Powder Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+50%",
+        "RldSpeed": "-15%",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Farsighted Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Farsighted_Oil",
+      "image": "Farsighted Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+3",
+        "AmmoExConsume": "+30%",
+        "SellVal": "100",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Fast Bet Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Fast_Bet_Oil",
+      "image": "Fast Bet Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+35%",
+        "NoMoney": "✓",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Feature Gun Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Feature_Gun_Oil",
+      "image": "Feature_Gun_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+30%",
+        "AimDisabled": "✓",
+        "NoDrb": "✓",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Fidget Lord Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Fidget_Lord_Oil",
+      "image": "Fidget Lord Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Speed": "-40%",
+        "RldSpeed": "+140%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Fidget Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Fidget_Oil",
+      "image": "Fidget Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20",
+        "RldSpeed": "-25%",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "First Blood Oil",
+      "page": "https://sulfur.wiki.gg/wiki/First_Blood_Oil",
+      "image": "First Blood Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30%",
+        "Spread": "+1",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Flea Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Flea_Oil",
+      "image": "Flea_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-50%",
+        "BltSize": "-50%",
+        "BltBounces": "+4",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Flop Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Flop_Oil",
+      "image": "Flop Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+70%",
+        "JumpPwr": "-10%",
+        "NoDrb": "✓",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Flow Funnel Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Flow_Funnel_Oil",
+      "image": "Flow_Funnel_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "+3",
+        "Recoil": "-65%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Food Stamp Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Food_Stamp_Oil",
+      "image": "Food Stamp Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "NoMoney": "✓",
+        "AmmoConsume": "-20%",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Fragile System Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Fragile_System_Oil",
+      "image": "Fragile System Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+50%",
+        "MaxDrb": "-15%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Franciscan Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Franciscan_Oil",
+      "image": "Franciscan_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20%",
+        "NoMoney": "X",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Frugal Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Frugal_Oil",
+      "image": "Frugal Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+25",
+        "LootChance": "-35%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Gambler Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Gambler_Oil",
+      "image": "Gambler Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+20%",
+        "Dmg": "-10%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Gargantuan Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Gargantuan_Oil",
+      "image": "Gargantuan Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RldSpeed": "-50%",
+        "BltSize": "+200%",
+        "NoDrb": "✓",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Gemini Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Gemini_Oil",
+      "image": "Gemini Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-30",
+        "ProjecAmnt": "+100%",
+        "Spread": "+0.7",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Gentle Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Gentle_Oil",
+      "image": "Gentle_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "-30%",
+        "MaxDrb": "+25%",
+        "NoDrb": "✓",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Glass Cannon Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Glass_Cannon_Oil",
+      "image": "Glass Cannon Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+50%",
+        "MaxDrb": "-25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Great Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Great_Oil",
+      "image": "Great Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltDrop": "×35",
+        "BltSpeed": "-20%",
+        "Dmg": "+60%",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Grounded Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Grounded_Oil",
+      "image": "Grounded Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+25%",
+        "JumpPwr": "-15%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Gunslinger Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Gunslinger_Oil",
+      "image": "Gunslinger Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AimDisabled": "✓",
+        "RldSpeed": "+75%",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Happy Accident Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Happy_Accident_Oil",
+      "image": "Happy Accident Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+15%",
+        "Recoil": "+40%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Heavy Lead Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Heavy_Lead_Oil",
+      "image": "Heavy Lead Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+4",
+        "BltDrop": "×20",
+        "SellVal": "50",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Heavy Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Heavy_Oil",
+      "image": "Heavy_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+60%",
+        "BltSize": "+50%",
+        "BltDrop": "+10",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Heavy Pockets Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Heavy_Pockets_Oil",
+      "image": "Heavy Pockets Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "JumpPwr": "-100%",
+        "AmmoConsume": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hefty Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hefty_Oil",
+      "image": "Hefty Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+45%",
+        "Speed": "-20%",
+        "NoDrb": "✓",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Helium Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Helium_Oil",
+      "image": "Helium Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-40%",
+        "BltSpeed": "-40%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "High Grade Oil",
+      "page": "https://sulfur.wiki.gg/wiki/High_Grade_Oil",
+      "image": "High_Grade_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+20%",
+        "NoDrb": "✓",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hip Blaster Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hip_Blaster_Oil",
+      "image": "Hip_Blaster_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+25%",
+        "AimDisabled": "✓",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hip Marksman Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hip_Marksman_Oil",
+      "image": "Hip Marksman Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.8",
+        "AimDisabled": "✓",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hoop Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hoop_Oil",
+      "image": "Hoop Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+4",
+        "BltDrop": "×10",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hunter Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hunter_Oil",
+      "image": "Hunter Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+15%",
+        "Speed": "-30%",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hustler Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hustler_Oil",
+      "image": "Hustler_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-15",
+        "CritChance": "+25%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Hyper Lead Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Hyper_Lead_Oil",
+      "image": "Hyper Lead Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+40%",
+        "BltDrop": "×40",
+        "BltSpeed": "+100%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Imperfect Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Imperfect_Oil",
+      "image": "Imperfect_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+3",
+        "MaxDrb": "-15%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Inconsiderate Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Inconsiderate_Oil",
+      "image": "Inconsiderate Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "Spread": "+2",
+        "SellVal": "125",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Inherited Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Inherited_Oil",
+      "image": "Inherited_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+50%",
+        "LootChance": "-100%",
+        "NoDrb": "✓",
+        "SellVal": "750",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Instant Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Instant_Oil",
+      "image": "Instant Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+150%",
+        "AimDisabled": "✓",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Judgement Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Judgement_Oil",
+      "image": "Judgement Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+25",
+        "Speed": "-15%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Jungian Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Jungian_Oil",
+      "image": "Jungian Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "Speed": "-15%",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Keep Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Keep_Oil",
+      "image": "Keep Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-20%",
+        "NoOrgans": "X",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Kicker Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Kicker_Oil",
+      "image": "Kicker_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20",
+        "Recoil": "+50%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Kinetic Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Kinetic_Oil",
+      "image": "Kinetic Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+100%",
+        "BltDrop": "×20",
+        "SellVal": "175",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Last Drop Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Last_Drop_Oil",
+      "image": "Last Drop Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-30%",
+        "MaxDrb": "-25%",
+        "SellVal": "125",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Late Boom Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Late_Boom_Oil",
+      "image": "Late Boom Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30",
+        "BltSpeed": "-30%",
+        "SellVal": "75",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Launcher Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Launcher_Oil",
+      "image": "Launcher Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+25%",
+        "RPM": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Lazy Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Lazy_Oil",
+      "image": "Lazy Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+2",
+        "RldSpeed": "-15%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Less Recoil Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Less_Recoil_Oil",
+      "image": "Less_Recoil_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-20%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Lightweight Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Lightweight_Oil",
+      "image": "Lightweight Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+50%",
+        "Recoil": "+50%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Longshot Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Longshot_Oil",
+      "image": "Longshot Oil.png",
+      "fields": {
+        "GridSize": "1×2",
+        "BltBounces": "+3",
+        "AimDisabled": "✓",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Lost In Focus Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Lost_In_Focus_Oil",
+      "image": "Lost_In_Focus_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-2",
+        "AmmoExConsume": "+30%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Low Roller Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Low_Roller_Oil",
+      "image": "Low_Roller_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+10%",
+        "NoMoney": "X",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Machine Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Machine_Oil",
+      "image": "Machine Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+60%",
+        "Speed": "-30%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Main Discipline Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Main_Discipline_Oil",
+      "image": "Main Discipline Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "LootChance": "-30%",
+        "RldSpeed": "+80%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Main Focus Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Main_Focus_Oil",
+      "image": "Main Focus Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "NoMoney": "X",
+        "RldSpeed": "+50%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Manifestation Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Manifestation_Oil",
+      "image": "Manifestation Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+25%",
+        "RldSpeed": "-50%",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Matrix Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Matrix_Oil",
+      "image": "Matrix Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "-90%",
+        "ProjecAmnt": "+300%",
+        "Dmg": "-30%",
+        "Drag": "+40",
+        "Spread": "+4",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Micro Wing Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Micro_Wing_Oil",
+      "image": "Micro Wing Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+80%",
+        "AmmoExConsume": "+20%",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Modern Technology Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Modern_Technology_Oil",
+      "image": "Modern Technology Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-35%",
+        "AmmoExConsume": "+10%",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Mosquito Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Mosquito_Oil",
+      "image": "Mosquito Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-40%",
+        "Dmg": "-15%",
+        "BltSpeed": "-30%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Multichamber Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Multichamber_Oil",
+      "image": "Multichamber_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "ProjecAmnt": "+100%",
+        "AmmoExConsume": "+100%",
+        "Spread": "+100%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Multishot Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Multishot_Oil",
+      "image": "Multishot_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-70%",
+        "ProjecAmnt": "+200%",
+        "Spread": "+40%",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Needleye Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Needleye_Oil",
+      "image": "Needleye Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "RPM": "-25%",
+        "SellVal": "100",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Nerf Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Nerf_Oil",
+      "image": "Nerf Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-10%",
+        "RldSpeed": "+120%",
+        "BltDrop": "×5",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "No Look Oil",
+      "page": "https://sulfur.wiki.gg/wiki/No_Look_Oil",
+      "image": "No Look Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+30%",
+        "AimDisabled": "✓",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "No Need Oil",
+      "page": "https://sulfur.wiki.gg/wiki/No_Need_Oil",
+      "image": "No_Need_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+15%",
+        "LootChance": "-25%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Oil of Yin (DEMO)",
+      "page": "https://sulfur.wiki.gg/wiki/Oil_of_Yin_%28DEMO%29",
+      "image": "oil of yin.png",
+      "fields": {
+        "GridSize": "1x1",
+        "BuyVal": "Priceless"
+      }
+    },
+    {
+      "name": "Out of the Box Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Out_of_the_Box_Oil",
+      "image": "Out_of_the_Box_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+20%",
+        "MaxDrb": "-15%",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Over Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Over_Oil",
+      "image": "Over Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "+30%",
+        "BltSize": "+100%",
+        "NoDrb": "✓",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Overclock Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Overclock_Oil",
+      "image": "Overclock_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+40%",
+        "AmmoExConsume": "+30%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Overdose Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Overdose_Oil",
+      "image": "Overdose Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+3",
+        "MaxDrb": "-25%",
+        "SellVal": "50",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Parallel Mag Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Parallel_Mag_Oil",
+      "image": "Parallel Mag Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "ProjecAmnt": "+100%",
+        "RldSpeed": "-50%",
+        "Spread": "+0.7",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Peashooter Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Peashooter_Oil",
+      "image": "Peashooter Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-20%",
+        "BltSize": "-100%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Penetration Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Penetration_Oil",
+      "image": "Penetration Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+1",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Perfect Bounce Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Perfect_Bounce_Oil",
+      "image": "Perfect Bounce Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+1",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Perforate Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Perforate_Oil",
+      "image": "Perforate_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+25%",
+        "NoOrgans": "X",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Plinker Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Plinker_Oil",
+      "image": "Plinker_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-20%",
+        "Spread": "-0.9",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Plop Back Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Plop_Back_Oil",
+      "image": "Plop Back Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "+125%",
+        "AmmoConsume": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Pool Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Pool_Oil",
+      "image": "Pool Oil.png",
+      "fields": {
+        "GridSize": "1×2",
+        "BltBounces": "+5",
+        "Speed": "-30%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Potato Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Potato_Oil",
+      "image": "Potato Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+150%",
+        "AimDisabled": "✓",
+        "NoDrb": "✓",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Potshot Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Potshot_Oil",
+      "image": "Potshot_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+35",
+        "AimDisabled": "✓",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Puncher Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Puncher_Oil",
+      "image": "Puncher Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30%",
+        "Recoil": "+150%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Puncture Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Puncture_Oil",
+      "image": "Puncture Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+15%",
+        "NoOrgans": "X",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Purse Gun Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Purse_Gun_Oil",
+      "image": "Purse Gun Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-35%",
+        "RldSpeed": "-30%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rapid Internals Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rapid_Internals_Oil",
+      "image": "Rapid Internals Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+50%",
+        "Dmg": "-15%",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Ready Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Ready_Oil",
+      "image": "Ready Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-45%",
+        "RPM": "-30%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rebound Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rebound_Oil",
+      "image": "Rebound_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-15",
+        "BltBounces": "+3",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Recycle Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Recycle_Oil",
+      "image": "Recycle_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-15%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Relax Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Relax_Oil",
+      "image": "Relax Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-50%",
+        "BltSpeed": "-20%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Release Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Release_Oil",
+      "image": "Release Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+40%",
+        "Recoil": "+150%",
+        "NoDrb": "✓",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Reload Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Reload_Oil",
+      "image": "Reload Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RldSpeed": "+40%",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Ricochet Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Ricochet_Oil",
+      "image": "Ricochet Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+3",
+        "Dmg": "-10%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rigid System Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rigid_System_Oil",
+      "image": "Rigid System Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+40%",
+        "AmmoExConsume": "+20%",
+        "NoDrb": "✓",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rigor Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rigor_Oil",
+      "image": "Rigor Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "BltSpeed": "-50%",
+        "SellVal": "63",
+        "BuyVal": "125",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Robust Mechanics Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Robust_Mechanics_Oil",
+      "image": "Robust Mechanics Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "NoDrb": "✓",
+        "MaxDrb": "+35%",
+        "RPM": "-25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rookie Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rookie_Oil",
+      "image": "Rookie Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+50%",
+        "RldSpeed": "-75%",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rubber Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rubber_Oil",
+      "image": "Rubber_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-10",
+        "MaxDrb": "+30%",
+        "NoDrb": "✓",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Rush Job Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Rush_Job_Oil",
+      "image": "Rush_Job_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RldSpeed": "+130%",
+        "AmmoExConsume": "+30%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Safety Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Safety_Oil",
+      "image": "Safety Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-45%",
+        "Dmg": "-8%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Saviour Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Saviour_Oil",
+      "image": "Saviour_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-30%",
+        "LootChance": "-100%",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Scatter Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Scatter_Oil",
+      "image": "Scatter_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-15%",
+        "Spread": "+1.7",
+        "ProjecAmnt": "+100%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Scramble Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Scramble_Oil",
+      "image": "Scramble Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+2",
+        "NoOrgans": "X",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Seated Fit Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Seated_Fit_Oil",
+      "image": "Seated Fit Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+70%",
+        "BltDrop": "×10",
+        "NoDrb": "✓",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Seated Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Seated_Oil",
+      "image": "Seated Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30",
+        "JumpPwr": "-15%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Sect Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Sect_Oil",
+      "image": "Sect Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+1",
+        "NoMoney": "✓",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Sender Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Sender_Oil",
+      "image": "Sender Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+25",
+        "RPM": "-25%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Sensible Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Sensible_Oil",
+      "image": "Sensible Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+25%",
+        "NoOrgans": "X",
+        "NoDrb": "✓",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Shaved Clip Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Shaved_Clip_Oil",
+      "image": "Shaved Clip Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RldSpeed": "+50%",
+        "MaxDrb": "-15%",
+        "SellVal": "275",
+        "SoldBy": "Kevin, Qiosk"
+      }
+    },
+    {
+      "name": "Shellman Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Shellman_Oil",
+      "image": "Shellman Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.7",
+        "RldSpeed": "-25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Sherlock Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Sherlock_Oil",
+      "image": "Sherlock Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+5",
+        "RPM": "-50%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Shower Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Shower_Oil",
+      "image": "Shower Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+60%",
+        "BltDrop": "×10",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Shredder Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Shredder_Oil",
+      "image": "Shredder_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-20%",
+        "Spread": "+1.7",
+        "ProjecAmnt": "+100%",
+        "NoOrgans": "X",
+        "SellVal": "350",
+        "SoldBy": "Kevin, Qiosk"
+      }
+    },
+    {
+      "name": "Size Up Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Size_Up_Oil",
+      "image": "Size Up Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+50%",
+        "NoDrb": "✓",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Skip Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Skip_Oil",
+      "image": "Skip Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+2",
+        "LootChance": "-25%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Slick Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Slick_Oil",
+      "image": "Slick Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.6",
+        "JumpPwr": "-10%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Slippy Coating Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Slippy_Coating_Oil",
+      "image": "Slippy Coating Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+30%",
+        "Spread": "+1",
+        "NoDrb": "✓",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Slotmachine Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Slotmachine_Oil",
+      "image": "Slotmachine Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+25%",
+        "AmmoExConsume": "+20%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Slow Punch Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Slow_Punch_Oil",
+      "image": "Slow Punch Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+50%",
+        "BltSpeed": "-50%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Smart Bullet Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Smart_Bullet_Oil",
+      "image": "Smart Bullet Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "CritChance": "+20%",
+        "BltSpeed": "-60%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Smash Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Smash_Oil",
+      "image": "Smash Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+300%",
+        "NoOrgans": "X",
+        "NoDrb": "✓",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Soft Bullet Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Soft_Bullet_Oil",
+      "image": "Soft Bullet Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+30%",
+        "BltSpeed": "-30%",
+        "NoDrb": "✓",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Solid Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Solid_Oil",
+      "image": "Solid Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+40",
+        "BltDrop": "×10",
+        "BltSize": "+50%",
+        "SellVal": "175",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Spartan Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Spartan_Oil",
+      "image": "Spartan_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+20%",
+        "LootChance": "-50%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Speed Trade Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Speed_Trade_Oil",
+      "image": "Speed Trade Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "-30%",
+        "RldSpeed": "+80%",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Spitter Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Spitter_Oil",
+      "image": "Spitter Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+35%",
+        "Spread": "+1",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Spread Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Spread_Oil",
+      "image": "Spread_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.5",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Stability Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Stability_Oil",
+      "image": "Stability Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-45%",
+        "Dmg": "-10",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Stable Hip Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Stable_Hip_Oil",
+      "image": "Stable_Hip_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-62%",
+        "AimDisabled": "✓",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Stationary Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Stationary_Oil",
+      "image": "Stationary Oil.png",
+      "fields": {
+        "GridSize": "1×2",
+        "RPM": "+80%",
+        "Speed": "-90%",
+        "JumpPwr": "-90%",
+        "Recoil": "-85%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Stiffy Fit Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Stiffy_Fit_Oil",
+      "image": "Stiffy Fit Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+45%",
+        "RldSpeed": "-50%",
+        "NoDrb": "✓",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Stoic Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Stoic_Oil",
+      "image": "Stoic Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.6",
+        "NoMoney": "✓",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Suppressive Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Suppressive_Oil",
+      "image": "Suppressive Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "ProjecAmnt": "+300%",
+        "Dmg": "-40%",
+        "MoveAccuracy": "-200%",
+        "Spread": "+2.1",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Surgical Laser Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Surgical_Laser_Oil",
+      "image": "Surgical Laser Oil.png",
+      "fields": {
+        "GridSize": "1×2",
+        "BltPen": "+3",
+        "Dmg": "-30%",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Synchronicity Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Synchronicity_Oil",
+      "image": "Synchronicity Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+4",
+        "AmmoExConsume": "+25%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tactical Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tactical_Oil",
+      "image": "Tactical Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-10%",
+        "RldSpeed": "+110%",
+        "SellVal": "325",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tandem Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tandem_Oil",
+      "image": "Tandem Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-15%",
+        "ProjecAmnt": "+100%",
+        "Spread": "+0.7",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Task Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Task_Oil",
+      "image": "Task Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "NoOrgans": "X",
+        "RldSpeed": "+60%",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tech Support Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tech_Support_Oil",
+      "image": "Tech Support Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "JumpPwr": "-30%",
+        "RldSpeed": "+80%",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tension Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tension_Oil",
+      "image": "Tension Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-35%",
+        "Speed": "-15%",
+        "SellVal": "550",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Terminator Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Terminator_Oil",
+      "image": "Terminator_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "+30%",
+        "Speed": "-15%",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tetrus Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tetrus_Oil",
+      "image": "Tetrus Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-20%",
+        "RldSpeed": "-40%",
+        "SellVal": "600",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Thorough Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Thorough_Oil",
+      "image": "Thorough Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.8",
+        "Speed": "-15%",
+        "SellVal": "450",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tight Barrel Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tight_Barrel_Oil",
+      "image": "Tight Barrel Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+70%",
+        "MaxDrb": "-10%",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Tight Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Tight_Oil",
+      "image": "Tight Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "-10%",
+        "BltSize": "+100%",
+        "NoDrb": "✓",
+        "SellVal": "200",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Too Much Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Too_Much_Oil",
+      "image": "Too Much Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+1",
+        "NoOrgans": "X",
+        "SellVal": "450",
+        "BuyVal": "900",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Translucent Oil (DEMO)",
+      "page": "https://sulfur.wiki.gg/wiki/Translucent_Oil_%28DEMO%29",
+      "image": "Translucent Oil.png",
+      "fields": {
+        "GridSize": "1x1",
+        "BuyVal": "Priceless"
+      }
+    },
+    {
+      "name": "Triple Oil (DEMO)",
+      "page": "https://sulfur.wiki.gg/wiki/Triple_Oil_%28DEMO%29",
+      "image": "Triple Oil.png",
+      "fields": {
+        "GridSize": "1x2",
+        "BuyVal": "Priceless"
+      }
+    },
+    {
+      "name": "Trusty Old Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Trusty_Old_Oil",
+      "image": "Trusty Old Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "MaxDrb": "+25%",
+        "NoMoney": "✓",
+        "NoDrb": "✓",
+        "SellVal": "375",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Turbulence Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Turbulence_Oil",
+      "image": "Turbulence Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+40%",
+        "NoOrgans": "X",
+        "SellVal": "300",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Twice Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Twice_Oil",
+      "image": "Twice Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-25%",
+        "ProjecAmnt": "+100%",
+        "Spread": "+0.7",
+        "SellVal": "500",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Two Time Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Two_Time_Oil",
+      "image": "Two_Time_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Dmg": "-10%",
+        "Spread": "+4.4",
+        "ProjecAmnt": "+200%",
+        "NoMoney": "X",
+        "SellVal": "650",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Unlabeled Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Unlabeled_Oil",
+      "image": "Unlabeled Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Untechnical Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Untechnical_Oil",
+      "image": "Untechnical Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "RldSpeed": "-25%",
+        "SellVal": "150",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Vasectomy Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Vasectomy_Oil",
+      "image": "Vasectomy Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltPen": "+2",
+        "LootChance": "-50%",
+        "SellVal": "350",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Vegan Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Vegan_Oil",
+      "image": "Vegan_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Spread": "-0.6",
+        "NoOrgans": "X",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Vegetable Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Vegetable_Oil",
+      "image": "Vegetable_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "Recoil": "-30%",
+        "NoOrgans": "X",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Velocity Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Velocity_Oil",
+      "image": "Velocity Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+25%",
+        "SellVal": "110",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Walk Easy Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Walk_Easy_Oil",
+      "image": "Walk Easy Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-15%",
+        "Speed": "-10%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Waster Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Waster_Oil",
+      "image": "Waster Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+25%",
+        "NoMoney": "X",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Whim Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Whim_Oil",
+      "image": "Whim Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+50%",
+        "LootChance": "-25%",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Whos Counting Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Whos_Counting_Oil",
+      "image": "Whos_Counting_Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "AmmoConsume": "-25%",
+        "AimDisabled": "✓",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Wobble Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Wobble_Oil",
+      "image": "Wobble Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltBounces": "+2",
+        "Spread": "+1",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Xanny Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Xanny_Oil",
+      "image": "Xanny Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSize": "+300%",
+        "Speed": "-25%",
+        "NoDrb": "✓",
+        "SellVal": "250",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Zero Fucks Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Zero_Fucks_Oil",
+      "image": "Zero Fucks Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "RPM": "+50%",
+        "LootChance": "-100%",
+        "SellVal": "400",
+        "SoldBy": "Kevin"
+      }
+    },
+    {
+      "name": "Zooming Oil",
+      "page": "https://sulfur.wiki.gg/wiki/Zooming_Oil",
+      "image": "Zooming Oil.png",
+      "fields": {
+        "GridSize": "1×1",
+        "BltSpeed": "+80%",
+        "Spread": "+1",
+        "SellVal": "225",
+        "SoldBy": "Kevin"
+      }
+    }
+  ]
+}

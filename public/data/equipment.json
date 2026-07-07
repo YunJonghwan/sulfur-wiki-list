@@ -1,0 +1,1500 @@
+{
+  "kind": "equipment",
+  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "SubType",
+      "label": "Type"
+    },
+    {
+      "key": "Durability",
+      "label": "Durability"
+    },
+    {
+      "key": "Armor",
+      "label": "Armor"
+    },
+    {
+      "key": "Speed",
+      "label": "Movement Speed"
+    },
+    {
+      "key": "Sprint",
+      "label": "Sprint Bonus"
+    },
+    {
+      "key": "SwimSpeed",
+      "label": "Swim Speed"
+    },
+    {
+      "key": "MoveAccuracy",
+      "label": "Accuracy while moving"
+    },
+    {
+      "key": "WpnWeight",
+      "label": "Weapon Weight"
+    },
+    {
+      "key": "CritADS",
+      "label": "Crit Chance down sight"
+    },
+    {
+      "key": "JumpPwr",
+      "label": "Jump Power"
+    },
+    {
+      "key": "ExtraJumps",
+      "label": "Extra Jumps"
+    },
+    {
+      "key": "Coyote",
+      "label": "Coyote Time"
+    },
+    {
+      "key": "Charisma",
+      "label": "Charisma"
+    },
+    {
+      "key": "Luck",
+      "label": "Luck"
+    },
+    {
+      "key": "CharmRst",
+      "label": "Charm Resistance"
+    },
+    {
+      "key": "ExplRst",
+      "label": "Explosion Resistance"
+    },
+    {
+      "key": "FireRst",
+      "label": "Fire Resistance"
+    },
+    {
+      "key": "FrostRst",
+      "label": "Frost Resistance"
+    },
+    {
+      "key": "PsnRst",
+      "label": "Poison Resistance"
+    },
+    {
+      "key": "ElecRst",
+      "label": "Electric Resistance"
+    },
+    {
+      "key": "LightRst",
+      "label": "Light Resistance"
+    },
+    {
+      "key": "AutoDmg",
+      "label": "Automatic Weapon Damage"
+    },
+    {
+      "key": "PistolDmg",
+      "label": "Pistol Damage"
+    },
+    {
+      "key": "RevolDmg",
+      "label": "Revolver Damage"
+    },
+    {
+      "key": "LMGDmg",
+      "label": "LMG Damage"
+    },
+    {
+      "key": "RifleDmg",
+      "label": "Rifle Damage"
+    },
+    {
+      "key": "MeleeDmg",
+      "label": "Melee Damage"
+    },
+    {
+      "key": "SniperDmg",
+      "label": "Sniper Damage"
+    },
+    {
+      "key": "ShotgunDmg",
+      "label": "Shotgun Damage"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    },
+    {
+      "key": "Blindfolded",
+      "label": "Blindfolded"
+    },
+    {
+      "key": "Rudolf Vision",
+      "label": "Rudolf Vision"
+    },
+    {
+      "key": "Type",
+      "label": "Type"
+    },
+    {
+      "key": "WearEarPro",
+      "label": "Wearing Ear Pro"
+    },
+    {
+      "key": "WearGoggles",
+      "label": "Wearing Goggles"
+    },
+    {
+      "key": "WearSJ",
+      "label": "Straightjacketed"
+    },
+    {
+      "key": "WearShades",
+      "label": "Wearing Shades"
+    }
+  ],
+  "items": [
+    {
+      "name": "Badass Vest",
+      "page": "https://sulfur.wiki.gg/wiki/Badass_Vest",
+      "image": "Badass Vest.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SubType": "Chestwear",
+        "Durability": "500",
+        "Armor": "+2",
+        "CharmRst": "+80",
+        "SellVal": "350",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Balaclava",
+      "page": "https://sulfur.wiki.gg/wiki/Balaclava",
+      "image": "Balaclava.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Headwear",
+        "Durability": "250",
+        "Armor": "+1",
+        "AutoDmg": "+10%",
+        "Charisma": "-15",
+        "SellVal": "250",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Ballistic Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Ballistic_Helmet",
+      "image": "Ballistic Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "Durability": "500",
+        "SubType": "Headwear",
+        "Armor": "+5",
+        "SellVal": "550"
+      }
+    },
+    {
+      "name": "Ballistic Vest",
+      "page": "https://sulfur.wiki.gg/wiki/Ballistic_Vest",
+      "image": "Ballistic Vest.png",
+      "fields": {
+        "GridSize": "3×3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+12",
+        "MoveAccuracy": "+15%",
+        "SellVal": "1150"
+      }
+    },
+    {
+      "name": "Bathrobe",
+      "page": "https://sulfur.wiki.gg/wiki/Bathrobe",
+      "image": "Bathrobe.png",
+      "fields": {
+        "GridSize": "2×3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "ShotgunDmg": "+10%",
+        "SellVal": "350"
+      }
+    },
+    {
+      "name": "Beanie",
+      "page": "https://sulfur.wiki.gg/wiki/Beanie",
+      "image": "Beanie.png",
+      "fields": {
+        "SubType": "Headwear",
+        "GridSize": "2×2",
+        "Durability": "350",
+        "Armor": "+2",
+        "SellVal": "150"
+      }
+    },
+    {
+      "name": "Beer Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Beer_Helmet",
+      "image": "Beer Helmet.png",
+      "fields": {
+        "SubType": "Headwear",
+        "GridSize": "2×2",
+        "Durability": "350",
+        "Armor": "+2",
+        "FireRst": "+15",
+        "SellVal": "230",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Blast Boot",
+      "page": "https://sulfur.wiki.gg/wiki/Blast_Boot",
+      "image": "Blast Boot.png",
+      "fields": {
+        "SubType": "Footwear",
+        "GridSize": "2×2",
+        "SellVal": "200",
+        "SoldBy": "Skrip",
+        "Durability": "100",
+        "Armor": "+3",
+        "Speed": "-10%",
+        "ExplRst": "+15"
+      }
+    },
+    {
+      "name": "Blindfold",
+      "page": "https://sulfur.wiki.gg/wiki/Blindfold",
+      "image": "Blindfold.png",
+      "fields": {
+        "SubType": "Headwear",
+        "GridSize": "2×1",
+        "SellVal": "75",
+        "Durability": "350",
+        "Type": "Headwear",
+        "Armor": "+1",
+        "Blindfolded": "+1"
+      }
+    },
+    {
+      "name": "Blue Bandana",
+      "page": "https://sulfur.wiki.gg/wiki/Blue_Bandana",
+      "image": "Blue Bandana.png",
+      "fields": {
+        "SubType": "Headwear",
+        "GridSize": "2×1",
+        "SellVal": "230",
+        "Durability": "350",
+        "Armor": "+1",
+        "PistolDmg": "+10%"
+      }
+    },
+    {
+      "name": "Blue Slipper",
+      "page": "https://sulfur.wiki.gg/wiki/Blue_Slipper",
+      "image": "Blue Slipper.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Durability": "50",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+5%",
+        "SellVal": "150",
+        "SoldBy": "Skrip, Qiosk"
+      }
+    },
+    {
+      "name": "Breastplate",
+      "page": "https://sulfur.wiki.gg/wiki/Breastplate",
+      "image": "Breastplate.png",
+      "fields": {
+        "GridSize": "3x3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+25",
+        "Speed": "-10%",
+        "SellVal": "1050"
+      }
+    },
+    {
+      "name": "Camo Jacket",
+      "page": "https://sulfur.wiki.gg/wiki/Camo_Jacket",
+      "image": "Camo Jacket.png",
+      "fields": {
+        "SubType": "Chestwear",
+        "GridSize": "3×3",
+        "Durability": "500",
+        "Armor": "+2",
+        "AutoDmg": "+10%",
+        "SellVal": "450",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Cap",
+      "page": "https://sulfur.wiki.gg/wiki/Cap",
+      "image": "Cap.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Headwear",
+        "Durability": "300",
+        "Armor": "+1",
+        "SellVal": "100",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Christmas Sock",
+      "page": "https://sulfur.wiki.gg/wiki/Christmas_Sock",
+      "image": "Christmas Sock.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Footwear",
+        "Durability": "50",
+        "Speed": "+5%",
+        "FrostRst": "+20",
+        "SellVal": "100"
+      }
+    },
+    {
+      "name": "Christmas Sweater",
+      "page": "https://sulfur.wiki.gg/wiki/Christmas_Sweater",
+      "image": "Christmas Sweater.png",
+      "fields": {
+        "GridSize": "2×3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "SellVal": "350"
+      }
+    },
+    {
+      "name": "Clog",
+      "page": "https://sulfur.wiki.gg/wiki/Clog",
+      "image": "Clog.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Durability": "50",
+        "SubType": "Footwear",
+        "Armor": "+3",
+        "Speed": "-10%",
+        "SellVal": "200",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Combat Boot",
+      "page": "https://sulfur.wiki.gg/wiki/Combat_Boot",
+      "image": "Combat Boot.png",
+      "fields": {
+        "GridSize": "2×2",
+        "Durability": "500",
+        "SubType": "Footwear",
+        "Armor": "+2",
+        "Speed": "+10%",
+        "MoveAccuracy": "+25%",
+        "WpnWeight": "-20%",
+        "SellVal": "305"
+      }
+    },
+    {
+      "name": "Cowboy Boot",
+      "page": "https://sulfur.wiki.gg/wiki/Cowboy_Boot",
+      "image": "Cowboy Boot.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SubType": "Footwear",
+        "Durability": "300",
+        "Armor": "+2",
+        "RevolDmg": "+10%",
+        "SoldBy": "Skrip",
+        "SellVal": "165"
+      }
+    },
+    {
+      "name": "Cowboy Hat",
+      "page": "https://sulfur.wiki.gg/wiki/Cowboy_Hat",
+      "image": "Cowboy Hat.png",
+      "fields": {
+        "GridSize": "2x1",
+        "Durability": "350",
+        "SellVal": "375",
+        "SubType": "Headwear",
+        "Armor": "2",
+        "RevolDmg": "10%"
+      }
+    },
+    {
+      "name": "Cowboy Vest",
+      "page": "https://sulfur.wiki.gg/wiki/Cowboy_Vest",
+      "image": "Cowboy Vest.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SubType": "Chestwear",
+        "Durability": "500",
+        "Armor": "+2",
+        "RevolDmg": "+10%",
+        "SellVal": "350"
+      }
+    },
+    {
+      "name": "Crown",
+      "page": "https://sulfur.wiki.gg/wiki/Crown",
+      "image": "Crown.png",
+      "fields": {
+        "GridSize": "2x1",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+2",
+        "Charisma": "+25",
+        "SellVal": "7500"
+      }
+    },
+    {
+      "name": "Denim Jacket",
+      "page": "https://sulfur.wiki.gg/wiki/Denim_Jacket",
+      "image": "Denim Jacket.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SubType": "Chestwear",
+        "Durability": "500",
+        "Armor": "+3",
+        "Charisma": "+10",
+        "SellVal": "350",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Diving Fin",
+      "page": "https://sulfur.wiki.gg/wiki/Diving_Fin",
+      "image": "Diving_Fin.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Footwear",
+        "Durability": "100",
+        "Armor": "+1",
+        "SwimSpeed": "+40%",
+        "SellVal": "115",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Diving Mask",
+      "page": "https://sulfur.wiki.gg/wiki/Diving_Mask",
+      "image": "Diving Mask.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "180",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+1",
+        "WearGoggles": "✓"
+      }
+    },
+    {
+      "name": "Dunce Cap",
+      "page": "https://sulfur.wiki.gg/wiki/Dunce_Cap",
+      "image": "Dunce Cap.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "350",
+        "Durability": "100",
+        "SubType": "Headwear",
+        "Speed": "-50%",
+        "Charisma": "-2",
+        "ExtraJumps": "+4"
+      }
+    },
+    {
+      "name": "Ear Protectors",
+      "page": "https://sulfur.wiki.gg/wiki/Ear_Protectors",
+      "image": "Ear Protectors.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "230",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+1",
+        "ExplRst": "+30",
+        "WearEarPro": "✓"
+      }
+    },
+    {
+      "name": "Encrypted Hoodie",
+      "page": "https://sulfur.wiki.gg/wiki/Encrypted_Hoodie",
+      "image": "Encrypted Hoodie.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "200",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2"
+      }
+    },
+    {
+      "name": "Eye Patch",
+      "page": "https://sulfur.wiki.gg/wiki/Eye_Patch",
+      "image": "Eye Patch.png",
+      "fields": {
+        "GridSize": "1x2",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "CritADS": "+10%",
+        "CharmRst": "+50",
+        "SellVal": "400"
+      }
+    },
+    {
+      "name": "Father's Shirt",
+      "page": "https://sulfur.wiki.gg/wiki/Father%27s_Shirt",
+      "image": "Father's Shirt.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "1",
+        "Durability": "100",
+        "SubType": "Chestwear",
+        "Armor": "+1"
+      }
+    },
+    {
+      "name": "Firefighter Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Firefighter_Helmet",
+      "image": "Firefighter Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "350",
+        "SoldBy": "Skrip",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+3",
+        "FireRst": "+50"
+      }
+    },
+    {
+      "name": "Firefighter Jacket",
+      "page": "https://sulfur.wiki.gg/wiki/Firefighter_Jacket",
+      "image": "Firefighter Jacket.png",
+      "fields": {
+        "GridSize": "3×4",
+        "SellVal": "350",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+8",
+        "FireRst": "+50"
+      }
+    },
+    {
+      "name": "Fluffy Hat",
+      "page": "https://sulfur.wiki.gg/wiki/Fluffy_Hat",
+      "image": "Fluffy Hat.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "185",
+        "Durability": "250",
+        "SubType": "Headwear",
+        "FrostRst": "+50",
+        "SoldBy": "Stiffleg, Skrip, Rat Queen"
+      }
+    },
+    {
+      "name": "Gas Mask",
+      "page": "https://sulfur.wiki.gg/wiki/Gas_Mask",
+      "image": "Gas Mask.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "325",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+2",
+        "PsnRst": "+50"
+      }
+    },
+    {
+      "name": "Genie Shoe",
+      "page": "https://sulfur.wiki.gg/wiki/Genie_Shoe",
+      "image": "Genie Shoe.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SellVal": "190",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "Coyote": "+0.5s"
+      }
+    },
+    {
+      "name": "Geta",
+      "page": "https://sulfur.wiki.gg/wiki/Geta",
+      "image": "Geta.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "220",
+        "Durability": "200",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "MeleeDmg": "+25%"
+      }
+    },
+    {
+      "name": "Ghillie Suit",
+      "page": "https://sulfur.wiki.gg/wiki/Ghillie_Suit",
+      "image": "Ghillie Suit.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "750",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+4",
+        "SniperDmg": "+10%"
+      }
+    },
+    {
+      "name": "Golden Slipper",
+      "page": "https://sulfur.wiki.gg/wiki/Golden_Slipper",
+      "image": "Golden_Slipper.png",
+      "fields": {
+        "GridSize": "2×1",
+        "Durability": "300",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+5%",
+        "SellVal": "2500"
+      }
+    },
+    {
+      "name": "Green Tunic",
+      "page": "https://sulfur.wiki.gg/wiki/Green_Tunic",
+      "image": "Green Tunic.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SellVal": "250",
+        "SoldBy": "Skrip",
+        "Durability": "100",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "Charisma": "+1"
+      }
+    },
+    {
+      "name": "Hardhat",
+      "page": "https://sulfur.wiki.gg/wiki/Hardhat",
+      "image": "Hardhat.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "152",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+3"
+      }
+    },
+    {
+      "name": "Hazmat Suit",
+      "page": "https://sulfur.wiki.gg/wiki/Hazmat_Suit",
+      "image": "Hazmat Suit.png",
+      "fields": {
+        "GridSize": "3x3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "2",
+        "PsnRst": "50",
+        "SellVal": "550",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Hedgehog Suit",
+      "page": "https://sulfur.wiki.gg/wiki/Hedgehog_Suit",
+      "image": "Hedgehog Suit.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "350",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+3"
+      }
+    },
+    {
+      "name": "High Cut Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/High_Cut_Helmet",
+      "image": "High Cut Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "1250",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+9",
+        "AutoDmg": "+10%"
+      }
+    },
+    {
+      "name": "High Heel",
+      "page": "https://sulfur.wiki.gg/wiki/High_Heel",
+      "image": "High Heel.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "400",
+        "SoldBy": "Skrip",
+        "Durability": "40",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "-20%",
+        "Charisma": "+5",
+        "ExtraJumps": "-100%"
+      }
+    },
+    {
+      "name": "High Quality Elf Shoe",
+      "page": "https://sulfur.wiki.gg/wiki/High_Quality_Elf_Shoe",
+      "image": "High Quality Elf Shoe.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "599",
+        "SoldBy": "Skrip",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "Luck": "+1",
+        "Coyote": "+0.2s"
+      }
+    },
+    {
+      "name": "Hockey Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Hockey_Helmet",
+      "image": "Hockey Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "210",
+        "SoldBy": "Skrip",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+3"
+      }
+    },
+    {
+      "name": "Hockey Shoulder Pads",
+      "page": "https://sulfur.wiki.gg/wiki/Hockey_Shoulder_Pads",
+      "image": "Hockey Shoulder Pads.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SellVal": "649",
+        "Durability": "100",
+        "SubType": "Chestwear",
+        "Armor": "+9"
+      }
+    },
+    {
+      "name": "Hunting Vest",
+      "page": "https://sulfur.wiki.gg/wiki/Hunting_Vest",
+      "image": "Hunting Vest.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "350",
+        "SoldBy": "Jaques De Fector",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "RifleDmg": "+10%"
+      }
+    },
+    {
+      "name": "Ice Skate",
+      "page": "https://sulfur.wiki.gg/wiki/Ice_Skate",
+      "image": "Ice Skate.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "190",
+        "SoldBy": "Skrip",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Armor": "+2",
+        "Speed": "+10%"
+      }
+    },
+    {
+      "name": "Knight's Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Knight%27s_Helmet",
+      "image": "Knight's Helmet.png",
+      "fields": {
+        "GridSize": "3×2",
+        "SubType": "Headwear",
+        "Durability": "350",
+        "Armor": "+15",
+        "Speed": "-5%",
+        "SellVal": "500"
+      }
+    },
+    {
+      "name": "Leather Jacket",
+      "page": "https://sulfur.wiki.gg/wiki/Leather_Jacket",
+      "image": "Leather Jacket.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "325",
+        "BuyVal": "406",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+3",
+        "CharmRst": "+25",
+        "ElecRst": "+15"
+      }
+    },
+    {
+      "name": "Life Vest",
+      "page": "https://sulfur.wiki.gg/wiki/Life_Vest",
+      "image": "Life Vest.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "400",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+5",
+        "Speed": "-10%"
+      }
+    },
+    {
+      "name": "Motorcycle Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Motorcycle_Helmet",
+      "image": "Motorcycle Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "400",
+        "SoldBy": "Skrip",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+3",
+        "ExplRst": "+50"
+      }
+    },
+    {
+      "name": "Office Wear",
+      "page": "https://sulfur.wiki.gg/wiki/Office_Wear",
+      "image": "Office Wear.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "250",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+1",
+        "AutoDmg": "+10%"
+      }
+    },
+    {
+      "name": "Old-Timey Suit",
+      "page": "https://sulfur.wiki.gg/wiki/Old-Timey_Suit",
+      "image": "Old-Timey Suit.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "750",
+        "Durability": "500",
+        "SoldBy": "Skrip",
+        "SubType": "Chestwear",
+        "Armor": "+4",
+        "ShotgunDmg": "+10%",
+        "Charisma": "+10"
+      }
+    },
+    {
+      "name": "Parka",
+      "page": "https://sulfur.wiki.gg/wiki/Parka",
+      "image": "Parka.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "350",
+        "SoldBy": "Skrip",
+        "Durability": "800",
+        "SubType": "Chestwear",
+        "Armor": "+3",
+        "FrostRst": "+50"
+      }
+    },
+    {
+      "name": "Peg Leg",
+      "page": "https://sulfur.wiki.gg/wiki/Peg_Leg",
+      "image": "Peg Leg.png",
+      "fields": {
+        "GridSize": "1×2",
+        "Durability": "800",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "-20%",
+        "ExplRst": "+50",
+        "SellVal": "305",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Pillow Armor",
+      "page": "https://sulfur.wiki.gg/wiki/Pillow_Armor",
+      "image": "Pillow Armor.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "360",
+        "SoldBy": "Stiffleg, Skrip, Rat Queen",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+5",
+        "Speed": "-5%"
+      }
+    },
+    {
+      "name": "Pith Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Pith_Helmet",
+      "image": "Pith Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "350",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+2",
+        "RifleDmg": "+10%"
+      }
+    },
+    {
+      "name": "Plain White Tee",
+      "page": "https://sulfur.wiki.gg/wiki/Plain_White_Tee",
+      "image": "Plain_White_Tee.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "75",
+        "SoldBy": "Skrip",
+        "Durability": "100",
+        "SubType": "Chestwear",
+        "Armor": "+2"
+      }
+    },
+    {
+      "name": "Plate Carrier",
+      "page": "https://sulfur.wiki.gg/wiki/Plate_Carrier",
+      "image": "Plate Carrier.png",
+      "fields": {
+        "GridSize": "3×3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+30",
+        "Speed": "-15%",
+        "SellVal": "2000"
+      }
+    },
+    {
+      "name": "Platform Shoe",
+      "page": "https://sulfur.wiki.gg/wiki/Platform_Shoe",
+      "image": "Platform_Shoe.png",
+      "fields": {
+        "GridSize": "2×2",
+        "Durability": "500",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "JumpPwr": "+10%",
+        "SellVal": "175",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Police Hat",
+      "page": "https://sulfur.wiki.gg/wiki/Police_Hat",
+      "image": "Police Hat.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "300",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+1",
+        "PistolDmg": "+10%"
+      }
+    },
+    {
+      "name": "Police Uniform",
+      "page": "https://sulfur.wiki.gg/wiki/Police_Uniform",
+      "image": "Police Uniform.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "350",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "PistolDmg": "+10%"
+      }
+    },
+    {
+      "name": "Pope Hat",
+      "page": "https://sulfur.wiki.gg/wiki/Pope_Hat",
+      "image": "Pope_Hat.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "1000",
+        "Durability": "150",
+        "SubType": "Headwear",
+        "ExtraJumps": "+1"
+      }
+    },
+    {
+      "name": "Pyjamas",
+      "page": "https://sulfur.wiki.gg/wiki/Pyjamas",
+      "image": "Pyjamas.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "200",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "FrostRst": "+10"
+      }
+    },
+    {
+      "name": "Raincoat",
+      "page": "https://sulfur.wiki.gg/wiki/Raincoat",
+      "image": "Raincoat.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "400",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+4",
+        "ElecRst": "+25",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Red Bandana",
+      "page": "https://sulfur.wiki.gg/wiki/Red_Bandana",
+      "image": "Red Bandana.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "230",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+1",
+        "PistolDmg": "+10%"
+      }
+    },
+    {
+      "name": "Roller Blade",
+      "page": "https://sulfur.wiki.gg/wiki/Roller_Blade",
+      "image": "Roller Blade.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "190",
+        "SoldBy": "Skrip",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%"
+      }
+    },
+    {
+      "name": "Round Glasses",
+      "page": "https://sulfur.wiki.gg/wiki/Round_Glasses",
+      "image": "Round Glasses.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "100",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "CharmRst": "+25"
+      }
+    },
+    {
+      "name": "Rubber Boot",
+      "page": "https://sulfur.wiki.gg/wiki/Rubber_Boot",
+      "image": "Rubber_Boot.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "125",
+        "SoldBy": "Skrip, Rat Queen",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Speed": "+5%",
+        "Armor": "+1",
+        "ElecRst": "+25"
+      }
+    },
+    {
+      "name": "Rudolf Nose",
+      "page": "https://sulfur.wiki.gg/wiki/Rudolf_Nose",
+      "image": "Rudolf Nose.png",
+      "fields": {
+        "SubType": "Headwear",
+        "GridSize": "2×2",
+        "SellVal": "150",
+        "Durability": "1500",
+        "Type": "Headwear",
+        "Armor": "+3",
+        "Rudolf Vision": "+1"
+      }
+    },
+    {
+      "name": "Running Shoe",
+      "page": "https://sulfur.wiki.gg/wiki/Running_Shoe",
+      "image": "Running Shoe.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SellVal": "350",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "Sprint": "+15%"
+      }
+    },
+    {
+      "name": "Safety Vest",
+      "page": "https://sulfur.wiki.gg/wiki/Safety_Vest",
+      "image": "Safety Vest.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "200",
+        "SoldBy": "Skrip",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2"
+      }
+    },
+    {
+      "name": "Samurai Armor",
+      "page": "https://sulfur.wiki.gg/wiki/Samurai_Armor",
+      "image": "Samurai Armor.png",
+      "fields": {
+        "GridSize": "3×3",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+10",
+        "MeleeDmg": "+100%",
+        "SellVal": "1000"
+      }
+    },
+    {
+      "name": "Santa Coat",
+      "page": "https://sulfur.wiki.gg/wiki/Santa_Coat",
+      "image": "Santa Coat.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SellVal": "350",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+6",
+        "Speed": "-10%"
+      }
+    },
+    {
+      "name": "Santa Hat",
+      "page": "https://sulfur.wiki.gg/wiki/Santa_Hat",
+      "image": "Santa Hat.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "300",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+2",
+        "Luck": "+1"
+      }
+    },
+    {
+      "name": "Shoe",
+      "page": "https://sulfur.wiki.gg/wiki/Shoe",
+      "image": "Shoe.png",
+      "fields": {
+        "GridSize": "1x2",
+        "SellVal": "190",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Armor": "+2",
+        "Speed": "+10%"
+      }
+    },
+    {
+      "name": "Ski Goggles",
+      "page": "https://sulfur.wiki.gg/wiki/Ski_Goggles",
+      "image": "Ski Goggles.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "100",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "WearGoggles": "✓",
+        "FrostRst": "+20",
+        "LightRst": "+20"
+      }
+    },
+    {
+      "name": "Sneaker",
+      "page": "https://sulfur.wiki.gg/wiki/Sneaker",
+      "image": "Sneaker.png",
+      "fields": {
+        "GridSize": "1×2",
+        "SellVal": "190",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Speed": "+10%"
+      }
+    },
+    {
+      "name": "Sock",
+      "page": "https://sulfur.wiki.gg/wiki/Sock",
+      "image": "Sock.png",
+      "fields": {
+        "GridSize": "1×1",
+        "SellVal": "50",
+        "SoldBy": "Skrip",
+        "Durability": "50",
+        "SubType": "Footwear",
+        "Speed": "+5%",
+        "FrostRst": "+10"
+      }
+    },
+    {
+      "name": "Springcoil Boot",
+      "page": "https://sulfur.wiki.gg/wiki/Springcoil_Boot",
+      "image": "Springcoil_Boot.png",
+      "fields": {
+        "GridSize": "2×2",
+        "Durability": "250",
+        "SubType": "Footwear",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "JumpPwr": "+25%",
+        "SellVal": "500",
+        "SoldBy": "Stiffleg, Skrip"
+      }
+    },
+    {
+      "name": "Square Glasses",
+      "page": "https://sulfur.wiki.gg/wiki/Square_Glasses",
+      "image": "Square Glasses.png",
+      "fields": {
+        "GridSize": "1×2",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "AutoDmg": "+5%",
+        "SellVal": "150"
+      }
+    },
+    {
+      "name": "Steel Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Steel_Helmet",
+      "image": "Steel Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "1250",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+8",
+        "Speed": "-10%",
+        "LMGDmg": "+10%"
+      }
+    },
+    {
+      "name": "Straitjacket",
+      "page": "https://sulfur.wiki.gg/wiki/Straitjacket",
+      "image": "Straitjacket.png",
+      "fields": {
+        "GridSize": "2×3",
+        "SubType": "Chestwear",
+        "Durability": "500",
+        "Armor": "+2",
+        "Speed": "-25%",
+        "WearSJ": "✓",
+        "SellVal": "125",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Sulf Air",
+      "page": "https://sulfur.wiki.gg/wiki/Sulf_Air",
+      "image": "Sulf Air.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "400",
+        "Durability": "100",
+        "SubType": "Footwear",
+        "Speed": "+10%",
+        "Armor": "+1",
+        "ExtraJumps": "+1",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "SULFUR Cap",
+      "page": "https://sulfur.wiki.gg/wiki/SULFUR_Cap",
+      "image": "SULFUR Cap.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "150",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+1",
+        "Charisma": "+10"
+      }
+    },
+    {
+      "name": "SULFUR Hoodie",
+      "page": "https://sulfur.wiki.gg/wiki/SULFUR_Hoodie",
+      "image": "SULFUR Hoodie.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "500",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+5"
+      }
+    },
+    {
+      "name": "Sunglasses",
+      "page": "https://sulfur.wiki.gg/wiki/Sunglasses",
+      "image": "Sunglasses.png",
+      "fields": {
+        "GridSize": "2×1",
+        "SubType": "Headwear",
+        "Durability": "350",
+        "Charisma": "+20",
+        "LightRst": "+25",
+        "ExplRst": "+25",
+        "WearShades": "✓",
+        "SellVal": "230"
+      }
+    },
+    {
+      "name": "Sylvester Hat",
+      "page": "https://sulfur.wiki.gg/wiki/Sylvester_Hat",
+      "image": "Sylvester Hat.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "100",
+        "SoldBy": "Skrip",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+1",
+        "ElecRst": "+10"
+      }
+    },
+    {
+      "name": "Tanker Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Tanker_Helmet",
+      "image": "Tanker Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "500",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+6",
+        "ExplRst": "+50"
+      }
+    },
+    {
+      "name": "Titanium Helmet",
+      "page": "https://sulfur.wiki.gg/wiki/Titanium_Helmet",
+      "image": "Titanium Helmet.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "1700",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Armor": "+13",
+        "ExplRst": "+60"
+      }
+    },
+    {
+      "name": "Tracksuit",
+      "page": "https://sulfur.wiki.gg/wiki/Tracksuit",
+      "image": "Tracksuit.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SellVal": "400",
+        "Durability": "500",
+        "SubType": "Chestwear",
+        "Armor": "+2",
+        "PistolDmg": "+10%"
+      }
+    },
+    {
+      "name": "Turtle Shell",
+      "page": "https://sulfur.wiki.gg/wiki/Turtle_Shell",
+      "image": "Turtle Shell.png",
+      "fields": {
+        "GridSize": "3x3",
+        "Durability": "2000",
+        "SubType": "Chestwear",
+        "Armor": "25",
+        "Speed": "-35%",
+        "SellVal": "750"
+      }
+    },
+    {
+      "name": "Winter Scarf",
+      "page": "https://sulfur.wiki.gg/wiki/Winter_Scarf",
+      "image": "Winter Scarf.png",
+      "fields": {
+        "GridSize": "2x2",
+        "Durability": "350",
+        "SubType": "Headwear",
+        "Speed": "+20%",
+        "FrostRst": "+20",
+        "SellVal": "450"
+      }
+    },
+    {
+      "name": "Wooden Armor",
+      "page": "https://sulfur.wiki.gg/wiki/Wooden_Armor",
+      "image": "Wooden Armor.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SubType": "Chestwear",
+        "Durability": "500",
+        "Armor": "+7",
+        "SellVal": "475"
+      }
+    },
+    {
+      "name": "Yellow Hoodie",
+      "page": "https://sulfur.wiki.gg/wiki/Yellow_Hoodie",
+      "image": "Yellow Hoodie.png",
+      "fields": {
+        "GridSize": "3×3",
+        "SubType": "Chestwear",
+        "Durability": "100",
+        "Armor": "+2",
+        "FrostRst": "+10",
+        "LightRst": "+50",
+        "SellVal": "165",
+        "SoldBy": "Skrip"
+      }
+    },
+    {
+      "name": "Ygg",
+      "page": "https://sulfur.wiki.gg/wiki/Ygg",
+      "image": "Ygg.png",
+      "fields": {
+        "GridSize": "2×2",
+        "SellVal": "174",
+        "SubType": "Footwear",
+        "Durability": "100",
+        "Armor": "+1",
+        "Speed": "+10%",
+        "FrostRst": "+20"
+      }
+    }
+  ]
+}
