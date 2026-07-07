@@ -661,6 +661,7 @@ OIL_GROUP_LABELS = {
 AXIS_KEYS_BY_KIND = {
     "weapon": ["class", "ammo"],
     "oil": ["ability", "composition"],
+    "scroll": ["stage"],
     "attachment": ["type"],
     "equipment": ["type"],
     "consumable": ["type"],
@@ -672,7 +673,23 @@ AXIS_LABELS = {
     "ability": "Ability",
     "composition": "Composition",
     "type": "Type",
+    "stage": "Stage",
 }
+
+# Stage 1 scrolls are the 9 base elemental scrolls (random drops / vendors);
+# every other scroll is Stage 2, made by combining two Stage 1 scrolls at
+# the church (order doesn't matter) — see https://sulfur.wiki.gg/wiki/Enchantments
+STAGE_1_SCROLLS = {
+    "Scroll of Dark", "Scroll of Earth", "Scroll of Embers",
+    "Scroll of Frostbite", "Scroll of Light", "Scroll of Nature",
+    "Scroll of Plague", "Scroll of Surge", "Scroll of Water",
+}
+
+STAGE_LABELS = {"stage1": "Stage 1 (Base)", "stage2": "Stage 2 (Combined)"}
+
+
+def scroll_stage(title: str) -> str:
+    return "stage1" if title in STAGE_1_SCROLLS else "stage2"
 
 # Axes where an item can belong to several groups at once (e.g. an oil that
 # modifies both Damage and Recoil shows up under each ability).
@@ -702,6 +719,8 @@ VALUE_ORDER = {
         "buff", "buff+constraint", "buff+debuff", "buff+debuff+constraint",
         "debuff+constraint", "debuff", "constraint",
     ],
+    # Combined (Stage 2) scrolls listed before base (Stage 1) ones.
+    "stage": ["stage2", "stage1"],
 }
 
 
@@ -767,6 +786,8 @@ def value_label(axis: str, value: str) -> str:
         return LABELS.get(value, value)
     if axis == "composition":
         return COMPOSITION_LABELS.get(value, value)
+    if axis == "stage":
+        return STAGE_LABELS.get(value, value)
     return value
 
 
@@ -778,12 +799,14 @@ def oil_ability_keys(fields: dict[str, str]) -> list[str]:
     ]
 
 
-def item_groups(kind: str, fields: dict[str, str]) -> dict[str, object]:
+def item_groups(kind: str, fields: dict[str, str], title: str) -> dict[str, object]:
     if kind == "oil":
         return {
             "ability": oil_ability_keys(fields),
             "composition": oil_composition(fields),
         }
+    if kind == "scroll":
+        return {"stage": scroll_stage(title)}
     label = display_subtype(fields.get("SubType", ""))
     if kind == "weapon":
         return {"class": label, "ammo": fields.get("Ammo") or "—"}
@@ -877,7 +900,7 @@ def build(refresh: bool = False) -> None:
             "name": title,
             "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
             "image": image,
-            "groups": item_groups(kind, fields),
+            "groups": item_groups(kind, fields, title),
             "fields": {k: v for k, v in fields.items()
                        if k not in ("kind", "image", "title")},
         }

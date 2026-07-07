@@ -81,7 +81,12 @@ export default function BuildSimulator({ lang }) {
     { key: 'weapon', items: data.weapon.items, axes: data.weapon.axes },
   ]
   const enchantSections = [
-    { key: 'scroll', label: t(UI.scrollOpt, lang), items: data.scroll.items },
+    {
+      key: 'scroll',
+      label: t(UI.scrollOpt, lang),
+      items: data.scroll.items,
+      axes: data.scroll.axes,
+    },
     { key: 'oil', label: t(UI.oilOpt, lang), items: data.oil.items, axes: data.oil.axes },
   ]
 

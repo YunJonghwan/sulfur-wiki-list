@@ -68,6 +68,7 @@ export const AXIS_KO = {
   ability: '능력',
   composition: '구성',
   type: '종류',
+  stage: '단계',
 }
 
 // Korean labels for sub-group values. Missing values fall back to English.
@@ -104,6 +105,9 @@ export const GROUP_KO = {
   'buff+debuff': '버프+디버프',
   'buff+debuff+constraint': '버프+디버프+제약',
   'debuff+constraint': '디버프+제약',
+  // scroll stage (1 = base elemental, 2 = combined from two Stage 1 scrolls)
+  stage2: '2단계 (결합)',
+  stage1: '1단계 (기본)',
   // consumable
   Food: '음식',
   Beverage: '음료',

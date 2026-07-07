@@ -1,6 +1,6 @@
 {
   "kind": "scroll",
-  "generated": "2026-07-07T13:44:42.355374+00:00",
+  "generated": "2026-07-07T14:27:49.581882+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -221,14 +221,32 @@
       "label": "Wet"
     }
   ],
-  "axes": [],
+  "axes": [
+    {
+      "key": "stage",
+      "label": "Stage",
+      "multi": false,
+      "values": [
+        {
+          "value": "stage2",
+          "label": "Stage 2 (Combined)",
+          "count": 26
+        },
+        {
+          "value": "stage1",
+          "label": "Stage 1 (Base)",
+          "count": 9
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": "Scroll of Aftershock",
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Aftershock",
       "image": "Scroll of Aftershock.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -243,7 +261,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Chain_Lightning",
       "image": "Scroll of Chain Lightning.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -259,7 +277,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Chaos_Strike",
       "image": "Scroll of Chaos Strike.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1x2",
@@ -276,7 +294,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Charm",
       "image": "Scroll of Charm.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -292,7 +310,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Corpse_Explosion",
       "image": "Scroll of Corpse Explosion.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -307,7 +325,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Crusader",
       "image": "Scroll of Crusader.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -322,7 +340,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Dark",
       "image": "Scroll of Dark.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -338,7 +356,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Earth",
       "image": "Scroll of Earth.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -354,7 +372,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Embers",
       "image": "Scroll of Embers.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -370,7 +388,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Explosions",
       "image": "Scroll of Explosions.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -386,7 +404,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Fear",
       "image": "Scroll of Fear.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -402,7 +420,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Flame_Thrower",
       "image": "Scroll of Flame Thrower.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -426,7 +444,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Frostbite",
       "image": "Scroll of Frostbite.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -441,7 +459,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Holy_Fire",
       "image": "Scroll of Holy Fire.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1x2",
@@ -459,7 +477,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Holy_Purge",
       "image": "Scroll of Holy Purge.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -479,7 +497,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Lava",
       "image": "Scroll of Lava.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -495,7 +513,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Least_Resistance",
       "image": "Scroll of Least Resistance.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -512,7 +530,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Light",
       "image": "Scroll of Light.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1x2",
@@ -530,7 +548,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Nature",
       "image": "Scroll of Nature.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -546,7 +564,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Noxiosa",
       "image": "Scroll of Noxiosa.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -561,7 +579,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Pesticide",
       "image": "Scroll of Pesticide.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -584,7 +602,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Petrification",
       "image": "Scroll of Petrification.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -600,7 +618,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Petroleum",
       "image": "Scroll of Petroleum.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -617,7 +635,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Plague",
       "image": "Scroll of Plague.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -633,7 +651,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Poison_Blood",
       "image": "Scroll of Poison Blood.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -648,7 +666,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Prism",
       "image": "Scroll of Prism.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -668,7 +686,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Rocket_Launcher",
       "image": "Scroll of Rocket Launcher.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -684,7 +702,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Sacrifice",
       "image": "Scroll of Sacrifice.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -700,7 +718,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Slush",
       "image": "Scroll of Slush.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -715,7 +733,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Storm_Surge",
       "image": "Scroll of Storm Surge.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -731,7 +749,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Surge",
       "image": "Scroll of Surge.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
@@ -747,7 +765,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Thunderbolt",
       "image": "Scroll of Thunderbolt.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -764,7 +782,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Toxic_Lobotomy",
       "image": "Scroll of Toxic Lobotomy.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -781,7 +799,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Voodoo",
       "image": "Scroll of Voodoo.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage2"
       },
       "fields": {
         "GridSize": "1×2",
@@ -797,7 +815,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Water",
       "image": "Scroll of Water.png",
       "groups": {
-        "type": "Other"
+        "stage": "stage1"
       },
       "fields": {
         "GridSize": "1×2",
