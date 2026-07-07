@@ -240,6 +240,45 @@ export const COLUMN_KO = {
   SingleUse: '1회용',
   SlowMo: '슬로모션',
   MoreDmgOnHit: '스택당 추가 피해',
+  // scroll-only effects
+  DarkDmg: '암흑 데미지',
+  WpnAreaDmg: '무기 광역 데미지',
+  HSDmg: '헤드샷 데미지',
+  PenDmgMult: '관통 데미지 배율',
+  DrbConsume: '내구도 소모',
+  AreaBlind: '범위 실명',
+  LessForceSpd: '감속',
+  OilPuddle: '기름 웅덩이',
+  Oily: '미끄러움',
+  SelfBlind: '자기 실명',
+  Swap: '위치 교환',
+  Wet: '젖음',
+  // attachment-only effects
+  ModeChange: '발사 모드 변경',
+  SilFire: '사격 소음 제거',
+  // weapon-class damage bonuses (equipment/passive)
+  AutoDmg: '자동화기 데미지',
+  PistolDmg: '권총 데미지',
+  RevolDmg: '리볼버 데미지',
+  AssltDmg: '돌격소총 데미지',
+  LMGDmg: '경기관총 데미지',
+  RifleDmg: '소총 데미지',
+  MeleeDmg: '근접 데미지',
+  SniperDmg: '저격소총 데미지',
+  ShotgunDmg: '샷건 데미지',
+  // equipment-only flags
+  Blindfolded: '눈가림',
+  'Rudolf Vision': '루돌프 시야',
+  Type: '종류',
+  WearEarPro: '귀마개 착용',
+  WearGoggles: '고글 착용',
+  WearSJ: '구속복 착용',
+  WearShades: '선글라스 착용',
+  // passive-only
+  LungCpty: '폐활량',
+  ExpGain: '경험치 획득',
+  // consumable: "SoldB" is a typo for "SoldBy" on a single wiki page
+  SoldB: '판매처',
 }
 
 export function t(entry, lang) {
