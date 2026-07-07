@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-07T11:38:45.346730+00:00",
+  "generated": "2026-07-07T12:02:09.244641+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -105,11 +105,58 @@
       "label": "Slow Motion"
     }
   ],
+  "axes": [
+    {
+      "key": "type",
+      "label": "Type",
+      "values": [
+        {
+          "value": "Food",
+          "count": 56
+        },
+        {
+          "value": "Beverage",
+          "count": 14
+        },
+        {
+          "value": "Manual",
+          "count": 9
+        },
+        {
+          "value": "Ingredient",
+          "count": 7
+        },
+        {
+          "value": "Dessert",
+          "count": 4
+        },
+        {
+          "value": "Drug Remedy",
+          "count": 4
+        },
+        {
+          "value": "Milk",
+          "count": 2
+        },
+        {
+          "value": "Amulet Recharge",
+          "count": 1
+        },
+        {
+          "value": "Water",
+          "count": 1
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": "Admiral White Extra Strong",
       "page": "https://sulfur.wiki.gg/wiki/Admiral_White_Extra_Strong",
       "image": "Admiral White Extra Strong.png",
+      "groups": {
+        "type": "Drug Remedy"
+      },
       "fields": {
         "GridSize": "1x1",
         "Speed": "+50% for 7 seconds",
@@ -124,6 +171,9 @@
       "name": "Americano",
       "page": "https://sulfur.wiki.gg/wiki/Americano",
       "image": "Americano.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Beverage",
@@ -138,6 +188,9 @@
       "name": "Anti-Poison Gum",
       "page": "https://sulfur.wiki.gg/wiki/Anti-Poison_Gum",
       "image": "Anti-Poison Gum.png",
+      "groups": {
+        "type": "Drug Remedy"
+      },
       "fields": {
         "GridSize": "1×1",
         "PsnRst": "+80 for 120 seconds",
@@ -151,6 +204,9 @@
       "name": "Aspic",
       "page": "https://sulfur.wiki.gg/wiki/Aspic",
       "image": "Aspic.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Food",
@@ -163,6 +219,9 @@
       "name": "Banana",
       "page": "https://sulfur.wiki.gg/wiki/Banana",
       "image": "Banana.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -175,6 +234,9 @@
       "name": "Banana Bread",
       "page": "https://sulfur.wiki.gg/wiki/Banana_Bread",
       "image": "Banana Bread.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Food",
@@ -187,6 +249,9 @@
       "name": "Banana Sulfs",
       "page": "https://sulfur.wiki.gg/wiki/Banana_Sulfs",
       "image": "Banana Sulfs.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food",
@@ -199,6 +264,9 @@
       "name": "Bark Bread",
       "page": "https://sulfur.wiki.gg/wiki/Bark_Bread",
       "image": "Bark_Bread.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -211,6 +279,9 @@
       "name": "Beans",
       "page": "https://sulfur.wiki.gg/wiki/Beans",
       "image": "Beans.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -223,6 +294,9 @@
       "name": "Beef Jerky",
       "page": "https://sulfur.wiki.gg/wiki/Beef_Jerky",
       "image": "Beef_Jerky.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -236,6 +310,9 @@
       "name": "Berries",
       "page": "https://sulfur.wiki.gg/wiki/Berries",
       "image": "Berries.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -249,6 +326,9 @@
       "name": "Berry Jam",
       "page": "https://sulfur.wiki.gg/wiki/Berry_Jam",
       "image": "Berry Jam.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -262,6 +342,9 @@
       "name": "Berry Jam (Unsweetened)",
       "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29",
       "image": "Berry Jam (Unsweetened).png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -274,6 +357,9 @@
       "name": "Biscuits And Gravy",
       "page": "https://sulfur.wiki.gg/wiki/Biscuits_And_Gravy",
       "image": "Biscuits And Gravy.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -287,6 +373,9 @@
       "name": "Black Pepper",
       "page": "https://sulfur.wiki.gg/wiki/Black_Pepper",
       "image": "Black Pepper.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "SubType": "Food, Ingredient",
         "GridSize": "1×1",
@@ -300,6 +389,9 @@
       "name": "Blood",
       "page": "https://sulfur.wiki.gg/wiki/Blood",
       "image": "Blood.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Ingredient",
@@ -312,6 +404,9 @@
       "name": "Blood of the Earth Mother",
       "page": "https://sulfur.wiki.gg/wiki/Blood_of_the_Earth_Mother",
       "image": "Blood of the Earth Mother.png",
+      "groups": {
+        "type": "Amulet Recharge"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Amulet Recharge",
@@ -324,6 +419,9 @@
       "name": "Boba Tea",
       "page": "https://sulfur.wiki.gg/wiki/Boba_Tea",
       "image": "Boba Tea.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Beverage",
@@ -339,6 +437,9 @@
       "name": "Bottled Caviar",
       "page": "https://sulfur.wiki.gg/wiki/Bottled_Caviar",
       "image": "Bottled Caviar.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -352,6 +453,9 @@
       "name": "Bread",
       "page": "https://sulfur.wiki.gg/wiki/Bread",
       "image": "Bread.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -364,6 +468,9 @@
       "name": "Broth",
       "page": "https://sulfur.wiki.gg/wiki/Broth",
       "image": "Broth.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -376,6 +483,9 @@
       "name": "Buddy Sandwich",
       "page": "https://sulfur.wiki.gg/wiki/Buddy_Sandwich",
       "image": "Buddy Sandwich.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Food",
@@ -388,6 +498,9 @@
       "name": "Butter",
       "page": "https://sulfur.wiki.gg/wiki/Butter",
       "image": "Butter.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -401,6 +514,9 @@
       "name": "Butter Sandwich",
       "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich",
       "image": "Butter Sandwich.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Food, Ingredient",
@@ -413,6 +529,9 @@
       "name": "Buttermilk",
       "page": "https://sulfur.wiki.gg/wiki/Buttermilk",
       "image": "Buttermilk.png",
+      "groups": {
+        "type": "Milk"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Milk, Ingredient",
@@ -426,6 +545,9 @@
       "name": "Cacao",
       "page": "https://sulfur.wiki.gg/wiki/Cacao",
       "image": "Cacao.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "SubType": "Food, Ingredient",
         "GridSize": "1×1",
@@ -438,6 +560,9 @@
       "name": "Cactus",
       "page": "https://sulfur.wiki.gg/wiki/Cactus",
       "image": "Cactus.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "SubType": "Food, Ingredient",
         "GridSize": "2×1",
@@ -451,6 +576,9 @@
       "name": "Candy Cane",
       "page": "https://sulfur.wiki.gg/wiki/Candy_Cane",
       "image": "Candy_Cane.png",
+      "groups": {
+        "type": "Dessert"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Sweets, Food",
@@ -463,6 +591,9 @@
       "name": "Cappucino",
       "page": "https://sulfur.wiki.gg/wiki/Cappucino",
       "image": "Cappucino.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Beverage",
@@ -478,6 +609,9 @@
       "name": "Cevapi",
       "page": "https://sulfur.wiki.gg/wiki/Cevapi",
       "image": "Cevapi.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Food",
@@ -492,6 +626,9 @@
       "name": "Cheeseburger",
       "page": "https://sulfur.wiki.gg/wiki/Cheeseburger",
       "image": "Cheeseburger.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food",
@@ -505,6 +642,9 @@
       "name": "Chocolate Ball",
       "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball",
       "image": "Chocolate Ball.png",
+      "groups": {
+        "type": "Dessert"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Sweets, Food",
@@ -518,6 +658,9 @@
       "name": "Delicacies of the Forest",
       "page": "https://sulfur.wiki.gg/wiki/Delicacies_of_the_Forest",
       "image": "Delicacies of the Forest.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -532,6 +675,9 @@
       "name": "Double Cheeseburger",
       "page": "https://sulfur.wiki.gg/wiki/Double_Cheeseburger",
       "image": "Double Cheeseburger.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "300",
@@ -543,6 +689,9 @@
       "name": "Eating as Royals",
       "page": "https://sulfur.wiki.gg/wiki/Eating_as_Royals",
       "image": "Eating as Royals.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -557,6 +706,9 @@
       "name": "Egg Toddy",
       "page": "https://sulfur.wiki.gg/wiki/Egg_Toddy",
       "image": "Egg Toddy.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Beverage",
@@ -571,6 +723,9 @@
       "name": "Energy Gum",
       "page": "https://sulfur.wiki.gg/wiki/Energy_Gum",
       "image": "Energy Gum.png",
+      "groups": {
+        "type": "Drug Remedy"
+      },
       "fields": {
         "GridSize": "1×1",
         "FireRst": "+50 for 90 seconds",
@@ -585,6 +740,9 @@
       "name": "Escargot",
       "page": "https://sulfur.wiki.gg/wiki/Escargot",
       "image": "Escargot.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -598,6 +756,9 @@
       "name": "Fish And Chips",
       "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips",
       "image": "Fish And Chips.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -611,6 +772,9 @@
       "name": "Food for Desert Survival",
       "page": "https://sulfur.wiki.gg/wiki/Food_for_Desert_Survival",
       "image": "Food for Desert Survival.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -625,6 +789,9 @@
       "name": "French Toast",
       "page": "https://sulfur.wiki.gg/wiki/French_Toast",
       "image": "French Toast.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food",
@@ -637,6 +804,9 @@
       "name": "Fried Mushroom",
       "page": "https://sulfur.wiki.gg/wiki/Fried_Mushroom",
       "image": "Fried_Mushroom.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -649,6 +819,9 @@
       "name": "From the Cellar",
       "page": "https://sulfur.wiki.gg/wiki/From_the_Cellar",
       "image": "From the Cellar.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -662,6 +835,9 @@
       "name": "GABBA FOODMAKE",
       "page": "https://sulfur.wiki.gg/wiki/GABBA_FOODMAKE",
       "image": "GABBA FOODMAKE.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -675,6 +851,9 @@
       "name": "Gonster",
       "page": "https://sulfur.wiki.gg/wiki/Gonster",
       "image": "Gonster.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Beverage",
@@ -689,6 +868,9 @@
       "name": "Graved Salmon",
       "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon",
       "image": "Graved Salmon.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -702,6 +884,9 @@
       "name": "Gravy",
       "page": "https://sulfur.wiki.gg/wiki/Gravy",
       "image": "Gravy.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -714,6 +899,9 @@
       "name": "Green Tea",
       "page": "https://sulfur.wiki.gg/wiki/Green_Tea",
       "image": "Green Tea.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Beverages, Drug & Remedy, Ingredient",
@@ -730,6 +918,9 @@
       "name": "Green Tea Gum",
       "page": "https://sulfur.wiki.gg/wiki/Green_Tea_Gum",
       "image": "Green Tea Gum.png",
+      "groups": {
+        "type": "Drug Remedy"
+      },
       "fields": {
         "GridSize": "1×1",
         "Heal": "10 health over 1 seconds",
@@ -743,6 +934,9 @@
       "name": "Grilled Poultry",
       "page": "https://sulfur.wiki.gg/wiki/Grilled_Poultry",
       "image": "Grilled_Poultry.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -755,6 +949,9 @@
       "name": "Guild Approved Cuisine",
       "page": "https://sulfur.wiki.gg/wiki/Guild_Approved_Cuisine",
       "image": "Guild Approved Cuisine.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -768,6 +965,9 @@
       "name": "Haggis",
       "page": "https://sulfur.wiki.gg/wiki/Haggis",
       "image": "Haggis.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -780,6 +980,9 @@
       "name": "Herbal Tea",
       "page": "https://sulfur.wiki.gg/wiki/Herbal_Tea",
       "image": "Herbal Tea.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Beverage",
@@ -795,6 +998,9 @@
       "name": "Herbs",
       "page": "https://sulfur.wiki.gg/wiki/Herbs",
       "image": "Herbs.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Ingredient",
@@ -807,6 +1013,9 @@
       "name": "Holy Toast",
       "page": "https://sulfur.wiki.gg/wiki/Holy_Toast",
       "image": "Holy_Toast.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -819,6 +1028,9 @@
       "name": "Hot Pot",
       "page": "https://sulfur.wiki.gg/wiki/Hot_Pot",
       "image": "Hot Pot.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Food",
@@ -831,6 +1043,9 @@
       "name": "Hot Sauce",
       "page": "https://sulfur.wiki.gg/wiki/Hot_Sauce",
       "image": "Hot Sauce.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Ingredient",
@@ -844,6 +1059,9 @@
       "name": "Jansson's Temptation",
       "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation",
       "image": "Jansson's Temptation.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×3",
         "SubType": "Food",
@@ -858,6 +1076,9 @@
       "name": "Julmust",
       "page": "https://sulfur.wiki.gg/wiki/Julmust",
       "image": "Julmust.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Beverage",
@@ -872,6 +1093,9 @@
       "name": "Karl-Oskar",
       "page": "https://sulfur.wiki.gg/wiki/Karl-Oskar",
       "image": "Karl-Oskar.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "5",
@@ -883,6 +1107,9 @@
       "name": "Kombucha",
       "page": "https://sulfur.wiki.gg/wiki/Kombucha",
       "image": "Kombucha.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "30",
@@ -898,6 +1125,9 @@
       "name": "Latte",
       "page": "https://sulfur.wiki.gg/wiki/Latte",
       "image": "Latte.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Beverage",
@@ -912,6 +1142,9 @@
       "name": "Liquor",
       "page": "https://sulfur.wiki.gg/wiki/Liquor",
       "image": "Liquor.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Beverages, Drug & Remedy",
@@ -926,6 +1159,9 @@
       "name": "Mac'n'Cheese",
       "page": "https://sulfur.wiki.gg/wiki/Mac%27n%27Cheese",
       "image": "Mac'n'Cheese.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "Heal": "+30 health over 10 seconds",
@@ -939,6 +1175,9 @@
       "name": "Meringue",
       "page": "https://sulfur.wiki.gg/wiki/Meringue",
       "image": "Meringue.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "20",
@@ -950,6 +1189,9 @@
       "name": "Mineral Water",
       "page": "https://sulfur.wiki.gg/wiki/Mineral_Water",
       "image": "Mineral Water.png",
+      "groups": {
+        "type": "Water"
+      },
       "fields": {
         "GridSize": "1×2",
         "MoveAccuracy": "+50% for 180 seconds",
@@ -965,6 +1207,9 @@
       "name": "Mochi",
       "page": "https://sulfur.wiki.gg/wiki/Mochi",
       "image": "Mochi.png",
+      "groups": {
+        "type": "Dessert"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Sweets, Food",
@@ -976,6 +1221,9 @@
       "name": "Nigiri",
       "page": "https://sulfur.wiki.gg/wiki/Nigiri",
       "image": "Nigiri.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "105",
@@ -988,6 +1236,9 @@
       "name": "Nuggets",
       "page": "https://sulfur.wiki.gg/wiki/Nuggets",
       "image": "Nuggets.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "40",
@@ -1000,6 +1251,9 @@
       "name": "Oats",
       "page": "https://sulfur.wiki.gg/wiki/Oats",
       "image": "Oats.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×2",
         "Heal": "+10 health over 3 seconds",
@@ -1012,6 +1266,9 @@
       "name": "Omelette",
       "page": "https://sulfur.wiki.gg/wiki/Omelette",
       "image": "Omelette.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "Heal": "+22 health over 5 seconds",
@@ -1025,6 +1282,9 @@
       "name": "Onigiri",
       "page": "https://sulfur.wiki.gg/wiki/Onigiri",
       "image": "Onigiri.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "Heal": "+35 health over 3 seconds",
@@ -1038,6 +1298,9 @@
       "name": "Peanutbutter Jelly Sandwich",
       "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich",
       "image": "Peanutbutter Jelly Sandwich.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food",
@@ -1050,6 +1313,9 @@
       "name": "Pickled Herring Platter",
       "page": "https://sulfur.wiki.gg/wiki/Pickled_Herring_Platter",
       "image": "Pickled Herring Platter.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -1062,6 +1328,9 @@
       "name": "Pilk",
       "page": "https://sulfur.wiki.gg/wiki/Pilk",
       "image": "Pilk.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Beverage",
@@ -1076,6 +1345,9 @@
       "name": "Pizza",
       "page": "https://sulfur.wiki.gg/wiki/Pizza",
       "image": "Pizza.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2x2",
         "SubType": "Food, Ingredient",
@@ -1091,6 +1363,9 @@
       "name": "Potato",
       "page": "https://sulfur.wiki.gg/wiki/Potato",
       "image": "Potato.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food, Ingredient",
@@ -1103,6 +1378,9 @@
       "name": "Potato Salad",
       "page": "https://sulfur.wiki.gg/wiki/Potato_Salad",
       "image": "Potato Salad.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Food, Ingredient",
@@ -1115,6 +1393,9 @@
       "name": "Poutine",
       "page": "https://sulfur.wiki.gg/wiki/Poutine",
       "image": "Poutine.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -1128,6 +1409,9 @@
       "name": "Pølse",
       "page": "https://sulfur.wiki.gg/wiki/P%C3%B8lse",
       "image": "Pølse.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -1141,6 +1425,9 @@
       "name": "Raclette",
       "page": "https://sulfur.wiki.gg/wiki/Raclette",
       "image": "Raclette.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -1153,6 +1440,9 @@
       "name": "Ramen",
       "page": "https://sulfur.wiki.gg/wiki/Ramen",
       "image": "Ramen.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "Heal": "+40 health over 4 seconds",
@@ -1166,6 +1456,9 @@
       "name": "Rhubarb",
       "page": "https://sulfur.wiki.gg/wiki/Rhubarb",
       "image": "Rhubarb.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Ingredient",
@@ -1178,6 +1471,9 @@
       "name": "Rhubarb Porridge",
       "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Porridge",
       "image": "Rhubarb Porridge.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -1190,6 +1486,9 @@
       "name": "Rice",
       "page": "https://sulfur.wiki.gg/wiki/Rice",
       "image": "Rice.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Food, Ingredient",
@@ -1203,6 +1502,9 @@
       "name": "Risalamande",
       "page": "https://sulfur.wiki.gg/wiki/Risalamande",
       "image": "Risalamande.png",
+      "groups": {
+        "type": "Dessert"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Dessert, Food",
@@ -1215,6 +1517,9 @@
       "name": "Salt",
       "page": "https://sulfur.wiki.gg/wiki/Salt",
       "image": "Salt.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Ingredient",
@@ -1228,6 +1533,9 @@
       "name": "Sashimi",
       "page": "https://sulfur.wiki.gg/wiki/Sashimi",
       "image": "Sashimi.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food, Ingredient",
@@ -1240,6 +1548,9 @@
       "name": "Shav'Wani Delights",
       "page": "https://sulfur.wiki.gg/wiki/Shav%27Wani_Delights",
       "image": "Shav'Wani Delights.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -1253,6 +1564,9 @@
       "name": "Solution",
       "page": "https://sulfur.wiki.gg/wiki/Solution",
       "image": "Solution.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Ingredient",
@@ -1266,6 +1580,9 @@
       "name": "Stout",
       "page": "https://sulfur.wiki.gg/wiki/Stout",
       "image": "Stout.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SellVal": "20",
@@ -1280,6 +1597,9 @@
       "name": "Sugar",
       "page": "https://sulfur.wiki.gg/wiki/Sugar",
       "image": "Sugar.png",
+      "groups": {
+        "type": "Ingredient"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Ingredient",
@@ -1293,6 +1613,9 @@
       "name": "Sulf Cola",
       "page": "https://sulfur.wiki.gg/wiki/Sulf_Cola",
       "image": "Sulf Cola.png",
+      "groups": {
+        "type": "Beverage"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Beverage",
@@ -1308,6 +1631,9 @@
       "name": "Surstromming",
       "page": "https://sulfur.wiki.gg/wiki/Surstromming",
       "image": "Surstromming.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Food",
@@ -1320,6 +1646,9 @@
       "name": "Tastes from the Sewers™",
       "page": "https://sulfur.wiki.gg/wiki/Tastes_from_the_Sewers%E2%84%A2",
       "image": "Tastes from the Sewers™.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -1334,6 +1663,9 @@
       "name": "The Chequered Cookbook",
       "page": "https://sulfur.wiki.gg/wiki/The_Chequered_Cookbook",
       "image": "The Chequered Cookbook.png",
+      "groups": {
+        "type": "Manual"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Manual",
@@ -1347,6 +1679,9 @@
       "name": "Unagi",
       "page": "https://sulfur.wiki.gg/wiki/Unagi",
       "image": "Unagi.png",
+      "groups": {
+        "type": "Food"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Food",
@@ -1360,6 +1695,9 @@
       "name": "Whole Milk",
       "page": "https://sulfur.wiki.gg/wiki/Whole_Milk",
       "image": "Whole Milk.png",
+      "groups": {
+        "type": "Milk"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Milk, Ingredient",

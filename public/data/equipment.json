@@ -1,6 +1,6 @@
 {
   "kind": "equipment",
-  "generated": "2026-07-07T11:38:45.346730+00:00",
+  "generated": "2026-07-07T12:02:09.244641+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -165,11 +165,34 @@
       "label": "Wearing Shades"
     }
   ],
+  "axes": [
+    {
+      "key": "type",
+      "label": "Type",
+      "values": [
+        {
+          "value": "Chestwear",
+          "count": 37
+        },
+        {
+          "value": "Headwear",
+          "count": 37
+        },
+        {
+          "value": "Footwear",
+          "count": 24
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": "Badass Vest",
       "page": "https://sulfur.wiki.gg/wiki/Badass_Vest",
       "image": "Badass Vest.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SubType": "Chestwear",
@@ -185,6 +208,9 @@
       "name": "Balaclava",
       "page": "https://sulfur.wiki.gg/wiki/Balaclava",
       "image": "Balaclava.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Headwear",
@@ -201,6 +227,9 @@
       "name": "Ballistic Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Ballistic_Helmet",
       "image": "Ballistic Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "Durability": "500",
@@ -214,6 +243,9 @@
       "name": "Ballistic Vest",
       "page": "https://sulfur.wiki.gg/wiki/Ballistic_Vest",
       "image": "Ballistic Vest.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "Durability": "500",
@@ -228,6 +260,9 @@
       "name": "Bathrobe",
       "page": "https://sulfur.wiki.gg/wiki/Bathrobe",
       "image": "Bathrobe.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "Durability": "500",
@@ -242,6 +277,9 @@
       "name": "Beanie",
       "page": "https://sulfur.wiki.gg/wiki/Beanie",
       "image": "Beanie.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "SubType": "Headwear",
         "GridSize": "2×2",
@@ -255,6 +293,9 @@
       "name": "Beer Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Beer_Helmet",
       "image": "Beer Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "SubType": "Headwear",
         "GridSize": "2×2",
@@ -270,6 +311,9 @@
       "name": "Blast Boot",
       "page": "https://sulfur.wiki.gg/wiki/Blast_Boot",
       "image": "Blast Boot.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "SubType": "Footwear",
         "GridSize": "2×2",
@@ -286,6 +330,9 @@
       "name": "Blindfold",
       "page": "https://sulfur.wiki.gg/wiki/Blindfold",
       "image": "Blindfold.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "SubType": "Headwear",
         "GridSize": "2×1",
@@ -301,6 +348,9 @@
       "name": "Blue Bandana",
       "page": "https://sulfur.wiki.gg/wiki/Blue_Bandana",
       "image": "Blue Bandana.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "SubType": "Headwear",
         "GridSize": "2×1",
@@ -315,6 +365,9 @@
       "name": "Blue Slipper",
       "page": "https://sulfur.wiki.gg/wiki/Blue_Slipper",
       "image": "Blue Slipper.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "Durability": "50",
@@ -330,6 +383,9 @@
       "name": "Breastplate",
       "page": "https://sulfur.wiki.gg/wiki/Breastplate",
       "image": "Breastplate.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3x3",
         "Durability": "500",
@@ -344,6 +400,9 @@
       "name": "Camo Jacket",
       "page": "https://sulfur.wiki.gg/wiki/Camo_Jacket",
       "image": "Camo Jacket.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "SubType": "Chestwear",
         "GridSize": "3×3",
@@ -359,6 +418,9 @@
       "name": "Cap",
       "page": "https://sulfur.wiki.gg/wiki/Cap",
       "image": "Cap.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Headwear",
@@ -373,6 +435,9 @@
       "name": "Christmas Sock",
       "page": "https://sulfur.wiki.gg/wiki/Christmas_Sock",
       "image": "Christmas Sock.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Footwear",
@@ -387,6 +452,9 @@
       "name": "Christmas Sweater",
       "page": "https://sulfur.wiki.gg/wiki/Christmas_Sweater",
       "image": "Christmas Sweater.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "Durability": "500",
@@ -400,6 +468,9 @@
       "name": "Clog",
       "page": "https://sulfur.wiki.gg/wiki/Clog",
       "image": "Clog.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "Durability": "50",
@@ -415,6 +486,9 @@
       "name": "Combat Boot",
       "page": "https://sulfur.wiki.gg/wiki/Combat_Boot",
       "image": "Combat Boot.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "Durability": "500",
@@ -431,6 +505,9 @@
       "name": "Cowboy Boot",
       "page": "https://sulfur.wiki.gg/wiki/Cowboy_Boot",
       "image": "Cowboy Boot.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Footwear",
@@ -446,6 +523,9 @@
       "name": "Cowboy Hat",
       "page": "https://sulfur.wiki.gg/wiki/Cowboy_Hat",
       "image": "Cowboy Hat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2x1",
         "Durability": "350",
@@ -460,6 +540,9 @@
       "name": "Cowboy Vest",
       "page": "https://sulfur.wiki.gg/wiki/Cowboy_Vest",
       "image": "Cowboy Vest.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SubType": "Chestwear",
@@ -474,6 +557,9 @@
       "name": "Crown",
       "page": "https://sulfur.wiki.gg/wiki/Crown",
       "image": "Crown.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2x1",
         "Durability": "350",
@@ -488,6 +574,9 @@
       "name": "Denim Jacket",
       "page": "https://sulfur.wiki.gg/wiki/Denim_Jacket",
       "image": "Denim Jacket.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SubType": "Chestwear",
@@ -503,6 +592,9 @@
       "name": "Diving Fin",
       "page": "https://sulfur.wiki.gg/wiki/Diving_Fin",
       "image": "Diving_Fin.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Footwear",
@@ -518,6 +610,9 @@
       "name": "Diving Mask",
       "page": "https://sulfur.wiki.gg/wiki/Diving_Mask",
       "image": "Diving Mask.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "180",
@@ -532,6 +627,9 @@
       "name": "Dunce Cap",
       "page": "https://sulfur.wiki.gg/wiki/Dunce_Cap",
       "image": "Dunce Cap.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "350",
@@ -547,6 +645,9 @@
       "name": "Ear Protectors",
       "page": "https://sulfur.wiki.gg/wiki/Ear_Protectors",
       "image": "Ear Protectors.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "230",
@@ -562,6 +663,9 @@
       "name": "Encrypted Hoodie",
       "page": "https://sulfur.wiki.gg/wiki/Encrypted_Hoodie",
       "image": "Encrypted Hoodie.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "200",
@@ -576,6 +680,9 @@
       "name": "Eye Patch",
       "page": "https://sulfur.wiki.gg/wiki/Eye_Patch",
       "image": "Eye Patch.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "1x2",
         "Durability": "350",
@@ -590,6 +697,9 @@
       "name": "Father's Shirt",
       "page": "https://sulfur.wiki.gg/wiki/Father%27s_Shirt",
       "image": "Father's Shirt.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "1",
@@ -603,6 +713,9 @@
       "name": "Firefighter Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Firefighter_Helmet",
       "image": "Firefighter Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "350",
@@ -618,6 +731,9 @@
       "name": "Firefighter Jacket",
       "page": "https://sulfur.wiki.gg/wiki/Firefighter_Jacket",
       "image": "Firefighter Jacket.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×4",
         "SellVal": "350",
@@ -633,6 +749,9 @@
       "name": "Fluffy Hat",
       "page": "https://sulfur.wiki.gg/wiki/Fluffy_Hat",
       "image": "Fluffy Hat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "185",
@@ -647,6 +766,9 @@
       "name": "Gas Mask",
       "page": "https://sulfur.wiki.gg/wiki/Gas_Mask",
       "image": "Gas Mask.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "325",
@@ -661,6 +783,9 @@
       "name": "Genie Shoe",
       "page": "https://sulfur.wiki.gg/wiki/Genie_Shoe",
       "image": "Genie Shoe.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1×2",
         "SellVal": "190",
@@ -676,6 +801,9 @@
       "name": "Geta",
       "page": "https://sulfur.wiki.gg/wiki/Geta",
       "image": "Geta.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "220",
@@ -691,6 +819,9 @@
       "name": "Ghillie Suit",
       "page": "https://sulfur.wiki.gg/wiki/Ghillie_Suit",
       "image": "Ghillie Suit.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "750",
@@ -705,6 +836,9 @@
       "name": "Golden Slipper",
       "page": "https://sulfur.wiki.gg/wiki/Golden_Slipper",
       "image": "Golden_Slipper.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "Durability": "300",
@@ -719,6 +853,9 @@
       "name": "Green Tunic",
       "page": "https://sulfur.wiki.gg/wiki/Green_Tunic",
       "image": "Green Tunic.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×2",
         "SellVal": "250",
@@ -734,6 +871,9 @@
       "name": "Hardhat",
       "page": "https://sulfur.wiki.gg/wiki/Hardhat",
       "image": "Hardhat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "152",
@@ -747,6 +887,9 @@
       "name": "Hazmat Suit",
       "page": "https://sulfur.wiki.gg/wiki/Hazmat_Suit",
       "image": "Hazmat Suit.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3x3",
         "Durability": "500",
@@ -762,6 +905,9 @@
       "name": "Hedgehog Suit",
       "page": "https://sulfur.wiki.gg/wiki/Hedgehog_Suit",
       "image": "Hedgehog Suit.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "350",
@@ -776,6 +922,9 @@
       "name": "High Cut Helmet",
       "page": "https://sulfur.wiki.gg/wiki/High_Cut_Helmet",
       "image": "High Cut Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "1250",
@@ -790,6 +939,9 @@
       "name": "High Heel",
       "page": "https://sulfur.wiki.gg/wiki/High_Heel",
       "image": "High Heel.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "400",
@@ -807,6 +959,9 @@
       "name": "High Quality Elf Shoe",
       "page": "https://sulfur.wiki.gg/wiki/High_Quality_Elf_Shoe",
       "image": "High Quality Elf Shoe.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "599",
@@ -824,6 +979,9 @@
       "name": "Hockey Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Hockey_Helmet",
       "image": "Hockey Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "210",
@@ -838,6 +996,9 @@
       "name": "Hockey Shoulder Pads",
       "page": "https://sulfur.wiki.gg/wiki/Hockey_Shoulder_Pads",
       "image": "Hockey Shoulder Pads.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×2",
         "SellVal": "649",
@@ -851,6 +1012,9 @@
       "name": "Hunting Vest",
       "page": "https://sulfur.wiki.gg/wiki/Hunting_Vest",
       "image": "Hunting Vest.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "350",
@@ -866,6 +1030,9 @@
       "name": "Ice Skate",
       "page": "https://sulfur.wiki.gg/wiki/Ice_Skate",
       "image": "Ice Skate.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "190",
@@ -881,6 +1048,9 @@
       "name": "Knight's Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Knight%27s_Helmet",
       "image": "Knight's Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Headwear",
@@ -895,6 +1065,9 @@
       "name": "Leather Jacket",
       "page": "https://sulfur.wiki.gg/wiki/Leather_Jacket",
       "image": "Leather Jacket.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "325",
@@ -912,6 +1085,9 @@
       "name": "Life Vest",
       "page": "https://sulfur.wiki.gg/wiki/Life_Vest",
       "image": "Life Vest.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "400",
@@ -927,6 +1103,9 @@
       "name": "Motorcycle Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Motorcycle_Helmet",
       "image": "Motorcycle Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "400",
@@ -942,6 +1121,9 @@
       "name": "Office Wear",
       "page": "https://sulfur.wiki.gg/wiki/Office_Wear",
       "image": "Office Wear.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "250",
@@ -957,6 +1139,9 @@
       "name": "Old-Timey Suit",
       "page": "https://sulfur.wiki.gg/wiki/Old-Timey_Suit",
       "image": "Old-Timey Suit.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "750",
@@ -973,6 +1158,9 @@
       "name": "Parka",
       "page": "https://sulfur.wiki.gg/wiki/Parka",
       "image": "Parka.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "350",
@@ -988,6 +1176,9 @@
       "name": "Peg Leg",
       "page": "https://sulfur.wiki.gg/wiki/Peg_Leg",
       "image": "Peg Leg.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1×2",
         "Durability": "800",
@@ -1004,6 +1195,9 @@
       "name": "Pillow Armor",
       "page": "https://sulfur.wiki.gg/wiki/Pillow_Armor",
       "image": "Pillow Armor.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "360",
@@ -1019,6 +1213,9 @@
       "name": "Pith Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Pith_Helmet",
       "image": "Pith Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "350",
@@ -1033,6 +1230,9 @@
       "name": "Plain White Tee",
       "page": "https://sulfur.wiki.gg/wiki/Plain_White_Tee",
       "image": "Plain_White_Tee.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "75",
@@ -1047,6 +1247,9 @@
       "name": "Plate Carrier",
       "page": "https://sulfur.wiki.gg/wiki/Plate_Carrier",
       "image": "Plate Carrier.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "Durability": "500",
@@ -1061,6 +1264,9 @@
       "name": "Platform Shoe",
       "page": "https://sulfur.wiki.gg/wiki/Platform_Shoe",
       "image": "Platform_Shoe.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "Durability": "500",
@@ -1077,6 +1283,9 @@
       "name": "Police Hat",
       "page": "https://sulfur.wiki.gg/wiki/Police_Hat",
       "image": "Police Hat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "300",
@@ -1091,6 +1300,9 @@
       "name": "Police Uniform",
       "page": "https://sulfur.wiki.gg/wiki/Police_Uniform",
       "image": "Police Uniform.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "350",
@@ -1106,6 +1318,9 @@
       "name": "Pope Hat",
       "page": "https://sulfur.wiki.gg/wiki/Pope_Hat",
       "image": "Pope_Hat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "1000",
@@ -1119,6 +1334,9 @@
       "name": "Pyjamas",
       "page": "https://sulfur.wiki.gg/wiki/Pyjamas",
       "image": "Pyjamas.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "200",
@@ -1134,6 +1352,9 @@
       "name": "Raincoat",
       "page": "https://sulfur.wiki.gg/wiki/Raincoat",
       "image": "Raincoat.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "400",
@@ -1149,6 +1370,9 @@
       "name": "Red Bandana",
       "page": "https://sulfur.wiki.gg/wiki/Red_Bandana",
       "image": "Red Bandana.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "230",
@@ -1163,6 +1387,9 @@
       "name": "Roller Blade",
       "page": "https://sulfur.wiki.gg/wiki/Roller_Blade",
       "image": "Roller Blade.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "190",
@@ -1178,6 +1405,9 @@
       "name": "Round Glasses",
       "page": "https://sulfur.wiki.gg/wiki/Round_Glasses",
       "image": "Round Glasses.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "100",
@@ -1191,6 +1421,9 @@
       "name": "Rubber Boot",
       "page": "https://sulfur.wiki.gg/wiki/Rubber_Boot",
       "image": "Rubber_Boot.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "125",
@@ -1207,6 +1440,9 @@
       "name": "Rudolf Nose",
       "page": "https://sulfur.wiki.gg/wiki/Rudolf_Nose",
       "image": "Rudolf Nose.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "SubType": "Headwear",
         "GridSize": "2×2",
@@ -1222,6 +1458,9 @@
       "name": "Running Shoe",
       "page": "https://sulfur.wiki.gg/wiki/Running_Shoe",
       "image": "Running Shoe.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1×2",
         "SellVal": "350",
@@ -1237,6 +1476,9 @@
       "name": "Safety Vest",
       "page": "https://sulfur.wiki.gg/wiki/Safety_Vest",
       "image": "Safety Vest.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "200",
@@ -1251,6 +1493,9 @@
       "name": "Samurai Armor",
       "page": "https://sulfur.wiki.gg/wiki/Samurai_Armor",
       "image": "Samurai Armor.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "Durability": "500",
@@ -1265,6 +1510,9 @@
       "name": "Santa Coat",
       "page": "https://sulfur.wiki.gg/wiki/Santa_Coat",
       "image": "Santa Coat.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SellVal": "350",
@@ -1279,6 +1527,9 @@
       "name": "Santa Hat",
       "page": "https://sulfur.wiki.gg/wiki/Santa_Hat",
       "image": "Santa Hat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "300",
@@ -1293,6 +1544,9 @@
       "name": "Shoe",
       "page": "https://sulfur.wiki.gg/wiki/Shoe",
       "image": "Shoe.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1x2",
         "SellVal": "190",
@@ -1307,6 +1561,9 @@
       "name": "Ski Goggles",
       "page": "https://sulfur.wiki.gg/wiki/Ski_Goggles",
       "image": "Ski Goggles.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "100",
@@ -1322,6 +1579,9 @@
       "name": "Sneaker",
       "page": "https://sulfur.wiki.gg/wiki/Sneaker",
       "image": "Sneaker.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1×2",
         "SellVal": "190",
@@ -1335,6 +1595,9 @@
       "name": "Sock",
       "page": "https://sulfur.wiki.gg/wiki/Sock",
       "image": "Sock.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "50",
@@ -1350,6 +1613,9 @@
       "name": "Springcoil Boot",
       "page": "https://sulfur.wiki.gg/wiki/Springcoil_Boot",
       "image": "Springcoil_Boot.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "Durability": "250",
@@ -1366,6 +1632,9 @@
       "name": "Square Glasses",
       "page": "https://sulfur.wiki.gg/wiki/Square_Glasses",
       "image": "Square Glasses.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "1×2",
         "Durability": "350",
@@ -1379,6 +1648,9 @@
       "name": "Steel Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Steel_Helmet",
       "image": "Steel Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "1250",
@@ -1394,6 +1666,9 @@
       "name": "Straitjacket",
       "page": "https://sulfur.wiki.gg/wiki/Straitjacket",
       "image": "Straitjacket.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "2×3",
         "SubType": "Chestwear",
@@ -1410,6 +1685,9 @@
       "name": "Sulf Air",
       "page": "https://sulfur.wiki.gg/wiki/Sulf_Air",
       "image": "Sulf Air.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "400",
@@ -1426,6 +1704,9 @@
       "name": "SULFUR Cap",
       "page": "https://sulfur.wiki.gg/wiki/SULFUR_Cap",
       "image": "SULFUR Cap.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SellVal": "150",
@@ -1440,6 +1721,9 @@
       "name": "SULFUR Hoodie",
       "page": "https://sulfur.wiki.gg/wiki/SULFUR_Hoodie",
       "image": "SULFUR Hoodie.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "500",
@@ -1453,6 +1737,9 @@
       "name": "Sunglasses",
       "page": "https://sulfur.wiki.gg/wiki/Sunglasses",
       "image": "Sunglasses.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Headwear",
@@ -1469,6 +1756,9 @@
       "name": "Sylvester Hat",
       "page": "https://sulfur.wiki.gg/wiki/Sylvester_Hat",
       "image": "Sylvester Hat.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "100",
@@ -1484,6 +1774,9 @@
       "name": "Tanker Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Tanker_Helmet",
       "image": "Tanker Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "500",
@@ -1498,6 +1791,9 @@
       "name": "Titanium Helmet",
       "page": "https://sulfur.wiki.gg/wiki/Titanium_Helmet",
       "image": "Titanium Helmet.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "1700",
@@ -1512,6 +1808,9 @@
       "name": "Tracksuit",
       "page": "https://sulfur.wiki.gg/wiki/Tracksuit",
       "image": "Tracksuit.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SellVal": "400",
@@ -1526,6 +1825,9 @@
       "name": "Turtle Shell",
       "page": "https://sulfur.wiki.gg/wiki/Turtle_Shell",
       "image": "Turtle Shell.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3x3",
         "Durability": "2000",
@@ -1540,6 +1842,9 @@
       "name": "Winter Scarf",
       "page": "https://sulfur.wiki.gg/wiki/Winter_Scarf",
       "image": "Winter Scarf.png",
+      "groups": {
+        "type": "Headwear"
+      },
       "fields": {
         "GridSize": "2x2",
         "Durability": "350",
@@ -1554,6 +1859,9 @@
       "name": "Wooden Armor",
       "page": "https://sulfur.wiki.gg/wiki/Wooden_Armor",
       "image": "Wooden Armor.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SubType": "Chestwear",
@@ -1567,6 +1875,9 @@
       "name": "Yellow Hoodie",
       "page": "https://sulfur.wiki.gg/wiki/Yellow_Hoodie",
       "image": "Yellow Hoodie.png",
+      "groups": {
+        "type": "Chestwear"
+      },
       "fields": {
         "GridSize": "3×3",
         "SubType": "Chestwear",
@@ -1583,6 +1894,9 @@
       "name": "Ygg",
       "page": "https://sulfur.wiki.gg/wiki/Ygg",
       "image": "Ygg.png",
+      "groups": {
+        "type": "Footwear"
+      },
       "fields": {
         "GridSize": "2×2",
         "SellVal": "174",

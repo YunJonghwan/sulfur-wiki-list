@@ -1,6 +1,6 @@
 {
   "kind": "oil",
-  "generated": "2026-07-07T11:38:45.346730+00:00",
+  "generated": "2026-07-07T12:02:09.244641+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -121,11 +121,54 @@
       "label": "Grid Size"
     }
   ],
+  "axes": [
+    {
+      "key": "effect",
+      "label": "Effect",
+      "values": [
+        {
+          "value": "Damage",
+          "count": 76
+        },
+        {
+          "value": "Fire Rate",
+          "count": 23
+        },
+        {
+          "value": "Handling",
+          "count": 39
+        },
+        {
+          "value": "Bullet",
+          "count": 60
+        },
+        {
+          "value": "Economy",
+          "count": 28
+        },
+        {
+          "value": "Mobility",
+          "count": 3
+        },
+        {
+          "value": "Effects",
+          "count": 3
+        },
+        {
+          "value": "Misc",
+          "count": 5
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": "Action Oil",
       "page": "https://sulfur.wiki.gg/wiki/Action_Oil",
       "image": "Action Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "+100%",
@@ -139,6 +182,9 @@
       "name": "Add Damage Oil",
       "page": "https://sulfur.wiki.gg/wiki/Add_Damage_Oil",
       "image": "Add Damage Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+15",
@@ -151,6 +197,9 @@
       "name": "Aimless Oil",
       "page": "https://sulfur.wiki.gg/wiki/Aimless_Oil",
       "image": "Aimless Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+30%",
@@ -164,6 +213,9 @@
       "name": "Airsoft Oil",
       "page": "https://sulfur.wiki.gg/wiki/Airsoft_Oil",
       "image": "Airsoft Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-15",
@@ -178,6 +230,9 @@
       "name": "Altruistic Oil",
       "page": "https://sulfur.wiki.gg/wiki/Altruistic_Oil",
       "image": "Altruistic_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.7",
@@ -191,6 +246,9 @@
       "name": "Arkanoid Oil",
       "page": "https://sulfur.wiki.gg/wiki/Arkanoid_Oil",
       "image": "Arkanoid Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "-80%",
@@ -204,6 +262,9 @@
       "name": "Arrow Oil",
       "page": "https://sulfur.wiki.gg/wiki/Arrow_Oil",
       "image": "Arrow Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+80%",
@@ -217,6 +278,9 @@
       "name": "Artery Oil",
       "page": "https://sulfur.wiki.gg/wiki/Artery_Oil",
       "image": "Artery_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+10%",
@@ -230,6 +294,9 @@
       "name": "Artillery Oil",
       "page": "https://sulfur.wiki.gg/wiki/Artillery_Oil",
       "image": "Artillery Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-2",
@@ -243,6 +310,9 @@
       "name": "Ascetic Oil",
       "page": "https://sulfur.wiki.gg/wiki/Ascetic_Oil",
       "image": "Ascetic Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30",
@@ -256,6 +326,9 @@
       "name": "Assassin Dart Oil",
       "page": "https://sulfur.wiki.gg/wiki/Assassin_Dart_Oil",
       "image": "Assassin Dart Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+70%",
@@ -269,6 +342,9 @@
       "name": "Attack Speed Oil",
       "page": "https://sulfur.wiki.gg/wiki/Attack_Speed_Oil",
       "image": "Attack Speed Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1x1",
         "RPM": "+20%",
@@ -281,6 +357,9 @@
       "name": "Axe Oil",
       "page": "https://sulfur.wiki.gg/wiki/Axe_Oil",
       "image": "Axe Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+25%",
@@ -294,6 +373,9 @@
       "name": "Bad Planet Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bad_Planet_Oil",
       "image": "Bad Planet Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -307,6 +389,9 @@
       "name": "Bandit Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bandit_Oil",
       "image": "Bandit Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×2",
         "BltBounces": "+2",
@@ -320,6 +405,9 @@
       "name": "BB Oil",
       "page": "https://sulfur.wiki.gg/wiki/BB_Oil",
       "image": "BB Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+30%",
@@ -333,6 +421,9 @@
       "name": "Big Oil",
       "page": "https://sulfur.wiki.gg/wiki/Big_Oil",
       "image": "Big Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltDrop": "×20",
@@ -347,6 +438,9 @@
       "name": "Big Tax Oil",
       "page": "https://sulfur.wiki.gg/wiki/Big_Tax_Oil",
       "image": "Big Tax Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+100%",
@@ -361,6 +455,9 @@
       "name": "Bigger Bullet Oil (DEMO)",
       "page": "https://sulfur.wiki.gg/wiki/Bigger_Bullet_Oil_%28DEMO%29",
       "image": "Bigger bullet oil.png",
+      "groups": {
+        "effect": "Misc"
+      },
       "fields": {
         "GridSize": "1x1",
         "BuyVal": "Priceless"
@@ -371,6 +468,9 @@
       "name": "Birth Oil",
       "page": "https://sulfur.wiki.gg/wiki/Birth_Oil",
       "image": "Birth Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+300%",
@@ -385,6 +485,9 @@
       "name": "Black Friday Oil",
       "page": "https://sulfur.wiki.gg/wiki/Black_Friday_Oil",
       "image": "Black Friday Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "-30%",
@@ -401,6 +504,9 @@
       "name": "Blindfold Oil",
       "page": "https://sulfur.wiki.gg/wiki/Blindfold_Oil",
       "image": "Blindfold_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+20%",
@@ -414,6 +520,9 @@
       "name": "Blurt Oil",
       "page": "https://sulfur.wiki.gg/wiki/Blurt_Oil",
       "image": "Blurt Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+40%",
@@ -427,6 +536,9 @@
       "name": "Bolt Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bolt_Oil",
       "image": "Bolt Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+60%",
@@ -440,6 +552,9 @@
       "name": "Bombard Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bombard_Oil",
       "image": "Bombard Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-10%",
@@ -455,6 +570,9 @@
       "name": "Boomstick Oil",
       "page": "https://sulfur.wiki.gg/wiki/Boomstick_Oil",
       "image": "Boomstick Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-25%",
@@ -471,6 +589,9 @@
       "name": "Boulder Oil",
       "page": "https://sulfur.wiki.gg/wiki/Boulder_Oil",
       "image": "Boulder Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20%",
@@ -486,6 +607,9 @@
       "name": "Bowl Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bowl_Oil",
       "image": "Bowl Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.75",
@@ -499,6 +623,9 @@
       "name": "Braced Oil",
       "page": "https://sulfur.wiki.gg/wiki/Braced_Oil",
       "image": "Braced Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-30%",
@@ -512,6 +639,9 @@
       "name": "Brute Oil",
       "page": "https://sulfur.wiki.gg/wiki/Brute_Oil",
       "image": "Brute Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30",
@@ -525,6 +655,9 @@
       "name": "Bulk Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bulk_Oil",
       "image": "Bulk Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-40%",
@@ -538,6 +671,9 @@
       "name": "Bystander Oil",
       "page": "https://sulfur.wiki.gg/wiki/Bystander_Oil",
       "image": "Bystander Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -551,6 +687,9 @@
       "name": "Carefree Oil",
       "page": "https://sulfur.wiki.gg/wiki/Carefree_Oil",
       "image": "Carefree Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-20%",
@@ -564,6 +703,9 @@
       "name": "Careful Oil",
       "page": "https://sulfur.wiki.gg/wiki/Careful_Oil",
       "image": "Careful Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.7",
@@ -577,6 +719,9 @@
       "name": "Careless Splitter Oil",
       "page": "https://sulfur.wiki.gg/wiki/Careless_Splitter_Oil",
       "image": "Careless Splitter Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-25%",
@@ -593,6 +738,9 @@
       "name": "Cartoon Oil",
       "page": "https://sulfur.wiki.gg/wiki/Cartoon_Oil",
       "image": "Cartoon_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "+200%",
@@ -606,6 +754,9 @@
       "name": "Casual Oil",
       "page": "https://sulfur.wiki.gg/wiki/Casual_Oil",
       "image": "Casual_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-30%",
@@ -619,6 +770,9 @@
       "name": "Cheap Oil",
       "page": "https://sulfur.wiki.gg/wiki/Cheap_Oil",
       "image": "Cheap Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-20%",
@@ -633,6 +787,9 @@
       "name": "Chonk Oil",
       "page": "https://sulfur.wiki.gg/wiki/Chonk_Oil",
       "image": "Chonk Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "+0.3",
@@ -647,6 +804,9 @@
       "name": "Chub Oil",
       "page": "https://sulfur.wiki.gg/wiki/Chub_Oil",
       "image": "Chub Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-20%",
@@ -661,6 +821,9 @@
       "name": "Clump Oil",
       "page": "https://sulfur.wiki.gg/wiki/Clump_Oil",
       "image": "Clump Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+200%",
@@ -676,6 +839,9 @@
       "name": "Collateral Oil",
       "page": "https://sulfur.wiki.gg/wiki/Collateral_Oil",
       "image": "Collateral Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "+100%",
@@ -689,6 +855,9 @@
       "name": "Complicated Oil",
       "page": "https://sulfur.wiki.gg/wiki/Complicated_Oil",
       "image": "Complicated Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30%",
@@ -702,6 +871,9 @@
       "name": "Compo Oil",
       "page": "https://sulfur.wiki.gg/wiki/Compo_Oil",
       "image": "Compo Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RldSpeed": "+160%",
@@ -717,6 +889,9 @@
       "name": "Confidence Oil",
       "page": "https://sulfur.wiki.gg/wiki/Confidence_Oil",
       "image": "Confidence Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×2",
         "CritChance": "+20%",
@@ -730,6 +905,9 @@
       "name": "Congestion Oil",
       "page": "https://sulfur.wiki.gg/wiki/Congestion_Oil",
       "image": "Congestion Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+100%",
@@ -744,6 +922,9 @@
       "name": "Considerate Oil",
       "page": "https://sulfur.wiki.gg/wiki/Considerate_Oil",
       "image": "Considerate Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -757,6 +938,9 @@
       "name": "Contained Force Oil",
       "page": "https://sulfur.wiki.gg/wiki/Contained_Force_Oil",
       "image": "Contained Force Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-45%",
@@ -770,6 +954,9 @@
       "name": "Critical Oil",
       "page": "https://sulfur.wiki.gg/wiki/Critical_Oil",
       "image": "Crit oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+15%",
@@ -782,6 +969,9 @@
       "name": "Cycle Oil",
       "page": "https://sulfur.wiki.gg/wiki/Cycle_Oil",
       "image": "Cycle Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "+1",
@@ -795,6 +985,9 @@
       "name": "Damage Oil",
       "page": "https://sulfur.wiki.gg/wiki/Damage_Oil",
       "image": "Damage Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20%",
@@ -807,6 +1000,9 @@
       "name": "Dart Oil",
       "page": "https://sulfur.wiki.gg/wiki/Dart_Oil",
       "image": "Dart Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+50%",
@@ -820,6 +1016,9 @@
       "name": "Dead Center Oil",
       "page": "https://sulfur.wiki.gg/wiki/Dead_Center_Oil",
       "image": "Dead_Center_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-2",
@@ -833,6 +1032,9 @@
       "name": "Delayed Hyper Tube Oil",
       "page": "https://sulfur.wiki.gg/wiki/Delayed_Hyper_Tube_Oil",
       "image": "Delayed Hyper Tube Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+100%",
@@ -846,6 +1048,9 @@
       "name": "Dense Oil",
       "page": "https://sulfur.wiki.gg/wiki/Dense_Oil",
       "image": "Dense_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+30%",
@@ -860,6 +1065,9 @@
       "name": "Detune Oil",
       "page": "https://sulfur.wiki.gg/wiki/Detune_Oil",
       "image": "Detune_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-25%",
@@ -874,6 +1082,9 @@
       "name": "Diesel Oil",
       "page": "https://sulfur.wiki.gg/wiki/Diesel_Oil",
       "image": "Diesel Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+50%",
@@ -888,6 +1099,9 @@
       "name": "Discharge Oil",
       "page": "https://sulfur.wiki.gg/wiki/Discharge_Oil",
       "image": "Discharge Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30",
@@ -901,6 +1115,9 @@
       "name": "Disposable Oil",
       "page": "https://sulfur.wiki.gg/wiki/Disposable_Oil",
       "image": "Disposable Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+50",
@@ -915,6 +1132,9 @@
       "name": "Division Oil",
       "page": "https://sulfur.wiki.gg/wiki/Division_Oil",
       "image": "Division Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-20%",
@@ -930,6 +1150,9 @@
       "name": "Do-over Oil",
       "page": "https://sulfur.wiki.gg/wiki/Do-over_Oil",
       "image": "Do-over Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-20%",
@@ -943,6 +1166,9 @@
       "name": "Double Fire Oil",
       "page": "https://sulfur.wiki.gg/wiki/Double_Fire_Oil",
       "image": "Double Fire Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+50%",
@@ -956,6 +1182,9 @@
       "name": "Double Lock Oil",
       "page": "https://sulfur.wiki.gg/wiki/Double_Lock_Oil",
       "image": "Double Lock Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RldSpeed": "+60%",
@@ -969,6 +1198,9 @@
       "name": "Double Nothing Oil",
       "page": "https://sulfur.wiki.gg/wiki/Double_Nothing_Oil",
       "image": "Double_Nothing_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-25%",
@@ -984,6 +1216,9 @@
       "name": "Dum Dum Oil",
       "page": "https://sulfur.wiki.gg/wiki/Dum_Dum_Oil",
       "image": "Dum Dum Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+22%",
@@ -997,6 +1232,9 @@
       "name": "Dynamic Oil",
       "page": "https://sulfur.wiki.gg/wiki/Dynamic_Oil",
       "image": "Dynaimc Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-15",
@@ -1010,6 +1248,9 @@
       "name": "Easy Oil",
       "page": "https://sulfur.wiki.gg/wiki/Easy_Oil",
       "image": "Easy Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-20%",
@@ -1023,6 +1264,9 @@
       "name": "Easy Plop Oil",
       "page": "https://sulfur.wiki.gg/wiki/Easy_Plop_Oil",
       "image": "Easy Plop Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-65%",
@@ -1036,6 +1280,9 @@
       "name": "Elephant Oil",
       "page": "https://sulfur.wiki.gg/wiki/Elephant_Oil",
       "image": "Elephant Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "ProjecAmnt": "+200%",
@@ -1055,6 +1302,9 @@
       "name": "Exotic Barrel Oil",
       "page": "https://sulfur.wiki.gg/wiki/Exotic_Barrel_Oil",
       "image": "Exotic Barrel Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-2",
@@ -1068,6 +1318,9 @@
       "name": "Expander Oil",
       "page": "https://sulfur.wiki.gg/wiki/Expander_Oil",
       "image": "Expander Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20",
@@ -1081,6 +1334,9 @@
       "name": "Extra Powder Oil",
       "page": "https://sulfur.wiki.gg/wiki/Extra_Powder_Oil",
       "image": "Extra Powder Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+50%",
@@ -1094,6 +1350,9 @@
       "name": "Farsighted Oil",
       "page": "https://sulfur.wiki.gg/wiki/Farsighted_Oil",
       "image": "Farsighted Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+3",
@@ -1107,6 +1366,9 @@
       "name": "Fast Bet Oil",
       "page": "https://sulfur.wiki.gg/wiki/Fast_Bet_Oil",
       "image": "Fast Bet Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+35%",
@@ -1120,6 +1382,9 @@
       "name": "Feature Gun Oil",
       "page": "https://sulfur.wiki.gg/wiki/Feature_Gun_Oil",
       "image": "Feature_Gun_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+30%",
@@ -1134,6 +1399,9 @@
       "name": "Fidget Lord Oil",
       "page": "https://sulfur.wiki.gg/wiki/Fidget_Lord_Oil",
       "image": "Fidget Lord Oil.png",
+      "groups": {
+        "effect": "Mobility"
+      },
       "fields": {
         "GridSize": "1×1",
         "Speed": "-40%",
@@ -1147,6 +1415,9 @@
       "name": "Fidget Oil",
       "page": "https://sulfur.wiki.gg/wiki/Fidget_Oil",
       "image": "Fidget Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20",
@@ -1160,6 +1431,9 @@
       "name": "First Blood Oil",
       "page": "https://sulfur.wiki.gg/wiki/First_Blood_Oil",
       "image": "First Blood Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30%",
@@ -1173,6 +1447,9 @@
       "name": "Flea Oil",
       "page": "https://sulfur.wiki.gg/wiki/Flea_Oil",
       "image": "Flea_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-50%",
@@ -1187,6 +1464,9 @@
       "name": "Flop Oil",
       "page": "https://sulfur.wiki.gg/wiki/Flop_Oil",
       "image": "Flop Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+70%",
@@ -1201,6 +1481,9 @@
       "name": "Flow Funnel Oil",
       "page": "https://sulfur.wiki.gg/wiki/Flow_Funnel_Oil",
       "image": "Flow_Funnel_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "+3",
@@ -1214,6 +1497,9 @@
       "name": "Food Stamp Oil",
       "page": "https://sulfur.wiki.gg/wiki/Food_Stamp_Oil",
       "image": "Food Stamp Oil.png",
+      "groups": {
+        "effect": "Effects"
+      },
       "fields": {
         "GridSize": "1×1",
         "NoMoney": "✓",
@@ -1227,6 +1513,9 @@
       "name": "Fragile System Oil",
       "page": "https://sulfur.wiki.gg/wiki/Fragile_System_Oil",
       "image": "Fragile System Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+50%",
@@ -1240,6 +1529,9 @@
       "name": "Franciscan Oil",
       "page": "https://sulfur.wiki.gg/wiki/Franciscan_Oil",
       "image": "Franciscan_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20%",
@@ -1253,6 +1545,9 @@
       "name": "Frugal Oil",
       "page": "https://sulfur.wiki.gg/wiki/Frugal_Oil",
       "image": "Frugal Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+25",
@@ -1266,6 +1561,9 @@
       "name": "Gambler Oil",
       "page": "https://sulfur.wiki.gg/wiki/Gambler_Oil",
       "image": "Gambler Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+20%",
@@ -1279,6 +1577,9 @@
       "name": "Gargantuan Oil",
       "page": "https://sulfur.wiki.gg/wiki/Gargantuan_Oil",
       "image": "Gargantuan Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RldSpeed": "-50%",
@@ -1293,6 +1594,9 @@
       "name": "Gemini Oil",
       "page": "https://sulfur.wiki.gg/wiki/Gemini_Oil",
       "image": "Gemini Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-30",
@@ -1307,6 +1611,9 @@
       "name": "Gentle Oil",
       "page": "https://sulfur.wiki.gg/wiki/Gentle_Oil",
       "image": "Gentle_Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "-30%",
@@ -1321,6 +1628,9 @@
       "name": "Glass Cannon Oil",
       "page": "https://sulfur.wiki.gg/wiki/Glass_Cannon_Oil",
       "image": "Glass Cannon Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+50%",
@@ -1334,6 +1644,9 @@
       "name": "Great Oil",
       "page": "https://sulfur.wiki.gg/wiki/Great_Oil",
       "image": "Great Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltDrop": "×35",
@@ -1348,6 +1661,9 @@
       "name": "Grounded Oil",
       "page": "https://sulfur.wiki.gg/wiki/Grounded_Oil",
       "image": "Grounded Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+25%",
@@ -1361,6 +1677,9 @@
       "name": "Gunslinger Oil",
       "page": "https://sulfur.wiki.gg/wiki/Gunslinger_Oil",
       "image": "Gunslinger Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "AimDisabled": "✓",
@@ -1374,6 +1693,9 @@
       "name": "Happy Accident Oil",
       "page": "https://sulfur.wiki.gg/wiki/Happy_Accident_Oil",
       "image": "Happy Accident Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+15%",
@@ -1387,6 +1709,9 @@
       "name": "Heavy Lead Oil",
       "page": "https://sulfur.wiki.gg/wiki/Heavy_Lead_Oil",
       "image": "Heavy Lead Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+4",
@@ -1400,6 +1725,9 @@
       "name": "Heavy Oil",
       "page": "https://sulfur.wiki.gg/wiki/Heavy_Oil",
       "image": "Heavy_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+60%",
@@ -1414,6 +1742,9 @@
       "name": "Heavy Pockets Oil",
       "page": "https://sulfur.wiki.gg/wiki/Heavy_Pockets_Oil",
       "image": "Heavy Pockets Oil.png",
+      "groups": {
+        "effect": "Mobility"
+      },
       "fields": {
         "GridSize": "1×1",
         "JumpPwr": "-100%",
@@ -1427,6 +1758,9 @@
       "name": "Hefty Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hefty_Oil",
       "image": "Hefty Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+45%",
@@ -1441,6 +1775,9 @@
       "name": "Helium Oil",
       "page": "https://sulfur.wiki.gg/wiki/Helium_Oil",
       "image": "Helium Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-40%",
@@ -1454,6 +1791,9 @@
       "name": "High Grade Oil",
       "page": "https://sulfur.wiki.gg/wiki/High_Grade_Oil",
       "image": "High_Grade_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+20%",
@@ -1467,6 +1807,9 @@
       "name": "Hip Blaster Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hip_Blaster_Oil",
       "image": "Hip_Blaster_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+25%",
@@ -1480,6 +1823,9 @@
       "name": "Hip Marksman Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hip_Marksman_Oil",
       "image": "Hip Marksman Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.8",
@@ -1493,6 +1839,9 @@
       "name": "Hoop Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hoop_Oil",
       "image": "Hoop Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+4",
@@ -1506,6 +1855,9 @@
       "name": "Hunter Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hunter_Oil",
       "image": "Hunter Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+15%",
@@ -1519,6 +1871,9 @@
       "name": "Hustler Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hustler_Oil",
       "image": "Hustler_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-15",
@@ -1532,6 +1887,9 @@
       "name": "Hyper Lead Oil",
       "page": "https://sulfur.wiki.gg/wiki/Hyper_Lead_Oil",
       "image": "Hyper Lead Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+40%",
@@ -1546,6 +1904,9 @@
       "name": "Imperfect Oil",
       "page": "https://sulfur.wiki.gg/wiki/Imperfect_Oil",
       "image": "Imperfect_Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+3",
@@ -1559,6 +1920,9 @@
       "name": "Inconsiderate Oil",
       "page": "https://sulfur.wiki.gg/wiki/Inconsiderate_Oil",
       "image": "Inconsiderate Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -1572,6 +1936,9 @@
       "name": "Inherited Oil",
       "page": "https://sulfur.wiki.gg/wiki/Inherited_Oil",
       "image": "Inherited_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+50%",
@@ -1586,6 +1953,9 @@
       "name": "Instant Oil",
       "page": "https://sulfur.wiki.gg/wiki/Instant_Oil",
       "image": "Instant Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+150%",
@@ -1599,6 +1969,9 @@
       "name": "Judgement Oil",
       "page": "https://sulfur.wiki.gg/wiki/Judgement_Oil",
       "image": "Judgement Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+25",
@@ -1612,6 +1985,9 @@
       "name": "Jungian Oil",
       "page": "https://sulfur.wiki.gg/wiki/Jungian_Oil",
       "image": "Jungian Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -1625,6 +2001,9 @@
       "name": "Keep Oil",
       "page": "https://sulfur.wiki.gg/wiki/Keep_Oil",
       "image": "Keep Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-20%",
@@ -1638,6 +2017,9 @@
       "name": "Kicker Oil",
       "page": "https://sulfur.wiki.gg/wiki/Kicker_Oil",
       "image": "Kicker_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20",
@@ -1651,6 +2033,9 @@
       "name": "Kinetic Oil",
       "page": "https://sulfur.wiki.gg/wiki/Kinetic_Oil",
       "image": "Kinetic Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+100%",
@@ -1664,6 +2049,9 @@
       "name": "Last Drop Oil",
       "page": "https://sulfur.wiki.gg/wiki/Last_Drop_Oil",
       "image": "Last Drop Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-30%",
@@ -1677,6 +2065,9 @@
       "name": "Late Boom Oil",
       "page": "https://sulfur.wiki.gg/wiki/Late_Boom_Oil",
       "image": "Late Boom Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30",
@@ -1690,6 +2081,9 @@
       "name": "Launcher Oil",
       "page": "https://sulfur.wiki.gg/wiki/Launcher_Oil",
       "image": "Launcher Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+25%",
@@ -1703,6 +2097,9 @@
       "name": "Lazy Oil",
       "page": "https://sulfur.wiki.gg/wiki/Lazy_Oil",
       "image": "Lazy Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+2",
@@ -1716,6 +2113,9 @@
       "name": "Less Recoil Oil",
       "page": "https://sulfur.wiki.gg/wiki/Less_Recoil_Oil",
       "image": "Less_Recoil_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-20%",
@@ -1728,6 +2128,9 @@
       "name": "Lightweight Oil",
       "page": "https://sulfur.wiki.gg/wiki/Lightweight_Oil",
       "image": "Lightweight Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+50%",
@@ -1741,6 +2144,9 @@
       "name": "Longshot Oil",
       "page": "https://sulfur.wiki.gg/wiki/Longshot_Oil",
       "image": "Longshot Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×2",
         "BltBounces": "+3",
@@ -1754,6 +2160,9 @@
       "name": "Lost In Focus Oil",
       "page": "https://sulfur.wiki.gg/wiki/Lost_In_Focus_Oil",
       "image": "Lost_In_Focus_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-2",
@@ -1767,6 +2176,9 @@
       "name": "Low Roller Oil",
       "page": "https://sulfur.wiki.gg/wiki/Low_Roller_Oil",
       "image": "Low_Roller_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+10%",
@@ -1780,6 +2192,9 @@
       "name": "Machine Oil",
       "page": "https://sulfur.wiki.gg/wiki/Machine_Oil",
       "image": "Machine Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+60%",
@@ -1793,6 +2208,9 @@
       "name": "Main Discipline Oil",
       "page": "https://sulfur.wiki.gg/wiki/Main_Discipline_Oil",
       "image": "Main Discipline Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "LootChance": "-30%",
@@ -1806,6 +2224,9 @@
       "name": "Main Focus Oil",
       "page": "https://sulfur.wiki.gg/wiki/Main_Focus_Oil",
       "image": "Main Focus Oil.png",
+      "groups": {
+        "effect": "Effects"
+      },
       "fields": {
         "GridSize": "1×1",
         "NoMoney": "X",
@@ -1819,6 +2240,9 @@
       "name": "Manifestation Oil",
       "page": "https://sulfur.wiki.gg/wiki/Manifestation_Oil",
       "image": "Manifestation Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+25%",
@@ -1832,6 +2256,9 @@
       "name": "Matrix Oil",
       "page": "https://sulfur.wiki.gg/wiki/Matrix_Oil",
       "image": "Matrix Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "-90%",
@@ -1848,6 +2275,9 @@
       "name": "Micro Wing Oil",
       "page": "https://sulfur.wiki.gg/wiki/Micro_Wing_Oil",
       "image": "Micro Wing Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+80%",
@@ -1861,6 +2291,9 @@
       "name": "Modern Technology Oil",
       "page": "https://sulfur.wiki.gg/wiki/Modern_Technology_Oil",
       "image": "Modern Technology Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-35%",
@@ -1874,6 +2307,9 @@
       "name": "Mosquito Oil",
       "page": "https://sulfur.wiki.gg/wiki/Mosquito_Oil",
       "image": "Mosquito Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-40%",
@@ -1888,6 +2324,9 @@
       "name": "Multichamber Oil",
       "page": "https://sulfur.wiki.gg/wiki/Multichamber_Oil",
       "image": "Multichamber_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "ProjecAmnt": "+100%",
@@ -1902,6 +2341,9 @@
       "name": "Multishot Oil",
       "page": "https://sulfur.wiki.gg/wiki/Multishot_Oil",
       "image": "Multishot_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-70%",
@@ -1916,6 +2358,9 @@
       "name": "Needleye Oil",
       "page": "https://sulfur.wiki.gg/wiki/Needleye_Oil",
       "image": "Needleye Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -1929,6 +2374,9 @@
       "name": "Nerf Oil",
       "page": "https://sulfur.wiki.gg/wiki/Nerf_Oil",
       "image": "Nerf Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-10%",
@@ -1943,6 +2391,9 @@
       "name": "No Look Oil",
       "page": "https://sulfur.wiki.gg/wiki/No_Look_Oil",
       "image": "No Look Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+30%",
@@ -1956,6 +2407,9 @@
       "name": "No Need Oil",
       "page": "https://sulfur.wiki.gg/wiki/No_Need_Oil",
       "image": "No_Need_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+15%",
@@ -1969,6 +2423,9 @@
       "name": "Oil of Yin (DEMO)",
       "page": "https://sulfur.wiki.gg/wiki/Oil_of_Yin_%28DEMO%29",
       "image": "oil of yin.png",
+      "groups": {
+        "effect": "Misc"
+      },
       "fields": {
         "GridSize": "1x1",
         "BuyVal": "Priceless"
@@ -1979,6 +2436,9 @@
       "name": "Out of the Box Oil",
       "page": "https://sulfur.wiki.gg/wiki/Out_of_the_Box_Oil",
       "image": "Out_of_the_Box_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+20%",
@@ -1992,6 +2452,9 @@
       "name": "Over Oil",
       "page": "https://sulfur.wiki.gg/wiki/Over_Oil",
       "image": "Over Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "+30%",
@@ -2006,6 +2469,9 @@
       "name": "Overclock Oil",
       "page": "https://sulfur.wiki.gg/wiki/Overclock_Oil",
       "image": "Overclock_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+40%",
@@ -2019,6 +2485,9 @@
       "name": "Overdose Oil",
       "page": "https://sulfur.wiki.gg/wiki/Overdose_Oil",
       "image": "Overdose Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+3",
@@ -2032,6 +2501,9 @@
       "name": "Parallel Mag Oil",
       "page": "https://sulfur.wiki.gg/wiki/Parallel_Mag_Oil",
       "image": "Parallel Mag Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "ProjecAmnt": "+100%",
@@ -2046,6 +2518,9 @@
       "name": "Peashooter Oil",
       "page": "https://sulfur.wiki.gg/wiki/Peashooter_Oil",
       "image": "Peashooter Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-20%",
@@ -2059,6 +2534,9 @@
       "name": "Penetration Oil",
       "page": "https://sulfur.wiki.gg/wiki/Penetration_Oil",
       "image": "Penetration Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+1",
@@ -2071,6 +2549,9 @@
       "name": "Perfect Bounce Oil",
       "page": "https://sulfur.wiki.gg/wiki/Perfect_Bounce_Oil",
       "image": "Perfect Bounce Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+1",
@@ -2083,6 +2564,9 @@
       "name": "Perforate Oil",
       "page": "https://sulfur.wiki.gg/wiki/Perforate_Oil",
       "image": "Perforate_Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+25%",
@@ -2096,6 +2580,9 @@
       "name": "Plinker Oil",
       "page": "https://sulfur.wiki.gg/wiki/Plinker_Oil",
       "image": "Plinker_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-20%",
@@ -2109,6 +2596,9 @@
       "name": "Plop Back Oil",
       "page": "https://sulfur.wiki.gg/wiki/Plop_Back_Oil",
       "image": "Plop Back Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "+125%",
@@ -2122,6 +2612,9 @@
       "name": "Pool Oil",
       "page": "https://sulfur.wiki.gg/wiki/Pool_Oil",
       "image": "Pool Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×2",
         "BltBounces": "+5",
@@ -2135,6 +2628,9 @@
       "name": "Potato Oil",
       "page": "https://sulfur.wiki.gg/wiki/Potato_Oil",
       "image": "Potato Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+150%",
@@ -2149,6 +2645,9 @@
       "name": "Potshot Oil",
       "page": "https://sulfur.wiki.gg/wiki/Potshot_Oil",
       "image": "Potshot_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+35",
@@ -2162,6 +2661,9 @@
       "name": "Puncher Oil",
       "page": "https://sulfur.wiki.gg/wiki/Puncher_Oil",
       "image": "Puncher Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30%",
@@ -2175,6 +2677,9 @@
       "name": "Puncture Oil",
       "page": "https://sulfur.wiki.gg/wiki/Puncture_Oil",
       "image": "Puncture Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+15%",
@@ -2188,6 +2693,9 @@
       "name": "Purse Gun Oil",
       "page": "https://sulfur.wiki.gg/wiki/Purse_Gun_Oil",
       "image": "Purse Gun Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-35%",
@@ -2201,6 +2709,9 @@
       "name": "Rapid Internals Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rapid_Internals_Oil",
       "image": "Rapid Internals Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+50%",
@@ -2214,6 +2725,9 @@
       "name": "Ready Oil",
       "page": "https://sulfur.wiki.gg/wiki/Ready_Oil",
       "image": "Ready Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-45%",
@@ -2227,6 +2741,9 @@
       "name": "Rebound Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rebound_Oil",
       "image": "Rebound_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-15",
@@ -2240,6 +2757,9 @@
       "name": "Recycle Oil",
       "page": "https://sulfur.wiki.gg/wiki/Recycle_Oil",
       "image": "Recycle_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-15%",
@@ -2252,6 +2772,9 @@
       "name": "Relax Oil",
       "page": "https://sulfur.wiki.gg/wiki/Relax_Oil",
       "image": "Relax Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-50%",
@@ -2265,6 +2788,9 @@
       "name": "Release Oil",
       "page": "https://sulfur.wiki.gg/wiki/Release_Oil",
       "image": "Release Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+40%",
@@ -2279,6 +2805,9 @@
       "name": "Reload Oil",
       "page": "https://sulfur.wiki.gg/wiki/Reload_Oil",
       "image": "Reload Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RldSpeed": "+40%",
@@ -2291,6 +2820,9 @@
       "name": "Ricochet Oil",
       "page": "https://sulfur.wiki.gg/wiki/Ricochet_Oil",
       "image": "Ricochet Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+3",
@@ -2304,6 +2836,9 @@
       "name": "Rigid System Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rigid_System_Oil",
       "image": "Rigid System Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+40%",
@@ -2318,6 +2853,9 @@
       "name": "Rigor Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rigor_Oil",
       "image": "Rigor Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -2332,6 +2870,9 @@
       "name": "Robust Mechanics Oil",
       "page": "https://sulfur.wiki.gg/wiki/Robust_Mechanics_Oil",
       "image": "Robust Mechanics Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "NoDrb": "✓",
@@ -2346,6 +2887,9 @@
       "name": "Rookie Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rookie_Oil",
       "image": "Rookie Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+50%",
@@ -2359,6 +2903,9 @@
       "name": "Rubber Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rubber_Oil",
       "image": "Rubber_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-10",
@@ -2373,6 +2920,9 @@
       "name": "Rush Job Oil",
       "page": "https://sulfur.wiki.gg/wiki/Rush_Job_Oil",
       "image": "Rush_Job_Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RldSpeed": "+130%",
@@ -2386,6 +2936,9 @@
       "name": "Safety Oil",
       "page": "https://sulfur.wiki.gg/wiki/Safety_Oil",
       "image": "Safety Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-45%",
@@ -2399,6 +2952,9 @@
       "name": "Saviour Oil",
       "page": "https://sulfur.wiki.gg/wiki/Saviour_Oil",
       "image": "Saviour_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-30%",
@@ -2412,6 +2968,9 @@
       "name": "Scatter Oil",
       "page": "https://sulfur.wiki.gg/wiki/Scatter_Oil",
       "image": "Scatter_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-15%",
@@ -2426,6 +2985,9 @@
       "name": "Scramble Oil",
       "page": "https://sulfur.wiki.gg/wiki/Scramble_Oil",
       "image": "Scramble Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+2",
@@ -2439,6 +3001,9 @@
       "name": "Seated Fit Oil",
       "page": "https://sulfur.wiki.gg/wiki/Seated_Fit_Oil",
       "image": "Seated Fit Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+70%",
@@ -2453,6 +3018,9 @@
       "name": "Seated Oil",
       "page": "https://sulfur.wiki.gg/wiki/Seated_Oil",
       "image": "Seated Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30",
@@ -2466,6 +3034,9 @@
       "name": "Sect Oil",
       "page": "https://sulfur.wiki.gg/wiki/Sect_Oil",
       "image": "Sect Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+1",
@@ -2479,6 +3050,9 @@
       "name": "Sender Oil",
       "page": "https://sulfur.wiki.gg/wiki/Sender_Oil",
       "image": "Sender Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+25",
@@ -2492,6 +3066,9 @@
       "name": "Sensible Oil",
       "page": "https://sulfur.wiki.gg/wiki/Sensible_Oil",
       "image": "Sensible Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+25%",
@@ -2506,6 +3083,9 @@
       "name": "Shaved Clip Oil",
       "page": "https://sulfur.wiki.gg/wiki/Shaved_Clip_Oil",
       "image": "Shaved Clip Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RldSpeed": "+50%",
@@ -2519,6 +3099,9 @@
       "name": "Shellman Oil",
       "page": "https://sulfur.wiki.gg/wiki/Shellman_Oil",
       "image": "Shellman Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.7",
@@ -2532,6 +3115,9 @@
       "name": "Sherlock Oil",
       "page": "https://sulfur.wiki.gg/wiki/Sherlock_Oil",
       "image": "Sherlock Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+5",
@@ -2545,6 +3131,9 @@
       "name": "Shower Oil",
       "page": "https://sulfur.wiki.gg/wiki/Shower_Oil",
       "image": "Shower Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+60%",
@@ -2558,6 +3147,9 @@
       "name": "Shredder Oil",
       "page": "https://sulfur.wiki.gg/wiki/Shredder_Oil",
       "image": "Shredder_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-20%",
@@ -2573,6 +3165,9 @@
       "name": "Size Up Oil",
       "page": "https://sulfur.wiki.gg/wiki/Size_Up_Oil",
       "image": "Size Up Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+50%",
@@ -2586,6 +3181,9 @@
       "name": "Skip Oil",
       "page": "https://sulfur.wiki.gg/wiki/Skip_Oil",
       "image": "Skip Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+2",
@@ -2599,6 +3197,9 @@
       "name": "Slick Oil",
       "page": "https://sulfur.wiki.gg/wiki/Slick_Oil",
       "image": "Slick Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.6",
@@ -2612,6 +3213,9 @@
       "name": "Slippy Coating Oil",
       "page": "https://sulfur.wiki.gg/wiki/Slippy_Coating_Oil",
       "image": "Slippy Coating Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+30%",
@@ -2626,6 +3230,9 @@
       "name": "Slotmachine Oil",
       "page": "https://sulfur.wiki.gg/wiki/Slotmachine_Oil",
       "image": "Slotmachine Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+25%",
@@ -2639,6 +3246,9 @@
       "name": "Slow Punch Oil",
       "page": "https://sulfur.wiki.gg/wiki/Slow_Punch_Oil",
       "image": "Slow Punch Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+50%",
@@ -2652,6 +3262,9 @@
       "name": "Smart Bullet Oil",
       "page": "https://sulfur.wiki.gg/wiki/Smart_Bullet_Oil",
       "image": "Smart Bullet Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "CritChance": "+20%",
@@ -2665,6 +3278,9 @@
       "name": "Smash Oil",
       "page": "https://sulfur.wiki.gg/wiki/Smash_Oil",
       "image": "Smash Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+300%",
@@ -2679,6 +3295,9 @@
       "name": "Soft Bullet Oil",
       "page": "https://sulfur.wiki.gg/wiki/Soft_Bullet_Oil",
       "image": "Soft Bullet Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+30%",
@@ -2693,6 +3312,9 @@
       "name": "Solid Oil",
       "page": "https://sulfur.wiki.gg/wiki/Solid_Oil",
       "image": "Solid Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+40",
@@ -2707,6 +3329,9 @@
       "name": "Spartan Oil",
       "page": "https://sulfur.wiki.gg/wiki/Spartan_Oil",
       "image": "Spartan_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+20%",
@@ -2720,6 +3345,9 @@
       "name": "Speed Trade Oil",
       "page": "https://sulfur.wiki.gg/wiki/Speed_Trade_Oil",
       "image": "Speed Trade Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "-30%",
@@ -2733,6 +3361,9 @@
       "name": "Spitter Oil",
       "page": "https://sulfur.wiki.gg/wiki/Spitter_Oil",
       "image": "Spitter Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+35%",
@@ -2746,6 +3377,9 @@
       "name": "Spread Oil",
       "page": "https://sulfur.wiki.gg/wiki/Spread_Oil",
       "image": "Spread_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.5",
@@ -2758,6 +3392,9 @@
       "name": "Stability Oil",
       "page": "https://sulfur.wiki.gg/wiki/Stability_Oil",
       "image": "Stability Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-45%",
@@ -2771,6 +3408,9 @@
       "name": "Stable Hip Oil",
       "page": "https://sulfur.wiki.gg/wiki/Stable_Hip_Oil",
       "image": "Stable_Hip_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-62%",
@@ -2784,6 +3424,9 @@
       "name": "Stationary Oil",
       "page": "https://sulfur.wiki.gg/wiki/Stationary_Oil",
       "image": "Stationary Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×2",
         "RPM": "+80%",
@@ -2799,6 +3442,9 @@
       "name": "Stiffy Fit Oil",
       "page": "https://sulfur.wiki.gg/wiki/Stiffy_Fit_Oil",
       "image": "Stiffy Fit Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+45%",
@@ -2813,6 +3459,9 @@
       "name": "Stoic Oil",
       "page": "https://sulfur.wiki.gg/wiki/Stoic_Oil",
       "image": "Stoic Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.6",
@@ -2826,6 +3475,9 @@
       "name": "Suppressive Oil",
       "page": "https://sulfur.wiki.gg/wiki/Suppressive_Oil",
       "image": "Suppressive Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "ProjecAmnt": "+300%",
@@ -2841,6 +3493,9 @@
       "name": "Surgical Laser Oil",
       "page": "https://sulfur.wiki.gg/wiki/Surgical_Laser_Oil",
       "image": "Surgical Laser Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×2",
         "BltPen": "+3",
@@ -2854,6 +3509,9 @@
       "name": "Synchronicity Oil",
       "page": "https://sulfur.wiki.gg/wiki/Synchronicity_Oil",
       "image": "Synchronicity Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+4",
@@ -2867,6 +3525,9 @@
       "name": "Tactical Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tactical_Oil",
       "image": "Tactical Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-10%",
@@ -2880,6 +3541,9 @@
       "name": "Tandem Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tandem_Oil",
       "image": "Tandem Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-15%",
@@ -2894,6 +3558,9 @@
       "name": "Task Oil",
       "page": "https://sulfur.wiki.gg/wiki/Task_Oil",
       "image": "Task Oil.png",
+      "groups": {
+        "effect": "Effects"
+      },
       "fields": {
         "GridSize": "1×1",
         "NoOrgans": "X",
@@ -2907,6 +3574,9 @@
       "name": "Tech Support Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tech_Support_Oil",
       "image": "Tech Support Oil.png",
+      "groups": {
+        "effect": "Mobility"
+      },
       "fields": {
         "GridSize": "1×1",
         "JumpPwr": "-30%",
@@ -2920,6 +3590,9 @@
       "name": "Tension Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tension_Oil",
       "image": "Tension Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-35%",
@@ -2933,6 +3606,9 @@
       "name": "Terminator Oil",
       "page": "https://sulfur.wiki.gg/wiki/Terminator_Oil",
       "image": "Terminator_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "+30%",
@@ -2946,6 +3622,9 @@
       "name": "Tetrus Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tetrus_Oil",
       "image": "Tetrus Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-20%",
@@ -2959,6 +3638,9 @@
       "name": "Thorough Oil",
       "page": "https://sulfur.wiki.gg/wiki/Thorough_Oil",
       "image": "Thorough Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.8",
@@ -2972,6 +3654,9 @@
       "name": "Tight Barrel Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tight_Barrel_Oil",
       "image": "Tight Barrel Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+70%",
@@ -2985,6 +3670,9 @@
       "name": "Tight Oil",
       "page": "https://sulfur.wiki.gg/wiki/Tight_Oil",
       "image": "Tight Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "-10%",
@@ -2999,6 +3687,9 @@
       "name": "Too Much Oil",
       "page": "https://sulfur.wiki.gg/wiki/Too_Much_Oil",
       "image": "Too Much Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+1",
@@ -3013,6 +3704,9 @@
       "name": "Translucent Oil (DEMO)",
       "page": "https://sulfur.wiki.gg/wiki/Translucent_Oil_%28DEMO%29",
       "image": "Translucent Oil.png",
+      "groups": {
+        "effect": "Misc"
+      },
       "fields": {
         "GridSize": "1x1",
         "BuyVal": "Priceless"
@@ -3023,6 +3717,9 @@
       "name": "Triple Oil (DEMO)",
       "page": "https://sulfur.wiki.gg/wiki/Triple_Oil_%28DEMO%29",
       "image": "Triple Oil.png",
+      "groups": {
+        "effect": "Misc"
+      },
       "fields": {
         "GridSize": "1x2",
         "BuyVal": "Priceless"
@@ -3033,6 +3730,9 @@
       "name": "Trusty Old Oil",
       "page": "https://sulfur.wiki.gg/wiki/Trusty_Old_Oil",
       "image": "Trusty Old Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "MaxDrb": "+25%",
@@ -3047,6 +3747,9 @@
       "name": "Turbulence Oil",
       "page": "https://sulfur.wiki.gg/wiki/Turbulence_Oil",
       "image": "Turbulence Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+40%",
@@ -3060,6 +3763,9 @@
       "name": "Twice Oil",
       "page": "https://sulfur.wiki.gg/wiki/Twice_Oil",
       "image": "Twice Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-25%",
@@ -3074,6 +3780,9 @@
       "name": "Two Time Oil",
       "page": "https://sulfur.wiki.gg/wiki/Two_Time_Oil",
       "image": "Two_Time_Oil.png",
+      "groups": {
+        "effect": "Damage"
+      },
       "fields": {
         "GridSize": "1×1",
         "Dmg": "-10%",
@@ -3089,6 +3798,9 @@
       "name": "Unlabeled Oil",
       "page": "https://sulfur.wiki.gg/wiki/Unlabeled_Oil",
       "image": "Unlabeled Oil.png",
+      "groups": {
+        "effect": "Misc"
+      },
       "fields": {
         "GridSize": "1×1",
         "SellVal": "150",
@@ -3100,6 +3812,9 @@
       "name": "Untechnical Oil",
       "page": "https://sulfur.wiki.gg/wiki/Untechnical_Oil",
       "image": "Untechnical Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -3113,6 +3828,9 @@
       "name": "Vasectomy Oil",
       "page": "https://sulfur.wiki.gg/wiki/Vasectomy_Oil",
       "image": "Vasectomy Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltPen": "+2",
@@ -3126,6 +3844,9 @@
       "name": "Vegan Oil",
       "page": "https://sulfur.wiki.gg/wiki/Vegan_Oil",
       "image": "Vegan_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Spread": "-0.6",
@@ -3139,6 +3860,9 @@
       "name": "Vegetable Oil",
       "page": "https://sulfur.wiki.gg/wiki/Vegetable_Oil",
       "image": "Vegetable_Oil.png",
+      "groups": {
+        "effect": "Handling"
+      },
       "fields": {
         "GridSize": "1×1",
         "Recoil": "-30%",
@@ -3152,6 +3876,9 @@
       "name": "Velocity Oil",
       "page": "https://sulfur.wiki.gg/wiki/Velocity_Oil",
       "image": "Velocity Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+25%",
@@ -3164,6 +3891,9 @@
       "name": "Walk Easy Oil",
       "page": "https://sulfur.wiki.gg/wiki/Walk_Easy_Oil",
       "image": "Walk Easy Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-15%",
@@ -3177,6 +3907,9 @@
       "name": "Waster Oil",
       "page": "https://sulfur.wiki.gg/wiki/Waster_Oil",
       "image": "Waster Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+25%",
@@ -3190,6 +3923,9 @@
       "name": "Whim Oil",
       "page": "https://sulfur.wiki.gg/wiki/Whim_Oil",
       "image": "Whim Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+50%",
@@ -3203,6 +3939,9 @@
       "name": "Whos Counting Oil",
       "page": "https://sulfur.wiki.gg/wiki/Whos_Counting_Oil",
       "image": "Whos_Counting_Oil.png",
+      "groups": {
+        "effect": "Economy"
+      },
       "fields": {
         "GridSize": "1×1",
         "AmmoConsume": "-25%",
@@ -3216,6 +3955,9 @@
       "name": "Wobble Oil",
       "page": "https://sulfur.wiki.gg/wiki/Wobble_Oil",
       "image": "Wobble Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltBounces": "+2",
@@ -3229,6 +3971,9 @@
       "name": "Xanny Oil",
       "page": "https://sulfur.wiki.gg/wiki/Xanny_Oil",
       "image": "Xanny Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSize": "+300%",
@@ -3243,6 +3988,9 @@
       "name": "Zero Fucks Oil",
       "page": "https://sulfur.wiki.gg/wiki/Zero_Fucks_Oil",
       "image": "Zero Fucks Oil.png",
+      "groups": {
+        "effect": "Fire Rate"
+      },
       "fields": {
         "GridSize": "1×1",
         "RPM": "+50%",
@@ -3256,6 +4004,9 @@
       "name": "Zooming Oil",
       "page": "https://sulfur.wiki.gg/wiki/Zooming_Oil",
       "image": "Zooming Oil.png",
+      "groups": {
+        "effect": "Bullet"
+      },
       "fields": {
         "GridSize": "1×1",
         "BltSpeed": "+80%",

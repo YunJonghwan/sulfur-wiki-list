@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-07T11:38:45.346730+00:00",
+  "generated": "2026-07-07T12:02:09.244641+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -61,11 +61,85 @@
       "label": "Sold By"
     }
   ],
+  "axes": [
+    {
+      "key": "class",
+      "label": "Weapon Type",
+      "values": [
+        {
+          "value": "Pistol",
+          "count": 12
+        },
+        {
+          "value": "Revolver",
+          "count": 5
+        },
+        {
+          "value": "Shotgun",
+          "count": 7
+        },
+        {
+          "value": "Submachine Gun",
+          "count": 9
+        },
+        {
+          "value": "Assault Rifle",
+          "count": 6
+        },
+        {
+          "value": "Light Machine Gun",
+          "count": 5
+        },
+        {
+          "value": "Rifle",
+          "count": 4
+        },
+        {
+          "value": "Sniper",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "key": "ammo",
+      "label": "Ammunition",
+      "values": [
+        {
+          "value": "9mm",
+          "count": 16
+        },
+        {
+          "value": "5.56mm",
+          "count": 10
+        },
+        {
+          "value": "7.62mm",
+          "count": 11
+        },
+        {
+          "value": ".50 BMG",
+          "count": 4
+        },
+        {
+          "value": "12Ga",
+          "count": 6
+        },
+        {
+          "value": "Energy Cell",
+          "count": 6
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": ".357 Balthazar",
       "page": "https://sulfur.wiki.gg/wiki/.357_Balthazar",
       "image": ".357 Balthazar.png",
+      "groups": {
+        "class": "Revolver",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Revolver",
@@ -87,6 +161,10 @@
       "name": "1889 Mario",
       "page": "https://sulfur.wiki.gg/wiki/1889_Mario",
       "image": "1889 Mario.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "12Ga"
+      },
       "fields": {
         "GridSize": "5×2",
         "SubType": "Shotgun",
@@ -108,6 +186,10 @@
       "name": "Arbiter 2",
       "page": "https://sulfur.wiki.gg/wiki/Arbiter_2",
       "image": "Arbiter 2.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "12Ga"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Shotgun",
@@ -129,6 +211,10 @@
       "name": "Augusta",
       "page": "https://sulfur.wiki.gg/wiki/Augusta",
       "image": "Augusta.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "Energy Cell"
+      },
       "fields": {
         "GridSize": "5×2",
         "SubType": "Shotgun",
@@ -150,6 +236,10 @@
       "name": "Beck 8",
       "page": "https://sulfur.wiki.gg/wiki/Beck_8",
       "image": "Beck 8.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -170,6 +260,10 @@
       "name": "Blackwater",
       "page": "https://sulfur.wiki.gg/wiki/Blackwater",
       "image": "Blackwater.png",
+      "groups": {
+        "class": "Revolver",
+        "ammo": ".50 BMG"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Revolver",
@@ -190,6 +284,10 @@
       "name": "Breacher 8",
       "page": "https://sulfur.wiki.gg/wiki/Breacher_8",
       "image": "Breacher 8.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "12Ga"
+      },
       "fields": {
         "GridSize": "5×2",
         "SubType": "Shotgun",
@@ -210,6 +308,10 @@
       "name": "Bronco 89",
       "page": "https://sulfur.wiki.gg/wiki/Bronco_89",
       "image": "bronco 89.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Pistol",
@@ -231,6 +333,10 @@
       "name": "Catacoil Rapid X",
       "page": "https://sulfur.wiki.gg/wiki/Catacoil_Rapid_X",
       "image": "Catacoil Rapid X.png",
+      "groups": {
+        "class": "Assault Rifle",
+        "ammo": "Energy Cell"
+      },
       "fields": {
         "GridSize": "3x2",
         "SubType": "Assault Rifle",
@@ -252,6 +358,10 @@
       "name": "Cavalier",
       "page": "https://sulfur.wiki.gg/wiki/Cavalier",
       "image": "Cavalier.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -272,6 +382,10 @@
       "name": "Chat-Pardeur 98",
       "page": "https://sulfur.wiki.gg/wiki/Chat-Pardeur_98",
       "image": "Chat-Pardeur 98.png",
+      "groups": {
+        "class": "Light Machine Gun",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "5×2",
         "SubType": "Light Machine Gun",
@@ -292,6 +406,10 @@
       "name": "Chimera Rapid",
       "page": "https://sulfur.wiki.gg/wiki/Chimera_Rapid",
       "image": "Chimera Rapid.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "SMG",
@@ -312,6 +430,10 @@
       "name": "Corpsemaker",
       "page": "https://sulfur.wiki.gg/wiki/Corpsemaker",
       "image": "Corpsemaker.png",
+      "groups": {
+        "class": "Assault Rifle",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "3x2",
         "SubType": "Assault Rifle",
@@ -333,6 +455,10 @@
       "name": "D4RT",
       "page": "https://sulfur.wiki.gg/wiki/D4RT",
       "image": "D4RT.png",
+      "groups": {
+        "class": "Sniper",
+        "ammo": "Energy Cell"
+      },
       "fields": {
         "GridSize": "6×2",
         "SubType": "Sniper",
@@ -354,6 +480,10 @@
       "name": "Deathstar PG",
       "page": "https://sulfur.wiki.gg/wiki/Deathstar_PG",
       "image": "Deathstar PG.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "3x2",
         "SubType": "Submachine Gun",
@@ -374,6 +504,10 @@
       "name": "Dolphin 99",
       "page": "https://sulfur.wiki.gg/wiki/Dolphin_99",
       "image": "Dolphin 99.png",
+      "groups": {
+        "class": "Sniper",
+        "ammo": ".50 BMG"
+      },
       "fields": {
         "GridSize": "6×2",
         "SubType": "Sniper",
@@ -395,6 +529,10 @@
       "name": "Drifter 9",
       "page": "https://sulfur.wiki.gg/wiki/Drifter_9",
       "image": "Drifter 9.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Submachine Gun",
@@ -416,6 +554,10 @@
       "name": "Duhar",
       "page": "https://sulfur.wiki.gg/wiki/Duhar",
       "image": "Duhar.png",
+      "groups": {
+        "class": "Light Machine Gun",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "5x2",
         "SubType": "Light Machine Gun",
@@ -437,6 +579,10 @@
       "name": "Farsight",
       "page": "https://sulfur.wiki.gg/wiki/Farsight",
       "image": "Farsight.png",
+      "groups": {
+        "class": "Rifle",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Rifle",
@@ -458,6 +604,10 @@
       "name": "Ferryman",
       "page": "https://sulfur.wiki.gg/wiki/Ferryman",
       "image": "Ferryman.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": ".50 BMG"
+      },
       "fields": {
         "GridSize": "3x2",
         "SubType": "Submachine Gun",
@@ -479,6 +629,10 @@
       "name": "Flicker",
       "page": "https://sulfur.wiki.gg/wiki/Flicker",
       "image": "flicker.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Pistol",
@@ -500,6 +654,10 @@
       "name": "Flock 76",
       "page": "https://sulfur.wiki.gg/wiki/Flock_76",
       "image": "Flock 76.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "12Ga"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Shotgun",
@@ -521,6 +679,10 @@
       "name": "Gravekeeper",
       "page": "https://sulfur.wiki.gg/wiki/Gravekeeper",
       "image": "Gravekeeper.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -542,6 +704,10 @@
       "name": "Hell 'N' Back",
       "page": "https://sulfur.wiki.gg/wiki/Hell_%27N%27_Back",
       "image": "Hell 'N' Back.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Pistol",
@@ -563,6 +729,10 @@
       "name": "Impala Gravita",
       "page": "https://sulfur.wiki.gg/wiki/Impala_Gravita",
       "image": "Impala Gravita.png",
+      "groups": {
+        "class": "Sniper",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "5x2",
         "SubType": "Sniper",
@@ -584,6 +754,10 @@
       "name": "Knop .22",
       "page": "https://sulfur.wiki.gg/wiki/Knop_.22",
       "image": "Knop .22.png",
+      "groups": {
+        "class": "Rifle",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "4x2",
         "SubType": "Rifle",
@@ -605,6 +779,10 @@
       "name": "Longboy",
       "page": "https://sulfur.wiki.gg/wiki/Longboy",
       "image": "Longboy.png",
+      "groups": {
+        "class": "Sniper",
+        "ammo": ".50 BMG"
+      },
       "fields": {
         "GridSize": "7×2",
         "SubType": "Sniper",
@@ -626,6 +804,10 @@
       "name": "M11A2 Fisk",
       "page": "https://sulfur.wiki.gg/wiki/M11A2_Fisk",
       "image": "M11A2 Fisk.png",
+      "groups": {
+        "class": "Assault Rifle",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "4x2",
         "SubType": "Assault Rifle",
@@ -647,6 +829,10 @@
       "name": "M182 Pierre-Fusil",
       "page": "https://sulfur.wiki.gg/wiki/M182_Pierre-Fusil",
       "image": "M182 Pierre-Fusil.png",
+      "groups": {
+        "class": "Rifle",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "5x2",
         "SubType": "Rifle",
@@ -668,6 +854,10 @@
       "name": "M3 Termite",
       "page": "https://sulfur.wiki.gg/wiki/M3_Termite",
       "image": "M3 Termite.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Submachine Gun",
@@ -689,6 +879,10 @@
       "name": "Majordome",
       "page": "https://sulfur.wiki.gg/wiki/Majordome",
       "image": "Majordome.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "12Ga"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Shotgun",
@@ -710,6 +904,10 @@
       "name": "Mossman",
       "page": "https://sulfur.wiki.gg/wiki/Mossman",
       "image": "Mossman.png",
+      "groups": {
+        "class": "Shotgun",
+        "ammo": "12Ga"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Shotgun",
@@ -731,6 +929,10 @@
       "name": "Neuraxis F22",
       "page": "https://sulfur.wiki.gg/wiki/Neuraxis_F22",
       "image": "Neuraxis F22.png",
+      "groups": {
+        "class": "Light Machine Gun",
+        "ammo": "Energy Cell"
+      },
       "fields": {
         "GridSize": "5x2",
         "SubType": "Light Machine Gun",
@@ -752,6 +954,10 @@
       "name": "P38 Dirk",
       "page": "https://sulfur.wiki.gg/wiki/P38_Dirk",
       "image": "P38 Dirk.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -772,6 +978,10 @@
       "name": "Palehorse Topclipper",
       "page": "https://sulfur.wiki.gg/wiki/Palehorse_Topclipper",
       "image": "Palehorse Topclipper.png",
+      "groups": {
+        "class": "Revolver",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Revolver",
@@ -793,6 +1003,10 @@
       "name": "Ploika Compact",
       "page": "https://sulfur.wiki.gg/wiki/Ploika_Compact",
       "image": "Ploika Compact.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2x2",
         "SubType": "Submachine Gun",
@@ -814,6 +1028,10 @@
       "name": "Rektor 100rd",
       "page": "https://sulfur.wiki.gg/wiki/Rektor_100rd",
       "image": "Rektor 100rd.png",
+      "groups": {
+        "class": "Light Machine Gun",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "5x2",
         "SubType": "Light Machine Gun",
@@ -835,6 +1053,10 @@
       "name": "Rokua .308",
       "page": "https://sulfur.wiki.gg/wiki/Rokua_.308",
       "image": "Rokua .308.png",
+      "groups": {
+        "class": "Sniper",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "5x2",
         "SubType": "Sniper",
@@ -856,6 +1078,10 @@
       "name": "Salamander",
       "page": "https://sulfur.wiki.gg/wiki/Salamander",
       "image": "Salamander.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Pistol",
@@ -877,6 +1103,10 @@
       "name": "Snut .38",
       "page": "https://sulfur.wiki.gg/wiki/Snut_.38",
       "image": "Snut .38.png",
+      "groups": {
+        "class": "Revolver",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Revolver",
@@ -898,6 +1128,10 @@
       "name": "Socom 9",
       "page": "https://sulfur.wiki.gg/wiki/Socom_9",
       "image": "Socom 9.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -919,6 +1153,10 @@
       "name": "Socom ACR",
       "page": "https://sulfur.wiki.gg/wiki/Socom_ACR",
       "image": "Socom ACR.png",
+      "groups": {
+        "class": "Assault Rifle",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "4×2",
         "SubType": "Assault Rifle",
@@ -940,6 +1178,10 @@
       "name": "Songbird",
       "page": "https://sulfur.wiki.gg/wiki/Songbird",
       "image": "Songbird.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Submachine Gun",
@@ -961,6 +1203,10 @@
       "name": "Star & Witness",
       "page": "https://sulfur.wiki.gg/wiki/Star_%26_Witness",
       "image": "Star & Witness.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -982,6 +1228,10 @@
       "name": "Tailor Marksman MKII",
       "page": "https://sulfur.wiki.gg/wiki/Tailor_Marksman_MKII",
       "image": "Tailor Marksman MKII.png",
+      "groups": {
+        "class": "Rifle",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "4x2",
         "SubType": "Rifle",
@@ -1003,6 +1253,10 @@
       "name": "Terrier URB.",
       "page": "https://sulfur.wiki.gg/wiki/Terrier_URB.",
       "image": "Terrier URB..png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Pistol",
@@ -1023,6 +1277,10 @@
       "name": "Type 80 Typhoon",
       "page": "https://sulfur.wiki.gg/wiki/Type_80_Typhoon",
       "image": "Type 80 Typhoon.png",
+      "groups": {
+        "class": "Assault Rifle",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "4x2",
         "SubType": "Assault Rifle",
@@ -1044,6 +1302,10 @@
       "name": "Unknown",
       "page": "https://sulfur.wiki.gg/wiki/Unknown",
       "image": "unknown.png",
+      "groups": {
+        "class": "Pistol",
+        "ammo": "Energy Cell"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Pistol",
@@ -1065,6 +1327,10 @@
       "name": "Valet",
       "page": "https://sulfur.wiki.gg/wiki/Valet",
       "image": "Valet.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "2×2",
         "SubType": "Submachine Gun",
@@ -1086,6 +1352,10 @@
       "name": "Vrede",
       "page": "https://sulfur.wiki.gg/wiki/Vrede",
       "image": "Vrede.png",
+      "groups": {
+        "class": "Submachine Gun",
+        "ammo": "9mm"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Submachine Gun",
@@ -1107,6 +1377,10 @@
       "name": "Warpig",
       "page": "https://sulfur.wiki.gg/wiki/Warpig",
       "image": "Warpig.png",
+      "groups": {
+        "class": "Light Machine Gun",
+        "ammo": "5.56mm"
+      },
       "fields": {
         "GridSize": "5×2",
         "SubType": "Light Machine Gun",
@@ -1127,6 +1401,10 @@
       "name": "Wingman",
       "page": "https://sulfur.wiki.gg/wiki/Wingman",
       "image": "Wingman.png",
+      "groups": {
+        "class": "Assault Rifle",
+        "ammo": "7.62mm"
+      },
       "fields": {
         "GridSize": "4×2",
         "SubType": "Assault Rifle",
@@ -1148,6 +1426,10 @@
       "name": "Wyatt PULSAR",
       "page": "https://sulfur.wiki.gg/wiki/Wyatt_PULSAR",
       "image": "Wyatt PULSAR.png",
+      "groups": {
+        "class": "Revolver",
+        "ammo": "Energy Cell"
+      },
       "fields": {
         "GridSize": "3×2",
         "SubType": "Revolver",

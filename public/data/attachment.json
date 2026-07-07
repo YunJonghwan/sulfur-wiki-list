@@ -1,6 +1,6 @@
 {
   "kind": "attachment",
-  "generated": "2026-07-07T11:38:45.346730+00:00",
+  "generated": "2026-07-07T12:02:09.244641+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -77,11 +77,42 @@
       "label": "Sold By"
     }
   ],
+  "axes": [
+    {
+      "key": "type",
+      "label": "Type",
+      "values": [
+        {
+          "value": "Laser Sight",
+          "count": 15
+        },
+        {
+          "value": "Muzzle Attachment",
+          "count": 14
+        },
+        {
+          "value": "Sight",
+          "count": 7
+        },
+        {
+          "value": "Chamber Attachment",
+          "count": 2
+        },
+        {
+          "value": "Attachment",
+          "count": 1
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "name": "A12C Muzzle Brake",
       "page": "https://sulfur.wiki.gg/wiki/A12C_Muzzle_Brake",
       "image": "A12C Muzzle Brake.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1x1",
         "SellVal": "240",
@@ -96,6 +127,9 @@
       "name": "Aftermarket Haukland Silencer",
       "page": "https://sulfur.wiki.gg/wiki/Aftermarket_Haukland_Silencer",
       "image": "Aftermarket Haukland Silencer.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1×2",
         "SubType": "Muzzle Attachment",
@@ -111,6 +145,9 @@
       "name": "Assault Scope",
       "page": "https://sulfur.wiki.gg/wiki/Assault_Scope",
       "image": "Assault_Scope.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Sight",
@@ -124,6 +161,9 @@
       "name": "Barrel Extension 2\"",
       "page": "https://sulfur.wiki.gg/wiki/Barrel_Extension_2%22",
       "image": "Barrel Extension 2\".png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Muzzle Attachment",
@@ -139,6 +179,9 @@
       "name": "Barrel Extension 4\"",
       "page": "https://sulfur.wiki.gg/wiki/Barrel_Extension_4%22",
       "image": "Barrel Extension 4\".png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Muzzle Attachment",
@@ -154,6 +197,9 @@
       "name": "Barrel Extension 6\"",
       "page": "https://sulfur.wiki.gg/wiki/Barrel_Extension_6%22",
       "image": "Barrel Extension 6\".png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "3×1",
         "SubType": "Muzzle Attachment",
@@ -169,6 +215,9 @@
       "name": "Breznik BMD",
       "page": "https://sulfur.wiki.gg/wiki/Breznik_BMD",
       "image": "Breznik BMD.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Muzzle Attachment",
@@ -183,6 +232,9 @@
       "name": "Breznik BMD (Tactical)",
       "page": "https://sulfur.wiki.gg/wiki/Breznik_BMD_%28Tactical%29",
       "image": "Breznik BMD (Tactical).png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Muzzle Attachment",
@@ -197,6 +249,9 @@
       "name": "Compact Sight",
       "page": "https://sulfur.wiki.gg/wiki/Compact_Sight",
       "image": "Compact_Sight.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Sight",
@@ -210,6 +265,9 @@
       "name": "Gun Crank",
       "page": "https://sulfur.wiki.gg/wiki/Gun_Crank",
       "image": "Gun Crank.png",
+      "groups": {
+        "type": "Chamber Attachment"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Chamber Attachment",
@@ -223,6 +281,9 @@
       "name": "Haukland Flash Hider",
       "page": "https://sulfur.wiki.gg/wiki/Haukland_Flash_Hider",
       "image": "Haukland Flash Hider.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Muzzle Attachments",
@@ -237,6 +298,9 @@
       "name": "Haukland Silencer",
       "page": "https://sulfur.wiki.gg/wiki/Haukland_Silencer",
       "image": "Haukland Silencer.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Muzzle Attachment",
@@ -253,6 +317,9 @@
       "name": "Holographic Sight",
       "page": "https://sulfur.wiki.gg/wiki/Holographic_Sight",
       "image": "Holographic Sight.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Sight",
@@ -266,6 +333,9 @@
       "name": "Hunting Scope",
       "page": "https://sulfur.wiki.gg/wiki/Hunting_Scope",
       "image": "Hunting Scope.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Sight",
@@ -279,6 +349,9 @@
       "name": "Improvised Barrel Extension",
       "page": "https://sulfur.wiki.gg/wiki/Improvised_Barrel_Extension",
       "image": "Improvised Barrel Extension.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Muzzle Attachment",
@@ -293,6 +366,9 @@
       "name": "Insurance",
       "page": "https://sulfur.wiki.gg/wiki/Insurance",
       "image": "Insurance.png",
+      "groups": {
+        "type": "Attachment"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Attachment",
@@ -306,6 +382,9 @@
       "name": "Laser Sight (Bone)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Bone%29",
       "image": "Laser Sight (Bone).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -318,6 +397,9 @@
       "name": "Laser Sight (Denim Blue)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Denim_Blue%29",
       "image": "Laser Sight (Denim Blue).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -330,6 +412,9 @@
       "name": "Laser Sight (Gold)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Gold%29",
       "image": "Laser Sight (Gold).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -343,6 +428,9 @@
       "name": "Laser Sight (Green)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Green%29",
       "image": "Laser Sight (Green).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -356,6 +444,9 @@
       "name": "Laser Sight (Light Blue)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Light_Blue%29",
       "image": "Laser Sight (Light Blue).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -368,6 +459,9 @@
       "name": "Laser Sight (Lime)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Lime%29",
       "image": "Laser Sight (Lime).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -381,6 +475,9 @@
       "name": "Laser Sight (Magenta)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Magenta%29",
       "image": "Laser Sight (Magenta).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -393,6 +490,9 @@
       "name": "Laser Sight (Orange)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Orange%29",
       "image": "Laser Sight (Orange).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -405,6 +505,9 @@
       "name": "Laser Sight (Poop)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Poop%29",
       "image": "Laser Sight (Poop).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -417,6 +520,9 @@
       "name": "Laser Sight (Purple)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Purple%29",
       "image": "Laser Sight (Purple).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -429,6 +535,9 @@
       "name": "Laser Sight (Red)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Red%29",
       "image": "Laser Sight (Red).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -442,6 +551,9 @@
       "name": "Laser Sight (Rose Pink)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Rose_Pink%29",
       "image": "Laser Sight (Rose Pink).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -454,6 +566,9 @@
       "name": "Laser Sight (Tangerine)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Tangerine%29",
       "image": "Laser Sight (Tangerine).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -466,6 +581,9 @@
       "name": "Laser Sight (Teal)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Teal%29",
       "image": "Laser Sight (Teal).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -478,6 +596,9 @@
       "name": "Laser Sight (Yellow)",
       "page": "https://sulfur.wiki.gg/wiki/Laser_Sight_%28Yellow%29",
       "image": "Laser Sight (Yellow).png",
+      "groups": {
+        "type": "Laser Sight"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Laser Sights",
@@ -491,6 +612,9 @@
       "name": "M87 \"Albatross\" Silencer",
       "page": "https://sulfur.wiki.gg/wiki/M87_%22Albatross%22_Silencer",
       "image": "M87 \"Albatross\" Silencer.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Muzzle Attachment",
@@ -508,6 +632,9 @@
       "name": "Priming Bolt",
       "page": "https://sulfur.wiki.gg/wiki/Priming_Bolt",
       "image": "Priming Bolt.png",
+      "groups": {
+        "type": "Chamber Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Chamber Attachment",
@@ -523,6 +650,9 @@
       "name": "Recon Scope",
       "page": "https://sulfur.wiki.gg/wiki/Recon_Scope",
       "image": "Recon_Scope.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Sight",
@@ -536,6 +666,9 @@
       "name": "Reflex Sight",
       "page": "https://sulfur.wiki.gg/wiki/Reflex_Sight",
       "image": "Reflex Sight.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "1x1",
         "SubType": "Sight",
@@ -549,6 +682,9 @@
       "name": "Shrouded Barrel Extension",
       "page": "https://sulfur.wiki.gg/wiki/Shrouded_Barrel_Extension",
       "image": "Shrouded Barrel Extension.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Muzzle Attachment",
@@ -563,6 +699,9 @@
       "name": "Sniper Scope",
       "page": "https://sulfur.wiki.gg/wiki/Sniper_Scope",
       "image": "Sniper_Scope.png",
+      "groups": {
+        "type": "Sight"
+      },
       "fields": {
         "GridSize": "2x1",
         "SubType": "Sight",
@@ -576,6 +715,9 @@
       "name": "SR-P3 Silencer",
       "page": "https://sulfur.wiki.gg/wiki/SR-P3_Silencer",
       "image": "SR-P3 Silencer.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "2×1",
         "SubType": "Muzzle Attachment",
@@ -592,6 +734,9 @@
       "name": "Warmage Compensator",
       "page": "https://sulfur.wiki.gg/wiki/Warmage_Compensator",
       "image": "Warmage Compensator.png",
+      "groups": {
+        "type": "Muzzle Attachment"
+      },
       "fields": {
         "GridSize": "1×1",
         "SubType": "Muzzle Attachment",
