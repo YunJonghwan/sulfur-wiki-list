@@ -82,7 +82,7 @@ export default function App() {
         {status === 'error' && !data && (
           <p className="notice error">{t(UI.error, lang)}</p>
         )}
-        {data && <DataTable data={data} lang={lang} />}
+        {data && <DataTable key={data.kind} data={data} lang={lang} />}
       </main>
 
       {data && (
