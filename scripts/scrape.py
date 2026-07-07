@@ -27,6 +27,10 @@ WIKI = "https://sulfur.wiki.gg/wiki/"
 USER_AGENT = "SulfurWikiList/1.0 (data aggregation; contact via GitHub YunJonghwan/sulfur-wiki-list)"
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "public" / "data"
+IMG_DIR = Path(__file__).resolve().parent.parent / "public" / "icons"
+
+# Icon thumbnail width to download (px). Displayed at 32px, 2x for sharpness.
+ICON_WIDTH = 64
 
 # Kinds we generate a page/table for, in the requested display order.
 TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable"]
@@ -386,6 +390,229 @@ def parse_infobox(body: str) -> dict[str, str]:
     return fields
 
 
+UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')
+
+
+def local_icon_name(file_name: str) -> str:
+    """Turn a wiki File name into a safe local filename (kept as .png)."""
+    stem = file_name.rsplit(".", 1)[0]
+    safe = UNSAFE_FILE_RE.sub("_", stem).strip()
+    safe = re.sub(r"\s+", "_", safe)
+    return safe + ".png"
+
+
+def resolve_thumb_urls(file_names: list[str]) -> dict[str, str]:
+    """Map wiki File names to a downloadable thumbnail URL (batches of 50)."""
+    urls: dict[str, str] = {}
+    for i in range(0, len(file_names), 50):
+        batch = file_names[i:i + 50]
+        titles = "|".join("File:" + n for n in batch)
+        data = api_get({
+            "action": "query",
+            "titles": titles,
+            "prop": "imageinfo",
+            "iiprop": "url",
+            "iiurlwidth": str(ICON_WIDTH),
+        })
+        query = data.get("query", {})
+        # Map any title normalization back to the requested names.
+        norm = {n["to"]: n["from"] for n in query.get("normalized", [])}
+        for page in query.get("pages", {}).values():
+            title = page.get("title", "")
+            info = page.get("imageinfo")
+            if not info:
+                continue
+            url = info[0].get("thumburl") or info[0].get("url")
+            if not url:
+                continue
+            requested = norm.get(title, title)
+            key = requested[len("File:"):] if requested.startswith("File:") else requested
+            urls[key] = url
+        time.sleep(0.2)
+    return urls
+
+
+SLUG_STRIP_RE = re.compile(r"[^a-z0-9]+")
+
+
+def slugify(text: str) -> str:
+    s = SLUG_STRIP_RE.sub("-", text.strip().lower()).strip("-")
+    return s or "etc"
+
+
+# Oils have no SubType, so they are foldered by their primary effect. Each item
+# is placed in the group of the FIRST of its stats (in wiki order) that maps
+# below; anything unmatched goes to "misc". Tweak freely — this only affects
+# how icon files are organized on disk, not the site.
+OIL_STAT_GROUP: dict[str, str] = {
+    # damage output
+    "Dmg": "damage", "CritChance": "damage", "CritADS": "damage",
+    "ProjecAmnt": "damage", "HSDmg": "damage", "AirDmg": "damage",
+    # rate of fire / reload
+    "RPM": "fire-rate", "RldSpeed": "fire-rate",
+    # handling / accuracy
+    "Spread": "handling", "Recoil": "handling", "MoveAccuracy": "handling",
+    "AimDisabled": "handling",
+    # projectile behaviour
+    "BltSpeed": "bullet", "BltPen": "bullet", "BltSize": "bullet",
+    "BltBounces": "bullet", "BltBounciness": "bullet", "BltDrop": "bullet",
+    "Drag": "bullet", "PenDmgMult": "bullet", "LifeTime": "bullet",
+    # ammo / durability / loot economy
+    "AmmoConsume": "economy", "AmmoExConsume": "economy", "MaxDrb": "economy",
+    "LootChance": "economy", "LootRolls": "economy", "NoDrb": "economy",
+    "DrbConsume": "economy", "SingleUse": "economy",
+    # movement
+    "Speed": "mobility", "JumpPwr": "mobility", "ExtraJumps": "mobility",
+    "Coyote": "mobility", "Slide": "mobility",
+}
+
+# Effect-style keys all collapse into the "effects" group.
+OIL_EFFECT_KEYS = {
+    "ConvertWpn", "RocketBlt", "Homing", "CrpsExpl", "Petrify", "Poison",
+    "PsnCloud", "PsnPuddle", "Oily", "OilPuddle", "Wet", "Fire", "Lava",
+    "Explosion", "Electrocution", "ElecArea", "SlowMo", "Charm", "MoreDmgOnHit",
+    "Blind", "AreaBlind", "SelfBlind", "Blindfolded", "WearGoggles",
+    "WearEarPro", "WearShades", "WearSJ", "Stun", "StunArea", "Swap", "Fear",
+    "Frost", "Root", "NoMoney", "NoOrgans", "AlwaysOrgans", "SelfDmg",
+    "LessForceSpd", "FrostPuddle", "Freeze", "LinkBlt", "ShareDmg", "Frag",
+    "Sticky", "Proc", "Summon", "TimeScale", "PrevDeath",
+}
+
+IGNORE_FOR_GROUPING = {"GridSize", "SellVal", "BuyVal", "SoldBy"}
+
+
+def oil_group(fields: dict[str, str]) -> str:
+    for key in fields:
+        if key in IGNORE_FOR_GROUPING:
+            continue
+        if key in OIL_STAT_GROUP:
+            return OIL_STAT_GROUP[key]
+        if key in OIL_EFFECT_KEYS:
+            return "effects"
+    return "misc"
+
+
+# SubType values on the wiki are inconsistent (plurals, compound tags like
+# "Food, Ingredient", "SMG" vs "Submachine Gun"). Take the first tag and map
+# known variants to one canonical folder name.
+SUBTYPE_SPLIT_RE = re.compile(r"\s*(?:,|/|;|&|\band\b)\s*", re.IGNORECASE)
+SUBTYPE_ALIASES = {
+    "smg": "submachine-gun",
+    "muzzle-attachments": "muzzle-attachment",
+    "laser-sights": "laser-sight",
+    "sights": "sight",
+    "beverages": "beverage",
+    "sweets": "dessert",
+    "remedy": "drug-remedy",
+    "drug": "drug-remedy",
+}
+
+
+def subtype_slug(subtype: str) -> str:
+    first = SUBTYPE_SPLIT_RE.split(subtype.strip())[0]
+    s = slugify(first)
+    return SUBTYPE_ALIASES.get(s, s)
+
+
+def icon_subdir(kind: str, fields: dict[str, str]) -> str:
+    """Return the icons/ subfolder (relative) for an item."""
+    if kind == "oil":
+        return f"oil/{oil_group(fields)}"
+    subtype = fields.get("SubType")
+    if subtype:
+        return f"{kind}/{subtype_slug(subtype)}"
+    return f"{kind}/_etc"
+
+
+def download_icons(buckets: dict[str, list[dict]]) -> None:
+    """Place each item's icon under icons/<category>/<subtype>/ and set it['icon'].
+
+    Existing icons (flat, or from an earlier folder scheme) are MOVED into the
+    current structure instead of being re-downloaded; only genuinely missing
+    icons are fetched from the wiki API (avoids CORP blocks and 429 rate
+    limiting at runtime).
+    """
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Index every icon already on disk by filename, wherever it currently sits.
+    existing: dict[str, Path] = {}
+    for path in IMG_DIR.rglob("*.png"):
+        if path.is_file():
+            existing.setdefault(path.name, path)
+
+    needed: set[str] = set()
+    plans: list[tuple[dict, str, Path]] = []
+    moved = 0
+
+    for kind in TARGET_KINDS:
+        for it in buckets[kind]:
+            file_name = it.get("image")
+            if not file_name:
+                it["icon"] = None
+                continue
+            subdir = icon_subdir(kind, it["fields"])
+            local = local_icon_name(file_name)
+            dest = IMG_DIR / subdir / local
+            it["icon"] = f"icons/{subdir}/{local}"
+            plans.append((it, file_name, dest))
+
+            if dest.exists():
+                existing[local] = dest
+                continue
+            src = existing.get(local)
+            if src and src.exists():
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                src.replace(dest)
+                existing[local] = dest
+                moved += 1
+            else:
+                needed.add(file_name)
+
+    print(f"Organizing {len(plans)} icons into subfolders ({moved} relocated)...")
+
+    thumb_urls: dict[str, str] = {}
+    if needed:
+        print(f"  {len(needed)} icons missing; resolving URLs...")
+        thumb_urls = resolve_thumb_urls(sorted(needed))
+
+    downloaded = 0
+    missing = 0
+    for it, file_name, dest in plans:
+        if dest.exists():
+            continue
+        url = thumb_urls.get(file_name)
+        if not url:
+            it["icon"] = None
+            missing += 1
+            continue
+        try:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                dest.write_bytes(resp.read())
+            downloaded += 1
+            time.sleep(0.1)
+        except Exception as exc:  # noqa: BLE001 - keep going on any failure
+            print(f"  ! failed {file_name}: {exc}")
+            it["icon"] = None
+            missing += 1
+
+    _prune_empty_dirs()
+    print(f"  organized {len(plans)} icons, {moved} relocated, "
+          f"{downloaded} downloaded, {missing} missing/failed")
+
+
+def _prune_empty_dirs() -> None:
+    """Delete leftover empty folders and stale flat icons under icons/."""
+    for path in sorted(IMG_DIR.glob("*.png")):
+        if path.is_file():
+            path.unlink()
+    # Remove now-empty directories, deepest first.
+    for path in sorted(IMG_DIR.rglob("*"), key=lambda p: len(p.parts), reverse=True):
+        if path.is_dir() and not any(path.iterdir()):
+            path.rmdir()
+
+
 def build() -> None:
     print("Fetching page list...")
     titles = get_infobox_pages()
@@ -418,6 +645,8 @@ def build() -> None:
             buckets[kind].append(item)
         print(f"  parsed {min(i + 50, len(titles))}/{len(titles)}")
         time.sleep(0.3)
+
+    download_icons(buckets)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated = datetime.now(timezone.utc).isoformat()

@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t } from '../i18n.js'
 
-const FILE_PATH = 'https://sulfur.wiki.gg/wiki/Special:FilePath/'
+const BASE = import.meta.env.BASE_URL
 
-function imageUrl(fileName) {
-  if (!fileName) return null
-  return FILE_PATH + encodeURIComponent(fileName) + '?width=64'
+function imageUrl(icon) {
+  if (!icon) return null
+  return BASE + icon
 }
 
 // Extract a numeric value for sorting; returns NaN when none is present.
@@ -137,10 +137,10 @@ export default function DataTable({ data, lang }) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {imageUrl(it.image) && (
+                    {imageUrl(it.icon) && (
                       <img
                         className="item-icon"
-                        src={imageUrl(it.image)}
+                        src={imageUrl(it.icon)}
                         alt=""
                         loading="lazy"
                         width="32"
