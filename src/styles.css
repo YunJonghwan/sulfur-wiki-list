@@ -237,6 +237,60 @@ main {
   vertical-align: top;
 }
 
+.recipe-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.recipe-label {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+.recipe-ing {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.recipe-plus {
+  color: var(--muted);
+  margin: 0 1px;
+}
+
+.recipe-arrow {
+  color: var(--accent);
+  margin: 0 2px;
+}
+
+.recipe-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.recipe-more {
+  color: var(--accent);
+  font-size: 0.75rem;
+  margin-left: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.recipe-more:hover {
+  text-decoration: underline;
+}
+
 .count {
   color: var(--muted);
   font-size: 0.9rem;

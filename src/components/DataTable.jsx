@@ -65,6 +65,39 @@ function ItemCell({ it }) {
   )
 }
 
+// Shows one representative "A + B → Result" recipe for craftable consumables,
+// with a link to the wiki for the other combinations when there's more than one.
+function RecipeLine({ item, lang }) {
+  const r = item.recipe
+  if (!r) return null
+  return (
+    <div className="recipe-line">
+      <span className="recipe-label">{t(UI.recipe, lang)}</span>
+      {r.ingredients.map((ing, i) => (
+        <span className="recipe-ing" key={i}>
+          {i > 0 && <span className="recipe-plus">+</span>}
+          {imageUrl(ing.icon) && (
+            <img className="item-icon recipe-icon" src={imageUrl(ing.icon)} alt="" width="20" height="20" />
+          )}
+          <span>{ing.name}{ing.qty > 1 ? ` ×${ing.qty}` : ''}</span>
+        </span>
+      ))}
+      <span className="recipe-arrow">→</span>
+      <span className="recipe-ing">
+        {imageUrl(item.icon) && (
+          <img className="item-icon recipe-icon" src={imageUrl(item.icon)} alt="" width="20" height="20" />
+        )}
+        <span>{item.name}{r.resultQty > 1 ? ` ×${r.resultQty}` : ''}</span>
+      </span>
+      {r.variantCount > 1 && (
+        <a className="recipe-more" href={item.page} target="_blank" rel="noreferrer">
+          {r.variantCount - 1} {t(UI.moreRecipes, lang)}
+        </a>
+      )}
+    </div>
+  )
+}
+
 export default function DataTable({ data, lang }) {
   const columns = data.columns
   const axes = data.axes || []
@@ -216,6 +249,7 @@ export default function DataTable({ data, lang }) {
                       )
                     })}
                   </div>
+                  {data.kind === 'consumable' && <RecipeLine item={it} lang={lang} />}
                 </td>
               </tr>
             ))}

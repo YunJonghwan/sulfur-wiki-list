@@ -39,7 +39,7 @@ ICON_WIDTH = 64
 
 # Kinds we generate a page/table for, in the requested display order.
 TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable",
-                "scroll", "passive"]
+                "scroll", "passive", "misc"]
 
 # Ordered stat columns per kind, taken from Template:Item Infobox.
 # The frontend only shows columns that at least one item actually populates.
@@ -108,6 +108,10 @@ KIND_COLUMNS: dict[str, list[str]] = {
         "Luck", "Speed", "LungCpty", "ExpGain",
         "AutoDmg", "PistolDmg", "RevolDmg", "AssltDmg", "LMGDmg", "RifleDmg",
         "MeleeDmg", "SniperDmg", "ShotgunDmg",
+        "SellVal", "BuyVal", "SoldBy",
+    ],
+    "misc": [
+        "GridSize", "SubType",
         "SellVal", "BuyVal", "SoldBy",
     ],
 }
@@ -334,6 +338,42 @@ def extract_infobox(wikitext: str) -> str | None:
     return None
 
 
+def extract_all_templates(wikitext: str, start_re: "re.Pattern[str]") -> list[str]:
+    """Return the raw body (template name + params) of every {{...}} block
+    whose opening matches start_re, handling nested {{ }}. Same brace-depth
+    walk as extract_infobox, but collects every match instead of the first.
+    """
+    bodies: list[str] = []
+    pos = 0
+    while True:
+        m = start_re.search(wikitext, pos)
+        if m is None:
+            break
+        start = m.start()
+        depth = 0
+        i = start
+        end = None
+        while i < len(wikitext) - 1:
+            pair = wikitext[i:i + 2]
+            if pair == "{{":
+                depth += 1
+                i += 2
+                continue
+            if pair == "}}":
+                depth -= 1
+                if depth == 0:
+                    end = i
+                    break
+                i += 2
+                continue
+            i += 1
+        if end is None:
+            break
+        bodies.append(wikitext[start + 2:end])
+        pos = end + 2
+    return bodies
+
+
 def split_top_level(body: str) -> list[str]:
     """Split infobox body on top-level | (ignoring nested [[ ]] and {{ }})."""
     parts: list[str] = []
@@ -420,6 +460,83 @@ def parse_infobox(body: str) -> dict[str, str]:
         if key and value:
             fields[key] = value
     return fields
+
+
+# --- Consumable recipes ----------------------------------------------------
+# A craftable consumable's own page has a "== Recipes ==" section with one
+# {{Recipe row}} template per valid ingredient combo (often many — batch-size
+# variants, alternate ingredients, bigger-stove bonuses…). We only show one
+# representative recipe per item rather than every variant, since some items
+# have 20-40+ of them; the rest just isn't practical to render meaningfully.
+RECIPE_ROW_START_RE = re.compile(r"\{\{\s*Recipe row")
+RECIPE_SECTION_RE = re.compile(r"==\s*Recipes\s*==([\s\S]*?)(?:\n==[^=]|\[\[Category)")
+CATEGORY_INGREDIENT_RE = re.compile(r"^:?Category:", re.IGNORECASE)
+
+
+def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
+    ingredients = []
+    for n in range(1, 7):
+        val = row.get(f"i{n}")
+        if not val or val == "(blank)":
+            continue
+        qty_raw = row.get(f"i{n}Qty")
+        qty = int(qty_raw) if qty_raw and qty_raw.isdigit() else 1
+        if CATEGORY_INGREDIENT_RE.match(val):
+            label = row.get(f"i{n}Label") or ("Any " + CATEGORY_INGREDIENT_RE.sub("", val))
+            ingredients.append({
+                "name": label, "qty": qty, "wildcard": True,
+                "filename": row.get(f"i{n}Filename"),
+            })
+        else:
+            ingredients.append({"name": val, "qty": qty, "wildcard": False})
+    return ingredients
+
+
+def consumable_recipe(wikitext: str) -> dict[str, object] | None:
+    m = RECIPE_SECTION_RE.search(wikitext)
+    if not m:
+        return None
+    variants = []
+    for body in extract_all_templates(m.group(1), RECIPE_ROW_START_RE):
+        row = parse_infobox(body)
+        ingredients = _row_ingredients(row)
+        if not ingredients:
+            continue
+        qty_raw = row.get("resultQty")
+        result_qty = int(qty_raw) if qty_raw and qty_raw.isdigit() else 1
+        variants.append({"ingredients": ingredients, "resultQty": result_qty})
+    if not variants:
+        return None
+    # Prefer the simplest variant as the representative one: fewest
+    # ingredient slots, then lowest total ingredient quantity.
+    best = min(
+        variants,
+        key=lambda v: (len(v["ingredients"]), sum(i["qty"] for i in v["ingredients"])),
+    )
+    return {
+        "ingredients": best["ingredients"],
+        "resultQty": best["resultQty"],
+        "variantCount": len(variants),
+    }
+
+
+def resolve_recipe_icons(buckets: dict[str, list[dict]]) -> None:
+    """Attach icon/page to recipe ingredients that match a scraped item."""
+    lookup = {
+        it["name"]: {"icon": it.get("icon"), "page": it["page"]}
+        for kind_items in buckets.values()
+        for it in kind_items
+    }
+    for it in buckets.get("consumable", []):
+        recipe = it.get("recipe")
+        if not recipe:
+            continue
+        for ing in recipe["ingredients"]:
+            ref = lookup.get(ing.get("filename") or ing["name"])
+            if ref:
+                ing["icon"] = ref["icon"]
+                ing["page"] = ref["page"]
+            ing.pop("filename", None)
 
 
 UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')
@@ -539,6 +656,8 @@ SUBTYPE_ALIASES = {
     "drug": "drug-remedy",
     "mushrooms": "mushroom",
     "nuts": "nut",
+    "organs": "organ",
+    "valuable": "valuables",
 }
 
 
@@ -665,6 +784,7 @@ AXIS_KEYS_BY_KIND = {
     "attachment": ["type"],
     "equipment": ["type"],
     "consumable": ["type", "craftable"],
+    "misc": ["type"],
 }
 
 AXIS_LABELS = {
@@ -922,9 +1042,14 @@ def build(refresh: bool = False) -> None:
             "fields": {k: v for k, v in fields.items()
                        if k not in ("kind", "image", "title")},
         }
+        if kind == "consumable":
+            recipe = consumable_recipe(wikitext)
+            if recipe:
+                item["recipe"] = recipe
         buckets[kind].append(item)
 
     download_icons(buckets)
+    resolve_recipe_icons(buckets)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated = datetime.now(timezone.utc).isoformat()

@@ -13,6 +13,7 @@ export const CATEGORIES = [
   { kind: 'equipment', en: 'Equipment', ko: '장비' },
   { kind: 'passive', en: 'Passives', ko: '패시브' },
   { kind: 'consumable', en: 'Consumables', ko: '소비품' },
+  { kind: 'misc', en: 'Materials', ko: '잡화' },
 ]
 
 export const UI = {
@@ -58,6 +59,8 @@ export const UI = {
   pickWeapon: { en: 'Select a weapon to begin.', ko: '무기를 선택하면 시작됩니다.' },
   scrollOpt: { en: 'Scrolls', ko: '스크롤' },
   oilOpt: { en: 'Oils', ko: '오일' },
+  recipe: { en: 'Recipe', ko: '레시피' },
+  moreRecipes: { en: 'other recipes on wiki', ko: '개의 다른 조합법 (위키에서 보기)' },
 }
 
 // Korean labels for sub-group axes (weapon class, ammo, oil effect…).
@@ -131,6 +134,11 @@ export const GROUP_KO = {
   'Laser Sight': '레이저',
   'Chamber Attachment': '챔버',
   Attachment: '부착물',
+  // misc (organs / crafting materials / valuables)
+  Organ: '장기',
+  Valuables: '귀중품',
+  Key: '열쇠',
+  Trash: '쓰레기',
 }
 
 export function groupLabel(value, label, lang) {

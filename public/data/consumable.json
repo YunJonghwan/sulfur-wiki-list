@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-07T14:42:12.572374+00:00",
+  "generated": "2026-07-07T15:00:44.289874+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -228,6 +228,26 @@
         "SellVal": "90",
         "SoldBy": "Blond Magus, Qiosk"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Paper",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Paper.png",
+            "page": "https://sulfur.wiki.gg/wiki/Paper"
+          },
+          {
+            "name": "Herbs",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Herbs.png",
+            "page": "https://sulfur.wiki.gg/wiki/Herbs"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/drug-remedy/Admiral_White_Extra_Strong.png"
     },
     {
@@ -263,6 +283,26 @@
         "SellVal": "40",
         "SoldBy": "Blond Magus, Qiosk"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Green Glob",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Green_Glob.png",
+            "page": "https://sulfur.wiki.gg/wiki/Green_Glob"
+          },
+          {
+            "name": "Rubber",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rubber.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rubber"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/drug-remedy/Anti-Poison_Gum.png"
     },
     {
@@ -278,6 +318,26 @@
         "SubType": "Food",
         "Heal": "15 health over 0.1 seconds",
         "SellVal": "45"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Jello",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Jello.png",
+            "page": "https://sulfur.wiki.gg/wiki/Jello"
+          },
+          {
+            "name": "Mystery Meat",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Mystery_Meat.png",
+            "page": "https://sulfur.wiki.gg/wiki/Mystery_Meat"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Aspic.png"
     },
@@ -311,6 +371,26 @@
         "Heal": "30 Health over 10 seconds",
         "SellVal": "45"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Banana",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Banana.png",
+            "page": "https://sulfur.wiki.gg/wiki/Banana"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Banana_Bread.png"
     },
     {
@@ -327,6 +407,26 @@
         "Heal": "20 health over 1 seconds",
         "SellVal": "10"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Banana",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Banana.png",
+            "page": "https://sulfur.wiki.gg/wiki/Banana"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 16
+      },
       "icon": "icons/consumable/food/Banana_Sulfs.png"
     },
     {
@@ -342,6 +442,19 @@
         "SubType": "Food, Ingredient",
         "Heal": "10 health over 10 seconds",
         "SellVal": "25"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bark",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Bark.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bark"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 12
       },
       "icon": "icons/consumable/food/Bark_Bread.png"
     },
@@ -375,6 +488,19 @@
         "Heal": "10 health over 10 seconds",
         "SellVal": "30",
         "SoldBy": "Grossberg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any same skin except Shav'Wa",
+            "qty": 2,
+            "wildcard": true,
+            "icon": "icons/misc/organ/Goblin_Skin.png",
+            "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/Beef_Jerky.png"
     },
@@ -410,6 +536,26 @@
         "SellVal": "45",
         "SoldBy": "Jaques De Fector"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Berries",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Berries.png",
+            "page": "https://sulfur.wiki.gg/wiki/Berries"
+          },
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 11
+      },
       "icon": "icons/consumable/food/Berry_Jam.png"
     },
     {
@@ -425,6 +571,19 @@
         "SubType": "Food, Ingredient",
         "Heal": "10 Health over 2.5 seconds",
         "SellVal": "35"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Berries",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Berries.png",
+            "page": "https://sulfur.wiki.gg/wiki/Berries"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
       },
       "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png"
     },
@@ -443,6 +602,26 @@
         "RmvFire": "✓",
         "SellVal": "30"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Skimmed Milk or Low Fat Milk",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/milk/Skimmed_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+          },
+          {
+            "name": "Berries",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Berries.png",
+            "page": "https://sulfur.wiki.gg/wiki/Berries"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 24
+      },
       "icon": "icons/consumable/beverage/Berry_Milkshake.png"
     },
     {
@@ -459,6 +638,26 @@
         "Heal": "25 health over 10 seconds",
         "SellVal": "65",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Gravy",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Gravy.png",
+            "page": "https://sulfur.wiki.gg/wiki/Gravy"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Biscuits_And_Gravy.png"
     },
@@ -528,6 +727,26 @@
         "SellVal": "30",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          },
+          {
+            "name": "Green Tea",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Green_Tea.png",
+            "page": "https://sulfur.wiki.gg/wiki/Green_Tea"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 7
+      },
       "icon": "icons/consumable/beverage/Boba_Tea.png"
     },
     {
@@ -564,6 +783,19 @@
         "SellVal": "20",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Cactus",
+            "qty": 3,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cactus.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cactus"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/beverage/Bottled_Water.png"
     },
     {
@@ -579,6 +811,26 @@
         "SubType": "Food, Ingredient",
         "SellVal": "45",
         "Heal": "15 health over 10 seconds"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 8
       },
       "icon": "icons/consumable/food/Bread.png"
     },
@@ -596,6 +848,19 @@
         "Heal": "15 health over 5 seconds",
         "SellVal": "40"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 3,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Bread_Sandwich.png"
     },
     {
@@ -612,6 +877,26 @@
         "Heal": "10 health over 10 seconds",
         "SellVal": "30"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bone",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Bone.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bone"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/food/Broth.png"
     },
     {
@@ -627,6 +912,26 @@
         "SubType": "Food",
         "Heal": "15 health over 5 seconds",
         "SellVal": "500"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Dog Eye",
+            "qty": 4,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Dog_Eye.png",
+            "page": "https://sulfur.wiki.gg/wiki/Dog_Eye"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Buddy_Sandwich.png"
     },
@@ -645,6 +950,19 @@
         "SellVal": "30",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Whole Milk",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Whole_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Butter.png"
     },
     {
@@ -660,6 +978,26 @@
         "SubType": "Food, Ingredient",
         "SellVal": "30",
         "Heal": "15 health over 5 seconds"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Butter",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Butter.png",
+            "page": "https://sulfur.wiki.gg/wiki/Butter"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 2
       },
       "icon": "icons/consumable/food/Butter_Sandwich.png"
     },
@@ -678,6 +1016,26 @@
         "Heal": "15 health over 10 seconds",
         "MoveAccuracy": "+50% for 120 seconds"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Whole Milk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Whole_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
+          },
+          {
+            "name": "Butter",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Butter.png",
+            "page": "https://sulfur.wiki.gg/wiki/Butter"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/milk/Buttermilk.png"
     },
     {
@@ -693,6 +1051,33 @@
         "SubType": "Food",
         "SellVal": "110",
         "Heal": "30 health over 10 seconds"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Buttermilk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Buttermilk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Buttermilk"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Buttermilk_Pancakes.png"
     },
@@ -742,6 +1127,33 @@
         "SubType": "Beverage, Ingredient",
         "SellVal": "30"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Cactus",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cactus.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cactus"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/beverage/Cactus_Softdrink.png"
     },
     {
@@ -757,6 +1169,33 @@
         "SubType": "Sweets, Food",
         "SellVal": "45",
         "Heal": "20 health over 0.1 seconds"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Herbs",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Herbs.png",
+            "page": "https://sulfur.wiki.gg/wiki/Herbs"
+          },
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Solution",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Solution.png",
+            "page": "https://sulfur.wiki.gg/wiki/Solution"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
       },
       "icon": "icons/consumable/dessert/Candy_Cane.png"
     },
@@ -794,6 +1233,19 @@
         "Heal": "35 health over 10 seconds",
         "SoldBy": "Stiffleg, Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Oats",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Oats.png",
+            "page": "https://sulfur.wiki.gg/wiki/Oats"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Cereal.png"
     },
     {
@@ -811,6 +1263,31 @@
         "BuyVal": "220",
         "SoldBy": "?",
         "Heal": "25 health over 10 seconds"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Spice Mix",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Spice_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spice_Mix"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Cevapi.png"
     },
@@ -830,6 +1307,19 @@
         "SoldBy": "Rat Queen",
         "Type": "Consumable"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Low Fat Milk",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Low_Fat_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Low_Fat_Milk"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 9
+      },
       "icon": "icons/consumable/food/Cheese.png"
     },
     {
@@ -848,6 +1338,26 @@
         "BuyVal": "85",
         "SoldBy": "Rat Queen"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Butter Sandwich",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Butter_Sandwich.png",
+            "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich"
+          },
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 9
+      },
       "icon": "icons/consumable/food/Cheese_Sandwich.png"
     },
     {
@@ -864,6 +1374,26 @@
         "SubType": "Food",
         "SellVal": "30",
         "SoldBy": "Grossberg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Cheese_Tops.png"
     },
@@ -882,6 +1412,31 @@
         "SellVal": "125",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/food/Cheeseburger.png"
     },
     {
@@ -898,6 +1453,33 @@
         "Heal": "+20 health over 10 seconds",
         "SellVal": "43",
         "SoldBy": "Grossberg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Cacao",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cacao.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cacao"
+          },
+          {
+            "name": "Oats",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Oats.png",
+            "page": "https://sulfur.wiki.gg/wiki/Oats"
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 15
       },
       "icon": "icons/consumable/dessert/Chocolate_Ball.png"
     },
@@ -933,6 +1515,26 @@
         "RmvFire": "✓",
         "SellVal": "30"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Skimmed Milk/Low Fat Milk",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/milk/Skimmed_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+          },
+          {
+            "name": "Chocolate Syrup",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+            "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 16
+      },
       "icon": "icons/consumable/beverage/Chocolate_Milkshake.png"
     },
     {
@@ -949,6 +1551,40 @@
         "Heal": "+50 Health over 3 seconds",
         "SellVal": "140"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Butter",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Butter.png",
+            "page": "https://sulfur.wiki.gg/wiki/Butter"
+          },
+          {
+            "name": "Chocolate Bar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/dessert/Chocolate_Bar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Chocolate_Bar"
+          }
+        ],
+        "resultQty": 5,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/dessert/Chocolate_Mudcake.png"
     },
     {
@@ -964,6 +1600,26 @@
         "SubType": "Sweets, Food, Ingredient",
         "Heal": "+10 health over 1 seconds",
         "SellVal": "50"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Chocolate Bar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/dessert/Chocolate_Bar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Chocolate_Bar"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 4
       },
       "icon": "icons/consumable/dessert/Chocolate_Syrup.png"
     },
@@ -1012,6 +1668,31 @@
         "Heal": "+25 Health over 10 seconds",
         "SellVal": "175"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Cordon_Bleu.png"
     },
     {
@@ -1029,6 +1710,19 @@
         "SellVal": "65",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/dessert/Cotton_Candy.png"
     },
     {
@@ -1045,6 +1739,19 @@
         "SellVal": "120",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Frog Leg",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Frog_Leg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Frog_Leg"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Cuisses_De_Grenouille.png"
     },
     {
@@ -1060,6 +1767,26 @@
         "SubType": "Food",
         "Heal": "45 health over 5 seconds",
         "SellVal": "113"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          },
+          {
+            "name": "Christmas Spice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Currywurst.png"
     },
@@ -1095,6 +1822,31 @@
         "Heal": "+20 health over 15 seconds",
         "SellVal": "25"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Fatberg Chunk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Fatberg_Chunk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fatberg_Chunk"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Dimmie.png"
     },
     {
@@ -1112,6 +1864,26 @@
         "SellVal": "65",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/food/Dopp_I_Grytan.png"
     },
     {
@@ -1126,6 +1898,31 @@
         "GridSize": "1×1",
         "SellVal": "300",
         "SubType": "Food"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any same flesh",
+            "qty": 2,
+            "wildcard": true
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
       },
       "icon": "icons/consumable/food/Double_Cheeseburger.png"
     },
@@ -1143,6 +1940,24 @@
         "Heal": "20 health over 15 seconds",
         "SellVal": "25",
         "SoldBy": "Qiosk"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Liver",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Dumpling.png"
     },
@@ -1214,6 +2029,33 @@
         "Charisma": "+30 for 240 seconds",
         "SellVal": "90"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Liquor",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Liquor.png",
+            "page": "https://sulfur.wiki.gg/wiki/Liquor"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 8
+      },
       "icon": "icons/consumable/beverage/Egg_Toddy.png"
     },
     {
@@ -1232,6 +2074,26 @@
         "SellVal": "40",
         "SubType": "Drug & Remedy"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rubber",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rubber.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rubber"
+          },
+          {
+            "name": "Spice Mix",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Spice_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spice_Mix"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/drug-remedy/Energy_Gum.png"
     },
     {
@@ -1248,6 +2110,19 @@
         "Heal": "+30 health over 2.5 seconds",
         "SellVal": "150",
         "SoldBy": "Stiffleg, Qiosk"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Snail",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Snail.png",
+            "page": "https://sulfur.wiki.gg/wiki/Snail"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Escargot.png"
     },
@@ -1282,6 +2157,26 @@
         "SubType": "Drug & Remedy",
         "SellVal": "30"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Cloth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Cloth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cloth"
+          },
+          {
+            "name": "Blood",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Blood.png",
+            "page": "https://sulfur.wiki.gg/wiki/Blood"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/drug-remedy/First_Aid_Kit.png"
     },
     {
@@ -1314,6 +2209,26 @@
         "Heal": "50 health over 5 seconds",
         "SellVal": "125",
         "SoldBy": "Qiosk"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Potato",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 7
       },
       "icon": "icons/consumable/food/Fish_And_Chips.png"
     },
@@ -1364,6 +2279,19 @@
         "Heal": "+50 Health over 4 seconds",
         "SellVal": "150"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Cheese",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/food/Fondue.png"
     },
     {
@@ -1399,6 +2327,26 @@
         "SellVal": "55",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Dog Flesh",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Dog_Flesh.png",
+            "page": "https://sulfur.wiki.gg/wiki/Dog_Flesh"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 9
+      },
       "icon": "icons/consumable/food/French_Hotdog.png"
     },
     {
@@ -1414,6 +2362,26 @@
         "SubType": "Food",
         "Heal": "+15 Health over 5 seconds",
         "SellVal": "75"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/French_Toast.png"
     },
@@ -1432,6 +2400,26 @@
         "SellVal": "45",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Blood",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Blood.png",
+            "page": "https://sulfur.wiki.gg/wiki/Blood"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/food/Fried_Blood_Pudding.png"
     },
     {
@@ -1447,6 +2435,19 @@
         "SubType": "Food",
         "Heal": "+15 health over 4 seconds",
         "SellVal": "65"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Velvet Bell",
+            "qty": 8,
+            "wildcard": false,
+            "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+            "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 11
       },
       "icon": "icons/consumable/food/Fried_Mushroom.png"
     },
@@ -1498,6 +2499,40 @@
         "SubType": "Food",
         "SellVal": "275"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any 1x1 Mushroom",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+            "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+          },
+          {
+            "name": "Beans",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Beans.png",
+            "page": "https://sulfur.wiki.gg/wiki/Beans"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/food/Full_English_Breakfast.png"
     },
     {
@@ -1533,6 +2568,26 @@
         "RmvPsn": "✓",
         "SellVal": "20"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Soda",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Slurf.png",
+            "page": "https://sulfur.wiki.gg/wiki/Soda"
+          },
+          {
+            "name": "Stout",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Stout.png",
+            "page": "https://sulfur.wiki.gg/wiki/Stout"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/beverage/Gonster.png"
     },
     {
@@ -1550,6 +2605,33 @@
         "SellVal": "45",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Herbs",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Herbs.png",
+            "page": "https://sulfur.wiki.gg/wiki/Herbs"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Graved_Salmon.png"
     },
     {
@@ -1565,6 +2647,26 @@
         "SubType": "Food, Ingredient",
         "Heal": "20 health over 10 seconds",
         "SellVal": "30"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any Milk",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/milk/Whole_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
+          },
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
       },
       "icon": "icons/consumable/food/Gravy.png"
     },
@@ -1586,6 +2688,26 @@
         "SellVal": "40",
         "SoldBy": "Qiosk"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          },
+          {
+            "name": "Matcha",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Matcha.png",
+            "page": "https://sulfur.wiki.gg/wiki/Matcha"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 8
+      },
       "icon": "icons/consumable/beverage/Green_Tea.png"
     },
     {
@@ -1603,6 +2725,26 @@
         "SubType": "Drug & Remedy",
         "SellVal": "40"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rubber",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rubber.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rubber"
+          },
+          {
+            "name": "Matcha",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Matcha.png",
+            "page": "https://sulfur.wiki.gg/wiki/Matcha"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/drug-remedy/Green_Tea_Gum.png"
     },
     {
@@ -1619,6 +2761,19 @@
         "Heal": "20 health over 10 seconds",
         "SellVal": "40",
         "SoldBy": "Skrip, Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Cactus",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cactus.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cactus"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Grilled_Cactus.png"
     },
@@ -1669,6 +2824,26 @@
         "Heal": "+20 health over 10 seconds",
         "SellVal": "15"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Oats",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Oats.png",
+            "page": "https://sulfur.wiki.gg/wiki/Oats"
+          },
+          {
+            "name": "Any skin",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/misc/organ/Goblin_Skin.png",
+            "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/food/Haggis.png"
     },
     {
@@ -1684,6 +2859,26 @@
         "SubType": "Food",
         "SellVal": "30",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sawdust",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Sawdust.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sawdust"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Hard_Bread.png"
     },
@@ -1701,6 +2896,24 @@
         "Heal": "25 health over 2.5 seconds",
         "SellVal": "30",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Spice Mix",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Spice_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spice_Mix"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 2
       },
       "icon": "icons/consumable/food/Hardshell_Taco.png"
     },
@@ -1736,6 +2949,19 @@
         "RmvPsn": "✓",
         "SubType": "Drug & Remedy",
         "SellVal": "30"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Blood",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Blood.png",
+            "page": "https://sulfur.wiki.gg/wiki/Blood"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 7
       },
       "icon": "icons/consumable/drug-remedy/Health_Potion.png"
     },
@@ -1788,6 +3014,26 @@
         "Coyote": "90 seconds",
         "SellVal": "125"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Holy Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/drug-remedy/Holy_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Holy_Water"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Holy_Toast.png"
     },
     {
@@ -1822,6 +3068,38 @@
         "Heal": "50 health over 4 seconds",
         "SellVal": "150"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          },
+          {
+            "name": "All other 3 types of 1×1 Mushroom",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+            "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+          },
+          {
+            "name": "Karl-Oskar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Karl-Oskar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Karl-Oskar"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 5
+      },
       "icon": "icons/consumable/food/Hot_Pot.png"
     },
     {
@@ -1839,6 +3117,26 @@
         "FrostRst": "+0.5 for 240 seconds",
         "SellVal": "90"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Solution",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Solution.png",
+            "page": "https://sulfur.wiki.gg/wiki/Solution"
+          },
+          {
+            "name": "Spice Mix",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Spice_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spice_Mix"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/ingredient/Hot_Sauce.png"
     },
     {
@@ -1855,6 +3153,26 @@
         "Heal": "15 health over 2 seconds",
         "SellVal": "30",
         "SoldBy": "Stiffleg, Grossberg, Qiosk"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Spice Mix",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Spice_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spice_Mix"
+          },
+          {
+            "name": "Any skin",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/misc/organ/Goblin_Skin.png",
+            "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Hot_Snacks.png"
     },
@@ -1874,6 +3192,26 @@
         "BuyVal": "200",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Potato Salad",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato_Salad.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato_Salad"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 7
+      },
       "icon": "icons/consumable/food/Jansson's_Temptation.png"
     },
     {
@@ -1890,6 +3228,26 @@
         "Heal": "15 health over 0.1 seconds",
         "SellVal": "45",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Fatberg Chunk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Fatberg_Chunk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fatberg_Chunk"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
       },
       "icon": "icons/consumable/food/Jello.png"
     },
@@ -1908,6 +3266,26 @@
         "CritADS": "+100% for 15 seconds",
         "SellVal": "45",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Christmas Spice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
+          },
+          {
+            "name": "Soda",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Slurf.png",
+            "page": "https://sulfur.wiki.gg/wiki/Soda"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 20
       },
       "icon": "icons/consumable/beverage/Julmust.png"
     },
@@ -1941,6 +3319,26 @@
         "SellVal": "45",
         "SoldBy": "Rat Queen"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Kidney",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Kidney.png",
+            "page": "https://sulfur.wiki.gg/wiki/Kidney"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Kidney_Pie.png"
     },
     {
@@ -1956,6 +3354,26 @@
         "SubType": "Ingredient",
         "SellVal": "30",
         "SoldBy": "Rat Queen, Qiosk"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rock",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rock.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rock"
+          },
+          {
+            "name": "Kidney",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Kidney.png",
+            "page": "https://sulfur.wiki.gg/wiki/Kidney"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 2
       },
       "icon": "icons/consumable/ingredient/Kidney_Stone.png"
     },
@@ -1992,6 +3410,26 @@
         "Heal": "+10 health over 10 seconds",
         "SellVal": "15",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Cactus",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cactus.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cactus"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Lackerol_Cactus.png"
     },
@@ -2047,6 +3485,17 @@
         "SellVal": "30",
         "SoldBy": "Grossberg, Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Liver",
+            "qty": 2,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 7
+      },
       "icon": "icons/consumable/food/Leverpastej.png"
     },
     {
@@ -2079,6 +3528,24 @@
         "GridSize": "1x1",
         "SubType": "Food",
         "SellVal": "55"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Liver",
+            "qty": 1,
+            "wildcard": false
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 2
       },
       "icon": "icons/consumable/food/Liver_Pâté_Sandwich.png"
     },
@@ -2115,6 +3582,26 @@
         "Heal": "+30 health over 2 seconds",
         "SellVal": "80"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Spice Mix",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Spice_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spice_Mix"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Lussekatt.png"
     },
     {
@@ -2131,6 +3618,24 @@
         "Heal": "25 health over 5 seconds",
         "SellVal": "45",
         "SoldBy": "Stiffleg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          },
+          {
+            "name": "Bleach",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Lutfisk.png"
     },
@@ -2149,6 +3654,26 @@
         "SoldBy": "Rat Queen",
         "SubType": "Food"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Spaghetti",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Spaghetti.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+          },
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Mac'n'Cheese.png"
     },
     {
@@ -2164,6 +3689,26 @@
         "SubType": "Food",
         "Heal": "+30 health over 10 seconds",
         "SellVal": "75"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          },
+          {
+            "name": "Seaweed",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Seaweed.png",
+            "page": "https://sulfur.wiki.gg/wiki/Seaweed"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 10
       },
       "icon": "icons/consumable/food/Maki.png"
     },
@@ -2182,6 +3727,31 @@
         "SellVal": "100",
         "SoldBy": "Jaques De Fector"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Stick",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 28
+      },
       "icon": "icons/consumable/dessert/Marshmallows.png"
     },
     {
@@ -2197,6 +3767,19 @@
         "SubType": "Food",
         "Heal": "+30 health over 10 seconds",
         "SellVal": "50"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Potato",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
       },
       "icon": "icons/consumable/food/Mashed_Potatoes.png"
     },
@@ -2232,6 +3815,24 @@
         "SellVal": "40",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/misc/organ/Human_Flesh.png",
+            "page": "https://sulfur.wiki.gg/wiki/Human_Flesh"
+          },
+          {
+            "name": "Stick",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Meat_Skewer.png"
     },
     {
@@ -2246,6 +3847,26 @@
         "GridSize": "1×1",
         "SellVal": "20",
         "SubType": "Food"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/Meringue.png"
     },
@@ -2281,6 +3902,26 @@
         "SubType": "Sweets, Food",
         "SellVal": "33"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Soda",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Slurf.png",
+            "page": "https://sulfur.wiki.gg/wiki/Soda"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/dessert/Mochi.png"
     },
     {
@@ -2300,6 +3941,26 @@
         "SellVal": "100",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Red Wine",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Red_Wine.png",
+            "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
+          },
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 9
+      },
       "icon": "icons/consumable/beverage/Mulled_Wine.png"
     },
     {
@@ -2315,6 +3976,26 @@
         "SubType": "Food",
         "Heal": "+20 health over 4 seconds",
         "SellVal": "35"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Velvet Bell",
+            "qty": 3,
+            "wildcard": false,
+            "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+            "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+          },
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/Mushroom_Omelette.png"
     },
@@ -2332,6 +4013,24 @@
         "Heal": "+15 health over 3 seconds",
         "SellVal": "50"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any 1×1 Mushroom",
+            "qty": 3,
+            "wildcard": true,
+            "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+            "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+          },
+          {
+            "name": "Stick",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Mushroom_Skewer.png"
     },
     {
@@ -2348,6 +4047,26 @@
         "Heal": "20 health over 9 seconds",
         "SellVal": "25",
         "BuyVal": "50"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          },
+          {
+            "name": "Any 1×1 Mushroom",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+            "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 24
       },
       "icon": "icons/consumable/food/Mushroom_Soup.png"
     },
@@ -2383,6 +4102,17 @@
         "SellVal": "30",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any Flesh",
+            "qty": 2,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Mystery_Meat.png"
     },
     {
@@ -2400,6 +4130,26 @@
         "SellVal": "110",
         "SoldBy": "Stiffleg, Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Chicken Leg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Chicken_Leg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Chicken_Leg"
+          },
+          {
+            "name": "Hot Sauce",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Hot_Sauce.png",
+            "page": "https://sulfur.wiki.gg/wiki/Hot_Sauce"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/food/Nashville_Hot_Chicken.png"
     },
     {
@@ -2416,6 +4166,26 @@
         "SoldBy": "Qiosk, Bill",
         "SubType": "Food"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 5
+      },
       "icon": "icons/consumable/food/Nigiri.png"
     },
     {
@@ -2431,6 +4201,26 @@
         "SellVal": "40",
         "SubType": "Food",
         "Heal": "25 health over 10 seconds"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Fatberg Chunk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Fatberg_Chunk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fatberg_Chunk"
+          },
+          {
+            "name": "Chicken Leg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Chicken_Leg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Chicken_Leg"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 6
       },
       "icon": "icons/consumable/food/Nuggets.png"
     },
@@ -2449,6 +4239,26 @@
         "Heal": "+25 health over 5 seconds",
         "SoldBy": "Jaques De Fector"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any other nut",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/food/Walnut.png",
+            "page": "https://sulfur.wiki.gg/wiki/Walnut"
+          },
+          {
+            "name": "Any same nut",
+            "qty": 2,
+            "wildcard": true,
+            "icon": "icons/consumable/nut/Hazelnut.png",
+            "page": "https://sulfur.wiki.gg/wiki/Hazelnut"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
+      },
       "icon": "icons/consumable/food/Nut_Mix.png"
     },
     {
@@ -2465,6 +4275,19 @@
         "Heal": "40 health over 5 seconds",
         "SellVal": "110",
         "SoldBy": "Rat Queen, Jaques De Fector"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Nut Mix",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Nut_Mix.png",
+            "page": "https://sulfur.wiki.gg/wiki/Nut_Mix"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Nut_Spread.png"
     },
@@ -2499,6 +4322,19 @@
         "SoldBy": "Stiffleg",
         "SubType": "Food"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 32
+      },
       "icon": "icons/consumable/food/Omelette.png"
     },
     {
@@ -2515,6 +4351,24 @@
         "SellVal": "105",
         "SoldBy": "Stiffleg, Qiosk",
         "SubType": "Food"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          },
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 8
       },
       "icon": "icons/consumable/food/Onigiri.png"
     },
@@ -2550,6 +4404,19 @@
         "SellVal": "125",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Peanut",
+            "qty": 3,
+            "wildcard": false,
+            "icon": "icons/consumable/nut/Peanut.png",
+            "page": "https://sulfur.wiki.gg/wiki/Peanut"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
+      },
       "icon": "icons/consumable/food/Peanut_Butter.png"
     },
     {
@@ -2565,6 +4432,33 @@
         "SubType": "Food",
         "Heal": "+35 health over 5 seconds",
         "SellVal": "65"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Berry Jam (Unsweetened)",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png",
+            "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Peanut Butter",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Peanut_Butter.png",
+            "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 6
       },
       "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png"
     },
@@ -2582,6 +4476,26 @@
         "Heal": "+25 health over 5 seconds",
         "SellVal": "55"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Peanut Butter",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Peanut_Butter.png",
+            "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/food/Peanutbutter_Sandwich.png"
     },
     {
@@ -2597,6 +4511,26 @@
         "SubType": "Food",
         "Heal": "20 health over 0.1 second",
         "SellVal": "45"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Herbs",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Herbs.png",
+            "page": "https://sulfur.wiki.gg/wiki/Herbs"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 12
       },
       "icon": "icons/consumable/food/Pickled_Herring_Platter.png"
     },
@@ -2615,6 +4549,26 @@
         "RmvFire": "✓",
         "ExtraJumps": "+3 for 30 seconds",
         "SellVal": "200"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Skimmed Milk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Skimmed_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+          },
+          {
+            "name": "Sulf Cola",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Sulf_Cola.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sulf_Cola"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
       },
       "icon": "icons/consumable/beverage/Pilk.png"
     },
@@ -2652,6 +4606,40 @@
         "SellVal": "200",
         "SoldBy": "Bill"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          },
+          {
+            "name": "Herbs",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Herbs.png",
+            "page": "https://sulfur.wiki.gg/wiki/Herbs"
+          },
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          },
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Pizza.png"
     },
     {
@@ -2668,6 +4656,19 @@
         "Heal": "+ 100 health over 5 seconds",
         "SellVal": "75",
         "SoldBy": "Bill"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Pizza",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Pizza.png",
+            "page": "https://sulfur.wiki.gg/wiki/Pizza"
+          }
+        ],
+        "resultQty": 6,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Pizza_Slice.png"
     },
@@ -2686,6 +4687,26 @@
         "SellVal": "15",
         "BuyVal": "30",
         "SoldBy": "Skrip"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Oats",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Oats.png",
+            "page": "https://sulfur.wiki.gg/wiki/Oats"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
       },
       "icon": "icons/consumable/food/Porridge.png"
     },
@@ -2719,6 +4740,33 @@
         "SellVal": "45",
         "Heal": "15 health over 0.1 seconds"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any Milk",
+            "qty": 1,
+            "wildcard": true,
+            "icon": "icons/consumable/milk/Whole_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
+          },
+          {
+            "name": "Herbs",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Herbs.png",
+            "page": "https://sulfur.wiki.gg/wiki/Herbs"
+          },
+          {
+            "name": "Potato",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/food/Potato_Salad.png"
     },
     {
@@ -2735,6 +4783,33 @@
         "Heal": "+35 health over 5 seconds",
         "SellVal": "113",
         "BuyVal": "230"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Gravy",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Gravy.png",
+            "page": "https://sulfur.wiki.gg/wiki/Gravy"
+          },
+          {
+            "name": "Potato",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          },
+          {
+            "name": "Mystery Meat",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Mystery_Meat.png",
+            "page": "https://sulfur.wiki.gg/wiki/Mystery_Meat"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 7
       },
       "icon": "icons/consumable/food/Poutine.png"
     },
@@ -2753,6 +4828,19 @@
         "SellVal": "10",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rice",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 5
+      },
       "icon": "icons/consumable/food/Puffed_Rice_Cakes.png"
     },
     {
@@ -2769,6 +4857,26 @@
         "Heal": "25 health over 5 seconds",
         "SellVal": "100"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Potato",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          },
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 11
+      },
       "icon": "icons/consumable/food/Pyttipanna.png"
     },
     {
@@ -2784,6 +4892,19 @@
         "SubType": "Food",
         "Heal": "20 health over 10 seconds",
         "SellVal": "15"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Lung",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Lung.png",
+            "page": "https://sulfur.wiki.gg/wiki/Lung"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 42
       },
       "icon": "icons/consumable/food/Pölsa.png"
     },
@@ -2802,6 +4923,26 @@
         "SellVal": "25",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bladder",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Bladder.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bladder"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 7
+      },
       "icon": "icons/consumable/food/Pølse.png"
     },
     {
@@ -2817,6 +4958,26 @@
         "SubType": "Food",
         "Heal": "50 health over 4 seconds",
         "SellVal": "150"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Cheese",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Cheese.png",
+            "page": "https://sulfur.wiki.gg/wiki/Cheese"
+          },
+          {
+            "name": "Potato",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 10
       },
       "icon": "icons/consumable/food/Raclette.png"
     },
@@ -2835,6 +4996,26 @@
         "SellVal": "75",
         "SubType": "Food"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          },
+          {
+            "name": "Spaghetti",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Spaghetti.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/food/Ramen.png"
     },
     {
@@ -2852,6 +5033,19 @@
         "GridSize": "1x2",
         "SellVal": "100",
         "SoldBy": "Grossberg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Blood",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Blood.png",
+            "page": "https://sulfur.wiki.gg/wiki/Blood"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
       },
       "icon": "icons/consumable/beverage/Red_Wine.png"
     },
@@ -2885,6 +5079,33 @@
         "Heal": "30 health over 10 seconds",
         "SellVal": "40"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rhubarb",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Rhubarb.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rhubarb"
+          },
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 6
+      },
       "icon": "icons/consumable/food/Rhubarb_Pie.png"
     },
     {
@@ -2901,6 +5122,26 @@
         "Heal": "25 health over 4 seconds",
         "SellVal": "10"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Porridge",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Porridge.png",
+            "page": "https://sulfur.wiki.gg/wiki/Porridge"
+          },
+          {
+            "name": "Rhubarb",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Rhubarb.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rhubarb"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 2
+      },
       "icon": "icons/consumable/food/Rhubarb_Porridge.png"
     },
     {
@@ -2916,6 +5157,26 @@
         "SubType": "Food, Ingredient",
         "Heal": "20 health over 10 seconds",
         "SellVal": "20"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rhubarb",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Rhubarb.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rhubarb"
+          },
+          {
+            "name": "Rock",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rock.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rock"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/Rhubarb_Sauce.png"
     },
@@ -2950,6 +5211,33 @@
         "Heal": "18 health over 5 seconds",
         "SellVal": "45"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Skimmed Milk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Skimmed_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+          },
+          {
+            "name": "Rice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          },
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          }
+        ],
+        "resultQty": 4,
+        "variantCount": 7
+      },
       "icon": "icons/consumable/food/Rice_Porridge.png"
     },
     {
@@ -2965,6 +5253,26 @@
         "SubType": "Dessert, Food",
         "Heal": "25 health over 5 seconds",
         "SellVal": "45"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Banana",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Banana.png",
+            "page": "https://sulfur.wiki.gg/wiki/Banana"
+          },
+          {
+            "name": "Rice Porridge",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice_Porridge.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 3
       },
       "icon": "icons/consumable/dessert/Risalamande.png"
     },
@@ -3001,6 +5309,26 @@
         "SellVal": "25",
         "SoldBy": "Fex Shuen, Blond Magus"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rödsopp",
+            "qty": 3,
+            "wildcard": false,
+            "icon": "icons/consumable/mushroom/Rödsopp.png",
+            "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp"
+          },
+          {
+            "name": "Rock",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rock.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rock"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/drug-remedy/Rödsopp_Paste.png"
     },
     {
@@ -3035,6 +5363,26 @@
         "SellVal": "45",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          },
+          {
+            "name": "Salt",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Salt.png",
+            "page": "https://sulfur.wiki.gg/wiki/Salt"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Salted_Fish.png"
     },
     {
@@ -3052,6 +5400,26 @@
         "SellVal": "50",
         "SoldBy": "Stiffleg, Bill"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Flat Sandfish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Flat_Sandfish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flat_Sandfish"
+          },
+          {
+            "name": "Salt",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Salt.png",
+            "page": "https://sulfur.wiki.gg/wiki/Salt"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Salted_Sandfish.png"
     },
     {
@@ -3067,6 +5435,19 @@
         "SubType": "Food, Ingredient",
         "Heal": "45 health over 4 seconds",
         "SellVal": "110"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Fish",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 11
       },
       "icon": "icons/consumable/food/Sashimi.png"
     },
@@ -3084,6 +5465,26 @@
         "Heal": "42 health over 10 seconds",
         "SellVal": "25"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
+      },
       "icon": "icons/consumable/food/Sausage_Omelette.png"
     },
     {
@@ -3099,6 +5500,24 @@
         "SubType": "Food",
         "Heal": "40 health over 2 seconds",
         "SellVal": "100"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          },
+          {
+            "name": "Stick",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Sausage_On_Stick.png"
     },
@@ -3116,6 +5535,26 @@
         "Heal": "30 health over 4 seconds",
         "FrostRst": "+0.5 for 60 seconds",
         "SellVal": "68"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          },
+          {
+            "name": "Spicy Sausage",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Spicy_Sausage.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spicy_Sausage"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Sausage_Soup.png"
     },
@@ -3187,6 +5626,26 @@
         "SellVal": "15",
         "SoldBy": "Stiffleg, Skrip, Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 8
+      },
       "icon": "icons/consumable/beverage/Slurf.png"
     },
     {
@@ -3220,6 +5679,33 @@
         "SellVal": "15",
         "SoldBy": "Grossberg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/ingredient/Spaghetti.png"
     },
     {
@@ -3235,6 +5721,26 @@
         "SubType": "Food",
         "Heal": "50 health over 5 seconds",
         "SellVal": "125"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Spaghetti",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Spaghetti.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+          },
+          {
+            "name": "Mystery Meat",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Mystery_Meat.png",
+            "page": "https://sulfur.wiki.gg/wiki/Mystery_Meat"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/Spaghetti_Bolognese.png"
     },
@@ -3252,6 +5758,26 @@
         "Heal": "30 health over 10 seconds",
         "SellVal": "110"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Potato",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Potato.png",
+            "page": "https://sulfur.wiki.gg/wiki/Potato"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Spanish_Omelette.png"
     },
     {
@@ -3268,6 +5794,24 @@
         "Heal": "30 health over 5 seconds",
         "SellVal": "30",
         "SoldBy": "Grossberg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          },
+          {
+            "name": "Intestines",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Intestines.png",
+            "page": "https://sulfur.wiki.gg/wiki/Intestines"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Spicy_Sausage.png"
     },
@@ -3304,6 +5848,24 @@
         "SubType": "Food",
         "Heal": "20 health over 3 seconds",
         "SellVal": "33"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Any Flesh",
+            "qty": 1,
+            "wildcard": true
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Stew.png"
     },
@@ -3359,6 +5921,33 @@
         "ExtraJumps": "+1 for 20 seconds",
         "SellVal": "150"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Shav'Wa Bladder",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+            "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+          },
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Bottled Water",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Bottled_Water.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
+      },
       "icon": "icons/consumable/beverage/Sulf_Cola.png"
     },
     {
@@ -3374,6 +5963,26 @@
         "SubType": "Food",
         "Heal": "50 health over 50 seconds",
         "SellVal": "175"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Green Glob",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Green_Glob.png",
+            "page": "https://sulfur.wiki.gg/wiki/Green_Glob"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 4
       },
       "icon": "icons/consumable/food/Surstromming.png"
     },
@@ -3391,6 +6000,33 @@
         "SubType": "Food",
         "SellVal": "110"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Egg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Egg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Egg"
+          },
+          {
+            "name": "Flour",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Flour.png",
+            "page": "https://sulfur.wiki.gg/wiki/Flour"
+          },
+          {
+            "name": "Whole Milk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/milk/Whole_Milk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 4
+      },
       "icon": "icons/consumable/food/Swedish_Pancakes.png"
     },
     {
@@ -3407,6 +6043,26 @@
         "Heal": "10 health over 1 seconds",
         "SellVal": "40",
         "SoldBy": "Grossberg"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Berries",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Berries.png",
+            "page": "https://sulfur.wiki.gg/wiki/Berries"
+          },
+          {
+            "name": "Rubber",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Rubber.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rubber"
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 5
       },
       "icon": "icons/consumable/dessert/Sweet_Gum.png"
     },
@@ -3476,6 +6132,26 @@
         "SellVal": "75",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bread",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bread.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bread"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 3
+      },
       "icon": "icons/consumable/food/Toast_Skagen.png"
     },
     {
@@ -3491,6 +6167,24 @@
         "SubType": "Food",
         "Heal": "20 health over 2 seconds",
         "SellVal": "60"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Tongue",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/organ/Tongue.png",
+            "page": "https://sulfur.wiki.gg/wiki/Tongue"
+          },
+          {
+            "name": "Stick",
+            "qty": 1,
+            "wildcard": false
+          }
+        ],
+        "resultQty": 1,
+        "variantCount": 1
       },
       "icon": "icons/consumable/food/Tongue_On_Stick.png"
     },
@@ -3510,6 +6204,33 @@
         "SellVal": "75",
         "SoldBy": "Stiffleg"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Chicken Leg",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/misc/ingredient/Chicken_Leg.png",
+            "page": "https://sulfur.wiki.gg/wiki/Chicken_Leg"
+          },
+          {
+            "name": "Broth",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Broth.png",
+            "page": "https://sulfur.wiki.gg/wiki/Broth"
+          },
+          {
+            "name": "Spaghetti",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Spaghetti.png",
+            "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 7
+      },
       "icon": "icons/consumable/food/Tori_Ramen.png"
     },
     {
@@ -3526,6 +6247,19 @@
         "Heal": "30 health over 10 seconds",
         "SellVal": "120",
         "SoldBy": "Grossberg, Bill"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Bottled Caviar",
+            "qty": 2,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Bottled_Caviar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Bottled_Caviar"
+          }
+        ],
+        "resultQty": 3,
+        "variantCount": 3
       },
       "icon": "icons/consumable/food/Tube_Caviar.png"
     },
@@ -3544,6 +6278,33 @@
         "ElecRst": "+10 for 60 seconds",
         "SellVal": "200"
       },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Rice",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Rice.png",
+            "page": "https://sulfur.wiki.gg/wiki/Rice"
+          },
+          {
+            "name": "Fish",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/food/Fish.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fish"
+          },
+          {
+            "name": "Fatberg Chunk",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Fatberg_Chunk.png",
+            "page": "https://sulfur.wiki.gg/wiki/Fatberg_Chunk"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 8
+      },
       "icon": "icons/consumable/food/Unagi.png"
     },
     {
@@ -3559,6 +6320,26 @@
         "SubType": "Sweets, Food",
         "Heal": "15 health over 3 seconds",
         "SellVal": "20"
+      },
+      "recipe": {
+        "ingredients": [
+          {
+            "name": "Sugar",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/ingredient/Sugar.png",
+            "page": "https://sulfur.wiki.gg/wiki/Sugar"
+          },
+          {
+            "name": "Liquor",
+            "qty": 1,
+            "wildcard": false,
+            "icon": "icons/consumable/beverage/Liquor.png",
+            "page": "https://sulfur.wiki.gg/wiki/Liquor"
+          }
+        ],
+        "resultQty": 2,
+        "variantCount": 6
       },
       "icon": "icons/consumable/dessert/Vacuum_Cleaner.png"
     },
