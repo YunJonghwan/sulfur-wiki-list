@@ -235,6 +235,15 @@ export default function DataTable({ data, lang }) {
     }
   }
 
+  // In compact view, put the currently selected ability's chip first so it's
+  // in the same spot on every row — the rest keep their normal (fixed) order.
+  const chipColumns = abilityKey
+    ? [
+        columns.find((c) => c.key === abilityKey),
+        ...columns.filter((c) => c.key !== abilityKey),
+      ].filter(Boolean)
+    : columns
+
   function renderTable(items) {
     const cols = columnsFor(items)
     if (view === 'compact') {
@@ -254,7 +263,7 @@ export default function DataTable({ data, lang }) {
                 </td>
                 <td>
                   <div className="chips">
-                    {columns.map((col) => {
+                    {chipColumns.map((col) => {
                       const raw = it.fields[col.key]
                       if (!raw || META_KEYS.has(col.key) || col.key === hiddenField) return null
                       const tone = valueTone(raw)
