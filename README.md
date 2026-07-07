@@ -40,13 +40,16 @@ npm run dev      # http://localhost:5173
 
 ## 데이터 갱신
 
-위키가 업데이트되면 수동으로 다시 수집합니다.
+위키가 업데이트되면 수동으로 다시 수집합니다. **개발/빌드(`npm run dev`, `npm run build`)는 스크랩을 하지 않으며**, 커밋된 JSON만 사용합니다.
 
 ```powershell
-npm run scrape   # = python scripts/scrape.py
+npm run scrape          # 위키텍스트 캐시가 있으면 재사용(네트워크 없음, 즉시)
+npm run scrape:refresh  # 위키에서 새로 받아 캐시 갱신 (실제 위키 변경 시에만)
 ```
 
-`public/data/*.json` 이 갱신되며, 커밋/푸시하면 배포에 반영됩니다.
+- 처음 실행하거나 `scrape:refresh` 시에만 위키 803페이지를 받아 `scripts/.cache/wikitext.json`에 저장합니다.
+- 이후 `npm run scrape`는 캐시를 써서 후처리(그룹/컬럼 변경 등)만 즉시 반영합니다.
+- `public/data/*.json`·`public/icons/`가 갱신되며, 커밋/푸시하면 배포에 반영됩니다.
 
 ## 배포 (GitHub Pages)
 
