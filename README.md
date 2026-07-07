@@ -13,12 +13,23 @@
 sulfur-wiki-list/
 ├─ scripts/scrape.py     # 위키 → JSON 수집기 (Python 표준 라이브러리만 사용)
 ├─ public/data/*.json    # 수집된 카테고리별 데이터 (weapon, oil, attachment, ...)
+├─ public/icons/         # 로컬 아이콘 (카테고리/세부종류별 하위 폴더)
+│  ├─ weapon/pistol/, revolver/, submachine-gun/ ...
+│  ├─ attachment/muzzle-attachment/, sight/ ...
+│  ├─ equipment/headwear/, chestwear/, footwear/
+│  ├─ consumable/food/, beverage/, ingredient/ ...
+│  └─ oil/damage/, bullet/, handling/, economy/ ...  # 오일은 주요 효과별
 ├─ src/                  # React + Vite 프론트엔드
 │  ├─ App.jsx            # 카테고리 탭 · 언어 · 데이터 로딩
 │  ├─ components/DataTable.jsx  # 정렬 · 검색 · 색상 표시 테이블
 │  └─ i18n.js            # UI 문자열 · 컬럼 한글 라벨 (직접 수정 가능)
 └─ .github/workflows/deploy.yml # GitHub Pages 자동 배포
 ```
+
+아이콘은 `icons/<카테고리>/<세부종류>/` 로 정리됩니다. 무기·부착물·장비·소비품은
+위키의 SubType(첫 태그 기준, 표기 흔들림은 [scripts/scrape.py](scripts/scrape.py)의
+`SUBTYPE_ALIASES`로 통일)으로 나누고, SubType이 없는 오일은 주요 효과 그룹
+(`OIL_STAT_GROUP`)으로 나눕니다. 재수집 시 기존 아이콘은 재다운로드 없이 새 위치로 이동됩니다.
 
 ## 개발
 
