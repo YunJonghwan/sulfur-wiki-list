@@ -16,6 +16,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -28,6 +29,10 @@ USER_AGENT = "SulfurWikiList/1.0 (data aggregation; contact via GitHub YunJonghw
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "public" / "data"
 IMG_DIR = Path(__file__).resolve().parent.parent / "public" / "icons"
+
+# Raw wikitext is cached locally so re-runs that only change post-processing
+# (e.g. how items are grouped) don't re-hit the wiki. Use --refresh to refetch.
+CACHE_FILE = Path(__file__).resolve().parent / ".cache" / "wikitext.json"
 
 # Icon thumbnail width to download (px). Displayed at 32px, 2x for sharpness.
 ICON_WIDTH = 64
@@ -626,7 +631,7 @@ OIL_GROUP_LABELS = {
 
 AXIS_KEYS_BY_KIND = {
     "weapon": ["class", "ammo"],
-    "oil": ["effect"],
+    "oil": ["ability"],
     "attachment": ["type"],
     "equipment": ["type"],
     "consumable": ["type"],
@@ -635,9 +640,13 @@ AXIS_KEYS_BY_KIND = {
 AXIS_LABELS = {
     "class": "Weapon Type",
     "ammo": "Ammunition",
-    "effect": "Effect",
+    "ability": "Ability",
     "type": "Type",
 }
+
+# Axes where an item can belong to several groups at once (e.g. an oil that
+# modifies both Damage and Recoil shows up under each ability).
+AXIS_MULTI = {"ability"}
 
 # Preferred display order for some axes; anything else is appended by count.
 VALUE_ORDER = {
@@ -646,10 +655,8 @@ VALUE_ORDER = {
         "Light Machine Gun", "Rifle", "Sniper Rifle", "Melee",
     ],
     "ammo": ["9mm", "5.56mm", "7.62mm", ".50 BMG", "12Ga", "Energy Cell"],
-    "effect": [
-        "Damage", "Fire Rate", "Handling", "Bullet", "Economy", "Mobility",
-        "Effects", "Misc",
-    ],
+    # Oils split by individual ability, in the infobox stat order.
+    "ability": KIND_COLUMNS["oil"],
 }
 
 
@@ -661,9 +668,23 @@ def display_subtype(subtype: str) -> str:
     return slug.replace("-", " ").title()
 
 
-def item_groups(kind: str, fields: dict[str, str]) -> dict[str, str]:
+def value_label(axis: str, value: str) -> str:
+    if axis == "ability":
+        return LABELS.get(value, value)
+    return value
+
+
+def oil_ability_keys(fields: dict[str, str]) -> list[str]:
+    """Individual ability keys an oil has, in infobox order (no meta fields)."""
+    return [
+        k for k in KIND_COLUMNS["oil"]
+        if k in fields and k not in IGNORE_FOR_GROUPING
+    ]
+
+
+def item_groups(kind: str, fields: dict[str, str]) -> dict[str, object]:
     if kind == "oil":
-        return {"effect": OIL_GROUP_LABELS[oil_group(fields)]}
+        return {"ability": oil_ability_keys(fields)}
     label = display_subtype(fields.get("SubType", ""))
     if kind == "weapon":
         return {"class": label, "ammo": fields.get("Ammo") or "—"}
@@ -673,54 +694,87 @@ def item_groups(kind: str, fields: dict[str, str]) -> dict[str, str]:
 def compute_axes(kind: str, items: list[dict]) -> list[dict]:
     axes = []
     for axis in AXIS_KEYS_BY_KIND.get(kind, []):
+        multi = axis in AXIS_MULTI
         counts: dict[str, int] = {}
         for it in items:
             val = it.get("groups", {}).get(axis)
-            if val:
+            if multi:
+                for v in val or []:
+                    counts[v] = counts.get(v, 0) + 1
+            elif val:
                 counts[val] = counts.get(val, 0) + 1
         order = VALUE_ORDER.get(axis, [])
         ordered = [v for v in order if v in counts]
         rest = sorted((v for v in counts if v not in order),
-                      key=lambda v: (-counts[v], v.lower()))
-        values = [{"value": v, "count": counts[v]} for v in ordered + rest]
+                      key=lambda v: (-counts[v], str(v).lower()))
+        values = [
+            {"value": v, "label": value_label(axis, v), "count": counts[v]}
+            for v in ordered + rest
+        ]
         axes.append({"key": axis, "label": AXIS_LABELS.get(axis, axis),
-                     "values": values})
+                     "multi": multi, "values": values})
     return axes
 
 
-def build() -> None:
-    print("Fetching page list...")
+def load_pages(refresh: bool) -> dict[str, str]:
+    """Return {title: wikitext} for all Item Infobox pages, using a local cache.
+
+    Passing refresh=True (CLI --refresh) refetches everything from the wiki and
+    rewrites the cache; otherwise the cached wikitext is reused with no network.
+    """
+    if CACHE_FILE.exists() and not refresh:
+        cache = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        pages = cache.get("pages", {})
+        print(f"Loaded {len(pages)} pages from cache "
+              f"({cache.get('fetched', '?')}). Use --refresh to refetch.")
+        return pages
+
+    print("Fetching page list from wiki...")
     titles = get_infobox_pages()
     print(f"  {len(titles)} pages use Item Infobox")
-
-    buckets: dict[str, list[dict]] = {k: [] for k in TARGET_KINDS}
-
+    pages: dict[str, str] = {}
     for i in range(0, len(titles), 50):
         batch = titles[i:i + 50]
         texts = fetch_wikitext_batch(batch)
         for title in batch:
-            wikitext = texts.get(title)
-            if not wikitext:
-                continue
-            body = extract_infobox(wikitext)
-            if body is None:
-                continue
-            fields = parse_infobox(body)
-            kind = fields.get("kind", "").strip().lower()
-            if kind not in buckets:
-                continue
-            image = fields.get("image", f"{title}.png")
-            item = {
-                "name": title,
-                "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
-                "image": image,
-                "groups": item_groups(kind, fields),
-                "fields": {k: v for k, v in fields.items()
-                           if k not in ("kind", "image", "title")},
-            }
-            buckets[kind].append(item)
-        print(f"  parsed {min(i + 50, len(titles))}/{len(titles)}")
+            if texts.get(title):
+                pages[title] = texts[title]
+        print(f"  fetched {min(i + 50, len(titles))}/{len(titles)}")
         time.sleep(0.3)
+
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    CACHE_FILE.write_text(
+        json.dumps({"fetched": datetime.now(timezone.utc).isoformat(),
+                    "pages": pages}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    print(f"  cached {len(pages)} pages to {CACHE_FILE.name}")
+    return pages
+
+
+def build(refresh: bool = False) -> None:
+    pages = load_pages(refresh)
+
+    buckets: dict[str, list[dict]] = {k: [] for k in TARGET_KINDS}
+
+    for title, wikitext in pages.items():
+        body = extract_infobox(wikitext)
+        if body is None:
+            continue
+        fields = parse_infobox(body)
+        kind = fields.get("kind", "").strip().lower()
+        if kind not in buckets:
+            continue
+        image = fields.get("image", f"{title}.png")
+        item = {
+            "name": title,
+            "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
+            "image": image,
+            "groups": item_groups(kind, fields),
+            "fields": {k: v for k, v in fields.items()
+                       if k not in ("kind", "image", "title")},
+        }
+        buckets[kind].append(item)
 
     download_icons(buckets)
 
@@ -758,4 +812,4 @@ def build() -> None:
 
 
 if __name__ == "__main__":
-    build()
+    build(refresh="--refresh" in sys.argv)

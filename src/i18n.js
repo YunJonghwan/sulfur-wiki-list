@@ -89,9 +89,12 @@ export const GROUP_KO = {
   Attachment: '부착물',
 }
 
-export function groupLabel(value, lang) {
-  if (lang === 'ko' && GROUP_KO[value]) return GROUP_KO[value]
-  return value
+export function groupLabel(value, label, lang) {
+  if (lang === 'ko') {
+    if (COLUMN_KO[value]) return COLUMN_KO[value]
+    if (GROUP_KO[value]) return GROUP_KO[value]
+  }
+  return label || value
 }
 
 export function axisLabel(key, fallback, lang) {
