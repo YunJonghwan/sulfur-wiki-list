@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "generated": "2026-07-07T11:38:45.346730+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -80,7 +80,8 @@
         "Durability": "2500",
         "SellVal": "1600",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/revolver/.357_Balthazar.png"
     },
     {
       "name": "1889 Mario",
@@ -100,7 +101,8 @@
         "Durability": "2500",
         "SellVal": "600",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/shotgun/1889_Mario.png"
     },
     {
       "name": "Arbiter 2",
@@ -120,7 +122,8 @@
         "Durability": "1800",
         "SellVal": "300",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/shotgun/Arbiter_2.png"
     },
     {
       "name": "Augusta",
@@ -140,7 +143,8 @@
         "Durability": "1800",
         "SellVal": "1500",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/shotgun/Augusta.png"
     },
     {
       "name": "Beck 8",
@@ -159,7 +163,8 @@
         "Recoil": "3",
         "Durability": "2250",
         "SellVal": "900"
-      }
+      },
+      "icon": "icons/weapon/pistol/Beck_8.png"
     },
     {
       "name": "Blackwater",
@@ -178,7 +183,8 @@
         "Recoil": "35",
         "Durability": "3000",
         "SellVal": "1600"
-      }
+      },
+      "icon": "icons/weapon/revolver/Blackwater.png"
     },
     {
       "name": "Breacher 8",
@@ -197,7 +203,8 @@
         "Recoil": "20",
         "Durability": "1200",
         "SellVal": "950"
-      }
+      },
+      "icon": "icons/weapon/shotgun/Breacher_8.png"
     },
     {
       "name": "Bronco 89",
@@ -217,7 +224,8 @@
         "Durability": "2500",
         "SellVal": "750",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/pistol/bronco_89.png"
     },
     {
       "name": "Catacoil Rapid X",
@@ -237,7 +245,8 @@
         "Durability": "3300",
         "SellVal": "4000",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/assault-rifle/Catacoil_Rapid_X.png"
     },
     {
       "name": "Cavalier",
@@ -256,7 +265,8 @@
         "Recoil": "1",
         "Durability": "2700",
         "SellVal": "2000"
-      }
+      },
+      "icon": "icons/weapon/pistol/Cavalier.png"
     },
     {
       "name": "Chat-Pardeur 98",
@@ -275,7 +285,8 @@
         "Recoil": "3",
         "Durability": "3200",
         "SellVal": "1750"
-      }
+      },
+      "icon": "icons/weapon/light-machine-gun/Chat-Pardeur_98.png"
     },
     {
       "name": "Chimera Rapid",
@@ -294,7 +305,8 @@
         "Recoil": "2",
         "Durability": "2800",
         "SellVal": "2000"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Chimera_Rapid.png"
     },
     {
       "name": "Corpsemaker",
@@ -314,7 +326,8 @@
         "Durability": "3200",
         "SellVal": "2000",
         "SoldBy": "Stiffleg, Haukland Rep., Qiosk"
-      }
+      },
+      "icon": "icons/weapon/assault-rifle/Corpsemaker.png"
     },
     {
       "name": "D4RT",
@@ -334,7 +347,8 @@
         "Durability": "4000",
         "SellVal": "1600",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/sniper/D4RT.png"
     },
     {
       "name": "Deathstar PG",
@@ -353,7 +367,8 @@
         "Recoil": "1.5",
         "Durability": "3600",
         "SellVal": "1600"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Deathstar_PG.png"
     },
     {
       "name": "Dolphin 99",
@@ -373,7 +388,8 @@
         "Durability": "1000",
         "SellVal": "1600",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/weapon/sniper/Dolphin_99.png"
     },
     {
       "name": "Drifter 9",
@@ -393,7 +409,8 @@
         "Durability": "3300",
         "SellVal": "250",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Drifter_9.png"
     },
     {
       "name": "Duhar",
@@ -413,7 +430,8 @@
         "Durability": "2500",
         "SellVal": "4000",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/light-machine-gun/Duhar.png"
     },
     {
       "name": "Farsight",
@@ -433,7 +451,8 @@
         "Durability": "2000",
         "SellVal": "2750",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/rifle/Farsight.png"
     },
     {
       "name": "Ferryman",
@@ -453,7 +472,8 @@
         "Durability": "2000",
         "SellVal": "4500",
         "SoldBy": "Haukland Rep., Qiosk"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Ferryman.png"
     },
     {
       "name": "Flicker",
@@ -473,7 +493,8 @@
         "Durability": "800",
         "SellVal": "1000",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/pistol/flicker.png"
     },
     {
       "name": "Flock 76",
@@ -493,7 +514,8 @@
         "Durability": "2100",
         "SellVal": "1750",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/shotgun/Flock_76.png"
     },
     {
       "name": "Gravekeeper",
@@ -513,7 +535,8 @@
         "Durability": "3000",
         "SellVal": "500",
         "SoldBy": "Stiffleg, Haukland Rep., Qiosk"
-      }
+      },
+      "icon": "icons/weapon/pistol/Gravekeeper.png"
     },
     {
       "name": "Hell 'N' Back",
@@ -533,7 +556,8 @@
         "Durability": "2000",
         "SellVal": "1500",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/pistol/Hell_'N'_Back.png"
     },
     {
       "name": "Impala Gravita",
@@ -553,7 +577,8 @@
         "Durability": "2200",
         "SellVal": "1600",
         "SoldBy": "Stiffleg, Jaques De Fector, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/sniper/Impala_Gravita.png"
     },
     {
       "name": "Knop .22",
@@ -573,7 +598,8 @@
         "Durability": "3000",
         "SellVal": "750",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/rifle/Knop_.22.png"
     },
     {
       "name": "Longboy",
@@ -593,7 +619,8 @@
         "Durability": "1200",
         "SellVal": "4500",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/sniper/Longboy.png"
     },
     {
       "name": "M11A2 Fisk",
@@ -613,7 +640,8 @@
         "Durability": "3000",
         "SellVal": "3850",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/assault-rifle/M11A2_Fisk.png"
     },
     {
       "name": "M182 Pierre-Fusil",
@@ -633,7 +661,8 @@
         "Durability": "2200",
         "SellVal": "2500",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/rifle/M182_Pierre-Fusil.png"
     },
     {
       "name": "M3 Termite",
@@ -653,7 +682,8 @@
         "Durability": "3000",
         "SellVal": "700",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/M3_Termite.png"
     },
     {
       "name": "Majordome",
@@ -673,7 +703,8 @@
         "Durability": "2200",
         "SellVal": "4000",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/shotgun/Majordome.png"
     },
     {
       "name": "Mossman",
@@ -693,7 +724,8 @@
         "Durability": "2400",
         "SellVal": "750",
         "SoldBy": "Stiffleg, Skrip, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/shotgun/Mossman.png"
     },
     {
       "name": "Neuraxis F22",
@@ -713,7 +745,8 @@
         "Durability": "4200",
         "SellVal": "2500",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/weapon/light-machine-gun/Neuraxis_F22.png"
     },
     {
       "name": "P38 Dirk",
@@ -732,7 +765,8 @@
         "Recoil": "2",
         "Durability": "2000",
         "SellVal": "1"
-      }
+      },
+      "icon": "icons/weapon/pistol/P38_Dirk.png"
     },
     {
       "name": "Palehorse Topclipper",
@@ -752,7 +786,8 @@
         "Durability": "2800",
         "SellVal": "1500",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/revolver/Palehorse_Topclipper.png"
     },
     {
       "name": "Ploika Compact",
@@ -772,7 +807,8 @@
         "Durability": "3900",
         "SellVal": "455",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Ploika_Compact.png"
     },
     {
       "name": "Rektor 100rd",
@@ -792,7 +828,8 @@
         "Durability": "3400",
         "SellVal": "4000",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/weapon/light-machine-gun/Rektor_100rd.png"
     },
     {
       "name": "Rokua .308",
@@ -812,7 +849,8 @@
         "Durability": "3500",
         "SellVal": "3500",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/sniper/Rokua_.308.png"
     },
     {
       "name": "Salamander",
@@ -832,7 +870,8 @@
         "Durability": "2000",
         "SellVal": "2500",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/pistol/Salamander.png"
     },
     {
       "name": "Snut .38",
@@ -852,7 +891,8 @@
         "Durability": "3300",
         "SellVal": "250",
         "SoldBy": "Stiffleg, Skrip, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/revolver/Snut_.38.png"
     },
     {
       "name": "Socom 9",
@@ -872,7 +912,8 @@
         "Durability": "2200",
         "SellVal": "950",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/pistol/Socom_9.png"
     },
     {
       "name": "Socom ACR",
@@ -892,7 +933,8 @@
         "Durability": "4700",
         "SellVal": "1750",
         "BuyVal": "3500"
-      }
+      },
+      "icon": "icons/weapon/assault-rifle/Socom_ACR.png"
     },
     {
       "name": "Songbird",
@@ -912,7 +954,8 @@
         "Durability": "4700",
         "SellVal": "3250",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Songbird.png"
     },
     {
       "name": "Star & Witness",
@@ -932,7 +975,8 @@
         "Durability": "2100",
         "SellVal": "1250",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/pistol/Star_&_Witness.png"
     },
     {
       "name": "Tailor Marksman MKII",
@@ -952,7 +996,8 @@
         "Durability": "2800",
         "SellVal": "1750",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/rifle/Tailor_Marksman_MKII.png"
     },
     {
       "name": "Terrier URB.",
@@ -971,7 +1016,8 @@
         "Recoil": "5",
         "Durability": "3700",
         "SellVal": "1500"
-      }
+      },
+      "icon": "icons/weapon/pistol/Terrier_URB..png"
     },
     {
       "name": "Type 80 Typhoon",
@@ -991,7 +1037,8 @@
         "Durability": "2700",
         "SellVal": "2500",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/assault-rifle/Type_80_Typhoon.png"
     },
     {
       "name": "Unknown",
@@ -1011,7 +1058,8 @@
         "Durability": "4000",
         "SellVal": "1200",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/weapon/pistol/unknown.png"
     },
     {
       "name": "Valet",
@@ -1031,7 +1079,8 @@
         "Durability": "3000",
         "SellVal": "2400",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Valet.png"
     },
     {
       "name": "Vrede",
@@ -1051,7 +1100,8 @@
         "Durability": "3900",
         "SellVal": "1500",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/weapon/submachine-gun/Vrede.png"
     },
     {
       "name": "Warpig",
@@ -1070,7 +1120,8 @@
         "Recoil": "3",
         "Durability": "3500",
         "SellVal": "3500"
-      }
+      },
+      "icon": "icons/weapon/light-machine-gun/Warpig.png"
     },
     {
       "name": "Wingman",
@@ -1090,7 +1141,8 @@
         "Durability": "3300",
         "SellVal": "3000",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/assault-rifle/Wingman.png"
     },
     {
       "name": "Wyatt PULSAR",
@@ -1110,7 +1162,8 @@
         "Durability": "3600",
         "SellVal": "1000",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/weapon/revolver/Wyatt_PULSAR.png"
     }
   ]
 }

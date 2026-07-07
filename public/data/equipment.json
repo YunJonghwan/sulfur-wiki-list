@@ -1,6 +1,6 @@
 {
   "kind": "equipment",
-  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "generated": "2026-07-07T11:38:45.346730+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -178,7 +178,8 @@
         "CharmRst": "+80",
         "SellVal": "350",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Badass_Vest.png"
     },
     {
       "name": "Balaclava",
@@ -193,7 +194,8 @@
         "Charisma": "-15",
         "SellVal": "250",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/headwear/Balaclava.png"
     },
     {
       "name": "Ballistic Helmet",
@@ -205,7 +207,8 @@
         "SubType": "Headwear",
         "Armor": "+5",
         "SellVal": "550"
-      }
+      },
+      "icon": "icons/equipment/headwear/Ballistic_Helmet.png"
     },
     {
       "name": "Ballistic Vest",
@@ -218,7 +221,8 @@
         "Armor": "+12",
         "MoveAccuracy": "+15%",
         "SellVal": "1150"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Ballistic_Vest.png"
     },
     {
       "name": "Bathrobe",
@@ -231,7 +235,8 @@
         "Armor": "+2",
         "ShotgunDmg": "+10%",
         "SellVal": "350"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Bathrobe.png"
     },
     {
       "name": "Beanie",
@@ -243,7 +248,8 @@
         "Durability": "350",
         "Armor": "+2",
         "SellVal": "150"
-      }
+      },
+      "icon": "icons/equipment/headwear/Beanie.png"
     },
     {
       "name": "Beer Helmet",
@@ -257,7 +263,8 @@
         "FireRst": "+15",
         "SellVal": "230",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/headwear/Beer_Helmet.png"
     },
     {
       "name": "Blast Boot",
@@ -272,7 +279,8 @@
         "Armor": "+3",
         "Speed": "-10%",
         "ExplRst": "+15"
-      }
+      },
+      "icon": "icons/equipment/footwear/Blast_Boot.png"
     },
     {
       "name": "Blindfold",
@@ -286,7 +294,8 @@
         "Type": "Headwear",
         "Armor": "+1",
         "Blindfolded": "+1"
-      }
+      },
+      "icon": "icons/equipment/headwear/Blindfold.png"
     },
     {
       "name": "Blue Bandana",
@@ -299,7 +308,8 @@
         "Durability": "350",
         "Armor": "+1",
         "PistolDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/Blue_Bandana.png"
     },
     {
       "name": "Blue Slipper",
@@ -313,7 +323,8 @@
         "Speed": "+5%",
         "SellVal": "150",
         "SoldBy": "Skrip, Qiosk"
-      }
+      },
+      "icon": "icons/equipment/footwear/Blue_Slipper.png"
     },
     {
       "name": "Breastplate",
@@ -326,7 +337,8 @@
         "Armor": "+25",
         "Speed": "-10%",
         "SellVal": "1050"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Breastplate.png"
     },
     {
       "name": "Camo Jacket",
@@ -340,7 +352,8 @@
         "AutoDmg": "+10%",
         "SellVal": "450",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Camo_Jacket.png"
     },
     {
       "name": "Cap",
@@ -353,7 +366,8 @@
         "Armor": "+1",
         "SellVal": "100",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/headwear/Cap.png"
     },
     {
       "name": "Christmas Sock",
@@ -366,7 +380,8 @@
         "Speed": "+5%",
         "FrostRst": "+20",
         "SellVal": "100"
-      }
+      },
+      "icon": "icons/equipment/footwear/Christmas_Sock.png"
     },
     {
       "name": "Christmas Sweater",
@@ -378,7 +393,8 @@
         "SubType": "Chestwear",
         "Armor": "+2",
         "SellVal": "350"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Christmas_Sweater.png"
     },
     {
       "name": "Clog",
@@ -392,7 +408,8 @@
         "Speed": "-10%",
         "SellVal": "200",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/footwear/Clog.png"
     },
     {
       "name": "Combat Boot",
@@ -407,7 +424,8 @@
         "MoveAccuracy": "+25%",
         "WpnWeight": "-20%",
         "SellVal": "305"
-      }
+      },
+      "icon": "icons/equipment/footwear/Combat_Boot.png"
     },
     {
       "name": "Cowboy Boot",
@@ -421,7 +439,8 @@
         "RevolDmg": "+10%",
         "SoldBy": "Skrip",
         "SellVal": "165"
-      }
+      },
+      "icon": "icons/equipment/footwear/Cowboy_Boot.png"
     },
     {
       "name": "Cowboy Hat",
@@ -434,7 +453,8 @@
         "SubType": "Headwear",
         "Armor": "2",
         "RevolDmg": "10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/Cowboy_Hat.png"
     },
     {
       "name": "Cowboy Vest",
@@ -447,7 +467,8 @@
         "Armor": "+2",
         "RevolDmg": "+10%",
         "SellVal": "350"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Cowboy_Vest.png"
     },
     {
       "name": "Crown",
@@ -460,7 +481,8 @@
         "Armor": "+2",
         "Charisma": "+25",
         "SellVal": "7500"
-      }
+      },
+      "icon": "icons/equipment/headwear/Crown.png"
     },
     {
       "name": "Denim Jacket",
@@ -474,7 +496,8 @@
         "Charisma": "+10",
         "SellVal": "350",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Denim_Jacket.png"
     },
     {
       "name": "Diving Fin",
@@ -488,7 +511,8 @@
         "SwimSpeed": "+40%",
         "SellVal": "115",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/footwear/Diving_Fin.png"
     },
     {
       "name": "Diving Mask",
@@ -501,7 +525,8 @@
         "SubType": "Headwear",
         "Armor": "+1",
         "WearGoggles": "✓"
-      }
+      },
+      "icon": "icons/equipment/headwear/Diving_Mask.png"
     },
     {
       "name": "Dunce Cap",
@@ -515,7 +540,8 @@
         "Speed": "-50%",
         "Charisma": "-2",
         "ExtraJumps": "+4"
-      }
+      },
+      "icon": "icons/equipment/headwear/Dunce_Cap.png"
     },
     {
       "name": "Ear Protectors",
@@ -529,7 +555,8 @@
         "Armor": "+1",
         "ExplRst": "+30",
         "WearEarPro": "✓"
-      }
+      },
+      "icon": "icons/equipment/headwear/Ear_Protectors.png"
     },
     {
       "name": "Encrypted Hoodie",
@@ -542,7 +569,8 @@
         "Durability": "500",
         "SubType": "Chestwear",
         "Armor": "+2"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Encrypted_Hoodie.png"
     },
     {
       "name": "Eye Patch",
@@ -555,7 +583,8 @@
         "CritADS": "+10%",
         "CharmRst": "+50",
         "SellVal": "400"
-      }
+      },
+      "icon": "icons/equipment/headwear/Eye_Patch.png"
     },
     {
       "name": "Father's Shirt",
@@ -567,7 +596,8 @@
         "Durability": "100",
         "SubType": "Chestwear",
         "Armor": "+1"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Father's_Shirt.png"
     },
     {
       "name": "Firefighter Helmet",
@@ -581,7 +611,8 @@
         "SubType": "Headwear",
         "Armor": "+3",
         "FireRst": "+50"
-      }
+      },
+      "icon": "icons/equipment/headwear/Firefighter_Helmet.png"
     },
     {
       "name": "Firefighter Jacket",
@@ -595,7 +626,8 @@
         "SubType": "Chestwear",
         "Armor": "+8",
         "FireRst": "+50"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Firefighter_Jacket.png"
     },
     {
       "name": "Fluffy Hat",
@@ -608,7 +640,8 @@
         "SubType": "Headwear",
         "FrostRst": "+50",
         "SoldBy": "Stiffleg, Skrip, Rat Queen"
-      }
+      },
+      "icon": "icons/equipment/headwear/Fluffy_Hat.png"
     },
     {
       "name": "Gas Mask",
@@ -621,7 +654,8 @@
         "SubType": "Headwear",
         "Armor": "+2",
         "PsnRst": "+50"
-      }
+      },
+      "icon": "icons/equipment/headwear/Gas_Mask.png"
     },
     {
       "name": "Genie Shoe",
@@ -635,7 +669,8 @@
         "Armor": "+1",
         "Speed": "+10%",
         "Coyote": "+0.5s"
-      }
+      },
+      "icon": "icons/equipment/footwear/Genie_Shoe.png"
     },
     {
       "name": "Geta",
@@ -649,7 +684,8 @@
         "Armor": "+1",
         "Speed": "+10%",
         "MeleeDmg": "+25%"
-      }
+      },
+      "icon": "icons/equipment/footwear/Geta.png"
     },
     {
       "name": "Ghillie Suit",
@@ -662,7 +698,8 @@
         "SubType": "Chestwear",
         "Armor": "+4",
         "SniperDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Ghillie_Suit.png"
     },
     {
       "name": "Golden Slipper",
@@ -675,7 +712,8 @@
         "Armor": "+1",
         "Speed": "+5%",
         "SellVal": "2500"
-      }
+      },
+      "icon": "icons/equipment/footwear/Golden_Slipper.png"
     },
     {
       "name": "Green Tunic",
@@ -689,7 +727,8 @@
         "SubType": "Chestwear",
         "Armor": "+2",
         "Charisma": "+1"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Green_Tunic.png"
     },
     {
       "name": "Hardhat",
@@ -701,7 +740,8 @@
         "Durability": "350",
         "SubType": "Headwear",
         "Armor": "+3"
-      }
+      },
+      "icon": "icons/equipment/headwear/Hardhat.png"
     },
     {
       "name": "Hazmat Suit",
@@ -715,7 +755,8 @@
         "PsnRst": "50",
         "SellVal": "550",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Hazmat_Suit.png"
     },
     {
       "name": "Hedgehog Suit",
@@ -728,7 +769,8 @@
         "Durability": "500",
         "SubType": "Chestwear",
         "Armor": "+3"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Hedgehog_Suit.png"
     },
     {
       "name": "High Cut Helmet",
@@ -741,7 +783,8 @@
         "SubType": "Headwear",
         "Armor": "+9",
         "AutoDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/High_Cut_Helmet.png"
     },
     {
       "name": "High Heel",
@@ -757,7 +800,8 @@
         "Speed": "-20%",
         "Charisma": "+5",
         "ExtraJumps": "-100%"
-      }
+      },
+      "icon": "icons/equipment/footwear/High_Heel.png"
     },
     {
       "name": "High Quality Elf Shoe",
@@ -773,7 +817,8 @@
         "Speed": "+10%",
         "Luck": "+1",
         "Coyote": "+0.2s"
-      }
+      },
+      "icon": "icons/equipment/footwear/High_Quality_Elf_Shoe.png"
     },
     {
       "name": "Hockey Helmet",
@@ -786,7 +831,8 @@
         "Durability": "350",
         "SubType": "Headwear",
         "Armor": "+3"
-      }
+      },
+      "icon": "icons/equipment/headwear/Hockey_Helmet.png"
     },
     {
       "name": "Hockey Shoulder Pads",
@@ -798,7 +844,8 @@
         "Durability": "100",
         "SubType": "Chestwear",
         "Armor": "+9"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Hockey_Shoulder_Pads.png"
     },
     {
       "name": "Hunting Vest",
@@ -812,7 +859,8 @@
         "SubType": "Chestwear",
         "Armor": "+2",
         "RifleDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Hunting_Vest.png"
     },
     {
       "name": "Ice Skate",
@@ -826,7 +874,8 @@
         "SubType": "Footwear",
         "Armor": "+2",
         "Speed": "+10%"
-      }
+      },
+      "icon": "icons/equipment/footwear/Ice_Skate.png"
     },
     {
       "name": "Knight's Helmet",
@@ -839,7 +888,8 @@
         "Armor": "+15",
         "Speed": "-5%",
         "SellVal": "500"
-      }
+      },
+      "icon": "icons/equipment/headwear/Knight's_Helmet.png"
     },
     {
       "name": "Leather Jacket",
@@ -855,7 +905,8 @@
         "Armor": "+3",
         "CharmRst": "+25",
         "ElecRst": "+15"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Leather_Jacket.png"
     },
     {
       "name": "Life Vest",
@@ -869,7 +920,8 @@
         "SubType": "Chestwear",
         "Armor": "+5",
         "Speed": "-10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Life_Vest.png"
     },
     {
       "name": "Motorcycle Helmet",
@@ -883,7 +935,8 @@
         "SubType": "Headwear",
         "Armor": "+3",
         "ExplRst": "+50"
-      }
+      },
+      "icon": "icons/equipment/headwear/Motorcycle_Helmet.png"
     },
     {
       "name": "Office Wear",
@@ -897,7 +950,8 @@
         "SubType": "Chestwear",
         "Armor": "+1",
         "AutoDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Office_Wear.png"
     },
     {
       "name": "Old-Timey Suit",
@@ -912,7 +966,8 @@
         "Armor": "+4",
         "ShotgunDmg": "+10%",
         "Charisma": "+10"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Old-Timey_Suit.png"
     },
     {
       "name": "Parka",
@@ -926,7 +981,8 @@
         "SubType": "Chestwear",
         "Armor": "+3",
         "FrostRst": "+50"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Parka.png"
     },
     {
       "name": "Peg Leg",
@@ -941,7 +997,8 @@
         "ExplRst": "+50",
         "SellVal": "305",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/footwear/Peg_Leg.png"
     },
     {
       "name": "Pillow Armor",
@@ -955,7 +1012,8 @@
         "SubType": "Chestwear",
         "Armor": "+5",
         "Speed": "-5%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Pillow_Armor.png"
     },
     {
       "name": "Pith Helmet",
@@ -968,7 +1026,8 @@
         "SubType": "Headwear",
         "Armor": "+2",
         "RifleDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/Pith_Helmet.png"
     },
     {
       "name": "Plain White Tee",
@@ -981,7 +1040,8 @@
         "Durability": "100",
         "SubType": "Chestwear",
         "Armor": "+2"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Plain_White_Tee.png"
     },
     {
       "name": "Plate Carrier",
@@ -994,7 +1054,8 @@
         "Armor": "+30",
         "Speed": "-15%",
         "SellVal": "2000"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Plate_Carrier.png"
     },
     {
       "name": "Platform Shoe",
@@ -1009,7 +1070,8 @@
         "JumpPwr": "+10%",
         "SellVal": "175",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/footwear/Platform_Shoe.png"
     },
     {
       "name": "Police Hat",
@@ -1022,7 +1084,8 @@
         "SubType": "Headwear",
         "Armor": "+1",
         "PistolDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/Police_Hat.png"
     },
     {
       "name": "Police Uniform",
@@ -1036,7 +1099,8 @@
         "SubType": "Chestwear",
         "Armor": "+2",
         "PistolDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Police_Uniform.png"
     },
     {
       "name": "Pope Hat",
@@ -1048,7 +1112,8 @@
         "Durability": "150",
         "SubType": "Headwear",
         "ExtraJumps": "+1"
-      }
+      },
+      "icon": "icons/equipment/headwear/Pope_Hat.png"
     },
     {
       "name": "Pyjamas",
@@ -1062,7 +1127,8 @@
         "SubType": "Chestwear",
         "Armor": "+2",
         "FrostRst": "+10"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Pyjamas.png"
     },
     {
       "name": "Raincoat",
@@ -1076,7 +1142,8 @@
         "Armor": "+4",
         "ElecRst": "+25",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Raincoat.png"
     },
     {
       "name": "Red Bandana",
@@ -1089,7 +1156,8 @@
         "SubType": "Headwear",
         "Armor": "+1",
         "PistolDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/Red_Bandana.png"
     },
     {
       "name": "Roller Blade",
@@ -1103,7 +1171,8 @@
         "SubType": "Footwear",
         "Armor": "+1",
         "Speed": "+10%"
-      }
+      },
+      "icon": "icons/equipment/footwear/Roller_Blade.png"
     },
     {
       "name": "Round Glasses",
@@ -1115,7 +1184,8 @@
         "Durability": "350",
         "SubType": "Headwear",
         "CharmRst": "+25"
-      }
+      },
+      "icon": "icons/equipment/headwear/Round_Glasses.png"
     },
     {
       "name": "Rubber Boot",
@@ -1130,7 +1200,8 @@
         "Speed": "+5%",
         "Armor": "+1",
         "ElecRst": "+25"
-      }
+      },
+      "icon": "icons/equipment/footwear/Rubber_Boot.png"
     },
     {
       "name": "Rudolf Nose",
@@ -1144,7 +1215,8 @@
         "Type": "Headwear",
         "Armor": "+3",
         "Rudolf Vision": "+1"
-      }
+      },
+      "icon": "icons/equipment/headwear/Rudolf_Nose.png"
     },
     {
       "name": "Running Shoe",
@@ -1158,7 +1230,8 @@
         "Armor": "+1",
         "Speed": "+10%",
         "Sprint": "+15%"
-      }
+      },
+      "icon": "icons/equipment/footwear/Running_Shoe.png"
     },
     {
       "name": "Safety Vest",
@@ -1171,7 +1244,8 @@
         "Durability": "500",
         "SubType": "Chestwear",
         "Armor": "+2"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Safety_Vest.png"
     },
     {
       "name": "Samurai Armor",
@@ -1184,7 +1258,8 @@
         "Armor": "+10",
         "MeleeDmg": "+100%",
         "SellVal": "1000"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Samurai_Armor.png"
     },
     {
       "name": "Santa Coat",
@@ -1197,7 +1272,8 @@
         "SubType": "Chestwear",
         "Armor": "+6",
         "Speed": "-10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Santa_Coat.png"
     },
     {
       "name": "Santa Hat",
@@ -1210,7 +1286,8 @@
         "SubType": "Headwear",
         "Armor": "+2",
         "Luck": "+1"
-      }
+      },
+      "icon": "icons/equipment/headwear/Santa_Hat.png"
     },
     {
       "name": "Shoe",
@@ -1223,7 +1300,8 @@
         "SubType": "Footwear",
         "Armor": "+2",
         "Speed": "+10%"
-      }
+      },
+      "icon": "icons/equipment/footwear/Shoe.png"
     },
     {
       "name": "Ski Goggles",
@@ -1237,7 +1315,8 @@
         "WearGoggles": "✓",
         "FrostRst": "+20",
         "LightRst": "+20"
-      }
+      },
+      "icon": "icons/equipment/headwear/Ski_Goggles.png"
     },
     {
       "name": "Sneaker",
@@ -1249,7 +1328,8 @@
         "Durability": "100",
         "SubType": "Footwear",
         "Speed": "+10%"
-      }
+      },
+      "icon": "icons/equipment/footwear/Sneaker.png"
     },
     {
       "name": "Sock",
@@ -1263,7 +1343,8 @@
         "SubType": "Footwear",
         "Speed": "+5%",
         "FrostRst": "+10"
-      }
+      },
+      "icon": "icons/equipment/footwear/Sock.png"
     },
     {
       "name": "Springcoil Boot",
@@ -1278,7 +1359,8 @@
         "JumpPwr": "+25%",
         "SellVal": "500",
         "SoldBy": "Stiffleg, Skrip"
-      }
+      },
+      "icon": "icons/equipment/footwear/Springcoil_Boot.png"
     },
     {
       "name": "Square Glasses",
@@ -1290,7 +1372,8 @@
         "SubType": "Headwear",
         "AutoDmg": "+5%",
         "SellVal": "150"
-      }
+      },
+      "icon": "icons/equipment/headwear/Square_Glasses.png"
     },
     {
       "name": "Steel Helmet",
@@ -1304,7 +1387,8 @@
         "Armor": "+8",
         "Speed": "-10%",
         "LMGDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/headwear/Steel_Helmet.png"
     },
     {
       "name": "Straitjacket",
@@ -1319,7 +1403,8 @@
         "WearSJ": "✓",
         "SellVal": "125",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Straitjacket.png"
     },
     {
       "name": "Sulf Air",
@@ -1334,7 +1419,8 @@
         "Armor": "+1",
         "ExtraJumps": "+1",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/footwear/Sulf_Air.png"
     },
     {
       "name": "SULFUR Cap",
@@ -1347,7 +1433,8 @@
         "SubType": "Headwear",
         "Armor": "+1",
         "Charisma": "+10"
-      }
+      },
+      "icon": "icons/equipment/headwear/SULFUR_Cap.png"
     },
     {
       "name": "SULFUR Hoodie",
@@ -1359,7 +1446,8 @@
         "Durability": "500",
         "SubType": "Chestwear",
         "Armor": "+5"
-      }
+      },
+      "icon": "icons/equipment/chestwear/SULFUR_Hoodie.png"
     },
     {
       "name": "Sunglasses",
@@ -1374,7 +1462,8 @@
         "ExplRst": "+25",
         "WearShades": "✓",
         "SellVal": "230"
-      }
+      },
+      "icon": "icons/equipment/headwear/Sunglasses.png"
     },
     {
       "name": "Sylvester Hat",
@@ -1388,7 +1477,8 @@
         "SubType": "Headwear",
         "Armor": "+1",
         "ElecRst": "+10"
-      }
+      },
+      "icon": "icons/equipment/headwear/Sylvester_Hat.png"
     },
     {
       "name": "Tanker Helmet",
@@ -1401,7 +1491,8 @@
         "SubType": "Headwear",
         "Armor": "+6",
         "ExplRst": "+50"
-      }
+      },
+      "icon": "icons/equipment/headwear/Tanker_Helmet.png"
     },
     {
       "name": "Titanium Helmet",
@@ -1414,7 +1505,8 @@
         "SubType": "Headwear",
         "Armor": "+13",
         "ExplRst": "+60"
-      }
+      },
+      "icon": "icons/equipment/headwear/Titanium_Helmet.png"
     },
     {
       "name": "Tracksuit",
@@ -1427,7 +1519,8 @@
         "SubType": "Chestwear",
         "Armor": "+2",
         "PistolDmg": "+10%"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Tracksuit.png"
     },
     {
       "name": "Turtle Shell",
@@ -1440,7 +1533,8 @@
         "Armor": "25",
         "Speed": "-35%",
         "SellVal": "750"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Turtle_Shell.png"
     },
     {
       "name": "Winter Scarf",
@@ -1453,7 +1547,8 @@
         "Speed": "+20%",
         "FrostRst": "+20",
         "SellVal": "450"
-      }
+      },
+      "icon": "icons/equipment/headwear/Winter_Scarf.png"
     },
     {
       "name": "Wooden Armor",
@@ -1465,7 +1560,8 @@
         "Durability": "500",
         "Armor": "+7",
         "SellVal": "475"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Wooden_Armor.png"
     },
     {
       "name": "Yellow Hoodie",
@@ -1480,7 +1576,8 @@
         "LightRst": "+50",
         "SellVal": "165",
         "SoldBy": "Skrip"
-      }
+      },
+      "icon": "icons/equipment/chestwear/Yellow_Hoodie.png"
     },
     {
       "name": "Ygg",
@@ -1494,7 +1591,8 @@
         "Armor": "+1",
         "Speed": "+10%",
         "FrostRst": "+20"
-      }
+      },
+      "icon": "icons/equipment/footwear/Ygg.png"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "kind": "attachment",
-  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "generated": "2026-07-07T11:38:45.346730+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -89,7 +89,8 @@
         "SoldBy": "Ralphie",
         "SubType": "Muzzle attachment",
         "Recoil": "-35%"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/A12C_Muzzle_Brake.png"
     },
     {
       "name": "Aftermarket Haukland Silencer",
@@ -103,7 +104,8 @@
         "RPM": "-15%",
         "SellVal": "740",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Aftermarket_Haukland_Silencer.png"
     },
     {
       "name": "Assault Scope",
@@ -115,7 +117,8 @@
         "CritADS": "+20%",
         "SellVal": "250",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/sight/Assault_Scope.png"
     },
     {
       "name": "Barrel Extension 2\"",
@@ -129,7 +132,8 @@
         "Speed": "-5%",
         "SellVal": "480",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Barrel_Extension_2_.png"
     },
     {
       "name": "Barrel Extension 4\"",
@@ -143,7 +147,8 @@
         "Speed": "-10%",
         "SellVal": "240",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Barrel_Extension_4_.png"
     },
     {
       "name": "Barrel Extension 6\"",
@@ -157,7 +162,8 @@
         "Speed": "-20%",
         "SellVal": "240",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Barrel_Extension_6_.png"
     },
     {
       "name": "Breznik BMD",
@@ -170,7 +176,8 @@
         "Recoil": "-20%",
         "SellVal": "240",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Breznik_BMD.png"
     },
     {
       "name": "Breznik BMD (Tactical)",
@@ -183,7 +190,8 @@
         "Recoil": "-20%",
         "SellVal": "240",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Breznik_BMD_(Tactical).png"
     },
     {
       "name": "Compact Sight",
@@ -195,7 +203,8 @@
         "CritADS": "+20%",
         "SellVal": "250",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/sight/Compact_Sight.png"
     },
     {
       "name": "Gun Crank",
@@ -207,7 +216,8 @@
         "ModeChange": "Automatic",
         "SellVal": "340",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/chamber-attachment/Gun_Crank.png"
     },
     {
       "name": "Haukland Flash Hider",
@@ -220,7 +230,8 @@
         "Recoil": "-20%",
         "SellVal": "240",
         "SoldBy": "Ralphie, Haukland Rep."
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Haukland_Flash_Hider.png"
     },
     {
       "name": "Haukland Silencer",
@@ -235,7 +246,8 @@
         "RPM": "-10%",
         "SellVal": "445",
         "SoldBy": "Ralphie, Haukland Rep."
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Haukland_Silencer.png"
     },
     {
       "name": "Holographic Sight",
@@ -247,7 +259,8 @@
         "CritADS": "+10%",
         "SellVal": "115",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/sight/Holographic_Sight.png"
     },
     {
       "name": "Hunting Scope",
@@ -259,7 +272,8 @@
         "CritADS": "+25%",
         "SellVal": "275",
         "SoldBy": "Ralphie, Jaques De Fector"
-      }
+      },
+      "icon": "icons/attachment/sight/Hunting_Scope.png"
     },
     {
       "name": "Improvised Barrel Extension",
@@ -272,7 +286,8 @@
         "MaxDrb": "+15%",
         "SellVal": "150",
         "SoldBy": "Ralphie, Skrip"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Improvised_Barrel_Extension.png"
     },
     {
       "name": "Insurance",
@@ -284,7 +299,8 @@
         "SellVal": "5000",
         "BuyVal": "10000",
         "SoldBy": "Haukland Salesman, Ralphie, Stiffleg, Qiosk, Bill"
-      }
+      },
+      "icon": "icons/attachment/attachment/Insurance.png"
     },
     {
       "name": "Laser Sight (Bone)",
@@ -295,7 +311,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Bone).png"
     },
     {
       "name": "Laser Sight (Denim Blue)",
@@ -306,7 +323,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Denim_Blue).png"
     },
     {
       "name": "Laser Sight (Gold)",
@@ -318,7 +336,8 @@
         "MoveAccuracy": "+50%",
         "CritChance": "+20%",
         "SellVal": "5000"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Gold).png"
     },
     {
       "name": "Laser Sight (Green)",
@@ -330,7 +349,8 @@
         "MoveAccuracy": "+50%",
         "SellVal": "140",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Green).png"
     },
     {
       "name": "Laser Sight (Light Blue)",
@@ -341,7 +361,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Light_Blue).png"
     },
     {
       "name": "Laser Sight (Lime)",
@@ -353,7 +374,8 @@
         "MoveAccuracy": "+50%",
         "Charisma": "+2",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Lime).png"
     },
     {
       "name": "Laser Sight (Magenta)",
@@ -364,7 +386,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Magenta).png"
     },
     {
       "name": "Laser Sight (Orange)",
@@ -375,7 +398,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Orange).png"
     },
     {
       "name": "Laser Sight (Poop)",
@@ -386,7 +410,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Poop).png"
     },
     {
       "name": "Laser Sight (Purple)",
@@ -397,7 +422,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Purple).png"
     },
     {
       "name": "Laser Sight (Red)",
@@ -409,7 +435,8 @@
         "MoveAccuracy": "+50%",
         "SellVal": "140",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Red).png"
     },
     {
       "name": "Laser Sight (Rose Pink)",
@@ -420,7 +447,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Rose_Pink).png"
     },
     {
       "name": "Laser Sight (Tangerine)",
@@ -431,7 +459,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Tangerine).png"
     },
     {
       "name": "Laser Sight (Teal)",
@@ -442,7 +471,8 @@
         "SubType": "Laser Sights",
         "MoveAccuracy": "+50%",
         "SellVal": "250"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Teal).png"
     },
     {
       "name": "Laser Sight (Yellow)",
@@ -454,7 +484,8 @@
         "MoveAccuracy": "+50%",
         "SellVal": "250",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/laser-sight/Laser_Sight_(Yellow).png"
     },
     {
       "name": "M87 \"Albatross\" Silencer",
@@ -470,7 +501,8 @@
         "MaxDrb": "-10%",
         "SellVal": "275",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/M87__Albatross__Silencer.png"
     },
     {
       "name": "Priming Bolt",
@@ -484,7 +516,8 @@
         "Spread": "-0.1",
         "SellVal": "340",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/chamber-attachment/Priming_Bolt.png"
     },
     {
       "name": "Recon Scope",
@@ -496,7 +529,8 @@
         "CritADS": "+10%",
         "SellVal": "140",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/sight/Recon_Scope.png"
     },
     {
       "name": "Reflex Sight",
@@ -508,7 +542,8 @@
         "CritADS": "+15%",
         "SellVal": "160",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/sight/Reflex_Sight.png"
     },
     {
       "name": "Shrouded Barrel Extension",
@@ -521,7 +556,8 @@
         "MaxDrb": "+20%",
         "SellVal": "240",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Shrouded_Barrel_Extension.png"
     },
     {
       "name": "Sniper Scope",
@@ -533,7 +569,8 @@
         "CritADS": "+30%",
         "SellVal": "350",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/sight/Sniper_Scope.png"
     },
     {
       "name": "SR-P3 Silencer",
@@ -548,7 +585,8 @@
         "RPM": "-10%",
         "SellVal": "290",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/SR-P3_Silencer.png"
     },
     {
       "name": "Warmage Compensator",
@@ -561,7 +599,8 @@
         "Recoil": "-25%",
         "SellVal": "480",
         "SoldBy": "Ralphie"
-      }
+      },
+      "icon": "icons/attachment/muzzle-attachment/Warmage_Compensator.png"
     }
   ]
 }

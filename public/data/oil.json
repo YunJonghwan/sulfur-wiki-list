@@ -1,6 +1,6 @@
 {
   "kind": "oil",
-  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "generated": "2026-07-07T11:38:45.346730+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -132,7 +132,8 @@
         "RldSpeed": "+80%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Action_Oil.png"
     },
     {
       "name": "Add Damage Oil",
@@ -143,7 +144,8 @@
         "Dmg": "+15",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Add_Damage_Oil.png"
     },
     {
       "name": "Aimless Oil",
@@ -155,7 +157,8 @@
         "AimDisabled": "✓",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Aimless_Oil.png"
     },
     {
       "name": "Airsoft Oil",
@@ -168,7 +171,8 @@
         "RldSpeed": "+120%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Airsoft_Oil.png"
     },
     {
       "name": "Altruistic Oil",
@@ -180,7 +184,8 @@
         "LootChance": "-30%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Altruistic_Oil.png"
     },
     {
       "name": "Arkanoid Oil",
@@ -192,7 +197,8 @@
         "BltBounces": "+10",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Arkanoid_Oil.png"
     },
     {
       "name": "Arrow Oil",
@@ -204,7 +210,8 @@
         "Dmg": "-15%",
         "SellVal": "100",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Arrow_Oil.png"
     },
     {
       "name": "Artery Oil",
@@ -216,7 +223,8 @@
         "BltSize": "-50%",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Artery_Oil.png"
     },
     {
       "name": "Artillery Oil",
@@ -228,7 +236,8 @@
         "BltDrop": "×15",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Artillery_Oil.png"
     },
     {
       "name": "Ascetic Oil",
@@ -240,7 +249,8 @@
         "NoMoney": "✓",
         "SellVal": "175",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Ascetic_Oil.png"
     },
     {
       "name": "Assassin Dart Oil",
@@ -252,7 +262,8 @@
         "Speed": "-25%",
         "SellVal": "125",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Assassin_Dart_Oil.png"
     },
     {
       "name": "Attack Speed Oil",
@@ -263,7 +274,8 @@
         "RPM": "+20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Attack_Speed_Oil.png"
     },
     {
       "name": "Axe Oil",
@@ -275,7 +287,8 @@
         "BltDrop": "×10",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Axe_Oil.png"
     },
     {
       "name": "Bad Planet Oil",
@@ -287,7 +300,8 @@
         "JumpPwr": "-30%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Bad_Planet_Oil.png"
     },
     {
       "name": "Bandit Oil",
@@ -299,7 +313,8 @@
         "NoMoney": "X",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Bandit_Oil.png"
     },
     {
       "name": "BB Oil",
@@ -311,7 +326,8 @@
         "BltSize": "-70%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/BB_Oil.png"
     },
     {
       "name": "Big Oil",
@@ -324,7 +340,8 @@
         "Dmg": "+35",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Big_Oil.png"
     },
     {
       "name": "Big Tax Oil",
@@ -337,7 +354,8 @@
         "NoDrb": "✓",
         "SellVal": "110",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Big_Tax_Oil.png"
     },
     {
       "name": "Bigger Bullet Oil (DEMO)",
@@ -346,7 +364,8 @@
       "fields": {
         "GridSize": "1x1",
         "BuyVal": "Priceless"
-      }
+      },
+      "icon": "icons/oil/misc/Bigger_bullet_oil.png"
     },
     {
       "name": "Birth Oil",
@@ -359,7 +378,8 @@
         "NoDrb": "✓",
         "SellVal": "50",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Birth_Oil.png"
     },
     {
       "name": "Black Friday Oil",
@@ -374,7 +394,8 @@
         "SellVal": "150",
         "BuyVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Black_Friday_Oil.png"
     },
     {
       "name": "Blindfold Oil",
@@ -386,7 +407,8 @@
         "Spread": "+2",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Blindfold_Oil.png"
     },
     {
       "name": "Blurt Oil",
@@ -398,7 +420,8 @@
         "BltSpeed": "-20%",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Blurt_Oil.png"
     },
     {
       "name": "Bolt Oil",
@@ -410,7 +433,8 @@
         "Dmg": "-15",
         "SellVal": "185",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Bolt_Oil.png"
     },
     {
       "name": "Bombard Oil",
@@ -424,7 +448,8 @@
         "Spread": "+1.4",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Bombard_Oil.png"
     },
     {
       "name": "Boomstick Oil",
@@ -439,7 +464,8 @@
         "AimDisabled": "✓",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Boomstick_Oil.png"
     },
     {
       "name": "Boulder Oil",
@@ -453,7 +479,8 @@
         "BltDrop": "×10",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Boulder_Oil.png"
     },
     {
       "name": "Bowl Oil",
@@ -465,7 +492,8 @@
         "BltSpeed": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Bowl_Oil.png"
     },
     {
       "name": "Braced Oil",
@@ -477,7 +505,8 @@
         "JumpPwr": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Braced_Oil.png"
     },
     {
       "name": "Brute Oil",
@@ -489,7 +518,8 @@
         "Spread": "+0.7",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Brute_Oil.png"
     },
     {
       "name": "Bulk Oil",
@@ -501,7 +531,8 @@
         "BltDrop": "×15",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Bulk_Oil.png"
     },
     {
       "name": "Bystander Oil",
@@ -513,7 +544,8 @@
         "AimDisabled": "✓",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Bystander_Oil.png"
     },
     {
       "name": "Carefree Oil",
@@ -525,7 +557,8 @@
         "Spread": "+1",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Carefree_Oil.png"
     },
     {
       "name": "Careful Oil",
@@ -537,7 +570,8 @@
         "RPM": "-25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Careful_Oil.png"
     },
     {
       "name": "Careless Splitter Oil",
@@ -552,7 +586,8 @@
         "MaxDrb": "-75%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Careless_Splitter_Oil.png"
     },
     {
       "name": "Cartoon Oil",
@@ -564,7 +599,8 @@
         "BltBounces": "+6",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Cartoon_Oil.png"
     },
     {
       "name": "Casual Oil",
@@ -576,7 +612,8 @@
         "LootChance": "-20%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Casual_Oil.png"
     },
     {
       "name": "Cheap Oil",
@@ -589,7 +626,8 @@
         "SellVal": "350",
         "BuyVal": "700",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Cheap_Oil.png"
     },
     {
       "name": "Chonk Oil",
@@ -602,7 +640,8 @@
         "NoDrb": "✓",
         "SellVal": "100",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Chonk_Oil.png"
     },
     {
       "name": "Chub Oil",
@@ -615,7 +654,8 @@
         "NoDrb": "✓",
         "SellVal": "50",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Chub_Oil.png"
     },
     {
       "name": "Clump Oil",
@@ -629,7 +669,8 @@
         "SellVal": "88",
         "BuyVal": "175",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Clump_Oil.png"
     },
     {
       "name": "Collateral Oil",
@@ -641,7 +682,8 @@
         "BltPen": "+2",
         "SellVal": "175",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Collateral_Oil.png"
     },
     {
       "name": "Complicated Oil",
@@ -653,7 +695,8 @@
         "RldSpeed": "-25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Complicated_Oil.png"
     },
     {
       "name": "Compo Oil",
@@ -667,7 +710,8 @@
         "Recoil": "-10%",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Compo_Oil.png"
     },
     {
       "name": "Confidence Oil",
@@ -679,7 +723,8 @@
         "RldSpeed": "-25%",
         "SellVal": "375",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Confidence_Oil.png"
     },
     {
       "name": "Congestion Oil",
@@ -692,7 +737,8 @@
         "NoDrb": "✓",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Congestion_Oil.png"
     },
     {
       "name": "Considerate Oil",
@@ -704,7 +750,8 @@
         "Dmg": "-25",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Considerate_Oil.png"
     },
     {
       "name": "Contained Force Oil",
@@ -716,7 +763,8 @@
         "MaxDrb": "-10%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Contained_Force_Oil.png"
     },
     {
       "name": "Critical Oil",
@@ -727,7 +775,8 @@
         "CritChance": "+15%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Crit_oil.png"
     },
     {
       "name": "Cycle Oil",
@@ -739,7 +788,8 @@
         "RldSpeed": "+90%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Cycle_Oil.png"
     },
     {
       "name": "Damage Oil",
@@ -750,7 +800,8 @@
         "Dmg": "+20%",
         "SellVal": "650",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Damage_Oil.png"
     },
     {
       "name": "Dart Oil",
@@ -762,7 +813,8 @@
         "JumpPwr": "-20%",
         "SellVal": "115",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Dart_Oil.png"
     },
     {
       "name": "Dead Center Oil",
@@ -774,7 +826,8 @@
         "Recoil": "+1",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Dead_Center_Oil.png"
     },
     {
       "name": "Delayed Hyper Tube Oil",
@@ -786,7 +839,8 @@
         "RPM": "-50%",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Delayed_Hyper_Tube_Oil.png"
     },
     {
       "name": "Dense Oil",
@@ -799,7 +853,8 @@
         "NoDrb": "✓",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Dense_Oil.png"
     },
     {
       "name": "Detune Oil",
@@ -812,7 +867,8 @@
         "NoDrb": "✓",
         "SellVal": "175",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Detune_Oil.png"
     },
     {
       "name": "Diesel Oil",
@@ -825,7 +881,8 @@
         "SellVal": "113",
         "BuyVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Diesel_Oil.png"
     },
     {
       "name": "Discharge Oil",
@@ -837,7 +894,8 @@
         "AmmoExConsume": "+30%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Discharge_Oil.png"
     },
     {
       "name": "Disposable Oil",
@@ -850,7 +908,8 @@
         "SellVal": "325",
         "BuyVal": "650",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Disposable_Oil.png"
     },
     {
       "name": "Division Oil",
@@ -864,7 +923,8 @@
         "BltSize": "-70%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Division_Oil.png"
     },
     {
       "name": "Do-over Oil",
@@ -876,7 +936,8 @@
         "RPM": "-25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Do-over_Oil.png"
     },
     {
       "name": "Double Fire Oil",
@@ -888,7 +949,8 @@
         "AmmoExConsume": "+25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Double_Fire_Oil.png"
     },
     {
       "name": "Double Lock Oil",
@@ -900,7 +962,8 @@
         "RPM": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Double_Lock_Oil.png"
     },
     {
       "name": "Double Nothing Oil",
@@ -914,7 +977,8 @@
         "Spread": "+0.7",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Double_Nothing_Oil.png"
     },
     {
       "name": "Dum Dum Oil",
@@ -926,7 +990,8 @@
         "NoOrgans": "X",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Dum_Dum_Oil.png"
     },
     {
       "name": "Dynamic Oil",
@@ -938,7 +1003,8 @@
         "RldSpeed": "+100%",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Dynaimc_Oil.png"
     },
     {
       "name": "Easy Oil",
@@ -950,7 +1016,8 @@
         "NoMoney": "✓",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Easy_Oil.png"
     },
     {
       "name": "Easy Plop Oil",
@@ -962,7 +1029,8 @@
         "BltDrop": "×5",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Easy_Plop_Oil.png"
     },
     {
       "name": "Elephant Oil",
@@ -980,7 +1048,8 @@
         "SellVal": "325",
         "BuyVal": "650",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Elephant_Oil.png"
     },
     {
       "name": "Exotic Barrel Oil",
@@ -992,7 +1061,8 @@
         "MaxDrb": "-25%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Exotic_Barrel_Oil.png"
     },
     {
       "name": "Expander Oil",
@@ -1004,7 +1074,8 @@
         "NoOrgans": "X",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Expander_Oil.png"
     },
     {
       "name": "Extra Powder Oil",
@@ -1016,7 +1087,8 @@
         "RldSpeed": "-15%",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Extra_Powder_Oil.png"
     },
     {
       "name": "Farsighted Oil",
@@ -1028,7 +1100,8 @@
         "AmmoExConsume": "+30%",
         "SellVal": "100",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Farsighted_Oil.png"
     },
     {
       "name": "Fast Bet Oil",
@@ -1040,7 +1113,8 @@
         "NoMoney": "✓",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Fast_Bet_Oil.png"
     },
     {
       "name": "Feature Gun Oil",
@@ -1053,7 +1127,8 @@
         "NoDrb": "✓",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Feature_Gun_Oil.png"
     },
     {
       "name": "Fidget Lord Oil",
@@ -1065,7 +1140,8 @@
         "RldSpeed": "+140%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/mobility/Fidget_Lord_Oil.png"
     },
     {
       "name": "Fidget Oil",
@@ -1077,7 +1153,8 @@
         "RldSpeed": "-25%",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Fidget_Oil.png"
     },
     {
       "name": "First Blood Oil",
@@ -1089,7 +1166,8 @@
         "Spread": "+1",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/First_Blood_Oil.png"
     },
     {
       "name": "Flea Oil",
@@ -1102,7 +1180,8 @@
         "BltBounces": "+4",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Flea_Oil.png"
     },
     {
       "name": "Flop Oil",
@@ -1115,7 +1194,8 @@
         "NoDrb": "✓",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Flop_Oil.png"
     },
     {
       "name": "Flow Funnel Oil",
@@ -1127,7 +1207,8 @@
         "Recoil": "-65%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Flow_Funnel_Oil.png"
     },
     {
       "name": "Food Stamp Oil",
@@ -1139,7 +1220,8 @@
         "AmmoConsume": "-20%",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/effects/Food_Stamp_Oil.png"
     },
     {
       "name": "Fragile System Oil",
@@ -1151,7 +1233,8 @@
         "MaxDrb": "-15%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Fragile_System_Oil.png"
     },
     {
       "name": "Franciscan Oil",
@@ -1163,7 +1246,8 @@
         "NoMoney": "X",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Franciscan_Oil.png"
     },
     {
       "name": "Frugal Oil",
@@ -1175,7 +1259,8 @@
         "LootChance": "-35%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Frugal_Oil.png"
     },
     {
       "name": "Gambler Oil",
@@ -1187,7 +1272,8 @@
         "Dmg": "-10%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Gambler_Oil.png"
     },
     {
       "name": "Gargantuan Oil",
@@ -1200,7 +1286,8 @@
         "NoDrb": "✓",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Gargantuan_Oil.png"
     },
     {
       "name": "Gemini Oil",
@@ -1213,7 +1300,8 @@
         "Spread": "+0.7",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Gemini_Oil.png"
     },
     {
       "name": "Gentle Oil",
@@ -1226,7 +1314,8 @@
         "NoDrb": "✓",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Gentle_Oil.png"
     },
     {
       "name": "Glass Cannon Oil",
@@ -1238,7 +1327,8 @@
         "MaxDrb": "-25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Glass_Cannon_Oil.png"
     },
     {
       "name": "Great Oil",
@@ -1251,7 +1341,8 @@
         "Dmg": "+60%",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Great_Oil.png"
     },
     {
       "name": "Grounded Oil",
@@ -1263,7 +1354,8 @@
         "JumpPwr": "-15%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Grounded_Oil.png"
     },
     {
       "name": "Gunslinger Oil",
@@ -1275,7 +1367,8 @@
         "RldSpeed": "+75%",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Gunslinger_Oil.png"
     },
     {
       "name": "Happy Accident Oil",
@@ -1287,7 +1380,8 @@
         "Recoil": "+40%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Happy_Accident_Oil.png"
     },
     {
       "name": "Heavy Lead Oil",
@@ -1299,7 +1393,8 @@
         "BltDrop": "×20",
         "SellVal": "50",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Heavy_Lead_Oil.png"
     },
     {
       "name": "Heavy Oil",
@@ -1312,7 +1407,8 @@
         "BltDrop": "+10",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Heavy_Oil.png"
     },
     {
       "name": "Heavy Pockets Oil",
@@ -1324,7 +1420,8 @@
         "AmmoConsume": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/mobility/Heavy_Pockets_Oil.png"
     },
     {
       "name": "Hefty Oil",
@@ -1337,7 +1434,8 @@
         "NoDrb": "✓",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Hefty_Oil.png"
     },
     {
       "name": "Helium Oil",
@@ -1349,7 +1447,8 @@
         "BltSpeed": "-40%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Helium_Oil.png"
     },
     {
       "name": "High Grade Oil",
@@ -1361,7 +1460,8 @@
         "NoDrb": "✓",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/High_Grade_Oil.png"
     },
     {
       "name": "Hip Blaster Oil",
@@ -1373,7 +1473,8 @@
         "AimDisabled": "✓",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Hip_Blaster_Oil.png"
     },
     {
       "name": "Hip Marksman Oil",
@@ -1385,7 +1486,8 @@
         "AimDisabled": "✓",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Hip_Marksman_Oil.png"
     },
     {
       "name": "Hoop Oil",
@@ -1397,7 +1499,8 @@
         "BltDrop": "×10",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Hoop_Oil.png"
     },
     {
       "name": "Hunter Oil",
@@ -1409,7 +1512,8 @@
         "Speed": "-30%",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Hunter_Oil.png"
     },
     {
       "name": "Hustler Oil",
@@ -1421,7 +1525,8 @@
         "CritChance": "+25%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Hustler_Oil.png"
     },
     {
       "name": "Hyper Lead Oil",
@@ -1434,7 +1539,8 @@
         "BltSpeed": "+100%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Hyper_Lead_Oil.png"
     },
     {
       "name": "Imperfect Oil",
@@ -1446,7 +1552,8 @@
         "MaxDrb": "-15%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Imperfect_Oil.png"
     },
     {
       "name": "Inconsiderate Oil",
@@ -1458,7 +1565,8 @@
         "Spread": "+2",
         "SellVal": "125",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Inconsiderate_Oil.png"
     },
     {
       "name": "Inherited Oil",
@@ -1471,7 +1579,8 @@
         "NoDrb": "✓",
         "SellVal": "750",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Inherited_Oil.png"
     },
     {
       "name": "Instant Oil",
@@ -1483,7 +1592,8 @@
         "AimDisabled": "✓",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Instant_Oil.png"
     },
     {
       "name": "Judgement Oil",
@@ -1495,7 +1605,8 @@
         "Speed": "-15%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Judgement_Oil.png"
     },
     {
       "name": "Jungian Oil",
@@ -1507,7 +1618,8 @@
         "Speed": "-15%",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Jungian_Oil.png"
     },
     {
       "name": "Keep Oil",
@@ -1519,7 +1631,8 @@
         "NoOrgans": "X",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Keep_Oil.png"
     },
     {
       "name": "Kicker Oil",
@@ -1531,7 +1644,8 @@
         "Recoil": "+50%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Kicker_Oil.png"
     },
     {
       "name": "Kinetic Oil",
@@ -1543,7 +1657,8 @@
         "BltDrop": "×20",
         "SellVal": "175",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Kinetic_Oil.png"
     },
     {
       "name": "Last Drop Oil",
@@ -1555,7 +1670,8 @@
         "MaxDrb": "-25%",
         "SellVal": "125",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Last_Drop_Oil.png"
     },
     {
       "name": "Late Boom Oil",
@@ -1567,7 +1683,8 @@
         "BltSpeed": "-30%",
         "SellVal": "75",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Late_Boom_Oil.png"
     },
     {
       "name": "Launcher Oil",
@@ -1579,7 +1696,8 @@
         "RPM": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Launcher_Oil.png"
     },
     {
       "name": "Lazy Oil",
@@ -1591,7 +1709,8 @@
         "RldSpeed": "-15%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Lazy_Oil.png"
     },
     {
       "name": "Less Recoil Oil",
@@ -1602,7 +1721,8 @@
         "Recoil": "-20%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Less_Recoil_Oil.png"
     },
     {
       "name": "Lightweight Oil",
@@ -1614,7 +1734,8 @@
         "Recoil": "+50%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Lightweight_Oil.png"
     },
     {
       "name": "Longshot Oil",
@@ -1626,7 +1747,8 @@
         "AimDisabled": "✓",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Longshot_Oil.png"
     },
     {
       "name": "Lost In Focus Oil",
@@ -1638,7 +1760,8 @@
         "AmmoExConsume": "+30%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Lost_In_Focus_Oil.png"
     },
     {
       "name": "Low Roller Oil",
@@ -1650,7 +1773,8 @@
         "NoMoney": "X",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Low_Roller_Oil.png"
     },
     {
       "name": "Machine Oil",
@@ -1662,7 +1786,8 @@
         "Speed": "-30%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Machine_Oil.png"
     },
     {
       "name": "Main Discipline Oil",
@@ -1674,7 +1799,8 @@
         "RldSpeed": "+80%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Main_Discipline_Oil.png"
     },
     {
       "name": "Main Focus Oil",
@@ -1686,7 +1812,8 @@
         "RldSpeed": "+50%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/effects/Main_Focus_Oil.png"
     },
     {
       "name": "Manifestation Oil",
@@ -1698,7 +1825,8 @@
         "RldSpeed": "-50%",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Manifestation_Oil.png"
     },
     {
       "name": "Matrix Oil",
@@ -1713,7 +1841,8 @@
         "Spread": "+4",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Matrix_Oil.png"
     },
     {
       "name": "Micro Wing Oil",
@@ -1725,7 +1854,8 @@
         "AmmoExConsume": "+20%",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Micro_Wing_Oil.png"
     },
     {
       "name": "Modern Technology Oil",
@@ -1737,7 +1867,8 @@
         "AmmoExConsume": "+10%",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Modern_Technology_Oil.png"
     },
     {
       "name": "Mosquito Oil",
@@ -1750,7 +1881,8 @@
         "BltSpeed": "-30%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Mosquito_Oil.png"
     },
     {
       "name": "Multichamber Oil",
@@ -1763,7 +1895,8 @@
         "Spread": "+100%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Multichamber_Oil.png"
     },
     {
       "name": "Multishot Oil",
@@ -1776,7 +1909,8 @@
         "Spread": "+40%",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Multishot_Oil.png"
     },
     {
       "name": "Needleye Oil",
@@ -1788,7 +1922,8 @@
         "RPM": "-25%",
         "SellVal": "100",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Needleye_Oil.png"
     },
     {
       "name": "Nerf Oil",
@@ -1801,7 +1936,8 @@
         "BltDrop": "×5",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Nerf_Oil.png"
     },
     {
       "name": "No Look Oil",
@@ -1813,7 +1949,8 @@
         "AimDisabled": "✓",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/No_Look_Oil.png"
     },
     {
       "name": "No Need Oil",
@@ -1825,7 +1962,8 @@
         "LootChance": "-25%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/No_Need_Oil.png"
     },
     {
       "name": "Oil of Yin (DEMO)",
@@ -1834,7 +1972,8 @@
       "fields": {
         "GridSize": "1x1",
         "BuyVal": "Priceless"
-      }
+      },
+      "icon": "icons/oil/misc/oil_of_yin.png"
     },
     {
       "name": "Out of the Box Oil",
@@ -1846,7 +1985,8 @@
         "MaxDrb": "-15%",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Out_of_the_Box_Oil.png"
     },
     {
       "name": "Over Oil",
@@ -1859,7 +1999,8 @@
         "NoDrb": "✓",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Over_Oil.png"
     },
     {
       "name": "Overclock Oil",
@@ -1871,7 +2012,8 @@
         "AmmoExConsume": "+30%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Overclock_Oil.png"
     },
     {
       "name": "Overdose Oil",
@@ -1883,7 +2025,8 @@
         "MaxDrb": "-25%",
         "SellVal": "50",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Overdose_Oil.png"
     },
     {
       "name": "Parallel Mag Oil",
@@ -1896,7 +2039,8 @@
         "Spread": "+0.7",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Parallel_Mag_Oil.png"
     },
     {
       "name": "Peashooter Oil",
@@ -1908,7 +2052,8 @@
         "BltSize": "-100%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Peashooter_Oil.png"
     },
     {
       "name": "Penetration Oil",
@@ -1919,7 +2064,8 @@
         "BltPen": "+1",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Penetration_Oil.png"
     },
     {
       "name": "Perfect Bounce Oil",
@@ -1930,7 +2076,8 @@
         "BltBounces": "+1",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Perfect_Bounce_Oil.png"
     },
     {
       "name": "Perforate Oil",
@@ -1942,7 +2089,8 @@
         "NoOrgans": "X",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Perforate_Oil.png"
     },
     {
       "name": "Plinker Oil",
@@ -1954,7 +2102,8 @@
         "Spread": "-0.9",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Plinker_Oil.png"
     },
     {
       "name": "Plop Back Oil",
@@ -1966,7 +2115,8 @@
         "AmmoConsume": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Plop_Back_Oil.png"
     },
     {
       "name": "Pool Oil",
@@ -1978,7 +2128,8 @@
         "Speed": "-30%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Pool_Oil.png"
     },
     {
       "name": "Potato Oil",
@@ -1991,7 +2142,8 @@
         "NoDrb": "✓",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Potato_Oil.png"
     },
     {
       "name": "Potshot Oil",
@@ -2003,7 +2155,8 @@
         "AimDisabled": "✓",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Potshot_Oil.png"
     },
     {
       "name": "Puncher Oil",
@@ -2015,7 +2168,8 @@
         "Recoil": "+150%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Puncher_Oil.png"
     },
     {
       "name": "Puncture Oil",
@@ -2027,7 +2181,8 @@
         "NoOrgans": "X",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Puncture_Oil.png"
     },
     {
       "name": "Purse Gun Oil",
@@ -2039,7 +2194,8 @@
         "RldSpeed": "-30%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Purse_Gun_Oil.png"
     },
     {
       "name": "Rapid Internals Oil",
@@ -2051,7 +2207,8 @@
         "Dmg": "-15%",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Rapid_Internals_Oil.png"
     },
     {
       "name": "Ready Oil",
@@ -2063,7 +2220,8 @@
         "RPM": "-30%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Ready_Oil.png"
     },
     {
       "name": "Rebound Oil",
@@ -2075,7 +2233,8 @@
         "BltBounces": "+3",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Rebound_Oil.png"
     },
     {
       "name": "Recycle Oil",
@@ -2086,7 +2245,8 @@
         "AmmoConsume": "-15%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Recycle_Oil.png"
     },
     {
       "name": "Relax Oil",
@@ -2098,7 +2258,8 @@
         "BltSpeed": "-20%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Relax_Oil.png"
     },
     {
       "name": "Release Oil",
@@ -2111,7 +2272,8 @@
         "NoDrb": "✓",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Release_Oil.png"
     },
     {
       "name": "Reload Oil",
@@ -2122,7 +2284,8 @@
         "RldSpeed": "+40%",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Reload_Oil.png"
     },
     {
       "name": "Ricochet Oil",
@@ -2134,7 +2297,8 @@
         "Dmg": "-10%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Ricochet_Oil.png"
     },
     {
       "name": "Rigid System Oil",
@@ -2147,7 +2311,8 @@
         "NoDrb": "✓",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Rigid_System_Oil.png"
     },
     {
       "name": "Rigor Oil",
@@ -2160,7 +2325,8 @@
         "SellVal": "63",
         "BuyVal": "125",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Rigor_Oil.png"
     },
     {
       "name": "Robust Mechanics Oil",
@@ -2173,7 +2339,8 @@
         "RPM": "-25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Robust_Mechanics_Oil.png"
     },
     {
       "name": "Rookie Oil",
@@ -2185,7 +2352,8 @@
         "RldSpeed": "-75%",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Rookie_Oil.png"
     },
     {
       "name": "Rubber Oil",
@@ -2198,7 +2366,8 @@
         "NoDrb": "✓",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Rubber_Oil.png"
     },
     {
       "name": "Rush Job Oil",
@@ -2210,7 +2379,8 @@
         "AmmoExConsume": "+30%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Rush_Job_Oil.png"
     },
     {
       "name": "Safety Oil",
@@ -2222,7 +2392,8 @@
         "Dmg": "-8%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Safety_Oil.png"
     },
     {
       "name": "Saviour Oil",
@@ -2234,7 +2405,8 @@
         "LootChance": "-100%",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Saviour_Oil.png"
     },
     {
       "name": "Scatter Oil",
@@ -2247,7 +2419,8 @@
         "ProjecAmnt": "+100%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Scatter_Oil.png"
     },
     {
       "name": "Scramble Oil",
@@ -2259,7 +2432,8 @@
         "NoOrgans": "X",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Scramble_Oil.png"
     },
     {
       "name": "Seated Fit Oil",
@@ -2272,7 +2446,8 @@
         "NoDrb": "✓",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Seated_Fit_Oil.png"
     },
     {
       "name": "Seated Oil",
@@ -2284,7 +2459,8 @@
         "JumpPwr": "-15%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Seated_Oil.png"
     },
     {
       "name": "Sect Oil",
@@ -2296,7 +2472,8 @@
         "NoMoney": "✓",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Sect_Oil.png"
     },
     {
       "name": "Sender Oil",
@@ -2308,7 +2485,8 @@
         "RPM": "-25%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Sender_Oil.png"
     },
     {
       "name": "Sensible Oil",
@@ -2321,7 +2499,8 @@
         "NoDrb": "✓",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Sensible_Oil.png"
     },
     {
       "name": "Shaved Clip Oil",
@@ -2333,7 +2512,8 @@
         "MaxDrb": "-15%",
         "SellVal": "275",
         "SoldBy": "Kevin, Qiosk"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Shaved_Clip_Oil.png"
     },
     {
       "name": "Shellman Oil",
@@ -2345,7 +2525,8 @@
         "RldSpeed": "-25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Shellman_Oil.png"
     },
     {
       "name": "Sherlock Oil",
@@ -2357,7 +2538,8 @@
         "RPM": "-50%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Sherlock_Oil.png"
     },
     {
       "name": "Shower Oil",
@@ -2369,7 +2551,8 @@
         "BltDrop": "×10",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Shower_Oil.png"
     },
     {
       "name": "Shredder Oil",
@@ -2383,7 +2566,8 @@
         "NoOrgans": "X",
         "SellVal": "350",
         "SoldBy": "Kevin, Qiosk"
-      }
+      },
+      "icon": "icons/oil/damage/Shredder_Oil.png"
     },
     {
       "name": "Size Up Oil",
@@ -2395,7 +2579,8 @@
         "NoDrb": "✓",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Size_Up_Oil.png"
     },
     {
       "name": "Skip Oil",
@@ -2407,7 +2592,8 @@
         "LootChance": "-25%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Skip_Oil.png"
     },
     {
       "name": "Slick Oil",
@@ -2419,7 +2605,8 @@
         "JumpPwr": "-10%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Slick_Oil.png"
     },
     {
       "name": "Slippy Coating Oil",
@@ -2432,7 +2619,8 @@
         "NoDrb": "✓",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Slippy_Coating_Oil.png"
     },
     {
       "name": "Slotmachine Oil",
@@ -2444,7 +2632,8 @@
         "AmmoExConsume": "+20%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Slotmachine_Oil.png"
     },
     {
       "name": "Slow Punch Oil",
@@ -2456,7 +2645,8 @@
         "BltSpeed": "-50%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Slow_Punch_Oil.png"
     },
     {
       "name": "Smart Bullet Oil",
@@ -2468,7 +2658,8 @@
         "BltSpeed": "-60%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Smart_Bullet_Oil.png"
     },
     {
       "name": "Smash Oil",
@@ -2481,7 +2672,8 @@
         "NoDrb": "✓",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Smash_Oil.png"
     },
     {
       "name": "Soft Bullet Oil",
@@ -2494,7 +2686,8 @@
         "NoDrb": "✓",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Soft_Bullet_Oil.png"
     },
     {
       "name": "Solid Oil",
@@ -2507,7 +2700,8 @@
         "BltSize": "+50%",
         "SellVal": "175",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Solid_Oil.png"
     },
     {
       "name": "Spartan Oil",
@@ -2519,7 +2713,8 @@
         "LootChance": "-50%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Spartan_Oil.png"
     },
     {
       "name": "Speed Trade Oil",
@@ -2531,7 +2726,8 @@
         "RldSpeed": "+80%",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Speed_Trade_Oil.png"
     },
     {
       "name": "Spitter Oil",
@@ -2543,7 +2739,8 @@
         "Spread": "+1",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Spitter_Oil.png"
     },
     {
       "name": "Spread Oil",
@@ -2554,7 +2751,8 @@
         "Spread": "-0.5",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Spread_Oil.png"
     },
     {
       "name": "Stability Oil",
@@ -2566,7 +2764,8 @@
         "Dmg": "-10",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Stability_Oil.png"
     },
     {
       "name": "Stable Hip Oil",
@@ -2578,7 +2777,8 @@
         "AimDisabled": "✓",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Stable_Hip_Oil.png"
     },
     {
       "name": "Stationary Oil",
@@ -2592,7 +2792,8 @@
         "Recoil": "-85%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Stationary_Oil.png"
     },
     {
       "name": "Stiffy Fit Oil",
@@ -2605,7 +2806,8 @@
         "NoDrb": "✓",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Stiffy_Fit_Oil.png"
     },
     {
       "name": "Stoic Oil",
@@ -2617,7 +2819,8 @@
         "NoMoney": "✓",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Stoic_Oil.png"
     },
     {
       "name": "Suppressive Oil",
@@ -2631,7 +2834,8 @@
         "Spread": "+2.1",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Suppressive_Oil.png"
     },
     {
       "name": "Surgical Laser Oil",
@@ -2643,7 +2847,8 @@
         "Dmg": "-30%",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Surgical_Laser_Oil.png"
     },
     {
       "name": "Synchronicity Oil",
@@ -2655,7 +2860,8 @@
         "AmmoExConsume": "+25%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Synchronicity_Oil.png"
     },
     {
       "name": "Tactical Oil",
@@ -2667,7 +2873,8 @@
         "RldSpeed": "+110%",
         "SellVal": "325",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Tactical_Oil.png"
     },
     {
       "name": "Tandem Oil",
@@ -2680,7 +2887,8 @@
         "Spread": "+0.7",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Tandem_Oil.png"
     },
     {
       "name": "Task Oil",
@@ -2692,7 +2900,8 @@
         "RldSpeed": "+60%",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/effects/Task_Oil.png"
     },
     {
       "name": "Tech Support Oil",
@@ -2704,7 +2913,8 @@
         "RldSpeed": "+80%",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/mobility/Tech_Support_Oil.png"
     },
     {
       "name": "Tension Oil",
@@ -2716,7 +2926,8 @@
         "Speed": "-15%",
         "SellVal": "550",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Tension_Oil.png"
     },
     {
       "name": "Terminator Oil",
@@ -2728,7 +2939,8 @@
         "Speed": "-15%",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Terminator_Oil.png"
     },
     {
       "name": "Tetrus Oil",
@@ -2740,7 +2952,8 @@
         "RldSpeed": "-40%",
         "SellVal": "600",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Tetrus_Oil.png"
     },
     {
       "name": "Thorough Oil",
@@ -2752,7 +2965,8 @@
         "Speed": "-15%",
         "SellVal": "450",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Thorough_Oil.png"
     },
     {
       "name": "Tight Barrel Oil",
@@ -2764,7 +2978,8 @@
         "MaxDrb": "-10%",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Tight_Barrel_Oil.png"
     },
     {
       "name": "Tight Oil",
@@ -2777,7 +2992,8 @@
         "NoDrb": "✓",
         "SellVal": "200",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Tight_Oil.png"
     },
     {
       "name": "Too Much Oil",
@@ -2790,7 +3006,8 @@
         "SellVal": "450",
         "BuyVal": "900",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Too_Much_Oil.png"
     },
     {
       "name": "Translucent Oil (DEMO)",
@@ -2799,7 +3016,8 @@
       "fields": {
         "GridSize": "1x1",
         "BuyVal": "Priceless"
-      }
+      },
+      "icon": "icons/oil/misc/Translucent_Oil.png"
     },
     {
       "name": "Triple Oil (DEMO)",
@@ -2808,7 +3026,8 @@
       "fields": {
         "GridSize": "1x2",
         "BuyVal": "Priceless"
-      }
+      },
+      "icon": "icons/oil/misc/Triple_Oil.png"
     },
     {
       "name": "Trusty Old Oil",
@@ -2821,7 +3040,8 @@
         "NoDrb": "✓",
         "SellVal": "375",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Trusty_Old_Oil.png"
     },
     {
       "name": "Turbulence Oil",
@@ -2833,7 +3053,8 @@
         "NoOrgans": "X",
         "SellVal": "300",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Turbulence_Oil.png"
     },
     {
       "name": "Twice Oil",
@@ -2846,7 +3067,8 @@
         "Spread": "+0.7",
         "SellVal": "500",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Twice_Oil.png"
     },
     {
       "name": "Two Time Oil",
@@ -2860,7 +3082,8 @@
         "NoMoney": "X",
         "SellVal": "650",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/damage/Two_Time_Oil.png"
     },
     {
       "name": "Unlabeled Oil",
@@ -2870,7 +3093,8 @@
         "GridSize": "1×1",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/misc/Unlabeled_Oil.png"
     },
     {
       "name": "Untechnical Oil",
@@ -2882,7 +3106,8 @@
         "RldSpeed": "-25%",
         "SellVal": "150",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Untechnical_Oil.png"
     },
     {
       "name": "Vasectomy Oil",
@@ -2894,7 +3119,8 @@
         "LootChance": "-50%",
         "SellVal": "350",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Vasectomy_Oil.png"
     },
     {
       "name": "Vegan Oil",
@@ -2906,7 +3132,8 @@
         "NoOrgans": "X",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Vegan_Oil.png"
     },
     {
       "name": "Vegetable Oil",
@@ -2918,7 +3145,8 @@
         "NoOrgans": "X",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/handling/Vegetable_Oil.png"
     },
     {
       "name": "Velocity Oil",
@@ -2929,7 +3157,8 @@
         "BltSpeed": "+25%",
         "SellVal": "110",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Velocity_Oil.png"
     },
     {
       "name": "Walk Easy Oil",
@@ -2941,7 +3170,8 @@
         "Speed": "-10%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Walk_Easy_Oil.png"
     },
     {
       "name": "Waster Oil",
@@ -2953,7 +3183,8 @@
         "NoMoney": "X",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Waster_Oil.png"
     },
     {
       "name": "Whim Oil",
@@ -2965,7 +3196,8 @@
         "LootChance": "-25%",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Whim_Oil.png"
     },
     {
       "name": "Whos Counting Oil",
@@ -2977,7 +3209,8 @@
         "AimDisabled": "✓",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/economy/Whos_Counting_Oil.png"
     },
     {
       "name": "Wobble Oil",
@@ -2989,7 +3222,8 @@
         "Spread": "+1",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Wobble_Oil.png"
     },
     {
       "name": "Xanny Oil",
@@ -3002,7 +3236,8 @@
         "NoDrb": "✓",
         "SellVal": "250",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Xanny_Oil.png"
     },
     {
       "name": "Zero Fucks Oil",
@@ -3014,7 +3249,8 @@
         "LootChance": "-100%",
         "SellVal": "400",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/fire-rate/Zero_Fucks_Oil.png"
     },
     {
       "name": "Zooming Oil",
@@ -3026,7 +3262,8 @@
         "Spread": "+1",
         "SellVal": "225",
         "SoldBy": "Kevin"
-      }
+      },
+      "icon": "icons/oil/bullet/Zooming_Oil.png"
     }
   ]
 }

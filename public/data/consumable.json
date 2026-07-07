@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-07T11:06:28.555052+00:00",
+  "generated": "2026-07-07T11:38:45.346730+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -117,7 +117,8 @@
         "SubType": "Drug & Remedy",
         "SellVal": "90",
         "SoldBy": "Blond Magus, Qiosk"
-      }
+      },
+      "icon": "icons/consumable/drug-remedy/Admiral_White_Extra_Strong.png"
     },
     {
       "name": "Americano",
@@ -130,7 +131,8 @@
         "RmvFrost": "✔",
         "RmvPsn": "✔",
         "SellVal": "18"
-      }
+      },
+      "icon": "icons/consumable/beverage/Americano.png"
     },
     {
       "name": "Anti-Poison Gum",
@@ -142,7 +144,8 @@
         "SubType": "Drug & Remedy",
         "SellVal": "40",
         "SoldBy": "Blond Magus, Qiosk"
-      }
+      },
+      "icon": "icons/consumable/drug-remedy/Anti-Poison_Gum.png"
     },
     {
       "name": "Aspic",
@@ -153,7 +156,8 @@
         "SubType": "Food",
         "Heal": "15 health over 0.1 seconds",
         "SellVal": "45"
-      }
+      },
+      "icon": "icons/consumable/food/Aspic.png"
     },
     {
       "name": "Banana",
@@ -164,7 +168,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "10 Health over 10 seconds",
         "SellVal": "15"
-      }
+      },
+      "icon": "icons/consumable/food/Banana.png"
     },
     {
       "name": "Banana Bread",
@@ -175,7 +180,8 @@
         "SubType": "Food",
         "Heal": "30 Health over 10 seconds",
         "SellVal": "45"
-      }
+      },
+      "icon": "icons/consumable/food/Banana_Bread.png"
     },
     {
       "name": "Banana Sulfs",
@@ -186,7 +192,8 @@
         "SubType": "Food",
         "Heal": "20 health over 1 seconds",
         "SellVal": "10"
-      }
+      },
+      "icon": "icons/consumable/food/Banana_Sulfs.png"
     },
     {
       "name": "Bark Bread",
@@ -197,7 +204,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "10 health over 10 seconds",
         "SellVal": "25"
-      }
+      },
+      "icon": "icons/consumable/food/Bark_Bread.png"
     },
     {
       "name": "Beans",
@@ -208,7 +216,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "25 health over 10 seconds",
         "SellVal": "60"
-      }
+      },
+      "icon": "icons/consumable/food/Beans.png"
     },
     {
       "name": "Beef Jerky",
@@ -220,7 +229,8 @@
         "Heal": "10 health over 10 seconds",
         "SellVal": "30",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/food/Beef_Jerky.png"
     },
     {
       "name": "Berries",
@@ -232,7 +242,8 @@
         "Heal": "10 health over 10 seconds",
         "SellVal": "20",
         "SoldBy": "Jaques De Fector"
-      }
+      },
+      "icon": "icons/consumable/food/Berries.png"
     },
     {
       "name": "Berry Jam",
@@ -244,7 +255,8 @@
         "Heal": "15 health over 1 seconds",
         "SellVal": "45",
         "SoldBy": "Jaques De Fector"
-      }
+      },
+      "icon": "icons/consumable/food/Berry_Jam.png"
     },
     {
       "name": "Berry Jam (Unsweetened)",
@@ -255,7 +267,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "10 Health over 2.5 seconds",
         "SellVal": "35"
-      }
+      },
+      "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png"
     },
     {
       "name": "Biscuits And Gravy",
@@ -267,7 +280,8 @@
         "Heal": "25 health over 10 seconds",
         "SellVal": "65",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/food/Biscuits_And_Gravy.png"
     },
     {
       "name": "Black Pepper",
@@ -279,7 +293,8 @@
         "SellVal": "15",
         "Heal": "1 health over 10 seconds",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/food/Black_Pepper.png"
     },
     {
       "name": "Blood",
@@ -290,7 +305,8 @@
         "SubType": "Ingredient",
         "Heal": "5 health over 10 seconds",
         "SellVal": "30"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Blood.png"
     },
     {
       "name": "Blood of the Earth Mother",
@@ -301,7 +317,8 @@
         "SubType": "Amulet Recharge",
         "SellVal": "500",
         "SoldBy": "Rat Queen"
-      }
+      },
+      "icon": "icons/consumable/amulet-recharge/Blood_of_the_Earth_Mother.png"
     },
     {
       "name": "Boba Tea",
@@ -315,7 +332,8 @@
         "RmvPsn": "✓",
         "SellVal": "30",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/beverage/Boba_Tea.png"
     },
     {
       "name": "Bottled Caviar",
@@ -327,7 +345,8 @@
         "Heal": "25 health over 10 seconds",
         "SellVal": "60",
         "SoldBy": "Bill"
-      }
+      },
+      "icon": "icons/consumable/food/Bottled_Caviar.png"
     },
     {
       "name": "Bread",
@@ -338,7 +357,8 @@
         "SubType": "Food, Ingredient",
         "SellVal": "45",
         "Heal": "15 health over 10 seconds"
-      }
+      },
+      "icon": "icons/consumable/food/Bread.png"
     },
     {
       "name": "Broth",
@@ -349,7 +369,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "10 health over 10 seconds",
         "SellVal": "30"
-      }
+      },
+      "icon": "icons/consumable/food/Broth.png"
     },
     {
       "name": "Buddy Sandwich",
@@ -360,7 +381,8 @@
         "SubType": "Food",
         "Heal": "15 health over 5 seconds",
         "SellVal": "500"
-      }
+      },
+      "icon": "icons/consumable/food/Buddy_Sandwich.png"
     },
     {
       "name": "Butter",
@@ -372,7 +394,8 @@
         "Heal": "15 health over 10 seconds",
         "SellVal": "30",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/food/Butter.png"
     },
     {
       "name": "Butter Sandwich",
@@ -383,7 +406,8 @@
         "SubType": "Food, Ingredient",
         "SellVal": "30",
         "Heal": "15 health over 5 seconds"
-      }
+      },
+      "icon": "icons/consumable/food/Butter_Sandwich.png"
     },
     {
       "name": "Buttermilk",
@@ -395,7 +419,8 @@
         "SellVal": "25",
         "Heal": "15 health over 10 seconds",
         "MoveAccuracy": "+50% for 120 seconds"
-      }
+      },
+      "icon": "icons/consumable/milk/Buttermilk.png"
     },
     {
       "name": "Cacao",
@@ -406,7 +431,8 @@
         "GridSize": "1×1",
         "Heal": "5 health over 10 seconds",
         "SellVal": "20"
-      }
+      },
+      "icon": "icons/consumable/food/Cacao.png"
     },
     {
       "name": "Cactus",
@@ -418,7 +444,8 @@
         "Heal": "3 Health over 10 seconds",
         "SellVal": "20",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/food/Cactus.png"
     },
     {
       "name": "Candy Cane",
@@ -429,7 +456,8 @@
         "SubType": "Sweets, Food",
         "SellVal": "45",
         "Heal": "20 health over 0.1 seconds"
-      }
+      },
+      "icon": "icons/consumable/dessert/Candy_Cane.png"
     },
     {
       "name": "Cappucino",
@@ -443,7 +471,8 @@
         "RmvFrost": "✓",
         "SellVal": "18",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/beverage/Cappucino.png"
     },
     {
       "name": "Cevapi",
@@ -456,7 +485,8 @@
         "BuyVal": "220",
         "SoldBy": "?",
         "Heal": "25 health over 10 seconds"
-      }
+      },
+      "icon": "icons/consumable/food/Cevapi.png"
     },
     {
       "name": "Cheeseburger",
@@ -468,7 +498,8 @@
         "Heal": "+45 health over 10 seconds",
         "SellVal": "125",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/food/Cheeseburger.png"
     },
     {
       "name": "Chocolate Ball",
@@ -480,7 +511,8 @@
         "Heal": "+20 health over 10 seconds",
         "SellVal": "43",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/dessert/Chocolate_Ball.png"
     },
     {
       "name": "Delicacies of the Forest",
@@ -493,7 +525,8 @@
         "Recipes": "205",
         "SellVal": "7500",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/manual/Delicacies_of_the_Forest.png"
     },
     {
       "name": "Double Cheeseburger",
@@ -503,7 +536,8 @@
         "GridSize": "1×1",
         "SellVal": "300",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Double_Cheeseburger.png"
     },
     {
       "name": "Eating as Royals",
@@ -516,7 +550,8 @@
         "Recipes": "237",
         "SellVal": "10000",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/manual/Eating_as_Royals.png"
     },
     {
       "name": "Egg Toddy",
@@ -529,7 +564,8 @@
         "RmvPsn": "✓",
         "Charisma": "+30 for 240 seconds",
         "SellVal": "90"
-      }
+      },
+      "icon": "icons/consumable/beverage/Egg_Toddy.png"
     },
     {
       "name": "Energy Gum",
@@ -542,7 +578,8 @@
         "ElecRst": "+50 for 90 seconds",
         "SellVal": "40",
         "SubType": "Drug & Remedy"
-      }
+      },
+      "icon": "icons/consumable/drug-remedy/Energy_Gum.png"
     },
     {
       "name": "Escargot",
@@ -554,7 +591,8 @@
         "Heal": "+30 health over 2.5 seconds",
         "SellVal": "150",
         "SoldBy": "Stiffleg, Qiosk"
-      }
+      },
+      "icon": "icons/consumable/food/Escargot.png"
     },
     {
       "name": "Fish And Chips",
@@ -566,7 +604,8 @@
         "Heal": "50 health over 5 seconds",
         "SellVal": "125",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/consumable/food/Fish_And_Chips.png"
     },
     {
       "name": "Food for Desert Survival",
@@ -579,7 +618,8 @@
         "Recipes": "120",
         "SellVal": "7500",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/manual/Food_for_Desert_Survival.png"
     },
     {
       "name": "French Toast",
@@ -590,7 +630,8 @@
         "SubType": "Food",
         "Heal": "+15 Health over 5 seconds",
         "SellVal": "75"
-      }
+      },
+      "icon": "icons/consumable/food/French_Toast.png"
     },
     {
       "name": "Fried Mushroom",
@@ -601,7 +642,8 @@
         "SubType": "Food",
         "Heal": "+15 health over 4 seconds",
         "SellVal": "65"
-      }
+      },
+      "icon": "icons/consumable/food/Fried_Mushroom.png"
     },
     {
       "name": "From the Cellar",
@@ -613,7 +655,8 @@
         "Theme": "Dungeon",
         "Recipes": "462",
         "SellVal": "7500"
-      }
+      },
+      "icon": "icons/consumable/manual/From_the_Cellar.png"
     },
     {
       "name": "GABBA FOODMAKE",
@@ -625,7 +668,8 @@
         "Theme": "Caves, Goblins",
         "Recipes": "301",
         "SellVal": "5000"
-      }
+      },
+      "icon": "icons/consumable/manual/GABBA_FOODMAKE.png"
     },
     {
       "name": "Gonster",
@@ -638,7 +682,8 @@
         "RmvFire": "✓",
         "RmvPsn": "✓",
         "SellVal": "20"
-      }
+      },
+      "icon": "icons/consumable/beverage/Gonster.png"
     },
     {
       "name": "Graved Salmon",
@@ -650,7 +695,8 @@
         "Heal": "20 health over 0.1 seconds",
         "SellVal": "45",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/food/Graved_Salmon.png"
     },
     {
       "name": "Gravy",
@@ -661,7 +707,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "20 health over 10 seconds",
         "SellVal": "30"
-      }
+      },
+      "icon": "icons/consumable/food/Gravy.png"
     },
     {
       "name": "Green Tea",
@@ -676,7 +723,8 @@
         "MeleeDmg": "+150% for 60 seconds",
         "SellVal": "40",
         "SoldBy": "Qiosk"
-      }
+      },
+      "icon": "icons/consumable/beverage/Green_Tea.png"
     },
     {
       "name": "Green Tea Gum",
@@ -688,7 +736,8 @@
         "MeleeDmg": "+120% for 120 seconds",
         "SubType": "Drug & Remedy",
         "SellVal": "40"
-      }
+      },
+      "icon": "icons/consumable/drug-remedy/Green_Tea_Gum.png"
     },
     {
       "name": "Grilled Poultry",
@@ -699,7 +748,8 @@
         "SubType": "Food",
         "Heal": "100 health over 5 seconds",
         "SellVal": "200"
-      }
+      },
+      "icon": "icons/consumable/food/Grilled_Poultry.png"
     },
     {
       "name": "Guild Approved Cuisine",
@@ -711,7 +761,8 @@
         "Theme": "Black Guild",
         "Recipes": "371",
         "SellVal": "7500"
-      }
+      },
+      "icon": "icons/consumable/manual/Guild_Approved_Cuisine.png"
     },
     {
       "name": "Haggis",
@@ -722,7 +773,8 @@
         "SubType": "Food",
         "Heal": "+20 health over 10 seconds",
         "SellVal": "15"
-      }
+      },
+      "icon": "icons/consumable/food/Haggis.png"
     },
     {
       "name": "Herbal Tea",
@@ -736,7 +788,8 @@
         "RmvFire": "✓",
         "RmvPsn": "✓",
         "SellVal": "35"
-      }
+      },
+      "icon": "icons/consumable/beverage/Herbal_Tea.png"
     },
     {
       "name": "Herbs",
@@ -747,7 +800,8 @@
         "SubType": "Ingredient",
         "Heal": "3 health over 2.5 seconds",
         "SellVal": "10"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Herbs.png"
     },
     {
       "name": "Holy Toast",
@@ -758,7 +812,8 @@
         "SubType": "Food, Ingredient",
         "Coyote": "90 seconds",
         "SellVal": "125"
-      }
+      },
+      "icon": "icons/consumable/food/Holy_Toast.png"
     },
     {
       "name": "Hot Pot",
@@ -769,7 +824,8 @@
         "SubType": "Food",
         "Heal": "50 health over 4 seconds",
         "SellVal": "150"
-      }
+      },
+      "icon": "icons/consumable/food/Hot_Pot.png"
     },
     {
       "name": "Hot Sauce",
@@ -781,7 +837,8 @@
         "Heal": "5 health over 2.5 seconds",
         "FrostRst": "+0.5 for 240 seconds",
         "SellVal": "90"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Hot_Sauce.png"
     },
     {
       "name": "Jansson's Temptation",
@@ -794,7 +851,8 @@
         "SellVal": "100",
         "BuyVal": "200",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/food/Jansson's_Temptation.png"
     },
     {
       "name": "Julmust",
@@ -807,7 +865,8 @@
         "CritADS": "+100% for 15 seconds",
         "SellVal": "45",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/beverage/Julmust.png"
     },
     {
       "name": "Karl-Oskar",
@@ -817,7 +876,8 @@
         "GridSize": "1×1",
         "SellVal": "5",
         "SubType": "Food, Mushroom, Ingredient"
-      }
+      },
+      "icon": "icons/consumable/food/Karl-Oskar.png"
     },
     {
       "name": "Kombucha",
@@ -831,7 +891,8 @@
         "Coyote": "+90 seconds",
         "RmvFire": "✓",
         "RmvPsn": "✓"
-      }
+      },
+      "icon": "icons/consumable/beverage/Kombucha.png"
     },
     {
       "name": "Latte",
@@ -844,7 +905,8 @@
         "RmvFrost": "✓",
         "RmvPsn": "✓",
         "SellVal": "18"
-      }
+      },
+      "icon": "icons/consumable/beverage/Latte.png"
     },
     {
       "name": "Liquor",
@@ -857,7 +919,8 @@
         "RmvPsn": "✓",
         "Charisma": "+5 over 60 seconds",
         "SellVal": "30"
-      }
+      },
+      "icon": "icons/consumable/beverage/Liquor.png"
     },
     {
       "name": "Mac'n'Cheese",
@@ -869,7 +932,8 @@
         "SellVal": "45",
         "SoldBy": "Rat Queen",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Mac'n'Cheese.png"
     },
     {
       "name": "Meringue",
@@ -879,7 +943,8 @@
         "GridSize": "1×1",
         "SellVal": "20",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Meringue.png"
     },
     {
       "name": "Mineral Water",
@@ -893,7 +958,8 @@
         "RmvPsn": "✓",
         "SellVal": "60",
         "SubType": "Water, Ingredient"
-      }
+      },
+      "icon": "icons/consumable/water/Mineral_Water.png"
     },
     {
       "name": "Mochi",
@@ -903,7 +969,8 @@
         "GridSize": "1×1",
         "SubType": "Sweets, Food",
         "SellVal": "33"
-      }
+      },
+      "icon": "icons/consumable/dessert/Mochi.png"
     },
     {
       "name": "Nigiri",
@@ -914,7 +981,8 @@
         "SellVal": "105",
         "SoldBy": "Qiosk, Bill",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Nigiri.png"
     },
     {
       "name": "Nuggets",
@@ -925,7 +993,8 @@
         "SellVal": "40",
         "SubType": "Food",
         "Heal": "25 health over 10 seconds"
-      }
+      },
+      "icon": "icons/consumable/food/Nuggets.png"
     },
     {
       "name": "Oats",
@@ -936,7 +1005,8 @@
         "Heal": "+10 health over 3 seconds",
         "SellVal": "30",
         "SubType": "Food, Ingredient"
-      }
+      },
+      "icon": "icons/consumable/food/Oats.png"
     },
     {
       "name": "Omelette",
@@ -948,7 +1018,8 @@
         "SellVal": "25",
         "SoldBy": "Stiffleg",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Omelette.png"
     },
     {
       "name": "Onigiri",
@@ -960,7 +1031,8 @@
         "SellVal": "105",
         "SoldBy": "Stiffleg, Qiosk",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Onigiri.png"
     },
     {
       "name": "Peanutbutter Jelly Sandwich",
@@ -971,7 +1043,8 @@
         "SubType": "Food",
         "Heal": "+35 health over 5 seconds",
         "SellVal": "65"
-      }
+      },
+      "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png"
     },
     {
       "name": "Pickled Herring Platter",
@@ -982,7 +1055,8 @@
         "SubType": "Food",
         "Heal": "20 health over 0.1 second",
         "SellVal": "45"
-      }
+      },
+      "icon": "icons/consumable/food/Pickled_Herring_Platter.png"
     },
     {
       "name": "Pilk",
@@ -995,7 +1069,8 @@
         "RmvFire": "✓",
         "ExtraJumps": "+3 for 30 seconds",
         "SellVal": "200"
-      }
+      },
+      "icon": "icons/consumable/beverage/Pilk.png"
     },
     {
       "name": "Pizza",
@@ -1009,7 +1084,8 @@
         "Speed": "-10% for 15 seconds",
         "SellVal": "200",
         "SoldBy": "Bill"
-      }
+      },
+      "icon": "icons/consumable/food/Pizza.png"
     },
     {
       "name": "Potato",
@@ -1020,7 +1096,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "5 health over 3 seconds",
         "SellVal": "30"
-      }
+      },
+      "icon": "icons/consumable/food/Potato.png"
     },
     {
       "name": "Potato Salad",
@@ -1031,7 +1108,8 @@
         "SubType": "Food, Ingredient",
         "SellVal": "45",
         "Heal": "15 health over 0.1 seconds"
-      }
+      },
+      "icon": "icons/consumable/food/Potato_Salad.png"
     },
     {
       "name": "Poutine",
@@ -1043,7 +1121,8 @@
         "Heal": "+35 health over 5 seconds",
         "SellVal": "113",
         "BuyVal": "230"
-      }
+      },
+      "icon": "icons/consumable/food/Poutine.png"
     },
     {
       "name": "Pølse",
@@ -1055,7 +1134,8 @@
         "Heal": "15 health over 3 seconds",
         "SellVal": "25",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/food/Pølse.png"
     },
     {
       "name": "Raclette",
@@ -1066,7 +1146,8 @@
         "SubType": "Food",
         "Heal": "50 health over 4 seconds",
         "SellVal": "150"
-      }
+      },
+      "icon": "icons/consumable/food/Raclette.png"
     },
     {
       "name": "Ramen",
@@ -1078,7 +1159,8 @@
         "FrostRst": "+0.5 for 60 seconds",
         "SellVal": "75",
         "SubType": "Food"
-      }
+      },
+      "icon": "icons/consumable/food/Ramen.png"
     },
     {
       "name": "Rhubarb",
@@ -1089,7 +1171,8 @@
         "SubType": "Ingredient",
         "Heal": "6 health over 10 seconds",
         "SellVal": "20"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Rhubarb.png"
     },
     {
       "name": "Rhubarb Porridge",
@@ -1100,7 +1183,8 @@
         "SubType": "Food",
         "Heal": "25 health over 4 seconds",
         "SellVal": "10"
-      }
+      },
+      "icon": "icons/consumable/food/Rhubarb_Porridge.png"
     },
     {
       "name": "Rice",
@@ -1112,7 +1196,8 @@
         "Heal": "5 health over 5 seconds",
         "Speed": "-50% for 5 seconds",
         "SellVal": "13"
-      }
+      },
+      "icon": "icons/consumable/food/Rice.png"
     },
     {
       "name": "Risalamande",
@@ -1123,7 +1208,8 @@
         "SubType": "Dessert, Food",
         "Heal": "25 health over 5 seconds",
         "SellVal": "45"
-      }
+      },
+      "icon": "icons/consumable/dessert/Risalamande.png"
     },
     {
       "name": "Salt",
@@ -1135,7 +1221,8 @@
         "Heal": "+1 health over 2 seconds",
         "SellVal": "5",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Salt.png"
     },
     {
       "name": "Sashimi",
@@ -1146,7 +1233,8 @@
         "SubType": "Food, Ingredient",
         "Heal": "45 health over 4 seconds",
         "SellVal": "110"
-      }
+      },
+      "icon": "icons/consumable/food/Sashimi.png"
     },
     {
       "name": "Shav'Wani Delights",
@@ -1158,7 +1246,8 @@
         "Theme": "Shav'Wa",
         "Recipes": "169",
         "SellVal": "7500"
-      }
+      },
+      "icon": "icons/consumable/manual/Shav'Wani_Delights.png"
     },
     {
       "name": "Solution",
@@ -1170,7 +1259,8 @@
         "Heal": "2.5 health over 2.5 seconds",
         "SellVal": "20",
         "SoldBy": "Ralphie, Grossberg"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Solution.png"
     },
     {
       "name": "Stout",
@@ -1183,7 +1273,8 @@
         "Heal": "15 health over 10 seconds",
         "RmvPsn": "✓",
         "RmvFire": "✓"
-      }
+      },
+      "icon": "icons/consumable/beverage/Stout.png"
     },
     {
       "name": "Sugar",
@@ -1195,7 +1286,8 @@
         "Heal": "10 health over 10 seconds",
         "SellVal": "15",
         "SoldBy": "Grossberg"
-      }
+      },
+      "icon": "icons/consumable/ingredient/Sugar.png"
     },
     {
       "name": "Sulf Cola",
@@ -1209,7 +1301,8 @@
         "RmvPsn": "✓",
         "ExtraJumps": "+1 for 20 seconds",
         "SellVal": "150"
-      }
+      },
+      "icon": "icons/consumable/beverage/Sulf_Cola.png"
     },
     {
       "name": "Surstromming",
@@ -1220,7 +1313,8 @@
         "SubType": "Food",
         "Heal": "50 health over 50 seconds",
         "SellVal": "175"
-      }
+      },
+      "icon": "icons/consumable/food/Surstromming.png"
     },
     {
       "name": "Tastes from the Sewers™",
@@ -1233,7 +1327,8 @@
         "Recipes": "126",
         "SellVal": "7500",
         "SoldBy": "Stiffleg"
-      }
+      },
+      "icon": "icons/consumable/manual/Tastes_from_the_Sewers™.png"
     },
     {
       "name": "The Chequered Cookbook",
@@ -1245,7 +1340,8 @@
         "Theme": "Town",
         "Recipes": "43",
         "SellVal": "15000"
-      }
+      },
+      "icon": "icons/consumable/manual/The_Chequered_Cookbook.png"
     },
     {
       "name": "Unagi",
@@ -1257,7 +1353,8 @@
         "Heal": "60 health over 10 seconds",
         "ElecRst": "+10 for 60 seconds",
         "SellVal": "200"
-      }
+      },
+      "icon": "icons/consumable/food/Unagi.png"
     },
     {
       "name": "Whole Milk",
@@ -1270,7 +1367,8 @@
         "RmvFire": "✓",
         "MoveAccuracy": "+50% over 90 seconds",
         "SellVal": "20"
-      }
+      },
+      "icon": "icons/consumable/milk/Whole_Milk.png"
     }
   ]
 }
