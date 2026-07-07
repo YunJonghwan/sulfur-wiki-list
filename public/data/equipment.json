@@ -1,6 +1,6 @@
 {
   "kind": "equipment",
-  "generated": "2026-07-07T12:02:09.244641+00:00",
+  "generated": "2026-07-07T12:17:53.412999+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -169,17 +169,21 @@
     {
       "key": "type",
       "label": "Type",
+      "multi": false,
       "values": [
         {
           "value": "Chestwear",
+          "label": "Chestwear",
           "count": 37
         },
         {
           "value": "Headwear",
+          "label": "Headwear",
           "count": 37
         },
         {
           "value": "Footwear",
+          "label": "Footwear",
           "count": 24
         }
       ]

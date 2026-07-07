@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-07T12:02:09.244641+00:00",
+  "generated": "2026-07-07T12:17:53.412999+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -65,37 +65,46 @@
     {
       "key": "class",
       "label": "Weapon Type",
+      "multi": false,
       "values": [
         {
           "value": "Pistol",
+          "label": "Pistol",
           "count": 12
         },
         {
           "value": "Revolver",
+          "label": "Revolver",
           "count": 5
         },
         {
           "value": "Shotgun",
+          "label": "Shotgun",
           "count": 7
         },
         {
           "value": "Submachine Gun",
+          "label": "Submachine Gun",
           "count": 9
         },
         {
           "value": "Assault Rifle",
+          "label": "Assault Rifle",
           "count": 6
         },
         {
           "value": "Light Machine Gun",
+          "label": "Light Machine Gun",
           "count": 5
         },
         {
           "value": "Rifle",
+          "label": "Rifle",
           "count": 4
         },
         {
           "value": "Sniper",
+          "label": "Sniper",
           "count": 5
         }
       ]
@@ -103,29 +112,36 @@
     {
       "key": "ammo",
       "label": "Ammunition",
+      "multi": false,
       "values": [
         {
           "value": "9mm",
+          "label": "9mm",
           "count": 16
         },
         {
           "value": "5.56mm",
+          "label": "5.56mm",
           "count": 10
         },
         {
           "value": "7.62mm",
+          "label": "7.62mm",
           "count": 11
         },
         {
           "value": ".50 BMG",
+          "label": ".50 BMG",
           "count": 4
         },
         {
           "value": "12Ga",
+          "label": "12Ga",
           "count": 6
         },
         {
           "value": "Energy Cell",
+          "label": "Energy Cell",
           "count": 6
         }
       ]

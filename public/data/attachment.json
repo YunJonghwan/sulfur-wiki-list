@@ -1,6 +1,6 @@
 {
   "kind": "attachment",
-  "generated": "2026-07-07T12:02:09.244641+00:00",
+  "generated": "2026-07-07T12:17:53.412999+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -81,25 +81,31 @@
     {
       "key": "type",
       "label": "Type",
+      "multi": false,
       "values": [
         {
           "value": "Laser Sight",
+          "label": "Laser Sight",
           "count": 15
         },
         {
           "value": "Muzzle Attachment",
+          "label": "Muzzle Attachment",
           "count": 14
         },
         {
           "value": "Sight",
+          "label": "Sight",
           "count": 7
         },
         {
           "value": "Chamber Attachment",
+          "label": "Chamber Attachment",
           "count": 2
         },
         {
           "value": "Attachment",
+          "label": "Attachment",
           "count": 1
         }
       ]
