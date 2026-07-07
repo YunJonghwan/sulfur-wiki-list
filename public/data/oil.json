@@ -1,6 +1,6 @@
 {
   "kind": "oil",
-  "generated": "2026-07-07T12:45:54.619104+00:00",
+  "generated": "2026-07-07T12:53:40.705774+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -253,6 +253,33 @@
           "count": 31
         }
       ]
+    },
+    {
+      "key": "composition",
+      "label": "Composition",
+      "multi": false,
+      "values": [
+        {
+          "value": "buff",
+          "label": "Buff",
+          "count": 18
+        },
+        {
+          "value": "buff+constraint",
+          "label": "Buff + Constraint",
+          "count": 39
+        },
+        {
+          "value": "buff+debuff",
+          "label": "Buff + Debuff",
+          "count": 177
+        },
+        {
+          "value": "buff+debuff+constraint",
+          "label": "Buff + Debuff + Constraint",
+          "count": 3
+        }
+      ]
     }
   ],
   "items": [
@@ -264,7 +291,8 @@
         "ability": [
           "Recoil",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -282,7 +310,8 @@
       "groups": {
         "ability": [
           "Dmg"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -300,7 +329,8 @@
         "ability": [
           "CritChance",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -320,7 +350,8 @@
           "Dmg",
           "RldSpeed",
           "Drag"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -340,7 +371,8 @@
         "ability": [
           "Spread",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -359,7 +391,8 @@
         "ability": [
           "BltSpeed",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -378,7 +411,8 @@
         "ability": [
           "Dmg",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -397,7 +431,8 @@
         "ability": [
           "CritChance",
           "BltSize"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -416,7 +451,8 @@
         "ability": [
           "Spread",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -435,7 +471,8 @@
         "ability": [
           "Dmg",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -454,7 +491,8 @@
         "ability": [
           "BltSpeed",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -472,7 +510,8 @@
       "groups": {
         "ability": [
           "RPM"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1x1",
@@ -490,7 +529,8 @@
         "ability": [
           "CritChance",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -509,7 +549,8 @@
         "ability": [
           "BltPen",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -528,7 +569,8 @@
         "ability": [
           "BltBounces",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×2",
@@ -547,7 +589,8 @@
         "ability": [
           "RPM",
           "BltSize"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -567,7 +610,8 @@
           "Dmg",
           "BltSpeed",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -588,7 +632,8 @@
           "BltSize",
           "NoMoney",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -605,7 +650,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bigger_Bullet_Oil_%28DEMO%29",
       "image": "Bigger bullet oil.png",
       "groups": {
-        "ability": []
+        "ability": [],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1x1",
@@ -622,7 +668,8 @@
           "BltSize",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -644,7 +691,8 @@
           "Spread",
           "ProjecAmnt",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -666,7 +714,8 @@
         "ability": [
           "CritChance",
           "Spread"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -685,7 +734,8 @@
         "ability": [
           "RPM",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -704,7 +754,8 @@
         "ability": [
           "Dmg",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -725,7 +776,8 @@
           "Spread",
           "ProjecAmnt",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -749,7 +801,8 @@
           "Recoil",
           "ProjecAmnt",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+debuff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -773,7 +826,8 @@
           "BltBounces",
           "BltBounciness",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -794,7 +848,8 @@
         "ability": [
           "Spread",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -813,7 +868,8 @@
         "ability": [
           "Recoil",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -832,7 +888,8 @@
         "ability": [
           "Dmg",
           "Spread"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -851,7 +908,8 @@
         "ability": [
           "AmmoConsume",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -870,7 +928,8 @@
         "ability": [
           "BltPen",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -889,7 +948,8 @@
         "ability": [
           "Spread",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -908,7 +968,8 @@
         "ability": [
           "RPM",
           "Spread"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -930,7 +991,8 @@
           "Recoil",
           "ProjecAmnt",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -952,7 +1014,8 @@
         "ability": [
           "Recoil",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -971,7 +1034,8 @@
         "ability": [
           "Recoil",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -990,7 +1054,8 @@
         "ability": [
           "Dmg",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1011,7 +1076,8 @@
           "Spread",
           "BltSize",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1032,7 +1098,8 @@
           "Dmg",
           "BltSize",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1053,7 +1120,8 @@
           "BltSize",
           "AmmoExConsume",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1074,7 +1142,8 @@
         "ability": [
           "Recoil",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1093,7 +1162,8 @@
         "ability": [
           "Dmg",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1114,7 +1184,8 @@
           "Recoil",
           "RldSpeed",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1135,7 +1206,8 @@
         "ability": [
           "CritChance",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×2",
@@ -1155,7 +1227,8 @@
           "BltSize",
           "LootChance",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1175,7 +1248,8 @@
         "ability": [
           "Dmg",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1194,7 +1268,8 @@
         "ability": [
           "Recoil",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1212,7 +1287,8 @@
       "groups": {
         "ability": [
           "CritChance"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1230,7 +1306,8 @@
         "ability": [
           "Spread",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1248,7 +1325,8 @@
       "groups": {
         "ability": [
           "Dmg"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1266,7 +1344,8 @@
         "ability": [
           "BltSpeed",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1285,7 +1364,8 @@
         "ability": [
           "Spread",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1304,7 +1384,8 @@
         "ability": [
           "RPM",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1324,7 +1405,8 @@
           "MaxDrb",
           "JumpPwr",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1345,7 +1427,8 @@
           "Dmg",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1365,7 +1448,8 @@
         "ability": [
           "Recoil",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1385,7 +1469,8 @@
         "ability": [
           "Dmg",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1404,7 +1489,8 @@
         "ability": [
           "Dmg",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1426,7 +1512,8 @@
           "Spread",
           "BltSize",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1447,7 +1534,8 @@
         "ability": [
           "RPM",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1466,7 +1554,8 @@
         "ability": [
           "RPM",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1485,7 +1574,8 @@
         "ability": [
           "RPM",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1506,7 +1596,8 @@
           "Spread",
           "ProjecAmnt",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1527,7 +1618,8 @@
         "ability": [
           "Dmg",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1546,7 +1638,8 @@
         "ability": [
           "Dmg",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1565,7 +1658,8 @@
         "ability": [
           "Recoil",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1584,7 +1678,8 @@
         "ability": [
           "Recoil",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1608,7 +1703,8 @@
           "ProjecAmnt",
           "BltDrop",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1633,7 +1729,8 @@
         "ability": [
           "Spread",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1652,7 +1749,8 @@
         "ability": [
           "Dmg",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1671,7 +1769,8 @@
         "ability": [
           "RldSpeed",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1690,7 +1789,8 @@
         "ability": [
           "BltPen",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1709,7 +1809,8 @@
         "ability": [
           "BltSpeed",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1729,7 +1830,8 @@
           "MaxDrb",
           "AimDisabled",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1749,7 +1851,8 @@
         "ability": [
           "RldSpeed",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1768,7 +1871,8 @@
         "ability": [
           "Dmg",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1787,7 +1891,8 @@
         "ability": [
           "Dmg",
           "Spread"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1807,7 +1912,8 @@
           "Dmg",
           "BltSize",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1828,7 +1934,8 @@
           "BltSize",
           "JumpPwr",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1848,7 +1955,8 @@
         "ability": [
           "Spread",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1867,7 +1975,8 @@
         "ability": [
           "AmmoConsume",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1886,7 +1995,8 @@
         "ability": [
           "RPM",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1905,7 +2015,8 @@
         "ability": [
           "Dmg",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1924,7 +2035,8 @@
         "ability": [
           "Dmg",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1943,7 +2055,8 @@
         "ability": [
           "Dmg",
           "CritChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1963,7 +2076,8 @@
           "RldSpeed",
           "BltSize",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1984,7 +2098,8 @@
           "Dmg",
           "Spread",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2005,7 +2120,8 @@
           "BltSize",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2025,7 +2141,8 @@
         "ability": [
           "Dmg",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2045,7 +2162,8 @@
           "Dmg",
           "BltSpeed",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2065,7 +2183,8 @@
         "ability": [
           "Dmg",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2084,7 +2203,8 @@
         "ability": [
           "RldSpeed",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2103,7 +2223,8 @@
         "ability": [
           "CritChance",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2122,7 +2243,8 @@
         "ability": [
           "BltPen",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2142,7 +2264,8 @@
           "Dmg",
           "BltSize",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2162,7 +2285,8 @@
         "ability": [
           "AmmoConsume",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2182,7 +2306,8 @@
           "MaxDrb",
           "Speed",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2202,7 +2327,8 @@
         "ability": [
           "BltSpeed",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2221,7 +2347,8 @@
         "ability": [
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2240,7 +2367,8 @@
         "ability": [
           "Dmg",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2259,7 +2387,8 @@
         "ability": [
           "Spread",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2278,7 +2407,8 @@
         "ability": [
           "BltBounces",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2297,7 +2427,8 @@
         "ability": [
           "CritChance",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2316,7 +2447,8 @@
         "ability": [
           "Dmg",
           "CritChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2336,7 +2468,8 @@
           "Dmg",
           "BltSpeed",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2356,7 +2489,8 @@
         "ability": [
           "BltBounces",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2375,7 +2509,8 @@
         "ability": [
           "Spread",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2395,7 +2530,8 @@
           "MaxDrb",
           "LootChance",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2415,7 +2551,8 @@
         "ability": [
           "BltSpeed",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2434,7 +2571,8 @@
         "ability": [
           "Dmg",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2453,7 +2591,8 @@
         "ability": [
           "BltPen",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2472,7 +2611,8 @@
         "ability": [
           "AmmoConsume",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2491,7 +2631,8 @@
         "ability": [
           "Dmg",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2510,7 +2651,8 @@
         "ability": [
           "BltSpeed",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2529,7 +2671,8 @@
         "ability": [
           "AmmoConsume",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2548,7 +2691,8 @@
         "ability": [
           "Dmg",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2567,7 +2711,8 @@
         "ability": [
           "Dmg",
           "RPM"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2586,7 +2731,8 @@
         "ability": [
           "RldSpeed",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2604,7 +2750,8 @@
       "groups": {
         "ability": [
           "Recoil"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2622,7 +2769,8 @@
         "ability": [
           "RPM",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2641,7 +2789,8 @@
         "ability": [
           "BltBounces",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2660,7 +2809,8 @@
         "ability": [
           "Spread",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2679,7 +2829,8 @@
         "ability": [
           "CritChance",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2698,7 +2849,8 @@
         "ability": [
           "RPM",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2717,7 +2869,8 @@
         "ability": [
           "RldSpeed",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2736,7 +2889,8 @@
         "ability": [
           "RldSpeed",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2755,7 +2909,8 @@
         "ability": [
           "CritChance",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2777,7 +2932,8 @@
           "BltSpeed",
           "ProjecAmnt",
           "Drag"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2799,7 +2955,8 @@
         "ability": [
           "BltSpeed",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2818,7 +2975,8 @@
         "ability": [
           "Recoil",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2838,7 +2996,8 @@
           "Dmg",
           "BltSpeed",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2859,7 +3018,8 @@
           "Spread",
           "ProjecAmnt",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2880,7 +3040,8 @@
           "Dmg",
           "Spread",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2900,7 +3061,8 @@
         "ability": [
           "RPM",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2920,7 +3082,8 @@
           "Dmg",
           "RldSpeed",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2940,7 +3103,8 @@
         "ability": [
           "RPM",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2959,7 +3123,8 @@
         "ability": [
           "CritChance",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2975,7 +3140,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Oil_of_Yin_%28DEMO%29",
       "image": "oil of yin.png",
       "groups": {
-        "ability": []
+        "ability": [],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1x1",
@@ -2991,7 +3157,8 @@
         "ability": [
           "CritChance",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3011,7 +3178,8 @@
           "Recoil",
           "BltSize",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3031,7 +3199,8 @@
         "ability": [
           "Dmg",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3050,7 +3219,8 @@
         "ability": [
           "BltPen",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3070,7 +3240,8 @@
           "Spread",
           "RldSpeed",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3090,7 +3261,8 @@
         "ability": [
           "Recoil",
           "BltSize"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3108,7 +3280,8 @@
       "groups": {
         "ability": [
           "BltPen"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3125,7 +3298,8 @@
       "groups": {
         "ability": [
           "BltBounces"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3143,7 +3317,8 @@
         "ability": [
           "RPM",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3162,7 +3337,8 @@
         "ability": [
           "Dmg",
           "Spread"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3181,7 +3357,8 @@
         "ability": [
           "Recoil",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3200,7 +3377,8 @@
         "ability": [
           "BltBounces",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×2",
@@ -3220,7 +3398,8 @@
           "BltSize",
           "AimDisabled",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3240,7 +3419,8 @@
         "ability": [
           "Dmg",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3259,7 +3439,8 @@
         "ability": [
           "Dmg",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3278,7 +3459,8 @@
         "ability": [
           "CritChance",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3297,7 +3479,8 @@
         "ability": [
           "Recoil",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3316,7 +3499,8 @@
         "ability": [
           "Dmg",
           "RPM"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3335,7 +3519,8 @@
         "ability": [
           "RPM",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3354,7 +3539,8 @@
         "ability": [
           "Dmg",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3372,7 +3558,8 @@
       "groups": {
         "ability": [
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3390,7 +3577,8 @@
         "ability": [
           "Recoil",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3410,7 +3598,8 @@
           "Recoil",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3429,7 +3618,8 @@
       "groups": {
         "ability": [
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3447,7 +3637,8 @@
         "ability": [
           "Dmg",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3467,7 +3658,8 @@
           "MaxDrb",
           "AmmoExConsume",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3487,7 +3679,8 @@
         "ability": [
           "BltSpeed",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3508,7 +3701,8 @@
           "RPM",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3528,7 +3722,8 @@
         "ability": [
           "RPM",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3548,7 +3743,8 @@
           "Dmg",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3568,7 +3764,8 @@
         "ability": [
           "RldSpeed",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3587,7 +3784,8 @@
         "ability": [
           "Dmg",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3606,7 +3804,8 @@
         "ability": [
           "AmmoConsume",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3626,7 +3825,8 @@
           "Dmg",
           "Spread",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3646,7 +3846,8 @@
         "ability": [
           "BltBounces",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3666,7 +3867,8 @@
           "MaxDrb",
           "BltDrop",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3686,7 +3888,8 @@
         "ability": [
           "Dmg",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3705,7 +3908,8 @@
         "ability": [
           "BltPen",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3724,7 +3928,8 @@
         "ability": [
           "Dmg",
           "RPM"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3744,7 +3949,8 @@
           "MaxDrb",
           "NoOrgans",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3764,7 +3970,8 @@
         "ability": [
           "RldSpeed",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3783,7 +3990,8 @@
         "ability": [
           "Spread",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3802,7 +4010,8 @@
         "ability": [
           "RPM",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3821,7 +4030,8 @@
         "ability": [
           "RPM",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3842,7 +4052,8 @@
           "Spread",
           "ProjecAmnt",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+debuff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3863,7 +4074,8 @@
         "ability": [
           "BltSize",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3882,7 +4094,8 @@
         "ability": [
           "BltBounces",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3901,7 +4114,8 @@
         "ability": [
           "Spread",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3921,7 +4135,8 @@
           "Spread",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3941,7 +4156,8 @@
         "ability": [
           "CritChance",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3960,7 +4176,8 @@
         "ability": [
           "Dmg",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3979,7 +4196,8 @@
         "ability": [
           "CritChance",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -3999,7 +4217,8 @@
           "BltSize",
           "NoOrgans",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4020,7 +4239,8 @@
           "BltSpeed",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4041,7 +4261,8 @@
           "Dmg",
           "BltSize",
           "BltDrop"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4061,7 +4282,8 @@
         "ability": [
           "Dmg",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4080,7 +4302,8 @@
         "ability": [
           "RldSpeed",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4099,7 +4322,8 @@
         "ability": [
           "RPM",
           "Spread"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4117,7 +4341,8 @@
       "groups": {
         "ability": [
           "Spread"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4135,7 +4360,8 @@
         "ability": [
           "Dmg",
           "Recoil"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4154,7 +4380,8 @@
         "ability": [
           "Recoil",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4175,7 +4402,8 @@
           "Recoil",
           "Speed",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×2",
@@ -4197,7 +4425,8 @@
           "RldSpeed",
           "MaxDrb",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4217,7 +4446,8 @@
         "ability": [
           "Spread",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4238,7 +4468,8 @@
           "Spread",
           "ProjecAmnt",
           "MoveAccuracy"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4259,7 +4490,8 @@
         "ability": [
           "Dmg",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×2",
@@ -4278,7 +4510,8 @@
         "ability": [
           "BltBounces",
           "AmmoExConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4297,7 +4530,8 @@
         "ability": [
           "Dmg",
           "RldSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4317,7 +4551,8 @@
           "Dmg",
           "Spread",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4337,7 +4572,8 @@
         "ability": [
           "RldSpeed",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4356,7 +4592,8 @@
         "ability": [
           "RldSpeed",
           "JumpPwr"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4375,7 +4612,8 @@
         "ability": [
           "Recoil",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4394,7 +4632,8 @@
         "ability": [
           "Dmg",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4413,7 +4652,8 @@
         "ability": [
           "RldSpeed",
           "AmmoConsume"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4432,7 +4672,8 @@
         "ability": [
           "Spread",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4451,7 +4692,8 @@
         "ability": [
           "BltSpeed",
           "MaxDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4471,7 +4713,8 @@
           "RPM",
           "BltSize",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4491,7 +4734,8 @@
         "ability": [
           "BltPen",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4508,7 +4752,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Translucent_Oil_%28DEMO%29",
       "image": "Translucent Oil.png",
       "groups": {
-        "ability": []
+        "ability": [],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1x1",
@@ -4521,7 +4766,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Triple_Oil_%28DEMO%29",
       "image": "Triple Oil.png",
       "groups": {
-        "ability": []
+        "ability": [],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1x2",
@@ -4538,7 +4784,8 @@
           "MaxDrb",
           "NoMoney",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4558,7 +4805,8 @@
         "ability": [
           "BltSpeed",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4578,7 +4826,8 @@
           "Dmg",
           "Spread",
           "ProjecAmnt"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4600,7 +4849,8 @@
           "Spread",
           "ProjecAmnt",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+debuff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4618,7 +4868,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Unlabeled_Oil",
       "image": "Unlabeled Oil.png",
       "groups": {
-        "ability": []
+        "ability": [],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4635,7 +4886,8 @@
         "ability": [
           "RldSpeed",
           "BltPen"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4654,7 +4906,8 @@
         "ability": [
           "BltPen",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4673,7 +4926,8 @@
         "ability": [
           "Spread",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4692,7 +4946,8 @@
         "ability": [
           "Recoil",
           "NoOrgans"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4710,7 +4965,8 @@
       "groups": {
         "ability": [
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4728,7 +4984,8 @@
         "ability": [
           "AmmoConsume",
           "Speed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4747,7 +5004,8 @@
         "ability": [
           "RPM",
           "NoMoney"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4766,7 +5024,8 @@
         "ability": [
           "BltSpeed",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4785,7 +5044,8 @@
         "ability": [
           "AmmoConsume",
           "AimDisabled"
-        ]
+        ],
+        "composition": "buff+constraint"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4804,7 +5064,8 @@
         "ability": [
           "Spread",
           "BltBounces"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4824,7 +5085,8 @@
           "BltSize",
           "Speed",
           "NoDrb"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4844,7 +5106,8 @@
         "ability": [
           "RPM",
           "LootChance"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",
@@ -4863,7 +5126,8 @@
         "ability": [
           "Spread",
           "BltSpeed"
-        ]
+        ],
+        "composition": "buff+debuff"
       },
       "fields": {
         "GridSize": "1×1",

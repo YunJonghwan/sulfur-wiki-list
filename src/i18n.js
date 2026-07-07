@@ -43,6 +43,8 @@ export const AXIS_KO = {
   class: '무기 종류',
   ammo: '탄종',
   effect: '효과',
+  ability: '능력',
+  composition: '구성',
   type: '종류',
 }
 
@@ -72,6 +74,14 @@ export const GROUP_KO = {
   Headwear: '머리',
   Chestwear: '상의',
   Footwear: '신발',
+  // oil composition (buff / debuff / constraint)
+  buff: '버프',
+  debuff: '디버프',
+  constraint: '제약',
+  'buff+constraint': '버프+제약',
+  'buff+debuff': '버프+디버프',
+  'buff+debuff+constraint': '버프+디버프+제약',
+  'debuff+constraint': '디버프+제약',
   // consumable
   Food: '음식',
   Beverage: '음료',

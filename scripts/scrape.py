@@ -641,7 +641,7 @@ OIL_GROUP_LABELS = {
 
 AXIS_KEYS_BY_KIND = {
     "weapon": ["class", "ammo"],
-    "oil": ["ability"],
+    "oil": ["ability", "composition"],
     "attachment": ["type"],
     "equipment": ["type"],
     "consumable": ["type"],
@@ -651,12 +651,24 @@ AXIS_LABELS = {
     "class": "Weapon Type",
     "ammo": "Ammunition",
     "ability": "Ability",
+    "composition": "Composition",
     "type": "Type",
 }
 
 # Axes where an item can belong to several groups at once (e.g. an oil that
 # modifies both Damage and Recoil shows up under each ability).
 AXIS_MULTI = {"ability"}
+
+# English display labels for the oil composition axis values.
+COMPOSITION_LABELS = {
+    "buff": "Buff",
+    "debuff": "Debuff",
+    "constraint": "Constraint",
+    "buff+constraint": "Buff + Constraint",
+    "buff+debuff": "Buff + Debuff",
+    "buff+debuff+constraint": "Buff + Debuff + Constraint",
+    "debuff+constraint": "Debuff + Constraint",
+}
 
 # Preferred display order for some axes; anything else is appended by count.
 VALUE_ORDER = {
@@ -667,7 +679,60 @@ VALUE_ORDER = {
     "ammo": ["9mm", "5.56mm", "7.62mm", ".50 BMG", "12Ga", "Energy Cell"],
     # Oils split by individual ability, in the infobox stat order.
     "ability": KIND_COLUMNS["oil"],
+    "composition": [
+        "buff", "buff+constraint", "buff+debuff", "buff+debuff+constraint",
+        "debuff+constraint", "debuff", "constraint",
+    ],
 }
+
+
+# --- Oil buff / debuff / constraint classification ------------------------
+# For each oil stat, which direction is beneficial. Used to label an oil's
+# overall composition (buff-only, buff+debuff, buff+constraint, …).
+OIL_BUFF_WHEN_UP = {
+    "Dmg", "RPM", "CritChance", "RldSpeed", "BltSpeed", "BltPen", "BltSize",
+    "BltBounces", "BltBounciness", "ProjecAmnt", "MaxDrb", "Speed", "JumpPwr",
+    "LootChance", "MoveAccuracy", "PenDmgMult", "LootRolls",
+}
+OIL_BUFF_WHEN_DOWN = {
+    "Spread", "Recoil", "Drag", "BltDrop", "AmmoConsume", "AmmoExConsume",
+}
+# Binary / toggle restrictions (제약).
+OIL_CONSTRAINTS = {
+    "AimDisabled", "NoMoney", "NoOrgans", "Blindfolded", "SelfBlind", "WearSJ",
+    "WearGoggles", "WearShades", "WearEarPro",
+}
+# Scalar penalties that count as debuffs (불이익) regardless of sign.
+OIL_DEBUFF_EFFECTS = {"SelfDmg", "LessForceSpd", "MoreDmgOnHit"}
+
+
+def _sign(value: str) -> int:
+    v = value.strip()
+    if v.startswith("+"):
+        return 1
+    if v.startswith("-") or v.startswith("\u2212"):
+        return -1
+    return 0
+
+
+def classify_ability(key: str, value: str) -> str:
+    if key in OIL_CONSTRAINTS:
+        return "constraint"
+    if key in OIL_DEBUFF_EFFECTS:
+        return "debuff"
+    sign = _sign(value)
+    if key in OIL_BUFF_WHEN_UP:
+        return "buff" if sign >= 0 else "debuff"
+    if key in OIL_BUFF_WHEN_DOWN:
+        return "buff" if sign < 0 else "debuff"
+    # Added capabilities (elemental, homing, "no extra durability loss", …).
+    return "buff"
+
+
+def oil_composition(fields: dict[str, str]) -> str:
+    kinds = {classify_ability(k, fields[k]) for k in oil_ability_keys(fields)}
+    parts = [p for p in ("buff", "debuff", "constraint") if p in kinds]
+    return "+".join(parts) or "buff"
 
 
 def display_subtype(subtype: str) -> str:
@@ -681,6 +746,8 @@ def display_subtype(subtype: str) -> str:
 def value_label(axis: str, value: str) -> str:
     if axis == "ability":
         return LABELS.get(value, value)
+    if axis == "composition":
+        return COMPOSITION_LABELS.get(value, value)
     return value
 
 
@@ -694,7 +761,10 @@ def oil_ability_keys(fields: dict[str, str]) -> list[str]:
 
 def item_groups(kind: str, fields: dict[str, str]) -> dict[str, object]:
     if kind == "oil":
-        return {"ability": oil_ability_keys(fields)}
+        return {
+            "ability": oil_ability_keys(fields),
+            "composition": oil_composition(fields),
+        }
     label = display_subtype(fields.get("SubType", ""))
     if kind == "weapon":
         return {"class": label, "ammo": fields.get("Ammo") or "—"}
