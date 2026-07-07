@@ -100,7 +100,7 @@ KIND_COLUMNS: dict[str, list[str]] = {
         "ConvertWpn", "RocketBlt", "Homing", "CrpsExpl", "Petrify", "Poison",
         "PsnCloud", "PsnPuddle", "Fire", "Lava", "Explosion", "Electrocution",
         "ElecArea", "Charm", "Blind", "Stun", "Fear", "Frost", "Freeze",
-        "Root", "Petrify", "LinkBlt", "Frag", "Sticky",
+        "Root", "LinkBlt", "Frag", "Sticky",
         "SellVal", "BuyVal", "SoldBy",
     ],
     "passive": [
