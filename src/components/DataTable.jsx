@@ -27,16 +27,21 @@ function numericValue(raw) {
   return m ? parseFloat(m[0]) : NaN
 }
 
-function compareValues(a, b) {
+// Empty values always sink to the bottom regardless of sort direction —
+// only the non-empty comparison itself flips between asc/desc.
+function compareValues(a, b, dir = 'asc') {
   const aEmpty = a == null || a === ''
   const bEmpty = b == null || b === ''
   if (aEmpty && bEmpty) return 0
-  if (aEmpty) return 1 // empties always sink to the bottom
+  if (aEmpty) return 1
   if (bEmpty) return -1
   const na = numericValue(a)
   const nb = numericValue(b)
-  if (!Number.isNaN(na) && !Number.isNaN(nb)) return na - nb
-  return String(a).localeCompare(String(b))
+  const res =
+    !Number.isNaN(na) && !Number.isNaN(nb)
+      ? na - nb
+      : String(a).localeCompare(String(b))
+  return dir === 'asc' ? res : -res
 }
 
 function columnLabel(col, lang) {
@@ -162,17 +167,16 @@ export default function DataTable({ data, lang }) {
     const items = [...base]
     if (view === 'grid') {
       items.sort((a, b) => {
-        const res =
-          gridSortKey === '__name'
-            ? a.name.localeCompare(b.name)
-            : compareValues(a.fields[gridSortKey], b.fields[gridSortKey])
-        return gridSortDir === 'asc' ? res : -res
+        if (gridSortKey === '__name') {
+          const res = a.name.localeCompare(b.name)
+          return gridSortDir === 'asc' ? res : -res
+        }
+        return compareValues(a.fields[gridSortKey], b.fields[gridSortKey], gridSortDir)
       })
     } else if (abilityKey) {
-      items.sort((a, b) => {
-        const res = compareValues(a.fields[abilityKey], b.fields[abilityKey])
-        return abilityDir === 'asc' ? res : -res
-      })
+      items.sort((a, b) =>
+        compareValues(a.fields[abilityKey], b.fields[abilityKey], abilityDir),
+      )
     } else {
       items.sort((a, b) => a.name.localeCompare(b.name))
     }
