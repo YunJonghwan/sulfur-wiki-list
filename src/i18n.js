@@ -8,8 +8,10 @@
 export const CATEGORIES = [
   { kind: 'weapon', en: 'Weapons', ko: '무기' },
   { kind: 'oil', en: 'Oils', ko: '오일' },
+  { kind: 'scroll', en: 'Scrolls', ko: '스크롤' },
   { kind: 'attachment', en: 'Attachments', ko: '부착물' },
   { kind: 'equipment', en: 'Equipment', ko: '장비' },
+  { kind: 'passive', en: 'Passives', ko: '패시브' },
   { kind: 'consumable', en: 'Consumables', ko: '소비품' },
 ]
 

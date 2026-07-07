@@ -1,31 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t } from '../i18n.js'
 import { computeWeapon, computePlayerStats } from '../build.js'
+import ItemPicker from './ItemPicker.jsx'
 
 const BASE = import.meta.env.BASE_URL
 const DATASETS = ['weapon', 'oil', 'scroll', 'equipment', 'passive']
-
-function imageUrl(icon) {
-  return icon ? BASE + icon : null
-}
-
-function Icon({ item }) {
-  const url = imageUrl(item?.icon)
-  if (!url) return null
-  return (
-    <img
-      className="item-icon"
-      src={url}
-      alt=""
-      width="24"
-      height="24"
-      loading="lazy"
-      onError={(e) => {
-        e.currentTarget.style.visibility = 'hidden'
-      }}
-    />
-  )
-}
 
 export default function BuildSimulator({ lang }) {
   const [data, setData] = useState(null)
@@ -98,6 +77,24 @@ export default function BuildSimulator({ lang }) {
   )
   const hasScroll = activeEnchants.some((e) => e?.type === 'scroll')
 
+  const weaponSections = [{ key: 'weapon', items: data.weapon.items }]
+  const enchantSections = [
+    { key: 'scroll', label: t(UI.scrollOpt, lang), items: data.scroll.items },
+    {
+      key: 'oil',
+      label: t(UI.oilOpt, lang),
+      items: data.oil.items,
+      axis: data.oil.axes?.find((a) => a.key === 'ability'),
+    },
+  ]
+
+  function enchantDisabled(item, sectionKey, idx) {
+    const current = activeEnchants[idx]?.item?.name
+    if (sectionKey === 'oil') return usedOils.has(item.name) && current !== item.name
+    if (sectionKey === 'scroll') return hasScroll && current !== item.name
+    return false
+  }
+
   function setEnchant(idx, encoded) {
     setEnchants((prev) => {
       const next = [...prev]
@@ -125,18 +122,14 @@ export default function BuildSimulator({ lang }) {
         <div className="slot-group">
           <h3>{t(UI.weaponSlot, lang)}</h3>
           <div className="slot">
-            <Icon item={weapon} />
-            <select
-              value={weapon?.name || ''}
-              onChange={(e) => setWeapon(byName('weapon')(e.target.value))}
-            >
-              <option value="">{t(UI.empty, lang)}</option>
-              {data.weapon.items.map((it) => (
-                <option key={it.name} value={it.name}>
-                  {it.name}
-                </option>
-              ))}
-            </select>
+            <ItemPicker
+              lang={lang}
+              value={weapon}
+              sections={weaponSections}
+              onSelect={(item) => setWeapon(item)}
+              onClear={() => setWeapon(null)}
+              labelFor={labelFor}
+            />
           </div>
 
           <label className="level-row">
@@ -151,39 +144,19 @@ export default function BuildSimulator({ lang }) {
           </label>
 
           <div className="enchant-label">{t(UI.enchantSlots, lang)}</div>
-          {activeEnchants.map((e, i) => {
-            const encoded = e ? `${e.type}:${e.item.name}` : ''
-            return (
-              <div className="slot" key={i}>
-                <Icon item={e?.item} />
-                <select value={encoded} onChange={(ev) => setEnchant(i, ev.target.value)}>
-                  <option value="">{t(UI.empty, lang)}</option>
-                  <optgroup label={t(UI.scrollOpt, lang)}>
-                    {data.scroll.items.map((it) => (
-                      <option
-                        key={it.name}
-                        value={`scroll:${it.name}`}
-                        disabled={hasScroll && e?.item?.name !== it.name}
-                      >
-                        {it.name}
-                      </option>
-                    ))}
-                  </optgroup>
-                  <optgroup label={t(UI.oilOpt, lang)}>
-                    {data.oil.items.map((it) => (
-                      <option
-                        key={it.name}
-                        value={`oil:${it.name}`}
-                        disabled={usedOils.has(it.name) && e?.item?.name !== it.name}
-                      >
-                        {it.name}
-                      </option>
-                    ))}
-                  </optgroup>
-                </select>
-              </div>
-            )
-          })}
+          {activeEnchants.map((e, i) => (
+            <div className="slot" key={i}>
+              <ItemPicker
+                lang={lang}
+                value={e?.item || null}
+                sections={enchantSections}
+                isDisabled={(item, sectionKey) => enchantDisabled(item, sectionKey, i)}
+                onSelect={(item, sectionKey) => setEnchant(i, `${sectionKey}:${item.name}`)}
+                onClear={() => setEnchant(i, '')}
+                labelFor={labelFor}
+              />
+            </div>
+          ))}
         </div>
 
         {/* Armor */}
@@ -195,6 +168,7 @@ export default function BuildSimulator({ lang }) {
             value={head}
             onChange={setHead}
             lang={lang}
+            labelFor={labelFor}
           />
           <GearSlot
             label={t(UI.chest, lang)}
@@ -202,6 +176,7 @@ export default function BuildSimulator({ lang }) {
             value={chest}
             onChange={setChest}
             lang={lang}
+            labelFor={labelFor}
           />
           {[0, 1].map((i) => (
             <GearSlot
@@ -213,6 +188,7 @@ export default function BuildSimulator({ lang }) {
                 setFeet((prev) => prev.map((x, j) => (j === i ? v : x)))
               }
               lang={lang}
+              labelFor={labelFor}
             />
           ))}
         </div>
@@ -230,6 +206,7 @@ export default function BuildSimulator({ lang }) {
                 setPassives((prev) => prev.map((x, j) => (j === i ? v : x)))
               }
               lang={lang}
+              labelFor={labelFor}
             />
           ))}
         </div>
@@ -306,24 +283,18 @@ export default function BuildSimulator({ lang }) {
   )
 }
 
-function GearSlot({ label, items, value, onChange, lang }) {
+function GearSlot({ label, items, value, onChange, lang, labelFor }) {
   return (
     <div className="slot">
-      <Icon item={value} />
       <label className="slot-label">{label}</label>
-      <select
-        value={value?.name || ''}
-        onChange={(e) =>
-          onChange(items.find((it) => it.name === e.target.value) || null)
-        }
-      >
-        <option value="">{t(UI.empty, lang)}</option>
-        {items.map((it) => (
-          <option key={it.name} value={it.name}>
-            {it.name}
-          </option>
-        ))}
-      </select>
+      <ItemPicker
+        lang={lang}
+        value={value}
+        sections={[{ key: 'item', items }]}
+        onSelect={(item) => onChange(item)}
+        onClear={() => onChange(null)}
+        labelFor={labelFor}
+      />
     </div>
   )
 }
