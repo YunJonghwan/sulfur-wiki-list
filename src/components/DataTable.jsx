@@ -80,11 +80,9 @@ export default function DataTable({ data, lang }) {
 
   const currentAxis = axes.find((a) => a.key === axisKey) || axes[0] || null
 
-  // View is automatic: weapons always use the sortable grid; other categories
-  // show the compact overview for "All" and switch to a sortable grid once a
-  // specific sub-group is picked (focused comparison).
-  const view =
-    data.kind === 'weapon' ? 'grid' : selectedGroup ? 'grid' : 'compact'
+  // Weapons use the dense sortable grid; every other category stays in the
+  // compact chip view (sortable via the toolbar dropdown / group selection).
+  const view = data.kind === 'weapon' ? 'grid' : 'compact'
 
   const searched = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -174,6 +172,16 @@ export default function DataTable({ data, lang }) {
   function changeAxis(key) {
     setAxisKey(key)
     setSelectedGroup('')
+  }
+
+  // Picking a specific group filters to it; on the ability axis it also sorts
+  // the compact list by that ability so items are directly comparable.
+  function selectGroup(value) {
+    setSelectedGroup(value)
+    if (value && currentAxis?.multi) {
+      setAbilityKey(value)
+      setAbilityDir('desc')
+    }
   }
 
   function renderTable(items) {
@@ -351,7 +359,7 @@ export default function DataTable({ data, lang }) {
           <div className="group-pills">
             <button
               className={selectedGroup === '' ? 'pill active' : 'pill'}
-              onClick={() => setSelectedGroup('')}
+              onClick={() => selectGroup('')}
             >
               {t(UI.all, lang)} ({sortedBase.length})
             </button>
@@ -359,7 +367,7 @@ export default function DataTable({ data, lang }) {
               <button
                 key={g.value}
                 className={selectedGroup === g.value ? 'pill active' : 'pill'}
-                onClick={() => setSelectedGroup(g.value)}
+                onClick={() => selectGroup(g.value)}
               >
                 {groupLabel(g.value, g.label, lang)} ({g.count})
               </button>

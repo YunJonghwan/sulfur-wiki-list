@@ -284,11 +284,19 @@ def fetch_wikitext_batch(titles: list[str]) -> dict[str, str]:
     return out
 
 
+INFOBOX_START_RE = re.compile(r"\{\{\s*Item[ _]Infobox")
+
+
 def extract_infobox(wikitext: str) -> str | None:
-    """Return the raw contents of the first {{Item Infobox ...}} block."""
-    start = wikitext.find("{{Item Infobox")
-    if start == -1:
+    """Return the raw contents of the first {{Item Infobox ...}} block.
+
+    Matches both `{{Item Infobox}}` and `{{Item_Infobox}}` (MediaWiki treats
+    spaces and underscores in template names as equivalent).
+    """
+    m = INFOBOX_START_RE.search(wikitext)
+    if m is None:
         return None
+    start = m.start()
     depth = 0
     i = start
     while i < len(wikitext) - 1:
