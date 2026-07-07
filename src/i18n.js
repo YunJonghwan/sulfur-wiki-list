@@ -17,6 +17,7 @@ export const UI = {
   title: { en: 'SULFUR Data List', ko: 'SULFUR 데이터 목록' },
   search: { en: 'Search…', ko: '검색…' },
   itemColumn: { en: 'Item', ko: '아이템' },
+  abilities: { en: 'Abilities', ko: '능력' },
   count: { en: 'items', ko: '개' },
   loading: { en: 'Loading…', ko: '불러오는 중…' },
   error: { en: 'Failed to load data.', ko: '데이터를 불러오지 못했습니다.' },
@@ -25,6 +26,77 @@ export const UI = {
   source: { en: 'Data from', ko: '데이터 출처' },
   langEn: { en: 'EN', ko: 'EN' },
   langKo: { en: '한글', ko: '한글' },
+  viewCompact: { en: 'Compact', ko: '압축' },
+  viewGrid: { en: 'Full grid', ko: '전체 그리드' },
+  sortBy: { en: 'Sort by', ko: '정렬' },
+  none: { en: 'Name', ko: '이름' },
+  onlyWith: { en: 'Only items with this', ko: '이 능력만' },
+  asc: { en: 'Ascending', ko: '오름차순' },
+  desc: { en: 'Descending', ko: '내림차순' },
+  all: { en: 'All', ko: '전체' },
+  subTabs: { en: 'Tabs', ko: '탭' },
+  subSections: { en: 'Sections', ko: '구역' },
+}
+
+// Korean labels for sub-group axes (weapon class, ammo, oil effect…).
+export const AXIS_KO = {
+  class: '무기 종류',
+  ammo: '탄종',
+  effect: '효과',
+  type: '종류',
+}
+
+// Korean labels for sub-group values. Missing values fall back to English.
+export const GROUP_KO = {
+  // weapon classes
+  Pistol: '권총',
+  Revolver: '리볼버',
+  Shotgun: '샷건',
+  'Submachine Gun': '기관단총',
+  'Assault Rifle': '돌격소총',
+  'Light Machine Gun': '경기관총',
+  Rifle: '소총',
+  Sniper: '저격소총',
+  'Sniper Rifle': '저격소총',
+  Melee: '근접',
+  // oil effect groups
+  Damage: '데미지',
+  'Fire Rate': '연사',
+  Handling: '핸들링',
+  Bullet: '탄환',
+  Economy: '경제',
+  Mobility: '이동',
+  Effects: '효과',
+  Misc: '기타',
+  // equipment
+  Headwear: '머리',
+  Chestwear: '상의',
+  Footwear: '신발',
+  // consumable
+  Food: '음식',
+  Beverage: '음료',
+  Ingredient: '재료',
+  Dessert: '디저트',
+  'Drug Remedy': '약/치료',
+  Manual: '설명서',
+  Milk: '우유',
+  Water: '물',
+  // attachment
+  'Muzzle Attachment': '총구',
+  Sight: '조준경',
+  'Laser Sight': '레이저',
+  'Chamber Attachment': '챔버',
+  Attachment: '부착물',
+}
+
+export function groupLabel(value, lang) {
+  if (lang === 'ko' && GROUP_KO[value]) return GROUP_KO[value]
+  return value
+}
+
+export function axisLabel(key, fallback, lang) {
+  if (lang === 'ko' && AXIS_KO[key]) return AXIS_KO[key]
+  return fallback || key
 }
 
 // Korean labels for column keys. Missing keys fall back to the English label
@@ -37,6 +109,7 @@ export const COLUMN_KO = {
   Mag: '탄창',
   Weight: '무게',
   Damage: '데미지',
+  Dmg: '데미지',
   RPM: '연사 속도',
   Spread: '탄퍼짐',
   Recoil: '반동',

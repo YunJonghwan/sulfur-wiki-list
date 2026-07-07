@@ -134,26 +134,205 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.search {
-  flex: 0 1 320px;
+.view-switch {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.view-switch button {
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.view-switch button.active {
+  background: var(--accent);
+  color: #201a10;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.ability-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ability-control select {
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.ability-control .dir-btn {
+  background: var(--panel-2);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.55rem;
+  cursor: pointer;
+}
+
+.ability-control .only-with {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
   background: var(--panel-2);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 0.5rem 0.75rem;
-  color: var(--text);
-  font-size: 0.95rem;
+  border-radius: 6px;
+  padding: 2px 7px;
+  font-size: 0.82rem;
+  white-space: nowrap;
 }
 
-.search:focus {
-  outline: none;
-  border-color: var(--accent);
+.chip b {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.74rem;
+}
+
+.chip.pos {
+  color: var(--pos);
+  border-color: #2f5a33;
+}
+
+.chip.neg {
+  color: var(--neg);
+  border-color: #6b3229;
+}
+
+.chip.sel {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+.compact-table td {
+  white-space: normal;
+  vertical-align: top;
 }
 
 .count {
   color: var(--muted);
   font-size: 0.9rem;
+  margin-left: auto;
+}
+
+/* Sub-group navigation (axis switch, tabs/sections toggle, group pills) */
+.subnav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  padding: 0.25rem 0;
+}
+
+.axis-switch,
+.submode-switch {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.axis-switch button,
+.submode-switch button {
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.axis-switch button.active,
+.submode-switch button.active {
+  background: var(--accent);
+  color: #201a10;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.submode-switch {
+  margin-left: 0.25rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+}
+
+.group-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  flex: 1 1 100%;
+}
+
+.pill {
+  background: var(--panel-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.pill:hover {
+  color: var(--text);
+}
+
+.pill.active {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.group-heading {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+
+.group-heading .g-count {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.sections .table-scroll {
+  max-height: none;
 }
 
 .table-scroll {
@@ -185,6 +364,7 @@ thead th {
 
 th.sortable {
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
 }
 
