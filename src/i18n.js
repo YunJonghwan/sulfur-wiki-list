@@ -176,7 +176,7 @@ export const COLUMN_KO = {
   BltDrop: '탄 낙차',
   BltPen: '관통',
   BltSize: '탄 크기',
-  BltBounces: '탄 튕김 횟수',
+  BltBounces: '도탄량',
   BltBounciness: '탄 탄성',
   Drag: '드래그 배율',
   AimDisabled: '조준 불가',

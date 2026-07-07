@@ -1,6 +1,6 @@
 {
   "kind": "oil",
-  "generated": "2026-07-07T18:51:06.302698+00:00",
+  "generated": "2026-07-07T19:01:07.241869+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -130,12 +130,12 @@
         {
           "value": "Dmg",
           "label": "Damage",
-          "count": 72
+          "count": 34
         },
         {
           "value": "RPM",
           "label": "Rate of Fire",
-          "count": 27
+          "count": 16
         },
         {
           "value": "CritChance",
@@ -145,22 +145,22 @@
         {
           "value": "Spread",
           "label": "Spread",
-          "count": 46
+          "count": 16
         },
         {
           "value": "Recoil",
           "label": "Recoil",
-          "count": 34
+          "count": 19
         },
         {
           "value": "RldSpeed",
           "label": "Reload Speed",
-          "count": 32
+          "count": 18
         },
         {
           "value": "BltSpeed",
           "label": "Bullet Speed",
-          "count": 32
+          "count": 17
         },
         {
           "value": "BltPen",
@@ -170,7 +170,7 @@
         {
           "value": "BltSize",
           "label": "Bullet Size",
-          "count": 23
+          "count": 17
         },
         {
           "value": "BltBounces",
@@ -195,57 +195,7 @@
         {
           "value": "MaxDrb",
           "label": "Max Durability",
-          "count": 31
-        },
-        {
-          "value": "BltDrop",
-          "label": "Bullet Drop",
-          "count": 18
-        },
-        {
-          "value": "Drag",
-          "label": "Drag Multiplier",
-          "count": 2
-        },
-        {
-          "value": "AmmoExConsume",
-          "label": "Extra Ammo Consume Chance",
-          "count": 13
-        },
-        {
-          "value": "Speed",
-          "label": "Movement Speed",
-          "count": 16
-        },
-        {
-          "value": "JumpPwr",
-          "label": "Jump Power",
-          "count": 11
-        },
-        {
-          "value": "LootChance",
-          "label": "Loot Chance",
-          "count": 14
-        },
-        {
-          "value": "MoveAccuracy",
-          "label": "Accuracy while moving",
-          "count": 1
-        },
-        {
-          "value": "AimDisabled",
-          "label": "Disable Aim",
-          "count": 14
-        },
-        {
-          "value": "NoMoney",
-          "label": "No Money drops",
-          "count": 14
-        },
-        {
-          "value": "NoOrgans",
-          "label": "No Organs drop",
-          "count": 14
+          "count": 17
         },
         {
           "value": "NoDrb",
@@ -289,7 +239,6 @@
       "image": "Action Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "RldSpeed"
         ],
         "composition": "buff+debuff"
@@ -327,8 +276,7 @@
       "image": "Aimless Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "AimDisabled"
+          "CritChance"
         ],
         "composition": "buff+constraint"
       },
@@ -347,9 +295,7 @@
       "image": "Airsoft Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "RldSpeed",
-          "Drag"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -369,8 +315,7 @@
       "image": "Altruistic_Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "LootChance"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -389,7 +334,6 @@
       "image": "Arkanoid Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -409,7 +353,6 @@
       "image": "Arrow Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltSpeed"
         ],
         "composition": "buff+debuff"
@@ -429,8 +372,7 @@
       "image": "Artery_Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "BltSize"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -449,8 +391,7 @@
       "image": "Artillery Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "BltDrop"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -469,8 +410,7 @@
       "image": "Ascetic Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "NoMoney"
+          "Dmg"
         ],
         "composition": "buff+constraint"
       },
@@ -489,8 +429,7 @@
       "image": "Assassin Dart Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "Speed"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -527,8 +466,7 @@
       "image": "Axe Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "BltDrop"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -547,8 +485,7 @@
       "image": "Bad Planet Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "JumpPwr"
+          "BltPen"
         ],
         "composition": "buff+debuff"
       },
@@ -567,8 +504,7 @@
       "image": "Bandit Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "NoMoney"
+          "BltBounces"
         ],
         "composition": "buff+constraint"
       },
@@ -587,8 +523,7 @@
       "image": "BB Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "BltSize"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -607,9 +542,7 @@
       "image": "Big Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "BltSpeed",
-          "BltDrop"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -630,7 +563,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "NoMoney",
           "NoDrb"
         ],
         "composition": "buff+constraint"
@@ -652,7 +584,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "MaxDrb",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -673,10 +604,7 @@
       "image": "Black Friday Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "ProjecAmnt",
-          "MaxDrb"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -698,8 +626,7 @@
       "image": "Blindfold_Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "Spread"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -718,8 +645,7 @@
       "image": "Blurt Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "BltSpeed"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -738,7 +664,6 @@
       "image": "Bolt Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltSpeed"
         ],
         "composition": "buff+debuff"
@@ -758,10 +683,7 @@
       "image": "Bombard Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "ProjecAmnt",
-          "BltDrop"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -782,11 +704,7 @@
       "image": "Boomstick Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "Recoil",
-          "ProjecAmnt",
-          "AimDisabled"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff+constraint"
       },
@@ -810,8 +728,7 @@
         "ability": [
           "Dmg",
           "BltBounces",
-          "BltBounciness",
-          "BltDrop"
+          "BltBounciness"
         ],
         "composition": "buff+debuff"
       },
@@ -832,8 +749,7 @@
       "image": "Bowl Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "BltSpeed"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -852,8 +768,7 @@
       "image": "Braced Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "JumpPwr"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -872,8 +787,7 @@
       "image": "Brute Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -892,8 +806,7 @@
       "image": "Bulk Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "BltDrop"
+          "AmmoConsume"
         ],
         "composition": "buff+debuff"
       },
@@ -912,8 +825,7 @@
       "image": "Bystander Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "AimDisabled"
+          "BltPen"
         ],
         "composition": "buff+constraint"
       },
@@ -932,7 +844,6 @@
       "image": "Carefree Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -952,7 +863,6 @@
       "image": "Careful Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "Spread"
         ],
         "composition": "buff+debuff"
@@ -972,11 +882,7 @@
       "image": "Careless Splitter Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "Recoil",
-          "ProjecAmnt",
-          "MaxDrb"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -998,7 +904,6 @@
       "image": "Cartoon_Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -1018,8 +923,7 @@
       "image": "Casual_Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "LootChance"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -1038,7 +942,6 @@
       "image": "Cheap Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -1059,7 +962,6 @@
       "image": "Chonk Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "BltSize",
           "NoDrb"
         ],
@@ -1081,7 +983,6 @@
       "image": "Chub Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltSize",
           "NoDrb"
         ],
@@ -1104,7 +1005,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "AmmoExConsume",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -1126,7 +1026,6 @@
       "image": "Collateral Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -1146,8 +1045,7 @@
       "image": "Complicated Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "RldSpeed"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -1168,8 +1066,7 @@
         "ability": [
           "Spread",
           "Recoil",
-          "RldSpeed",
-          "Speed"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -1190,8 +1087,7 @@
       "image": "Confidence Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "RldSpeed"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -1211,7 +1107,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "LootChance",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -1232,7 +1127,6 @@
       "image": "Considerate Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -1252,8 +1146,7 @@
       "image": "Contained Force Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "MaxDrb"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -1290,7 +1183,6 @@
       "image": "Cycle Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "RldSpeed"
         ],
         "composition": "buff+debuff"
@@ -1328,8 +1220,7 @@
       "image": "Dart Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "JumpPwr"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -1348,8 +1239,7 @@
       "image": "Dead_Center_Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "Recoil"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -1368,7 +1258,6 @@
       "image": "Delayed Hyper Tube Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "BltSpeed"
         ],
         "composition": "buff+debuff"
@@ -1389,7 +1278,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "JumpPwr",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -1410,7 +1298,6 @@
       "image": "Detune_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "MaxDrb",
           "NoDrb"
         ],
@@ -1432,7 +1319,6 @@
       "image": "Diesel Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "BltSpeed"
         ],
         "composition": "buff+debuff"
@@ -1453,8 +1339,7 @@
       "image": "Discharge Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "AmmoExConsume"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -1473,8 +1358,7 @@
       "image": "Disposable Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "MaxDrb"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -1494,9 +1378,6 @@
       "image": "Division Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "BltSize",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -1518,7 +1399,6 @@
       "image": "Do-over Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -1538,8 +1418,7 @@
       "image": "Double Fire Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "AmmoExConsume"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -1558,7 +1437,6 @@
       "image": "Double Lock Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "RldSpeed"
         ],
         "composition": "buff+debuff"
@@ -1578,10 +1456,7 @@
       "image": "Double_Nothing_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "ProjecAmnt",
-          "LootChance"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -1602,8 +1477,7 @@
       "image": "Dum Dum Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "NoOrgans"
+          "Dmg"
         ],
         "composition": "buff+constraint"
       },
@@ -1622,7 +1496,6 @@
       "image": "Dynaimc Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "RldSpeed"
         ],
         "composition": "buff+debuff"
@@ -1642,8 +1515,7 @@
       "image": "Easy Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "NoMoney"
+          "Recoil"
         ],
         "composition": "buff+constraint"
       },
@@ -1662,8 +1534,7 @@
       "image": "Easy Plop Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "BltDrop"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -1682,13 +1553,8 @@
       "image": "Elephant Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "Recoil",
           "BltSize",
-          "ProjecAmnt",
-          "BltDrop",
-          "Speed"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -1713,8 +1579,7 @@
       "image": "Exotic Barrel Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "MaxDrb"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -1733,8 +1598,7 @@
       "image": "Expander Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "NoOrgans"
+          "Dmg"
         ],
         "composition": "buff+constraint"
       },
@@ -1753,7 +1617,6 @@
       "image": "Extra Powder Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
           "BltSpeed"
         ],
         "composition": "buff+debuff"
@@ -1773,8 +1636,7 @@
       "image": "Farsighted Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "AmmoExConsume"
+          "BltPen"
         ],
         "composition": "buff+debuff"
       },
@@ -1793,8 +1655,7 @@
       "image": "Fast Bet Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "NoMoney"
+          "BltSpeed"
         ],
         "composition": "buff+constraint"
       },
@@ -1814,7 +1675,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "AimDisabled",
           "NoDrb"
         ],
         "composition": "buff+constraint"
@@ -1835,8 +1695,7 @@
       "image": "Fidget Lord Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "Speed"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -1855,8 +1714,7 @@
       "image": "Fidget Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "RldSpeed"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -1875,8 +1733,7 @@
       "image": "First Blood Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -1895,8 +1752,6 @@
       "image": "Flea_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "BltSize",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -1918,7 +1773,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "JumpPwr",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -1939,7 +1793,6 @@
       "image": "Flow_Funnel_Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "Recoil"
         ],
         "composition": "buff+debuff"
@@ -1959,8 +1812,7 @@
       "image": "Food Stamp Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "NoMoney"
+          "AmmoConsume"
         ],
         "composition": "buff+constraint"
       },
@@ -1979,8 +1831,7 @@
       "image": "Fragile System Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "MaxDrb"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -1999,8 +1850,7 @@
       "image": "Franciscan_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "NoMoney"
+          "Dmg"
         ],
         "composition": "buff+constraint"
       },
@@ -2019,8 +1869,7 @@
       "image": "Frugal Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "LootChance"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2039,7 +1888,6 @@
       "image": "Gambler Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "CritChance"
         ],
         "composition": "buff+debuff"
@@ -2059,7 +1907,6 @@
       "image": "Gargantuan Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
           "BltSize",
           "NoDrb"
         ],
@@ -2081,8 +1928,6 @@
       "image": "Gemini Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -2103,7 +1948,6 @@
       "image": "Gentle_Oil.png",
       "groups": {
         "ability": [
-          "BltSize",
           "MaxDrb",
           "NoDrb"
         ],
@@ -2125,8 +1969,7 @@
       "image": "Glass Cannon Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "MaxDrb"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2145,9 +1988,7 @@
       "image": "Great Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "BltSpeed",
-          "BltDrop"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2167,8 +2008,7 @@
       "image": "Grounded Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "JumpPwr"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2187,8 +2027,7 @@
       "image": "Gunslinger Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "AimDisabled"
+          "RldSpeed"
         ],
         "composition": "buff+constraint"
       },
@@ -2207,8 +2046,7 @@
       "image": "Happy Accident Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "Recoil"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -2227,8 +2065,7 @@
       "image": "Heavy Lead Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "BltDrop"
+          "BltPen"
         ],
         "composition": "buff+debuff"
       },
@@ -2248,8 +2085,7 @@
       "groups": {
         "ability": [
           "Dmg",
-          "BltSize",
-          "BltDrop"
+          "BltSize"
         ],
         "composition": "buff+debuff"
       },
@@ -2269,8 +2105,7 @@
       "image": "Heavy Pockets Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "JumpPwr"
+          "AmmoConsume"
         ],
         "composition": "buff+debuff"
       },
@@ -2290,7 +2125,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "Speed",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -2311,7 +2145,6 @@
       "image": "Helium Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -2351,8 +2184,7 @@
       "image": "Hip_Blaster_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "AimDisabled"
+          "Dmg"
         ],
         "composition": "buff+constraint"
       },
@@ -2371,8 +2203,7 @@
       "image": "Hip Marksman Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "AimDisabled"
+          "Spread"
         ],
         "composition": "buff+constraint"
       },
@@ -2391,8 +2222,7 @@
       "image": "Hoop Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "BltDrop"
+          "BltBounces"
         ],
         "composition": "buff+debuff"
       },
@@ -2411,8 +2241,7 @@
       "image": "Hunter Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "Speed"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -2431,7 +2260,6 @@
       "image": "Hustler_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "CritChance"
         ],
         "composition": "buff+debuff"
@@ -2452,8 +2280,7 @@
       "groups": {
         "ability": [
           "Dmg",
-          "BltSpeed",
-          "BltDrop"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -2473,8 +2300,7 @@
       "image": "Imperfect_Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "MaxDrb"
+          "BltBounces"
         ],
         "composition": "buff+debuff"
       },
@@ -2493,7 +2319,6 @@
       "image": "Inconsiderate Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -2514,7 +2339,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "LootChance",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -2535,8 +2359,7 @@
       "image": "Instant Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "AimDisabled"
+          "BltSpeed"
         ],
         "composition": "buff+constraint"
       },
@@ -2555,8 +2378,7 @@
       "image": "Judgement Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Speed"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2575,8 +2397,7 @@
       "image": "Jungian Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "Speed"
+          "BltPen"
         ],
         "composition": "buff+debuff"
       },
@@ -2595,8 +2416,7 @@
       "image": "Keep Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "NoOrgans"
+          "AmmoConsume"
         ],
         "composition": "buff+constraint"
       },
@@ -2615,8 +2435,7 @@
       "image": "Kicker_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Recoil"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2635,8 +2454,7 @@
       "image": "Kinetic Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "BltDrop"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -2655,8 +2473,7 @@
       "image": "Last Drop Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "MaxDrb"
+          "AmmoConsume"
         ],
         "composition": "buff+debuff"
       },
@@ -2675,8 +2492,7 @@
       "image": "Late Boom Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "BltSpeed"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2695,8 +2511,7 @@
       "image": "Launcher Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "RPM"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -2715,7 +2530,6 @@
       "image": "Lazy Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -2753,8 +2567,7 @@
       "image": "Lightweight Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "Recoil"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -2773,8 +2586,7 @@
       "image": "Longshot Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "AimDisabled"
+          "BltBounces"
         ],
         "composition": "buff+constraint"
       },
@@ -2793,8 +2605,7 @@
       "image": "Lost_In_Focus_Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "AmmoExConsume"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -2813,8 +2624,7 @@
       "image": "Low_Roller_Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "NoMoney"
+          "CritChance"
         ],
         "composition": "buff+constraint"
       },
@@ -2833,8 +2643,7 @@
       "image": "Machine Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "Speed"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -2853,8 +2662,7 @@
       "image": "Main Discipline Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "LootChance"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -2873,8 +2681,7 @@
       "image": "Main Focus Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "NoMoney"
+          "RldSpeed"
         ],
         "composition": "buff+constraint"
       },
@@ -2893,8 +2700,7 @@
       "image": "Manifestation Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "RldSpeed"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -2913,11 +2719,7 @@
       "image": "Matrix Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "BltSpeed",
-          "ProjecAmnt",
-          "Drag"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -2939,8 +2741,7 @@
       "image": "Micro Wing Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "AmmoExConsume"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -2959,8 +2760,7 @@
       "image": "Modern Technology Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "AmmoExConsume"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -2979,8 +2779,6 @@
       "image": "Mosquito Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "BltSpeed",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -3001,9 +2799,7 @@
       "image": "Multichamber_Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "ProjecAmnt",
-          "AmmoExConsume"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -3023,8 +2819,6 @@
       "image": "Multishot_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -3045,7 +2839,6 @@
       "image": "Needleye Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -3065,9 +2858,7 @@
       "image": "Nerf Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "RldSpeed",
-          "BltDrop"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -3087,8 +2878,7 @@
       "image": "No Look Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "AimDisabled"
+          "RPM"
         ],
         "composition": "buff+constraint"
       },
@@ -3107,8 +2897,7 @@
       "image": "No_Need_Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "LootChance"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -3127,8 +2916,7 @@
       "image": "Out_of_the_Box_Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "MaxDrb"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -3147,7 +2935,6 @@
       "image": "Over Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "BltSize",
           "NoDrb"
         ],
@@ -3169,8 +2956,7 @@
       "image": "Overclock_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "AmmoExConsume"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -3189,8 +2975,7 @@
       "image": "Overdose Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "MaxDrb"
+          "BltPen"
         ],
         "composition": "buff+debuff"
       },
@@ -3209,8 +2994,6 @@
       "image": "Parallel Mag Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "RldSpeed",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -3231,8 +3014,7 @@
       "image": "Peashooter Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "BltSize"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -3287,8 +3069,7 @@
       "image": "Perforate_Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "NoOrgans"
+          "RPM"
         ],
         "composition": "buff+constraint"
       },
@@ -3307,7 +3088,6 @@
       "image": "Plinker_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "Spread"
         ],
         "composition": "buff+debuff"
@@ -3327,7 +3107,6 @@
       "image": "Plop Back Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -3347,8 +3126,7 @@
       "image": "Pool Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "Speed"
+          "BltBounces"
         ],
         "composition": "buff+debuff"
       },
@@ -3368,7 +3146,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "AimDisabled",
           "NoDrb"
         ],
         "composition": "buff+constraint"
@@ -3389,8 +3166,7 @@
       "image": "Potshot_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "AimDisabled"
+          "Dmg"
         ],
         "composition": "buff+constraint"
       },
@@ -3409,8 +3185,7 @@
       "image": "Puncher Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Recoil"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -3429,8 +3204,7 @@
       "image": "Puncture Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "NoOrgans"
+          "CritChance"
         ],
         "composition": "buff+constraint"
       },
@@ -3449,8 +3223,7 @@
       "image": "Purse Gun Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "RldSpeed"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -3469,7 +3242,6 @@
       "image": "Rapid Internals Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "RPM"
         ],
         "composition": "buff+debuff"
@@ -3489,7 +3261,6 @@
       "image": "Ready Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "Recoil"
         ],
         "composition": "buff+debuff"
@@ -3509,7 +3280,6 @@
       "image": "Rebound_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -3547,8 +3317,7 @@
       "image": "Relax Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "BltSpeed"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -3567,7 +3336,6 @@
       "image": "Release Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
           "MaxDrb",
           "NoDrb"
         ],
@@ -3607,7 +3375,6 @@
       "image": "Ricochet Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -3628,7 +3395,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "AmmoExConsume",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -3649,7 +3415,6 @@
       "image": "Rigor Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -3670,7 +3435,6 @@
       "image": "Robust Mechanics Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "MaxDrb",
           "NoDrb"
         ],
@@ -3692,8 +3456,7 @@
       "image": "Rookie Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "RldSpeed"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -3712,7 +3475,6 @@
       "image": "Rubber_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "MaxDrb",
           "NoDrb"
         ],
@@ -3734,8 +3496,7 @@
       "image": "Rush_Job_Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "AmmoExConsume"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -3754,7 +3515,6 @@
       "image": "Safety Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "Recoil"
         ],
         "composition": "buff+debuff"
@@ -3774,8 +3534,7 @@
       "image": "Saviour_Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "LootChance"
+          "AmmoConsume"
         ],
         "composition": "buff+debuff"
       },
@@ -3794,8 +3553,6 @@
       "image": "Scatter_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -3816,8 +3573,7 @@
       "image": "Scramble Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "NoOrgans"
+          "BltBounces"
         ],
         "composition": "buff+constraint"
       },
@@ -3837,7 +3593,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "BltDrop",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -3858,8 +3613,7 @@
       "image": "Seated Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "JumpPwr"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -3878,8 +3632,7 @@
       "image": "Sect Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "NoMoney"
+          "BltPen"
         ],
         "composition": "buff+constraint"
       },
@@ -3898,8 +3651,7 @@
       "image": "Sender Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "RPM"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -3919,7 +3671,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "NoOrgans",
           "NoDrb"
         ],
         "composition": "buff+constraint"
@@ -3940,8 +3691,7 @@
       "image": "Shaved Clip Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "MaxDrb"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -3960,8 +3710,7 @@
       "image": "Shellman Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "RldSpeed"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -3980,7 +3729,6 @@
       "image": "Sherlock Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -4000,8 +3748,7 @@
       "image": "Shower Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "BltDrop"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -4020,10 +3767,7 @@
       "image": "Shredder_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "ProjecAmnt",
-          "NoOrgans"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff+constraint"
       },
@@ -4064,8 +3808,7 @@
       "image": "Skip Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "LootChance"
+          "BltBounces"
         ],
         "composition": "buff+debuff"
       },
@@ -4084,8 +3827,7 @@
       "image": "Slick Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "JumpPwr"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -4104,7 +3846,6 @@
       "image": "Slippy Coating Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "MaxDrb",
           "NoDrb"
         ],
@@ -4126,8 +3867,7 @@
       "image": "Slotmachine Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "AmmoExConsume"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -4146,8 +3886,7 @@
       "image": "Slow Punch Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "BltSpeed"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -4166,8 +3905,7 @@
       "image": "Smart Bullet Oil.png",
       "groups": {
         "ability": [
-          "CritChance",
-          "BltSpeed"
+          "CritChance"
         ],
         "composition": "buff+debuff"
       },
@@ -4187,7 +3925,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "NoOrgans",
           "NoDrb"
         ],
         "composition": "buff+constraint"
@@ -4208,7 +3945,6 @@
       "image": "Soft Bullet Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
           "MaxDrb",
           "NoDrb"
         ],
@@ -4231,8 +3967,7 @@
       "groups": {
         "ability": [
           "Dmg",
-          "BltSize",
-          "BltDrop"
+          "BltSize"
         ],
         "composition": "buff+debuff"
       },
@@ -4252,8 +3987,7 @@
       "image": "Spartan_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "LootChance"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -4272,8 +4006,7 @@
       "image": "Speed Trade Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "BltSpeed"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -4292,8 +4025,7 @@
       "image": "Spitter Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "Spread"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -4330,7 +4062,6 @@
       "image": "Stability Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "Recoil"
         ],
         "composition": "buff+debuff"
@@ -4350,8 +4081,7 @@
       "image": "Stable_Hip_Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "AimDisabled"
+          "Recoil"
         ],
         "composition": "buff+constraint"
       },
@@ -4371,9 +4101,7 @@
       "groups": {
         "ability": [
           "RPM",
-          "Recoil",
-          "Speed",
-          "JumpPwr"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -4394,7 +4122,6 @@
       "image": "Stiffy Fit Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
           "MaxDrb",
           "NoDrb"
         ],
@@ -4416,8 +4143,7 @@
       "image": "Stoic Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "NoMoney"
+          "Spread"
         ],
         "composition": "buff+constraint"
       },
@@ -4436,10 +4162,7 @@
       "image": "Suppressive Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "ProjecAmnt",
-          "MoveAccuracy"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff"
       },
@@ -4460,7 +4183,6 @@
       "image": "Surgical Laser Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -4480,8 +4202,7 @@
       "image": "Synchronicity Oil.png",
       "groups": {
         "ability": [
-          "BltBounces",
-          "AmmoExConsume"
+          "BltBounces"
         ],
         "composition": "buff+debuff"
       },
@@ -4500,7 +4221,6 @@
       "image": "Tactical Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
           "RldSpeed"
         ],
         "composition": "buff+debuff"
@@ -4520,8 +4240,6 @@
       "image": "Tandem Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -4542,8 +4260,7 @@
       "image": "Task Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "NoOrgans"
+          "RldSpeed"
         ],
         "composition": "buff+constraint"
       },
@@ -4562,8 +4279,7 @@
       "image": "Tech Support Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
-          "JumpPwr"
+          "RldSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -4582,8 +4298,7 @@
       "image": "Tension Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "Speed"
+          "Recoil"
         ],
         "composition": "buff+debuff"
       },
@@ -4602,8 +4317,7 @@
       "image": "Terminator_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Speed"
+          "Dmg"
         ],
         "composition": "buff+debuff"
       },
@@ -4622,7 +4336,6 @@
       "image": "Tetrus Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
           "AmmoConsume"
         ],
         "composition": "buff+debuff"
@@ -4642,8 +4355,7 @@
       "image": "Thorough Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "Speed"
+          "Spread"
         ],
         "composition": "buff+debuff"
       },
@@ -4662,8 +4374,7 @@
       "image": "Tight Barrel Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "MaxDrb"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -4682,7 +4393,6 @@
       "image": "Tight Oil.png",
       "groups": {
         "ability": [
-          "RPM",
           "BltSize",
           "NoDrb"
         ],
@@ -4704,8 +4414,7 @@
       "image": "Too Much Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "NoOrgans"
+          "BltPen"
         ],
         "composition": "buff+constraint"
       },
@@ -4726,7 +4435,6 @@
       "groups": {
         "ability": [
           "MaxDrb",
-          "NoMoney",
           "NoDrb"
         ],
         "composition": "buff+constraint"
@@ -4747,8 +4455,7 @@
       "image": "Turbulence Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "NoOrgans"
+          "BltSpeed"
         ],
         "composition": "buff+constraint"
       },
@@ -4767,8 +4474,6 @@
       "image": "Twice Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
           "ProjecAmnt"
         ],
         "composition": "buff+debuff"
@@ -4789,10 +4494,7 @@
       "image": "Two_Time_Oil.png",
       "groups": {
         "ability": [
-          "Dmg",
-          "Spread",
-          "ProjecAmnt",
-          "NoMoney"
+          "ProjecAmnt"
         ],
         "composition": "buff+debuff+constraint"
       },
@@ -4828,7 +4530,6 @@
       "image": "Untechnical Oil.png",
       "groups": {
         "ability": [
-          "RldSpeed",
           "BltPen"
         ],
         "composition": "buff+debuff"
@@ -4848,8 +4549,7 @@
       "image": "Vasectomy Oil.png",
       "groups": {
         "ability": [
-          "BltPen",
-          "LootChance"
+          "BltPen"
         ],
         "composition": "buff+debuff"
       },
@@ -4868,8 +4568,7 @@
       "image": "Vegan_Oil.png",
       "groups": {
         "ability": [
-          "Spread",
-          "NoOrgans"
+          "Spread"
         ],
         "composition": "buff+constraint"
       },
@@ -4888,8 +4587,7 @@
       "image": "Vegetable_Oil.png",
       "groups": {
         "ability": [
-          "Recoil",
-          "NoOrgans"
+          "Recoil"
         ],
         "composition": "buff+constraint"
       },
@@ -4926,8 +4624,7 @@
       "image": "Walk Easy Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "Speed"
+          "AmmoConsume"
         ],
         "composition": "buff+debuff"
       },
@@ -4946,8 +4643,7 @@
       "image": "Waster Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "NoMoney"
+          "RPM"
         ],
         "composition": "buff+constraint"
       },
@@ -4966,8 +4662,7 @@
       "image": "Whim Oil.png",
       "groups": {
         "ability": [
-          "BltSpeed",
-          "LootChance"
+          "BltSpeed"
         ],
         "composition": "buff+debuff"
       },
@@ -4986,8 +4681,7 @@
       "image": "Whos_Counting_Oil.png",
       "groups": {
         "ability": [
-          "AmmoConsume",
-          "AimDisabled"
+          "AmmoConsume"
         ],
         "composition": "buff+constraint"
       },
@@ -5006,7 +4700,6 @@
       "image": "Wobble Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "BltBounces"
         ],
         "composition": "buff+debuff"
@@ -5027,7 +4720,6 @@
       "groups": {
         "ability": [
           "BltSize",
-          "Speed",
           "NoDrb"
         ],
         "composition": "buff+debuff"
@@ -5048,8 +4740,7 @@
       "image": "Zero Fucks Oil.png",
       "groups": {
         "ability": [
-          "RPM",
-          "LootChance"
+          "RPM"
         ],
         "composition": "buff+debuff"
       },
@@ -5068,7 +4759,6 @@
       "image": "Zooming Oil.png",
       "groups": {
         "ability": [
-          "Spread",
           "BltSpeed"
         ],
         "composition": "buff+debuff"

@@ -936,10 +936,20 @@ def oil_ability_keys(fields: dict[str, str]) -> list[str]:
     ]
 
 
+def oil_buff_ability_keys(fields: dict[str, str]) -> list[str]:
+    """Ability keys this oil actually buffs (correct direction per stat) —
+    e.g. a Recoil +50% oil (a debuff) is excluded from the "Recoil" group,
+    since picking "Recoil" is meant to surface oils that reduce it."""
+    return [
+        k for k in oil_ability_keys(fields)
+        if classify_ability(k, fields[k]) == "buff"
+    ]
+
+
 def item_groups(kind: str, fields: dict[str, str], title: str, wikitext: str) -> dict[str, object]:
     if kind == "oil":
         return {
-            "ability": oil_ability_keys(fields),
+            "ability": oil_buff_ability_keys(fields),
             "composition": oil_composition(fields),
         }
     if kind == "scroll":
