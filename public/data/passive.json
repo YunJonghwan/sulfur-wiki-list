@@ -1,0 +1,338 @@
+{
+  "kind": "passive",
+  "generated": "2026-07-07T13:01:48.103902+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "Luck",
+      "label": "Luck"
+    },
+    {
+      "key": "Speed",
+      "label": "Movement Speed"
+    },
+    {
+      "key": "LungCpty",
+      "label": "Lung Capacity"
+    },
+    {
+      "key": "ExpGain",
+      "label": "Experience"
+    },
+    {
+      "key": "RevolDmg",
+      "label": "Revolver Damage"
+    },
+    {
+      "key": "AssltDmg",
+      "label": "Assault Rifle Damage"
+    },
+    {
+      "key": "SniperDmg",
+      "label": "Sniper Damage"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    },
+    {
+      "key": "AirDmg",
+      "label": "Airborne Damage"
+    },
+    {
+      "key": "Armor",
+      "label": "Armor"
+    },
+    {
+      "key": "LootRolls",
+      "label": "Loot Rerolls"
+    },
+    {
+      "key": "PrevDeath",
+      "label": "Prevents Death"
+    },
+    {
+      "key": "SingleUse",
+      "label": "Single Use"
+    },
+    {
+      "key": "Slide",
+      "label": "Crouch Slide"
+    },
+    {
+      "key": "Summon",
+      "label": "Summoned Ally"
+    },
+    {
+      "key": "TimeScale",
+      "label": "Time Scale Adjustment"
+    }
+  ],
+  "axes": [],
+  "items": [
+    {
+      "name": "Ass Wheel™",
+      "page": "https://sulfur.wiki.gg/wiki/Ass_Wheel%E2%84%A2",
+      "image": "Ass Wheel™.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×2",
+        "Speed": "+100% while crouching",
+        "SellVal": "4500"
+      },
+      "icon": "icons/passive/_etc/Ass_Wheel™.png"
+    },
+    {
+      "name": "Dark Lamp",
+      "page": "https://sulfur.wiki.gg/wiki/Dark_Lamp",
+      "image": "Dark Lamp.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×1",
+        "Summon": "Random Enemy",
+        "SellVal": "5000"
+      },
+      "icon": "icons/passive/_etc/Dark_Lamp.png"
+    },
+    {
+      "name": "Detective Pipe",
+      "page": "https://sulfur.wiki.gg/wiki/Detective_Pipe",
+      "image": "Detective Pipe.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×1",
+        "TimeScale": "-15%",
+        "SellVal": "7500"
+      },
+      "icon": "icons/passive/_etc/Detective_Pipe.png"
+    },
+    {
+      "name": "Dog Whistle",
+      "page": "https://sulfur.wiki.gg/wiki/Dog_Whistle",
+      "image": "Dog Whistle.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "Summon": "Guard Dog",
+        "SellVal": "5000"
+      },
+      "icon": "icons/passive/_etc/Dog_Whistle.png"
+    },
+    {
+      "name": "Dogtags",
+      "page": "https://sulfur.wiki.gg/wiki/Dogtags",
+      "image": "Dogtags.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "AssltDmg": "+15%",
+        "SellVal": "725"
+      },
+      "icon": "icons/passive/_etc/Dogtags.png"
+    },
+    {
+      "name": "Extra Lung",
+      "page": "https://sulfur.wiki.gg/wiki/Extra_Lung",
+      "image": "Extra Lung.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "LungCpty": "+20s",
+        "SellVal": "250"
+      },
+      "icon": "icons/passive/_etc/Extra_Lung.png"
+    },
+    {
+      "name": "Four-Leaf Clover",
+      "page": "https://sulfur.wiki.gg/wiki/Four-Leaf_Clover",
+      "image": "Four-Leaf Clover.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "Luck": "+1"
+      },
+      "icon": "icons/passive/_etc/Four-Leaf_Clover.png"
+    },
+    {
+      "name": "Instant Defibrillator",
+      "page": "https://sulfur.wiki.gg/wiki/Instant_Defibrillator",
+      "image": "Instant Defibrillator.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×1",
+        "PrevDeath": "✓",
+        "SingleUse": "✓",
+        "SellVal": "5000"
+      },
+      "icon": "icons/passive/_etc/Instant_Defibrillator.png"
+    },
+    {
+      "name": "Iron Feather",
+      "page": "https://sulfur.wiki.gg/wiki/Iron_Feather",
+      "image": "Iron Feather.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "AirDmg": "+20%",
+        "SellVal": "1500"
+      },
+      "icon": "icons/passive/_etc/Iron_Feather.png"
+    },
+    {
+      "name": "Knee Pads",
+      "page": "https://sulfur.wiki.gg/wiki/Knee_Pads",
+      "image": "Knee Pads.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2x2",
+        "SellVal": "190",
+        "SoldBy": "Skrip",
+        "Armor": "+1",
+        "Slide": "+1"
+      },
+      "icon": "icons/passive/_etc/Knee_Pads.png"
+    },
+    {
+      "name": "Library Card",
+      "page": "https://sulfur.wiki.gg/wiki/Library_Card",
+      "image": "Library Card.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "ExpGain": "+30%",
+        "SellVal": "2000"
+      },
+      "icon": "icons/passive/_etc/Library_Card.png"
+    },
+    {
+      "name": "Loaded Die",
+      "page": "https://sulfur.wiki.gg/wiki/Loaded_Die",
+      "image": "Loaded Die.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "LootRolls": "3",
+        "SellVal": "7500"
+      },
+      "icon": "icons/passive/_etc/Loaded_Die.png"
+    },
+    {
+      "name": "Lock of the Magus",
+      "page": "https://sulfur.wiki.gg/wiki/Lock_of_the_Magus",
+      "image": "Lock of the Magus.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "ExpGain": "×100",
+        "SingleUse": "✓",
+        "SellVal": "3500"
+      },
+      "icon": "icons/passive/_etc/Lock_of_the_Magus.png"
+    },
+    {
+      "name": "Metabulator Pump",
+      "page": "https://sulfur.wiki.gg/wiki/Metabulator_Pump",
+      "image": "Metabulator Pump.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "Speed": "+20% after eating",
+        "SellVal": "4000"
+      },
+      "icon": "icons/passive/_etc/Metabulator_Pump.png"
+    },
+    {
+      "name": "Oxygen Tank",
+      "page": "https://sulfur.wiki.gg/wiki/Oxygen_Tank",
+      "image": "Oxygen Tank.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2x1",
+        "LungCpty": "+1 000 000",
+        "SellVal": "725"
+      },
+      "icon": "icons/passive/_etc/Oxygen_Tank.png"
+    },
+    {
+      "name": "Range Finder",
+      "page": "https://sulfur.wiki.gg/wiki/Range_Finder",
+      "image": "Range Finder.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "SniperDmg": "+15%",
+        "SellVal": "725"
+      },
+      "icon": "icons/passive/_etc/Range_Finder.png"
+    },
+    {
+      "name": "Sheriff's Badge",
+      "page": "https://sulfur.wiki.gg/wiki/Sheriff%27s_Badge",
+      "image": "Sheriff's Badge.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "RevolDmg": "+15%",
+        "SellVal": "725"
+      },
+      "icon": "icons/passive/_etc/Sheriff's_Badge.png"
+    },
+    {
+      "name": "Yakety Sax",
+      "page": "https://sulfur.wiki.gg/wiki/Yakety_Sax",
+      "image": "Yakety Sax.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×3",
+        "TimeScale": "+15%",
+        "SellVal": "600"
+      },
+      "icon": "icons/passive/_etc/Yakety_Sax.png"
+    }
+  ]
+}

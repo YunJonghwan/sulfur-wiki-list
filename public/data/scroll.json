@@ -1,0 +1,817 @@
+{
+  "kind": "scroll",
+  "generated": "2026-07-07T13:01:48.103902+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "Dmg",
+      "label": "Damage"
+    },
+    {
+      "key": "RPM",
+      "label": "Rate of Fire"
+    },
+    {
+      "key": "DarkDmg",
+      "label": "Dark Damage"
+    },
+    {
+      "key": "WpnAreaDmg",
+      "label": "Weapon-Based Area Damage"
+    },
+    {
+      "key": "HSDmg",
+      "label": "Headshot Damage"
+    },
+    {
+      "key": "Spread",
+      "label": "Spread"
+    },
+    {
+      "key": "BltSpeed",
+      "label": "Bullet Speed"
+    },
+    {
+      "key": "BltPen",
+      "label": "Bullet Penetrations"
+    },
+    {
+      "key": "PenDmgMult",
+      "label": "Penetration Damage Multiplier"
+    },
+    {
+      "key": "BltSize",
+      "label": "Bullet Size"
+    },
+    {
+      "key": "BltBounces",
+      "label": "Bullet Bounces"
+    },
+    {
+      "key": "BltBounciness",
+      "label": "Bullet Bounciness"
+    },
+    {
+      "key": "BltDrop",
+      "label": "Bullet Drop"
+    },
+    {
+      "key": "Drag",
+      "label": "Drag Multiplier"
+    },
+    {
+      "key": "DrbConsume",
+      "label": "Durability Consumption"
+    },
+    {
+      "key": "ConvertWpn",
+      "label": "Convert Weapon into"
+    },
+    {
+      "key": "RocketBlt",
+      "label": "Convert Bullets into Rockets"
+    },
+    {
+      "key": "Homing",
+      "label": "Homing Bullets"
+    },
+    {
+      "key": "CrpsExpl",
+      "label": "Corpse Explosion Power"
+    },
+    {
+      "key": "Petrify",
+      "label": "Petrification"
+    },
+    {
+      "key": "Poison",
+      "label": "Poison"
+    },
+    {
+      "key": "PsnCloud",
+      "label": "Poison Cloud"
+    },
+    {
+      "key": "PsnPuddle",
+      "label": "Poisonous Puddle"
+    },
+    {
+      "key": "Fire",
+      "label": "Fire"
+    },
+    {
+      "key": "Lava",
+      "label": "Lava"
+    },
+    {
+      "key": "Explosion",
+      "label": "Explosion"
+    },
+    {
+      "key": "Electrocution",
+      "label": "Electrocution"
+    },
+    {
+      "key": "ElecArea",
+      "label": "Electrocution Area"
+    },
+    {
+      "key": "Charm",
+      "label": "Charm"
+    },
+    {
+      "key": "Blind",
+      "label": "Blinding"
+    },
+    {
+      "key": "Stun",
+      "label": "Stun"
+    },
+    {
+      "key": "Fear",
+      "label": "Fear"
+    },
+    {
+      "key": "Frost",
+      "label": "Frost"
+    },
+    {
+      "key": "Root",
+      "label": "Root"
+    },
+    {
+      "key": "Petrify",
+      "label": "Petrification"
+    },
+    {
+      "key": "LinkBlt",
+      "label": "Bullet links Targets"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    },
+    {
+      "key": "AlwaysOrgans",
+      "label": "Always drop Organs"
+    },
+    {
+      "key": "AreaBlind",
+      "label": "Blinds enemies in an area"
+    },
+    {
+      "key": "FrostPuddle",
+      "label": "Frost Puddle"
+    },
+    {
+      "key": "LessForceSpd",
+      "label": "Less Force Speed"
+    },
+    {
+      "key": "LifeTime",
+      "label": "Projectile Life Time"
+    },
+    {
+      "key": "MoreDmgOnHit",
+      "label": "Additional Damage Taken per Stack"
+    },
+    {
+      "key": "OilPuddle",
+      "label": "Puddle of Oil"
+    },
+    {
+      "key": "Oily",
+      "label": "Oily"
+    },
+    {
+      "key": "Proc",
+      "label": "Proc Chance"
+    },
+    {
+      "key": "SelfBlind",
+      "label": "Blind Self"
+    },
+    {
+      "key": "SelfDmg",
+      "label": "Self Damage Per Bullet"
+    },
+    {
+      "key": "ShareDmg",
+      "label": "Damage Shared"
+    },
+    {
+      "key": "StunArea",
+      "label": "Stun Area"
+    },
+    {
+      "key": "Swap",
+      "label": "Swap places with target"
+    },
+    {
+      "key": "Wet",
+      "label": "Wet"
+    }
+  ],
+  "axes": [],
+  "items": [
+    {
+      "name": "Scroll of Aftershock",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Aftershock",
+      "image": "Scroll of Aftershock.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "StunArea": "🜃",
+        "Proc": "10%",
+        "SellVal": "2500"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Aftershock.png"
+    },
+    {
+      "name": "Scroll of Chain Lightning",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Chain_Lightning",
+      "image": "Scroll of Chain Lightning.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Electrocution": "Spreading",
+        "Proc": "35%",
+        "SellVal": "2000",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Chain_Lightning.png"
+    },
+    {
+      "name": "Scroll of Chaos Strike",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Chaos_Strike",
+      "image": "Scroll of Chaos Strike.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1x2",
+        "Stun": "✓",
+        "Swap": "✓",
+        "DarkDmg": "+50–200",
+        "BltSize": "+100%",
+        "SellVal": "1000"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Chaos_Strike.png"
+    },
+    {
+      "name": "Scroll of Charm",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Charm",
+      "image": "Scroll of Charm.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Charm": "♡",
+        "Proc": "3%",
+        "SellVal": "1000",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Charm.png"
+    },
+    {
+      "name": "Scroll of Corpse Explosion",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Corpse_Explosion",
+      "image": "Scroll of Corpse Explosion.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "CrpsExpl": "+1",
+        "SellVal": "1500",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Corpse_Explosion.png"
+    },
+    {
+      "name": "Scroll of Crusader",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Crusader",
+      "image": "Scroll of Crusader.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "MoreDmgOnHit": "+5%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Crusader.png"
+    },
+    {
+      "name": "Scroll of Dark",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Dark",
+      "image": "Scroll of Dark.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Dmg": "-80%",
+        "Blind": "🝯",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Dark.png"
+    },
+    {
+      "name": "Scroll of Earth",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Earth",
+      "image": "Scroll of Earth.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Stun": "🜃",
+        "Proc": "20%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Earth.png"
+    },
+    {
+      "name": "Scroll of Embers",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Embers",
+      "image": "Scroll of Embers.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Fire": "🜂",
+        "Proc": "20%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen, Bill"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Embers.png"
+    },
+    {
+      "name": "Scroll of Explosions",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Explosions",
+      "image": "Scroll of Explosions.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Explosion": "¤",
+        "Dmg": "+25",
+        "SellVal": "1000",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Explosions.png"
+    },
+    {
+      "name": "Scroll of Fear",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Fear",
+      "image": "Scroll of Fear.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Fear": "✓",
+        "Proc": "20%",
+        "SellVal": "1500",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Fear.png"
+    },
+    {
+      "name": "Scroll of Flame Thrower",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Flame_Thrower",
+      "image": "Scroll of Flame Thrower.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "ConvertWpn": "Flamethrower",
+        "LifeTime": "0.8 seconds",
+        "LessForceSpd": "🜂",
+        "Dmg": "-86%",
+        "Spread": "+150%",
+        "BltSpeed": "-70%",
+        "Drag": "8",
+        "BltBounces": "+1",
+        "BltBounciness": "0.2",
+        "SellVal": "2500",
+        "BuyVal": "5000",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Flame_Thrower.png"
+    },
+    {
+      "name": "Scroll of Frostbite",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Frostbite",
+      "image": "Scroll of Frostbite.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Frost": "❆",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen, Bill"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Frostbite.png"
+    },
+    {
+      "name": "Scroll of Holy Fire",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Holy_Fire",
+      "image": "Scroll of Holy Fire.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1x2",
+        "ConvertWpn": "Railgun",
+        "RPM": "-50%",
+        "BltPen": "+999",
+        "PenDmgMult": "+50%",
+        "SellVal": "3500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Holy_Fire.png"
+    },
+    {
+      "name": "Scroll of Holy Purge",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Holy_Purge",
+      "image": "Scroll of Holy Purge.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "ConvertWpn": "Area Burst around Player",
+        "AreaBlind": "☼",
+        "SelfBlind": "☼",
+        "SelfDmg": "10",
+        "WpnAreaDmg": "10%",
+        "DrbConsume": "+250%",
+        "SellVal": "3000",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Holy_Purge.png"
+    },
+    {
+      "name": "Scroll of Lava",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Lava",
+      "image": "Scroll of Lava.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Lava": "🝦",
+        "BltDrop": "+25",
+        "SellVal": "2000",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Lava.png"
+    },
+    {
+      "name": "Scroll of Least Resistance",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Least_Resistance",
+      "image": "Scroll of Least Resistance.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Homing": "↝",
+        "BltSpeed": "-90%",
+        "DrbConsume": "+200%",
+        "SellVal": "3000",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Least_Resistance.png"
+    },
+    {
+      "name": "Scroll of Light",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Light",
+      "image": "Scroll of Light.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1x2",
+        "ConvertWpn": "Railgun",
+        "RPM": "-50%",
+        "BltPen": "+999",
+        "PenDmgMult": "-50%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Light.png"
+    },
+    {
+      "name": "Scroll of Nature",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Nature",
+      "image": "Scroll of Nature.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Root": "🙒",
+        "Proc": "40%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Nature.png"
+    },
+    {
+      "name": "Scroll of Noxiosa",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Noxiosa",
+      "image": "Scroll of Noxiosa.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "PsnCloud": "🝤",
+        "SellVal": "1500",
+        "SoldBy": "Rat Queen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Noxiosa.png"
+    },
+    {
+      "name": "Scroll of Pesticide",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Pesticide",
+      "image": "Scroll of Pesticide.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "ConvertWpn": "Poison Sprayer",
+        "LifeTime": "0.8 seconds",
+        "LessForceSpd": "🝤",
+        "Dmg": "-86%",
+        "Spread": "+150%",
+        "BltSpeed": "-70%",
+        "Drag": "8",
+        "BltBounces": "+1",
+        "BltBounciness": "0.2",
+        "SellVal": "2250",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Pesticide.png"
+    },
+    {
+      "name": "Scroll of Petrification",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Petrification",
+      "image": "Scroll of Petrification.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Petrify": "🝁",
+        "Proc": "5%",
+        "SellVal": "2000",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Petrification.png"
+    },
+    {
+      "name": "Scroll of Petroleum",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Petroleum",
+      "image": "Scroll of Petroleum.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Oily": "🝆",
+        "OilPuddle": "🝆",
+        "BltDrop": "+25",
+        "SellVal": "200",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Petroleum.png"
+    },
+    {
+      "name": "Scroll of Plague",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Plague",
+      "image": "Scroll of Plague.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Poison": "🝤",
+        "Proc": "25%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Plague.png"
+    },
+    {
+      "name": "Scroll of Poison Blood",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Poison_Blood",
+      "image": "Scroll of Poison Blood.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "PsnPuddle": "🝤",
+        "SellVal": "1500",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Poison_Blood.png"
+    },
+    {
+      "name": "Scroll of Prism",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Prism",
+      "image": "Scroll of Prism.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Poison": "🝤",
+        "Wet": "🜄",
+        "Fire": "🜂",
+        "Electrocution": "↯",
+        "Frost": "❆",
+        "Proc": "20%",
+        "SellVal": "1500",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Prism.png"
+    },
+    {
+      "name": "Scroll of Rocket Launcher",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Rocket_Launcher",
+      "image": "Scroll of Rocket Launcher.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "RocketBlt": "🠶",
+        "Explosion": "¤",
+        "SellVal": "1000",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Rocket_Launcher.png"
+    },
+    {
+      "name": "Scroll of Sacrifice",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Sacrifice",
+      "image": "Scroll of Sacrifice.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "SelfDmg": "5%",
+        "Dmg": "+100%",
+        "SellVal": "1750",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Sacrifice.png"
+    },
+    {
+      "name": "Scroll of Slush",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Slush",
+      "image": "Scroll of Slush.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "FrostPuddle": "❆",
+        "BltDrop": "+40",
+        "SellVal": "1000"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Slush.png"
+    },
+    {
+      "name": "Scroll of Storm Surge",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Storm_Surge",
+      "image": "Scroll of Storm Surge.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "ElecArea": "☈",
+        "BltDrop": "+25",
+        "SellVal": "2000",
+        "SoldBy": "Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Storm_Surge.png"
+    },
+    {
+      "name": "Scroll of Surge",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Surge",
+      "image": "Scroll of Surge.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Electrocution": "↯",
+        "Proc": "15%",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Surge.png"
+    },
+    {
+      "name": "Scroll of Thunderbolt",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Thunderbolt",
+      "image": "Scroll of Thunderbolt.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "ConvertWpn": "Railgun",
+        "Electrocution": "☈",
+        "RPM": "-50%",
+        "SellVal": "3000",
+        "SoldBy": "Fex Shuen, Blond Magus"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Thunderbolt.png"
+    },
+    {
+      "name": "Scroll of Toxic Lobotomy",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Toxic_Lobotomy",
+      "image": "Scroll of Toxic Lobotomy.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "ConvertWpn": "Railgun",
+        "AlwaysOrgans": "🜊",
+        "HSDmg": "+300%",
+        "DrbConsume": "+350%",
+        "SellVal": "2000"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Toxic_Lobotomy.png"
+    },
+    {
+      "name": "Scroll of Voodoo",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Voodoo",
+      "image": "Scroll of Voodoo.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "LinkBlt": "☌",
+        "ShareDmg": "100%",
+        "SellVal": "600",
+        "SoldBy": "Rat Queen, Blond Magus, Qiosk"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Voodoo.png"
+    },
+    {
+      "name": "Scroll of Water",
+      "page": "https://sulfur.wiki.gg/wiki/Scroll_of_Water",
+      "image": "Scroll of Water.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "Wet": "🜄",
+        "Dmg": "-99%",
+        "BltDrop": "5",
+        "SellVal": "500",
+        "SoldBy": "Fex Shuen, Rat Queen, Qiosk"
+      },
+      "icon": "icons/scroll/_etc/Scroll_of_Water.png"
+    }
+  ]
+}

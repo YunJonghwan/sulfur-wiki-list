@@ -38,7 +38,8 @@ CACHE_FILE = Path(__file__).resolve().parent / ".cache" / "wikitext.json"
 ICON_WIDTH = 64
 
 # Kinds we generate a page/table for, in the requested display order.
-TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable"]
+TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable",
+                "scroll", "passive"]
 
 # Ordered stat columns per kind, taken from Template:Item Infobox.
 # The frontend only shows columns that at least one item actually populates.
@@ -89,6 +90,24 @@ KIND_COLUMNS: dict[str, list[str]] = {
         "Charisma", "Coyote", "CritADS", "Sprint", "MoveAccuracy", "JumpPwr",
         "ExtraJumps", "Speed", "WpnWeight", "FireRst", "FrostRst", "PsnRst",
         "ElecRst", "LightRst", "MeleeDmg",
+        "SellVal", "BuyVal", "SoldBy",
+    ],
+    "scroll": [
+        "GridSize", "SubType",
+        "Dmg", "RPM", "DarkDmg", "WpnAreaDmg", "HSDmg", "Spread", "BltSpeed",
+        "BltPen", "PenDmgMult", "BltSize", "BltBounces", "BltBounciness",
+        "BltDrop", "Drag", "DrbConsume",
+        "ConvertWpn", "RocketBlt", "Homing", "CrpsExpl", "Petrify", "Poison",
+        "PsnCloud", "PsnPuddle", "Fire", "Lava", "Explosion", "Electrocution",
+        "ElecArea", "Charm", "Blind", "Stun", "Fear", "Frost", "Freeze",
+        "Root", "Petrify", "LinkBlt", "Frag", "Sticky",
+        "SellVal", "BuyVal", "SoldBy",
+    ],
+    "passive": [
+        "GridSize", "SubType",
+        "Luck", "Speed", "LungCpty", "ExpGain",
+        "AutoDmg", "PistolDmg", "RevolDmg", "AssltDmg", "LMGDmg", "RifleDmg",
+        "MeleeDmg", "SniperDmg", "ShotgunDmg",
         "SellVal", "BuyVal", "SoldBy",
     ],
 }

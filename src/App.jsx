@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { CATEGORIES, UI, t } from './i18n.js'
 import DataTable from './components/DataTable.jsx'
+import BuildSimulator from './components/BuildSimulator.jsx'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -20,7 +21,7 @@ export default function App() {
   const [status, setStatus] = useState('idle')
 
   useEffect(() => {
-    if (cache[active]) return
+    if (active === 'build' || cache[active]) return
     let cancelled = false
     setStatus('loading')
     fetch(`${BASE}data/${active}.json`)
@@ -73,19 +74,31 @@ export default function App() {
             {t(cat, lang)}
           </button>
         ))}
+        <button
+          className={active === 'build' ? 'tab active' : 'tab'}
+          onClick={() => setActive('build')}
+        >
+          🛠 {t(UI.build, lang)}
+        </button>
       </nav>
 
       <main>
-        {status === 'loading' && !data && (
-          <p className="notice">{t(UI.loading, lang)}</p>
+        {active === 'build' ? (
+          <BuildSimulator lang={lang} />
+        ) : (
+          <>
+            {status === 'loading' && !data && (
+              <p className="notice">{t(UI.loading, lang)}</p>
+            )}
+            {status === 'error' && !data && (
+              <p className="notice error">{t(UI.error, lang)}</p>
+            )}
+            {data && <DataTable key={data.kind} data={data} lang={lang} />}
+          </>
         )}
-        {status === 'error' && !data && (
-          <p className="notice error">{t(UI.error, lang)}</p>
-        )}
-        {data && <DataTable key={data.kind} data={data} lang={lang} />}
       </main>
 
-      {data && (
+      {active !== 'build' && data && (
         <footer className="app-footer">
           <span>
             {t(UI.source, lang)}{' '}
