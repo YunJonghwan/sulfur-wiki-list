@@ -81,6 +81,10 @@ export const GROUP_KO = {
   Manual: '설명서',
   Milk: '우유',
   Water: '물',
+  Mushroom: '버섯',
+  Nut: '견과',
+  'Amulet Recharge': '부적 충전',
+  Other: '기타',
   // attachment
   'Muzzle Attachment': '총구',
   Sight: '조준경',
