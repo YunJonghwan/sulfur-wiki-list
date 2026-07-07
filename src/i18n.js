@@ -352,7 +352,7 @@ export const ITEM_NAME_KO = {
   Salamander: '샐러맨더',
   'Snut .38': '스누트 .38',
   'Socom 9': '소컴 9',
-  'Socom ACR': '소컴 ACR',
+  'Socom ACR': '소콤 ACR',
   Songbird: '송버드',
   'Star & Witness': '스타 앤 위트니스',
   'Tailor Marksman MKII': '테일러 마크스맨 MKII',
