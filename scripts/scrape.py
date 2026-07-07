@@ -518,6 +518,8 @@ SUBTYPE_ALIASES = {
     "sweets": "dessert",
     "remedy": "drug-remedy",
     "drug": "drug-remedy",
+    "mushrooms": "mushroom",
+    "nuts": "nut",
 }
 
 

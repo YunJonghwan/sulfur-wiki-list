@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-07T12:44:53.666756+00:00",
+  "generated": "2026-07-07T12:45:54.619104+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -169,21 +169,16 @@
         {
           "value": "Mushroom",
           "label": "Mushroom",
-          "count": 3
+          "count": 4
         },
         {
-          "value": "Nuts",
-          "label": "Nuts",
+          "value": "Nut",
+          "label": "Nut",
           "count": 3
         },
         {
           "value": "Amulet Recharge",
           "label": "Amulet Recharge",
-          "count": 1
-        },
-        {
-          "value": "Mushrooms",
-          "label": "Mushrooms",
           "count": 1
         },
         {
@@ -1608,7 +1603,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Hazelnut",
       "image": "Hazelnut.png",
       "groups": {
-        "type": "Nuts"
+        "type": "Nut"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1617,7 +1612,7 @@
         "Heal": "2 health over 2.5 seconds",
         "SoldBy": "Jaques De Fector"
       },
-      "icon": "icons/consumable/nuts/Hazelnut.png"
+      "icon": "icons/consumable/nut/Hazelnut.png"
     },
     {
       "name": "Health Potion",
@@ -2217,7 +2212,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Mycota_Squamata",
       "image": "Mycota Squamata.png",
       "groups": {
-        "type": "Mushrooms"
+        "type": "Mushroom"
       },
       "fields": {
         "GridSize": "1×2",
@@ -2226,7 +2221,7 @@
         "SellVal": "60",
         "SoldBy": "Blond Magus, Qiosk"
       },
-      "icon": "icons/consumable/mushrooms/Mycota_Squamata.png"
+      "icon": "icons/consumable/mushroom/Mycota_Squamata.png"
     },
     {
       "name": "Mystery Meat",
@@ -2374,7 +2369,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Peanut",
       "image": "Peanut.png",
       "groups": {
-        "type": "Nuts"
+        "type": "Nut"
       },
       "fields": {
         "GridSize": "1x1",
@@ -2383,7 +2378,7 @@
         "SellVal": "10",
         "SoldB": "Stiffleg"
       },
-      "icon": "icons/consumable/nuts/Peanut.png"
+      "icon": "icons/consumable/nut/Peanut.png"
     },
     {
       "name": "Peanut Butter",
@@ -2468,7 +2463,7 @@
       "page": "https://sulfur.wiki.gg/wiki/Pine_Nuts",
       "image": "Pine Nuts.png",
       "groups": {
-        "type": "Nuts"
+        "type": "Nut"
       },
       "fields": {
         "GridSize": "1×1",
@@ -2477,7 +2472,7 @@
         "SellVal": "10",
         "SoldBy": "Stiffleg, Jaques De Fector"
       },
-      "icon": "icons/consumable/nuts/Pine_Nuts.png"
+      "icon": "icons/consumable/nut/Pine_Nuts.png"
     },
     {
       "name": "Pizza",
