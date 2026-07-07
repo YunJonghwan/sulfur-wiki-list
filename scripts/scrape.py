@@ -613,6 +613,81 @@ def _prune_empty_dirs() -> None:
             path.rmdir()
 
 
+# --- Sub-group axes -------------------------------------------------------
+# Each item gets a `groups` map (axis -> display value) so the frontend can
+# offer sub-tabs / sections within a category. Weapons support two axes
+# (class + ammunition); oils are grouped by their effect group.
+
+OIL_GROUP_LABELS = {
+    "damage": "Damage", "fire-rate": "Fire Rate", "handling": "Handling",
+    "bullet": "Bullet", "economy": "Economy", "mobility": "Mobility",
+    "effects": "Effects", "misc": "Misc",
+}
+
+AXIS_KEYS_BY_KIND = {
+    "weapon": ["class", "ammo"],
+    "oil": ["effect"],
+    "attachment": ["type"],
+    "equipment": ["type"],
+    "consumable": ["type"],
+}
+
+AXIS_LABELS = {
+    "class": "Weapon Type",
+    "ammo": "Ammunition",
+    "effect": "Effect",
+    "type": "Type",
+}
+
+# Preferred display order for some axes; anything else is appended by count.
+VALUE_ORDER = {
+    "class": [
+        "Pistol", "Revolver", "Shotgun", "Submachine Gun", "Assault Rifle",
+        "Light Machine Gun", "Rifle", "Sniper Rifle", "Melee",
+    ],
+    "ammo": ["9mm", "5.56mm", "7.62mm", ".50 BMG", "12Ga", "Energy Cell"],
+    "effect": [
+        "Damage", "Fire Rate", "Handling", "Bullet", "Economy", "Mobility",
+        "Effects", "Misc",
+    ],
+}
+
+
+def display_subtype(subtype: str) -> str:
+    """Human-readable, consolidated subtype label (matches icon folders)."""
+    if not subtype:
+        return "Other"
+    slug = subtype_slug(subtype)
+    return slug.replace("-", " ").title()
+
+
+def item_groups(kind: str, fields: dict[str, str]) -> dict[str, str]:
+    if kind == "oil":
+        return {"effect": OIL_GROUP_LABELS[oil_group(fields)]}
+    label = display_subtype(fields.get("SubType", ""))
+    if kind == "weapon":
+        return {"class": label, "ammo": fields.get("Ammo") or "—"}
+    return {"type": label}
+
+
+def compute_axes(kind: str, items: list[dict]) -> list[dict]:
+    axes = []
+    for axis in AXIS_KEYS_BY_KIND.get(kind, []):
+        counts: dict[str, int] = {}
+        for it in items:
+            val = it.get("groups", {}).get(axis)
+            if val:
+                counts[val] = counts.get(val, 0) + 1
+        order = VALUE_ORDER.get(axis, [])
+        ordered = [v for v in order if v in counts]
+        rest = sorted((v for v in counts if v not in order),
+                      key=lambda v: (-counts[v], v.lower()))
+        values = [{"value": v, "count": counts[v]} for v in ordered + rest]
+        axes.append({"key": axis, "label": AXIS_LABELS.get(axis, axis),
+                     "values": values})
+    return axes
+
+
 def build() -> None:
     print("Fetching page list...")
     titles = get_infobox_pages()
@@ -639,6 +714,7 @@ def build() -> None:
                 "name": title,
                 "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
                 "image": image,
+                "groups": item_groups(kind, fields),
                 "fields": {k: v for k, v in fields.items()
                            if k not in ("kind", "image", "title")},
             }
@@ -671,6 +747,7 @@ def build() -> None:
             "source": "https://sulfur.wiki.gg",
             "license": "CC BY-SA 4.0",
             "columns": columns,
+            "axes": compute_axes(kind, items),
             "items": items,
         }
         out_path = OUT_DIR / f"{kind}.json"
