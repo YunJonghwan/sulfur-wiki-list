@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "scrape": "python scripts/scrape.py"
+    "scrape": "python scripts/scrape.py",
+    "scrape:refresh": "python scripts/scrape.py --refresh"
   },
   "dependencies": {
     "react": "^18.3.1",
