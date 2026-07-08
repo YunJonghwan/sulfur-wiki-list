@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-08T10:08:31.231851+00:00",
+  "generated": "2026-07-08T10:16:48.637209+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -1185,9 +1185,10 @@
       "recipe": {
         "ingredients": [
           {
-            "name": "Any same skin except Shav'Wa",
+            "name": "Any same skin",
             "qty": 2,
             "wildcard": true,
+            "exception": "Shav'Wa",
             "icon": "icons/misc/organ/Goblin_Skin.png",
             "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
           }
@@ -4976,9 +4977,10 @@
                 "page": "https://sulfur.wiki.gg/wiki/Egg"
               },
               {
-                "name": "Any Milk, except Buttermilk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Buttermilk",
                 "icon": "icons/consumable/milk/Whole_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
               },
@@ -9115,9 +9117,10 @@
           {
             "ingredients": [
               {
-                "name": "Any Milk, Except Whole Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Whole Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -9141,9 +9144,10 @@
           {
             "ingredients": [
               {
-                "name": "Any Milk, Except Whole Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Whole Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -12384,9 +12388,10 @@
                 "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
               },
               {
-                "name": "Any 1×1 Mushroom, except Rödsopp",
+                "name": "Any 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               }
@@ -12593,16 +12598,18 @@
                 "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
               },
               {
-                "name": "Any Other 1×1 Mushroom, except Rödsopp",
+                "name": "Any Other 1×1 Mushroom",
                 "qty": 2,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
               {
-                "name": "Any 1×1 Mushroom, except Rödsopp",
+                "name": "Any 1×1 Mushroom",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Swing-Ding.png",
                 "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
               }
@@ -12619,16 +12626,18 @@
                 "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
               },
               {
-                "name": "Any Other 1×1 Mushroom, except Rödsopp",
+                "name": "Any Other 1×1 Mushroom",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
               {
-                "name": "Any 1×1 Mushroom, except Rödsopp",
+                "name": "Any 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Swing-Ding.png",
                 "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
               }
@@ -12645,47 +12654,23 @@
                 "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
               },
               {
-                "name": "Any Other 1×1 Mushroom, except Rödsopp",
+                "name": "Any Other 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
               {
-                "name": "Any 1×1 Mushroom, except Rödsopp",
+                "name": "Any 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
+                "exception": "Rödsopp",
                 "icon": "icons/consumable/mushroom/Swing-Ding.png",
                 "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
               }
             ],
             "resultQty": 4
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Mineral Water",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/water/Mineral_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Mineral_Water"
-              },
-              {
-                "name": "Any Other 1×1 Mushroom, except Swing-Ding",
-                "qty": 3,
-                "wildcard": true,
-                "icon": "icons/consumable/mushroom/Velvet_Bell.png",
-                "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
-              },
-              {
-                "name": "Rödsopp",
-                "qty": 3,
-                "wildcard": false,
-                "icon": "icons/consumable/mushroom/Rödsopp.png",
-                "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp"
-              }
-            ],
-            "resultQty": 5
           },
           {
             "ingredients": [
@@ -12804,6 +12789,33 @@
                 "name": "Any Other 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
+                "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+                "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+              },
+              {
+                "name": "Rödsopp",
+                "qty": 3,
+                "wildcard": false,
+                "icon": "icons/consumable/mushroom/Rödsopp.png",
+                "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp"
+              }
+            ],
+            "resultQty": 5
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Mineral Water",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/water/Mineral_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Mineral_Water"
+              },
+              {
+                "name": "Any Other 1×1 Mushroom",
+                "qty": 3,
+                "wildcard": true,
+                "exception": "Swing-Ding",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -15478,9 +15490,10 @@
                 "page": "https://sulfur.wiki.gg/wiki/Potato"
               },
               {
-                "name": "Any Flesh except Goblin",
+                "name": "Any Flesh",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Goblin",
                 "icon": "icons/misc/ingredient/Dog_Flesh.png",
                 "page": "https://sulfur.wiki.gg/wiki/Dog_Flesh"
               }
@@ -15563,9 +15576,10 @@
                 "page": "https://sulfur.wiki.gg/wiki/Cheese"
               },
               {
-                "name": "Any Flesh except Goblin",
+                "name": "Any Flesh",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Goblin",
                 "icon": "icons/misc/ingredient/Dog_Flesh.png",
                 "page": "https://sulfur.wiki.gg/wiki/Dog_Flesh"
               }
@@ -20034,9 +20048,10 @@
           {
             "ingredients": [
               {
-                "name": "Any Flesh (Except for Craw Flesh)",
+                "name": "Any Flesh",
                 "qty": 1,
                 "wildcard": true,
+                "exception": "Craw Flesh",
                 "icon": "icons/consumable/_wildcard/Goblin_Flesh.png"
               },
               {

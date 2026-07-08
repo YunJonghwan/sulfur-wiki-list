@@ -485,6 +485,19 @@ RECIPE_ROW_START_RE = re.compile(r"\{\{\s*Recipe row")
 RECIPE_SECTION_RE = re.compile(r"==\s*Recipes\s*==([\s\S]*?)(?:\n==[^=]|\[\[Category)")
 CATEGORY_INGREDIENT_RE = re.compile(r"^:?Category:", re.IGNORECASE)
 
+# Wildcard labels sometimes carve out one excluded item, in several
+# phrasings: "Any same skin except Shav'Wa", "Any Milk, except Buttermilk",
+# "Any Flesh (Except for Craw Flesh)". Split that off so the UI can
+# de-emphasize it instead of running it into the main label.
+EXCEPT_RE = re.compile(r"^(.*?)\s*,?\s*\(?except(?:\s+for)?\s+(.+?)\)?\s*$", re.IGNORECASE)
+
+
+def split_wildcard_exception(label: str) -> tuple[str, str | None]:
+    m = EXCEPT_RE.match(label)
+    if not m:
+        return label, None
+    return m.group(1).strip(), m.group(2).strip()
+
 # A handful of pages (Pölsa, Red Wine) have a "=== Hidden Recipes ===" block
 # whose own text says the recipes only work via a quick-cook bug and are
 # "expected to be removed in future updates" — not real recipes to teach
@@ -502,10 +515,14 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
         qty = int(qty_raw) if qty_raw and qty_raw.isdigit() else 1
         if CATEGORY_INGREDIENT_RE.match(val):
             label = row.get(f"i{n}Label") or ("Any " + CATEGORY_INGREDIENT_RE.sub("", val))
-            ingredients.append({
-                "name": label, "qty": qty, "wildcard": True,
+            name, exception = split_wildcard_exception(label)
+            ing = {
+                "name": name, "qty": qty, "wildcard": True,
                 "filename": row.get(f"i{n}Filename"),
-            })
+            }
+            if exception:
+                ing["exception"] = exception
+            ingredients.append(ing)
         else:
             ingredients.append({"name": val, "qty": qty, "wildcard": False})
     return ingredients

@@ -292,6 +292,11 @@ main {
   min-width: 1.5rem;
 }
 
+.recipe-exception {
+  font-size: 0.85em;
+  color: var(--muted);
+}
+
 .recipe-cell-placeholder {
   display: inline-block;
   padding-left: 2px;
