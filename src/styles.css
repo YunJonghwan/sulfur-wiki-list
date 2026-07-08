@@ -276,7 +276,7 @@ main {
   border-collapse: collapse;
 }
 
-.recipe-cell {
+.recipe-table td.recipe-cell {
   padding: 2px 14px 2px 0;
   white-space: nowrap;
 }

@@ -514,14 +514,24 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
         qty_raw = row.get(f"i{n}Qty")
         qty = int(qty_raw) if qty_raw and qty_raw.isdigit() else 1
         if CATEGORY_INGREDIENT_RE.match(val):
-            label = row.get(f"i{n}Label") or ("Any " + CATEGORY_INGREDIENT_RE.sub("", val))
+            canonical = "Any " + CATEGORY_INGREDIENT_RE.sub("", val).strip()
+            label = row.get(f"i{n}Label") or canonical
             name, exception = split_wildcard_exception(label)
+            note = f"{exception} 제외" if exception else None
+            # Some wiki labels list specific example items instead of the
+            # generic "Any X" phrasing (e.g. "Skimmed Milk/Low Fat Milk" for
+            # what is, category-wise, just any milk) — normalize the primary
+            # label so every occurrence of the same category reads/sorts the
+            # same, and keep the wiki's original wording as a muted aside.
+            if not note and not name.lower().startswith("any"):
+                note = name
+                name = canonical
             ing = {
                 "name": name, "qty": qty, "wildcard": True,
                 "filename": row.get(f"i{n}Filename"),
             }
-            if exception:
-                ing["exception"] = exception
+            if note:
+                ing["note"] = note
             ingredients.append(ing)
         else:
             ingredients.append({"name": val, "qty": qty, "wildcard": False})

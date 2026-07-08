@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-08T10:16:48.637209+00:00",
+  "generated": "2026-07-08T10:27:46.166565+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -1188,7 +1188,7 @@
             "name": "Any same skin",
             "qty": 2,
             "wildcard": true,
-            "exception": "Shav'Wa",
+            "note": "Shav'Wa 제외",
             "icon": "icons/misc/organ/Goblin_Skin.png",
             "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
           }
@@ -1545,9 +1545,10 @@
       "recipe": {
         "ingredients": [
           {
-            "name": "Skimmed Milk or Low Fat Milk",
+            "name": "Any Milk",
             "qty": 1,
             "wildcard": true,
+            "note": "Skimmed Milk or Low Fat Milk",
             "icon": "icons/consumable/milk/Skimmed_Milk.png",
             "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
           },
@@ -1565,28 +1566,10 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk or Low Fat Milk",
-                "qty": 2,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Berries",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Berries.png",
-                "page": "https://sulfur.wiki.gg/wiki/Berries"
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk or Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -1603,9 +1586,30 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk or Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 2,
                 "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Berries",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Berries.png",
+                "page": "https://sulfur.wiki.gg/wiki/Berries"
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 2,
+                "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -1615,6 +1619,86 @@
                 "wildcard": false,
                 "icon": "icons/consumable/food/Berries.png",
                 "page": "https://sulfur.wiki.gg/wiki/Berries"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 1,
+                "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Berry Jam",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Berry_Jam.png",
+                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
+              }
+            ],
+            "resultQty": 1
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 1,
+                "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Berry Jam",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Berry_Jam.png",
+                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 2,
+                "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Berry Jam",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Berry_Jam.png",
+                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 2,
+                "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Berry Jam",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Berry_Jam.png",
+                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
               }
             ],
             "resultQty": 3
@@ -1698,82 +1782,6 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk or Low Fat Milk",
-                "qty": 1,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Berry Jam",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Berry_Jam.png",
-                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
-              }
-            ],
-            "resultQty": 1
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk or Low Fat Milk",
-                "qty": 2,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Berry Jam",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Berry_Jam.png",
-                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk or Low Fat Milk",
-                "qty": 1,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Berry Jam",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Berry_Jam.png",
-                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk or Low Fat Milk",
-                "qty": 2,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Berry Jam",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Berry_Jam.png",
-                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
                 "name": "Whole Milk",
                 "qty": 1,
                 "wildcard": false,
@@ -1850,9 +1858,10 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk or Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -1876,35 +1885,10 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk or Low Fat Milk",
-                "qty": 2,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Berry Jam (Unsweetened)",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png",
-                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29"
-              },
-              {
-                "name": "Sugar",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk or Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -1928,9 +1912,37 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk or Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 2,
                 "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Berry Jam (Unsweetened)",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png",
+                "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29"
+              },
+              {
+                "name": "Sugar",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 2,
+                "wildcard": true,
+                "note": "Skimmed Milk or Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -4533,9 +4545,10 @@
       "recipe": {
         "ingredients": [
           {
-            "name": "Skimmed Milk/Low Fat Milk",
+            "name": "Any Milk",
             "qty": 1,
             "wildcard": true,
+            "note": "Skimmed Milk/Low Fat Milk",
             "icon": "icons/consumable/milk/Skimmed_Milk.png",
             "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
           },
@@ -4553,28 +4566,10 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk/Low Fat Milk",
-                "qty": 2,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Chocolate Syrup",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
-                "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk/Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -4591,9 +4586,30 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk/Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 2,
                 "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Chocolate Syrup",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+                "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 2,
+                "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -4686,9 +4702,10 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk/Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -4710,33 +4727,10 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk/Low Fat Milk",
-                "qty": 2,
-                "wildcard": true,
-                "icon": "icons/consumable/milk/Skimmed_Milk.png",
-                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
-              },
-              {
-                "name": "Cacao",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Cacao.png",
-                "page": "https://sulfur.wiki.gg/wiki/Cacao"
-              },
-              {
-                "name": "sugar",
-                "qty": 1,
-                "wildcard": false
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Skimmed Milk/Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -4758,9 +4752,35 @@
           {
             "ingredients": [
               {
-                "name": "Skimmed Milk/Low Fat Milk",
+                "name": "Any Milk",
                 "qty": 2,
                 "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
+                "icon": "icons/consumable/milk/Skimmed_Milk.png",
+                "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+              },
+              {
+                "name": "Cacao",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Cacao.png",
+                "page": "https://sulfur.wiki.gg/wiki/Cacao"
+              },
+              {
+                "name": "sugar",
+                "qty": 1,
+                "wildcard": false
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Milk",
+                "qty": 2,
+                "wildcard": true,
+                "note": "Skimmed Milk/Low Fat Milk",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -4980,7 +5000,7 @@
                 "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Buttermilk",
+                "note": "Buttermilk 제외",
                 "icon": "icons/consumable/milk/Whole_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
               },
@@ -8787,9 +8807,10 @@
             "icon": "icons/consumable/_wildcard/Goblin_Flesh.png"
           },
           {
-            "name": "All other 3 types of 1×1 Mushroom",
+            "name": "Any Mushrooms",
             "qty": 1,
             "wildcard": true,
+            "note": "All other 3 types of 1×1 Mushroom",
             "icon": "icons/consumable/mushroom/Velvet_Bell.png",
             "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
           },
@@ -8820,9 +8841,10 @@
                 "icon": "icons/consumable/_wildcard/Goblin_Flesh.png"
               },
               {
-                "name": "All other 3 types of 1×1 Mushroom",
+                "name": "Any Mushrooms",
                 "qty": 1,
                 "wildcard": true,
+                "note": "All other 3 types of 1×1 Mushroom",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -8852,9 +8874,10 @@
                 "icon": "icons/consumable/_wildcard/Goblin_Flesh.png"
               },
               {
-                "name": "All other 3 types of 1×1 Mushroom",
+                "name": "Any Mushrooms",
                 "qty": 1,
                 "wildcard": true,
+                "note": "All other 3 types of 1×1 Mushroom",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -9120,7 +9143,7 @@
                 "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Whole Milk",
+                "note": "Whole Milk 제외",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -9147,7 +9170,7 @@
                 "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Whole Milk",
+                "note": "Whole Milk 제외",
                 "icon": "icons/consumable/milk/Skimmed_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
               },
@@ -12391,7 +12414,7 @@
                 "name": "Any 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               }
@@ -12601,7 +12624,7 @@
                 "name": "Any Other 1×1 Mushroom",
                 "qty": 2,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -12609,7 +12632,7 @@
                 "name": "Any 1×1 Mushroom",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Swing-Ding.png",
                 "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
               }
@@ -12629,7 +12652,7 @@
                 "name": "Any Other 1×1 Mushroom",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -12637,7 +12660,7 @@
                 "name": "Any 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Swing-Ding.png",
                 "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
               }
@@ -12657,7 +12680,7 @@
                 "name": "Any Other 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -12665,7 +12688,7 @@
                 "name": "Any 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
-                "exception": "Rödsopp",
+                "note": "Rödsopp 제외",
                 "icon": "icons/consumable/mushroom/Swing-Ding.png",
                 "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
               }
@@ -12815,7 +12838,7 @@
                 "name": "Any Other 1×1 Mushroom",
                 "qty": 3,
                 "wildcard": true,
-                "exception": "Swing-Ding",
+                "note": "Swing-Ding 제외",
                 "icon": "icons/consumable/mushroom/Velvet_Bell.png",
                 "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
               },
@@ -15493,7 +15516,7 @@
                 "name": "Any Flesh",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Goblin",
+                "note": "Goblin 제외",
                 "icon": "icons/misc/ingredient/Dog_Flesh.png",
                 "page": "https://sulfur.wiki.gg/wiki/Dog_Flesh"
               }
@@ -15579,7 +15602,7 @@
                 "name": "Any Flesh",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Goblin",
+                "note": "Goblin 제외",
                 "icon": "icons/misc/ingredient/Dog_Flesh.png",
                 "page": "https://sulfur.wiki.gg/wiki/Dog_Flesh"
               }
@@ -20051,7 +20074,7 @@
                 "name": "Any Flesh",
                 "qty": 1,
                 "wildcard": true,
-                "exception": "Craw Flesh",
+                "note": "Craw Flesh 제외",
                 "icon": "icons/consumable/_wildcard/Goblin_Flesh.png"
               },
               {

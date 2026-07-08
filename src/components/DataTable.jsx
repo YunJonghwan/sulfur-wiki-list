@@ -129,7 +129,7 @@ function ItemCell({ it, lang }) {
 // One ingredient or result cell: icon once, plus a ×N badge when qty > 1
 // (never repeated icons) — keeps every cell roughly the same width so the
 // table stays aligned whether a recipe needs 1 unit or 9.
-function RecipeCell({ name, qty, icon, exception, className }) {
+function RecipeCell({ name, qty, icon, note, className }) {
   return (
     <td className={`recipe-cell${className ? ` ${className}` : ''}`}>
       <span className="recipe-cell-inner">
@@ -138,7 +138,7 @@ function RecipeCell({ name, qty, icon, exception, className }) {
         )}
         <span>
           {name}{qty > 1 ? ` ×${qty}` : ''}
-          {exception && <span className="recipe-exception"> ({exception} 제외)</span>}
+          {note && <span className="recipe-exception"> ({note})</span>}
         </span>
       </span>
     </td>
@@ -177,7 +177,7 @@ function RecipeLine({ item, lang, expanded, onToggle }) {
                     name={ing.name}
                     qty={ing.qty}
                     icon={ing.icon}
-                    exception={ing.exception}
+                    note={ing.note}
                   />
                 ))}
                 {Array.from({ length: maxSlots - sorted.length }).map((_, j) => (
