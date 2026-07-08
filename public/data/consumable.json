@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-08T08:01:03.760789+00:00",
+  "generated": "2026-07-08T09:09:47.709448+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -5932,7 +5932,9 @@
           {
             "name": "Liver",
             "qty": 1,
-            "wildcard": false
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Liver.png",
+            "page": "https://sulfur.wiki.gg/wiki/Liver"
           }
         ],
         "resultQty": 4,
@@ -8234,7 +8236,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Oats",
@@ -8284,7 +8288,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Oats",
@@ -10107,7 +10113,9 @@
           {
             "name": "Liver",
             "qty": 2,
-            "wildcard": false
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Liver.png",
+            "page": "https://sulfur.wiki.gg/wiki/Liver"
           }
         ],
         "resultQty": 2,
@@ -10118,7 +10126,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Black Pepper",
@@ -10135,7 +10145,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Butter",
@@ -10152,7 +10164,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Herbs",
@@ -10169,7 +10183,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Kidney Stone",
@@ -10186,7 +10202,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Rock",
@@ -10203,7 +10221,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Salt",
@@ -10255,7 +10275,9 @@
           {
             "name": "Liver",
             "qty": 1,
-            "wildcard": false
+            "wildcard": false,
+            "icon": "icons/misc/_etc/Liver.png",
+            "page": "https://sulfur.wiki.gg/wiki/Liver"
           },
           {
             "name": "Bread",
@@ -13936,7 +13958,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               },
               {
                 "name": "Egg",
@@ -16140,7 +16164,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               }
             ],
             "resultQty": 2
@@ -16164,7 +16190,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               }
             ],
             "resultQty": 3
@@ -16361,7 +16389,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               }
             ],
             "resultQty": 2
@@ -16378,7 +16408,9 @@
               {
                 "name": "Liver",
                 "qty": 1,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               }
             ],
             "resultQty": 3
@@ -16395,7 +16427,9 @@
               {
                 "name": "Liver",
                 "qty": 2,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               }
             ],
             "resultQty": 3
@@ -16412,7 +16446,9 @@
               {
                 "name": "Liver",
                 "qty": 2,
-                "wildcard": false
+                "wildcard": false,
+                "icon": "icons/misc/_etc/Liver.png",
+                "page": "https://sulfur.wiki.gg/wiki/Liver"
               }
             ],
             "resultQty": 4

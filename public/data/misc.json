@@ -1,6 +1,6 @@
 {
   "kind": "misc",
-  "generated": "2026-07-08T08:01:03.760789+00:00",
+  "generated": "2026-07-08T09:09:47.709448+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -49,7 +49,7 @@
         {
           "value": "Other",
           "label": "Other",
-          "count": 11
+          "count": 12
         },
         {
           "value": "Key",
@@ -648,6 +648,19 @@
         "SoldBy": "Rat Queen, Qiosk"
       },
       "icon": "icons/misc/organ/Kidney.png"
+    },
+    {
+      "name": "Liver",
+      "page": "https://sulfur.wiki.gg/wiki/Liver",
+      "image": "Liver.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2x1",
+        "SellVal": "40"
+      },
+      "icon": "icons/misc/_etc/Liver.png"
     },
     {
       "name": "Lung",

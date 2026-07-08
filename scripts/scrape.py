@@ -449,6 +449,14 @@ KEY_ALIASES = {
     "Grid Size": "GridSize",
 }
 
+# A few pages omit the infobox "kind" parameter entirely (a wiki typo, not
+# a template variant) — e.g. every other organ has kind=misc, but Liver's
+# infobox just leaves it out. Filled in by title since there's no field to
+# read it from.
+MISSING_KIND_BY_TITLE = {
+    "Liver": "misc",
+}
+
 
 def parse_infobox(body: str) -> dict[str, str]:
     fields: dict[str, str] = {}
@@ -1089,6 +1097,8 @@ def build(refresh: bool = False) -> None:
             continue
         fields = parse_infobox(body)
         kind = fields.get("kind", "").strip().lower()
+        if not kind and title in MISSING_KIND_BY_TITLE:
+            kind = MISSING_KIND_BY_TITLE[title]
         if kind not in buckets:
             continue
         if kind == "attachment":

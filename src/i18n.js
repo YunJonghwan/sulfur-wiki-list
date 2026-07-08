@@ -805,6 +805,7 @@ export const ITEM_NAME_KO = {
   'Human Skin': '사람 가죽',
   Intestines: '창자',
   Kidney: '신장',
+  Liver: '간',
   Lung: '폐',
   'Metal Scrap': '고철',
   'MiniDisc Player': '미니디스크 플레이어',
