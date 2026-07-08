@@ -544,6 +544,18 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
         ),
     )
     best = variants.pop(best_idx)
+    # Group the remaining variants by their ingredient set (quantities
+    # ignored) so every quantity/ratio version of "the same recipe" ends up
+    # next to each other instead of scattered by result-size tier — e.g.
+    # Lung+Bladder, Lung+Bladder×2, Lung×2+Bladder and Lung×2+Bladder×2 all
+    # sort together, ordered by increasing result quantity.
+    def variant_sort_key(v):
+        by_name = sorted(v["ingredients"], key=lambda x: x["name"])
+        names_key = ",".join(x["name"] for x in by_name)
+        qty_key = tuple(x["qty"] for x in by_name)
+        return (names_key, v["resultQty"], qty_key)
+
+    variants.sort(key=variant_sort_key)
     return {
         "ingredients": best["ingredients"],
         "resultQty": best["resultQty"],
