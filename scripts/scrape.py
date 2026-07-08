@@ -467,12 +467,21 @@ def parse_infobox(body: str) -> dict[str, str]:
 # --- Consumable recipes ----------------------------------------------------
 # A craftable consumable's own page has a "== Recipes ==" section with one
 # {{Recipe row}} template per valid ingredient combo (often many — batch-size
-# variants, alternate ingredients, bigger-stove bonuses…). We only show one
-# representative recipe per item rather than every variant, since some items
-# have 20-40+ of them; the rest just isn't practical to render meaningfully.
+# variants, alternate ingredients, bigger-stove bonuses…). One representative
+# recipe is picked as the always-visible one; the rest are kept too so the UI
+# can expand them in place instead of sending players out to the wiki.
 RECIPE_ROW_START_RE = re.compile(r"\{\{\s*Recipe row")
+# Stops only at the next *top-level* heading (== Foo ==), so legitimate
+# "=== Sub Recipes ===" subsections (Omelette, Sashimi, Tori Ramen all
+# organize variants this way) stay part of the captured section.
 RECIPE_SECTION_RE = re.compile(r"==\s*Recipes\s*==([\s\S]*?)(?:\n==[^=]|\[\[Category)")
 CATEGORY_INGREDIENT_RE = re.compile(r"^:?Category:", re.IGNORECASE)
+
+# A handful of pages (Pölsa, Red Wine) have a "=== Hidden Recipes ===" block
+# whose own text says the recipes only work via a quick-cook bug and are
+# "expected to be removed in future updates" — not real recipes to teach
+# players, so they're stripped out rather than counted/shown.
+HIDDEN_RECIPES_RE = re.compile(r"===\s*Hidden Recipes\s*===[\s\S]*?(?=\n==|\Z)")
 
 
 def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
@@ -512,8 +521,9 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
     m = RECIPE_SECTION_RE.search(wikitext)
     if not m:
         return None
+    section_text = HIDDEN_RECIPES_RE.sub("", m.group(1))
     variants = []
-    for body in extract_all_templates(m.group(1), RECIPE_ROW_START_RE):
+    for body in extract_all_templates(section_text, RECIPE_ROW_START_RE):
         row = parse_infobox(body)
         ingredients = _row_ingredients(row)
         if not ingredients:
@@ -524,15 +534,21 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
     if not variants:
         return None
     # Prefer the simplest variant as the representative one: fewest
-    # ingredient slots, then lowest total ingredient quantity.
-    best = min(
-        variants,
-        key=lambda v: (len(v["ingredients"]), sum(i["qty"] for i in v["ingredients"])),
+    # ingredient slots, then lowest total ingredient quantity. The rest are
+    # kept as "others" so the UI can expand them instead of linking out.
+    best_idx = min(
+        range(len(variants)),
+        key=lambda i: (
+            len(variants[i]["ingredients"]),
+            sum(x["qty"] for x in variants[i]["ingredients"]),
+        ),
     )
+    best = variants.pop(best_idx)
     return {
         "ingredients": best["ingredients"],
         "resultQty": best["resultQty"],
-        "variantCount": len(variants),
+        "variantCount": len(variants) + 1,
+        "others": variants,
     }
 
 
@@ -547,12 +563,16 @@ def resolve_recipe_icons(buckets: dict[str, list[dict]]) -> None:
         recipe = it.get("recipe")
         if not recipe:
             continue
-        for ing in recipe["ingredients"]:
-            ref = lookup.get(ing.get("filename") or ing["name"])
-            if ref:
-                ing["icon"] = ref["icon"]
-                ing["page"] = ref["page"]
-            ing.pop("filename", None)
+        variant_ingredient_lists = [recipe["ingredients"]] + [
+            v["ingredients"] for v in recipe.get("others", [])
+        ]
+        for ingredients in variant_ingredient_lists:
+            for ing in ingredients:
+                ref = lookup.get(ing.get("filename") or ing["name"])
+                if ref:
+                    ing["icon"] = ref["icon"]
+                    ing["page"] = ref["page"]
+                ing.pop("filename", None)
 
 
 UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')

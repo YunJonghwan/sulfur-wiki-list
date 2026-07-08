@@ -255,6 +255,13 @@ main {
   margin-right: 2px;
 }
 
+.recipe-row {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
 .recipe-ing {
   display: inline-flex;
   align-items: center;
@@ -280,15 +287,30 @@ main {
 }
 
 .recipe-more {
+  background: none;
+  border: none;
+  padding: 0;
   color: var(--accent);
   font-size: 0.75rem;
+  font-family: inherit;
   margin-left: 4px;
-  text-decoration: none;
+  cursor: pointer;
   white-space: nowrap;
 }
 
 .recipe-more:hover {
   text-decoration: underline;
+}
+
+.recipe-others {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-left: 0.75rem;
+  border-top: 1px dashed var(--border);
 }
 
 .count {

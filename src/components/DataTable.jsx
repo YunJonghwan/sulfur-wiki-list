@@ -126,15 +126,12 @@ function ItemCell({ it, lang }) {
   )
 }
 
-// Shows one representative "A + B → Result" recipe for craftable consumables,
-// with a link to the wiki for the other combinations when there's more than one.
-function RecipeLine({ item, lang }) {
-  const r = item.recipe
-  if (!r) return null
+// One "A + B → Result" line, reused for both the main recipe and each
+// expanded "other" variant.
+function RecipeVariant({ ingredients, resultQty, item }) {
   return (
-    <div className="recipe-line">
-      <span className="recipe-label">{t(UI.recipe, lang)}</span>
-      {r.ingredients.map((ing, i) => (
+    <div className="recipe-row">
+      {ingredients.map((ing, i) => (
         <span className="recipe-ing" key={i}>
           {i > 0 && <span className="recipe-plus">+</span>}
           {imageUrl(ing.icon) && (
@@ -148,12 +145,33 @@ function RecipeLine({ item, lang }) {
         {imageUrl(item.icon) && (
           <img className="item-icon recipe-icon" src={imageUrl(item.icon)} alt="" width="20" height="20" />
         )}
-        <span>{item.name}{r.resultQty > 1 ? ` ×${r.resultQty}` : ''}</span>
+        <span>{item.name}{resultQty > 1 ? ` ×${resultQty}` : ''}</span>
       </span>
+    </div>
+  )
+}
+
+// Shows one representative recipe for craftable consumables, with a toggle
+// to expand the other combinations in place (accordion — only one item's
+// recipe is expanded at a time, controlled by the parent).
+function RecipeLine({ item, lang, expanded, onToggle }) {
+  const r = item.recipe
+  if (!r) return null
+  return (
+    <div className="recipe-line">
+      <span className="recipe-label">{t(UI.recipe, lang)}</span>
+      <RecipeVariant ingredients={r.ingredients} resultQty={r.resultQty} item={item} />
       {r.variantCount > 1 && (
-        <a className="recipe-more" href={item.page} target="_blank" rel="noreferrer">
-          {r.variantCount - 1} {t(UI.moreRecipes, lang)}
-        </a>
+        <button type="button" className="recipe-more" onClick={onToggle}>
+          {expanded ? t(UI.hideRecipes, lang) : `${r.variantCount - 1} ${t(UI.moreRecipes, lang)}`}
+        </button>
+      )}
+      {expanded && r.others?.length > 0 && (
+        <div className="recipe-others">
+          {r.others.map((v, i) => (
+            <RecipeVariant key={i} ingredients={v.ingredients} resultQty={v.resultQty} item={item} />
+          ))}
+        </div>
       )}
     </div>
   )
@@ -171,6 +189,7 @@ export default function DataTable({ data, lang }) {
   const [gridSortDir, setGridSortDir] = useState('asc')
   const [axisKey, setAxisKey] = useState(axes[0]?.key || '')
   const [selectedGroup, setSelectedGroup] = useState('')
+  const [expandedRecipe, setExpandedRecipe] = useState(null)
 
   const currentAxis = axes.find((a) => a.key === axisKey) || axes[0] || null
   const hiddenField = currentAxis ? AXIS_FIELD[currentAxis.key] : null
@@ -326,7 +345,16 @@ export default function DataTable({ data, lang }) {
                       )
                     })}
                   </div>
-                  {data.kind === 'consumable' && <RecipeLine item={it} lang={lang} />}
+                  {data.kind === 'consumable' && (
+                    <RecipeLine
+                      item={it}
+                      lang={lang}
+                      expanded={expandedRecipe === it.name}
+                      onToggle={() =>
+                        setExpandedRecipe((cur) => (cur === it.name ? null : it.name))
+                      }
+                    />
+                  )}
                 </td>
               </tr>
             ))}

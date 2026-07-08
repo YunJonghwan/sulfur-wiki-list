@@ -60,7 +60,8 @@ export const UI = {
   scrollOpt: { en: 'Scrolls', ko: '스크롤' },
   oilOpt: { en: 'Oils', ko: '오일' },
   recipe: { en: 'Recipe', ko: '레시피' },
-  moreRecipes: { en: 'other recipes on wiki', ko: '개의 다른 조합법 (위키에서 보기)' },
+  moreRecipes: { en: 'other recipes', ko: '개의 다른 조합법 더보기' },
+  hideRecipes: { en: 'Hide', ko: '접기' },
 }
 
 // Korean labels for sub-group axes (weapon class, ammo, oil effect…).
