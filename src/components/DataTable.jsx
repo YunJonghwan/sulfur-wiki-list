@@ -172,7 +172,9 @@ function RecipeLine({ item, lang, expanded, onToggle }) {
                   <RecipeCell key={ing.name} name={ing.name} qty={ing.qty} icon={ing.icon} />
                 ))}
                 {Array.from({ length: maxSlots - sorted.length }).map((_, j) => (
-                  <td className="recipe-cell recipe-cell-empty" key={`e${j}`} />
+                  <td className="recipe-cell recipe-cell-empty" key={`e${j}`}>
+                    <span className="recipe-cell-placeholder" aria-hidden="true">–</span>
+                  </td>
                 ))}
                 <RecipeCell
                   name={item.name}

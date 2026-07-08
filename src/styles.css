@@ -292,6 +292,12 @@ main {
   min-width: 1.5rem;
 }
 
+.recipe-cell-placeholder {
+  display: inline-block;
+  padding-left: 2px;
+  color: var(--border);
+}
+
 .recipe-result {
   padding-left: 10px;
   padding-right: 0;

@@ -561,7 +561,12 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
         by_name = sorted(v["ingredients"], key=lambda x: x["name"])
         names_key = ",".join(x["name"] for x in by_name)
         qty_key = tuple(x["qty"] for x in by_name)
-        return (names_key, v["resultQty"], qty_key)
+        # Ingredient count first: a string-only name key would otherwise
+        # scatter same-ingredient variants apart whenever an unrelated
+        # variant's names happen to sort between them alphabetically (e.g.
+        # "Banana,Sugar" landing after all "Banana,Solution,Sugar" entries
+        # just because "Solution" < "Sugar").
+        return (len(v["ingredients"]), names_key, v["resultQty"], qty_key)
 
     variants.sort(key=variant_sort_key)
     return {
@@ -572,6 +577,43 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
     }
 
 
+def download_wildcard_icons(file_names: set[str]) -> dict[str, str]:
+    """Download wiki File images directly for wildcard ingredients whose
+    representative image isn't itself a scraped item — e.g. "Any Flesh"
+    points at File:Goblin Flesh.png, a generic category illustration with no
+    matching "Goblin Flesh" item page, so it can't be found via name lookup.
+    """
+    if not file_names:
+        return {}
+    dest_dir = IMG_DIR / "consumable" / "_wildcard"
+    # Recipe-row Filename hints are given without an extension (e.g. "Goblin
+    # Flesh"), unlike infobox `image=` values — the wiki File: namespace
+    # needs one to resolve, so default to .png like item images do.
+    with_ext = {f: (f if "." in f else f"{f}.png") for f in file_names}
+    urls = resolve_thumb_urls(sorted(set(with_ext.values())))
+    result: dict[str, str] = {}
+    for file_name, queried in with_ext.items():
+        local = local_icon_name(queried)
+        dest = dest_dir / local
+        rel = f"icons/consumable/_wildcard/{local}"
+        if dest.exists():
+            result[file_name] = rel
+            continue
+        url = urls.get(queried)
+        if not url:
+            continue
+        try:
+            dest_dir.mkdir(parents=True, exist_ok=True)
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                dest.write_bytes(resp.read())
+            result[file_name] = rel
+            time.sleep(0.1)
+        except Exception as exc:  # noqa: BLE001 - keep going on any failure
+            print(f"  ! failed wildcard icon {file_name}: {exc}")
+    return result
+
+
 def resolve_recipe_icons(buckets: dict[str, list[dict]]) -> None:
     """Attach icon/page to recipe ingredients that match a scraped item."""
     lookup = {
@@ -579,20 +621,32 @@ def resolve_recipe_icons(buckets: dict[str, list[dict]]) -> None:
         for kind_items in buckets.values()
         for it in kind_items
     }
+    all_ingredient_lists = []
     for it in buckets.get("consumable", []):
         recipe = it.get("recipe")
         if not recipe:
             continue
-        variant_ingredient_lists = [recipe["ingredients"]] + [
-            v["ingredients"] for v in recipe.get("others", [])
-        ]
-        for ingredients in variant_ingredient_lists:
-            for ing in ingredients:
-                ref = lookup.get(ing.get("filename") or ing["name"])
-                if ref:
-                    ing["icon"] = ref["icon"]
-                    ing["page"] = ref["page"]
-                ing.pop("filename", None)
+        all_ingredient_lists.append(recipe["ingredients"])
+        all_ingredient_lists.extend(v["ingredients"] for v in recipe.get("others", []))
+
+    unresolved_filenames: set[str] = set()
+    for ingredients in all_ingredient_lists:
+        for ing in ingredients:
+            ref = lookup.get(ing.get("filename") or ing["name"])
+            if ref:
+                ing["icon"] = ref["icon"]
+                ing["page"] = ref["page"]
+            elif ing.get("filename"):
+                unresolved_filenames.add(ing["filename"])
+
+    wildcard_icons = download_wildcard_icons(unresolved_filenames)
+    for ingredients in all_ingredient_lists:
+        for ing in ingredients:
+            if not ing.get("icon") and ing.get("filename"):
+                icon = wildcard_icons.get(ing["filename"])
+                if icon:
+                    ing["icon"] = icon
+            ing.pop("filename", None)
 
 
 UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')
