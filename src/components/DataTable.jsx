@@ -126,53 +126,65 @@ function ItemCell({ it, lang }) {
   )
 }
 
-// One "A + B → Result" line, reused for both the main recipe and each
-// expanded "other" variant.
-function RecipeVariant({ ingredients, resultQty, item }) {
+// One ingredient or result cell: icon once, plus a ×N badge when qty > 1
+// (never repeated icons) — keeps every cell roughly the same width so the
+// table stays aligned whether a recipe needs 1 unit or 9.
+function RecipeCell({ name, qty, icon, className }) {
   return (
-    <div className="recipe-row">
-      {ingredients.map((ing, i) => (
-        <span className="recipe-ing" key={i}>
-          {i > 0 && <span className="recipe-plus">+</span>}
-          {imageUrl(ing.icon) && (
-            <img className="item-icon recipe-icon" src={imageUrl(ing.icon)} alt="" width="20" height="20" />
-          )}
-          <span>{ing.name}{ing.qty > 1 ? ` ×${ing.qty}` : ''}</span>
-        </span>
-      ))}
-      <span className="recipe-arrow">→</span>
-      <span className="recipe-ing">
-        {imageUrl(item.icon) && (
-          <img className="item-icon recipe-icon" src={imageUrl(item.icon)} alt="" width="20" height="20" />
+    <td className={`recipe-cell${className ? ` ${className}` : ''}`}>
+      <span className="recipe-cell-inner">
+        {imageUrl(icon) && (
+          <img className="item-icon recipe-icon" src={imageUrl(icon)} alt="" width="20" height="20" />
         )}
-        <span>{item.name}{resultQty > 1 ? ` ×${resultQty}` : ''}</span>
+        <span>{name}{qty > 1 ? ` ×${qty}` : ''}</span>
       </span>
-    </div>
+    </td>
   )
 }
 
-// Shows one representative recipe for craftable consumables, with a toggle
-// to expand the other combinations in place (accordion — only one item's
-// recipe is expanded at a time, controlled by the parent).
+// Shows one representative recipe for craftable consumables as a small
+// table (ingredient columns + a result column, no arrow glyph — the result
+// column is just visually set apart), with a toggle to expand the other
+// combinations as more rows (accordion — only one item's recipe is
+// expanded at a time, controlled by the parent).
 function RecipeLine({ item, lang, expanded, onToggle }) {
   const r = item.recipe
   if (!r) return null
+  const variants = expanded ? [r, ...(r.others || [])] : [r]
+  const maxSlots = Math.max(1, ...variants.map((v) => v.ingredients.length))
   return (
     <div className="recipe-line">
-      <span className="recipe-label">{t(UI.recipe, lang)}</span>
-      <RecipeVariant ingredients={r.ingredients} resultQty={r.resultQty} item={item} />
-      {r.variantCount > 1 && (
-        <button type="button" className="recipe-more" onClick={onToggle}>
-          {expanded ? t(UI.hideRecipes, lang) : `${r.variantCount - 1} ${t(UI.moreRecipes, lang)}`}
-        </button>
-      )}
-      {expanded && r.others?.length > 0 && (
-        <div className="recipe-others">
-          {r.others.map((v, i) => (
-            <RecipeVariant key={i} ingredients={v.ingredients} resultQty={v.resultQty} item={item} />
-          ))}
-        </div>
-      )}
+      <div className="recipe-head">
+        <span className="recipe-label">{t(UI.recipe, lang)}</span>
+        {r.variantCount > 1 && (
+          <button type="button" className="recipe-more" onClick={onToggle}>
+            {expanded ? t(UI.hideRecipes, lang) : `${r.variantCount - 1} ${t(UI.moreRecipes, lang)}`}
+          </button>
+        )}
+      </div>
+      <table className="recipe-table">
+        <tbody>
+          {variants.map((v, i) => {
+            const sorted = [...v.ingredients].sort((a, b) => a.name.localeCompare(b.name))
+            return (
+              <tr key={i}>
+                {sorted.map((ing) => (
+                  <RecipeCell key={ing.name} name={ing.name} qty={ing.qty} icon={ing.icon} />
+                ))}
+                {Array.from({ length: maxSlots - sorted.length }).map((_, j) => (
+                  <td className="recipe-cell recipe-cell-empty" key={`e${j}`} />
+                ))}
+                <RecipeCell
+                  name={item.name}
+                  qty={v.resultQty}
+                  icon={item.icon}
+                  className="recipe-result"
+                />
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
     </div>
   )
 }

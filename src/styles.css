@@ -238,10 +238,6 @@ main {
 }
 
 .recipe-line {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 3px;
   margin-top: 6px;
   padding-top: 6px;
   border-top: 1px dashed var(--border);
@@ -249,41 +245,16 @@ main {
   color: var(--muted);
 }
 
+.recipe-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
 .recipe-label {
   color: var(--accent);
   font-weight: 600;
-  margin-right: 2px;
-}
-
-.recipe-row {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 3px;
-}
-
-.recipe-ing {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  color: var(--text);
-  white-space: nowrap;
-}
-
-.recipe-plus {
-  color: var(--muted);
-  margin: 0 1px;
-}
-
-.recipe-arrow {
-  color: var(--accent);
-  margin: 0 2px;
-}
-
-.recipe-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
 }
 
 .recipe-more {
@@ -293,7 +264,6 @@ main {
   color: var(--accent);
   font-size: 0.75rem;
   font-family: inherit;
-  margin-left: 4px;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -302,15 +272,36 @@ main {
   text-decoration: underline;
 }
 
-.recipe-others {
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 5px;
-  padding-top: 5px;
-  padding-left: 0.75rem;
-  border-top: 1px dashed var(--border);
+.recipe-table {
+  border-collapse: collapse;
+}
+
+.recipe-cell {
+  padding: 2px 14px 2px 0;
+  white-space: nowrap;
+}
+
+.recipe-cell-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text);
+}
+
+.recipe-cell-empty {
+  min-width: 1.5rem;
+}
+
+.recipe-result {
+  padding-left: 10px;
+  padding-right: 0;
+  border-left: 1px solid var(--border);
+}
+
+.recipe-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
 }
 
 .count {
