@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-08T09:43:38.232751+00:00",
+  "generated": "2026-07-08T10:08:31.231851+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -590,6 +590,63 @@
           {
             "ingredients": [
               {
+                "name": "Sugar",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              },
+              {
+                "name": "Banana",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Banana.png",
+                "page": "https://sulfur.wiki.gg/wiki/Banana"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Sugar",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              },
+              {
+                "name": "Banana",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Banana.png",
+                "page": "https://sulfur.wiki.gg/wiki/Banana"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Sugar",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              },
+              {
+                "name": "Banana",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Banana.png",
+                "page": "https://sulfur.wiki.gg/wiki/Banana"
+              }
+            ],
+            "resultQty": 5
+          },
+          {
+            "ingredients": [
+              {
                 "name": "Solution",
                 "qty": 1,
                 "wildcard": false,
@@ -652,63 +709,6 @@
                 "wildcard": false,
                 "icon": "icons/consumable/ingredient/Solution.png",
                 "page": "https://sulfur.wiki.gg/wiki/Solution"
-              },
-              {
-                "name": "Banana",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Banana.png",
-                "page": "https://sulfur.wiki.gg/wiki/Banana"
-              }
-            ],
-            "resultQty": 5
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Sugar",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
-              },
-              {
-                "name": "Banana",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Banana.png",
-                "page": "https://sulfur.wiki.gg/wiki/Banana"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Sugar",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
-              },
-              {
-                "name": "Banana",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Banana.png",
-                "page": "https://sulfur.wiki.gg/wiki/Banana"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Sugar",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
               },
               {
                 "name": "Banana",
@@ -2445,6 +2445,63 @@
           {
             "ingredients": [
               {
+                "name": "Bottled Water",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              },
+              {
+                "name": "Flour",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Flour.png",
+                "page": "https://sulfur.wiki.gg/wiki/Flour"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Bottled Water",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              },
+              {
+                "name": "Flour",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Flour.png",
+                "page": "https://sulfur.wiki.gg/wiki/Flour"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Bottled Water",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              },
+              {
+                "name": "Flour",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Flour.png",
+                "page": "https://sulfur.wiki.gg/wiki/Flour"
+              }
+            ],
+            "resultQty": 4
+          },
+          {
+            "ingredients": [
+              {
                 "name": "Any Milk",
                 "qty": 1,
                 "wildcard": true,
@@ -2507,63 +2564,6 @@
                 "wildcard": true,
                 "icon": "icons/consumable/milk/Whole_Milk.png",
                 "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
-              },
-              {
-                "name": "Flour",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Flour.png",
-                "page": "https://sulfur.wiki.gg/wiki/Flour"
-              }
-            ],
-            "resultQty": 4
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Bottled Water",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
-              },
-              {
-                "name": "Flour",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Flour.png",
-                "page": "https://sulfur.wiki.gg/wiki/Flour"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Bottled Water",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
-              },
-              {
-                "name": "Flour",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Flour.png",
-                "page": "https://sulfur.wiki.gg/wiki/Flour"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Bottled Water",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
               },
               {
                 "name": "Flour",
@@ -3603,82 +3603,6 @@
           {
             "ingredients": [
               {
-                "name": "Bark Bread",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Bark_Bread.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bark_Bread"
-              },
-              {
-                "name": "Cheese",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Cheese.png",
-                "page": "https://sulfur.wiki.gg/wiki/Cheese"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Bark Bread",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Bark_Bread.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bark_Bread"
-              },
-              {
-                "name": "Cheese",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Cheese.png",
-                "page": "https://sulfur.wiki.gg/wiki/Cheese"
-              }
-            ],
-            "resultQty": 4
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Bread",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Bread.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bread"
-              },
-              {
-                "name": "Cheese",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Cheese.png",
-                "page": "https://sulfur.wiki.gg/wiki/Cheese"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Bread",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Bread.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bread"
-              },
-              {
-                "name": "Cheese",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/food/Cheese.png",
-                "page": "https://sulfur.wiki.gg/wiki/Cheese"
-              }
-            ],
-            "resultQty": 4
-          },
-          {
-            "ingredients": [
-              {
                 "name": "Butter Sandwich",
                 "qty": 2,
                 "wildcard": false,
@@ -3713,6 +3637,82 @@
               }
             ],
             "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Bark Bread",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Bark_Bread.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bark_Bread"
+              },
+              {
+                "name": "Cheese",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Cheese.png",
+                "page": "https://sulfur.wiki.gg/wiki/Cheese"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Bark Bread",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Bark_Bread.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bark_Bread"
+              },
+              {
+                "name": "Cheese",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Cheese.png",
+                "page": "https://sulfur.wiki.gg/wiki/Cheese"
+              }
+            ],
+            "resultQty": 4
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Bread",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Bread.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bread"
+              },
+              {
+                "name": "Cheese",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Cheese.png",
+                "page": "https://sulfur.wiki.gg/wiki/Cheese"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Bread",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Bread.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bread"
+              },
+              {
+                "name": "Cheese",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/food/Cheese.png",
+                "page": "https://sulfur.wiki.gg/wiki/Cheese"
+              }
+            ],
+            "resultQty": 4
           },
           {
             "ingredients": [
@@ -12018,63 +12018,6 @@
             "ingredients": [
               {
                 "name": "Red Wine",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Red_Wine.png",
-                "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
-              },
-              {
-                "name": "Christmas Spice",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Christmas_Spice.png",
-                "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
-              }
-            ],
-            "resultQty": 1
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Red Wine",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Red_Wine.png",
-                "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
-              },
-              {
-                "name": "Christmas Spice",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Christmas_Spice.png",
-                "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
-              }
-            ],
-            "resultQty": 2
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Red Wine",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Red_Wine.png",
-                "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
-              },
-              {
-                "name": "Christmas Spice",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Christmas_Spice.png",
-                "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Red Wine",
                 "qty": 2,
                 "wildcard": false,
                 "icon": "icons/consumable/beverage/Red_Wine.png",
@@ -12127,6 +12070,63 @@
               }
             ],
             "resultQty": 5
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Red Wine",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Red_Wine.png",
+                "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
+              },
+              {
+                "name": "Christmas Spice",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+                "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
+              }
+            ],
+            "resultQty": 1
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Red Wine",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Red_Wine.png",
+                "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
+              },
+              {
+                "name": "Christmas Spice",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+                "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
+              }
+            ],
+            "resultQty": 2
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Red Wine",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Red_Wine.png",
+                "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
+              },
+              {
+                "name": "Christmas Spice",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+                "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
+              }
+            ],
+            "resultQty": 3
           },
           {
             "ingredients": [
@@ -12358,25 +12358,6 @@
           {
             "ingredients": [
               {
-                "name": "Any Water",
-                "qty": 1,
-                "wildcard": true,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
-              },
-              {
-                "name": "Any 1×1 Mushroom, except Rödsopp",
-                "qty": 3,
-                "wildcard": true,
-                "icon": "icons/consumable/mushroom/Velvet_Bell.png",
-                "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
-              }
-            ],
-            "resultQty": 1
-          },
-          {
-            "ingredients": [
-              {
                 "name": "Broth",
                 "qty": 1,
                 "wildcard": false,
@@ -12392,6 +12373,25 @@
               }
             ],
             "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Any Water",
+                "qty": 1,
+                "wildcard": true,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              },
+              {
+                "name": "Any 1×1 Mushroom, except Rödsopp",
+                "qty": 3,
+                "wildcard": true,
+                "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+                "page": "https://sulfur.wiki.gg/wiki/Velvet_Bell"
+              }
+            ],
+            "resultQty": 1
           },
           {
             "ingredients": [
@@ -18789,6 +18789,63 @@
           {
             "ingredients": [
               {
+                "name": "Sugar",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              },
+              {
+                "name": "Bottled Water",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Sugar",
+                "qty": 1,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              },
+              {
+                "name": "Bottled Water",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              }
+            ],
+            "resultQty": 3
+          },
+          {
+            "ingredients": [
+              {
+                "name": "Sugar",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/ingredient/Sugar.png",
+                "page": "https://sulfur.wiki.gg/wiki/Sugar"
+              },
+              {
+                "name": "Bottled Water",
+                "qty": 2,
+                "wildcard": false,
+                "icon": "icons/consumable/beverage/Bottled_Water.png",
+                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+              }
+            ],
+            "resultQty": 4
+          },
+          {
+            "ingredients": [
+              {
                 "name": "Solution",
                 "qty": 1,
                 "wildcard": false,
@@ -18851,63 +18908,6 @@
                 "wildcard": false,
                 "icon": "icons/consumable/ingredient/Solution.png",
                 "page": "https://sulfur.wiki.gg/wiki/Solution"
-              },
-              {
-                "name": "Bottled Water",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
-              }
-            ],
-            "resultQty": 4
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Sugar",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
-              },
-              {
-                "name": "Bottled Water",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Sugar",
-                "qty": 1,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
-              },
-              {
-                "name": "Bottled Water",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/beverage/Bottled_Water.png",
-                "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
-              }
-            ],
-            "resultQty": 3
-          },
-          {
-            "ingredients": [
-              {
-                "name": "Sugar",
-                "qty": 2,
-                "wildcard": false,
-                "icon": "icons/consumable/ingredient/Sugar.png",
-                "page": "https://sulfur.wiki.gg/wiki/Sugar"
               },
               {
                 "name": "Bottled Water",

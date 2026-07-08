@@ -552,6 +552,7 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
         ),
     )
     best = variants.pop(best_idx)
+    best_names_key = ",".join(sorted(x["name"] for x in best["ingredients"]))
     # Group the remaining variants by their ingredient set (quantities
     # ignored) so every quantity/ratio version of "the same recipe" ends up
     # next to each other instead of scattered by result-size tier — e.g.
@@ -565,8 +566,12 @@ def consumable_recipe(wikitext: str) -> dict[str, object] | None:
         # scatter same-ingredient variants apart whenever an unrelated
         # variant's names happen to sort between them alphabetically (e.g.
         # "Banana,Sugar" landing after all "Banana,Solution,Sugar" entries
-        # just because "Solution" < "Sugar").
-        return (len(v["ingredients"]), names_key, v["resultQty"], qty_key)
+        # just because "Solution" < "Sugar"). Within a count tier, variants
+        # sharing the main recipe's exact ingredient set (e.g. more Sugar+
+        # Banana ratios) come first, ahead of other same-count combos, so
+        # they read as a continuation of the recipe shown up top.
+        matches_main = 0 if names_key == best_names_key else 1
+        return (len(v["ingredients"]), matches_main, names_key, v["resultQty"], qty_key)
 
     variants.sort(key=variant_sort_key)
     return {
