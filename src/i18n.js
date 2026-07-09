@@ -56,6 +56,7 @@ export const UI = {
   final: { en: 'Final', ko: '최종' },
   durabilityPerShot: { en: 'Durability / shot', ko: '발사당 내구도' },
   totalDamage: { en: 'Total Damage (all projectiles)', ko: '총 데미지 (투사체 전체)' },
+  projectileCount: { en: 'Projectiles / shot', ko: '발사 탄환 수' },
   otherEffects: { en: 'Other effects', ko: '기타 효과' },
   pickWeapon: { en: 'Select a weapon to begin.', ko: '무기를 선택하면 시작됩니다.' },
   scrollOpt: { en: 'Scrolls', ko: '스크롤' },

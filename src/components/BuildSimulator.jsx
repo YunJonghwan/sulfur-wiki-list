@@ -244,11 +244,20 @@ export default function BuildSimulator({ lang }) {
                         <td>{s.base ?? '—'}</td>
                         <td className={diffClass(s)}>{s.final ?? '—'}</td>
                       </tr>
+                      {s.key === 'Damage' && result.projectileCount != null && (
+                        <tr className="derived-stat-row">
+                          <td>{t(UI.projectileCount, lang)}</td>
+                          <td>{result.baseProjectiles}</td>
+                          <td className={diffClass({ base: result.baseProjectiles, final: result.projectileCount, key: 'Damage' })}>
+                            {result.projectileCount}
+                          </td>
+                        </tr>
+                      )}
                       {s.key === 'Damage' && result.totalDamage != null && (
                         <tr className="derived-stat-row">
                           <td>{t(UI.totalDamage, lang)}</td>
-                          <td>—</td>
-                          <td className={diffClass({ base: s.base, final: result.totalDamage, key: s.key })}>
+                          <td>{result.totalDamageBase ?? '—'}</td>
+                          <td className={diffClass({ base: result.totalDamageBase, final: result.totalDamage, key: s.key })}>
                             {result.totalDamage}
                           </td>
                         </tr>

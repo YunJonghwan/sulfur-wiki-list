@@ -16,6 +16,23 @@ export function parseNum(value) {
   return { num: parseFloat(m[1]), percent: value.includes('%') }
 }
 
+// Some shotguns encode their pellet count right in the Damage field instead
+// of a separate stat — "40×8" (8 pellets at 40 each), "40×8×3" (Arbiter 2:
+// 8 pellets × 3 barrels fired at once — confirmed on its wiki page), "50×3×3"
+// (Augusta: 3 pellets × 3 cells/shot). All the "×N" factors multiply
+// together for the base projectile count; a trailing "(×1-8)" variable-charge
+// range (Breacher 8) is dropped rather than guessed at, leaving its normal
+// pellet count.
+export function parseDamageField(raw) {
+  if (typeof raw !== 'string') return null
+  const m = raw.match(/^(\d+(?:\.\d+)?)((?:\s*×\s*\d+(?:\.\d+)?)*)/)
+  if (!m) return null
+  const perProjectile = parseFloat(m[1])
+  const factors = [...m[2].matchAll(/×\s*(\d+(?:\.\d+)?)/g)].map((x) => parseFloat(x[1]))
+  const count = factors.length ? factors.reduce((a, b) => a * b, 1) : 1
+  return { perProjectile, count }
+}
+
 // Mirrors classify_ability() in scripts/scrape.py (same stat-direction
 // tables) — used there to label an oil's overall composition, used here to
 // sort each individual "other effect" chip into buff/debuff/constraint
@@ -245,19 +262,33 @@ export function computeWeapon(weapon, enchants, gearItems) {
     }
   })
 
-  // An oil that trades Damage for more projectiles (e.g. -30% Damage,
-  // +200% Projectile Amount) makes the Damage row alone look like a pure
-  // nerf — surface the per-shot total across all projectiles too, so it's
-  // clear the net change isn't a loss.
+  // A shotgun's own Damage field already bakes in a pellet count ("40×8"),
+  // so its "Damage" stat above is per-pellet, not per-trigger-pull — and an
+  // oil trading Damage for more projectiles (e.g. -30% Damage, +200%
+  // Projectile Amount) makes that per-pellet row alone look like a pure
+  // nerf. Surface the actual projectile count and the resulting per-shot
+  // total, so it's clear whether the net change is really a loss.
+  const dmgField = parseDamageField(wf.Damage)
+  const baseProjectiles = dmgField ? dmgField.count : 1
   let projecPct = 0
   for (const { item } of enchItems) {
     const p = parseNum(fieldsOf(item).ProjecAmnt)
     if (p && p.percent) projecPct += p.num
   }
+  const projectileCount =
+    baseProjectiles > 1 || projecPct !== 0
+      ? Math.round(baseProjectiles * (1 + projecPct / 100) * 100) / 100
+      : null
   const damageStat = stats.find((s) => s.key === 'Damage')
   const totalDamage =
-    projecPct !== 0 && damageStat && damageStat.final != null
-      ? Math.round(damageStat.final * (1 + projecPct / 100) * 100) / 100
+    projectileCount != null && damageStat && damageStat.final != null
+      ? Math.round(damageStat.final * projectileCount * 100) / 100
+      : null
+  // Vanilla (no-enchant) total, for coloring totalDamage by the build's real
+  // net effect instead of against the misleading single-pellet base.
+  const totalDamageBase =
+    projectileCount != null && damageStat && damageStat.base != null
+      ? Math.round(damageStat.base * baseProjectiles * 100) / 100
       : null
 
   // Durability per shot.
@@ -324,5 +355,8 @@ export function computeWeapon(weapon, enchants, gearItems) {
     }
   }
 
-  return { stats, durability, extras, gearDmgPct, totalDamage }
+  return {
+    stats, durability, extras, gearDmgPct,
+    totalDamage, totalDamageBase, baseProjectiles, projectileCount,
+  }
 }
