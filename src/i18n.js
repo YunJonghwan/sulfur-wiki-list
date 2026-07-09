@@ -74,6 +74,7 @@ export const AXIS_KO = {
   type: '종류',
   stage: '단계',
   craftable: '획득 방법',
+  organSource: '장기 출처',
 }
 
 // Korean labels for sub-group values. Missing values fall back to English.
@@ -140,6 +141,15 @@ export const GROUP_KO = {
   Valuables: '귀중품',
   Key: '열쇠',
   Trash: '쓰레기',
+  // organ source (공통 드랍 vs 특정 적 전용)
+  Common: '공통',
+  Goblin: '고블린',
+  Human: '인간',
+  Dog: '개',
+  Craw: '크로우',
+  Hellshrew: '헬슈루',
+  "Shav'Wa": '샤브와',
+  Cultist: '컬티스트',
 }
 
 export function groupLabel(value, label, lang) {

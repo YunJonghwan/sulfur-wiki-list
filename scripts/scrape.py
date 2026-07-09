@@ -455,6 +455,7 @@ KEY_ALIASES = {
 # read it from.
 MISSING_KIND_BY_TITLE = {
     "Liver": "misc",
+    "Hellshrew Eye": "misc",
 }
 
 
@@ -978,7 +979,7 @@ AXIS_KEYS_BY_KIND = {
     "attachment": ["type"],
     "equipment": ["type"],
     "consumable": ["type", "craftable"],
-    "misc": ["type"],
+    "misc": ["type", "organSource"],
 }
 
 AXIS_LABELS = {
@@ -989,6 +990,7 @@ AXIS_LABELS = {
     "type": "Type",
     "stage": "Stage",
     "craftable": "Acquisition",
+    "organSource": "Organ Source",
 }
 
 CRAFTABLE_LABELS = {"craftable": "Craftable", "farmed": "Found / Farmed"}
@@ -1049,6 +1051,7 @@ VALUE_ORDER = {
     # Combined (Stage 2) scrolls listed before base (Stage 1) ones.
     "stage": ["stage2", "stage1"],
     "craftable": ["craftable", "farmed"],
+    "organSource": ["Common"],
 }
 
 
@@ -1139,6 +1142,30 @@ def oil_buff_ability_keys(fields: dict[str, str]) -> list[str]:
     ]
 
 
+# The infobox SubType field is unreliable for organs — several pages
+# (Bone, Bladder, Brain, Liver) leave it blank or just say "Ingredient",
+# while the page's own [[Category:Organs]] tag is consistently present.
+# That category tag is the source of truth for "is this an organ" instead.
+ORGAN_CATEGORY_RE = re.compile(r"\[\[\s*Category\s*:\s*Organs\s*\]\]", re.IGNORECASE)
+
+# Within organs, Skin/Eye/Flesh types only ever exist as enemy-specific drops
+# (no generic "Skin"/"Eye"/"Flesh" item exists at all), and a couple of
+# otherwise-common organ types have one named-enemy special variant
+# (Cultist Heart, Shav'Wa Bladder next to the plain Heart/Bladder). Every
+# other organ (Kidney, Lung, Liver, Bone, Brain, Intestines, Thyroid,
+# Spleen, Pancreas, Tongue, Heart, Bladder) is a common, non-enemy-specific
+# drop. There's no structured "drops from" field on the wiki to derive this
+# from, so it's hand-mapped from the Category:Organs member list.
+ORGAN_SOURCE_BY_TITLE = {
+    "Goblin Skin": "Goblin", "Human Skin": "Human", "Dog Skin": "Dog",
+    "Craw Skin": "Craw", "Hellshrew Skin": "Hellshrew", "Shav'Wa Skin": "Shav'Wa",
+    "Human Eye": "Human", "Dog Eye": "Dog", "Goblin Eye": "Goblin",
+    "Shav'Wa Eye": "Shav'Wa", "Hellshrew Eye": "Hellshrew",
+    "Human Flesh": "Human", "Craw Flesh": "Craw", "Hellshrew Flesh": "Hellshrew",
+    "Cultist Heart": "Cultist", "Shav'Wa Bladder": "Shav'Wa",
+}
+
+
 def item_groups(kind: str, fields: dict[str, str], title: str, wikitext: str) -> dict[str, object]:
     if kind == "oil":
         return {
@@ -1152,6 +1179,12 @@ def item_groups(kind: str, fields: dict[str, str], title: str, wikitext: str) ->
         return {"class": label, "ammo": fields.get("Ammo") or "—"}
     if kind == "consumable":
         return {"type": label, "craftable": consumable_craftable(wikitext)}
+    if kind == "misc":
+        is_organ = bool(ORGAN_CATEGORY_RE.search(wikitext))
+        groups: dict[str, object] = {"type": "Organ" if is_organ else label}
+        if is_organ:
+            groups["organSource"] = ORGAN_SOURCE_BY_TITLE.get(title, "Common")
+        return groups
     return {"type": label}
 
 

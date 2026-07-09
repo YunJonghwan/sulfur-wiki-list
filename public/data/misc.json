@@ -1,6 +1,6 @@
 {
   "kind": "misc",
-  "generated": "2026-07-09T02:16:26.223320+00:00",
+  "generated": "2026-07-09T02:27:38.079022+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -32,24 +32,24 @@
       "multi": false,
       "values": [
         {
+          "value": "Organ",
+          "label": "Organ",
+          "count": 28
+        },
+        {
           "value": "Valuables",
           "label": "Valuables",
           "count": 24
         },
         {
-          "value": "Organ",
-          "label": "Organ",
-          "count": 23
-        },
-        {
           "value": "Ingredient",
           "label": "Ingredient",
-          "count": 18
+          "count": 15
         },
         {
           "value": "Other",
           "label": "Other",
-          "count": 12
+          "count": 11
         },
         {
           "value": "Key",
@@ -59,6 +59,53 @@
         {
           "value": "Trash",
           "label": "Trash",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "organSource",
+      "label": "Organ Source",
+      "multi": false,
+      "values": [
+        {
+          "value": "Common",
+          "label": "Common",
+          "count": 12
+        },
+        {
+          "value": "Hellshrew",
+          "label": "Hellshrew",
+          "count": 3
+        },
+        {
+          "value": "Human",
+          "label": "Human",
+          "count": 3
+        },
+        {
+          "value": "Shav'Wa",
+          "label": "Shav'Wa",
+          "count": 3
+        },
+        {
+          "value": "Craw",
+          "label": "Craw",
+          "count": 2
+        },
+        {
+          "value": "Dog",
+          "label": "Dog",
+          "count": 2
+        },
+        {
+          "value": "Goblin",
+          "label": "Goblin",
+          "count": 2
+        },
+        {
+          "value": "Cultist",
+          "label": "Cultist",
           "count": 1
         }
       ]
@@ -98,7 +145,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bladder",
       "image": "Bladder.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "SubType": "Ingredient",
@@ -113,7 +161,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Bone",
       "image": "Bone.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "SubType": "Ingredient",
@@ -128,7 +177,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Brain",
       "image": "Brain.png",
       "groups": {
-        "type": "Ingredient"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "SubType": "Ingredient",
@@ -198,7 +248,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Craw_Flesh",
       "image": "Craw Flesh.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Craw"
       },
       "fields": {
         "GridSize": "1×1",
@@ -227,7 +278,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Craw_Skin",
       "image": "Craw Skin.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Craw"
       },
       "fields": {
         "GridSize": "1×1",
@@ -257,7 +309,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Cultist_Heart",
       "image": "Cultist Heart.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Cultist"
       },
       "fields": {
         "GridSize": "1×1",
@@ -285,7 +338,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Dog_Eye",
       "image": "Dog Eye.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Dog"
       },
       "fields": {
         "GridSize": "1×1",
@@ -313,7 +367,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Dog_Skin",
       "image": "Dog Skin.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Dog"
       },
       "fields": {
         "GridSize": "1×1",
@@ -439,7 +494,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye",
       "image": "Goblin Eye.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Goblin"
       },
       "fields": {
         "GridSize": "1×1",
@@ -454,7 +510,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin",
       "image": "Goblin Skin.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Goblin"
       },
       "fields": {
         "GridSize": "1×1",
@@ -537,7 +594,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Heart",
       "image": "Heart.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
@@ -548,11 +606,26 @@
       "icon": "icons/misc/organ/Heart.png"
     },
     {
+      "name": "Hellshrew Eye",
+      "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye",
+      "image": "Hellshrew Eye.png",
+      "groups": {
+        "type": "Organ",
+        "organSource": "Hellshrew"
+      },
+      "fields": {
+        "GridSize": "1x1",
+        "SellVal": "20"
+      },
+      "icon": "icons/misc/_etc/Hellshrew_Eye.png"
+    },
+    {
       "name": "Hellshrew Flesh",
       "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh",
       "image": "Hellshrew Flesh.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Hellshrew"
       },
       "fields": {
         "GridSize": "1×1",
@@ -566,7 +639,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin",
       "image": "Hellshrew Skin.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Hellshrew"
       },
       "fields": {
         "GridSize": "1×1",
@@ -581,7 +655,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Human_Eye",
       "image": "Human Eye.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Human"
       },
       "fields": {
         "GridSize": "1×1",
@@ -596,7 +671,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Human_Flesh",
       "image": "Human Flesh.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Human"
       },
       "fields": {
         "GridSize": "1×1",
@@ -610,7 +686,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Human_Skin",
       "image": "Human Skin.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Human"
       },
       "fields": {
         "GridSize": "1×1",
@@ -625,7 +702,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Intestines",
       "image": "Intestines.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
@@ -639,7 +717,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Kidney",
       "image": "Kidney.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
@@ -654,7 +733,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Liver",
       "image": "Liver.png",
       "groups": {
-        "type": "Other"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "2x1",
@@ -667,7 +747,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Lung",
       "image": "Lung.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×2",
@@ -769,7 +850,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Pancreas",
       "image": "Pancreas.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
@@ -997,7 +1079,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder",
       "image": "Shav'Wa Bladder.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Shav'Wa"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1011,7 +1094,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye",
       "image": "Shav'Wa Eye.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Shav'Wa"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1025,7 +1109,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin",
       "image": "Shav'Wa Skin.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Shav'Wa"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1124,7 +1209,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Spleen",
       "image": "Spleen.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1153,7 +1239,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Thyroid",
       "image": "Thyroid.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
@@ -1168,7 +1255,8 @@
       "page": "https://sulfur.wiki.gg/wiki/Tongue",
       "image": "Tongue.png",
       "groups": {
-        "type": "Organ"
+        "type": "Organ",
+        "organSource": "Common"
       },
       "fields": {
         "GridSize": "1×1",
