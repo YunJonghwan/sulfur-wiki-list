@@ -57,6 +57,12 @@ function signOf(value) {
   return 0
 }
 
+// For stats like Spread/Recoil where a bigger number is worse, "best first"
+// means ascending (most negative reduction on top), not descending.
+export function isLowerBetter(key) {
+  return BUFF_WHEN_DOWN.has(key)
+}
+
 export function classifyAbility(key, value) {
   if (CONSTRAINTS.has(key)) return 'constraint'
   if (DEBUFF_EFFECTS.has(key)) return 'debuff'

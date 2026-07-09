@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t, groupLabel, axisLabel, nameKo } from '../i18n.js'
+import { isLowerBetter } from '../build.js'
 
 const BASE = import.meta.env.BASE_URL
 const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy'])
@@ -50,9 +51,13 @@ function numericValue(raw) {
   return m ? parseFloat(m[0]) : NaN
 }
 
-// Highest first, items missing the stat entirely always sink to the bottom
-// (a naive `b - a` sort would scatter them unpredictably via NaN).
+// Best first — for most stats that's the highest number, but for ones like
+// Spread/Recoil where lower is better, "best" is the most negative value,
+// so a plain descending sort would put the worst (biggest increase) oils on
+// top. Items missing the stat entirely always sink to the bottom (a naive
+// `b - a` sort would scatter them unpredictably via NaN).
 function byStatDesc(items, statKey) {
+  const ascending = isLowerBetter(statKey)
   return [...items].sort((a, b) => {
     const va = a.fields?.[statKey]
     const vb = b.fields?.[statKey]
@@ -63,8 +68,8 @@ function byStatDesc(items, statKey) {
     if (bEmpty) return -1
     const na = numericValue(va)
     const nb = numericValue(vb)
-    if (!Number.isNaN(na) && !Number.isNaN(nb)) return nb - na
-    return String(vb).localeCompare(String(va))
+    if (!Number.isNaN(na) && !Number.isNaN(nb)) return ascending ? na - nb : nb - na
+    return ascending ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va))
   })
 }
 
