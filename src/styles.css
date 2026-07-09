@@ -629,6 +629,31 @@ main {
   margin-bottom: 0.4rem;
 }
 
+.extras-group {
+  margin-top: 0.5rem;
+}
+
+.extras-group:first-child {
+  margin-top: 0;
+}
+
+.extras-subtitle {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.extras-subtitle.buff {
+  color: var(--pos);
+}
+
+.extras-subtitle.debuff {
+  color: var(--neg);
+}
+
+.extras-subtitle.constraint {
+  color: var(--muted);
+}
+
 @media (max-width: 760px) {
   .build {
     grid-template-columns: 1fr;

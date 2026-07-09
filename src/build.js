@@ -16,6 +16,39 @@ export function parseNum(value) {
   return { num: parseFloat(m[1]), percent: value.includes('%') }
 }
 
+// Mirrors classify_ability() in scripts/scrape.py (same stat-direction
+// tables) — used there to label an oil's overall composition, used here to
+// sort each individual "other effect" chip into buff/debuff/constraint
+// instead of coloring purely off the +/- sign, which gets stats where lower
+// is better (Spread, Recoil, ...) backwards.
+const BUFF_WHEN_UP = new Set([
+  'Dmg', 'RPM', 'CritChance', 'RldSpeed', 'BltSpeed', 'BltPen', 'BltSize',
+  'BltBounces', 'BltBounciness', 'ProjecAmnt', 'MaxDrb', 'Speed', 'JumpPwr',
+  'LootChance', 'MoveAccuracy', 'PenDmgMult', 'LootRolls',
+])
+const BUFF_WHEN_DOWN = new Set(['Spread', 'Recoil', 'Drag', 'BltDrop', 'AmmoConsume', 'AmmoExConsume'])
+const CONSTRAINTS = new Set([
+  'AimDisabled', 'NoMoney', 'NoOrgans', 'Blindfolded', 'SelfBlind', 'WearSJ',
+  'WearGoggles', 'WearShades', 'WearEarPro',
+])
+const DEBUFF_EFFECTS = new Set(['SelfDmg', 'LessForceSpd', 'MoreDmgOnHit'])
+
+function signOf(value) {
+  const v = String(value).trim()
+  if (v.startsWith('+')) return 1
+  if (v.startsWith('-') || v.startsWith('−')) return -1
+  return 0
+}
+
+export function classifyAbility(key, value) {
+  if (CONSTRAINTS.has(key)) return 'constraint'
+  if (DEBUFF_EFFECTS.has(key)) return 'debuff'
+  const sign = signOf(value)
+  if (BUFF_WHEN_UP.has(key)) return sign >= 0 ? 'buff' : 'debuff'
+  if (BUFF_WHEN_DOWN.has(key)) return sign < 0 ? 'buff' : 'debuff'
+  return 'buff'
+}
+
 // Oil/scroll stat key -> base weapon stat key.
 const MOD_TO_WEAPON = { Dmg: 'Damage', RPM: 'RPM', Spread: 'Spread', Recoil: 'Recoil', MaxDrb: 'Durability' }
 
@@ -264,7 +297,8 @@ export function computeWeapon(weapon, enchants, gearItems) {
     // Single source: keep the raw value untouched (no risk of losing a "×N"
     // multiplier or other formatting by round-tripping it through parseNum).
     if (entries.length === 1) {
-      extras.push({ from: entries[0].from, key: k, value: entries[0].value })
+      const value = entries[0].value
+      extras.push({ from: entries[0].from, key: k, value, direction: classifyAbility(k, value) })
       continue
     }
     // "×N" multipliers stack multiplicatively, not additively — only sum
@@ -279,13 +313,13 @@ export function computeWeapon(weapon, enchants, gearItems) {
       const rounded = Math.round(total * 100) / 100
       const value = `${rounded >= 0 ? '+' : ''}${rounded}${entries[0].num.percent ? '%' : ''}`
       const from = entries.map((e) => e.from).join(' + ')
-      extras.push({ from, key: k, value })
+      extras.push({ from, key: k, value, direction: classifyAbility(k, value) })
     } else {
       const seenVals = new Set()
       for (const e of entries) {
         if (seenVals.has(e.value)) continue
         seenVals.add(e.value)
-        extras.push({ from: e.from, key: k, value: e.value })
+        extras.push({ from: e.from, key: k, value: e.value, direction: classifyAbility(k, e.value) })
       }
     }
   }

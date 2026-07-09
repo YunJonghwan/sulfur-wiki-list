@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from 'react'
-import { UI, COLUMN_KO, t } from '../i18n.js'
+import { UI, COLUMN_KO, t, groupLabel } from '../i18n.js'
 import { computeWeapon, computePlayerStats, computeGearExtras } from '../build.js'
 import ItemPicker from './ItemPicker.jsx'
 
@@ -266,14 +266,7 @@ export default function BuildSimulator({ lang }) {
               {result.extras.length > 0 && (
                 <div className="extras">
                   <div className="extras-title">{t(UI.otherEffects, lang)}</div>
-                  <div className="chips">
-                    {result.extras.map((x, i) => (
-                      <span key={i} className={`chip ${tone(x.value)}`}>
-                        <b>{labelFor(x.key)}</b>
-                        {x.value}
-                      </span>
-                    ))}
-                  </div>
+                  <ExtraGroups extras={result.extras} labelFor={labelFor} lang={lang} />
                 </div>
               )}
             </>
@@ -319,6 +312,36 @@ export default function BuildSimulator({ lang }) {
         </div>
       </section>
     </div>
+  )
+}
+
+const DIRECTION_ORDER = ['buff', 'debuff', 'constraint']
+const DIRECTION_TONE = { buff: 'pos', debuff: 'neg', constraint: '' }
+
+// Splits weapon extras into buff/debuff/constraint sections instead of one
+// flat list colored purely by +/- sign — a stat like Recoil or Spread is a
+// buff when it goes DOWN, so a naive sign check shows it backwards.
+function ExtraGroups({ extras, labelFor, lang }) {
+  return (
+    <>
+      {DIRECTION_ORDER.map((dir) => {
+        const items = extras.filter((x) => x.direction === dir)
+        if (items.length === 0) return null
+        return (
+          <div className="extras-group" key={dir}>
+            <div className={`extras-subtitle ${dir}`}>{groupLabel(dir, dir, lang)}</div>
+            <div className="chips">
+              {items.map((x, i) => (
+                <span key={i} className={`chip ${DIRECTION_TONE[dir]}`}>
+                  <b>{labelFor(x.key)}</b>
+                  {x.value}
+                </span>
+              ))}
+            </div>
+          </div>
+        )
+      })}
+    </>
   )
 }
 
