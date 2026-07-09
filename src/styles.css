@@ -614,6 +614,11 @@ main {
   color: var(--muted);
 }
 
+.derived-stat-row td {
+  font-size: 0.85em;
+  font-style: italic;
+}
+
 .extras {
   margin-top: 0.75rem;
 }

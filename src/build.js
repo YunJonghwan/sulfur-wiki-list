@@ -212,6 +212,21 @@ export function computeWeapon(weapon, enchants, gearItems) {
     }
   })
 
+  // An oil that trades Damage for more projectiles (e.g. -30% Damage,
+  // +200% Projectile Amount) makes the Damage row alone look like a pure
+  // nerf — surface the per-shot total across all projectiles too, so it's
+  // clear the net change isn't a loss.
+  let projecPct = 0
+  for (const { item } of enchItems) {
+    const p = parseNum(fieldsOf(item).ProjecAmnt)
+    if (p && p.percent) projecPct += p.num
+  }
+  const damageStat = stats.find((s) => s.key === 'Damage')
+  const totalDamage =
+    projecPct !== 0 && damageStat && damageStat.final != null
+      ? Math.round(damageStat.final * (1 + projecPct / 100) * 100) / 100
+      : null
+
   // Durability per shot.
   let durInc = 0
   let scroll = null
@@ -229,19 +244,51 @@ export function computeWeapon(weapon, enchants, gearItems) {
   durability = Math.round(durability * 100) / 100
 
   // Other oil/scroll modifiers that aren't one of the base weapon stats.
-  const extras = []
-  const seen = new Set()
+  // Two oils hitting the same stat (e.g. Bullet Bounces +4 and +2) used to
+  // show as two separate chips — combined here into one "+6" when they're
+  // both plain numeric modifiers of the same unit (both flat or both %);
+  // anything that can't be summed (flags, mixed flat/percent) is still
+  // listed as distinct entries.
   const META = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'SubType'])
+  const byExtraKey = new Map()
   for (const { item } of enchItems) {
     const f = fieldsOf(item)
     for (const [k, v] of Object.entries(f)) {
       if (k in MOD_TO_WEAPON || META.has(k)) continue
-      const tag = `${k}:${v}`
-      if (seen.has(tag)) continue
-      seen.add(tag)
-      extras.push({ from: item.name, key: k, value: v })
+      if (!byExtraKey.has(k)) byExtraKey.set(k, [])
+      byExtraKey.get(k).push({ from: item.name, value: v, num: parseNum(v) })
+    }
+  }
+  const extras = []
+  for (const [k, entries] of byExtraKey) {
+    // Single source: keep the raw value untouched (no risk of losing a "×N"
+    // multiplier or other formatting by round-tripping it through parseNum).
+    if (entries.length === 1) {
+      extras.push({ from: entries[0].from, key: k, value: entries[0].value })
+      continue
+    }
+    // "×N" multipliers stack multiplicatively, not additively — only sum
+    // when every entry is a plain +/- flat or percent modifier.
+    const multiplicative = entries.some((e) => /[×x]/i.test(e.value))
+    const sameUnit =
+      !multiplicative &&
+      entries.every((e) => e.num) &&
+      entries.every((e) => e.num.percent === entries[0].num.percent)
+    if (sameUnit) {
+      const total = entries.reduce((sum, e) => sum + e.num.num, 0)
+      const rounded = Math.round(total * 100) / 100
+      const value = `${rounded >= 0 ? '+' : ''}${rounded}${entries[0].num.percent ? '%' : ''}`
+      const from = entries.map((e) => e.from).join(' + ')
+      extras.push({ from, key: k, value })
+    } else {
+      const seenVals = new Set()
+      for (const e of entries) {
+        if (seenVals.has(e.value)) continue
+        seenVals.add(e.value)
+        extras.push({ from: e.from, key: k, value: e.value })
+      }
     }
   }
 
-  return { stats, durability, extras, gearDmgPct }
+  return { stats, durability, extras, gearDmgPct, totalDamage }
 }

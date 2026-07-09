@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t } from '../i18n.js'
 import { computeWeapon, computePlayerStats, computeGearExtras } from '../build.js'
 import ItemPicker from './ItemPicker.jsx'
@@ -238,11 +238,22 @@ export default function BuildSimulator({ lang }) {
                 </thead>
                 <tbody>
                   {result.stats.map((s) => (
-                    <tr key={s.key}>
-                      <td>{labelFor(s.key)}</td>
-                      <td>{s.base ?? '—'}</td>
-                      <td className={diffClass(s)}>{s.final ?? '—'}</td>
-                    </tr>
+                    <Fragment key={s.key}>
+                      <tr>
+                        <td>{labelFor(s.key)}</td>
+                        <td>{s.base ?? '—'}</td>
+                        <td className={diffClass(s)}>{s.final ?? '—'}</td>
+                      </tr>
+                      {s.key === 'Damage' && result.totalDamage != null && (
+                        <tr className="derived-stat-row">
+                          <td>{t(UI.totalDamage, lang)}</td>
+                          <td>—</td>
+                          <td className={diffClass({ base: s.base, final: result.totalDamage, key: s.key })}>
+                            {result.totalDamage}
+                          </td>
+                        </tr>
+                      )}
+                    </Fragment>
                   ))}
                   <tr>
                     <td>{t(UI.durabilityPerShot, lang)}</td>
