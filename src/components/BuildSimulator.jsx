@@ -329,8 +329,8 @@ function GearSlot({ label, items, value, onChange, lang, labelFor }) {
 
 function diffClass(s) {
   if (s.base == null || s.final == null) return ''
-  // Damage/RPM: higher is better; Spread/Recoil: lower is better.
-  const higherBetter = s.key === 'Damage' || s.key === 'RPM'
+  // Damage/RPM/Durability: higher is better; Spread/Recoil: lower is better.
+  const higherBetter = s.key === 'Damage' || s.key === 'RPM' || s.key === 'Durability'
   if (s.final === s.base) return ''
   const better = higherBetter ? s.final > s.base : s.final < s.base
   return better ? 'pos' : 'neg'

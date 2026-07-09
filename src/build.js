@@ -19,7 +19,7 @@ export function parseNum(value) {
 // Oil/scroll stat key -> base weapon stat key.
 const MOD_TO_WEAPON = { Dmg: 'Damage', RPM: 'RPM', Spread: 'Spread', Recoil: 'Recoil' }
 
-export const WEAPON_STATS = ['Damage', 'RPM', 'Spread', 'Recoil']
+export const WEAPON_STATS = ['Damage', 'RPM', 'Spread', 'Recoil', 'Durability']
 
 // Weapon class -> the equipment/passive damage-bonus key that applies.
 const CLASS_DMG_KEY = {
