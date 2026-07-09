@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-09T02:37:56.057586+00:00",
+  "generated": "2026-07-09T02:48:21.650519+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -456,7 +456,24 @@
         "Heal": "10 Health over 10 seconds",
         "SellVal": "15"
       },
-      "icon": "icons/consumable/food/Banana.png"
+      "icon": "icons/consumable/food/Banana.png",
+      "usedIn": [
+        {
+          "name": "Banana Sulfs",
+          "icon": "icons/consumable/food/Banana_Sulfs.png",
+          "page": "https://sulfur.wiki.gg/wiki/Banana_Sulfs"
+        },
+        {
+          "name": "Banana Bread",
+          "icon": "icons/consumable/food/Banana_Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Banana_Bread"
+        },
+        {
+          "name": "Risalamande",
+          "icon": "icons/consumable/dessert/Risalamande.png",
+          "page": "https://sulfur.wiki.gg/wiki/Risalamande"
+        }
+      ]
     },
     {
       "name": "Banana Bread",
@@ -1186,7 +1203,34 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Bark_Bread.png"
+      "icon": "icons/consumable/food/Bark_Bread.png",
+      "usedIn": [
+        {
+          "name": "Peanutbutter Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Sandwich"
+        },
+        {
+          "name": "Cheese Sandwich",
+          "icon": "icons/consumable/food/Cheese_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Sandwich"
+        },
+        {
+          "name": "Butter Sandwich",
+          "icon": "icons/consumable/food/Butter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich"
+        },
+        {
+          "name": "Bread Sandwich",
+          "icon": "icons/consumable/food/Bread_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bread_Sandwich"
+        },
+        {
+          "name": "Peanutbutter Jelly Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich"
+        }
+      ]
     },
     {
       "name": "Beans",
@@ -1202,7 +1246,14 @@
         "Heal": "25 health over 10 seconds",
         "SellVal": "60"
       },
-      "icon": "icons/consumable/food/Beans.png"
+      "icon": "icons/consumable/food/Beans.png",
+      "usedIn": [
+        {
+          "name": "Full English Breakfast",
+          "icon": "icons/consumable/food/Full_English_Breakfast.png",
+          "page": "https://sulfur.wiki.gg/wiki/Full_English_Breakfast"
+        }
+      ]
     },
     {
       "name": "Beef Jerky",
@@ -1273,7 +1324,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Beef_Jerky.png"
+      "icon": "icons/consumable/food/Beef_Jerky.png",
+      "usedIn": [
+        {
+          "name": "Poutine",
+          "icon": "icons/consumable/food/Poutine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Poutine"
+        }
+      ]
     },
     {
       "name": "Berries",
@@ -1290,7 +1348,29 @@
         "SellVal": "20",
         "SoldBy": "Jaques De Fector"
       },
-      "icon": "icons/consumable/food/Berries.png"
+      "icon": "icons/consumable/food/Berries.png",
+      "usedIn": [
+        {
+          "name": "Berry Milkshake",
+          "icon": "icons/consumable/beverage/Berry_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Milkshake"
+        },
+        {
+          "name": "Berry Jam (Unsweetened)",
+          "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Jam_%28Unsweetened%29"
+        },
+        {
+          "name": "Berry Jam",
+          "icon": "icons/consumable/food/Berry_Jam.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
+        },
+        {
+          "name": "Sweet Gum",
+          "icon": "icons/consumable/dessert/Sweet_Gum.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sweet_Gum"
+        }
+      ]
     },
     {
       "name": "Berry Jam",
@@ -1525,7 +1605,34 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Berry_Jam.png"
+      "icon": "icons/consumable/food/Berry_Jam.png",
+      "usedIn": [
+        {
+          "name": "Berry Milkshake",
+          "icon": "icons/consumable/beverage/Berry_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Milkshake"
+        },
+        {
+          "name": "Health Potion",
+          "icon": "icons/consumable/drug-remedy/Health_Potion.png",
+          "page": "https://sulfur.wiki.gg/wiki/Health_Potion"
+        },
+        {
+          "name": "Peanutbutter Jelly Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich"
+        },
+        {
+          "name": "Mulled Wine",
+          "icon": "icons/consumable/beverage/Mulled_Wine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mulled_Wine"
+        },
+        {
+          "name": "Risalamande",
+          "icon": "icons/consumable/dessert/Risalamande.png",
+          "page": "https://sulfur.wiki.gg/wiki/Risalamande"
+        }
+      ]
     },
     {
       "name": "Berry Jam (Unsweetened)",
@@ -1568,7 +1675,24 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png"
+      "icon": "icons/consumable/food/Berry_Jam_(Unsweetened).png",
+      "usedIn": [
+        {
+          "name": "Berry Milkshake",
+          "icon": "icons/consumable/beverage/Berry_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Milkshake"
+        },
+        {
+          "name": "Berry Jam",
+          "icon": "icons/consumable/food/Berry_Jam.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
+        },
+        {
+          "name": "Peanutbutter Jelly Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich"
+        }
+      ]
     },
     {
       "name": "Berry Milkshake",
@@ -2213,7 +2337,19 @@
         "Heal": "1 health over 10 seconds",
         "SoldBy": "Grossberg"
       },
-      "icon": "icons/consumable/food/Black_Pepper.png"
+      "icon": "icons/consumable/food/Black_Pepper.png",
+      "usedIn": [
+        {
+          "name": "Beef Jerky",
+          "icon": "icons/consumable/food/Beef_Jerky.png",
+          "page": "https://sulfur.wiki.gg/wiki/Beef_Jerky"
+        },
+        {
+          "name": "Leverpastej",
+          "icon": "icons/consumable/food/Leverpastej.png",
+          "page": "https://sulfur.wiki.gg/wiki/Leverpastej"
+        }
+      ]
     },
     {
       "name": "Blood",
@@ -2229,7 +2365,24 @@
         "Heal": "5 health over 10 seconds",
         "SellVal": "30"
       },
-      "icon": "icons/consumable/ingredient/Blood.png"
+      "icon": "icons/consumable/ingredient/Blood.png",
+      "usedIn": [
+        {
+          "name": "Health Potion",
+          "icon": "icons/consumable/drug-remedy/Health_Potion.png",
+          "page": "https://sulfur.wiki.gg/wiki/Health_Potion"
+        },
+        {
+          "name": "Fried Blood Pudding",
+          "icon": "icons/consumable/food/Fried_Blood_Pudding.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fried_Blood_Pudding"
+        },
+        {
+          "name": "First Aid Kit",
+          "icon": "icons/consumable/drug-remedy/First_Aid_Kit.png",
+          "page": "https://sulfur.wiki.gg/wiki/First_Aid_Kit"
+        }
+      ]
     },
     {
       "name": "Blood of the Earth Mother",
@@ -2417,7 +2570,19 @@
         "SellVal": "60",
         "SoldBy": "Bill"
       },
-      "icon": "icons/consumable/food/Bottled_Caviar.png"
+      "icon": "icons/consumable/food/Bottled_Caviar.png",
+      "usedIn": [
+        {
+          "name": "Onigiri",
+          "icon": "icons/consumable/food/Onigiri.png",
+          "page": "https://sulfur.wiki.gg/wiki/Onigiri"
+        },
+        {
+          "name": "Tube Caviar",
+          "icon": "icons/consumable/food/Tube_Caviar.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tube_Caviar"
+        }
+      ]
     },
     {
       "name": "Bottled Water",
@@ -2450,7 +2615,79 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/beverage/Bottled_Water.png"
+      "icon": "icons/consumable/beverage/Bottled_Water.png",
+      "usedIn": [
+        {
+          "name": "Bread",
+          "icon": "icons/consumable/food/Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bread"
+        },
+        {
+          "name": "Chocolate Syrup",
+          "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+        },
+        {
+          "name": "Mashed Potatoes",
+          "icon": "icons/consumable/food/Mashed_Potatoes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mashed_Potatoes"
+        },
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        },
+        {
+          "name": "Broth",
+          "icon": "icons/consumable/food/Broth.png",
+          "page": "https://sulfur.wiki.gg/wiki/Broth"
+        },
+        {
+          "name": "Porridge",
+          "icon": "icons/consumable/food/Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Porridge"
+        },
+        {
+          "name": "Cactus Softdrink",
+          "icon": "icons/consumable/beverage/Cactus_Softdrink.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cactus_Softdrink"
+        },
+        {
+          "name": "Pizza",
+          "icon": "icons/consumable/food/Pizza.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza"
+        },
+        {
+          "name": "Green Tea",
+          "icon": "icons/consumable/beverage/Green_Tea.png",
+          "page": "https://sulfur.wiki.gg/wiki/Green_Tea"
+        },
+        {
+          "name": "Red Wine",
+          "icon": "icons/consumable/beverage/Red_Wine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
+        },
+        {
+          "name": "Spaghetti",
+          "icon": "icons/consumable/ingredient/Spaghetti.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+        },
+        {
+          "name": "Stew",
+          "icon": "icons/consumable/food/Stew.png",
+          "page": "https://sulfur.wiki.gg/wiki/Stew"
+        },
+        {
+          "name": "Soda",
+          "icon": "icons/consumable/beverage/Slurf.png",
+          "page": "https://sulfur.wiki.gg/wiki/Soda"
+        },
+        {
+          "name": "Sulf Cola",
+          "icon": "icons/consumable/beverage/Sulf_Cola.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sulf_Cola"
+        }
+      ]
     },
     {
       "name": "Bread",
@@ -2621,7 +2858,104 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Bread.png"
+      "icon": "icons/consumable/food/Bread.png",
+      "usedIn": [
+        {
+          "name": "Dopp I Grytan",
+          "icon": "icons/consumable/food/Dopp_I_Grytan.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dopp_I_Grytan"
+        },
+        {
+          "name": "Peanutbutter Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Sandwich"
+        },
+        {
+          "name": "Holy Toast",
+          "icon": "icons/consumable/food/Holy_Toast.png",
+          "page": "https://sulfur.wiki.gg/wiki/Holy_Toast"
+        },
+        {
+          "name": "Biscuits And Gravy",
+          "icon": "icons/consumable/food/Biscuits_And_Gravy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Biscuits_And_Gravy"
+        },
+        {
+          "name": "Lussekatt",
+          "icon": "icons/consumable/food/Lussekatt.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lussekatt"
+        },
+        {
+          "name": "Cheese Sandwich",
+          "icon": "icons/consumable/food/Cheese_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Sandwich"
+        },
+        {
+          "name": "Liver Pâté Sandwich",
+          "icon": "icons/consumable/food/Liver_Pâté_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Liver_P%C3%A2t%C3%A9_Sandwich"
+        },
+        {
+          "name": "Butter Sandwich",
+          "icon": "icons/consumable/food/Butter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich"
+        },
+        {
+          "name": "French Hotdog",
+          "icon": "icons/consumable/food/French_Hotdog.png",
+          "page": "https://sulfur.wiki.gg/wiki/French_Hotdog"
+        },
+        {
+          "name": "Bread Sandwich",
+          "icon": "icons/consumable/food/Bread_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bread_Sandwich"
+        },
+        {
+          "name": "Pizza",
+          "icon": "icons/consumable/food/Pizza.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza"
+        },
+        {
+          "name": "Cheeseburger",
+          "icon": "icons/consumable/food/Cheeseburger.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheeseburger"
+        },
+        {
+          "name": "Peanutbutter Jelly Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich"
+        },
+        {
+          "name": "French Toast",
+          "icon": "icons/consumable/food/French_Toast.png",
+          "page": "https://sulfur.wiki.gg/wiki/French_Toast"
+        },
+        {
+          "name": "Double Cheeseburger",
+          "icon": "icons/consumable/food/Double_Cheeseburger.png",
+          "page": "https://sulfur.wiki.gg/wiki/Double_Cheeseburger"
+        },
+        {
+          "name": "Banana Bread",
+          "icon": "icons/consumable/food/Banana_Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Banana_Bread"
+        },
+        {
+          "name": "Toast Skagen",
+          "icon": "icons/consumable/food/Toast_Skagen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Toast_Skagen"
+        },
+        {
+          "name": "Buddy Sandwich",
+          "icon": "icons/consumable/food/Buddy_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buddy_Sandwich"
+        },
+        {
+          "name": "Cevapi",
+          "icon": "icons/consumable/food/Cevapi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cevapi"
+        }
+      ]
     },
     {
       "name": "Bread Sandwich",
@@ -2740,7 +3074,64 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Broth.png"
+      "icon": "icons/consumable/food/Broth.png",
+      "usedIn": [
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        },
+        {
+          "name": "Dopp I Grytan",
+          "icon": "icons/consumable/food/Dopp_I_Grytan.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dopp_I_Grytan"
+        },
+        {
+          "name": "Gravy",
+          "icon": "icons/consumable/food/Gravy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Gravy"
+        },
+        {
+          "name": "Escargot",
+          "icon": "icons/consumable/food/Escargot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Escargot"
+        },
+        {
+          "name": "Cuisses De Grenouille",
+          "icon": "icons/consumable/food/Cuisses_De_Grenouille.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cuisses_De_Grenouille"
+        },
+        {
+          "name": "Ramen",
+          "icon": "icons/consumable/food/Ramen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Ramen"
+        },
+        {
+          "name": "Hot Pot",
+          "icon": "icons/consumable/food/Hot_Pot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hot_Pot"
+        },
+        {
+          "name": "Stew",
+          "icon": "icons/consumable/food/Stew.png",
+          "page": "https://sulfur.wiki.gg/wiki/Stew"
+        },
+        {
+          "name": "Fondue",
+          "icon": "icons/consumable/food/Fondue.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fondue"
+        },
+        {
+          "name": "Tori Ramen",
+          "icon": "icons/consumable/food/Tori_Ramen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tori_Ramen"
+        },
+        {
+          "name": "Sausage Soup",
+          "icon": "icons/consumable/food/Sausage_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sausage_Soup"
+        }
+      ]
     },
     {
       "name": "Buddy Sandwich",
@@ -2821,7 +3212,109 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Butter.png"
+      "icon": "icons/consumable/food/Butter.png",
+      "usedIn": [
+        {
+          "name": "Peanutbutter Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Sandwich"
+        },
+        {
+          "name": "Rhubarb Pie",
+          "icon": "icons/consumable/food/Rhubarb_Pie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Pie"
+        },
+        {
+          "name": "Gravy",
+          "icon": "icons/consumable/food/Gravy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Gravy"
+        },
+        {
+          "name": "Escargot",
+          "icon": "icons/consumable/food/Escargot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Escargot"
+        },
+        {
+          "name": "Omelette",
+          "icon": "icons/consumable/food/Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Omelette"
+        },
+        {
+          "name": "Buttermilk Pancakes",
+          "icon": "icons/consumable/food/Buttermilk_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk_Pancakes"
+        },
+        {
+          "name": "Cheese Sandwich",
+          "icon": "icons/consumable/food/Cheese_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Sandwich"
+        },
+        {
+          "name": "Cuisses De Grenouille",
+          "icon": "icons/consumable/food/Cuisses_De_Grenouille.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cuisses_De_Grenouille"
+        },
+        {
+          "name": "Butter Sandwich",
+          "icon": "icons/consumable/food/Butter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Butter_Sandwich"
+        },
+        {
+          "name": "Fried Mushroom",
+          "icon": "icons/consumable/food/Fried_Mushroom.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fried_Mushroom"
+        },
+        {
+          "name": "Peanut Butter",
+          "icon": "icons/consumable/food/Peanut_Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter"
+        },
+        {
+          "name": "Peanutbutter Jelly Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        },
+        {
+          "name": "Leverpastej",
+          "icon": "icons/consumable/food/Leverpastej.png",
+          "page": "https://sulfur.wiki.gg/wiki/Leverpastej"
+        },
+        {
+          "name": "Nut Spread",
+          "icon": "icons/consumable/food/Nut_Spread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nut_Spread"
+        },
+        {
+          "name": "Tube Caviar",
+          "icon": "icons/consumable/food/Tube_Caviar.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tube_Caviar"
+        },
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        },
+        {
+          "name": "Toast Skagen",
+          "icon": "icons/consumable/food/Toast_Skagen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Toast_Skagen"
+        },
+        {
+          "name": "Buttermilk",
+          "icon": "icons/consumable/milk/Buttermilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk"
+        },
+        {
+          "name": "Swedish Pancakes",
+          "icon": "icons/consumable/food/Swedish_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swedish_Pancakes"
+        }
+      ]
     },
     {
       "name": "Butter Sandwich",
@@ -2878,7 +3371,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Butter_Sandwich.png"
+      "icon": "icons/consumable/food/Butter_Sandwich.png",
+      "usedIn": [
+        {
+          "name": "Cheese Sandwich",
+          "icon": "icons/consumable/food/Cheese_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Sandwich"
+        }
+      ]
     },
     {
       "name": "Buttermilk",
@@ -2955,7 +3455,24 @@
           }
         ]
       },
-      "icon": "icons/consumable/milk/Buttermilk.png"
+      "icon": "icons/consumable/milk/Buttermilk.png",
+      "usedIn": [
+        {
+          "name": "Cheese",
+          "icon": "icons/consumable/food/Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese"
+        },
+        {
+          "name": "Buttermilk Pancakes",
+          "icon": "icons/consumable/food/Buttermilk_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk_Pancakes"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        }
+      ]
     },
     {
       "name": "Buttermilk Pancakes",
@@ -3115,7 +3632,29 @@
         "Heal": "5 health over 10 seconds",
         "SellVal": "20"
       },
-      "icon": "icons/consumable/food/Cacao.png"
+      "icon": "icons/consumable/food/Cacao.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Milkshake",
+          "icon": "icons/consumable/beverage/Chocolate_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Milkshake"
+        },
+        {
+          "name": "Chocolate Syrup",
+          "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        },
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        }
+      ]
     },
     {
       "name": "Cactus",
@@ -3132,7 +3671,29 @@
         "SellVal": "20",
         "SoldBy": "Stiffleg"
       },
-      "icon": "icons/consumable/food/Cactus.png"
+      "icon": "icons/consumable/food/Cactus.png",
+      "usedIn": [
+        {
+          "name": "Bottled Water",
+          "icon": "icons/consumable/beverage/Bottled_Water.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+        },
+        {
+          "name": "Cactus Softdrink",
+          "icon": "icons/consumable/beverage/Cactus_Softdrink.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cactus_Softdrink"
+        },
+        {
+          "name": "Grilled Cactus",
+          "icon": "icons/consumable/food/Grilled_Cactus.png",
+          "page": "https://sulfur.wiki.gg/wiki/Grilled_Cactus"
+        },
+        {
+          "name": "Lackerol Cactus",
+          "icon": "icons/consumable/food/Lackerol_Cactus.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lackerol_Cactus"
+        }
+      ]
     },
     {
       "name": "Cactus Softdrink",
@@ -3145,7 +3706,10 @@
       "fields": {
         "GridSize": "1x2",
         "SubType": "Beverage, Ingredient",
-        "SellVal": "30"
+        "SellVal": "30",
+        "Heal": "15 health over 10 seconds",
+        "RmvFire": "✓",
+        "RmvPsn": "✓"
       },
       "recipe": {
         "ingredients": [
@@ -3175,7 +3739,14 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/beverage/Cactus_Softdrink.png"
+      "icon": "icons/consumable/beverage/Cactus_Softdrink.png",
+      "usedIn": [
+        {
+          "name": "Gonster",
+          "icon": "icons/consumable/beverage/Gonster.png",
+          "page": "https://sulfur.wiki.gg/wiki/Gonster"
+        }
+      ]
     },
     {
       "name": "Candy Cane",
@@ -3606,7 +4177,64 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Cheese.png"
+      "icon": "icons/consumable/food/Cheese.png",
+      "usedIn": [
+        {
+          "name": "Omelette",
+          "icon": "icons/consumable/food/Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Omelette"
+        },
+        {
+          "name": "Cheese Sandwich",
+          "icon": "icons/consumable/food/Cheese_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Sandwich"
+        },
+        {
+          "name": "Pizza",
+          "icon": "icons/consumable/food/Pizza.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza"
+        },
+        {
+          "name": "Cheeseburger",
+          "icon": "icons/consumable/food/Cheeseburger.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheeseburger"
+        },
+        {
+          "name": "Cheese Tops",
+          "icon": "icons/consumable/food/Cheese_Tops.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Tops"
+        },
+        {
+          "name": "Raclette",
+          "icon": "icons/consumable/food/Raclette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Raclette"
+        },
+        {
+          "name": "Fondue",
+          "icon": "icons/consumable/food/Fondue.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fondue"
+        },
+        {
+          "name": "Cordon Bleu",
+          "icon": "icons/consumable/food/Cordon_Bleu.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cordon_Bleu"
+        },
+        {
+          "name": "Double Cheeseburger",
+          "icon": "icons/consumable/food/Double_Cheeseburger.png",
+          "page": "https://sulfur.wiki.gg/wiki/Double_Cheeseburger"
+        },
+        {
+          "name": "Poutine",
+          "icon": "icons/consumable/food/Poutine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Poutine"
+        },
+        {
+          "name": "Mac'n'Cheese",
+          "icon": "icons/consumable/food/Mac'n'Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mac%27n%27Cheese"
+        }
+      ]
     },
     {
       "name": "Cheese Sandwich",
@@ -4556,7 +5184,19 @@
         "SellVal": "90",
         "SoldBy": "Qiosk"
       },
-      "icon": "icons/consumable/dessert/Chocolate_Bar.png"
+      "icon": "icons/consumable/dessert/Chocolate_Bar.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Syrup",
+          "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        }
+      ]
     },
     {
       "name": "Chocolate Milkshake",
@@ -5275,7 +5915,24 @@
           }
         ]
       },
-      "icon": "icons/consumable/dessert/Chocolate_Syrup.png"
+      "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Milkshake",
+          "icon": "icons/consumable/beverage/Chocolate_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Milkshake"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        },
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        }
+      ]
     },
     {
       "name": "Christmas Spice",
@@ -5288,9 +5945,32 @@
       "fields": {
         "GridSize": "1×1",
         "SubType": "Ingredient",
-        "SellVal": "5"
+        "SellVal": "5",
+        "Heal": "1 health over 2 seconds"
       },
-      "icon": "icons/consumable/ingredient/Christmas_Spice.png"
+      "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+      "usedIn": [
+        {
+          "name": "Currywurst",
+          "icon": "icons/consumable/food/Currywurst.png",
+          "page": "https://sulfur.wiki.gg/wiki/Currywurst"
+        },
+        {
+          "name": "Mulled Wine",
+          "icon": "icons/consumable/beverage/Mulled_Wine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mulled_Wine"
+        },
+        {
+          "name": "Julmust",
+          "icon": "icons/consumable/beverage/Julmust.png",
+          "page": "https://sulfur.wiki.gg/wiki/Julmust"
+        },
+        {
+          "name": "Risalamande",
+          "icon": "icons/consumable/dessert/Risalamande.png",
+          "page": "https://sulfur.wiki.gg/wiki/Risalamande"
+        }
+      ]
     },
     {
       "name": "Coffee",
@@ -5304,9 +5984,19 @@
         "GridSize": "1x1",
         "SubType": "Beverage, Ingredient",
         "SellVal": "18",
-        "BuyVal": "36"
+        "BuyVal": "36",
+        "Heal": "20 health over 10 seconds",
+        "RmvFrost": "✓",
+        "RmvPsn": "✓"
       },
-      "icon": "icons/consumable/beverage/Coffee.png"
+      "icon": "icons/consumable/beverage/Coffee.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        }
+      ]
     },
     {
       "name": "Cordon Bleu",
@@ -5468,7 +6158,8 @@
         "GridSize": "2×1",
         "SubType": "Food",
         "SellVal": "120",
-        "SoldBy": "Stiffleg, Qiosk"
+        "SoldBy": "Stiffleg, Qiosk",
+        "Heal": "35 health over 10 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -5829,7 +6520,8 @@
       "fields": {
         "GridSize": "1×1",
         "SellVal": "300",
-        "SubType": "Food"
+        "SubType": "Food",
+        "Heal": "200 health over 10 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -6049,7 +6741,94 @@
         "BuyVal": "30",
         "SoldBy": "Grossberg"
       },
-      "icon": "icons/consumable/food/Egg.png"
+      "icon": "icons/consumable/food/Egg.png",
+      "usedIn": [
+        {
+          "name": "Omelette",
+          "icon": "icons/consumable/food/Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Omelette"
+        },
+        {
+          "name": "Spanish Omelette",
+          "icon": "icons/consumable/food/Spanish_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spanish_Omelette"
+        },
+        {
+          "name": "Buttermilk Pancakes",
+          "icon": "icons/consumable/food/Buttermilk_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk_Pancakes"
+        },
+        {
+          "name": "Egg Toddy",
+          "icon": "icons/consumable/beverage/Egg_Toddy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Egg_Toddy"
+        },
+        {
+          "name": "Ramen",
+          "icon": "icons/consumable/food/Ramen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Ramen"
+        },
+        {
+          "name": "French Toast",
+          "icon": "icons/consumable/food/French_Toast.png",
+          "page": "https://sulfur.wiki.gg/wiki/French_Toast"
+        },
+        {
+          "name": "Raclette",
+          "icon": "icons/consumable/food/Raclette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Raclette"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        },
+        {
+          "name": "Spaghetti",
+          "icon": "icons/consumable/ingredient/Spaghetti.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+        },
+        {
+          "name": "Full English Breakfast",
+          "icon": "icons/consumable/food/Full_English_Breakfast.png",
+          "page": "https://sulfur.wiki.gg/wiki/Full_English_Breakfast"
+        },
+        {
+          "name": "Meringue",
+          "icon": "icons/consumable/food/Meringue.png",
+          "page": "https://sulfur.wiki.gg/wiki/Meringue"
+        },
+        {
+          "name": "Tori Ramen",
+          "icon": "icons/consumable/food/Tori_Ramen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tori_Ramen"
+        },
+        {
+          "name": "Sausage Omelette",
+          "icon": "icons/consumable/food/Sausage_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sausage_Omelette"
+        },
+        {
+          "name": "Pyttipanna",
+          "icon": "icons/consumable/food/Pyttipanna.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pyttipanna"
+        },
+        {
+          "name": "Mushroom Omelette",
+          "icon": "icons/consumable/food/Mushroom_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Omelette"
+        },
+        {
+          "name": "Swedish Pancakes",
+          "icon": "icons/consumable/food/Swedish_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swedish_Pancakes"
+        },
+        {
+          "name": "Marshmallows",
+          "icon": "icons/consumable/dessert/Marshmallows.png",
+          "page": "https://sulfur.wiki.gg/wiki/Marshmallows"
+        }
+      ]
     },
     {
       "name": "Egg Toddy",
@@ -6443,7 +7222,44 @@
         "SellVal": "25",
         "SoldBy": "Stiffleg, Rat Queen"
       },
-      "icon": "icons/consumable/ingredient/Fatberg_Chunk.png"
+      "icon": "icons/consumable/ingredient/Fatberg_Chunk.png",
+      "usedIn": [
+        {
+          "name": "Butter",
+          "icon": "icons/consumable/food/Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Butter"
+        },
+        {
+          "name": "Peanut Butter",
+          "icon": "icons/consumable/food/Peanut_Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter"
+        },
+        {
+          "name": "Dimmie",
+          "icon": "icons/consumable/food/Dimmie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dimmie"
+        },
+        {
+          "name": "Aspic",
+          "icon": "icons/consumable/food/Aspic.png",
+          "page": "https://sulfur.wiki.gg/wiki/Aspic"
+        },
+        {
+          "name": "Jello",
+          "icon": "icons/consumable/food/Jello.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jello"
+        },
+        {
+          "name": "Nuggets",
+          "icon": "icons/consumable/food/Nuggets.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nuggets"
+        },
+        {
+          "name": "Unagi",
+          "icon": "icons/consumable/food/Unagi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Unagi"
+        }
+      ]
     },
     {
       "name": "First Aid Kit",
@@ -6496,7 +7312,69 @@
         "Heal": "10 health over 2.5 seconds",
         "SellVal": "20"
       },
-      "icon": "icons/consumable/food/Fish.png"
+      "icon": "icons/consumable/food/Fish.png",
+      "usedIn": [
+        {
+          "name": "Toast Skagen",
+          "icon": "icons/consumable/food/Toast_Skagen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Toast_Skagen"
+        },
+        {
+          "name": "Fish And Chips",
+          "icon": "icons/consumable/food/Fish_And_Chips.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips"
+        },
+        {
+          "name": "Surstromming",
+          "icon": "icons/consumable/food/Surstromming.png",
+          "page": "https://sulfur.wiki.gg/wiki/Surstromming"
+        },
+        {
+          "name": "Salted Fish",
+          "icon": "icons/consumable/food/Salted_Fish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Salted_Fish"
+        },
+        {
+          "name": "Maki",
+          "icon": "icons/consumable/food/Maki.png",
+          "page": "https://sulfur.wiki.gg/wiki/Maki"
+        },
+        {
+          "name": "Nigiri",
+          "icon": "icons/consumable/food/Nigiri.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nigiri"
+        },
+        {
+          "name": "Sashimi",
+          "icon": "icons/consumable/food/Sashimi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sashimi"
+        },
+        {
+          "name": "Unagi",
+          "icon": "icons/consumable/food/Unagi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Unagi"
+        },
+        {
+          "name": "Lutfisk",
+          "icon": "icons/consumable/food/Lutfisk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lutfisk"
+        },
+        {
+          "name": "Graved Salmon",
+          "icon": "icons/consumable/food/Graved_Salmon.png",
+          "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon"
+        },
+        {
+          "name": "Jansson's Temptation",
+          "icon": "icons/consumable/food/Jansson's_Temptation.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation"
+        },
+        {
+          "name": "Pickled Herring Platter",
+          "icon": "icons/consumable/food/Pickled_Herring_Platter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pickled_Herring_Platter"
+        }
+      ]
     },
     {
       "name": "Fish And Chips",
@@ -6666,7 +7544,49 @@
         "SellVal": "20",
         "SoldBy": "Stiffleg"
       },
-      "icon": "icons/consumable/food/Flat_Sandfish.png"
+      "icon": "icons/consumable/food/Flat_Sandfish.png",
+      "usedIn": [
+        {
+          "name": "Toast Skagen",
+          "icon": "icons/consumable/food/Toast_Skagen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Toast_Skagen"
+        },
+        {
+          "name": "Fish And Chips",
+          "icon": "icons/consumable/food/Fish_And_Chips.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips"
+        },
+        {
+          "name": "Surstromming",
+          "icon": "icons/consumable/food/Surstromming.png",
+          "page": "https://sulfur.wiki.gg/wiki/Surstromming"
+        },
+        {
+          "name": "Salted Sandfish",
+          "icon": "icons/consumable/food/Salted_Sandfish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Salted_Sandfish"
+        },
+        {
+          "name": "Sashimi",
+          "icon": "icons/consumable/food/Sashimi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sashimi"
+        },
+        {
+          "name": "Lutfisk",
+          "icon": "icons/consumable/food/Lutfisk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lutfisk"
+        },
+        {
+          "name": "Graved Salmon",
+          "icon": "icons/consumable/food/Graved_Salmon.png",
+          "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon"
+        },
+        {
+          "name": "Jansson's Temptation",
+          "icon": "icons/consumable/food/Jansson's_Temptation.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation"
+        }
+      ]
     },
     {
       "name": "Flour",
@@ -6680,9 +7600,92 @@
         "GridSize": "2×2",
         "SubType": "Ingredient",
         "SellVal": "30",
-        "SoldBy": "Grossberg"
+        "SoldBy": "Grossberg",
+        "Heal": "5 health over 2.5 seconds"
       },
-      "icon": "icons/consumable/ingredient/Flour.png"
+      "icon": "icons/consumable/ingredient/Flour.png",
+      "usedIn": [
+        {
+          "name": "Bread",
+          "icon": "icons/consumable/food/Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bread"
+        },
+        {
+          "name": "Rhubarb Pie",
+          "icon": "icons/consumable/food/Rhubarb_Pie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Pie"
+        },
+        {
+          "name": "Hard Bread",
+          "icon": "icons/consumable/food/Hard_Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hard_Bread"
+        },
+        {
+          "name": "Buttermilk Pancakes",
+          "icon": "icons/consumable/food/Buttermilk_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk_Pancakes"
+        },
+        {
+          "name": "Pizza",
+          "icon": "icons/consumable/food/Pizza.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza"
+        },
+        {
+          "name": "Cheese Tops",
+          "icon": "icons/consumable/food/Cheese_Tops.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese_Tops"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        },
+        {
+          "name": "Spaghetti",
+          "icon": "icons/consumable/ingredient/Spaghetti.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spaghetti"
+        },
+        {
+          "name": "Mochi",
+          "icon": "icons/consumable/dessert/Mochi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mochi"
+        },
+        {
+          "name": "Cordon Bleu",
+          "icon": "icons/consumable/food/Cordon_Bleu.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cordon_Bleu"
+        },
+        {
+          "name": "Dimmie",
+          "icon": "icons/consumable/food/Dimmie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dimmie"
+        },
+        {
+          "name": "Fried Blood Pudding",
+          "icon": "icons/consumable/food/Fried_Blood_Pudding.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fried_Blood_Pudding"
+        },
+        {
+          "name": "Swedish Pancakes",
+          "icon": "icons/consumable/food/Swedish_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swedish_Pancakes"
+        },
+        {
+          "name": "Pølse",
+          "icon": "icons/consumable/food/Pølse.png",
+          "page": "https://sulfur.wiki.gg/wiki/P%C3%B8lse"
+        },
+        {
+          "name": "Kidney Pie",
+          "icon": "icons/consumable/food/Kidney_Pie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Kidney_Pie"
+        },
+        {
+          "name": "Dumpling",
+          "icon": "icons/consumable/food/Dumpling.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dumpling"
+        }
+      ]
     },
     {
       "name": "Fondue",
@@ -7435,7 +8438,19 @@
         "SellVal": "30",
         "SoldBy": "Qiosk"
       },
-      "icon": "icons/consumable/food/Frog_Leg.png"
+      "icon": "icons/consumable/food/Frog_Leg.png",
+      "usedIn": [
+        {
+          "name": "Cuisses De Grenouille",
+          "icon": "icons/consumable/food/Cuisses_De_Grenouille.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cuisses_De_Grenouille"
+        },
+        {
+          "name": "French Hotdog",
+          "icon": "icons/consumable/food/French_Hotdog.png",
+          "page": "https://sulfur.wiki.gg/wiki/French_Hotdog"
+        }
+      ]
     },
     {
       "name": "From the Cellar",
@@ -7898,7 +8913,19 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Gravy.png"
+      "icon": "icons/consumable/food/Gravy.png",
+      "usedIn": [
+        {
+          "name": "Biscuits And Gravy",
+          "icon": "icons/consumable/food/Biscuits_And_Gravy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Biscuits_And_Gravy"
+        },
+        {
+          "name": "Poutine",
+          "icon": "icons/consumable/food/Poutine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Poutine"
+        }
+      ]
     },
     {
       "name": "Green Tea",
@@ -8073,7 +9100,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/beverage/Green_Tea.png"
+      "icon": "icons/consumable/beverage/Green_Tea.png",
+      "usedIn": [
+        {
+          "name": "Boba Tea",
+          "icon": "icons/consumable/beverage/Boba_Tea.png",
+          "page": "https://sulfur.wiki.gg/wiki/Boba_Tea"
+        }
+      ]
     },
     {
       "name": "Green Tea Gum",
@@ -8408,7 +9442,8 @@
         "GridSize": "1×1",
         "SubType": "Food",
         "SellVal": "30",
-        "SoldBy": "Stiffleg"
+        "SoldBy": "Stiffleg",
+        "Heal": "8 health over 2.5 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -8731,7 +9766,64 @@
         "Heal": "3 health over 2.5 seconds",
         "SellVal": "10"
       },
-      "icon": "icons/consumable/ingredient/Herbs.png"
+      "icon": "icons/consumable/ingredient/Herbs.png",
+      "usedIn": [
+        {
+          "name": "Health Potion",
+          "icon": "icons/consumable/drug-remedy/Health_Potion.png",
+          "page": "https://sulfur.wiki.gg/wiki/Health_Potion"
+        },
+        {
+          "name": "Escargot",
+          "icon": "icons/consumable/food/Escargot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Escargot"
+        },
+        {
+          "name": "Cuisses De Grenouille",
+          "icon": "icons/consumable/food/Cuisses_De_Grenouille.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cuisses_De_Grenouille"
+        },
+        {
+          "name": "Pizza",
+          "icon": "icons/consumable/food/Pizza.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza"
+        },
+        {
+          "name": "Admiral White Extra Strong",
+          "icon": "icons/consumable/drug-remedy/Admiral_White_Extra_Strong.png",
+          "page": "https://sulfur.wiki.gg/wiki/Admiral_White_Extra_Strong"
+        },
+        {
+          "name": "Leverpastej",
+          "icon": "icons/consumable/food/Leverpastej.png",
+          "page": "https://sulfur.wiki.gg/wiki/Leverpastej"
+        },
+        {
+          "name": "Currywurst",
+          "icon": "icons/consumable/food/Currywurst.png",
+          "page": "https://sulfur.wiki.gg/wiki/Currywurst"
+        },
+        {
+          "name": "Candy Cane",
+          "icon": "icons/consumable/dessert/Candy_Cane.png",
+          "page": "https://sulfur.wiki.gg/wiki/Candy_Cane"
+        },
+        {
+          "name": "Graved Salmon",
+          "icon": "icons/consumable/food/Graved_Salmon.png",
+          "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon"
+        },
+        {
+          "name": "Potato Salad",
+          "icon": "icons/consumable/food/Potato_Salad.png",
+          "page": "https://sulfur.wiki.gg/wiki/Potato_Salad"
+        },
+        {
+          "name": "Pickled Herring Platter",
+          "icon": "icons/consumable/food/Pickled_Herring_Platter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pickled_Herring_Platter"
+        }
+      ]
     },
     {
       "name": "Holy Toast",
@@ -8788,7 +9880,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Holy_Toast.png"
+      "icon": "icons/consumable/food/Holy_Toast.png",
+      "usedIn": [
+        {
+          "name": "Red Wine",
+          "icon": "icons/consumable/beverage/Red_Wine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Red_Wine"
+        }
+      ]
     },
     {
       "name": "Holy Water",
@@ -8806,7 +9905,14 @@
         "Coyote": "+1 second for 90 seconds",
         "SellVal": "250"
       },
-      "icon": "icons/consumable/drug-remedy/Holy_Water.png"
+      "icon": "icons/consumable/drug-remedy/Holy_Water.png",
+      "usedIn": [
+        {
+          "name": "Holy Toast",
+          "icon": "icons/consumable/food/Holy_Toast.png",
+          "page": "https://sulfur.wiki.gg/wiki/Holy_Toast"
+        }
+      ]
     },
     {
       "name": "Hot Pot",
@@ -9057,7 +10163,14 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/ingredient/Hot_Sauce.png"
+      "icon": "icons/consumable/ingredient/Hot_Sauce.png",
+      "usedIn": [
+        {
+          "name": "Nashville Hot Chicken",
+          "icon": "icons/consumable/food/Nashville_Hot_Chicken.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nashville_Hot_Chicken"
+        }
+      ]
     },
     {
       "name": "Hot Snacks",
@@ -9394,7 +10507,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Jello.png"
+      "icon": "icons/consumable/food/Jello.png",
+      "usedIn": [
+        {
+          "name": "Aspic",
+          "icon": "icons/consumable/food/Aspic.png",
+          "page": "https://sulfur.wiki.gg/wiki/Aspic"
+        }
+      ]
     },
     {
       "name": "Julmust",
@@ -9920,9 +11040,22 @@
       "fields": {
         "GridSize": "1×1",
         "SellVal": "5",
-        "SubType": "Food, Mushroom, Ingredient"
+        "SubType": "Food, Mushroom, Ingredient",
+        "Heal": "5 health over 1.5 seconds"
       },
-      "icon": "icons/consumable/food/Karl-Oskar.png"
+      "icon": "icons/consumable/food/Karl-Oskar.png",
+      "usedIn": [
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        },
+        {
+          "name": "Hot Pot",
+          "icon": "icons/consumable/food/Hot_Pot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hot_Pot"
+        }
+      ]
     },
     {
       "name": "Kidney Pie",
@@ -10032,7 +11165,8 @@
         "GridSize": "1×1",
         "SubType": "Ingredient",
         "SellVal": "30",
-        "SoldBy": "Rat Queen, Qiosk"
+        "SoldBy": "Rat Queen, Qiosk",
+        "Heal": "5 health over 2.5 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -10075,7 +11209,19 @@
           }
         ]
       },
-      "icon": "icons/consumable/ingredient/Kidney_Stone.png"
+      "icon": "icons/consumable/ingredient/Kidney_Stone.png",
+      "usedIn": [
+        {
+          "name": "Broth",
+          "icon": "icons/consumable/food/Broth.png",
+          "page": "https://sulfur.wiki.gg/wiki/Broth"
+        },
+        {
+          "name": "Leverpastej",
+          "icon": "icons/consumable/food/Leverpastej.png",
+          "page": "https://sulfur.wiki.gg/wiki/Leverpastej"
+        }
+      ]
     },
     {
       "name": "Kombucha",
@@ -10315,7 +11461,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Leverpastej.png"
+      "icon": "icons/consumable/food/Leverpastej.png",
+      "usedIn": [
+        {
+          "name": "Liver Pâté Sandwich",
+          "icon": "icons/consumable/food/Liver_Pâté_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Liver_P%C3%A2t%C3%A9_Sandwich"
+        }
+      ]
     },
     {
       "name": "Liquor",
@@ -10333,7 +11486,19 @@
         "Charisma": "+5 over 60 seconds",
         "SellVal": "30"
       },
-      "icon": "icons/consumable/beverage/Liquor.png"
+      "icon": "icons/consumable/beverage/Liquor.png",
+      "usedIn": [
+        {
+          "name": "Egg Toddy",
+          "icon": "icons/consumable/beverage/Egg_Toddy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Egg_Toddy"
+        },
+        {
+          "name": "Vacuum Cleaner",
+          "icon": "icons/consumable/dessert/Vacuum_Cleaner.png",
+          "page": "https://sulfur.wiki.gg/wiki/Vacuum_Cleaner"
+        }
+      ]
     },
     {
       "name": "Liver Pâté Sandwich",
@@ -10346,7 +11511,8 @@
       "fields": {
         "GridSize": "1x1",
         "SubType": "Food",
-        "SellVal": "55"
+        "SellVal": "55",
+        "Heal": "20 health over 5 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -10408,7 +11574,34 @@
         "SellVal": "20",
         "SoldBy": "Stiffleg, Grossberg"
       },
-      "icon": "icons/consumable/milk/Low_Fat_Milk.png"
+      "icon": "icons/consumable/milk/Low_Fat_Milk.png",
+      "usedIn": [
+        {
+          "name": "Cheese",
+          "icon": "icons/consumable/food/Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese"
+        },
+        {
+          "name": "Porridge",
+          "icon": "icons/consumable/food/Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Porridge"
+        },
+        {
+          "name": "Buttermilk",
+          "icon": "icons/consumable/milk/Buttermilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        },
+        {
+          "name": "Pilk",
+          "icon": "icons/consumable/beverage/Pilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pilk"
+        }
+      ]
     },
     {
       "name": "Lussekatt",
@@ -11768,7 +12961,19 @@
         "SellVal": "20",
         "SoldBy": "Stiffleg"
       },
-      "icon": "icons/consumable/ingredient/Matcha.png"
+      "icon": "icons/consumable/ingredient/Matcha.png",
+      "usedIn": [
+        {
+          "name": "Green Tea",
+          "icon": "icons/consumable/beverage/Green_Tea.png",
+          "page": "https://sulfur.wiki.gg/wiki/Green_Tea"
+        },
+        {
+          "name": "Green Tea Gum",
+          "icon": "icons/consumable/drug-remedy/Green_Tea_Gum.png",
+          "page": "https://sulfur.wiki.gg/wiki/Green_Tea_Gum"
+        }
+      ]
     },
     {
       "name": "Meat Skewer",
@@ -11869,7 +13074,8 @@
       "fields": {
         "GridSize": "1×1",
         "SellVal": "20",
-        "SubType": "Food"
+        "SubType": "Food",
+        "Heal": "15 health over 4 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -11950,7 +13156,14 @@
         "SellVal": "60",
         "SubType": "Water, Ingredient"
       },
-      "icon": "icons/consumable/water/Mineral_Water.png"
+      "icon": "icons/consumable/water/Mineral_Water.png",
+      "usedIn": [
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        }
+      ]
     },
     {
       "name": "Mochi",
@@ -11963,7 +13176,8 @@
       "fields": {
         "GridSize": "1×1",
         "SubType": "Sweets, Food",
-        "SellVal": "33"
+        "SellVal": "33",
+        "Heal": "25 health over 5 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -13036,7 +14250,59 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Mystery_Meat.png"
+      "icon": "icons/consumable/food/Mystery_Meat.png",
+      "usedIn": [
+        {
+          "name": "Meat Skewer",
+          "icon": "icons/consumable/food/Meat_Skewer.png",
+          "page": "https://sulfur.wiki.gg/wiki/Meat_Skewer"
+        },
+        {
+          "name": "French Hotdog",
+          "icon": "icons/consumable/food/French_Hotdog.png",
+          "page": "https://sulfur.wiki.gg/wiki/French_Hotdog"
+        },
+        {
+          "name": "Stew",
+          "icon": "icons/consumable/food/Stew.png",
+          "page": "https://sulfur.wiki.gg/wiki/Stew"
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "icon": "icons/consumable/food/Spaghetti_Bolognese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spaghetti_Bolognese"
+        },
+        {
+          "name": "Dimmie",
+          "icon": "icons/consumable/food/Dimmie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dimmie"
+        },
+        {
+          "name": "Aspic",
+          "icon": "icons/consumable/food/Aspic.png",
+          "page": "https://sulfur.wiki.gg/wiki/Aspic"
+        },
+        {
+          "name": "Poutine",
+          "icon": "icons/consumable/food/Poutine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Poutine"
+        },
+        {
+          "name": "Pölsa",
+          "icon": "icons/consumable/food/Pölsa.png",
+          "page": "https://sulfur.wiki.gg/wiki/P%C3%B6lsa"
+        },
+        {
+          "name": "Pølse",
+          "icon": "icons/consumable/food/Pølse.png",
+          "page": "https://sulfur.wiki.gg/wiki/P%C3%B8lse"
+        },
+        {
+          "name": "Hardshell Taco",
+          "icon": "icons/consumable/food/Hardshell_Taco.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hardshell_Taco"
+        }
+      ]
     },
     {
       "name": "Nashville Hot Chicken",
@@ -13128,7 +14394,8 @@
         "GridSize": "2×1",
         "SellVal": "105",
         "SoldBy": "Qiosk, Bill",
-        "SubType": "Food"
+        "SubType": "Food",
+        "Heal": "20 health over 5 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -13490,7 +14757,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Nut_Mix.png"
+      "icon": "icons/consumable/food/Nut_Mix.png",
+      "usedIn": [
+        {
+          "name": "Nut Spread",
+          "icon": "icons/consumable/food/Nut_Spread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nut_Spread"
+        }
+      ]
     },
     {
       "name": "Nut Spread",
@@ -13579,7 +14853,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Nut_Spread.png"
+      "icon": "icons/consumable/food/Nut_Spread.png",
+      "usedIn": [
+        {
+          "name": "Peanutbutter Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Sandwich"
+        }
+      ]
     },
     {
       "name": "Oats",
@@ -13595,7 +14876,34 @@
         "SellVal": "30",
         "SubType": "Food, Ingredient"
       },
-      "icon": "icons/consumable/food/Oats.png"
+      "icon": "icons/consumable/food/Oats.png",
+      "usedIn": [
+        {
+          "name": "Porridge",
+          "icon": "icons/consumable/food/Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Porridge"
+        },
+        {
+          "name": "Rhubarb Pie",
+          "icon": "icons/consumable/food/Rhubarb_Pie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Pie"
+        },
+        {
+          "name": "Haggis",
+          "icon": "icons/consumable/food/Haggis.png",
+          "page": "https://sulfur.wiki.gg/wiki/Haggis"
+        },
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        },
+        {
+          "name": "Cereal",
+          "icon": "icons/consumable/food/Cereal.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cereal"
+        }
+      ]
     },
     {
       "name": "Omelette",
@@ -14387,7 +15695,14 @@
         "SellVal": "10",
         "SoldB": "Stiffleg"
       },
-      "icon": "icons/consumable/nut/Peanut.png"
+      "icon": "icons/consumable/nut/Peanut.png",
+      "usedIn": [
+        {
+          "name": "Peanut Butter",
+          "icon": "icons/consumable/food/Peanut_Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter"
+        }
+      ]
     },
     {
       "name": "Peanut Butter",
@@ -14495,7 +15810,19 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Peanut_Butter.png"
+      "icon": "icons/consumable/food/Peanut_Butter.png",
+      "usedIn": [
+        {
+          "name": "Peanutbutter Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Sandwich"
+        },
+        {
+          "name": "Peanutbutter Jelly Sandwich",
+          "icon": "icons/consumable/food/Peanutbutter_Jelly_Sandwich.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanutbutter_Jelly_Sandwich"
+        }
+      ]
     },
     {
       "name": "Peanutbutter Jelly Sandwich",
@@ -15324,7 +16651,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Pizza.png"
+      "icon": "icons/consumable/food/Pizza.png",
+      "usedIn": [
+        {
+          "name": "Pizza Slice",
+          "icon": "icons/consumable/food/Pizza_Slice.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza_Slice"
+        }
+      ]
     },
     {
       "name": "Pizza Slice",
@@ -15471,7 +16805,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Porridge.png"
+      "icon": "icons/consumable/food/Porridge.png",
+      "usedIn": [
+        {
+          "name": "Rhubarb Porridge",
+          "icon": "icons/consumable/food/Rhubarb_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Porridge"
+        }
+      ]
     },
     {
       "name": "Potato",
@@ -15487,7 +16828,59 @@
         "Heal": "5 health over 3 seconds",
         "SellVal": "30"
       },
-      "icon": "icons/consumable/food/Potato.png"
+      "icon": "icons/consumable/food/Potato.png",
+      "usedIn": [
+        {
+          "name": "Mashed Potatoes",
+          "icon": "icons/consumable/food/Mashed_Potatoes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mashed_Potatoes"
+        },
+        {
+          "name": "Spanish Omelette",
+          "icon": "icons/consumable/food/Spanish_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spanish_Omelette"
+        },
+        {
+          "name": "Raclette",
+          "icon": "icons/consumable/food/Raclette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Raclette"
+        },
+        {
+          "name": "Poutine",
+          "icon": "icons/consumable/food/Poutine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Poutine"
+        },
+        {
+          "name": "Fish And Chips",
+          "icon": "icons/consumable/food/Fish_And_Chips.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips"
+        },
+        {
+          "name": "Pyttipanna",
+          "icon": "icons/consumable/food/Pyttipanna.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pyttipanna"
+        },
+        {
+          "name": "Lutfisk",
+          "icon": "icons/consumable/food/Lutfisk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lutfisk"
+        },
+        {
+          "name": "Jansson's Temptation",
+          "icon": "icons/consumable/food/Jansson's_Temptation.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation"
+        },
+        {
+          "name": "Potato Salad",
+          "icon": "icons/consumable/food/Potato_Salad.png",
+          "page": "https://sulfur.wiki.gg/wiki/Potato_Salad"
+        },
+        {
+          "name": "Pickled Herring Platter",
+          "icon": "icons/consumable/food/Pickled_Herring_Platter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pickled_Herring_Platter"
+        }
+      ]
     },
     {
       "name": "Potato Salad",
@@ -15531,7 +16924,14 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/food/Potato_Salad.png"
+      "icon": "icons/consumable/food/Potato_Salad.png",
+      "usedIn": [
+        {
+          "name": "Jansson's Temptation",
+          "icon": "icons/consumable/food/Jansson's_Temptation.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation"
+        }
+      ]
     },
     {
       "name": "Poutine",
@@ -16917,7 +18317,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Pölsa.png"
+      "icon": "icons/consumable/food/Pölsa.png",
+      "usedIn": [
+        {
+          "name": "Spaghetti Bolognese",
+          "icon": "icons/consumable/food/Spaghetti_Bolognese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spaghetti_Bolognese"
+        }
+      ]
     },
     {
       "name": "Pølse",
@@ -17528,7 +18935,24 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/beverage/Red_Wine.png"
+      "icon": "icons/consumable/beverage/Red_Wine.png",
+      "usedIn": [
+        {
+          "name": "Holy Toast",
+          "icon": "icons/consumable/food/Holy_Toast.png",
+          "page": "https://sulfur.wiki.gg/wiki/Holy_Toast"
+        },
+        {
+          "name": "Fondue",
+          "icon": "icons/consumable/food/Fondue.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fondue"
+        },
+        {
+          "name": "Mulled Wine",
+          "icon": "icons/consumable/beverage/Mulled_Wine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mulled_Wine"
+        }
+      ]
     },
     {
       "name": "Rhubarb",
@@ -17544,7 +18968,24 @@
         "Heal": "6 health over 10 seconds",
         "SellVal": "20"
       },
-      "icon": "icons/consumable/ingredient/Rhubarb.png"
+      "icon": "icons/consumable/ingredient/Rhubarb.png",
+      "usedIn": [
+        {
+          "name": "Rhubarb Sauce",
+          "icon": "icons/consumable/food/Rhubarb_Sauce.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Sauce"
+        },
+        {
+          "name": "Rhubarb Porridge",
+          "icon": "icons/consumable/food/Rhubarb_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Porridge"
+        },
+        {
+          "name": "Rhubarb Pie",
+          "icon": "icons/consumable/food/Rhubarb_Pie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Pie"
+        }
+      ]
     },
     {
       "name": "Rhubarb Pie",
@@ -17894,7 +19335,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Rhubarb_Sauce.png"
+      "icon": "icons/consumable/food/Rhubarb_Sauce.png",
+      "usedIn": [
+        {
+          "name": "Rhubarb Porridge",
+          "icon": "icons/consumable/food/Rhubarb_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Porridge"
+        }
+      ]
     },
     {
       "name": "Rice",
@@ -17911,7 +19359,49 @@
         "Speed": "-50% for 5 seconds",
         "SellVal": "13"
       },
-      "icon": "icons/consumable/food/Rice.png"
+      "icon": "icons/consumable/food/Rice.png",
+      "usedIn": [
+        {
+          "name": "Onigiri",
+          "icon": "icons/consumable/food/Onigiri.png",
+          "page": "https://sulfur.wiki.gg/wiki/Onigiri"
+        },
+        {
+          "name": "Maki",
+          "icon": "icons/consumable/food/Maki.png",
+          "page": "https://sulfur.wiki.gg/wiki/Maki"
+        },
+        {
+          "name": "Boba Tea",
+          "icon": "icons/consumable/beverage/Boba_Tea.png",
+          "page": "https://sulfur.wiki.gg/wiki/Boba_Tea"
+        },
+        {
+          "name": "Cereal",
+          "icon": "icons/consumable/food/Cereal.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cereal"
+        },
+        {
+          "name": "Nigiri",
+          "icon": "icons/consumable/food/Nigiri.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nigiri"
+        },
+        {
+          "name": "Unagi",
+          "icon": "icons/consumable/food/Unagi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Unagi"
+        },
+        {
+          "name": "Puffed Rice Cakes",
+          "icon": "icons/consumable/food/Puffed_Rice_Cakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Puffed_Rice_Cakes"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        }
+      ]
     },
     {
       "name": "Rice Porridge",
@@ -18133,7 +19623,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Rice_Porridge.png"
+      "icon": "icons/consumable/food/Rice_Porridge.png",
+      "usedIn": [
+        {
+          "name": "Risalamande",
+          "icon": "icons/consumable/dessert/Risalamande.png",
+          "page": "https://sulfur.wiki.gg/wiki/Risalamande"
+        }
+      ]
     },
     {
       "name": "Risalamande",
@@ -18227,7 +19724,34 @@
         "BuyVal": "15",
         "SoldBy": "Jaques De Fector"
       },
-      "icon": "icons/consumable/mushroom/Rödsopp.png"
+      "icon": "icons/consumable/mushroom/Rödsopp.png",
+      "usedIn": [
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        },
+        {
+          "name": "Health Potion",
+          "icon": "icons/consumable/drug-remedy/Health_Potion.png",
+          "page": "https://sulfur.wiki.gg/wiki/Health_Potion"
+        },
+        {
+          "name": "Rödsopp Paste",
+          "icon": "icons/consumable/drug-remedy/Rödsopp_Paste.png",
+          "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp_Paste"
+        },
+        {
+          "name": "Hot Pot",
+          "icon": "icons/consumable/food/Hot_Pot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hot_Pot"
+        },
+        {
+          "name": "Mushroom Omelette",
+          "icon": "icons/consumable/food/Mushroom_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Omelette"
+        }
+      ]
     },
     {
       "name": "Rödsopp Paste",
@@ -18282,7 +19806,69 @@
         "SellVal": "5",
         "SoldBy": "Grossberg"
       },
-      "icon": "icons/consumable/ingredient/Salt.png"
+      "icon": "icons/consumable/ingredient/Salt.png",
+      "usedIn": [
+        {
+          "name": "Broth",
+          "icon": "icons/consumable/food/Broth.png",
+          "page": "https://sulfur.wiki.gg/wiki/Broth"
+        },
+        {
+          "name": "Kidney Stone",
+          "icon": "icons/consumable/ingredient/Kidney_Stone.png",
+          "page": "https://sulfur.wiki.gg/wiki/Kidney_Stone"
+        },
+        {
+          "name": "Buttermilk Pancakes",
+          "icon": "icons/consumable/food/Buttermilk_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk_Pancakes"
+        },
+        {
+          "name": "Beef Jerky",
+          "icon": "icons/consumable/food/Beef_Jerky.png",
+          "page": "https://sulfur.wiki.gg/wiki/Beef_Jerky"
+        },
+        {
+          "name": "Peanut Butter",
+          "icon": "icons/consumable/food/Peanut_Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanut_Butter"
+        },
+        {
+          "name": "Leverpastej",
+          "icon": "icons/consumable/food/Leverpastej.png",
+          "page": "https://sulfur.wiki.gg/wiki/Leverpastej"
+        },
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        },
+        {
+          "name": "Salted Fish",
+          "icon": "icons/consumable/food/Salted_Fish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Salted_Fish"
+        },
+        {
+          "name": "Salted Sandfish",
+          "icon": "icons/consumable/food/Salted_Sandfish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Salted_Sandfish"
+        },
+        {
+          "name": "Puffed Rice Cakes",
+          "icon": "icons/consumable/food/Puffed_Rice_Cakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Puffed_Rice_Cakes"
+        },
+        {
+          "name": "Swedish Pancakes",
+          "icon": "icons/consumable/food/Swedish_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swedish_Pancakes"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        }
+      ]
     },
     {
       "name": "Salted Fish",
@@ -18378,7 +19964,19 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Salted_Fish.png"
+      "icon": "icons/consumable/food/Salted_Fish.png",
+      "usedIn": [
+        {
+          "name": "Fish And Chips",
+          "icon": "icons/consumable/food/Fish_And_Chips.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips"
+        },
+        {
+          "name": "Surstromming",
+          "icon": "icons/consumable/food/Surstromming.png",
+          "page": "https://sulfur.wiki.gg/wiki/Surstromming"
+        }
+      ]
     },
     {
       "name": "Salted Sandfish",
@@ -18474,7 +20072,19 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Salted_Sandfish.png"
+      "icon": "icons/consumable/food/Salted_Sandfish.png",
+      "usedIn": [
+        {
+          "name": "Fish And Chips",
+          "icon": "icons/consumable/food/Fish_And_Chips.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish_And_Chips"
+        },
+        {
+          "name": "Surstromming",
+          "icon": "icons/consumable/food/Surstromming.png",
+          "page": "https://sulfur.wiki.gg/wiki/Surstromming"
+        }
+      ]
     },
     {
       "name": "Sashimi",
@@ -18625,7 +20235,14 @@
           }
         ]
       },
-      "icon": "icons/consumable/food/Sashimi.png"
+      "icon": "icons/consumable/food/Sashimi.png",
+      "usedIn": [
+        {
+          "name": "Nigiri",
+          "icon": "icons/consumable/food/Nigiri.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nigiri"
+        }
+      ]
     },
     {
       "name": "Sausage Omelette",
@@ -18828,7 +20445,14 @@
         "Heal": "5 health over 10 seconds",
         "SellVal": "15"
       },
-      "icon": "icons/consumable/food/Seaweed.png"
+      "icon": "icons/consumable/food/Seaweed.png",
+      "usedIn": [
+        {
+          "name": "Maki",
+          "icon": "icons/consumable/food/Maki.png",
+          "page": "https://sulfur.wiki.gg/wiki/Maki"
+        }
+      ]
     },
     {
       "name": "Shav'Wani Delights",
@@ -18863,7 +20487,34 @@
         "RmvFrost": "✓",
         "SellVal": "20"
       },
-      "icon": "icons/consumable/milk/Skimmed_Milk.png"
+      "icon": "icons/consumable/milk/Skimmed_Milk.png",
+      "usedIn": [
+        {
+          "name": "Cheese",
+          "icon": "icons/consumable/food/Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese"
+        },
+        {
+          "name": "Porridge",
+          "icon": "icons/consumable/food/Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Porridge"
+        },
+        {
+          "name": "Buttermilk",
+          "icon": "icons/consumable/milk/Buttermilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        },
+        {
+          "name": "Pilk",
+          "icon": "icons/consumable/beverage/Pilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pilk"
+        }
+      ]
     },
     {
       "name": "Soda",
@@ -19037,7 +20688,34 @@
           }
         ]
       },
-      "icon": "icons/consumable/beverage/Slurf.png"
+      "icon": "icons/consumable/beverage/Slurf.png",
+      "usedIn": [
+        {
+          "name": "Health Potion",
+          "icon": "icons/consumable/drug-remedy/Health_Potion.png",
+          "page": "https://sulfur.wiki.gg/wiki/Health_Potion"
+        },
+        {
+          "name": "Mochi",
+          "icon": "icons/consumable/dessert/Mochi.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mochi"
+        },
+        {
+          "name": "Sweet Gum",
+          "icon": "icons/consumable/dessert/Sweet_Gum.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sweet_Gum"
+        },
+        {
+          "name": "Gonster",
+          "icon": "icons/consumable/beverage/Gonster.png",
+          "page": "https://sulfur.wiki.gg/wiki/Gonster"
+        },
+        {
+          "name": "Julmust",
+          "icon": "icons/consumable/beverage/Julmust.png",
+          "page": "https://sulfur.wiki.gg/wiki/Julmust"
+        }
+      ]
     },
     {
       "name": "Solution",
@@ -19054,7 +20732,59 @@
         "SellVal": "20",
         "SoldBy": "Ralphie, Grossberg"
       },
-      "icon": "icons/consumable/ingredient/Solution.png"
+      "icon": "icons/consumable/ingredient/Solution.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Syrup",
+          "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+        },
+        {
+          "name": "Porridge",
+          "icon": "icons/consumable/food/Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Porridge"
+        },
+        {
+          "name": "Green Tea",
+          "icon": "icons/consumable/beverage/Green_Tea.png",
+          "page": "https://sulfur.wiki.gg/wiki/Green_Tea"
+        },
+        {
+          "name": "Currywurst",
+          "icon": "icons/consumable/food/Currywurst.png",
+          "page": "https://sulfur.wiki.gg/wiki/Currywurst"
+        },
+        {
+          "name": "Banana Sulfs",
+          "icon": "icons/consumable/food/Banana_Sulfs.png",
+          "page": "https://sulfur.wiki.gg/wiki/Banana_Sulfs"
+        },
+        {
+          "name": "Soda",
+          "icon": "icons/consumable/beverage/Slurf.png",
+          "page": "https://sulfur.wiki.gg/wiki/Soda"
+        },
+        {
+          "name": "Hot Sauce",
+          "icon": "icons/consumable/ingredient/Hot_Sauce.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hot_Sauce"
+        },
+        {
+          "name": "Marshmallows",
+          "icon": "icons/consumable/dessert/Marshmallows.png",
+          "page": "https://sulfur.wiki.gg/wiki/Marshmallows"
+        },
+        {
+          "name": "Candy Cane",
+          "icon": "icons/consumable/dessert/Candy_Cane.png",
+          "page": "https://sulfur.wiki.gg/wiki/Candy_Cane"
+        },
+        {
+          "name": "Julmust",
+          "icon": "icons/consumable/beverage/Julmust.png",
+          "page": "https://sulfur.wiki.gg/wiki/Julmust"
+        }
+      ]
     },
     {
       "name": "Spaghetti",
@@ -19068,7 +20798,8 @@
         "GridSize": "1×2",
         "SubType": "Ingredient",
         "SellVal": "15",
-        "SoldBy": "Grossberg"
+        "SoldBy": "Grossberg",
+        "Heal": "5 health over 5 seconds"
       },
       "recipe": {
         "ingredients": [
@@ -19098,7 +20829,29 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/ingredient/Spaghetti.png"
+      "icon": "icons/consumable/ingredient/Spaghetti.png",
+      "usedIn": [
+        {
+          "name": "Ramen",
+          "icon": "icons/consumable/food/Ramen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Ramen"
+        },
+        {
+          "name": "Spaghetti Bolognese",
+          "icon": "icons/consumable/food/Spaghetti_Bolognese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Spaghetti_Bolognese"
+        },
+        {
+          "name": "Mac'n'Cheese",
+          "icon": "icons/consumable/food/Mac'n'Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mac%27n%27Cheese"
+        },
+        {
+          "name": "Tori Ramen",
+          "icon": "icons/consumable/food/Tori_Ramen.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tori_Ramen"
+        }
+      ]
     },
     {
       "name": "Spaghetti Bolognese",
@@ -19305,7 +21058,44 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/food/Spicy_Sausage.png"
+      "icon": "icons/consumable/food/Spicy_Sausage.png",
+      "usedIn": [
+        {
+          "name": "Pizza",
+          "icon": "icons/consumable/food/Pizza.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pizza"
+        },
+        {
+          "name": "Full English Breakfast",
+          "icon": "icons/consumable/food/Full_English_Breakfast.png",
+          "page": "https://sulfur.wiki.gg/wiki/Full_English_Breakfast"
+        },
+        {
+          "name": "Currywurst",
+          "icon": "icons/consumable/food/Currywurst.png",
+          "page": "https://sulfur.wiki.gg/wiki/Currywurst"
+        },
+        {
+          "name": "Sausage Soup",
+          "icon": "icons/consumable/food/Sausage_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sausage_Soup"
+        },
+        {
+          "name": "Sausage On Stick",
+          "icon": "icons/consumable/food/Sausage_On_Stick.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sausage_On_Stick"
+        },
+        {
+          "name": "Sausage Omelette",
+          "icon": "icons/consumable/food/Sausage_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sausage_Omelette"
+        },
+        {
+          "name": "Pyttipanna",
+          "icon": "icons/consumable/food/Pyttipanna.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pyttipanna"
+        }
+      ]
     },
     {
       "name": "Sports Drink",
@@ -19325,7 +21115,14 @@
         "WpnWeight": "-50% for 180 seconds",
         "SellVal": "60"
       },
-      "icon": "icons/consumable/beverage/Sports_Drink.png"
+      "icon": "icons/consumable/beverage/Sports_Drink.png",
+      "usedIn": [
+        {
+          "name": "Gonster",
+          "icon": "icons/consumable/beverage/Gonster.png",
+          "page": "https://sulfur.wiki.gg/wiki/Gonster"
+        }
+      ]
     },
     {
       "name": "Stew",
@@ -19436,7 +21233,14 @@
         "RmvPsn": "✓",
         "RmvFire": "✓"
       },
-      "icon": "icons/consumable/beverage/Stout.png"
+      "icon": "icons/consumable/beverage/Stout.png",
+      "usedIn": [
+        {
+          "name": "Gonster",
+          "icon": "icons/consumable/beverage/Gonster.png",
+          "page": "https://sulfur.wiki.gg/wiki/Gonster"
+        }
+      ]
     },
     {
       "name": "Sugar",
@@ -19453,7 +21257,139 @@
         "SellVal": "15",
         "SoldBy": "Grossberg"
       },
-      "icon": "icons/consumable/ingredient/Sugar.png"
+      "icon": "icons/consumable/ingredient/Sugar.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Syrup",
+          "icon": "icons/consumable/dessert/Chocolate_Syrup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Syrup"
+        },
+        {
+          "name": "Berry Milkshake",
+          "icon": "icons/consumable/beverage/Berry_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Milkshake"
+        },
+        {
+          "name": "Berry Jam",
+          "icon": "icons/consumable/food/Berry_Jam.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Jam"
+        },
+        {
+          "name": "Rhubarb Sauce",
+          "icon": "icons/consumable/food/Rhubarb_Sauce.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Sauce"
+        },
+        {
+          "name": "Rhubarb Pie",
+          "icon": "icons/consumable/food/Rhubarb_Pie.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rhubarb_Pie"
+        },
+        {
+          "name": "Egg Toddy",
+          "icon": "icons/consumable/beverage/Egg_Toddy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Egg_Toddy"
+        },
+        {
+          "name": "Cactus Softdrink",
+          "icon": "icons/consumable/beverage/Cactus_Softdrink.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cactus_Softdrink"
+        },
+        {
+          "name": "French Toast",
+          "icon": "icons/consumable/food/French_Toast.png",
+          "page": "https://sulfur.wiki.gg/wiki/French_Toast"
+        },
+        {
+          "name": "Chocolate Mudcake",
+          "icon": "icons/consumable/dessert/Chocolate_Mudcake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Mudcake"
+        },
+        {
+          "name": "Meringue",
+          "icon": "icons/consumable/food/Meringue.png",
+          "page": "https://sulfur.wiki.gg/wiki/Meringue"
+        },
+        {
+          "name": "Jello",
+          "icon": "icons/consumable/food/Jello.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jello"
+        },
+        {
+          "name": "Cotton Candy",
+          "icon": "icons/consumable/dessert/Cotton_Candy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cotton_Candy"
+        },
+        {
+          "name": "Mulled Wine",
+          "icon": "icons/consumable/beverage/Mulled_Wine.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mulled_Wine"
+        },
+        {
+          "name": "Banana Sulfs",
+          "icon": "icons/consumable/food/Banana_Sulfs.png",
+          "page": "https://sulfur.wiki.gg/wiki/Banana_Sulfs"
+        },
+        {
+          "name": "Sweet Gum",
+          "icon": "icons/consumable/dessert/Sweet_Gum.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sweet_Gum"
+        },
+        {
+          "name": "Soda",
+          "icon": "icons/consumable/beverage/Slurf.png",
+          "page": "https://sulfur.wiki.gg/wiki/Soda"
+        },
+        {
+          "name": "Fried Blood Pudding",
+          "icon": "icons/consumable/food/Fried_Blood_Pudding.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fried_Blood_Pudding"
+        },
+        {
+          "name": "Chocolate Ball",
+          "icon": "icons/consumable/dessert/Chocolate_Ball.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Ball"
+        },
+        {
+          "name": "Lackerol Cactus",
+          "icon": "icons/consumable/food/Lackerol_Cactus.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lackerol_Cactus"
+        },
+        {
+          "name": "Vacuum Cleaner",
+          "icon": "icons/consumable/dessert/Vacuum_Cleaner.png",
+          "page": "https://sulfur.wiki.gg/wiki/Vacuum_Cleaner"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        },
+        {
+          "name": "Marshmallows",
+          "icon": "icons/consumable/dessert/Marshmallows.png",
+          "page": "https://sulfur.wiki.gg/wiki/Marshmallows"
+        },
+        {
+          "name": "Candy Cane",
+          "icon": "icons/consumable/dessert/Candy_Cane.png",
+          "page": "https://sulfur.wiki.gg/wiki/Candy_Cane"
+        },
+        {
+          "name": "Graved Salmon",
+          "icon": "icons/consumable/food/Graved_Salmon.png",
+          "page": "https://sulfur.wiki.gg/wiki/Graved_Salmon"
+        },
+        {
+          "name": "Julmust",
+          "icon": "icons/consumable/beverage/Julmust.png",
+          "page": "https://sulfur.wiki.gg/wiki/Julmust"
+        },
+        {
+          "name": "Sulf Cola",
+          "icon": "icons/consumable/beverage/Sulf_Cola.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sulf_Cola"
+        }
+      ]
     },
     {
       "name": "Sulf Cola",
@@ -19500,7 +21436,14 @@
         "variantCount": 1,
         "others": []
       },
-      "icon": "icons/consumable/beverage/Sulf_Cola.png"
+      "icon": "icons/consumable/beverage/Sulf_Cola.png",
+      "usedIn": [
+        {
+          "name": "Pilk",
+          "icon": "icons/consumable/beverage/Pilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pilk"
+        }
+      ]
     },
     {
       "name": "Surstromming",
@@ -19870,7 +21813,24 @@
         "Heal": "5 health over 1 second",
         "SellVal": "5"
       },
-      "icon": "icons/consumable/mushroom/Swing-Ding.png"
+      "icon": "icons/consumable/mushroom/Swing-Ding.png",
+      "usedIn": [
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        },
+        {
+          "name": "Hot Pot",
+          "icon": "icons/consumable/food/Hot_Pot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hot_Pot"
+        },
+        {
+          "name": "Mushroom Omelette",
+          "icon": "icons/consumable/food/Mushroom_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Omelette"
+        }
+      ]
     },
     {
       "name": "Tastes from the Sewers™",
@@ -20695,7 +22655,29 @@
         "Heal": "1 health over 1 seconds",
         "SellVal": "5"
       },
-      "icon": "icons/consumable/mushroom/Velvet_Bell.png"
+      "icon": "icons/consumable/mushroom/Velvet_Bell.png",
+      "usedIn": [
+        {
+          "name": "Mushroom Soup",
+          "icon": "icons/consumable/food/Mushroom_Soup.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Soup"
+        },
+        {
+          "name": "Fried Mushroom",
+          "icon": "icons/consumable/food/Fried_Mushroom.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fried_Mushroom"
+        },
+        {
+          "name": "Hot Pot",
+          "icon": "icons/consumable/food/Hot_Pot.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hot_Pot"
+        },
+        {
+          "name": "Mushroom Omelette",
+          "icon": "icons/consumable/food/Mushroom_Omelette.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mushroom_Omelette"
+        }
+      ]
     },
     {
       "name": "Walnut",
@@ -20730,7 +22712,64 @@
         "MoveAccuracy": "+50% over 90 seconds",
         "SellVal": "20"
       },
-      "icon": "icons/consumable/milk/Whole_Milk.png"
+      "icon": "icons/consumable/milk/Whole_Milk.png",
+      "usedIn": [
+        {
+          "name": "Chocolate Milkshake",
+          "icon": "icons/consumable/beverage/Chocolate_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Milkshake"
+        },
+        {
+          "name": "Berry Milkshake",
+          "icon": "icons/consumable/beverage/Berry_Milkshake.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berry_Milkshake"
+        },
+        {
+          "name": "Cheese",
+          "icon": "icons/consumable/food/Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese"
+        },
+        {
+          "name": "Mashed Potatoes",
+          "icon": "icons/consumable/food/Mashed_Potatoes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Mashed_Potatoes"
+        },
+        {
+          "name": "Porridge",
+          "icon": "icons/consumable/food/Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Porridge"
+        },
+        {
+          "name": "Butter",
+          "icon": "icons/consumable/food/Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Butter"
+        },
+        {
+          "name": "Buttermilk",
+          "icon": "icons/consumable/milk/Buttermilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Buttermilk"
+        },
+        {
+          "name": "Swedish Pancakes",
+          "icon": "icons/consumable/food/Swedish_Pancakes.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swedish_Pancakes"
+        },
+        {
+          "name": "Rice Porridge",
+          "icon": "icons/consumable/food/Rice_Porridge.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice_Porridge"
+        },
+        {
+          "name": "Jansson's Temptation",
+          "icon": "icons/consumable/food/Jansson's_Temptation.png",
+          "page": "https://sulfur.wiki.gg/wiki/Jansson%27s_Temptation"
+        },
+        {
+          "name": "Pilk",
+          "icon": "icons/consumable/beverage/Pilk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pilk"
+        }
+      ]
     }
   ]
 }

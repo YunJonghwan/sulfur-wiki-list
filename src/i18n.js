@@ -62,6 +62,7 @@ export const UI = {
   recipe: { en: 'Recipe', ko: '레시피' },
   moreRecipes: { en: 'other recipes', ko: '개의 다른 조합법 더보기' },
   hideRecipes: { en: 'Hide', ko: '접기' },
+  usedIn: { en: 'Used to make', ko: '만들 수 있는 것' },
 }
 
 // Korean labels for sub-group axes (weapon class, ammo, oil effect…).

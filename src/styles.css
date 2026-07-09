@@ -257,6 +257,19 @@ main {
   font-weight: 600;
 }
 
+.used-in-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+.used-in-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text);
+}
+
 .recipe-more {
   background: none;
   border: none;

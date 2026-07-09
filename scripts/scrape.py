@@ -605,6 +605,36 @@ def attachment_zoom(fields: dict[str, str], wikitext: str) -> str | None:
     return f"×{m.group(1)}" if m else "×1"
 
 
+# A handful of consumables (Christmas Spice, Coffee, Flour, Karl-Oskar...)
+# state their heal/status-removal effect only as bolded prose in the
+# Description section ("'''Gives 5 health over 2.5 seconds.'''") instead of
+# structured Heal=/Rmv*= infobox fields — most items give both, these give
+# neither, so the ability column was rendering completely blank for them.
+DESCRIPTION_SECTION_RE = re.compile(r"==\s*Description\s*==([\s\S]*?)(?:\n==|\Z)")
+HEAL_PROSE_RE = re.compile(r"Gives\s+([\d.]+\s+[Hh]ealth(?:\s+over\s+[\d.]+\s+seconds)?)")
+REMOVES_PROSE_RE = re.compile(r"Removes\s+(\w+)", re.IGNORECASE)
+REMOVES_PROSE_MAP = {
+    "frozen": "RmvFrost", "burning": "RmvFire",
+    "poisoned": "RmvPsn", "voodoo": "RmvVD",
+}
+
+
+def consumable_prose_effects(wikitext: str) -> dict[str, str]:
+    m = DESCRIPTION_SECTION_RE.search(wikitext)
+    if not m:
+        return {}
+    section = m.group(1)
+    effects: dict[str, str] = {}
+    heal_m = HEAL_PROSE_RE.search(section)
+    if heal_m:
+        effects["Heal"] = heal_m.group(1)
+    for rm in REMOVES_PROSE_RE.finditer(section):
+        key = REMOVES_PROSE_MAP.get(rm.group(1).lower())
+        if key:
+            effects[key] = "✓"
+    return effects
+
+
 def consumable_recipe(wikitext: str) -> dict[str, object] | None:
     m = RECIPE_SECTION_RE.search(wikitext)
     if not m:
@@ -732,6 +762,35 @@ def resolve_recipe_icons(buckets: dict[str, list[dict]]) -> None:
                 if icon:
                     ing["icon"] = icon
             ing.pop("filename", None)
+
+
+def attach_used_in(buckets: dict[str, list[dict]]) -> None:
+    """For every consumable, list the other consumables it's a concrete
+    (non-wildcard) ingredient of — the reverse of its own recipe. Lets a
+    pure ingredient like Banana or Flour, which has no recipe of its own,
+    still show what it can be turned into. Wildcard slots are skipped since
+    the ingredient name there is a category label ("Any Milk"), not a real
+    item, so it can't be matched back to a specific item.
+    """
+    used_in: dict[str, list[dict]] = {}
+    for it in buckets.get("consumable", []):
+        recipe = it.get("recipe")
+        if not recipe:
+            continue
+        variants = [recipe["ingredients"]] + [v["ingredients"] for v in recipe.get("others", [])]
+        credited: set[str] = set()
+        for ingredients in variants:
+            for ing in ingredients:
+                if ing.get("wildcard") or ing["name"] in credited:
+                    continue
+                credited.add(ing["name"])
+                used_in.setdefault(ing["name"], []).append(
+                    {"name": it["name"], "icon": it.get("icon"), "page": it["page"]}
+                )
+    for it in buckets.get("consumable", []):
+        targets = used_in.get(it["name"])
+        if targets:
+            it["usedIn"] = targets
 
 
 UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')
@@ -1275,6 +1334,9 @@ def build(refresh: bool = False) -> None:
             zoom = attachment_zoom(fields, wikitext)
             if zoom:
                 fields["Zoom"] = zoom
+        if kind == "consumable":
+            for prose_key, prose_val in consumable_prose_effects(wikitext).items():
+                fields.setdefault(prose_key, prose_val)
         image = fields.get("image", f"{title}.png")
         recipe = consumable_recipe(wikitext) if kind == "consumable" else None
         item = {
@@ -1291,6 +1353,7 @@ def build(refresh: bool = False) -> None:
 
     download_icons(buckets)
     resolve_recipe_icons(buckets)
+    attach_used_in(buckets)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated = datetime.now(timezone.utc).isoformat()

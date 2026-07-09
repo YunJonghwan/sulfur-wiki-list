@@ -213,6 +213,32 @@ function RecipeLine({ item, lang, expanded, onToggle }) {
   )
 }
 
+// Reverse of RecipeLine: for an ingredient (Banana, Flour, ...), lists the
+// other consumables it gets combined into — a simple icon+name chip row
+// rather than a full table, since the target's own recipe is already shown
+// on its own row.
+function UsedInLine({ item, lang }) {
+  const targets = item.usedIn
+  if (!targets || targets.length === 0) return null
+  return (
+    <div className="recipe-line used-in-line">
+      <div className="recipe-head">
+        <span className="recipe-label">{t(UI.usedIn, lang)}</span>
+      </div>
+      <div className="used-in-chips">
+        {targets.map((tgt) => (
+          <span className="used-in-chip" key={tgt.name}>
+            {imageUrl(tgt.icon) && (
+              <img className="item-icon recipe-icon" src={imageUrl(tgt.icon)} alt="" width="20" height="20" />
+            )}
+            <span>{tgt.name}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function DataTable({ data, lang }) {
   const columns = data.columns
   const axes = data.axes || []
@@ -391,6 +417,7 @@ export default function DataTable({ data, lang }) {
                       }
                     />
                   )}
+                  {data.kind === 'consumable' && <UsedInLine item={it} lang={lang} />}
                 </td>
               </tr>
             ))}
