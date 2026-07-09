@@ -217,7 +217,6 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
                 {axis.groups
                   ? axis.groups.map((g) => (
                       <span className="group-cluster" key={g.key}>
-                        <span className="group-tag">{groupLabel(g.label, g.label, lang)}</span>
                         {axis.values
                           .filter((v) => v.group === g.key)
                           .map((v) => (
