@@ -202,35 +202,22 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
             )}
 
             {axis && (
-              <div className="picker-groups">
-                <div className="group-pills">
-                  <button
-                    className={groupValue === '' ? 'pill active' : 'pill'}
-                    onClick={() => setGroupValue('')}
-                  >
-                    {t(UI.all, lang)}
-                  </button>
-                  {!axis.groups &&
-                    axis.values.map((v) => (
-                      <button
-                        key={v.value}
-                        className={groupValue === v.value ? 'pill active' : 'pill'}
-                        onClick={() => setGroupValue(v.value)}
-                      >
-                        {groupLabel(v.value, v.label, lang)}
-                      </button>
-                    ))}
-                </div>
-                {/* Oil's "ability" axis has ~15 values — too many for one
-                    flat row, so they're clustered under category headers
-                    (damage/fire-rate/handling/bullet/economy) instead. */}
-                {axis.groups &&
-                  axis.groups.map((g) => (
-                    <div className="group-section" key={g.key}>
-                      <div className="group-section-label">
-                        {groupLabel(g.label, g.label, lang)}
-                      </div>
-                      <div className="group-pills">
+              <div className="group-pills picker-groups">
+                <button
+                  className={groupValue === '' ? 'pill active' : 'pill'}
+                  onClick={() => setGroupValue('')}
+                >
+                  {t(UI.all, lang)}
+                </button>
+                {/* Oil's "ability" axis has ~15 values — too many to tell
+                    apart in one flat row, so each category (damage/handling/
+                    bullet/...) gets a small muted tag inline before its
+                    pills, all still wrapping together in one flowing row
+                    instead of one mostly-empty row per category. */}
+                {axis.groups
+                  ? axis.groups.map((g) => (
+                      <span className="group-cluster" key={g.key}>
+                        <span className="group-tag">{groupLabel(g.label, g.label, lang)}</span>
                         {axis.values
                           .filter((v) => v.group === g.key)
                           .map((v) => (
@@ -242,9 +229,17 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
                               {groupLabel(v.value, v.label, lang)}
                             </button>
                           ))}
-                      </div>
-                    </div>
-                  ))}
+                      </span>
+                    ))
+                  : axis.values.map((v) => (
+                      <button
+                        key={v.value}
+                        className={groupValue === v.value ? 'pill active' : 'pill'}
+                        onClick={() => setGroupValue(v.value)}
+                      >
+                        {groupLabel(v.value, v.label, lang)}
+                      </button>
+                    ))}
               </div>
             )}
 

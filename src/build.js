@@ -17,7 +17,7 @@ export function parseNum(value) {
 }
 
 // Oil/scroll stat key -> base weapon stat key.
-const MOD_TO_WEAPON = { Dmg: 'Damage', RPM: 'RPM', Spread: 'Spread', Recoil: 'Recoil' }
+const MOD_TO_WEAPON = { Dmg: 'Damage', RPM: 'RPM', Spread: 'Spread', Recoil: 'Recoil', MaxDrb: 'Durability' }
 
 export const WEAPON_STATS = ['Damage', 'RPM', 'Spread', 'Recoil', 'Durability']
 

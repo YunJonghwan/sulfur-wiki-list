@@ -423,18 +423,20 @@ main {
   flex: 1 1 100%;
 }
 
-.group-section {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  margin-top: 0.35rem;
+.group-cluster {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.group-section-label {
-  flex: 0 0 auto;
-  width: 4.5rem;
+.group-cluster + .group-cluster {
+  margin-left: 0.5rem;
+}
+
+.group-tag {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .pill {
