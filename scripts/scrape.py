@@ -498,6 +498,15 @@ def split_wildcard_exception(label: str) -> tuple[str, str | None]:
         return label, None
     return m.group(1).strip(), m.group(2).strip()
 
+
+# "All other N types of X" is a completeness statement (the category minus
+# whichever member is placed in another slot of the same row) — safe to
+# normalize like an "except" label. A bare "X or Y" / "X/Y" listing (e.g.
+# "Skimmed Milk/Low Fat Milk") is NOT the same thing: it names only some
+# members of the category, so treating it as "Any <category>" would silently
+# widen what the recipe actually accepts.
+ALL_OTHER_RE = re.compile(r"^all\s+other\b", re.IGNORECASE)
+
 # A handful of pages (Pölsa, Red Wine) have a "=== Hidden Recipes ===" block
 # whose own text says the recipes only work via a quick-cook bug and are
 # "expected to be removed in future updates" — not real recipes to teach
@@ -518,12 +527,11 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
             label = row.get(f"i{n}Label") or canonical
             name, exception = split_wildcard_exception(label)
             note = f"{exception} 제외" if exception else None
-            # Some wiki labels list specific example items instead of the
-            # generic "Any X" phrasing (e.g. "Skimmed Milk/Low Fat Milk" for
-            # what is, category-wise, just any milk) — normalize the primary
-            # label so every occurrence of the same category reads/sorts the
-            # same, and keep the wiki's original wording as a muted aside.
-            if not note and not name.lower().startswith("any"):
+            # "All other N types" reads as a completeness statement (category
+            # minus whatever's placed elsewhere in the row) — normalize it
+            # like an except-label. A bare "X or Y" listing is left as-is
+            # since it names a real subset, not the whole category.
+            if not note and not name.lower().startswith("any") and ALL_OTHER_RE.match(name):
                 note = name
                 name = canonical
             ing = {

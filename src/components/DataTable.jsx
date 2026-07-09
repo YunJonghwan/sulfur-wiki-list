@@ -168,19 +168,25 @@ function RecipeLine({ item, lang, expanded, onToggle }) {
       <table className="recipe-table">
         <tbody>
           {variants.map((v, i) => {
-            const sorted = [...v.ingredients].sort((a, b) => a.name.localeCompare(b.name))
+            // Keep the wiki's own ingredient order (not re-sorted by name):
+            // the same "role" (e.g. the milk slot) can render under different
+            // display names across variants — a wildcard here, a literal
+            // item there — and sorting by name would bounce that role
+            // between columns. The wiki's i1/i2/... order is consistently
+            // stable per role, so it's used as-is.
+            const slots = v.ingredients
             return (
               <tr key={i}>
-                {sorted.map((ing) => (
+                {slots.map((ing, k) => (
                   <RecipeCell
-                    key={ing.name}
+                    key={k}
                     name={ing.name}
                     qty={ing.qty}
                     icon={ing.icon}
                     note={ing.note}
                   />
                 ))}
-                {Array.from({ length: maxSlots - sorted.length }).map((_, j) => (
+                {Array.from({ length: maxSlots - slots.length }).map((_, j) => (
                   <td className="recipe-cell recipe-cell-empty" key={`e${j}`}>
                     <span className="recipe-cell-placeholder" aria-hidden="true">–</span>
                   </td>
