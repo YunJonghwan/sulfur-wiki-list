@@ -129,7 +129,10 @@ function ItemCell({ it, lang }) {
 // One ingredient or result cell: icon once, plus a ×N badge when qty > 1
 // (never repeated icons) — keeps every cell roughly the same width so the
 // table stays aligned whether a recipe needs 1 unit or 9.
-function RecipeCell({ name, qty, icon, note, className }) {
+function RecipeCell({ name, qty, qtyLabel, icon, note, except, lang, className }) {
+  const exceptText = except
+    ? (lang === 'en' ? `Except ${except}` : `${except} 제외`)
+    : null
   return (
     <td className={`recipe-cell${className ? ` ${className}` : ''}`}>
       <span className="recipe-cell-inner">
@@ -137,7 +140,8 @@ function RecipeCell({ name, qty, icon, note, className }) {
           <img className="item-icon recipe-icon" src={imageUrl(icon)} alt="" width="20" height="20" />
         )}
         <span>
-          {name}{qty > 1 ? ` ×${qty}` : ''}
+          {name}{qtyLabel ? ` ×${qtyLabel}` : (qty > 1 ? ` ×${qty}` : '')}
+          {exceptText && <span className="recipe-exception"> ({exceptText})</span>}
           {note && <span className="recipe-exception"> ({note})</span>}
         </span>
       </span>
@@ -182,8 +186,11 @@ function RecipeLine({ item, lang, expanded, onToggle }) {
                     key={k}
                     name={ing.name}
                     qty={ing.qty}
+                    qtyLabel={ing.qtyLabel}
                     icon={ing.icon}
                     note={ing.note}
+                    except={ing.except}
+                    lang={lang}
                   />
                 ))}
                 {Array.from({ length: maxSlots - slots.length }).map((_, j) => (

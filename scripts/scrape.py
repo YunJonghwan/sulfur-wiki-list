@@ -514,6 +514,25 @@ ALL_OTHER_RE = re.compile(r"^all\s+other\b", re.IGNORECASE)
 HIDDEN_RECIPES_RE = re.compile(r"===\s*Hidden Recipes\s*===[\s\S]*?(?=\n==|\Z)")
 
 
+QTY_RANGE_RE = re.compile(r"^(\d+)\s*-\s*(\d+)$")
+
+
+def parse_qty(qty_raw: str | None) -> tuple[int, str | None]:
+    """Return (qty, qtyLabel). Some rows give a range like "1-3" meaning any
+    amount in that range yields the same result — qty is the range's low end
+    (used for sorting), qtyLabel carries the full range text for display.
+    """
+    if not qty_raw:
+        return 1, None
+    qty_raw = qty_raw.strip()
+    if qty_raw.isdigit():
+        return int(qty_raw), None
+    m = QTY_RANGE_RE.match(qty_raw)
+    if m:
+        return int(m.group(1)), qty_raw
+    return 1, None
+
+
 def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
     ingredients = []
     # The wiki's Recipe row template renders slots highest-number-first
@@ -532,8 +551,7 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
         # Bread's beverage slot) — without this, they were silently dropped.
         if not val and not label_raw and not filename_raw:
             continue
-        qty_raw = row.get(f"i{n}Qty")
-        qty = int(qty_raw) if qty_raw and qty_raw.isdigit() else 1
+        qty, qty_label = parse_qty(row.get(f"i{n}Qty"))
         is_category = bool(val) and bool(CATEGORY_INGREDIENT_RE.match(val))
         if is_category or (not val and (label_raw or filename_raw)):
             canonical = (
@@ -542,23 +560,33 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
             )
             label = label_raw or canonical
             name, exception = split_wildcard_exception(label)
-            note = f"{exception} 제외" if exception else None
+            note = None
             # "All other N types" reads as a completeness statement (category
             # minus whatever's placed elsewhere in the row) — normalize it
             # like an except-label. A bare "X or Y" listing is left as-is
             # since it names a real subset, not the whole category.
-            if not note and not name.lower().startswith("any") and ALL_OTHER_RE.match(name):
+            if not exception and not name.lower().startswith("any") and ALL_OTHER_RE.match(name):
                 note = name
                 name = canonical
             ing = {
                 "name": name, "qty": qty, "wildcard": True,
                 "filename": filename_raw,
             }
+            # Kept as the bare excluded name (not a pre-built sentence) so
+            # the UI can phrase it per language ("Shav'Wa 제외" vs "Except
+            # Shav'Wa") instead of baking Korean into the data.
+            if exception:
+                ing["except"] = exception
             if note:
                 ing["note"] = note
+            if qty_label:
+                ing["qtyLabel"] = qty_label
             ingredients.append(ing)
         else:
-            ingredients.append({"name": val, "qty": qty, "wildcard": False})
+            ing = {"name": val, "qty": qty, "wildcard": False}
+            if qty_label:
+                ing["qtyLabel"] = qty_label
+            ingredients.append(ing)
     return ingredients
 
 
