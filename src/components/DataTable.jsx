@@ -5,7 +5,7 @@ const BASE = import.meta.env.BASE_URL
 
 // Non-ability meta fields — hidden from the compact "Abilities" chips so only
 // real stat modifiers/effects show. Still visible in the full grid view.
-const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy'])
+const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'SubType'])
 
 // Raw field each axis groups by. When that axis is the active grouping, every
 // row in a section/table already shares the same value (it's the group

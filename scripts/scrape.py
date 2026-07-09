@@ -1011,15 +1011,6 @@ def scroll_stage(title: str) -> str:
     return "stage1" if title in STAGE_1_SCROLLS else "stage2"
 
 
-# Consumables with this category can be cooked/combined from ingredients at
-# a cooking station; everything else must be found, farmed, or bought.
-COOKABLE_RE = re.compile(r"\[\[\s*Category\s*:\s*Cookables\s*\]\]", re.IGNORECASE)
-
-
-def consumable_craftable(wikitext: str) -> str:
-    return "craftable" if COOKABLE_RE.search(wikitext) else "farmed"
-
-
 # Axes where an item can belong to several groups at once (e.g. an oil that
 # modifies both Damage and Recoil shows up under each ability).
 AXIS_MULTI = {"ability"}
@@ -1166,7 +1157,10 @@ ORGAN_SOURCE_BY_TITLE = {
 }
 
 
-def item_groups(kind: str, fields: dict[str, str], title: str, wikitext: str) -> dict[str, object]:
+def item_groups(
+    kind: str, fields: dict[str, str], title: str, wikitext: str,
+    recipe: dict[str, object] | None = None,
+) -> dict[str, object]:
     if kind == "oil":
         return {
             "ability": oil_buff_ability_keys(fields),
@@ -1178,7 +1172,12 @@ def item_groups(kind: str, fields: dict[str, str], title: str, wikitext: str) ->
     if kind == "weapon":
         return {"class": label, "ammo": fields.get("Ammo") or "—"}
     if kind == "consumable":
-        return {"type": label, "craftable": consumable_craftable(wikitext)}
+        # Whether an item actually has a parsed recipe is a much more
+        # reliable "can this be combined?" signal than the wiki's
+        # Category:Cookables tag, which several craftable items (Pizza
+        # Slice, Sulf Cola, Salted Fish...) simply don't carry despite
+        # having a full "== Recipes ==" section.
+        return {"type": label, "craftable": "craftable" if recipe else "farmed"}
     if kind == "misc":
         is_organ = bool(ORGAN_CATEGORY_RE.search(wikitext))
         groups: dict[str, object] = {"type": "Organ" if is_organ else label}
@@ -1277,18 +1276,17 @@ def build(refresh: bool = False) -> None:
             if zoom:
                 fields["Zoom"] = zoom
         image = fields.get("image", f"{title}.png")
+        recipe = consumable_recipe(wikitext) if kind == "consumable" else None
         item = {
             "name": title,
             "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
             "image": image,
-            "groups": item_groups(kind, fields, title, wikitext),
+            "groups": item_groups(kind, fields, title, wikitext, recipe),
             "fields": {k: v for k, v in fields.items()
                        if k not in ("kind", "image", "title")},
         }
-        if kind == "consumable":
-            recipe = consumable_recipe(wikitext)
-            if recipe:
-                item["recipe"] = recipe
+        if recipe:
+            item["recipe"] = recipe
         buckets[kind].append(item)
 
     download_icons(buckets)

@@ -1,6 +1,6 @@
 {
   "kind": "consumable",
-  "generated": "2026-07-09T02:27:38.079022+00:00",
+  "generated": "2026-07-09T02:37:56.057586+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -201,12 +201,12 @@
         {
           "value": "craftable",
           "label": "Craftable",
-          "count": 137
+          "count": 140
         },
         {
           "value": "farmed",
           "label": "Found / Farmed",
-          "count": 65
+          "count": 62
         }
       ]
     }
@@ -7426,7 +7426,7 @@
       "image": "Frog Leg.png",
       "groups": {
         "type": "Food",
-        "craftable": "craftable"
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -8704,7 +8704,7 @@
       "image": "Herbal Tea.png",
       "groups": {
         "type": "Beverage",
-        "craftable": "craftable"
+        "craftable": "farmed"
       },
       "fields": {
         "GridSize": "1×1",
@@ -15332,7 +15332,7 @@
       "image": "Pizza Slice.png",
       "groups": {
         "type": "Food",
-        "craftable": "farmed"
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -15495,7 +15495,7 @@
       "image": "Potato Salad.png",
       "groups": {
         "type": "Food",
-        "craftable": "farmed"
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
@@ -18290,7 +18290,7 @@
       "image": "Salted Fish.png",
       "groups": {
         "type": "Food",
-        "craftable": "farmed"
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×1",
@@ -18386,7 +18386,7 @@
       "image": "Salted Sandfish.png",
       "groups": {
         "type": "Food",
-        "craftable": "farmed"
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1x1",
@@ -19461,7 +19461,7 @@
       "image": "Sulf Cola.png",
       "groups": {
         "type": "Beverage",
-        "craftable": "farmed"
+        "craftable": "craftable"
       },
       "fields": {
         "GridSize": "1×2",
