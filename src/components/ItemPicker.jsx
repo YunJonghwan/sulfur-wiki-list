@@ -25,6 +25,18 @@ function hasGroup(item, axisKey, value) {
   return Array.isArray(g) ? g.includes(value) : g === value
 }
 
+// Puts the selected ability's own field first in a tile's chip list (same
+// spot on every tile), matching the main data table's behavior when sorting
+// by a picked ability — the rest keep their normal order.
+function orderedEntries(fields, priorityKey) {
+  const entries = Object.entries(fields)
+  if (!priorityKey) return entries
+  const idx = entries.findIndex(([k]) => k === priorityKey)
+  if (idx <= 0) return entries
+  const [picked] = entries.splice(idx, 1)
+  return [picked, ...entries]
+}
+
 function valueTone(raw) {
   if (typeof raw !== 'string') return ''
   if (/^\+/.test(raw)) return 'pos'
@@ -263,10 +275,11 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
                       </span>
                     </div>
                     <div className="chips">
-                      {Object.entries(fieldsOf(it)).map(([k, v]) => {
+                      {orderedEntries(fieldsOf(it), groupValue).map(([k, v]) => {
                         if (!v || META_KEYS.has(k)) return null
+                        const sel = k === groupValue ? ' sel' : ''
                         return (
-                          <span key={k} className={`chip ${valueTone(v)}`}>
+                          <span key={k} className={`chip ${valueTone(v)}${sel}`}>
                             <b>{labelText(k)}</b>
                             {v}
                           </span>

@@ -307,18 +307,21 @@ export function computeWeapon(weapon, enchants, gearItems) {
   }
   durability = Math.round(durability * 100) / 100
 
-  // Other oil/scroll modifiers that aren't one of the base weapon stats.
-  // Two oils hitting the same stat (e.g. Bullet Bounces +4 and +2) used to
-  // show as two separate chips — combined here into one "+6" when they're
-  // both plain numeric modifiers of the same unit (both flat or both %);
-  // anything that can't be summed (flags, mixed flat/percent) is still
-  // listed as distinct entries.
+  // Every oil/scroll modifier, listed per-effect under buff/debuff/constraint
+  // — including the core weapon stats (Dmg/RPM/Spread/Recoil/MaxDrb) that
+  // are ALSO summarized in the base/final table above. The table shows the
+  // combined end result; this shows which oil did what, individually.
+  // Same-stat combining: two oils hitting the same key (e.g. Bullet Bounces
+  // +4 and +2) used to show as two separate chips — combined here into one
+  // "+6" when they're both plain numeric modifiers of the same unit (both
+  // flat or both %); anything that can't be summed (flags, mixed
+  // flat/percent) is still listed as distinct entries.
   const META = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'SubType'])
   const byExtraKey = new Map()
   for (const { item } of enchItems) {
     const f = fieldsOf(item)
     for (const [k, v] of Object.entries(f)) {
-      if (k in MOD_TO_WEAPON || META.has(k)) continue
+      if (META.has(k)) continue
       if (!byExtraKey.has(k)) byExtraKey.set(k, [])
       byExtraKey.get(k).push({ from: item.name, value: v, num: parseNum(v) })
     }
