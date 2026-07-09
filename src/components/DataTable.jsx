@@ -213,11 +213,38 @@ function RecipeLine({ item, lang, expanded, onToggle }) {
   )
 }
 
+// One "ingredients -> result" row for the hover tooltip — just the target's
+// representative recipe (not every variant), enough to answer "what else
+// goes into this" without needing a click.
+function MiniRecipeRow({ target }) {
+  const r = target.recipe
+  if (!r) return null
+  return (
+    <div className="used-in-tooltip-row">
+      {r.ingredients.map((ing, k) => (
+        <span className="used-in-tooltip-ing" key={k}>
+          {imageUrl(ing.icon) && (
+            <img className="item-icon recipe-icon" src={imageUrl(ing.icon)} alt="" width="18" height="18" />
+          )}
+          <span>{ing.name}{ing.qty > 1 ? ` ×${ing.qty}` : ''}</span>
+        </span>
+      ))}
+      <span className="used-in-tooltip-arrow">→</span>
+      <span className="used-in-tooltip-ing">
+        {imageUrl(target.icon) && (
+          <img className="item-icon recipe-icon" src={imageUrl(target.icon)} alt="" width="18" height="18" />
+        )}
+        <span>{target.name}{r.resultQty > 1 ? ` ×${r.resultQty}` : ''}</span>
+      </span>
+    </div>
+  )
+}
+
 // Reverse of RecipeLine: for an ingredient (Banana, Flour, ...), lists the
 // other consumables it gets combined into — a simple icon+name chip row
-// rather than a full table, since the target's own recipe is already shown
-// on its own row.
-function UsedInLine({ item, lang }) {
+// rather than a full table (the target's own recipe is already shown on its
+// own row), with a hover tooltip showing that recipe inline.
+function UsedInLine({ item, lang, itemsByName }) {
   const targets = item.usedIn
   if (!targets || targets.length === 0) return null
   return (
@@ -226,14 +253,24 @@ function UsedInLine({ item, lang }) {
         <span className="recipe-label">{t(UI.usedIn, lang)}</span>
       </div>
       <div className="used-in-chips">
-        {targets.map((tgt) => (
-          <span className="used-in-chip" key={tgt.name}>
-            {imageUrl(tgt.icon) && (
-              <img className="item-icon recipe-icon" src={imageUrl(tgt.icon)} alt="" width="20" height="20" />
-            )}
-            <span>{tgt.name}</span>
-          </span>
-        ))}
+        {targets.map((tgt) => {
+          const full = itemsByName.get(tgt.name)
+          return (
+            <span className="used-in-chip-wrap" key={tgt.name}>
+              <span className="used-in-chip">
+                {imageUrl(tgt.icon) && (
+                  <img className="item-icon recipe-icon" src={imageUrl(tgt.icon)} alt="" width="20" height="20" />
+                )}
+                <span>{tgt.name}</span>
+              </span>
+              {full?.recipe && (
+                <span className="used-in-tooltip">
+                  <MiniRecipeRow target={full} />
+                </span>
+              )}
+            </span>
+          )
+        })}
       </div>
     </div>
   )
@@ -252,6 +289,8 @@ export default function DataTable({ data, lang }) {
   const [axisKey, setAxisKey] = useState(axes[0]?.key || '')
   const [selectedGroup, setSelectedGroup] = useState('')
   const [expandedRecipe, setExpandedRecipe] = useState(null)
+
+  const itemsByName = useMemo(() => new Map(data.items.map((it) => [it.name, it])), [data.items])
 
   const currentAxis = axes.find((a) => a.key === axisKey) || axes[0] || null
   const hiddenField = currentAxis ? AXIS_FIELD[currentAxis.key] : null
@@ -417,7 +456,9 @@ export default function DataTable({ data, lang }) {
                       }
                     />
                   )}
-                  {data.kind === 'consumable' && <UsedInLine item={it} lang={lang} />}
+                  {data.kind === 'consumable' && (
+                    <UsedInLine item={it} lang={lang} itemsByName={itemsByName} />
+                  )}
                 </td>
               </tr>
             ))}

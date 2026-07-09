@@ -268,6 +268,48 @@ main {
   align-items: center;
   gap: 4px;
   color: var(--text);
+  cursor: default;
+}
+
+.used-in-chip-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.used-in-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+.used-in-chip-wrap:hover .used-in-tooltip {
+  display: block;
+}
+
+.used-in-tooltip-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.used-in-tooltip-ing {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.used-in-tooltip-arrow {
+  color: var(--muted);
 }
 
 .recipe-more {
