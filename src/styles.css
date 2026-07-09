@@ -423,6 +423,20 @@ main {
   flex: 1 1 100%;
 }
 
+.group-section {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.group-section-label {
+  flex: 0 0 auto;
+  width: 4.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
 .pill {
   background: var(--panel-2);
   color: var(--muted);

@@ -1,6 +1,6 @@
 {
   "kind": "oil",
-  "generated": "2026-07-09T02:48:21.650519+00:00",
+  "generated": "2026-07-09T10:59:27.497659+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -130,77 +130,114 @@
         {
           "value": "Dmg",
           "label": "Damage",
-          "count": 34
+          "count": 34,
+          "group": "damage"
         },
         {
           "value": "RPM",
           "label": "Rate of Fire",
-          "count": 16
+          "count": 16,
+          "group": "fire-rate"
         },
         {
           "value": "CritChance",
           "label": "Crit Chance",
-          "count": 17
+          "count": 17,
+          "group": "damage"
         },
         {
           "value": "Spread",
           "label": "Spread",
-          "count": 16
+          "count": 16,
+          "group": "handling"
         },
         {
           "value": "Recoil",
           "label": "Recoil",
-          "count": 19
+          "count": 19,
+          "group": "handling"
         },
         {
           "value": "RldSpeed",
           "label": "Reload Speed",
-          "count": 18
+          "count": 18,
+          "group": "fire-rate"
         },
         {
           "value": "BltSpeed",
           "label": "Bullet Speed",
-          "count": 17
+          "count": 17,
+          "group": "bullet"
         },
         {
           "value": "BltPen",
           "label": "Bullet Penetrations",
-          "count": 17
+          "count": 17,
+          "group": "bullet"
         },
         {
           "value": "BltSize",
           "label": "Bullet Size",
-          "count": 17
+          "count": 17,
+          "group": "bullet"
         },
         {
           "value": "BltBounces",
           "label": "Bullet Bounces",
-          "count": 18
+          "count": 18,
+          "group": "bullet"
         },
         {
           "value": "BltBounciness",
           "label": "Bullet Bounciness",
-          "count": 1
+          "count": 1,
+          "group": "bullet"
         },
         {
           "value": "ProjecAmnt",
           "label": "Projectile Amount",
-          "count": 18
+          "count": 18,
+          "group": "damage"
         },
         {
           "value": "AmmoConsume",
           "label": "Ammo Consume Chance",
-          "count": 16
+          "count": 16,
+          "group": "economy"
         },
         {
           "value": "MaxDrb",
           "label": "Max Durability",
-          "count": 17
+          "count": 17,
+          "group": "economy"
         },
         {
           "value": "NoDrb",
           "label": "Does not increase durability loss",
-          "count": 31
+          "count": 31,
+          "group": "economy"
+        }
+      ],
+      "groups": [
+        {
+          "key": "damage",
+          "label": "Damage"
+        },
+        {
+          "key": "fire-rate",
+          "label": "Fire Rate"
+        },
+        {
+          "key": "handling",
+          "label": "Handling"
+        },
+        {
+          "key": "bullet",
+          "label": "Bullet"
+        },
+        {
+          "key": "economy",
+          "label": "Economy"
         }
       ]
     },

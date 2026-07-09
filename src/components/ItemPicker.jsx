@@ -32,6 +32,30 @@ function valueTone(raw) {
   return ''
 }
 
+function numericValue(raw) {
+  if (raw == null || raw === '') return NaN
+  const m = String(raw).match(/-?\d+(?:\.\d+)?/)
+  return m ? parseFloat(m[0]) : NaN
+}
+
+// Highest first, items missing the stat entirely always sink to the bottom
+// (a naive `b - a` sort would scatter them unpredictably via NaN).
+function byStatDesc(items, statKey) {
+  return [...items].sort((a, b) => {
+    const va = a.fields?.[statKey]
+    const vb = b.fields?.[statKey]
+    const aEmpty = va == null || va === ''
+    const bEmpty = vb == null || vb === ''
+    if (aEmpty && bEmpty) return 0
+    if (aEmpty) return 1
+    if (bEmpty) return -1
+    const na = numericValue(va)
+    const nb = numericValue(vb)
+    if (!Number.isNaN(na) && !Number.isNaN(nb)) return nb - na
+    return String(vb).localeCompare(String(va))
+  })
+}
+
 // Icon-grid item picker used by the build simulator slots. Replaces native
 // <select> so items can be browsed by icon + key stats instead of by
 // memorizing names, with a search box and optional axis/group-pill filters
@@ -75,7 +99,12 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
     const q = rawQuery.toLowerCase()
     let items = activeSection ? activeSection.items : []
     if (q) items = items.filter((it) => matchesSearch(it, q, rawQuery, lang))
-    if (axis && groupValue) items = items.filter((it) => hasGroup(it, axis.key, groupValue))
+    if (axis && groupValue) {
+      items = items.filter((it) => hasGroup(it, axis.key, groupValue))
+      // The selected group (e.g. an oil ability like "Dmg") doubles as a
+      // sort key when it matches a real stat field — highest buff first.
+      items = byStatDesc(items, groupValue)
+    }
     return items
   }, [activeSection, search, axis, groupValue, lang])
 
@@ -173,22 +202,49 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
             )}
 
             {axis && (
-              <div className="group-pills picker-groups">
-                <button
-                  className={groupValue === '' ? 'pill active' : 'pill'}
-                  onClick={() => setGroupValue('')}
-                >
-                  {t(UI.all, lang)}
-                </button>
-                {axis.values.map((v) => (
+              <div className="picker-groups">
+                <div className="group-pills">
                   <button
-                    key={v.value}
-                    className={groupValue === v.value ? 'pill active' : 'pill'}
-                    onClick={() => setGroupValue(v.value)}
+                    className={groupValue === '' ? 'pill active' : 'pill'}
+                    onClick={() => setGroupValue('')}
                   >
-                    {groupLabel(v.value, v.label, lang)}
+                    {t(UI.all, lang)}
                   </button>
-                ))}
+                  {!axis.groups &&
+                    axis.values.map((v) => (
+                      <button
+                        key={v.value}
+                        className={groupValue === v.value ? 'pill active' : 'pill'}
+                        onClick={() => setGroupValue(v.value)}
+                      >
+                        {groupLabel(v.value, v.label, lang)}
+                      </button>
+                    ))}
+                </div>
+                {/* Oil's "ability" axis has ~15 values — too many for one
+                    flat row, so they're clustered under category headers
+                    (damage/fire-rate/handling/bullet/economy) instead. */}
+                {axis.groups &&
+                  axis.groups.map((g) => (
+                    <div className="group-section" key={g.key}>
+                      <div className="group-section-label">
+                        {groupLabel(g.label, g.label, lang)}
+                      </div>
+                      <div className="group-pills">
+                        {axis.values
+                          .filter((v) => v.group === g.key)
+                          .map((v) => (
+                            <button
+                              key={v.value}
+                              className={groupValue === v.value ? 'pill active' : 'pill'}
+                              onClick={() => setGroupValue(v.value)}
+                            >
+                              {groupLabel(v.value, v.label, lang)}
+                            </button>
+                          ))}
+                      </div>
+                    </div>
+                  ))}
               </div>
             )}
 

@@ -1262,12 +1262,29 @@ def compute_axes(kind: str, items: list[dict]) -> list[dict]:
         ordered = [v for v in order if v in counts]
         rest = sorted((v for v in counts if v not in order),
                       key=lambda v: (-counts[v], str(v).lower()))
+        value_keys = ordered + rest
         values = [
             {"value": v, "label": value_label(axis, v), "count": counts[v]}
-            for v in ordered + rest
+            for v in value_keys
         ]
-        axes.append({"key": axis, "label": AXIS_LABELS.get(axis, axis),
-                     "multi": multi, "values": values})
+        axis_obj = {"key": axis, "label": AXIS_LABELS.get(axis, axis),
+                    "multi": multi, "values": values}
+        # Oil's "ability" axis has ~15 selectable stats — cluster them into
+        # the same damage/fire-rate/handling/bullet/economy categories
+        # already used to organize oil icon folders, so the picker can show
+        # them as labeled sections instead of one long flat pill row.
+        if kind == "oil" and axis == "ability":
+            for val_entry, v in zip(values, value_keys):
+                val_entry["group"] = OIL_STAT_GROUP.get(v, "misc")
+            seen_groups: list[str] = []
+            for v in value_keys:
+                g = OIL_STAT_GROUP.get(v, "misc")
+                if g not in seen_groups:
+                    seen_groups.append(g)
+            axis_obj["groups"] = [
+                {"key": g, "label": OIL_GROUP_LABELS.get(g, g)} for g in seen_groups
+            ]
+        axes.append(axis_obj)
     return axes
 
 
