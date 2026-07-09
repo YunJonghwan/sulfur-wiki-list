@@ -516,15 +516,31 @@ HIDDEN_RECIPES_RE = re.compile(r"===\s*Hidden Recipes\s*===[\s\S]*?(?=\n==|\Z)")
 
 def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
     ingredients = []
-    for n in range(1, 7):
-        val = row.get(f"i{n}")
-        if not val or val == "(blank)":
+    # The wiki's Recipe row template renders slots highest-number-first
+    # (i3, i2, i1 left to right, closest-to-result slot last) — confirmed
+    # against the live pages for Banana Sulfs and Berry Milkshake, both of
+    # which show the opposite of ascending i1..i6 order. Walk descending so
+    # the scraped ingredient order already matches what's on the wiki.
+    for n in range(6, 0, -1):
+        val = (row.get(f"i{n}") or "").strip()
+        label_raw = row.get(f"i{n}Label")
+        filename_raw = row.get(f"i{n}Filename")
+        if val == "(blank)":
+            continue
+        # Some wildcard rows leave i{n} itself empty and describe the slot
+        # only via Filename/Label (e.g. Omelette's seasoning slot, Bark
+        # Bread's beverage slot) — without this, they were silently dropped.
+        if not val and not label_raw and not filename_raw:
             continue
         qty_raw = row.get(f"i{n}Qty")
         qty = int(qty_raw) if qty_raw and qty_raw.isdigit() else 1
-        if CATEGORY_INGREDIENT_RE.match(val):
-            canonical = "Any " + CATEGORY_INGREDIENT_RE.sub("", val).strip()
-            label = row.get(f"i{n}Label") or canonical
+        is_category = bool(val) and bool(CATEGORY_INGREDIENT_RE.match(val))
+        if is_category or (not val and (label_raw or filename_raw)):
+            canonical = (
+                "Any " + CATEGORY_INGREDIENT_RE.sub("", val).strip()
+                if is_category else (label_raw or "Any")
+            )
+            label = label_raw or canonical
             name, exception = split_wildcard_exception(label)
             note = f"{exception} 제외" if exception else None
             # "All other N types" reads as a completeness statement (category
@@ -536,7 +552,7 @@ def _row_ingredients(row: dict[str, str]) -> list[dict[str, object]]:
                 name = canonical
             ing = {
                 "name": name, "qty": qty, "wildcard": True,
-                "filename": row.get(f"i{n}Filename"),
+                "filename": filename_raw,
             }
             if note:
                 ing["note"] = note
