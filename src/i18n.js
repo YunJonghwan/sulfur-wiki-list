@@ -167,6 +167,10 @@ export const GROUP_KO = {
   Throat: '목',
   Body: '몸통',
   Limb: '팔다리',
+  // muzzle attachment function groups
+  compensator: '소염기/컴펜세이터',
+  silencer: '소음기',
+  barrel: '총열 연장',
 }
 
 export function groupLabel(value, label, lang) {

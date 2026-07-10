@@ -11,6 +11,9 @@
   --neg: #e0725f;
   --row-hover: #2b2521;
   --sticky-bg: #1e1a17;
+  --muzzle-compensator: #5b8fd9;
+  --muzzle-silencer: #a67fd1;
+  --muzzle-barrel: #4fb0a8;
   color-scheme: dark;
 }
 
@@ -819,6 +822,53 @@ main {
 .picker-tile.disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.picker-tile.muzzle-compensator {
+  border-left: 3px solid var(--muzzle-compensator);
+}
+
+.picker-tile.muzzle-silencer {
+  border-left: 3px solid var(--muzzle-silencer);
+}
+
+.picker-tile.muzzle-barrel {
+  border-left: 3px solid var(--muzzle-barrel);
+}
+
+.muzzle-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0 0.75rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.muzzle-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.muzzle-legend-item::before {
+  content: '';
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.muzzle-legend-item.muzzle-compensator {
+  color: var(--muzzle-compensator);
+}
+
+.muzzle-legend-item.muzzle-silencer {
+  color: var(--muzzle-silencer);
+}
+
+.muzzle-legend-item.muzzle-barrel {
+  color: var(--muzzle-barrel);
 }
 
 .picker-tile-head {

@@ -26,6 +26,29 @@ function hasGroup(item, axisKey, value) {
   return Array.isArray(g) ? g.includes(value) : g === value
 }
 
+// Muzzle Attachment has no structured field distinguishing recoil
+// compensators from silencers from barrel extensions (mirrors the same
+// hand-curated grouping DataTable.jsx uses for its default sort) — shown
+// here as a colored left border so similar attachments are easy to spot at
+// a glance while browsing.
+const MUZZLE_GROUP = {
+  'A12C Muzzle Brake': 'compensator',
+  'Breznik BMD': 'compensator',
+  'Breznik BMD (Tactical)': 'compensator',
+  'Haukland Flash Hider': 'compensator',
+  'Warmage Compensator': 'compensator',
+  'Aftermarket Haukland Silencer': 'silencer',
+  'Haukland Silencer': 'silencer',
+  'M87 "Albatross" Silencer': 'silencer',
+  'SR-P3 Silencer': 'silencer',
+  'Barrel Extension 2"': 'barrel',
+  'Barrel Extension 4"': 'barrel',
+  'Barrel Extension 6"': 'barrel',
+  'Improvised Barrel Extension': 'barrel',
+  'Shrouded Barrel Extension': 'barrel',
+}
+const MUZZLE_ORDER = { compensator: 0, silencer: 1, barrel: 2 }
+
 // Puts the selected ability's own field first in a tile's chip list (same
 // spot on every tile), matching the main data table's behavior when sorting
 // by a picked ability — the rest keep their normal order.
@@ -121,6 +144,12 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
       // The selected group (e.g. an oil ability like "Dmg") doubles as a
       // sort key when it matches a real stat field — highest buff first.
       items = byStatDesc(items, groupValue)
+    } else if (items.some((it) => MUZZLE_GROUP[it.name])) {
+      // Cluster muzzle attachments by function (compensator/silencer/
+      // barrel extension) so similar ones sit next to each other.
+      items = [...items].sort(
+        (a, b) => MUZZLE_ORDER[MUZZLE_GROUP[a.name]] - MUZZLE_ORDER[MUZZLE_GROUP[b.name]],
+      )
     }
     return items
   }, [activeSection, search, axis, groupValue, lang])
@@ -259,14 +288,25 @@ export default function ItemPicker({ lang, value, sections, isDisabled, onSelect
               </div>
             )}
 
+            {filtered.some((it) => MUZZLE_GROUP[it.name]) && (
+              <div className="muzzle-legend">
+                {Object.keys(MUZZLE_ORDER).map((g) => (
+                  <span className={`muzzle-legend-item muzzle-${g}`} key={g}>
+                    {groupLabel(g, g, lang)}
+                  </span>
+                ))}
+              </div>
+            )}
+
             <div className="picker-grid">
               {filtered.map((it) => {
                 const disabled = isDisabled?.(it, activeSection.key) && it.name !== value?.name
+                const muzzleGroup = MUZZLE_GROUP[it.name]
                 return (
                   <button
                     type="button"
                     key={it.name}
-                    className={`picker-tile${disabled ? ' disabled' : ''}${value?.name === it.name ? ' selected' : ''}`}
+                    className={`picker-tile${disabled ? ' disabled' : ''}${value?.name === it.name ? ' selected' : ''}${muzzleGroup ? ` muzzle-${muzzleGroup}` : ''}`}
                     disabled={disabled}
                     onClick={() => pick(it)}
                   >
