@@ -213,22 +213,28 @@ export function computeGearExtras(gearItems) {
 }
 
 // Compute final weapon stats given enchants (oils/scroll) and gear bonuses.
-export function computeWeapon(weapon, enchants, gearItems) {
+export function computeWeapon(weapon, enchants, gearItems, attachmentItems = []) {
   if (!weapon) return null
   const wf = fieldsOf(weapon)
   const enchItems = enchants.filter((e) => e && e.item)
+  // Attachments modify weapon stats the same way oils do, but — unlike
+  // enchant slots — don't cost extra durability per shot, so they're kept
+  // out of enchItems (used below for the durability calc) and only merged
+  // in for the stat/extras math.
+  const attachEnch = attachmentItems.filter(Boolean).map((item) => ({ type: 'attachment', item }))
+  const modItems = [...enchItems, ...attachEnch]
   const gear = gearItems.filter(Boolean)
   const weaponClass = weapon.groups?.class
   const isAuto = (wf.Mode || '').toLowerCase().includes('auto')
 
-  // Gather flat/percent modifiers per weapon stat from oils + scroll.
+  // Gather flat/percent modifiers per weapon stat from oils + scroll + attachments.
   const flat = {}
   const pct = {}
   for (const s of WEAPON_STATS) {
     flat[s] = 0
     pct[s] = 0
   }
-  for (const { item } of enchItems) {
+  for (const { item } of modItems) {
     const f = fieldsOf(item)
     for (const [modKey, weaponKey] of Object.entries(MOD_TO_WEAPON)) {
       const p = parseNum(f[modKey])
@@ -277,7 +283,7 @@ export function computeWeapon(weapon, enchants, gearItems) {
   const dmgField = parseDamageField(wf.Damage)
   const baseProjectiles = dmgField ? dmgField.count : 1
   let projecPct = 0
-  for (const { item } of enchItems) {
+  for (const { item } of modItems) {
     const p = parseNum(fieldsOf(item).ProjecAmnt)
     if (p && p.percent) projecPct += p.num
   }
@@ -324,7 +330,7 @@ export function computeWeapon(weapon, enchants, gearItems) {
   // flat/percent) is still listed as distinct entries.
   const META = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'SubType'])
   const byExtraKey = new Map()
-  for (const { item } of enchItems) {
+  for (const { item } of modItems) {
     const f = fieldsOf(item)
     for (const [k, v] of Object.entries(f)) {
       if (META.has(k)) continue
@@ -368,6 +374,20 @@ export function computeWeapon(weapon, enchants, gearItems) {
     stats, durability, extras, gearDmgPct,
     totalDamage, totalDamageBase, baseProjectiles, projectileCount,
   }
+}
+
+// Weapon compatibility list entries are wiki link targets, some naming an
+// attachment type category ("Muzzle Attachments", plural) and some naming
+// one specific item ("Gun Crank", "Priming Bolt" — chamber attachments
+// apparently aren't universally interchangeable, per-weapon).
+function stripTrailingS(s) {
+  return s.endsWith('s') ? s.slice(0, -1) : s
+}
+
+export function isAttachmentCompatible(weapon, attachment) {
+  const compat = weapon?.attachmentCompat
+  if (!compat) return false
+  return compat.some((c) => stripTrailingS(c) === attachment.groups?.type || c === attachment.name)
 }
 
 // Hitbox damage multipliers — a single table shared by every weapon/enemy,

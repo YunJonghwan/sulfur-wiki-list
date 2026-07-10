@@ -1,10 +1,21 @@
 import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t, groupLabel } from '../i18n.js'
-import { computeWeapon, computePlayerStats, computeGearExtras, computeHitboxDamage } from '../build.js'
+import {
+  computeWeapon, computePlayerStats, computeGearExtras, computeHitboxDamage,
+  isAttachmentCompatible,
+} from '../build.js'
 import ItemPicker from './ItemPicker.jsx'
 
 const BASE = import.meta.env.BASE_URL
-const DATASETS = ['weapon', 'oil', 'scroll', 'equipment', 'passive']
+const DATASETS = ['weapon', 'oil', 'scroll', 'equipment', 'passive', 'attachment']
+
+// Attachment slot -> the attachment.json "type" group it holds.
+const ATTACHMENT_SLOTS = [
+  { key: 'muzzle', type: 'Muzzle Attachment' },
+  { key: 'sight', type: 'Sight' },
+  { key: 'laser', type: 'Laser Sight' },
+  { key: 'chamber', type: 'Chamber Attachment' },
+]
 
 export default function BuildSimulator({ lang }) {
   const [data, setData] = useState(null)
@@ -13,6 +24,7 @@ export default function BuildSimulator({ lang }) {
   const [weapon, setWeapon] = useState(null)
   const [level, setLevel] = useState(5)
   const [enchants, setEnchants] = useState(Array(5).fill(null))
+  const [attachments, setAttachments] = useState({ muzzle: null, sight: null, laser: null, chamber: null })
   const [head, setHead] = useState(null)
   const [chest, setChest] = useState(null)
   const [feet, setFeet] = useState([null, null])
@@ -35,6 +47,12 @@ export default function BuildSimulator({ lang }) {
       cancelled = true
     }
   }, [])
+
+  // A weapon's accepted attachment types/items differs from the last one —
+  // drop any picks that might no longer be compatible.
+  useEffect(() => {
+    setAttachments({ muzzle: null, sight: null, laser: null, chamber: null })
+  }, [weapon])
 
   const labelMap = useMemo(() => {
     const m = {}
@@ -68,9 +86,13 @@ export default function BuildSimulator({ lang }) {
 
   const activeEnchants = enchants.slice(0, level)
   const gearItems = [head, chest, feet[0], feet[1], ...passives]
-  const result = computeWeapon(weapon, activeEnchants, gearItems)
+  const attachmentItems = ATTACHMENT_SLOTS.map((s) => attachments[s.key])
+  const result = computeWeapon(weapon, activeEnchants, gearItems, attachmentItems)
   const playerStats = computePlayerStats(gearItems)
   const gearExtras = computeGearExtras(gearItems)
+
+  const compatibleAttachments = (type) =>
+    weapon ? data.attachment.items.filter((it) => it.groups?.type === type && isAttachmentCompatible(weapon, it)) : []
 
   // Names already used, to prevent duplicate oils / multiple scrolls.
   const usedOils = new Set(
@@ -164,6 +186,23 @@ export default function BuildSimulator({ lang }) {
                 labelFor={labelFor}
               />
             </div>
+          ))}
+        </div>
+
+        {/* Attachments — only shown as pickable once a weapon is chosen,
+            since which types/items fit depends on the weapon itself. */}
+        <div className="slot-group">
+          <h3>{t(UI.attachmentSlots, lang)}</h3>
+          {ATTACHMENT_SLOTS.map((s) => (
+            <GearSlot
+              key={s.key}
+              label={groupLabel(s.type, s.type, lang)}
+              items={compatibleAttachments(s.type)}
+              value={attachments[s.key]}
+              onChange={(v) => setAttachments((prev) => ({ ...prev, [s.key]: v }))}
+              lang={lang}
+              labelFor={labelFor}
+            />
           ))}
         </div>
 

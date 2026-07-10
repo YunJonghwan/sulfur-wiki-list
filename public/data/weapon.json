@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-09T10:59:27.497659+00:00",
+  "generated": "2026-07-10T06:53:40.409392+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -171,6 +171,13 @@
         "SellVal": "1600",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/revolver/.357_Balthazar.png"
     },
     {
@@ -196,6 +203,13 @@
         "SellVal": "600",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/shotgun/1889_Mario.png"
     },
     {
@@ -221,6 +235,13 @@
         "SellVal": "300",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/shotgun/Arbiter_2.png"
     },
     {
@@ -246,6 +267,11 @@
         "SellVal": "1500",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights",
+        "Gun Crank"
+      ],
       "icon": "icons/weapon/shotgun/Augusta.png"
     },
     {
@@ -270,6 +296,13 @@
         "Durability": "2250",
         "SellVal": "900"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Beck_8.png"
     },
     {
@@ -294,6 +327,13 @@
         "Durability": "3000",
         "SellVal": "1600"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights",
+        "Muzzle",
+        "Gun Crank",
+        "Chamber Attachment"
+      ],
       "icon": "icons/weapon/revolver/Blackwater.png"
     },
     {
@@ -318,6 +358,12 @@
         "Durability": "1200",
         "SellVal": "950"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/shotgun/Breacher_8.png"
     },
     {
@@ -343,6 +389,13 @@
         "SellVal": "750",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/bronco_89.png"
     },
     {
@@ -368,6 +421,10 @@
         "SellVal": "4000",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights"
+      ],
       "icon": "icons/weapon/assault-rifle/Catacoil_Rapid_X.png"
     },
     {
@@ -392,6 +449,13 @@
         "Durability": "2700",
         "SellVal": "2000"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Cavalier.png"
     },
     {
@@ -416,6 +480,13 @@
         "Durability": "3200",
         "SellVal": "1750"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/light-machine-gun/Chat-Pardeur_98.png"
     },
     {
@@ -440,6 +511,13 @@
         "Durability": "2800",
         "SellVal": "2000"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights",
+        "Muzzle",
+        "Gun Crank",
+        "Chamber Attachment"
+      ],
       "icon": "icons/weapon/submachine-gun/Chimera_Rapid.png"
     },
     {
@@ -465,6 +543,13 @@
         "SellVal": "2000",
         "SoldBy": "Stiffleg, Haukland Rep., Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/assault-rifle/Corpsemaker.png"
     },
     {
@@ -514,6 +599,13 @@
         "Durability": "3600",
         "SellVal": "1600"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Deathstar_PG.png"
     },
     {
@@ -539,6 +631,13 @@
         "SellVal": "1600",
         "SoldBy": "Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/sniper/Dolphin_99.png"
     },
     {
@@ -564,6 +663,13 @@
         "SellVal": "250",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Drifter_9.png"
     },
     {
@@ -589,6 +695,13 @@
         "SellVal": "4000",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/light-machine-gun/Duhar.png"
     },
     {
@@ -614,6 +727,13 @@
         "SellVal": "2750",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/rifle/Farsight.png"
     },
     {
@@ -639,6 +759,13 @@
         "SellVal": "4500",
         "SoldBy": "Haukland Rep., Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Ferryman.png"
     },
     {
@@ -664,6 +791,13 @@
         "SellVal": "1000",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/flicker.png"
     },
     {
@@ -714,6 +848,13 @@
         "SellVal": "500",
         "SoldBy": "Stiffleg, Haukland Rep., Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Gravekeeper.png"
     },
     {
@@ -739,6 +880,13 @@
         "SellVal": "1500",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Hell_'N'_Back.png"
     },
     {
@@ -764,6 +912,12 @@
         "SellVal": "1600",
         "SoldBy": "Stiffleg, Jaques De Fector, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle",
+        "Sight",
+        "Chamber Chisel",
+        "Laser Sights"
+      ],
       "icon": "icons/weapon/sniper/Impala_Gravita.png"
     },
     {
@@ -789,6 +943,13 @@
         "SellVal": "750",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/rifle/Knop_.22.png"
     },
     {
@@ -814,6 +975,13 @@
         "SellVal": "4500",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/sniper/Longboy.png"
     },
     {
@@ -839,6 +1007,13 @@
         "SellVal": "3850",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/assault-rifle/M11A2_Fisk.png"
     },
     {
@@ -864,6 +1039,13 @@
         "SellVal": "2500",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/rifle/M182_Pierre-Fusil.png"
     },
     {
@@ -889,6 +1071,13 @@
         "SellVal": "700",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/M3_Termite.png"
     },
     {
@@ -914,6 +1103,13 @@
         "SellVal": "4000",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/shotgun/Majordome.png"
     },
     {
@@ -939,6 +1135,13 @@
         "SellVal": "750",
         "SoldBy": "Stiffleg, Skrip, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/shotgun/Mossman.png"
     },
     {
@@ -964,6 +1167,11 @@
         "SellVal": "2500",
         "SoldBy": "Qiosk"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt"
+      ],
       "icon": "icons/weapon/light-machine-gun/Neuraxis_F22.png"
     },
     {
@@ -988,6 +1196,13 @@
         "Durability": "2000",
         "SellVal": "1"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/P38_Dirk.png"
     },
     {
@@ -1013,6 +1228,13 @@
         "SellVal": "1500",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/revolver/Palehorse_Topclipper.png"
     },
     {
@@ -1038,6 +1260,13 @@
         "SellVal": "455",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Ploika_Compact.png"
     },
     {
@@ -1063,6 +1292,13 @@
         "SellVal": "4000",
         "SoldBy": "Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/light-machine-gun/Rektor_100rd.png"
     },
     {
@@ -1088,6 +1324,13 @@
         "SellVal": "3500",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/sniper/Rokua_.308.png"
     },
     {
@@ -1113,6 +1356,13 @@
         "SellVal": "2500",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Salamander.png"
     },
     {
@@ -1138,6 +1388,13 @@
         "SellVal": "250",
         "SoldBy": "Stiffleg, Skrip, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/revolver/Snut_.38.png"
     },
     {
@@ -1163,6 +1420,13 @@
         "SellVal": "950",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Socom_9.png"
     },
     {
@@ -1188,6 +1452,13 @@
         "SellVal": "1750",
         "BuyVal": "3500"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/assault-rifle/Socom_ACR.png"
     },
     {
@@ -1213,6 +1484,13 @@
         "SellVal": "3250",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Songbird.png"
     },
     {
@@ -1238,6 +1516,13 @@
         "SellVal": "1250",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Star_&_Witness.png"
     },
     {
@@ -1263,6 +1548,13 @@
         "SellVal": "1750",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/rifle/Tailor_Marksman_MKII.png"
     },
     {
@@ -1287,6 +1579,13 @@
         "Durability": "3700",
         "SellVal": "1500"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/pistol/Terrier_URB..png"
     },
     {
@@ -1312,6 +1611,13 @@
         "SellVal": "2500",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/assault-rifle/Type_80_Typhoon.png"
     },
     {
@@ -1337,6 +1643,10 @@
         "SellVal": "1200",
         "SoldBy": "Qiosk"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights"
+      ],
       "icon": "icons/weapon/pistol/unknown.png"
     },
     {
@@ -1362,6 +1672,13 @@
         "SellVal": "2400",
         "SoldBy": "Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Valet.png"
     },
     {
@@ -1387,6 +1704,13 @@
         "SellVal": "1500",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/submachine-gun/Vrede.png"
     },
     {
@@ -1411,6 +1735,13 @@
         "Durability": "3500",
         "SellVal": "3500"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Gun Crank",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/light-machine-gun/Warpig.png"
     },
     {
@@ -1436,6 +1767,13 @@
         "SellVal": "3000",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Muzzle Attachments",
+        "Sight",
+        "Laser Sights",
+        "Priming Bolt",
+        "Chamber Chisel"
+      ],
       "icon": "icons/weapon/assault-rifle/Wingman.png"
     },
     {
@@ -1461,6 +1799,10 @@
         "SellVal": "1000",
         "SoldBy": "Stiffleg"
       },
+      "attachmentCompat": [
+        "Sight",
+        "Laser Sights"
+      ],
       "icon": "icons/weapon/revolver/Wyatt_PULSAR.png"
     }
   ]

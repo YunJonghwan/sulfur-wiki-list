@@ -605,6 +605,26 @@ def attachment_zoom(fields: dict[str, str], wikitext: str) -> str | None:
     return f"×{m.group(1)}" if m else "×1"
 
 
+# Which attachment types/items a weapon accepts, from its own "Available
+# Attachments" section — a bullet list of wiki links, e.g.
+# "• [[Muzzle Attachments]]", "• [[Sight|Sights]]", "• [[Gun Crank]]".
+# The link target is kept as-is (not resolved here); the frontend matches it
+# against an attachment's type (loosely, dropping a trailing "s") or exact
+# item name, since some entries name a category ("Sights") and others name
+# one specific item ("Gun Crank").
+ATTACHMENTS_SECTION_RE = re.compile(
+    r"==\s*Available Attachments\s*==([\s\S]*?)(?:\n==[^=]|\Z)"
+)
+ATTACHMENT_BULLET_RE = re.compile(r"^•\s*\[\[([^\]|]+)", re.MULTILINE)
+
+
+def weapon_attachment_compat(wikitext: str) -> list[str]:
+    m = ATTACHMENTS_SECTION_RE.search(wikitext)
+    if not m:
+        return []
+    return [name.strip() for name in ATTACHMENT_BULLET_RE.findall(m.group(1))]
+
+
 # A handful of consumables (Christmas Spice, Coffee, Flour, Karl-Oskar...)
 # state their heal/status-removal effect only as bolded prose in the
 # Description section ("'''Gives 5 health over 2.5 seconds.'''") instead of
@@ -1366,6 +1386,10 @@ def build(refresh: bool = False) -> None:
         }
         if recipe:
             item["recipe"] = recipe
+        if kind == "weapon":
+            compat = weapon_attachment_compat(wikitext)
+            if compat:
+                item["attachmentCompat"] = compat
         buckets[kind].append(item)
 
     download_icons(buckets)
