@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-10T06:53:40.409392+00:00",
+  "generated": "2026-07-10T07:05:06.146620+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -178,6 +178,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "128",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "10"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "20"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "320",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "30"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "32",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "25"
+        }
+      ],
       "icon": "icons/weapon/revolver/.357_Balthazar.png"
     },
     {
@@ -210,6 +247,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "4",
+          "recoil": "10"
+        },
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "4"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "10"
+        }
+      ],
       "icon": "icons/weapon/shotgun/1889_Mario.png"
     },
     {
@@ -241,6 +315,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "83",
+          "spread": "10",
+          "recoil": "30"
+        },
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "3",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "3",
+          "spread": "2",
+          "recoil": "15"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "3",
+          "spread": "2",
+          "recoil": "20"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "3",
+          "spread": "2",
+          "recoil": "30"
+        }
       ],
       "icon": "icons/weapon/shotgun/Arbiter_2.png"
     },
@@ -303,6 +414,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "17"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "17"
+        }
+      ],
       "icon": "icons/weapon/pistol/Beck_8.png"
     },
     {
@@ -334,6 +482,43 @@
         "Gun Crank",
         "Chamber Attachment"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "128",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "7"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "16"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "320",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "35"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "32",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "25"
+        }
+      ],
       "icon": "icons/weapon/revolver/Blackwater.png"
     },
     {
@@ -363,6 +548,43 @@
         "Sight",
         "Laser Sights",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "818",
+          "spread": "10",
+          "recoil": "20"
+        },
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "18",
+          "spread": "2",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "18",
+          "spread": "2",
+          "recoil": "8"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "18",
+          "spread": "2",
+          "recoil": "10"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "18",
+          "spread": "2",
+          "recoil": "20"
+        }
       ],
       "icon": "icons/weapon/shotgun/Breacher_8.png"
     },
@@ -395,6 +617,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "90",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "4"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "8"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "150",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "20"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "300",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "35"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "30",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "30"
+        }
       ],
       "icon": "icons/weapon/pistol/bronco_89.png"
     },
@@ -456,6 +715,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "8"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "20"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "8",
+          "recoil": "20"
+        }
+      ],
       "icon": "icons/weapon/pistol/Cavalier.png"
     },
     {
@@ -486,6 +782,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "0.5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "3"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "8"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "8"
+        }
       ],
       "icon": "icons/weapon/light-machine-gun/Chat-Pardeur_98.png"
     },
@@ -518,6 +851,43 @@
         "Gun Crank",
         "Chamber Attachment"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "66",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "88",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "110",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "220",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "13"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "22",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "13"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/Chimera_Rapid.png"
     },
     {
@@ -549,6 +919,43 @@
         "Laser Sights",
         "Priming Bolt",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "3"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "12"
+        }
       ],
       "icon": "icons/weapon/assault-rifle/Corpsemaker.png"
     },
@@ -606,6 +1013,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "1.5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2.5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "4"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "16"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/Deathstar_PG.png"
     },
     {
@@ -637,6 +1081,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "150",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "0"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "250",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "500",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "8"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "50",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "8"
+        }
       ],
       "icon": "icons/weapon/sniper/Dolphin_99.png"
     },
@@ -670,6 +1151,43 @@
         "Priming Bolt",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "10"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "20"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "20"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/Drifter_9.png"
     },
     {
@@ -701,6 +1219,43 @@
         "Laser Sights",
         "Priming Bolt",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "0"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "1"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "2"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "7"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "7"
+        }
       ],
       "icon": "icons/weapon/light-machine-gun/Duhar.png"
     },
@@ -734,6 +1289,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "132",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "1.5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "176",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2.5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "220",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "4"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "440",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "44",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "16"
+        }
+      ],
       "icon": "icons/weapon/rifle/Farsight.png"
     },
     {
@@ -765,6 +1357,43 @@
         "Laser Sights",
         "Priming Bolt",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "90",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "150",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "300",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "30",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "12"
+        }
       ],
       "icon": "icons/weapon/submachine-gun/Ferryman.png"
     },
@@ -798,6 +1427,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "10"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "20"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "30"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "3",
+          "recoil": "80"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "60"
+        }
+      ],
       "icon": "icons/weapon/pistol/flicker.png"
     },
     {
@@ -823,6 +1489,43 @@
         "SellVal": "1750",
         "SoldBy": "Stiffleg, Qiosk"
       },
+      "caliberModding": [
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "17"
+        },
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "17"
+        }
+      ],
       "icon": "icons/weapon/shotgun/Flock_76.png"
     },
     {
@@ -854,6 +1557,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "9"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "40"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "27"
+        }
       ],
       "icon": "icons/weapon/pistol/Gravekeeper.png"
     },
@@ -887,6 +1627,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "1.2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "12"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "40"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "25"
+        }
+      ],
       "icon": "icons/weapon/pistol/Hell_'N'_Back.png"
     },
     {
@@ -917,6 +1694,43 @@
         "Sight",
         "Chamber Chisel",
         "Laser Sights"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "320",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "10"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "20"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "800",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "30"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "80",
+          "projectiles": "8",
+          "spread": "2.5",
+          "recoil": "25"
+        }
       ],
       "icon": "icons/weapon/sniper/Impala_Gravita.png"
     },
@@ -950,6 +1764,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "7"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "15"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "15"
+        }
+      ],
       "icon": "icons/weapon/rifle/Knop_.22.png"
     },
     {
@@ -981,6 +1832,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "0"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "8"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "3",
+          "recoil": "8"
+        }
       ],
       "icon": "icons/weapon/sniper/Longboy.png"
     },
@@ -1014,6 +1902,43 @@
         "Priming Bolt",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "15"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "13"
+        }
+      ],
       "icon": "icons/weapon/assault-rifle/M11A2_Fisk.png"
     },
     {
@@ -1045,6 +1970,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "12"
+        }
       ],
       "icon": "icons/weapon/rifle/M182_Pierre-Fusil.png"
     },
@@ -1078,6 +2040,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "66",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "88",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "3"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "110",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "7"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "220",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "17"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "22",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "17"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/M3_Termite.png"
     },
     {
@@ -1110,6 +2109,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "3.5",
+          "recoil": "17"
+        },
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1.0",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "1.0",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1.0",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1.0",
+          "recoil": "17"
+        }
+      ],
       "icon": "icons/weapon/shotgun/Majordome.png"
     },
     {
@@ -1141,6 +2177,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "15"
+        },
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "3"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "15"
+        }
       ],
       "icon": "icons/weapon/shotgun/Mossman.png"
     },
@@ -1203,6 +2276,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "7.5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "50"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "30"
+        }
+      ],
       "icon": "icons/weapon/pistol/P38_Dirk.png"
     },
     {
@@ -1234,6 +2344,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "128",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "9"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "17"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "320",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "27"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "32",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "27"
+        }
       ],
       "icon": "icons/weapon/revolver/Palehorse_Topclipper.png"
     },
@@ -1267,6 +2414,43 @@
         "Priming Bolt",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "5",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "5",
+          "recoil": "7"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "5",
+          "recoil": "10"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "5",
+          "recoil": "20"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "20"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/Ploika_Compact.png"
     },
     {
@@ -1298,6 +2482,43 @@
         "Laser Sights",
         "Priming Bolt",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "0"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "1"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "2"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "4",
+          "recoil": "7"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "7"
+        }
       ],
       "icon": "icons/weapon/light-machine-gun/Rektor_100rd.png"
     },
@@ -1331,6 +2552,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "1",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "12"
+        }
+      ],
       "icon": "icons/weapon/sniper/Rokua_.308.png"
     },
     {
@@ -1362,6 +2620,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "10"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "15"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "28"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "25"
+        }
       ],
       "icon": "icons/weapon/pistol/Salamander.png"
     },
@@ -1395,6 +2690,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "128",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "10"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "15"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "320",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "30"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "32",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "25"
+        }
+      ],
       "icon": "icons/weapon/revolver/Snut_.38.png"
     },
     {
@@ -1426,6 +2758,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "10"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "40"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "30"
+        }
       ],
       "icon": "icons/weapon/pistol/Socom_9.png"
     },
@@ -1459,6 +2828,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "1.5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "3"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "10"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "15"
+        }
+      ],
       "icon": "icons/weapon/assault-rifle/Socom_ACR.png"
     },
     {
@@ -1490,6 +2896,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "3.5",
+          "recoil": "2.5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "3.5",
+          "recoil": "6"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "3.5",
+          "recoil": "8"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "3.5",
+          "recoil": "18"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "19"
+        }
       ],
       "icon": "icons/weapon/submachine-gun/Songbird.png"
     },
@@ -1523,6 +2966,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "7"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "12"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "50"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "30"
+        }
+      ],
       "icon": "icons/weapon/pistol/Star_&_Witness.png"
     },
     {
@@ -1555,6 +3035,43 @@
         "Gun Crank",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "5"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "160",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "10"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "15"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "400",
+          "projectiles": "1",
+          "spread": "2",
+          "recoil": "30"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "40",
+          "projectiles": "8",
+          "spread": "5",
+          "recoil": "25"
+        }
+      ],
       "icon": "icons/weapon/rifle/Tailor_Marksman_MKII.png"
     },
     {
@@ -1585,6 +3102,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "78",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "3"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "104",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "130",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "10"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "260",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "60"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "26",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "27"
+        }
       ],
       "icon": "icons/weapon/pistol/Terrier_URB..png"
     },
@@ -1617,6 +3171,43 @@
         "Laser Sights",
         "Priming Bolt",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "2"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "4"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "12"
+        }
       ],
       "icon": "icons/weapon/assault-rifle/Type_80_Typhoon.png"
     },
@@ -1679,6 +3270,43 @@
         "Priming Bolt",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "17"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "17"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/Valet.png"
     },
     {
@@ -1711,6 +3339,43 @@
         "Priming Bolt",
         "Chamber Chisel"
       ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "2"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "4"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "17"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "7",
+          "recoil": "17"
+        }
+      ],
       "icon": "icons/weapon/submachine-gun/Vrede.png"
     },
     {
@@ -1741,6 +3406,43 @@
         "Laser Sights",
         "Gun Crank",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "60",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "80",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "3"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "100",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "6"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "200",
+          "projectiles": "1",
+          "spread": "2.5",
+          "recoil": "16"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "20",
+          "projectiles": "8",
+          "spread": "8",
+          "recoil": "12"
+        }
       ],
       "icon": "icons/weapon/light-machine-gun/Warpig.png"
     },
@@ -1773,6 +3475,43 @@
         "Laser Sights",
         "Priming Bolt",
         "Chamber Chisel"
+      ],
+      "caliberModding": [
+        {
+          "caliber": "9mm",
+          "damage": "72",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "1"
+        },
+        {
+          "caliber": "5.56mm",
+          "damage": "96",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "3"
+        },
+        {
+          "caliber": "7.62mm",
+          "damage": "120",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "5"
+        },
+        {
+          "caliber": "50 BMG",
+          "damage": "240",
+          "projectiles": "1",
+          "spread": "1.5",
+          "recoil": "12"
+        },
+        {
+          "caliber": "12ga",
+          "damage": "24",
+          "projectiles": "8",
+          "spread": "6",
+          "recoil": "12"
+        }
       ],
       "icon": "icons/weapon/assault-rifle/Wingman.png"
     },

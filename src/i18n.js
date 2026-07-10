@@ -44,6 +44,7 @@ export const UI = {
   level: { en: 'Level', ko: '레벨' },
   enchantSlots: { en: 'Enchantments (oils / scroll)', ko: '강화 (오일 / 스크롤)' },
   attachmentSlots: { en: 'Attachments', ko: '부착물' },
+  chamberChisel: { en: 'Chamber Chisel', ko: '챔버 칩셀' },
   armorSlots: { en: 'Armor', ko: '방어구' },
   passiveSlots: { en: 'Passive items', ko: '패시브 아이템' },
   head: { en: 'Headwear', ko: '모자' },

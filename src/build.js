@@ -33,6 +33,13 @@ export function parseDamageField(raw) {
   return { perProjectile, count }
 }
 
+// "50 BMG" (chisel ChamberAmmo) vs "50 BMG" (caliber table) usually match
+// as-is, but casing/spacing drifts a little across wiki pages ("12ga" vs
+// "12Ga") — compare loosely.
+function normCaliber(s) {
+  return (s || '').replace(/\s+/g, '').toLowerCase()
+}
+
 // Mirrors classify_ability() in scripts/scrape.py (same stat-direction
 // tables) — used there to label an oil's overall composition, used here to
 // sort each individual "other effect" chip into buff/debuff/constraint
@@ -213,9 +220,19 @@ export function computeGearExtras(gearItems) {
 }
 
 // Compute final weapon stats given enchants (oils/scroll) and gear bonuses.
-export function computeWeapon(weapon, enchants, gearItems, attachmentItems = []) {
+export function computeWeapon(weapon, enchants, gearItems, attachmentItems = [], chisel = null) {
   if (!weapon) return null
-  const wf = fieldsOf(weapon)
+  // A Chamber Chisel swaps the weapon onto a different caliber's exact
+  // Damage/Projectiles/Spread/Recoil, read from the weapon's own "Caliber
+  // Modding" table (real per-weapon values — two weapons on the same
+  // caliber don't necessarily match). Everything else (oils, attachments,
+  // gear) then applies on top of this as the new base, same as always.
+  const caliberRow = chisel
+    ? weapon.caliberModding?.find((r) => normCaliber(r.caliber) === normCaliber(fieldsOf(chisel).ChamberAmmo))
+    : null
+  const wf = caliberRow
+    ? { ...fieldsOf(weapon), Damage: caliberRow.damage, Spread: caliberRow.spread, Recoil: caliberRow.recoil }
+    : fieldsOf(weapon)
   const enchItems = enchants.filter((e) => e && e.item)
   // Attachments modify weapon stats the same way oils do, but — unlike
   // enchant slots — don't cost extra durability per shot, so they're kept
@@ -280,8 +297,11 @@ export function computeWeapon(weapon, enchants, gearItems, attachmentItems = [])
   // Projectile Amount) makes that per-pellet row alone look like a pure
   // nerf. Surface the actual projectile count and the resulting per-shot
   // total, so it's clear whether the net change is really a loss.
+  // The Caliber Modding table already splits pellet count into its own
+  // "Projectiles" column, unlike the weapon's default Damage field baking
+  // it in as "×N" — use that directly instead of re-parsing wf.Damage.
   const dmgField = parseDamageField(wf.Damage)
-  const baseProjectiles = dmgField ? dmgField.count : 1
+  const baseProjectiles = caliberRow ? parseFloat(caliberRow.projectiles) || 1 : dmgField ? dmgField.count : 1
   let projecPct = 0
   for (const { item } of modItems) {
     const p = parseNum(fieldsOf(item).ProjecAmnt)

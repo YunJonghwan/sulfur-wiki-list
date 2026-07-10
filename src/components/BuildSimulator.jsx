@@ -7,7 +7,7 @@ import {
 import ItemPicker from './ItemPicker.jsx'
 
 const BASE = import.meta.env.BASE_URL
-const DATASETS = ['weapon', 'oil', 'scroll', 'equipment', 'passive', 'attachment']
+const DATASETS = ['weapon', 'oil', 'scroll', 'equipment', 'passive', 'attachment', 'chisel']
 
 // Attachment slot -> the attachment.json "type" group it holds.
 const ATTACHMENT_SLOTS = [
@@ -25,6 +25,7 @@ export default function BuildSimulator({ lang }) {
   const [level, setLevel] = useState(5)
   const [enchants, setEnchants] = useState(Array(5).fill(null))
   const [attachments, setAttachments] = useState({ muzzle: null, sight: null, laser: null, chamber: null })
+  const [chisel, setChisel] = useState(null)
   const [head, setHead] = useState(null)
   const [chest, setChest] = useState(null)
   const [feet, setFeet] = useState([null, null])
@@ -48,10 +49,11 @@ export default function BuildSimulator({ lang }) {
     }
   }, [])
 
-  // A weapon's accepted attachment types/items differs from the last one —
-  // drop any picks that might no longer be compatible.
+  // A weapon's accepted attachment types/items (and available calibers)
+  // differs from the last one — drop any picks that might no longer apply.
   useEffect(() => {
     setAttachments({ muzzle: null, sight: null, laser: null, chamber: null })
+    setChisel(null)
   }, [weapon])
 
   const labelMap = useMemo(() => {
@@ -87,12 +89,21 @@ export default function BuildSimulator({ lang }) {
   const activeEnchants = enchants.slice(0, level)
   const gearItems = [head, chest, feet[0], feet[1], ...passives]
   const attachmentItems = ATTACHMENT_SLOTS.map((s) => attachments[s.key])
-  const result = computeWeapon(weapon, activeEnchants, gearItems, attachmentItems)
+  const result = computeWeapon(weapon, activeEnchants, gearItems, attachmentItems, chisel)
   const playerStats = computePlayerStats(gearItems)
   const gearExtras = computeGearExtras(gearItems)
 
   const compatibleAttachments = (type) =>
     weapon ? data.attachment.items.filter((it) => it.groups?.type === type && isAttachmentCompatible(weapon, it)) : []
+
+  // Only chisels this weapon's own Caliber Modding table actually lists.
+  const compatibleChisels = weapon
+    ? data.chisel.items.filter((c) =>
+        weapon.caliberModding?.some(
+          (r) => r.caliber.replace(/\s+/g, '').toLowerCase() === (c.fields.ChamberAmmo || '').replace(/\s+/g, '').toLowerCase(),
+        ),
+      )
+    : []
 
   // Names already used, to prevent duplicate oils / multiple scrolls.
   const usedOils = new Set(
@@ -204,6 +215,14 @@ export default function BuildSimulator({ lang }) {
               labelFor={labelFor}
             />
           ))}
+          <GearSlot
+            label={t(UI.chamberChisel, lang)}
+            items={compatibleChisels}
+            value={chisel}
+            onChange={setChisel}
+            lang={lang}
+            labelFor={labelFor}
+          />
         </div>
 
         {/* Armor */}

@@ -39,7 +39,7 @@ ICON_WIDTH = 64
 
 # Kinds we generate a page/table for, in the requested display order.
 TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable",
-                "scroll", "passive", "misc"]
+                "scroll", "passive", "misc", "chisel"]
 
 # Ordered stat columns per kind, taken from Template:Item Infobox.
 # The frontend only shows columns that at least one item actually populates.
@@ -115,6 +115,10 @@ KIND_COLUMNS: dict[str, list[str]] = {
         "GridSize", "SubType",
         "SellVal", "BuyVal", "SoldBy",
     ],
+    "chisel": [
+        "GridSize", "ChamberAmmo",
+        "SellVal", "BuyVal", "SoldBy",
+    ],
 }
 
 # Human-readable labels for parameter keys, from Template:Item Infobox.
@@ -122,6 +126,7 @@ LABELS: dict[str, str] = {
     "GridSize": "Grid Size",
     "SubType": "Type",
     "Ammo": "Ammunition",
+    "ChamberAmmo": "Converts To",
     "Mode": "Mode",
     "Mag": "Magazine Size",
     "Weight": "Weight",
@@ -623,6 +628,35 @@ def weapon_attachment_compat(wikitext: str) -> list[str]:
     if not m:
         return []
     return [name.strip() for name in ATTACHMENT_BULLET_RE.findall(m.group(1))]
+
+
+# Weapons that accept a Chamber Chisel document the exact resulting stats
+# per caliber in their own "Caliber Modding" wikitable (Beck 8 etc.) — real
+# per-weapon values, not something derivable from the ammo type alone (two
+# weapons on the same caliber can still differ). Row format (attribute
+# prefix before the actual cell content is normal MediaWiki syntax):
+#   |style="text-align: left;|[[9mm]]||60||&times;1||3||3
+CALIBER_SECTION_RE = re.compile(r"==\s*Caliber Modding\s*==([\s\S]*?)(?:\n==[^=]|\Z)")
+CALIBER_ROW_RE = re.compile(
+    r"\[\[([^\]|]+)\]\]\|\|([^\n|]*)\|\|([^\n|]*)\|\|([^\n|]*)\|\|([^\n|]*)"
+)
+
+
+def weapon_caliber_modding(wikitext: str) -> list[dict[str, str]]:
+    m = CALIBER_SECTION_RE.search(wikitext)
+    if not m:
+        return []
+    rows = []
+    for rm in CALIBER_ROW_RE.finditer(m.group(1)):
+        caliber, dmg, proj, spread, recoil = (g.strip() for g in rm.groups())
+        rows.append({
+            "caliber": caliber,
+            "damage": dmg,
+            "projectiles": re.sub(r"[^\d.]", "", proj) or "1",
+            "spread": spread,
+            "recoil": recoil,
+        })
+    return rows
 
 
 # A handful of consumables (Christmas Spice, Coffee, Flour, Karl-Oskar...)
@@ -1390,6 +1424,9 @@ def build(refresh: bool = False) -> None:
             compat = weapon_attachment_compat(wikitext)
             if compat:
                 item["attachmentCompat"] = compat
+            caliber_modding = weapon_caliber_modding(wikitext)
+            if caliber_modding:
+                item["caliberModding"] = caliber_modding
         buckets[kind].append(item)
 
     download_icons(buckets)

@@ -1,0 +1,102 @@
+{
+  "kind": "chisel",
+  "generated": "2026-07-10T07:05:06.146620+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "ChamberAmmo",
+      "label": "Chamber into"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    }
+  ],
+  "axes": [],
+  "items": [
+    {
+      "name": "Chamber Chisel (.50 BMG)",
+      "page": "https://sulfur.wiki.gg/wiki/Chamber_Chisel_%28.50_BMG%29",
+      "image": "Chamber Chisel (.50 BMG).png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "4×2",
+        "ChamberAmmo": "50 BMG",
+        "SellVal": "1700",
+        "SoldBy": "Ralphie"
+      },
+      "icon": "icons/chisel/_etc/Chamber_Chisel_(.50_BMG).png"
+    },
+    {
+      "name": "Chamber Chisel (12Ga)",
+      "page": "https://sulfur.wiki.gg/wiki/Chamber_Chisel_%2812Ga%29",
+      "image": "Chamber Chisel (12Ga).png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "4×2",
+        "ChamberAmmo": "12Ga",
+        "SellVal": "7500",
+        "SoldBy": "Ralphie"
+      },
+      "icon": "icons/chisel/_etc/Chamber_Chisel_(12Ga).png"
+    },
+    {
+      "name": "Chamber Chisel (5.56mm)",
+      "page": "https://sulfur.wiki.gg/wiki/Chamber_Chisel_%285.56mm%29",
+      "image": "Chamber Chisel (5.56mm).png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "4×2",
+        "ChamberAmmo": "5.56mm",
+        "SellVal": "1100",
+        "SoldBy": "Ralphie"
+      },
+      "icon": "icons/chisel/_etc/Chamber_Chisel_(5.56mm).png"
+    },
+    {
+      "name": "Chamber Chisel (7.62mm)",
+      "page": "https://sulfur.wiki.gg/wiki/Chamber_Chisel_%287.62mm%29",
+      "image": "Chamber Chisel (7.62mm).png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "4×2",
+        "ChamberAmmo": "7.62mm",
+        "SellVal": "1500",
+        "SoldBy": "Ralphie"
+      },
+      "icon": "icons/chisel/_etc/Chamber_Chisel_(7.62mm).png"
+    },
+    {
+      "name": "Chamber Chisel (9mm)",
+      "page": "https://sulfur.wiki.gg/wiki/Chamber_Chisel_%289mm%29",
+      "image": "Chamber Chisel (9mm).png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "4×2",
+        "ChamberAmmo": "9mm",
+        "SellVal": "350",
+        "SoldBy": "Ralphie"
+      },
+      "icon": "icons/chisel/_etc/Chamber_Chisel_(9mm).png"
+    }
+  ]
+}
