@@ -613,21 +613,27 @@ def attachment_zoom(fields: dict[str, str], wikitext: str) -> str | None:
 # Which attachment types/items a weapon accepts, from its own "Available
 # Attachments" section — a bullet list of wiki links, e.g.
 # "• [[Muzzle Attachments]]", "• [[Sight|Sights]]", "• [[Gun Crank]]".
-# The link target is kept as-is (not resolved here); the frontend matches it
-# against an attachment's type (loosely, dropping a trailing "s") or exact
-# item name, since some entries name a category ("Sights") and others name
-# one specific item ("Gun Crank").
+# Some pages pipe-link to the wrong target while the visible text is still
+# correct (Blackwater/Chimera Rapid literally link "Chamber Chisels" text to
+# the "Chamber Attachment" page), so the DISPLAY text is used when present,
+# falling back to the link target only for un-piped links. The frontend
+# matches this against an attachment's type (loosely — dropping a trailing
+# "s", case-insensitive) or exact item name, since some entries name a
+# category ("Sights") and others name one specific item ("Gun Crank").
 ATTACHMENTS_SECTION_RE = re.compile(
     r"==\s*Available Attachments\s*==([\s\S]*?)(?:\n==[^=]|\Z)"
 )
-ATTACHMENT_BULLET_RE = re.compile(r"^•\s*\[\[([^\]|]+)", re.MULTILINE)
+ATTACHMENT_BULLET_RE = re.compile(r"^•\s*\[\[([^\]|]+)(?:\|([^\]]+))?\]\]", re.MULTILINE)
 
 
 def weapon_attachment_compat(wikitext: str) -> list[str]:
     m = ATTACHMENTS_SECTION_RE.search(wikitext)
     if not m:
         return []
-    return [name.strip() for name in ATTACHMENT_BULLET_RE.findall(m.group(1))]
+    return [
+        (display or target).strip()
+        for target, display in ATTACHMENT_BULLET_RE.findall(m.group(1))
+    ]
 
 
 # Weapons that accept a Chamber Chisel document the exact resulting stats

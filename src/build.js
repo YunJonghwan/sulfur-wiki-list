@@ -402,18 +402,23 @@ export function computeWeapon(weapon, enchants, gearItems, attachmentItems = [],
   }
 }
 
-// Weapon compatibility list entries are wiki link targets, some naming an
-// attachment type category ("Muzzle Attachments", plural) and some naming
-// one specific item ("Gun Crank", "Priming Bolt" — chamber attachments
-// apparently aren't universally interchangeable, per-weapon).
-function stripTrailingS(s) {
-  return s.endsWith('s') ? s.slice(0, -1) : s
+// Weapon compatibility list entries are wiki link text, some naming an
+// attachment type category ("Muzzle Attachments", plural, sometimes
+// lowercase — "Muzzle attachments") and some naming one specific item
+// ("Gun Crank", "Priming Bolt" — chamber attachments apparently aren't
+// universally interchangeable, per-weapon). Compared loosely: trailing "s"
+// dropped, case-insensitive.
+function normLabel(s) {
+  const lower = (s || '').trim().toLowerCase()
+  return lower.endsWith('s') ? lower.slice(0, -1) : lower
 }
 
 export function isAttachmentCompatible(weapon, attachment) {
   const compat = weapon?.attachmentCompat
   if (!compat) return false
-  return compat.some((c) => stripTrailingS(c) === attachment.groups?.type || c === attachment.name)
+  const type = normLabel(attachment.groups?.type)
+  const name = normLabel(attachment.name)
+  return compat.some((c) => normLabel(c) === type || normLabel(c) === name)
 }
 
 // Hitbox damage multipliers — a single table shared by every weapon/enemy,

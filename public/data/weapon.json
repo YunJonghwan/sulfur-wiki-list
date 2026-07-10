@@ -1,6 +1,6 @@
 {
   "kind": "weapon",
-  "generated": "2026-07-10T07:20:34.617487+00:00",
+  "generated": "2026-07-10T07:32:44.835219+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -173,10 +173,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -242,10 +242,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -311,10 +311,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -379,7 +379,7 @@
         "SoldBy": "Stiffleg"
       },
       "attachmentCompat": [
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank"
       ],
@@ -409,10 +409,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -476,11 +476,11 @@
         "SellVal": "1600"
       },
       "attachmentCompat": [
-        "Sight",
+        "Sights",
         "Laser Sights",
-        "Muzzle",
+        "Muzzle Attachments",
         "Gun Crank",
-        "Chamber Attachment"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -545,9 +545,9 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -613,10 +613,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -681,8 +681,8 @@
         "SoldBy": "Stiffleg, Qiosk"
       },
       "attachmentCompat": [
-        "Sight",
-        "Laser Sights"
+        "Sights",
+        "Laser sights"
       ],
       "icon": "icons/weapon/assault-rifle/Catacoil_Rapid_X.png"
     },
@@ -845,11 +845,11 @@
         "SellVal": "2000"
       },
       "attachmentCompat": [
-        "Sight",
+        "Sights",
         "Laser Sights",
-        "Muzzle",
+        "Muzzle Attachments",
         "Gun Crank",
-        "Chamber Attachment"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -915,10 +915,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1008,10 +1008,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1077,10 +1077,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1146,10 +1146,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1214,11 +1214,11 @@
         "SoldBy": "Stiffleg, Qiosk"
       },
       "attachmentCompat": [
-        "Muzzle Attachments",
-        "Sight",
-        "Laser Sights",
+        "Muzzle attachments",
+        "Sights",
+        "Laser sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber chisels"
       ],
       "caliberModding": [
         {
@@ -1284,10 +1284,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1422,10 +1422,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1553,10 +1553,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1625,7 +1625,7 @@
         "Sight",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1690,9 +1690,9 @@
         "SoldBy": "Stiffleg, Jaques De Fector, Qiosk"
       },
       "attachmentCompat": [
-        "Muzzle",
-        "Sight",
-        "Chamber Chisel",
+        "Muzzle attachments",
+        "Sights",
+        "Chamber chisels",
         "Laser Sights"
       ],
       "caliberModding": [
@@ -1759,10 +1759,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1828,10 +1828,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1897,10 +1897,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -1966,10 +1966,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2034,11 +2034,11 @@
         "SoldBy": "Stiffleg, Qiosk"
       },
       "attachmentCompat": [
-        "Muzzle Attachments",
-        "Sight",
-        "Laser Sights",
+        "Muzzle attachments",
+        "Sights",
+        "Laser sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber chisels"
       ],
       "caliberModding": [
         {
@@ -2241,8 +2241,8 @@
         "SoldBy": "Qiosk"
       },
       "attachmentCompat": [
-        "Sight",
-        "Laser Sights",
+        "Sights",
+        "Laser sights",
         "Priming Bolt"
       ],
       "icon": "icons/weapon/light-machine-gun/Neuraxis_F22.png"
@@ -2340,10 +2340,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2409,10 +2409,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2477,11 +2477,11 @@
         "SoldBy": "Qiosk"
       },
       "attachmentCompat": [
-        "Muzzle Attachments",
-        "Sight",
-        "Laser Sights",
+        "Muzzle attachments",
+        "Sights",
+        "Laser sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber chisels"
       ],
       "caliberModding": [
         {
@@ -2547,10 +2547,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2616,10 +2616,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2685,10 +2685,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2754,10 +2754,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -2891,11 +2891,11 @@
         "SoldBy": "Stiffleg, Qiosk"
       },
       "attachmentCompat": [
-        "Muzzle Attachments",
-        "Sight",
-        "Laser Sights",
+        "Muzzle attachments",
+        "Sights",
+        "Laser sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber chisels"
       ],
       "caliberModding": [
         {
@@ -2964,7 +2964,7 @@
         "Sight",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -3030,10 +3030,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Gun Crank",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -3235,7 +3235,7 @@
         "SoldBy": "Qiosk"
       },
       "attachmentCompat": [
-        "Sight",
+        "Sights",
         "Laser Sights"
       ],
       "icon": "icons/weapon/pistol/unknown.png"
@@ -3334,10 +3334,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -3471,10 +3471,10 @@
       },
       "attachmentCompat": [
         "Muzzle Attachments",
-        "Sight",
+        "Sights",
         "Laser Sights",
         "Priming Bolt",
-        "Chamber Chisel"
+        "Chamber Chisels"
       ],
       "caliberModding": [
         {
@@ -3539,7 +3539,7 @@
         "SoldBy": "Stiffleg"
       },
       "attachmentCompat": [
-        "Sight",
+        "Sights",
         "Laser Sights"
       ],
       "icon": "icons/weapon/revolver/Wyatt_PULSAR.png"
