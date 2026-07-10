@@ -57,6 +57,11 @@ export const UI = {
   durabilityPerShot: { en: 'Durability / shot', ko: '발사당 내구도' },
   totalDamage: { en: 'Total Damage (all projectiles)', ko: '총 데미지 (투사체 전체)' },
   projectileCount: { en: 'Projectiles / shot', ko: '발사 탄환 수' },
+  hitboxTitle: { en: 'Damage by hitbox', ko: '부위별 데미지' },
+  hitboxPart: { en: 'Hitbox', ko: '부위' },
+  hitboxMult: { en: 'Multiplier', ko: '배율' },
+  hitboxPerHit: { en: 'Per hit', ko: '1발' },
+  hitboxTotal: { en: 'Full shot', ko: '전탄' },
   otherEffects: { en: 'Other effects', ko: '기타 효과' },
   pickWeapon: { en: 'Select a weapon to begin.', ko: '무기를 선택하면 시작됩니다.' },
   scrollOpt: { en: 'Scrolls', ko: '스크롤' },
@@ -152,6 +157,12 @@ export const GROUP_KO = {
   Hellshrew: '헬슈루',
   "Shav'Wa": '샤브와',
   Cultist: '컬티스트',
+  // hitbox damage table
+  Head: '머리',
+  Eye: '눈',
+  Throat: '목',
+  Body: '몸통',
+  Limb: '팔다리',
 }
 
 export function groupLabel(value, label, lang) {

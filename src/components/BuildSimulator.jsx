@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t, groupLabel } from '../i18n.js'
-import { computeWeapon, computePlayerStats, computeGearExtras } from '../build.js'
+import { computeWeapon, computePlayerStats, computeGearExtras, computeHitboxDamage } from '../build.js'
 import ItemPicker from './ItemPicker.jsx'
 
 const BASE = import.meta.env.BASE_URL
@@ -279,6 +279,34 @@ export default function BuildSimulator({ lang }) {
                 </div>
               )}
             </>
+          )}
+        </div>
+
+        <div className="result-card">
+          <h3>{t(UI.hitboxTitle, lang)}</h3>
+          {!weapon ? (
+            <p className="notice">{t(UI.pickWeapon, lang)}</p>
+          ) : (
+            <table className="result-table">
+              <thead>
+                <tr>
+                  <th>{t(UI.hitboxPart, lang)}</th>
+                  <th>{t(UI.hitboxMult, lang)}</th>
+                  <th>{t(UI.hitboxPerHit, lang)}</th>
+                  {result.projectileCount != null && <th>{t(UI.hitboxTotal, lang)}</th>}
+                </tr>
+              </thead>
+              <tbody>
+                {computeHitboxDamage(result).map((h) => (
+                  <tr key={h.key}>
+                    <td>{groupLabel(h.key, h.key, lang)}</td>
+                    <td>×{h.mult}</td>
+                    <td>{h.perHit}</td>
+                    {result.projectileCount != null && <td>{h.total}</td>}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           )}
         </div>
 

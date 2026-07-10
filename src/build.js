@@ -369,3 +369,29 @@ export function computeWeapon(weapon, enchants, gearItems) {
     totalDamage, totalDamageBase, baseProjectiles, projectileCount,
   }
 }
+
+// Hitbox damage multipliers — a single table shared by every weapon/enemy,
+// not weapon-specific (https://sulfur.wiki.gg/wiki/Gameplay, "Hitboxes").
+export const HITBOXES = [
+  { key: 'Head', mult: 1 },
+  { key: 'Eye', mult: 1.5 },
+  { key: 'Throat', mult: 0.75 },
+  { key: 'Body', mult: 0.5 },
+  { key: 'Limb', mult: 0.25 },
+]
+
+// Per-hit (single projectile) and per-shot (every projectile, e.g. a
+// shotgun's full pellet spread) damage for each hitbox, given a
+// computeWeapon() result.
+export function computeHitboxDamage(result) {
+  const damageStat = result.stats.find((s) => s.key === 'Damage')
+  if (!damageStat || damageStat.final == null) return []
+  const perProjectile = damageStat.final
+  const projectiles = result.projectileCount ?? result.baseProjectiles ?? 1
+  return HITBOXES.map((h) => ({
+    key: h.key,
+    mult: h.mult,
+    perHit: Math.round(perProjectile * h.mult * 100) / 100,
+    total: Math.round(perProjectile * h.mult * projectiles * 100) / 100,
+  }))
+}
