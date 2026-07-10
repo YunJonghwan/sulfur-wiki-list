@@ -36,7 +36,7 @@ export function parseDamageField(raw) {
 // "50 BMG" (chisel ChamberAmmo) vs "50 BMG" (caliber table) usually match
 // as-is, but casing/spacing drifts a little across wiki pages ("12ga" vs
 // "12Ga") — compare loosely.
-function normCaliber(s) {
+export function normCaliber(s) {
   return (s || '').replace(/\s+/g, '').toLowerCase()
 }
 

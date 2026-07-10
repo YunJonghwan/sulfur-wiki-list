@@ -2,7 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t, groupLabel } from '../i18n.js'
 import {
   computeWeapon, computePlayerStats, computeGearExtras, computeHitboxDamage,
-  isAttachmentCompatible,
+  isAttachmentCompatible, normCaliber,
 } from '../build.js'
 import ItemPicker from './ItemPicker.jsx'
 
@@ -96,12 +96,14 @@ export default function BuildSimulator({ lang }) {
   const compatibleAttachments = (type) =>
     weapon ? data.attachment.items.filter((it) => it.groups?.type === type && isAttachmentCompatible(weapon, it)) : []
 
-  // Only chisels this weapon's own Caliber Modding table actually lists.
+  // Only chisels this weapon's own Caliber Modding table actually lists —
+  // and not the caliber it's already chambered in (rechambering into the
+  // same caliber isn't a real choice).
   const compatibleChisels = weapon
-    ? data.chisel.items.filter((c) =>
-        weapon.caliberModding?.some(
-          (r) => r.caliber.replace(/\s+/g, '').toLowerCase() === (c.fields.ChamberAmmo || '').replace(/\s+/g, '').toLowerCase(),
-        ),
+    ? data.chisel.items.filter(
+        (c) =>
+          normCaliber(c.fields.ChamberAmmo) !== normCaliber(weapon.fields.Ammo) &&
+          weapon.caliberModding?.some((r) => normCaliber(r.caliber) === normCaliber(c.fields.ChamberAmmo)),
       )
     : []
 
@@ -288,7 +290,8 @@ export default function BuildSimulator({ lang }) {
             <>
               {result.currentAmmo && (
                 <div className={`current-ammo${result.chiseled ? ' chiseled' : ''}`}>
-                  {t(UI.currentAmmo, lang)}: {result.currentAmmo}
+                  {t(UI.currentAmmo, lang)}:{' '}
+                  {result.chiseled ? `${weapon.fields.Ammo} → ${result.currentAmmo}` : result.currentAmmo}
                 </div>
               )}
               <table className="result-table">
