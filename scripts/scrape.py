@@ -152,7 +152,7 @@ LABELS: dict[str, str] = {
     "Speed": "Movement Speed",
     "SwimSpeed": "Swim Speed",
     "CritChance": "Crit Chance",
-    "CritADS": "Crit Chance down sight",
+    "CritADS": "Crit Chance while Aiming (ADS)",
     "Zoom": "Zoom Factor",
     "MoveAccuracy": "Accuracy while moving",
     "BltSpeed": "Bullet Speed",
@@ -1163,9 +1163,9 @@ VALUE_ORDER = {
 # For each oil stat, which direction is beneficial. Used to label an oil's
 # overall composition (buff-only, buff+debuff, buff+constraint, …).
 OIL_BUFF_WHEN_UP = {
-    "Dmg", "RPM", "CritChance", "RldSpeed", "BltSpeed", "BltPen", "BltSize",
-    "BltBounces", "BltBounciness", "ProjecAmnt", "MaxDrb", "Speed", "JumpPwr",
-    "LootChance", "MoveAccuracy", "PenDmgMult", "LootRolls",
+    "Dmg", "RPM", "CritChance", "CritADS", "RldSpeed", "BltSpeed", "BltPen",
+    "BltSize", "BltBounces", "BltBounciness", "ProjecAmnt", "MaxDrb", "Speed",
+    "JumpPwr", "LootChance", "MoveAccuracy", "PenDmgMult", "LootRolls",
 }
 OIL_BUFF_WHEN_DOWN = {
     "Spread", "Recoil", "Drag", "BltDrop", "AmmoConsume", "AmmoExConsume",

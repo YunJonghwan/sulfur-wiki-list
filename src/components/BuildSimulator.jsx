@@ -286,6 +286,11 @@ export default function BuildSimulator({ lang }) {
             <p className="notice">{t(UI.pickWeapon, lang)}</p>
           ) : (
             <>
+              {result.currentAmmo && (
+                <div className={`current-ammo${result.chiseled ? ' chiseled' : ''}`}>
+                  {t(UI.currentAmmo, lang)}: {result.currentAmmo}
+                </div>
+              )}
               <table className="result-table">
                 <thead>
                   <tr>

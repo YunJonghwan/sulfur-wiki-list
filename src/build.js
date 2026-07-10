@@ -46,9 +46,9 @@ function normCaliber(s) {
 // instead of coloring purely off the +/- sign, which gets stats where lower
 // is better (Spread, Recoil, ...) backwards.
 const BUFF_WHEN_UP = new Set([
-  'Dmg', 'RPM', 'CritChance', 'RldSpeed', 'BltSpeed', 'BltPen', 'BltSize',
-  'BltBounces', 'BltBounciness', 'ProjecAmnt', 'MaxDrb', 'Speed', 'JumpPwr',
-  'LootChance', 'MoveAccuracy', 'PenDmgMult', 'LootRolls',
+  'Dmg', 'RPM', 'CritChance', 'CritADS', 'RldSpeed', 'BltSpeed', 'BltPen',
+  'BltSize', 'BltBounces', 'BltBounciness', 'ProjecAmnt', 'MaxDrb', 'Speed',
+  'JumpPwr', 'LootChance', 'MoveAccuracy', 'PenDmgMult', 'LootRolls',
 ])
 const BUFF_WHEN_DOWN = new Set(['Spread', 'Recoil', 'Drag', 'BltDrop', 'AmmoConsume', 'AmmoExConsume'])
 const CONSTRAINTS = new Set([
@@ -390,9 +390,15 @@ export function computeWeapon(weapon, enchants, gearItems, attachmentItems = [],
     }
   }
 
+  // The weapon's own Ammo field doesn't change when a chisel swaps calibers
+  // (Beck 8 is still fundamentally "9mm hardware"), so show the caliber
+  // actually loaded right now instead, wherever ammo type is displayed.
+  const currentAmmo = caliberRow ? caliberRow.caliber : wf.Ammo
+
   return {
     stats, durability, extras, gearDmgPct,
     totalDamage, totalDamageBase, baseProjectiles, projectileCount,
+    currentAmmo, chiseled: caliberRow != null,
   }
 }
 

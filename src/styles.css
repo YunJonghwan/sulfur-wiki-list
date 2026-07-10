@@ -585,6 +585,16 @@ main {
   color: var(--accent);
 }
 
+.current-ammo {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.current-ammo.chiseled {
+  color: var(--accent);
+}
+
 .result-table {
   width: 100%;
   border-collapse: collapse;
