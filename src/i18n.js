@@ -45,6 +45,7 @@ export const UI = {
   enchantSlots: { en: 'Enchantments (oils / scroll)', ko: '강화 (오일 / 스크롤)' },
   attachmentSlots: { en: 'Attachments', ko: '부착물' },
   chamberChisel: { en: 'Chamber Chisel', ko: '챔버 칩셀' },
+  notSupported: { en: 'Not supported', ko: '지원 안 됨' },
   currentAmmo: { en: 'Ammo', ko: '탄약' },
   armorSlots: { en: 'Armor', ko: '방어구' },
   passiveSlots: { en: 'Passive items', ko: '패시브 아이템' },

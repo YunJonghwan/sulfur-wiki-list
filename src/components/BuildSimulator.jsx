@@ -206,17 +206,21 @@ export default function BuildSimulator({ lang }) {
             since which types/items fit depends on the weapon itself. */}
         <div className="slot-group">
           <h3>{t(UI.attachmentSlots, lang)}</h3>
-          {ATTACHMENT_SLOTS.map((s) => (
-            <GearSlot
-              key={s.key}
-              label={groupLabel(s.type, s.type, lang)}
-              items={compatibleAttachments(s.type)}
-              value={attachments[s.key]}
-              onChange={(v) => setAttachments((prev) => ({ ...prev, [s.key]: v }))}
-              lang={lang}
-              labelFor={labelFor}
-            />
-          ))}
+          {ATTACHMENT_SLOTS.map((s) => {
+            const items = compatibleAttachments(s.type)
+            return (
+              <GearSlot
+                key={s.key}
+                label={groupLabel(s.type, s.type, lang)}
+                items={items}
+                value={attachments[s.key]}
+                onChange={(v) => setAttachments((prev) => ({ ...prev, [s.key]: v }))}
+                lang={lang}
+                labelFor={labelFor}
+                disabled={weapon != null && items.length === 0}
+              />
+            )
+          })}
           <GearSlot
             label={t(UI.chamberChisel, lang)}
             items={compatibleChisels}
@@ -224,6 +228,7 @@ export default function BuildSimulator({ lang }) {
             onChange={setChisel}
             lang={lang}
             labelFor={labelFor}
+            disabled={weapon != null && compatibleChisels.length === 0}
           />
         </div>
 
@@ -448,18 +453,24 @@ function ExtraGroups({ extras, labelFor, lang }) {
   )
 }
 
-function GearSlot({ label, items, value, onChange, lang, labelFor }) {
+function GearSlot({ label, items, value, onChange, lang, labelFor, disabled }) {
   return (
     <div className="slot">
       <label className="slot-label">{label}</label>
-      <ItemPicker
-        lang={lang}
-        value={value}
-        sections={[{ key: 'item', items }]}
-        onSelect={(item) => onChange(item)}
-        onClear={() => onChange(null)}
-        labelFor={labelFor}
-      />
+      {disabled ? (
+        <div className="picker-trigger disabled" aria-disabled="true">
+          <span className="picker-placeholder">{t(UI.notSupported, lang)}</span>
+        </div>
+      ) : (
+        <ItemPicker
+          lang={lang}
+          value={value}
+          sections={[{ key: 'item', items }]}
+          onSelect={(item) => onChange(item)}
+          onClear={() => onChange(null)}
+          labelFor={labelFor}
+        />
+      )}
     </div>
   )
 }
