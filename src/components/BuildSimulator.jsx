@@ -1,9 +1,10 @@
-import { Fragment, useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { UI, COLUMN_KO, t, groupLabel } from '../i18n.js'
 import {
   computeWeapon, computePlayerStats, computeGearExtras, computeHitboxDamage,
   isAttachmentCompatible, normCaliber,
 } from '../build.js'
+import { loadSavedBuilds, saveBuild, deleteBuild, resolveBuild } from '../savedBuilds.js'
 import ItemPicker from './ItemPicker.jsx'
 
 const BASE = import.meta.env.BASE_URL
@@ -31,6 +32,13 @@ export default function BuildSimulator({ lang }) {
   const [feet, setFeet] = useState([null, null])
   const [passives, setPassives] = useState([null, null, null, null])
 
+  const [savedBuilds, setSavedBuilds] = useState(() => loadSavedBuilds())
+  const [saveNameInput, setSaveNameInput] = useState('')
+  // Loading a saved build sets weapon + attachments/chisel together — this
+  // suppresses the "weapon changed, clear attachments" effect below for
+  // that one update so the just-loaded picks survive.
+  const loadingBuildRef = useRef(false)
+
   useEffect(() => {
     let cancelled = false
     Promise.all(
@@ -51,7 +59,13 @@ export default function BuildSimulator({ lang }) {
 
   // A weapon's accepted attachment types/items (and available calibers)
   // differs from the last one — drop any picks that might no longer apply.
+  // Skipped once right after loading a saved build, which sets its own
+  // attachments/chisel alongside the weapon in the same update.
   useEffect(() => {
+    if (loadingBuildRef.current) {
+      loadingBuildRef.current = false
+      return
+    }
     setAttachments({ muzzle: null, sight: null, laser: null, chamber: null })
     setChisel(null)
   }, [weapon])
@@ -158,9 +172,74 @@ export default function BuildSimulator({ lang }) {
     return `${sign}${s.value}${s.percent ? '%' : ''}${s.cap && s.value >= s.cap ? ' (max)' : ''}`
   }
 
+  function handleSaveBuild() {
+    const name = saveNameInput.trim()
+    if (!name) return
+    const list = saveBuild(name, { weapon, level, enchants, attachments, chisel, head, chest, feet, passives })
+    setSavedBuilds(list)
+    setSaveNameInput('')
+  }
+
+  function handleLoadBuild(record) {
+    const r = resolveBuild(record, data)
+    loadingBuildRef.current = true
+    setWeapon(r.weapon)
+    setLevel(r.level)
+    setEnchants([...r.enchants, ...Array(5).fill(null)].slice(0, 5))
+    setAttachments({ muzzle: null, sight: null, laser: null, chamber: null, ...r.attachments })
+    setChisel(r.chisel)
+    setHead(r.head)
+    setChest(r.chest)
+    setFeet([...r.feet, null, null].slice(0, 2))
+    setPassives([...r.passives, ...Array(4).fill(null)].slice(0, 4))
+    // Safety net in case the weapon reference didn't actually change (e.g.
+    // loading a build with the same weapon already selected) — then the
+    // effect above never fires to consume the flag itself.
+    setTimeout(() => {
+      loadingBuildRef.current = false
+    }, 0)
+  }
+
+  function handleDeleteBuild(id) {
+    setSavedBuilds(deleteBuild(id))
+  }
+
   return (
     <div className="build">
       <section className="build-loadout">
+        {/* Saved builds — local to this browser only (localStorage). */}
+        <div className="slot-group">
+          <h3>{t(UI.savedBuilds, lang)}</h3>
+          {savedBuilds.length > 0 && (
+            <ul className="saved-build-list">
+              {savedBuilds.map((b) => (
+                <li className="saved-build-row" key={b.id}>
+                  <span className="saved-build-name">{b.name}</span>
+                  <button type="button" className="pill" onClick={() => handleLoadBuild(b)}>
+                    {t(UI.loadBuild, lang)}
+                  </button>
+                  <button type="button" className="pill danger" onClick={() => handleDeleteBuild(b.id)}>
+                    {t(UI.deleteBuild, lang)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="saved-build-new">
+            <input
+              type="text"
+              className="saved-build-input"
+              placeholder={t(UI.saveBuildPlaceholder, lang)}
+              value={saveNameInput}
+              onChange={(e) => setSaveNameInput(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleSaveBuild()}
+            />
+            <button type="button" className="pill" onClick={handleSaveBuild} disabled={!saveNameInput.trim()}>
+              {t(UI.saveBuild, lang)}
+            </button>
+          </div>
+        </div>
+
         {/* Weapon + enchantments */}
         <div className="slot-group">
           <h3>{t(UI.weaponSlot, lang)}</h3>

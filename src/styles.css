@@ -538,6 +538,57 @@ main {
   font-size: 0.85rem;
 }
 
+.saved-build-list {
+  list-style: none;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.saved-build-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.saved-build-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.saved-build-new {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.saved-build-input {
+  flex: 1;
+  min-width: 0;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.pill.danger:hover {
+  color: var(--neg);
+  border-color: var(--neg);
+}
+
+.pill:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .slot .item-icon {
   width: 24px;
   height: 24px;
