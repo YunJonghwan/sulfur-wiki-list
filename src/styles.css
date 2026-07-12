@@ -235,6 +235,11 @@ main {
   outline-offset: -1px;
 }
 
+.chip.chip-hint {
+  cursor: help;
+  border-bottom: 1px dotted var(--accent);
+}
+
 .compact-table td {
   white-space: normal;
   vertical-align: top;
@@ -272,6 +277,12 @@ main {
   gap: 4px;
   color: var(--text);
   cursor: default;
+  text-decoration: none;
+}
+
+a.used-in-chip:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .used-in-chip-wrap {

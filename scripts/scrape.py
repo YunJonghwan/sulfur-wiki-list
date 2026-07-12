@@ -877,6 +877,36 @@ def attach_used_in(buckets: dict[str, list[dict]]) -> None:
             it["usedIn"] = targets
 
 
+def attach_organ_drops(buckets: dict[str, list[dict]]) -> None:
+    """For every enemy, list the organ items (from ORGAN_SOURCE_BY_TITLE) whose
+    source name shows up in its own name or faction — e.g. "Guard Dog" gets
+    Dog Skin/Eye, the Goblins faction gets Goblin Skin/Eye. Best-effort: most
+    enemy pages have no structured drop table to scrape from directly.
+    """
+    organs_by_source: dict[str, list[dict]] = {}
+    for it in buckets.get("misc", []):
+        source = it.get("groups", {}).get("organSource")
+        if not source or source == "Common":
+            continue
+        organs_by_source.setdefault(source, []).append(
+            {"name": it["name"], "icon": it.get("icon"), "page": it["page"]}
+        )
+    for it in buckets.get("enemy", []):
+        faction = it.get("groups", {}).get("faction", "")
+        haystack = f"{it['name']} {faction}".lower()
+        seen: set[str] = set()
+        matched: list[dict] = []
+        for source, organs in organs_by_source.items():
+            if source.lower() not in haystack:
+                continue
+            for organ in organs:
+                if organ["name"] not in seen:
+                    seen.add(organ["name"])
+                    matched.append(organ)
+        if matched:
+            it["organDrops"] = matched
+
+
 UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')
 
 
@@ -1123,7 +1153,7 @@ AXIS_KEYS_BY_KIND = {
     "equipment": ["type"],
     "consumable": ["type", "craftable"],
     "misc": ["type", "organSource"],
-    "enemy": ["faction", "role"],
+    "enemy": ["faction", "role", "areas"],
 }
 
 AXIS_LABELS = {
@@ -1137,6 +1167,7 @@ AXIS_LABELS = {
     "organSource": "Organ Source",
     "faction": "Faction",
     "role": "Role",
+    "areas": "Area Found In",
 }
 
 CRAFTABLE_LABELS = {"craftable": "Craftable", "farmed": "Found / Farmed"}
@@ -1159,7 +1190,7 @@ def scroll_stage(title: str) -> str:
 
 # Axes where an item can belong to several groups at once (e.g. an oil that
 # modifies both Damage and Recoil shows up under each ability).
-AXIS_MULTI = {"ability"}
+AXIS_MULTI = {"ability", "areas"}
 
 # English display labels for the oil composition axis values.
 COMPOSITION_LABELS = {
@@ -1345,9 +1376,11 @@ def item_groups(
     if kind == "enemy":
         faction = fields.get("Faction") or "Other"
         faction = FACTION_ALIASES.get(faction, faction)
+        areas = [a.strip() for a in (fields.get("Areas") or "").split(",") if a.strip()]
         return {
             "faction": faction,
             "role": "Boss" if ENEMY_BOSS_RE.search(wikitext) else "Normal",
+            "areas": areas,
         }
     return {"type": label}
 
@@ -1518,6 +1551,7 @@ def build(refresh: bool = False) -> None:
     download_icons(buckets)
     resolve_recipe_icons(buckets)
     attach_used_in(buckets)
+    attach_organ_drops(buckets)
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     generated = datetime.now(timezone.utc).isoformat()

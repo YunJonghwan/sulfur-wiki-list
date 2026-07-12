@@ -1,6 +1,6 @@
 {
   "kind": "enemy",
-  "generated": "2026-07-12T11:13:29.265418+00:00",
+  "generated": "2026-07-12T11:27:40.603008+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -175,6 +175,63 @@
           "count": 6
         }
       ]
+    },
+    {
+      "key": "areas",
+      "label": "Area Found In",
+      "multi": true,
+      "values": [
+        {
+          "value": "Caves",
+          "label": "Caves",
+          "count": 15
+        },
+        {
+          "value": "Town",
+          "label": "Town",
+          "count": 13
+        },
+        {
+          "value": "Desert",
+          "label": "Desert",
+          "count": 7
+        },
+        {
+          "value": "Sewers",
+          "label": "Sewers",
+          "count": 7
+        },
+        {
+          "value": "Forest",
+          "label": "Forest",
+          "count": 6
+        },
+        {
+          "value": "Fortress",
+          "label": "Fortress",
+          "count": 6
+        },
+        {
+          "value": "Castle",
+          "label": "Castle",
+          "count": 4
+        },
+        {
+          "value": "Dungeon",
+          "label": "Dungeon",
+          "count": 2
+        },
+        {
+          "value": "Beyond the Veil",
+          "label": "Beyond the Veil",
+          "count": 1
+        },
+        {
+          "value": "Hedge Maze",
+          "label": "Hedge Maze",
+          "count": 1
+        }
+      ]
     }
   ],
   "items": [
@@ -184,7 +241,10 @@
       "image": "Abomination.png",
       "groups": {
         "faction": "The Craw",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Forest"
+        ]
       },
       "fields": {
         "Areas": "Forest",
@@ -192,7 +252,19 @@
         "HP": "1600",
         "Exp": "16"
       },
-      "icon": "icons/enemy/_etc/Abomination.png"
+      "icon": "icons/enemy/_etc/Abomination.png",
+      "organDrops": [
+        {
+          "name": "Craw Flesh",
+          "icon": "icons/misc/organ/Craw_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Flesh"
+        },
+        {
+          "name": "Craw Skin",
+          "icon": "icons/misc/organ/Craw_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Skin"
+        }
+      ]
     },
     {
       "name": "Assassin",
@@ -200,7 +272,11 @@
       "image": "Assassin.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Dungeon",
+          "Castle"
+        ]
       },
       "fields": {
         "Areas": "Dungeon, Castle",
@@ -221,7 +297,11 @@
       "image": "Bishop.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town",
+          "Castle"
+        ]
       },
       "fields": {
         "Areas": "Town,Castle",
@@ -242,7 +322,10 @@
       "image": "Black Guild Cardinal.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -264,7 +347,10 @@
       "image": "Bruiser.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -284,7 +370,10 @@
       "image": "Corrupted Amalgamation.png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Hedge Maze"
+        ]
       },
       "fields": {
         "Areas": "Hedge Maze",
@@ -308,7 +397,11 @@
       "image": "Corrupted Archer.png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Sewers",
+          "Forest"
+        ]
       },
       "fields": {
         "Areas": "Sewers, Forest",
@@ -330,7 +423,10 @@
       "image": "Corrupted Guildsman.png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Sewers"
+        ]
       },
       "fields": {
         "Areas": "Sewers",
@@ -352,7 +448,10 @@
       "image": "Corrupted Guildsman (Ranged).png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Sewers"
+        ]
       },
       "fields": {
         "Areas": "Sewers",
@@ -374,7 +473,10 @@
       "image": "Corrupted Lurk.png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Sewers"
+        ]
       },
       "fields": {
         "Areas": "Sewers",
@@ -394,7 +496,11 @@
       "image": "Corrupted Spearman.png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Sewers",
+          "Forest"
+        ]
       },
       "fields": {
         "Areas": "Sewers, Forest",
@@ -416,7 +522,10 @@
       "image": "Cousin.png",
       "groups": {
         "faction": "Goblins",
-        "role": "Boss"
+        "role": "Boss",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -438,7 +547,19 @@
         "Earth": "75%",
         "Charm": "100%"
       },
-      "icon": "icons/enemy/_etc/Cousin.png"
+      "icon": "icons/enemy/_etc/Cousin.png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Desert Claus",
@@ -446,7 +567,10 @@
       "image": "Desert Claus.png",
       "groups": {
         "faction": "Hellshrews",
-        "role": "Boss"
+        "role": "Boss",
+        "areas": [
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Desert",
@@ -455,7 +579,24 @@
         "Exp": "130",
         "Armor": "3"
       },
-      "icon": "icons/enemy/_etc/Desert_Claus.png"
+      "icon": "icons/enemy/_etc/Desert_Claus.png",
+      "organDrops": [
+        {
+          "name": "Hellshrew Flesh",
+          "icon": "icons/misc/organ/Hellshrew_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh"
+        },
+        {
+          "name": "Hellshrew Skin",
+          "icon": "icons/misc/organ/Hellshrew_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin"
+        },
+        {
+          "name": "Hellshrew Eye",
+          "icon": "icons/misc/_etc/Hellshrew_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Archer",
@@ -463,7 +604,10 @@
       "image": "Goblin Archer.png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -475,7 +619,19 @@
         "DmgRange": "25",
         "Exp": "5"
       },
-      "icon": "icons/enemy/_etc/Goblin_Archer.png"
+      "icon": "icons/enemy/_etc/Goblin_Archer.png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Barrel Boy",
@@ -483,7 +639,10 @@
       "image": "Goblin Barrel Boy.png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -494,7 +653,19 @@
         "Attack Type": "Special",
         "Exp": "10"
       },
-      "icon": "icons/enemy/_etc/Goblin_Barrel_Boy.png"
+      "icon": "icons/enemy/_etc/Goblin_Barrel_Boy.png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Civilian",
@@ -502,7 +673,10 @@
       "image": "Goblin Civilian.png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -511,7 +685,19 @@
         "Exp": "0",
         "Attack Type": "None"
       },
-      "icon": "icons/enemy/_etc/Goblin_Civilian.png"
+      "icon": "icons/enemy/_etc/Goblin_Civilian.png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Spearman",
@@ -519,7 +705,10 @@
       "image": "Goblin Spearman.png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -531,7 +720,19 @@
         "DmgRange": "3",
         "Exp": "4"
       },
-      "icon": "icons/enemy/_etc/Goblin_Spearman.png"
+      "icon": "icons/enemy/_etc/Goblin_Spearman.png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Wizard (Electricity)",
@@ -539,7 +740,10 @@
       "image": "Goblin Wizard (Electricity).png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -549,7 +753,19 @@
         "DmgType": "Eletricity",
         "Electric": "100%"
       },
-      "icon": "icons/enemy/_etc/Goblin_Wizard_(Electricity).png"
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Electricity).png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Wizard (Fire)",
@@ -557,7 +773,10 @@
       "image": "Goblin Wizard (Fire).png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -567,7 +786,19 @@
         "DmgType": "Fire",
         "Fire": "100%"
       },
-      "icon": "icons/enemy/_etc/Goblin_Wizard_(Fire).png"
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Fire).png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Wizard (Frost)",
@@ -575,7 +806,10 @@
       "image": "Goblin Wizard (Frost).png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -585,7 +819,19 @@
         "DmgType": "Frost",
         "Frost": "100%"
       },
-      "icon": "icons/enemy/_etc/Goblin_Wizard_(Frost).png"
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Frost).png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Wizard (Poison)",
@@ -593,7 +839,10 @@
       "image": "Goblin Wizard (Poison).png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -603,7 +852,19 @@
         "DmgType": "Poison",
         "Poison": "100%"
       },
-      "icon": "icons/enemy/_etc/Goblin_Wizard_(Poison).png"
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Poison).png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Goblin Young",
@@ -611,7 +872,10 @@
       "image": "Goblin Young.png",
       "groups": {
         "faction": "Goblins",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -621,7 +885,19 @@
         "Attack Type": "Melee",
         "Exp": "2"
       },
-      "icon": "icons/enemy/_etc/Goblin_Young.png"
+      "icon": "icons/enemy/_etc/Goblin_Young.png",
+      "organDrops": [
+        {
+          "name": "Goblin Skin",
+          "icon": "icons/misc/organ/Goblin_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Skin"
+        },
+        {
+          "name": "Goblin Eye",
+          "icon": "icons/misc/organ/Goblin_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Eye"
+        }
+      ]
     },
     {
       "name": "Grenadier",
@@ -629,7 +905,10 @@
       "image": "Grenadier.png",
       "groups": {
         "faction": "Shav'Wa",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Fortress"
+        ]
       },
       "fields": {
         "Areas": "Fortress",
@@ -638,7 +917,24 @@
         "Exp": "9",
         "Dmg": "40"
       },
-      "icon": "icons/enemy/_etc/Grenadier.png"
+      "icon": "icons/enemy/_etc/Grenadier.png",
+      "organDrops": [
+        {
+          "name": "Shav'Wa Skin",
+          "icon": "icons/misc/organ/Shav'Wa_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin"
+        },
+        {
+          "name": "Shav'Wa Bladder",
+          "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+        },
+        {
+          "name": "Shav'Wa Eye",
+          "icon": "icons/misc/organ/Shav'Wa_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye"
+        }
+      ]
     },
     {
       "name": "Guard Dog",
@@ -646,7 +942,11 @@
       "image": "Guard Dog.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves",
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Caves, Town",
@@ -658,7 +958,19 @@
         "DmgRange": "5",
         "Exp": "4"
       },
-      "icon": "icons/enemy/_etc/Guard_Dog.png"
+      "icon": "icons/enemy/_etc/Guard_Dog.png",
+      "organDrops": [
+        {
+          "name": "Dog Skin",
+          "icon": "icons/misc/organ/Dog_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dog_Skin"
+        },
+        {
+          "name": "Dog Eye",
+          "icon": "icons/misc/organ/Dog_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Dog_Eye"
+        }
+      ]
     },
     {
       "name": "Guttercliffian Chicken",
@@ -666,7 +978,10 @@
       "image": "Guttercliffian Chicken.png",
       "groups": {
         "faction": "Guttercliffian",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -686,7 +1001,10 @@
       "image": "Guttercliffian Kid.png",
       "groups": {
         "faction": "Guttercliffian",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -706,7 +1024,10 @@
       "image": "Guttercliffian Man.png",
       "groups": {
         "faction": "Guttercliffian",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -726,7 +1047,10 @@
       "image": "Guttercliffian Woman.png",
       "groups": {
         "faction": "Guttercliffian",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -746,7 +1070,13 @@
       "image": "Haradrian Enforcer (Female Mask).png",
       "groups": {
         "faction": "The Haradrians",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town",
+          "Caves",
+          "Sewers",
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Town, Caves, Sewers, Desert",
@@ -765,7 +1095,10 @@
       "image": "Hellshrew Dig Dig.png",
       "groups": {
         "faction": "Hellshrews",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Desert",
@@ -774,7 +1107,24 @@
         "Exp": "16",
         "Dmg": "20"
       },
-      "icon": "icons/enemy/_etc/Hellshrew_Dig_Dig.png"
+      "icon": "icons/enemy/_etc/Hellshrew_Dig_Dig.png",
+      "organDrops": [
+        {
+          "name": "Hellshrew Flesh",
+          "icon": "icons/misc/organ/Hellshrew_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh"
+        },
+        {
+          "name": "Hellshrew Skin",
+          "icon": "icons/misc/organ/Hellshrew_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin"
+        },
+        {
+          "name": "Hellshrew Eye",
+          "icon": "icons/misc/_etc/Hellshrew_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye"
+        }
+      ]
     },
     {
       "name": "Hellshrew Pike Riders",
@@ -782,7 +1132,10 @@
       "image": "Hellshrew Pike Riders.png",
       "groups": {
         "faction": "Hellshrews",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Desert",
@@ -790,7 +1143,24 @@
         "HP": "400",
         "Exp": "16"
       },
-      "icon": "icons/enemy/_etc/Hellshrew_Pike_Riders.png"
+      "icon": "icons/enemy/_etc/Hellshrew_Pike_Riders.png",
+      "organDrops": [
+        {
+          "name": "Hellshrew Flesh",
+          "icon": "icons/misc/organ/Hellshrew_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh"
+        },
+        {
+          "name": "Hellshrew Skin",
+          "icon": "icons/misc/organ/Hellshrew_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin"
+        },
+        {
+          "name": "Hellshrew Eye",
+          "icon": "icons/misc/_etc/Hellshrew_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye"
+        }
+      ]
     },
     {
       "name": "Hellshrew Shoota",
@@ -798,7 +1168,10 @@
       "image": "Hellshrew Shoota.png",
       "groups": {
         "faction": "Hellshrews",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Desert",
@@ -807,7 +1180,24 @@
         "Exp": "12",
         "Dmg": "25 (Rifle), 15 (Melee)"
       },
-      "icon": "icons/enemy/_etc/Hellshrew_Shoota.png"
+      "icon": "icons/enemy/_etc/Hellshrew_Shoota.png",
+      "organDrops": [
+        {
+          "name": "Hellshrew Flesh",
+          "icon": "icons/misc/organ/Hellshrew_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh"
+        },
+        {
+          "name": "Hellshrew Skin",
+          "icon": "icons/misc/organ/Hellshrew_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin"
+        },
+        {
+          "name": "Hellshrew Eye",
+          "icon": "icons/misc/_etc/Hellshrew_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye"
+        }
+      ]
     },
     {
       "name": "Hellshrew Snipa",
@@ -815,7 +1205,10 @@
       "image": "Hellshrew Snipa.png",
       "groups": {
         "faction": "Hellshrews",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Desert",
@@ -824,7 +1217,24 @@
         "Exp": "20",
         "Dmg": "25 (Rifle), 5 (SMG)"
       },
-      "icon": "icons/enemy/_etc/Hellshrew_Snipa.png"
+      "icon": "icons/enemy/_etc/Hellshrew_Snipa.png",
+      "organDrops": [
+        {
+          "name": "Hellshrew Flesh",
+          "icon": "icons/misc/organ/Hellshrew_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh"
+        },
+        {
+          "name": "Hellshrew Skin",
+          "icon": "icons/misc/organ/Hellshrew_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin"
+        },
+        {
+          "name": "Hellshrew Eye",
+          "icon": "icons/misc/_etc/Hellshrew_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye"
+        }
+      ]
     },
     {
       "name": "Hellshrew Sticka",
@@ -832,7 +1242,10 @@
       "image": "Hellshrew Sticka.png",
       "groups": {
         "faction": "Hellshrews",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Desert"
+        ]
       },
       "fields": {
         "Areas": "Desert",
@@ -841,7 +1254,24 @@
         "Exp": "10",
         "Dmg": "20 (no spin), 8 (spin)"
       },
-      "icon": "icons/enemy/_etc/Hellshrew_Sticka.png"
+      "icon": "icons/enemy/_etc/Hellshrew_Sticka.png",
+      "organDrops": [
+        {
+          "name": "Hellshrew Flesh",
+          "icon": "icons/misc/organ/Hellshrew_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Flesh"
+        },
+        {
+          "name": "Hellshrew Skin",
+          "icon": "icons/misc/organ/Hellshrew_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Skin"
+        },
+        {
+          "name": "Hellshrew Eye",
+          "icon": "icons/misc/_etc/Hellshrew_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Eye"
+        }
+      ]
     },
     {
       "name": "Lurk",
@@ -849,7 +1279,10 @@
       "image": "Lurk.png",
       "groups": {
         "faction": "Shav'Wa",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Fortress"
+        ]
       },
       "fields": {
         "Areas": "Fortress",
@@ -859,7 +1292,24 @@
         "Dmg": "25",
         "DmgRange": "4"
       },
-      "icon": "icons/enemy/_etc/Lurk.png"
+      "icon": "icons/enemy/_etc/Lurk.png",
+      "organDrops": [
+        {
+          "name": "Shav'Wa Skin",
+          "icon": "icons/misc/organ/Shav'Wa_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin"
+        },
+        {
+          "name": "Shav'Wa Bladder",
+          "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+        },
+        {
+          "name": "Shav'Wa Eye",
+          "icon": "icons/misc/organ/Shav'Wa_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye"
+        }
+      ]
     },
     {
       "name": "Novanian Guard",
@@ -867,7 +1317,11 @@
       "image": "Nonvanian Guard.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Dungeon",
+          "Castle"
+        ]
       },
       "fields": {
         "Areas": "Dungeon,Castle",
@@ -888,7 +1342,10 @@
       "image": "Rifleman.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -909,7 +1366,10 @@
       "image": "Samurai.png",
       "groups": {
         "faction": "Shav'Wa",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Fortress"
+        ]
       },
       "fields": {
         "Areas": "Fortress",
@@ -918,7 +1378,24 @@
         "Exp": "9",
         "Dmg": "15"
       },
-      "icon": "icons/enemy/_etc/Samurai.png"
+      "icon": "icons/enemy/_etc/Samurai.png",
+      "organDrops": [
+        {
+          "name": "Shav'Wa Skin",
+          "icon": "icons/misc/organ/Shav'Wa_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin"
+        },
+        {
+          "name": "Shav'Wa Bladder",
+          "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+        },
+        {
+          "name": "Shav'Wa Eye",
+          "icon": "icons/misc/organ/Shav'Wa_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye"
+        }
+      ]
     },
     {
       "name": "Sapper",
@@ -926,7 +1403,10 @@
       "image": "Sapper.png",
       "groups": {
         "faction": "Other",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Town",
@@ -941,7 +1421,10 @@
       "image": "Sentinel.png",
       "groups": {
         "faction": "The Craw",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Forest"
+        ]
       },
       "fields": {
         "Areas": "Forest",
@@ -950,7 +1433,19 @@
         "Exp": "18",
         "Dmg": "20"
       },
-      "icon": "icons/enemy/_etc/Sentinel.png"
+      "icon": "icons/enemy/_etc/Sentinel.png",
+      "organDrops": [
+        {
+          "name": "Craw Flesh",
+          "icon": "icons/misc/organ/Craw_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Flesh"
+        },
+        {
+          "name": "Craw Skin",
+          "icon": "icons/misc/organ/Craw_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Skin"
+        }
+      ]
     },
     {
       "name": "Skeleton",
@@ -958,7 +1453,10 @@
       "image": "Skeleton.png",
       "groups": {
         "faction": "Ghosts",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves"
+        ]
       },
       "fields": {
         "Areas": "Caves",
@@ -981,7 +1479,10 @@
       "image": "St. Lucia.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Boss"
+        "role": "Boss",
+        "areas": [
+          "Castle"
+        ]
       },
       "fields": {
         "Areas": "Castle",
@@ -1003,7 +1504,10 @@
       "image": "Terrorbaum.png",
       "groups": {
         "faction": "The Craw",
-        "role": "Boss"
+        "role": "Boss",
+        "areas": [
+          "Forest"
+        ]
       },
       "fields": {
         "Areas": "Forest",
@@ -1017,7 +1521,19 @@
         "Bleed": "100%",
         "Petrify": "100%"
       },
-      "icon": "icons/enemy/_etc/Terrorbaum.png"
+      "icon": "icons/enemy/_etc/Terrorbaum.png",
+      "organDrops": [
+        {
+          "name": "Craw Flesh",
+          "icon": "icons/misc/organ/Craw_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Flesh"
+        },
+        {
+          "name": "Craw Skin",
+          "icon": "icons/misc/organ/Craw_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Skin"
+        }
+      ]
     },
     {
       "name": "The Emperor",
@@ -1025,7 +1541,10 @@
       "image": "The Emperor.png",
       "groups": {
         "faction": "Shav'Wa",
-        "role": "Boss"
+        "role": "Boss",
+        "areas": [
+          "Fortress"
+        ]
       },
       "fields": {
         "Areas": "Fortress",
@@ -1033,7 +1552,24 @@
         "HP": "8000",
         "Exp": "100"
       },
-      "icon": "icons/enemy/_etc/The_Emperor.png"
+      "icon": "icons/enemy/_etc/The_Emperor.png",
+      "organDrops": [
+        {
+          "name": "Shav'Wa Skin",
+          "icon": "icons/misc/organ/Shav'Wa_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin"
+        },
+        {
+          "name": "Shav'Wa Bladder",
+          "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+        },
+        {
+          "name": "Shav'Wa Eye",
+          "icon": "icons/misc/organ/Shav'Wa_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye"
+        }
+      ]
     },
     {
       "name": "The Witch",
@@ -1041,7 +1577,10 @@
       "image": "The Witch.png",
       "groups": {
         "faction": "The Corrupted",
-        "role": "Boss"
+        "role": "Boss",
+        "areas": [
+          "Beyond the Veil"
+        ]
       },
       "fields": {
         "tabs": "Witch Phase 1 & 2, Witch Phase 3, Witch Phase 4, Witch Phase 6",
@@ -1058,7 +1597,11 @@
       "image": "Tracker.png",
       "groups": {
         "faction": "The Black Guild",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves",
+          "Town"
+        ]
       },
       "fields": {
         "Areas": "Caves, Town",
@@ -1079,7 +1622,10 @@
       "image": "Twerker.png",
       "groups": {
         "faction": "Shav'Wa",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Fortress"
+        ]
       },
       "fields": {
         "Areas": "Fortress",
@@ -1088,7 +1634,24 @@
         "Exp": "15",
         "Dmg": "40"
       },
-      "icon": "icons/enemy/_etc/Twerker.png"
+      "icon": "icons/enemy/_etc/Twerker.png",
+      "organDrops": [
+        {
+          "name": "Shav'Wa Skin",
+          "icon": "icons/misc/organ/Shav'Wa_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin"
+        },
+        {
+          "name": "Shav'Wa Bladder",
+          "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+        },
+        {
+          "name": "Shav'Wa Eye",
+          "icon": "icons/misc/organ/Shav'Wa_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye"
+        }
+      ]
     },
     {
       "name": "Warden",
@@ -1096,7 +1659,10 @@
       "image": "Warden.png",
       "groups": {
         "faction": "Shav'Wa",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Fortress"
+        ]
       },
       "fields": {
         "Areas": "Fortress",
@@ -1105,7 +1671,24 @@
         "Exp": "9",
         "Dmg": "16"
       },
-      "icon": "icons/enemy/_etc/Warden.png"
+      "icon": "icons/enemy/_etc/Warden.png",
+      "organDrops": [
+        {
+          "name": "Shav'Wa Skin",
+          "icon": "icons/misc/organ/Shav'Wa_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Skin"
+        },
+        {
+          "name": "Shav'Wa Bladder",
+          "icon": "icons/misc/organ/Shav'Wa_Bladder.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Bladder"
+        },
+        {
+          "name": "Shav'Wa Eye",
+          "icon": "icons/misc/organ/Shav'Wa_Eye.png",
+          "page": "https://sulfur.wiki.gg/wiki/Shav%27Wa_Eye"
+        }
+      ]
     },
     {
       "name": "Watcher",
@@ -1113,7 +1696,10 @@
       "image": "Watcher.png",
       "groups": {
         "faction": "The Craw",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Forest"
+        ]
       },
       "fields": {
         "Areas": "Forest",
@@ -1122,7 +1708,19 @@
         "Exp": "2",
         "Dmg": "10"
       },
-      "icon": "icons/enemy/_etc/Watcher.png"
+      "icon": "icons/enemy/_etc/Watcher.png",
+      "organDrops": [
+        {
+          "name": "Craw Flesh",
+          "icon": "icons/misc/organ/Craw_Flesh.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Flesh"
+        },
+        {
+          "name": "Craw Skin",
+          "icon": "icons/misc/organ/Craw_Skin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Craw_Skin"
+        }
+      ]
     },
     {
       "name": "Wraith",
@@ -1130,7 +1728,12 @@
       "image": "Wraith.png",
       "groups": {
         "faction": "Ghosts",
-        "role": "Normal"
+        "role": "Normal",
+        "areas": [
+          "Caves",
+          "Town",
+          "Sewers"
+        ]
       },
       "fields": {
         "Areas": "Caves, Town, Sewers",

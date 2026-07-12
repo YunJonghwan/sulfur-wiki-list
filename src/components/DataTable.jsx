@@ -8,6 +8,19 @@ const BASE = import.meta.env.BASE_URL
 // real stat modifiers/effects show. Still visible in the full grid view.
 const META_KEYS = new Set(['GridSize', 'SellVal', 'BuyVal', 'SoldBy', 'SubType'])
 
+// Enemy DmgType -> the equipment resistance stat that mitigates it, shown as
+// a tooltip on the chip so players know what to gear up with against a given
+// enemy. Equipment only has 7 elemental/status resist stats; "Normal" damage
+// has no counterpart (mitigated by base armor, not a resist %).
+const DMG_TYPE_RESIST = {
+  Fire: { en: 'Mitigated by FireRst on equipment', ko: '장비의 화염 저항(FireRst)으로 경감' },
+  Frost: { en: 'Mitigated by FrostRst on equipment', ko: '장비의 냉기 저항(FrostRst)으로 경감' },
+  Poison: { en: 'Mitigated by PsnRst on equipment', ko: '장비의 독 저항(PsnRst)으로 경감' },
+  Explosion: { en: 'Mitigated by ExplRst on equipment', ko: '장비의 폭발 저항(ExplRst)으로 경감' },
+  Eletricity: { en: 'Mitigated by ElecRst on equipment', ko: '장비의 전기 저항(ElecRst)으로 경감' },
+  Electricity: { en: 'Mitigated by ElecRst on equipment', ko: '장비의 전기 저항(ElecRst)으로 경감' },
+}
+
 // Raw field each axis groups by. When that axis is the active grouping, every
 // row in a section/table already shares the same value (it's the group
 // heading), so the matching column is redundant and gets hidden — unless a
@@ -247,6 +260,34 @@ function MiniRecipeRow({ target }) {
 // other consumables it gets combined into — a simple icon+name chip row
 // rather than a full table (the target's own recipe is already shown on its
 // own row), with a hover tooltip showing that recipe inline.
+function OrganDropsLine({ item, lang }) {
+  const targets = item.organDrops
+  if (!targets || targets.length === 0) return null
+  return (
+    <div className="recipe-line used-in-line">
+      <div className="recipe-head">
+        <span className="recipe-label">{t(UI.organDrops, lang)}</span>
+      </div>
+      <div className="used-in-chips">
+        {targets.map((tgt) => (
+          <a
+            key={tgt.name}
+            className="used-in-chip"
+            href={tgt.page}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {imageUrl(tgt.icon) && (
+              <img className="item-icon recipe-icon" src={imageUrl(tgt.icon)} alt="" width="20" height="20" />
+            )}
+            <span>{tgt.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function UsedInLine({ item, lang, itemsByName }) {
   const targets = item.usedIn
   if (!targets || targets.length === 0) return null
@@ -441,8 +482,14 @@ export default function DataTable({ data, lang }) {
                       if (!raw || META_KEYS.has(col.key) || col.key === hiddenField) return null
                       const tone = valueTone(raw)
                       const sel = col.key === abilityKey ? ' sel' : ''
+                      const resistHint =
+                        data.kind === 'enemy' && col.key === 'DmgType' ? DMG_TYPE_RESIST[raw] : null
                       return (
-                        <span key={col.key} className={`chip ${tone}${sel}`}>
+                        <span
+                          key={col.key}
+                          className={`chip ${tone}${sel}${resistHint ? ' chip-hint' : ''}`}
+                          title={resistHint ? t(resistHint, lang) : undefined}
+                        >
                           <b>{columnLabel(col, lang)}</b>
                           {raw}
                         </span>
@@ -462,6 +509,7 @@ export default function DataTable({ data, lang }) {
                   {data.kind === 'consumable' && (
                     <UsedInLine item={it} lang={lang} itemsByName={itemsByName} />
                   )}
+                  {data.kind === 'enemy' && <OrganDropsLine item={it} lang={lang} />}
                 </td>
               </tr>
             ))}

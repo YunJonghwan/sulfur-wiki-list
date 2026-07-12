@@ -78,7 +78,8 @@ export const UI = {
   oilOpt: { en: 'Oils', ko: '오일' },
   recipe: { en: 'Recipe', ko: '레시피' },
   moreRecipes: { en: 'other recipes', ko: '개의 다른 조합법 더보기' },
-  hideRecipes: { en: 'Hide', ko: '접기' }
+  hideRecipes: { en: 'Hide', ko: '접기' },
+  organDrops: { en: 'May drop', ko: '드랍 가능' },
 }
 
 // Korean labels for sub-group axes (weapon class, ammo, oil effect…).
@@ -94,6 +95,7 @@ export const AXIS_KO = {
   organSource: '장기 출처',
   faction: '진영',
   role: '분류',
+  areas: '출현 지역',
 }
 
 // Korean labels for sub-group values. Missing values fall back to English.
@@ -191,6 +193,17 @@ export const GROUP_KO = {
   // enemy role
   Boss: '보스',
   Normal: '일반',
+  // enemy areas found in
+  Caves: '동굴',
+  Town: '마을',
+  Desert: '사막',
+  Sewers: '하수도',
+  Forest: '숲',
+  Fortress: '요새',
+  Castle: '성',
+  Dungeon: '던전',
+  'Beyond the Veil': '베일 너머',
+  'Hedge Maze': '산울타리 미로',
 }
 
 export function groupLabel(value, label, lang) {
