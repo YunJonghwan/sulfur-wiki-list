@@ -39,7 +39,7 @@ ICON_WIDTH = 64
 
 # Kinds we generate a page/table for, in the requested display order.
 TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable",
-                "scroll", "passive", "misc", "chisel", "enemy"]
+                "scroll", "passive", "misc", "chisel", "repair", "enemy"]
 
 # Ordered stat columns per kind, taken from Template:Item Infobox.
 # The frontend only shows columns that at least one item actually populates.
@@ -117,6 +117,10 @@ KIND_COLUMNS: dict[str, list[str]] = {
     ],
     "chisel": [
         "GridSize", "ChamberAmmo",
+        "SellVal", "BuyVal", "SoldBy",
+    ],
+    "repair": [
+        "GridSize", "DrbPts",
         "SellVal", "BuyVal", "SoldBy",
     ],
     "enemy": [

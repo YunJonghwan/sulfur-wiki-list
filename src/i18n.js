@@ -14,6 +14,7 @@ export const CATEGORIES = [
   { kind: 'passive', en: 'Passives', ko: '패시브' },
   { kind: 'consumable', en: 'Consumables', ko: '소비품' },
   { kind: 'misc', en: 'Materials', ko: '잡화' },
+  { kind: 'repair', en: 'Repair Items', ko: '수리용품' },
   { kind: 'enemy', en: 'Enemies', ko: '적' },
   { kind: 'location', en: 'Locations', ko: '지역' },
 ]
@@ -224,6 +225,7 @@ export function axisLabel(key, fallback, lang) {
 // provided by the scraper.
 export const COLUMN_KO = {
   GridSize: '크기',
+  DrbPts: '내구도 회복량',
   SubType: '종류',
   Ammo: '탄약',
   Mode: '발사 모드',

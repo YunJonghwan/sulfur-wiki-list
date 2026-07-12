@@ -1,0 +1,182 @@
+{
+  "kind": "repair",
+  "generated": "2026-07-12T12:13:14.510206+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "GridSize",
+      "label": "Grid Size"
+    },
+    {
+      "key": "DrbPts",
+      "label": "Durability Restored"
+    },
+    {
+      "key": "SellVal",
+      "label": "Selling Value"
+    },
+    {
+      "key": "BuyVal",
+      "label": "Buying Value"
+    },
+    {
+      "key": "SoldBy",
+      "label": "Sold By"
+    },
+    {
+      "key": "SubType",
+      "label": "Type"
+    }
+  ],
+  "axes": [],
+  "items": [
+    {
+      "name": "Air Duster",
+      "page": "https://sulfur.wiki.gg/wiki/Air_Duster",
+      "image": "Air Duster.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×1",
+        "SellVal": "90",
+        "BuyVal": "180",
+        "DrbPts": "750"
+      },
+      "icon": "icons/repair/_etc/Air_Duster.png"
+    },
+    {
+      "name": "BeGone",
+      "page": "https://sulfur.wiki.gg/wiki/BeGone",
+      "image": "BeGone.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "DrbPts": "500",
+        "SellVal": "125"
+      },
+      "icon": "icons/repair/_etc/BeGone.png"
+    },
+    {
+      "name": "Bleach",
+      "page": "https://sulfur.wiki.gg/wiki/Bleach",
+      "image": "Bleach.png",
+      "groups": {
+        "type": "Ingredient"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "SubType": "Ingredient",
+        "SellVal": "60",
+        "DrbPts": "350"
+      },
+      "icon": "icons/repair/ingredient/Bleach.png"
+    },
+    {
+      "name": "Cotton Swabs",
+      "page": "https://sulfur.wiki.gg/wiki/Cotton_Swabs",
+      "image": "Cotton Swabs.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "DrbPts": "80",
+        "SellVal": "13",
+        "BuyVal": "25",
+        "SoldBy": "Fex Shuen, Rat Queen"
+      },
+      "icon": "icons/repair/_etc/Cotton_Swabs.png"
+    },
+    {
+      "name": "Dish Soap",
+      "page": "https://sulfur.wiki.gg/wiki/Dish_Soap",
+      "image": "Dish Soap.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×2",
+        "DrbPts": "400",
+        "SellVal": "50",
+        "SoldBy": "Stiffleg"
+      },
+      "icon": "icons/repair/_etc/Dish_Soap.png"
+    },
+    {
+      "name": "Microfiber Dish Cloth",
+      "page": "https://sulfur.wiki.gg/wiki/Microfiber_Dish_Cloth",
+      "image": "Microfiber Dish Cloth.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "DrbPts": "375",
+        "SellVal": "25"
+      },
+      "icon": "icons/repair/_etc/Microfiber_Dish_Cloth.png"
+    },
+    {
+      "name": "Repair Kit",
+      "page": "https://sulfur.wiki.gg/wiki/Repair_Kit",
+      "image": "Repair Kit.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×1",
+        "DrbPts": "6000",
+        "SellVal": "1500",
+        "BuyVal": "3000",
+        "SoldBy": "Ralphie, Stiffleg, Haukland Rep., Fex Shuen, Blond Magus, Qiosk, Bill"
+      },
+      "icon": "icons/repair/_etc/Repair_Kit.png"
+    },
+    {
+      "name": "Soapy Wool",
+      "page": "https://sulfur.wiki.gg/wiki/Soapy_Wool",
+      "image": "Soapy Wool.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "DrbPts": "450",
+        "SellVal": "45"
+      },
+      "icon": "icons/repair/_etc/Soapy_Wool.png"
+    },
+    {
+      "name": "Toilet Paper",
+      "page": "https://sulfur.wiki.gg/wiki/Toilet_Paper",
+      "image": "Toilet Paper.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "1×1",
+        "DrbPts": "375",
+        "SellVal": "50"
+      },
+      "icon": "icons/repair/_etc/Toilet_Paper.png"
+    },
+    {
+      "name": "Wet Wipes",
+      "page": "https://sulfur.wiki.gg/wiki/Wet_Wipes",
+      "image": "Wet Wipes.png",
+      "groups": {
+        "type": "Other"
+      },
+      "fields": {
+        "GridSize": "2×1",
+        "DrbPts": "750",
+        "SellVal": "50"
+      },
+      "icon": "icons/repair/_etc/Wet_Wipes.png"
+    }
+  ]
+}
