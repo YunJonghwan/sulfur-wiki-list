@@ -207,39 +207,6 @@ export default function BuildSimulator({ lang }) {
   return (
     <div className="build">
       <section className="build-loadout">
-        {/* Saved builds — local to this browser only (localStorage). */}
-        <div className="slot-group">
-          <h3>{t(UI.savedBuilds, lang)}</h3>
-          {savedBuilds.length > 0 && (
-            <ul className="saved-build-list">
-              {savedBuilds.map((b) => (
-                <li className="saved-build-row" key={b.id}>
-                  <span className="saved-build-name">{b.name}</span>
-                  <button type="button" className="pill" onClick={() => handleLoadBuild(b)}>
-                    {t(UI.loadBuild, lang)}
-                  </button>
-                  <button type="button" className="pill danger" onClick={() => handleDeleteBuild(b.id)}>
-                    {t(UI.deleteBuild, lang)}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-          <div className="saved-build-new">
-            <input
-              type="text"
-              className="saved-build-input"
-              placeholder={t(UI.saveBuildPlaceholder, lang)}
-              value={saveNameInput}
-              onChange={(e) => setSaveNameInput(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && handleSaveBuild()}
-            />
-            <button type="button" className="pill" onClick={handleSaveBuild} disabled={!saveNameInput.trim()}>
-              {t(UI.saveBuild, lang)}
-            </button>
-          </div>
-        </div>
-
         {/* Weapon + enchantments */}
         <div className="slot-group">
           <h3>{t(UI.weaponSlot, lang)}</h3>
@@ -496,6 +463,39 @@ export default function BuildSimulator({ lang }) {
               )}
             </>
           )}
+        </div>
+
+        {/* Saved builds — local to this browser only (localStorage). */}
+        <div className="result-card">
+          <h3>{t(UI.savedBuilds, lang)}</h3>
+          {savedBuilds.length > 0 && (
+            <ul className="saved-build-list">
+              {savedBuilds.map((b) => (
+                <li className="saved-build-row" key={b.id}>
+                  <span className="saved-build-name">{b.name}</span>
+                  <button type="button" className="pill" onClick={() => handleLoadBuild(b)}>
+                    {t(UI.loadBuild, lang)}
+                  </button>
+                  <button type="button" className="pill danger" onClick={() => handleDeleteBuild(b.id)}>
+                    {t(UI.deleteBuild, lang)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="saved-build-new">
+            <input
+              type="text"
+              className="saved-build-input"
+              placeholder={t(UI.saveBuildPlaceholder, lang)}
+              value={saveNameInput}
+              onChange={(e) => setSaveNameInput(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && handleSaveBuild()}
+            />
+            <button type="button" className="pill" onClick={handleSaveBuild} disabled={!saveNameInput.trim()}>
+              {t(UI.saveBuild, lang)}
+            </button>
+          </div>
         </div>
       </section>
     </div>
