@@ -29,6 +29,16 @@ const DMG_TYPE_RESIST = {
 // column, since one class spans several ammo types).
 const AXIS_FIELD = { class: 'SubType', ammo: 'Ammo', type: 'SubType' }
 
+// Insert thousand separators into plain integer values ("5000" -> "5,000")
+// so large stats (enemy HP, prices, etc.) read easily at a glance. Anything
+// that isn't a bare integer — percentages, ranges, "40×8"-style compound
+// text, decimals — is left exactly as the wiki wrote it.
+function formatValue(raw) {
+  if (raw == null) return raw
+  const s = String(raw)
+  return /^-?\d+$/.test(s) ? Number(s).toLocaleString('en-US') : raw
+}
+
 function imageUrl(icon) {
   if (!icon) return null
   return BASE + icon
@@ -494,7 +504,7 @@ export default function DataTable({ data, lang }) {
                           title={resistHint ? t(resistHint, lang) : undefined}
                         >
                           <b>{columnLabel(col, lang)}</b>
-                          {raw}
+                          {formatValue(raw)}
                         </span>
                       )
                     })}
@@ -561,7 +571,7 @@ export default function DataTable({ data, lang }) {
                 const raw = it.fields[col.key]
                 return (
                   <td key={col.key} className={valueTone(raw)}>
-                    {raw ?? ''}
+                    {formatValue(raw) ?? ''}
                   </td>
                 )
               })}
