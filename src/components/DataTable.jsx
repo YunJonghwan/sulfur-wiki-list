@@ -325,8 +325,11 @@ export default function DataTable({ data, lang }) {
   const axes = data.axes || []
 
   const [search, setSearch] = useState('')
-  const [abilityKey, setAbilityKey] = useState('') // selected stat for sort/filter
-  const [abilityDir, setAbilityDir] = useState('desc')
+  // Enemies default to sorting by HP ascending (weak -> strong) since that
+  // reads as a natural difficulty curve within each faction/area group;
+  // every other kind keeps the plain alphabetical default.
+  const [abilityKey, setAbilityKey] = useState(() => (data.kind === 'enemy' ? 'HP' : '')) // selected stat for sort/filter
+  const [abilityDir, setAbilityDir] = useState(() => (data.kind === 'enemy' ? 'asc' : 'desc'))
   const [onlyWith, setOnlyWith] = useState(false)
   const [gridSortKey, setGridSortKey] = useState('__name')
   const [gridSortDir, setGridSortDir] = useState('asc')
