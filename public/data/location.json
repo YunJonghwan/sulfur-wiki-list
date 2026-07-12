@@ -1,0 +1,1060 @@
+{
+  "kind": "location",
+  "generated": "2026-07-12T12:04:00.211988+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "locations": [
+    {
+      "name": "Caves",
+      "page": "https://sulfur.wiki.gg/wiki/Caves",
+      "act": "I",
+      "special": false,
+      "description": "The Caves are the starting area of SULFUR and can be entered through the cave entrance located to the left of the Church.\n\nThe Caves contain seven stages. Stage four always contains a checkpoint to refill The Amulet, and Stage seven contains the area boss, Cousin. Defeating Cousin unlocks The Town.\n\nThis area features large rooms with high ceilings, narrow bridges, and cliff ledges. The cliff ledges do significant damage to the player if they fall into one, and can outright kill the player if their health is low.",
+      "enemies": [
+        {
+          "name": "Guard Dog",
+          "icon": "icons/enemy/_etc/Guard_Dog.png",
+          "page": "https://sulfur.wiki.gg/wiki/Guard_Dog"
+        },
+        {
+          "name": "Tracker",
+          "icon": "icons/enemy/_etc/Tracker.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tracker"
+        },
+        {
+          "name": "Goblin Spearman",
+          "icon": "icons/enemy/_etc/Goblin_Spearman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Spearman"
+        },
+        {
+          "name": "Goblin Archer",
+          "icon": "icons/enemy/_etc/Goblin_Archer.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Archer"
+        },
+        {
+          "name": "Goblin Young",
+          "icon": "icons/enemy/_etc/Goblin_Young.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Young"
+        },
+        {
+          "name": "Goblin Barrel Boy",
+          "icon": "icons/enemy/_etc/Goblin_Barrel_Boy.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Barrel_Boy"
+        },
+        {
+          "name": "Goblin Wizard (Fire)",
+          "icon": "icons/enemy/_etc/Goblin_Wizard_(Fire).png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Fire%29"
+        },
+        {
+          "name": "Goblin Wizard (Frost)",
+          "icon": "icons/enemy/_etc/Goblin_Wizard_(Frost).png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Frost%29"
+        },
+        {
+          "name": "Goblin Wizard (Poison)",
+          "icon": "icons/enemy/_etc/Goblin_Wizard_(Poison).png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Poison%29"
+        },
+        {
+          "name": "Goblin Wizard (Electricity)",
+          "icon": "icons/enemy/_etc/Goblin_Wizard_(Electricity).png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Electricity%29"
+        },
+        {
+          "name": "Goblin Civilian",
+          "icon": "icons/enemy/_etc/Goblin_Civilian.png",
+          "page": "https://sulfur.wiki.gg/wiki/Goblin_Civilian"
+        },
+        {
+          "name": "Cousin",
+          "icon": "icons/enemy/_etc/Cousin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cousin"
+        },
+        {
+          "name": "Bruiser",
+          "icon": "icons/enemy/_etc/Bruiser.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bruiser"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Haukland Salesman",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Haukland_Salesman"
+        },
+        {
+          "name": "Fex Shuen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Fex_Shuen"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Skrip",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Skrip"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [
+        {
+          "name": "Bread",
+          "icon": "icons/consumable/food/Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bread"
+        },
+        {
+          "name": "Butter",
+          "icon": "icons/consumable/food/Butter.png",
+          "page": "https://sulfur.wiki.gg/wiki/Butter"
+        },
+        {
+          "name": "Potato",
+          "icon": "icons/consumable/food/Potato.png",
+          "page": "https://sulfur.wiki.gg/wiki/Potato"
+        },
+        {
+          "name": "Cheese",
+          "icon": "icons/consumable/food/Cheese.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cheese"
+        },
+        {
+          "name": "Bottled Water",
+          "icon": "icons/consumable/beverage/Bottled_Water.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bottled_Water"
+        },
+        {
+          "name": "Broth",
+          "icon": "icons/consumable/food/Broth.png",
+          "page": "https://sulfur.wiki.gg/wiki/Broth"
+        },
+        {
+          "name": "Snail",
+          "icon": "icons/misc/ingredient/Snail.png",
+          "page": "https://sulfur.wiki.gg/wiki/Snail"
+        }
+      ],
+      "subareas": [],
+      "pois": [
+        "Stage 4 of the Caves contains a checkpoint to refill The Amulet.",
+        "Stage 5 contains a mini-boss fight, in which you have to defeat a Matryoshka Monstrosity Goblin Barrel Boy. A Scroll or Oil will occur as the reward after beating them.",
+        "Stage 7 contains the area Boss, Cousin. A wooden cargo elevator will bring you back to The Church after defeating him."
+      ],
+      "tips": [
+        "The Caves can be navigated quickly and enemies are typically grouped together closely, making the area a good choice for leveling weapon ranks.",
+        "Loot containers can spawn underwater, and in hard-to-reach areas, so exploration will be frequently rewarded."
+      ]
+    },
+    {
+      "name": "The Church",
+      "page": "https://sulfur.wiki.gg/wiki/The_Church",
+      "act": "I",
+      "special": false,
+      "description": "The Church is called The Original Sin as a reminder that all of its members are sinners in some way or another. The Original Sin is open to everyone regardless of their past which is why most of the Congregation members are \"innocence-impaired\". The saloon doors are meant to symbolize that \"the door is always open\" for anyone to join. However, it is this same open-door policy that doomed them.",
+      "enemies": [],
+      "vendors": [
+        {
+          "name": "Arthur",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Arthur"
+        },
+        {
+          "name": "Father",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Father"
+        },
+        {
+          "name": "Gravedigger",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Gravedigger"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Telia",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Telia"
+        }
+      ],
+      "loot": [],
+      "subareas": [],
+      "pois": [],
+      "tips": []
+    },
+    {
+      "name": "Town",
+      "page": "https://sulfur.wiki.gg/wiki/Town",
+      "act": "II",
+      "special": false,
+      "description": "The Town is the second area of SULFUR and can be entered through the Town entrance located to the left of the Church after defeating Cousin in the Caves.",
+      "enemies": [
+        {
+          "name": "Rifleman",
+          "icon": "icons/enemy/_etc/Rifleman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rifleman"
+        },
+        {
+          "name": "Tracker",
+          "icon": "icons/enemy/_etc/Tracker.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tracker"
+        },
+        {
+          "name": "Bruiser",
+          "icon": "icons/enemy/_etc/Bruiser.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bruiser"
+        },
+        {
+          "name": "Guard Dog",
+          "icon": "icons/enemy/_etc/Guard_Dog.png",
+          "page": "https://sulfur.wiki.gg/wiki/Guard_Dog"
+        },
+        {
+          "name": "Black Guild Cardinal",
+          "icon": "icons/enemy/_etc/Black_Guild_Cardinal.png",
+          "page": "https://sulfur.wiki.gg/wiki/Black_Guild_Cardinal"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Grossberg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Grossberg"
+        },
+        {
+          "name": "Fex Shuen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Fex_Shuen"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [],
+      "subareas": [],
+      "pois": [],
+      "tips": [
+        "The Town is a good location to obtain food items and ingredients, including Flour, Sugar, and Egg."
+      ]
+    },
+    {
+      "name": "Sewers",
+      "page": "https://sulfur.wiki.gg/wiki/Sewers",
+      "act": "II",
+      "special": false,
+      "description": "The Sewer is the third area of SULFUR and can be entered through the entrance located to the right of the Town entrance after defeating Black Guild Cardinals in the Town area.\n\nThe Sewer is a network of winding hallways and submerged corridors in which enemies spawn abundantly. Many areas can only be traversed by swimming, making gear and equipment that improve swimming or visibility underwater extremely helpful.",
+      "enemies": [
+        {
+          "name": "Bruiser",
+          "icon": "icons/enemy/_etc/Bruiser.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bruiser"
+        },
+        {
+          "name": "Tracker",
+          "icon": "icons/enemy/_etc/Tracker.png",
+          "page": "https://sulfur.wiki.gg/wiki/Tracker"
+        },
+        {
+          "name": "Rifleman",
+          "icon": "icons/enemy/_etc/Rifleman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rifleman"
+        },
+        {
+          "name": "Guard Dog",
+          "icon": "icons/enemy/_etc/Guard_Dog.png",
+          "page": "https://sulfur.wiki.gg/wiki/Guard_Dog"
+        },
+        {
+          "name": "Corrupted Spearman",
+          "icon": "icons/enemy/_etc/Corrupted_Spearman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Spearman"
+        },
+        {
+          "name": "Corrupted Archer",
+          "icon": "icons/enemy/_etc/Corrupted_Archer.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Archer"
+        },
+        {
+          "name": "Corrupted Guildsman",
+          "icon": "icons/enemy/_etc/Corrupted_Guildsman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Guildsman"
+        },
+        {
+          "name": "Corrupted Guildsman (Ranged)",
+          "icon": "icons/enemy/_etc/Corrupted_Guildsman_(Ranged).png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Guildsman_%28Ranged%29"
+        },
+        {
+          "name": "Corrupted Lurk",
+          "icon": "icons/enemy/_etc/Corrupted_Lurk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Lurk"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Grossberg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Grossberg"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Rat Queen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Rat_Queen"
+        },
+        {
+          "name": "Fex Shuen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Fex_Shuen"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [
+        {
+          "name": "Fatberg Chunk",
+          "icon": "icons/consumable/ingredient/Fatberg_Chunk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fatberg_Chunk"
+        },
+        {
+          "name": "Cotton Swabs",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Cotton_Swabs"
+        },
+        {
+          "name": "Green Glob",
+          "icon": "icons/misc/ingredient/Green_Glob.png",
+          "page": "https://sulfur.wiki.gg/wiki/Green_Glob"
+        }
+      ],
+      "subareas": [],
+      "pois": [],
+      "tips": [
+        "Wearing items like the Diving Fin and Diving Mask can make navigating submerged areas much easier.",
+        "Passive items like Oxygen Tank and Extra Lung can make extended swimming underwater much safer, and submerged areas possible to traverse without taking damage from drowning.",
+        "It is possible to remove the Poisoned status effect, commonly inflicted by Corrupted Lurks, by jumping into the water."
+      ]
+    },
+    {
+      "name": "Hedge Maze",
+      "page": "https://sulfur.wiki.gg/wiki/Hedge_Maze",
+      "act": "II",
+      "special": false,
+      "description": "The Hedge Maze is the fourth area of SULFUR. The entrance to Hedge Maze will open after completing The Sewers once.\n\nThe Hedge Maze leads to the entrance to The Dungeon, and a shortcut to The Castle, once it has been entered at least once. The exit of Hedge Maze also has a dead tree, under which 0-3 Craw Guano can be found.",
+      "enemies": [
+        {
+          "name": "Corrupted Amalgamation",
+          "icon": "icons/enemy/_etc/Corrupted_Amalgamation.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Amalgamation"
+        }
+      ],
+      "vendors": [],
+      "loot": [],
+      "subareas": [],
+      "pois": [
+        "A variety of chests scattered around the maze, frequently containing Oils or other valuable loot items."
+      ],
+      "tips": []
+    },
+    {
+      "name": "Dungeon",
+      "page": "https://sulfur.wiki.gg/wiki/Dungeon",
+      "act": "II",
+      "special": false,
+      "description": "The Dungeon is the fifth area and can only be entered by completing the Hedge Maze.\n\nThe Church has no direct access to the Dungeon, however the Hedge Maze is the closest area leading to the Dungeon.",
+      "enemies": [
+        {
+          "name": "Rifleman",
+          "icon": "icons/enemy/_etc/Rifleman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rifleman"
+        },
+        {
+          "name": "Guard Dog",
+          "icon": "icons/enemy/_etc/Guard_Dog.png",
+          "page": "https://sulfur.wiki.gg/wiki/Guard_Dog"
+        },
+        {
+          "name": "Bruiser",
+          "icon": "icons/enemy/_etc/Bruiser.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bruiser"
+        },
+        {
+          "name": "Assassin",
+          "icon": "icons/enemy/_etc/Assassin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Assassin"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Grossberg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Grossberg"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Fex Shuen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Fex_Shuen"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [
+        {
+          "name": "Flour",
+          "icon": "icons/consumable/ingredient/Flour.png",
+          "page": "https://sulfur.wiki.gg/wiki/Flour"
+        },
+        {
+          "name": "Hard Bread",
+          "icon": "icons/consumable/food/Hard_Bread.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hard_Bread"
+        },
+        {
+          "name": "Liquor",
+          "icon": "icons/consumable/beverage/Liquor.png",
+          "page": "https://sulfur.wiki.gg/wiki/Liquor"
+        },
+        {
+          "name": "Lussekatt",
+          "icon": "icons/consumable/food/Lussekatt.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lussekatt"
+        },
+        {
+          "name": "Oats",
+          "icon": "icons/consumable/food/Oats.png",
+          "page": "https://sulfur.wiki.gg/wiki/Oats"
+        },
+        {
+          "name": "Christmas Spice",
+          "icon": "icons/consumable/ingredient/Christmas_Spice.png",
+          "page": "https://sulfur.wiki.gg/wiki/Christmas_Spice"
+        },
+        {
+          "name": "Cacao",
+          "icon": "icons/consumable/food/Cacao.png",
+          "page": "https://sulfur.wiki.gg/wiki/Cacao"
+        }
+      ],
+      "subareas": [],
+      "pois": [],
+      "tips": []
+    },
+    {
+      "name": "Castle",
+      "page": "https://sulfur.wiki.gg/wiki/Castle",
+      "act": "II",
+      "special": false,
+      "description": "The Castle is the sixth area and can only be entered by completing the Dungeon.\n\nThe Church has no direct access to the Castle; the Hedge Maze is the closest area leading to the Castle from The Church.\n\nA shortcut to the Castle will open after entering it for the first time, accessible not from The Church, but from the end of the Hedge Maze.",
+      "enemies": [
+        {
+          "name": "Rifleman",
+          "icon": "icons/enemy/_etc/Rifleman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rifleman"
+        },
+        {
+          "name": "Assassin",
+          "icon": "icons/enemy/_etc/Assassin.png",
+          "page": "https://sulfur.wiki.gg/wiki/Assassin"
+        },
+        {
+          "name": "Bishop",
+          "icon": "icons/enemy/_etc/Bishop.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bishop"
+        },
+        {
+          "name": "Sapper",
+          "icon": "icons/enemy/_etc/Sapper.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sapper"
+        },
+        {
+          "name": "Novanian Guard",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Novanian_Guard"
+        },
+        {
+          "name": "St. Lucia",
+          "icon": "icons/enemy/_etc/St._Lucia.png",
+          "page": "https://sulfur.wiki.gg/wiki/St._Lucia"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Blond Magus",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Blond_Magus"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [],
+      "subareas": [],
+      "pois": [],
+      "tips": []
+    },
+    {
+      "name": "Forest",
+      "page": "https://sulfur.wiki.gg/wiki/Forest",
+      "act": "III",
+      "special": false,
+      "description": "",
+      "enemies": [
+        {
+          "name": "Corrupted Spearman",
+          "icon": "icons/enemy/_etc/Corrupted_Spearman.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Spearman"
+        },
+        {
+          "name": "Corrupted Archer",
+          "icon": "icons/enemy/_etc/Corrupted_Archer.png",
+          "page": "https://sulfur.wiki.gg/wiki/Corrupted_Archer"
+        },
+        {
+          "name": "Abomination",
+          "icon": "icons/enemy/_etc/Abomination.png",
+          "page": "https://sulfur.wiki.gg/wiki/Abomination"
+        },
+        {
+          "name": "Watcher",
+          "icon": "icons/enemy/_etc/Watcher.png",
+          "page": "https://sulfur.wiki.gg/wiki/Watcher"
+        },
+        {
+          "name": "Sentinel",
+          "icon": "icons/enemy/_etc/Sentinel.png",
+          "page": "https://sulfur.wiki.gg/wiki/Sentinel"
+        },
+        {
+          "name": "Terrorbaum",
+          "icon": "icons/enemy/_etc/Terrorbaum.png",
+          "page": "https://sulfur.wiki.gg/wiki/Terrorbaum"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Grossberg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Grossberg"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Jaques De Fector",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Jaques_De_Fector"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [
+        {
+          "name": "Swing-Ding",
+          "icon": "icons/consumable/mushroom/Swing-Ding.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
+        },
+        {
+          "name": "Karl-Oskar",
+          "icon": "icons/consumable/food/Karl-Oskar.png",
+          "page": "https://sulfur.wiki.gg/wiki/Karl-Oskar"
+        },
+        {
+          "name": "Rödsopp",
+          "icon": "icons/consumable/mushroom/Rödsopp.png",
+          "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp"
+        },
+        {
+          "name": "Peanut",
+          "icon": "icons/consumable/nut/Peanut.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanut"
+        },
+        {
+          "name": "Pine Nuts",
+          "icon": "icons/consumable/nut/Pine_Nuts.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pine_Nuts"
+        },
+        {
+          "name": "Walnut",
+          "icon": "icons/consumable/food/Walnut.png",
+          "page": "https://sulfur.wiki.gg/wiki/Walnut"
+        },
+        {
+          "name": "Hazelnut",
+          "icon": "icons/consumable/nut/Hazelnut.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hazelnut"
+        },
+        {
+          "name": "Nut Mix",
+          "icon": "icons/consumable/food/Nut_Mix.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nut_Mix"
+        },
+        {
+          "name": "Bark",
+          "icon": "icons/misc/ingredient/Bark.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bark"
+        },
+        {
+          "name": "Berries",
+          "icon": "icons/consumable/food/Berries.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berries"
+        },
+        {
+          "name": "Skimmed Milk",
+          "icon": "icons/consumable/milk/Skimmed_Milk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Skimmed_Milk"
+        },
+        {
+          "name": "Low Fat Milk",
+          "icon": "icons/consumable/milk/Low_Fat_Milk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Low_Fat_Milk"
+        },
+        {
+          "name": "Whole Milk",
+          "icon": "icons/consumable/milk/Whole_Milk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Whole_Milk"
+        },
+        {
+          "name": "Chocolate Bar",
+          "icon": "icons/consumable/dessert/Chocolate_Bar.png",
+          "page": "https://sulfur.wiki.gg/wiki/Chocolate_Bar"
+        }
+      ],
+      "subareas": [],
+      "pois": [
+        "Graveyard\nHaunted by several Wraiths. A weapon chest can be found in the mausoleum within the graveyard, but entering it causes several more wraiths to rise from the plots in front of the area.\n\nHouse\nA house in the forest, in which you can find a stove and a Pølse. A basement can be found behind the house, in which you will find lots of Pølse, human organs, a cauldron, as well as an equipment chest."
+      ],
+      "tips": []
+    },
+    {
+      "name": "Shav'Wani Bridge",
+      "page": "https://sulfur.wiki.gg/wiki/Bridge",
+      "act": "III",
+      "special": false,
+      "description": "The Shav'Wani Bridge is the interconnecting zone between The Forest and The Fortress. It will open after completing the Forest once, and leads to the Fortress from The Church.\n\nThe area starts as a Forest map, and ends with a large bridge that continues straight into the Fortress proper",
+      "enemies": [
+        {
+          "name": "Samurai",
+          "icon": "icons/enemy/_etc/Samurai.png",
+          "page": "https://sulfur.wiki.gg/wiki/Samurai"
+        },
+        {
+          "name": "Warden",
+          "icon": "icons/enemy/_etc/Warden.png",
+          "page": "https://sulfur.wiki.gg/wiki/Warden"
+        }
+      ],
+      "vendors": [],
+      "loot": [
+        {
+          "name": "Swing-Ding",
+          "icon": "icons/consumable/mushroom/Swing-Ding.png",
+          "page": "https://sulfur.wiki.gg/wiki/Swing-Ding"
+        },
+        {
+          "name": "Karl-Oskar",
+          "icon": "icons/consumable/food/Karl-Oskar.png",
+          "page": "https://sulfur.wiki.gg/wiki/Karl-Oskar"
+        },
+        {
+          "name": "Rödsopp",
+          "icon": "icons/consumable/mushroom/Rödsopp.png",
+          "page": "https://sulfur.wiki.gg/wiki/R%C3%B6dsopp"
+        },
+        {
+          "name": "Peanut",
+          "icon": "icons/consumable/nut/Peanut.png",
+          "page": "https://sulfur.wiki.gg/wiki/Peanut"
+        },
+        {
+          "name": "Pine Nuts",
+          "icon": "icons/consumable/nut/Pine_Nuts.png",
+          "page": "https://sulfur.wiki.gg/wiki/Pine_Nuts"
+        },
+        {
+          "name": "Walnut",
+          "icon": "icons/consumable/food/Walnut.png",
+          "page": "https://sulfur.wiki.gg/wiki/Walnut"
+        },
+        {
+          "name": "Hazelnut",
+          "icon": "icons/consumable/nut/Hazelnut.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hazelnut"
+        },
+        {
+          "name": "Nut Mix",
+          "icon": "icons/consumable/food/Nut_Mix.png",
+          "page": "https://sulfur.wiki.gg/wiki/Nut_Mix"
+        },
+        {
+          "name": "Bark",
+          "icon": "icons/misc/ingredient/Bark.png",
+          "page": "https://sulfur.wiki.gg/wiki/Bark"
+        },
+        {
+          "name": "Berries",
+          "icon": "icons/consumable/food/Berries.png",
+          "page": "https://sulfur.wiki.gg/wiki/Berries"
+        },
+        {
+          "name": "Rice",
+          "icon": "icons/consumable/food/Rice.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice"
+        },
+        {
+          "name": "Matcha",
+          "icon": "icons/consumable/ingredient/Matcha.png",
+          "page": "https://sulfur.wiki.gg/wiki/Matcha"
+        },
+        {
+          "name": "Fish",
+          "icon": "icons/consumable/food/Fish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish"
+        },
+        {
+          "name": "Flat Sandfish",
+          "icon": "icons/consumable/food/Flat_Sandfish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Flat_Sandfish"
+        },
+        {
+          "name": "Seaweed",
+          "icon": "icons/consumable/food/Seaweed.png",
+          "page": "https://sulfur.wiki.gg/wiki/Seaweed"
+        }
+      ],
+      "subareas": [],
+      "pois": [
+        "Large bridge interconnecting the Forest and leading into the Fortress"
+      ],
+      "tips": []
+    },
+    {
+      "name": "Shav'Wani Fortress",
+      "page": "https://sulfur.wiki.gg/wiki/Fortress",
+      "act": "III",
+      "special": false,
+      "description": "",
+      "enemies": [
+        {
+          "name": "Samurai",
+          "icon": "icons/enemy/_etc/Samurai.png",
+          "page": "https://sulfur.wiki.gg/wiki/Samurai"
+        },
+        {
+          "name": "Grenadier",
+          "icon": "icons/enemy/_etc/Grenadier.png",
+          "page": "https://sulfur.wiki.gg/wiki/Grenadier"
+        },
+        {
+          "name": "Warden",
+          "icon": "icons/enemy/_etc/Warden.png",
+          "page": "https://sulfur.wiki.gg/wiki/Warden"
+        },
+        {
+          "name": "Twerker",
+          "icon": "icons/enemy/_etc/Twerker.png",
+          "page": "https://sulfur.wiki.gg/wiki/Twerker"
+        },
+        {
+          "name": "Lurk",
+          "icon": "icons/enemy/_etc/Lurk.png",
+          "page": "https://sulfur.wiki.gg/wiki/Lurk"
+        },
+        {
+          "name": "The Emperor",
+          "icon": "icons/enemy/_etc/The_Emperor.png",
+          "page": "https://sulfur.wiki.gg/wiki/The_Emperor"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Grossberg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Grossberg"
+        },
+        {
+          "name": "Fex Shuen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Fex_Shuen"
+        },
+        {
+          "name": "Skrip",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Skrip"
+        },
+        {
+          "name": "Qiosk",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Qiosk"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [
+        {
+          "name": "Rice",
+          "icon": "icons/consumable/food/Rice.png",
+          "page": "https://sulfur.wiki.gg/wiki/Rice"
+        },
+        {
+          "name": "Matcha",
+          "icon": "icons/consumable/ingredient/Matcha.png",
+          "page": "https://sulfur.wiki.gg/wiki/Matcha"
+        },
+        {
+          "name": "Fish",
+          "icon": "icons/consumable/food/Fish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Fish"
+        },
+        {
+          "name": "Flat Sandfish",
+          "icon": "icons/consumable/food/Flat_Sandfish.png",
+          "page": "https://sulfur.wiki.gg/wiki/Flat_Sandfish"
+        },
+        {
+          "name": "Seaweed",
+          "icon": "icons/consumable/food/Seaweed.png",
+          "page": "https://sulfur.wiki.gg/wiki/Seaweed"
+        }
+      ],
+      "subareas": [
+        {
+          "name": "Shav'Wani Bridge",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Bridge"
+        },
+        {
+          "name": "Pools",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Pools"
+        }
+      ],
+      "pois": [],
+      "tips": []
+    },
+    {
+      "name": "Desert",
+      "page": "https://sulfur.wiki.gg/wiki/Desert",
+      "act": "IV",
+      "special": false,
+      "description": "The Desert is the first released location of Chapter IV",
+      "enemies": [
+        {
+          "name": "Hellshrew Dig Dig",
+          "icon": "icons/enemy/_etc/Hellshrew_Dig_Dig.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Dig_Dig"
+        },
+        {
+          "name": "Hellshrew Shoota",
+          "icon": "icons/enemy/_etc/Hellshrew_Shoota.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Shoota"
+        },
+        {
+          "name": "Hellshrew Snipa",
+          "icon": "icons/enemy/_etc/Hellshrew_Snipa.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Snipa"
+        },
+        {
+          "name": "Hellshrew Sticka",
+          "icon": "icons/enemy/_etc/Hellshrew_Sticka.png",
+          "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Sticka"
+        },
+        {
+          "name": "Desert Claus",
+          "icon": "icons/enemy/_etc/Desert_Claus.png",
+          "page": "https://sulfur.wiki.gg/wiki/Desert_Claus"
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Fex Shuen",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Fex_Shuen"
+        },
+        {
+          "name": "Skrip",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Skrip"
+        },
+        {
+          "name": "Grossberg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Grossberg"
+        },
+        {
+          "name": "Bill",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Bill"
+        },
+        {
+          "name": "DH 'Ell Guy",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/DH_%27Ell_Guy"
+        }
+      ],
+      "loot": [],
+      "subareas": [
+        {
+          "name": "Trial of the Spirit",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Trial_of_the_Spirit"
+        }
+      ],
+      "pois": [],
+      "tips": [
+        "Because of the thick fog-like dust found in this area, long-range engagements are impossible without using scopes with magnification (such as the Assault Scope or Sniper Scope for example), as they can see further through the dust, mitigating this issue."
+      ]
+    },
+    {
+      "name": "Trial of the Spirit",
+      "page": "https://sulfur.wiki.gg/wiki/Trial_of_the_Spirit",
+      "act": "IV",
+      "special": true,
+      "description": "Trial of the Spirit is an optional sub-level of the desert location, one spawns in every(?) level of the desert except for Ⅰ where the entrance is always(?) collapsed, and Ⅴ where you fight the desert boss\n\nA Crypt key is needed to access the trial. Take note that some of the challenges are very difficult, and failing will result in death.",
+      "enemies": [],
+      "vendors": [],
+      "loot": [],
+      "subareas": [],
+      "pois": [],
+      "tips": []
+    },
+    {
+      "name": "Beyond the Veil",
+      "page": "https://sulfur.wiki.gg/wiki/Beyond_the_Veil",
+      "act": "IV",
+      "special": false,
+      "description": "Beyond the Veil is the last area in the game, and loops back into Caves after a brief driving section.",
+      "enemies": [
+        {
+          "name": "The Witch",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/The_Witch"
+        }
+      ],
+      "vendors": [],
+      "loot": [],
+      "subareas": [],
+      "pois": [],
+      "tips": [
+        "It is impossible to leave Beyond the Veil by teleporting to the church with The Amulet. For this reason it is recommended to drop off any loot and clear unnecessary inventory space before entering from the Desert, as progress is saved after defeating Desert Claus.",
+        "There are 20 Rödsopp in the area which can be collected to create Health Potions or Rödsopp Paste, if farming The Wich.",
+        "Your Priest's Chest is also in the area, as before most major bosses."
+      ]
+    }
+  ]
+}

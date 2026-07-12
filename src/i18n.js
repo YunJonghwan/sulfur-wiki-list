@@ -15,6 +15,7 @@ export const CATEGORIES = [
   { kind: 'consumable', en: 'Consumables', ko: '소비품' },
   { kind: 'misc', en: 'Materials', ko: '잡화' },
   { kind: 'enemy', en: 'Enemies', ko: '적' },
+  { kind: 'location', en: 'Locations', ko: '지역' },
 ]
 
 export const UI = {

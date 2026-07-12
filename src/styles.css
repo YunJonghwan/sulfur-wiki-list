@@ -1138,3 +1138,108 @@ td.empty {
 .app-footer a {
   color: var(--accent);
 }
+
+.loc-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loc-card {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+}
+
+.loc-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.loc-card-title a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.loc-card-title a:hover {
+  text-decoration: underline;
+}
+
+.loc-special-badge {
+  margin-right: 0.5rem;
+}
+
+.loc-desc {
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.loc-desc p {
+  margin: 0 0 0.5rem;
+}
+
+.loc-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.loc-section {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+}
+
+.loc-section-label {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.loc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+.loc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+}
+
+.loc-chip:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.loc-notes {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.loc-notes li {
+  margin-bottom: 0.35rem;
+  white-space: pre-line;
+}
+
+.loc-notes li:last-child {
+  margin-bottom: 0;
+}

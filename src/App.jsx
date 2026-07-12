@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { CATEGORIES, UI, t } from './i18n.js'
 import DataTable from './components/DataTable.jsx'
 import BuildSimulator from './components/BuildSimulator.jsx'
+import Locations from './components/Locations.jsx'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -93,7 +94,8 @@ export default function App() {
             {status === 'error' && !data && (
               <p className="notice error">{t(UI.error, lang)}</p>
             )}
-            {data && <DataTable key={data.kind} data={data} lang={lang} />}
+            {data && active === 'location' && <Locations data={data} lang={lang} />}
+            {data && active !== 'location' && <DataTable key={data.kind} data={data} lang={lang} />}
           </>
         )}
       </main>

@@ -307,6 +307,29 @@ def get_infobox_pages(template: str = "Template:Item Infobox") -> list[str]:
     return titles
 
 
+def get_category_pages(category: str) -> list[str]:
+    """Return all main-namespace (ns=0) page titles directly in a category —
+    excludes subcategory entries themselves (ns=14), which show up in the
+    same categorymembers listing.
+    """
+    titles: list[str] = []
+    cont: dict = {}
+    while True:
+        data = api_get({
+            "action": "query",
+            "list": "categorymembers",
+            "cmtitle": category,
+            "cmlimit": "max",
+            **cont,
+        })
+        titles.extend(p["title"] for p in data["query"]["categorymembers"] if p["ns"] == 0)
+        if "continue" in data:
+            cont = data["continue"]
+        else:
+            break
+    return titles
+
+
 def fetch_wikitext_batch(titles: list[str]) -> dict[str, str]:
     """Fetch raw wikitext for up to 50 titles at once."""
     out: dict[str, str] = {}
@@ -907,6 +930,199 @@ def attach_organ_drops(buckets: dict[str, list[dict]]) -> None:
             it["organDrops"] = matched
 
 
+# --- Locations --------------------------------------------------------------
+# Location pages have no infobox (unlike items/enemies) — they're freeform
+# wiki prose organized under a handful of loosely-consistent == Section ==
+# headings. Parsed by splitting on top-level headings and pattern-matching
+# within each section rather than a structured template.
+
+# Act grouping + display order isn't tagged anywhere on the pages themselves
+# (only implied by the Locations index page's own ordering), so it's hand-
+# mapped here. "special" locations are challenge/sub-areas that don't follow
+# the normal Enemies/Vendors/Notable Loot shape.
+LOCATION_META = {
+    "Caves": {"act": "I", "order": 1},
+    "The Church": {"act": "I", "order": 2},
+    "Town": {"act": "II", "order": 3},
+    "Sewers": {"act": "II", "order": 4},
+    "Hedge Maze": {"act": "II", "order": 5},
+    "Dungeon": {"act": "II", "order": 6},
+    "Castle": {"act": "II", "order": 7},
+    "Forest": {"act": "III", "order": 8},
+    "Bridge": {"act": "III", "order": 9},
+    "Fortress": {"act": "III", "order": 10},
+    "Desert": {"act": "IV", "order": 11},
+    "Trial of the Spirit": {"act": "IV", "order": 12, "special": True},
+    "Beyond the Veil": {"act": "IV", "order": 13},
+}
+
+# "Sulfur (Location)" is a meta/lore page about the game world itself (with
+# Lorem Ipsum placeholder text), not an explorable in-game area — excluded
+# rather than shown as a broken/empty card.
+LOCATION_EXCLUDE = {"Sulfur (Location)"}
+
+# A couple of location pages link to an enemy under a slightly different
+# name than the enemy's own page title.
+ENEMY_LINK_ALIASES = {"Goblin Cousin": "Cousin"}
+
+# Nicer card titles for a couple of pages whose bare title is generic/terse
+# compared to the bolded name actually used in their own prose.
+LOCATION_DISPLAY_NAME = {"Bridge": "Shav'Wani Bridge", "Fortress": "Shav'Wani Fortress"}
+
+SECTION_SPLIT_RE = re.compile(r"(?m)^(?<!=)==(?!=)\s*(.+?)\s*==(?!=)\s*$")
+SPOILER_RE = re.compile(r"\{\{\s*Spoiler\s*\|(.*?)\}\}", re.IGNORECASE | re.DOTALL)
+EXTLINK_RE = re.compile(r"\[https?://\S+\s+([^\]]+)\]")
+LINK_TITLE_RE = re.compile(r"\[\[([^\]|#]+)")
+
+
+SUBHEADING_RE = re.compile(r"(?m)^=+\s*(.+?)\s*=+\s*$")
+
+
+def clean_prose(text: str) -> str:
+    """Like clean_value(), but for multi-line/multi-paragraph location prose:
+    preserves paragraph breaks instead of collapsing everything to one line.
+    """
+    text = COMMENT_RE.sub("", text)
+    text = SPOILER_RE.sub(r"\1", text)
+    text = EXTLINK_RE.sub(r"\1", text)
+    text = FILE_RE.sub("", text)
+    # A few POI/Tips sections use their own === Sub-heading === breaks (e.g.
+    # Forest's Graveyard/House write-ups) — flatten to a plain line instead
+    # of leaking literal "===" into the rendered text.
+    text = SUBHEADING_RE.sub(r"\1", text)
+
+    def link_repl(m: re.Match) -> str:
+        inner = m.group(1)
+        return inner.split("|")[-1] if "|" in inner else inner
+
+    text = LINK_RE.sub(link_repl, text)
+    text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
+    text = TAG_RE.sub("", text)
+    text = BOLD_RE.sub("", text)
+    text = html.unescape(text)
+    lines = [ln.strip() for ln in text.splitlines()]
+    text = "\n".join(lines)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def split_location_sections(wikitext: str) -> tuple[str, dict[str, str]]:
+    """Return (intro prose, {lowercased heading: body}) for a location page."""
+    wikitext = COMMENT_RE.sub("", wikitext)
+    parts = SECTION_SPLIT_RE.split(wikitext)
+    intro = clean_prose(parts[0]) if parts else ""
+    sections: dict[str, str] = {}
+    for i in range(1, len(parts) - 1, 2):
+        heading = parts[i].strip().lower()
+        sections[heading] = sections.get(heading, "") + "\n" + parts[i + 1]
+    return intro, sections
+
+
+def extract_link_titles(section_text: str) -> list[str]:
+    """All distinct [[Page]] / [[Page|Display]] link targets in a section,
+    in first-seen order, skipping File:/Category: links.
+    """
+    seen: set[str] = set()
+    out: list[str] = []
+    for m in LINK_TITLE_RE.finditer(section_text):
+        title = m.group(1).strip()
+        if title.lower().startswith(("file:", "category:", "image:")):
+            continue
+        if title not in seen:
+            seen.add(title)
+            out.append(title)
+    return out
+
+
+def parse_loot_names(section_text: str) -> list[str]:
+    """Notable Loot bullets look like "* [[File:X.png|...|link=Name]] [[Name]]"
+    — the name may come from a trailing [[Name]] link, the File link's own
+    link= param, or (rarely) only one of the two. Prefer the trailing link
+    (the File's link= is only there to make the icon itself clickable, and
+    is occasionally copy-pasted wrong — a mismatched link= would otherwise
+    silently point the item at the wrong page).
+    """
+    names: list[str] = []
+    for line in section_text.splitlines():
+        line = line.strip()
+        m_file = re.search(r"\[\[File:([^\]]+)\]\]", line)
+        if not m_file:
+            continue
+        m_name = re.search(r"\[\[([^\]|]+)", line[m_file.end():])
+        if m_name:
+            names.append(m_name.group(1).strip())
+            continue
+        m_link = re.search(r"link=([^|\]]+)", m_file.group(1))
+        if m_link:
+            names.append(m_link.group(1).strip())
+    return names
+
+
+def extract_notes(section_text: str) -> list[str]:
+    """POIs/Tips sections are usually a bullet list, but occasionally just a
+    single prose paragraph with no bullets at all — handle both.
+    """
+    lines = [ln.strip() for ln in section_text.splitlines() if ln.strip()]
+    bullets = [ln for ln in lines if ln.startswith("*")]
+    if bullets:
+        notes = [clean_prose(b.lstrip("*").strip()) for b in bullets]
+        return [n for n in notes if n]
+    cleaned = clean_prose(section_text)
+    return [cleaned] if cleaned else []
+
+
+def build_locations(location_pages: dict[str, str], buckets: dict[str, list[dict]]) -> list[dict]:
+    """Parse each Category:Locations page into a description + enemies/
+    vendors/notable-loot/POI/tip card. Enemies and loot items are cross-
+    referenced against the already-built item/enemy buckets so they reuse
+    the same resolved icon + page link instead of being re-scraped.
+    """
+    enemy_by_name = {it["name"]: it for it in buckets.get("enemy", [])}
+    item_by_name: dict[str, dict] = {}
+    for kind in TARGET_KINDS:
+        if kind == "enemy":
+            continue
+        for it in buckets.get(kind, []):
+            item_by_name.setdefault(it["name"], it)
+
+    def link_ref(title: str, source: dict[str, dict] | None = None, display: str | None = None) -> dict:
+        found = source.get(title) if source else None
+        return {
+            "name": display or title,
+            "icon": found.get("icon") if found else None,
+            "page": found["page"] if found else WIKI + urllib.parse.quote(title.replace(" ", "_")),
+        }
+
+    locations = []
+    for title, wikitext in location_pages.items():
+        if title in LOCATION_EXCLUDE:
+            continue
+        meta = LOCATION_META.get(title, {})
+        intro, sections = split_location_sections(wikitext)
+
+        enemy_titles = [ENEMY_LINK_ALIASES.get(t, t) for t in extract_link_titles(sections.get("enemies", ""))]
+        vendor_titles = extract_link_titles(sections.get("vendors", "") or sections.get("characters", ""))
+        loot_names = parse_loot_names(sections.get("notable loot", ""))
+        subarea_titles = extract_link_titles(sections.get("subarea", ""))
+
+        locations.append((meta.get("order", 999), {
+            "name": LOCATION_DISPLAY_NAME.get(title, title),
+            "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
+            "act": meta.get("act"),
+            "special": meta.get("special", False),
+            "description": intro,
+            "enemies": [link_ref(t, enemy_by_name) for t in enemy_titles],
+            "vendors": [link_ref(t) for t in vendor_titles],
+            "loot": [link_ref(t, item_by_name) for t in loot_names],
+            "subareas": [link_ref(t, display=LOCATION_DISPLAY_NAME.get(t, t)) for t in subarea_titles],
+            "pois": extract_notes(sections.get("pois", "")),
+            "tips": extract_notes(sections.get("tips", "")),
+        }))
+
+    locations.sort(key=lambda pair: pair[0])
+    return [loc for _, loc in locations]
+
+
 UNSAFE_FILE_RE = re.compile(r'[\\/:*?"<>|]')
 
 
@@ -1440,15 +1656,15 @@ def _fetch_all(titles: list[str]) -> dict[str, str]:
     return out
 
 
-def load_pages(refresh: bool) -> tuple[dict[str, str], dict[str, str]]:
+def load_pages(refresh: bool) -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
     """Return ({title: wikitext} for Item Infobox pages, same for Enemy
-    Infobox pages), using a local cache.
+    Infobox pages, same for Category:Locations pages), using a local cache.
 
     Passing refresh=True (CLI --refresh) refetches everything from the wiki
     and rewrites the cache; otherwise cached wikitext is reused with no
-    network. A cache saved before enemies were added is missing
-    "enemy_pages" — that's fetched on its own (without redoing the much
-    larger item fetch) rather than forcing a full --refresh.
+    network. A cache saved before enemies/locations were added is missing
+    "enemy_pages"/"location_pages" — those are fetched on their own (without
+    redoing the much larger item fetch) rather than forcing a full --refresh.
     """
     cache: dict = {}
     if CACHE_FILE.exists() and not refresh:
@@ -1469,21 +1685,30 @@ def load_pages(refresh: bool) -> tuple[dict[str, str], dict[str, str]]:
         print(f"  {len(enemy_titles)} pages use Enemy Infobox")
         enemy_pages = _fetch_all(enemy_titles)
 
+    location_pages = cache.get("location_pages", {})
+    if not location_pages or refresh:
+        print("Fetching location page list from wiki...")
+        location_titles = get_category_pages("Category:Locations")
+        print(f"  {len(location_titles)} pages in Category:Locations")
+        location_pages = _fetch_all(location_titles)
+
     CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     CACHE_FILE.write_text(
         json.dumps({"fetched": datetime.now(timezone.utc).isoformat(),
-                    "pages": pages, "enemy_pages": enemy_pages}, ensure_ascii=False),
+                    "pages": pages, "enemy_pages": enemy_pages,
+                    "location_pages": location_pages}, ensure_ascii=False),
         encoding="utf-8",
     )
-    print(f"  cached {len(pages)} item pages + {len(enemy_pages)} enemy pages to {CACHE_FILE.name}")
-    return pages, enemy_pages
+    print(f"  cached {len(pages)} item pages + {len(enemy_pages)} enemy pages "
+          f"+ {len(location_pages)} location pages to {CACHE_FILE.name}")
+    return pages, enemy_pages, location_pages
 
 
 CUT_CONTENT_RE = re.compile(r"\[\[\s*Category\s*:\s*Cut[ _]Content\s*\]\]", re.IGNORECASE)
 
 
 def build(refresh: bool = False) -> None:
-    pages, enemy_pages = load_pages(refresh)
+    pages, enemy_pages, location_pages = load_pages(refresh)
 
     buckets: dict[str, list[dict]] = {k: [] for k in TARGET_KINDS}
 
@@ -1584,6 +1809,19 @@ def build(refresh: bool = False) -> None:
                             encoding="utf-8")
         print(f"Wrote {out_path.relative_to(OUT_DIR.parent.parent)} "
               f"({len(items)} items, {len(columns)} columns)")
+
+    locations = build_locations(location_pages, buckets)
+    location_payload = {
+        "kind": "location",
+        "generated": generated,
+        "source": "https://sulfur.wiki.gg",
+        "license": "CC BY-SA 4.0",
+        "locations": locations,
+    }
+    location_path = OUT_DIR / "location.json"
+    location_path.write_text(json.dumps(location_payload, ensure_ascii=False, indent=2),
+                              encoding="utf-8")
+    print(f"Wrote {location_path.relative_to(OUT_DIR.parent.parent)} ({len(locations)} locations)")
 
 
 if __name__ == "__main__":
