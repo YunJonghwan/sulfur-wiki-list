@@ -1,0 +1,1154 @@
+{
+  "kind": "enemy",
+  "generated": "2026-07-12T11:13:29.265418+00:00",
+  "source": "https://sulfur.wiki.gg",
+  "license": "CC BY-SA 4.0",
+  "columns": [
+    {
+      "key": "Faction",
+      "label": "Faction"
+    },
+    {
+      "key": "HP",
+      "label": "Health"
+    },
+    {
+      "key": "Dmg",
+      "label": "Damage"
+    },
+    {
+      "key": "DmgType",
+      "label": "Damage Type"
+    },
+    {
+      "key": "Attack Type",
+      "label": "Attack Type"
+    },
+    {
+      "key": "DmgRange",
+      "label": "Damage Range"
+    },
+    {
+      "key": "Areas",
+      "label": "Areas Found In"
+    },
+    {
+      "key": "Exp",
+      "label": "Experience Given"
+    },
+    {
+      "key": "Armor",
+      "label": "Armor"
+    },
+    {
+      "key": "Bleed",
+      "label": "Bleed Resist"
+    },
+    {
+      "key": "Charm",
+      "label": "Charm"
+    },
+    {
+      "key": "Dark",
+      "label": "Dark Resist"
+    },
+    {
+      "key": "Earth",
+      "label": "Earth Resist"
+    },
+    {
+      "key": "Electric",
+      "label": "Electric Resist"
+    },
+    {
+      "key": "Explosion",
+      "label": "Explosion"
+    },
+    {
+      "key": "Fire",
+      "label": "Fire"
+    },
+    {
+      "key": "Frost",
+      "label": "Frost"
+    },
+    {
+      "key": "Frostbite",
+      "label": "Frostbite Resist"
+    },
+    {
+      "key": "Light",
+      "label": "Light Resist"
+    },
+    {
+      "key": "LungCapacity",
+      "label": "Lung Capacity"
+    },
+    {
+      "key": "Petrify",
+      "label": "Petrification"
+    },
+    {
+      "key": "Poison",
+      "label": "Poison"
+    },
+    {
+      "key": "Punish",
+      "label": "Punish Resist"
+    },
+    {
+      "key": "tabs",
+      "label": "Phases"
+    }
+  ],
+  "axes": [
+    {
+      "key": "faction",
+      "label": "Faction",
+      "multi": false,
+      "values": [
+        {
+          "value": "Goblins",
+          "label": "Goblins",
+          "count": 10
+        },
+        {
+          "value": "The Black Guild",
+          "label": "The Black Guild",
+          "count": 9
+        },
+        {
+          "value": "The Corrupted",
+          "label": "The Corrupted",
+          "count": 7
+        },
+        {
+          "value": "Hellshrews",
+          "label": "Hellshrews",
+          "count": 6
+        },
+        {
+          "value": "Shav'Wa",
+          "label": "Shav'Wa",
+          "count": 6
+        },
+        {
+          "value": "Guttercliffian",
+          "label": "Guttercliffian",
+          "count": 4
+        },
+        {
+          "value": "The Craw",
+          "label": "The Craw",
+          "count": 4
+        },
+        {
+          "value": "Ghosts",
+          "label": "Ghosts",
+          "count": 2
+        },
+        {
+          "value": "Other",
+          "label": "Other",
+          "count": 1
+        },
+        {
+          "value": "The Haradrians",
+          "label": "The Haradrians",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "role",
+      "label": "Role",
+      "multi": false,
+      "values": [
+        {
+          "value": "Normal",
+          "label": "Normal",
+          "count": 44
+        },
+        {
+          "value": "Boss",
+          "label": "Boss",
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "name": "Abomination",
+      "page": "https://sulfur.wiki.gg/wiki/Abomination",
+      "image": "Abomination.png",
+      "groups": {
+        "faction": "The Craw",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Forest",
+        "Faction": "The Craw",
+        "HP": "1600",
+        "Exp": "16"
+      },
+      "icon": "icons/enemy/_etc/Abomination.png"
+    },
+    {
+      "name": "Assassin",
+      "page": "https://sulfur.wiki.gg/wiki/Assassin",
+      "image": "Assassin.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Dungeon, Castle",
+        "HP": "300",
+        "Faction": "The Black Guild",
+        "Attack Type": "Melee",
+        "Dmg": "50",
+        "DmgType": "Normal",
+        "DmgRange": "5",
+        "Exp": "9",
+        "Armor": "Mask"
+      },
+      "icon": "icons/enemy/_etc/Assassin.png"
+    },
+    {
+      "name": "Bishop",
+      "page": "https://sulfur.wiki.gg/wiki/Bishop",
+      "image": "Bishop.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town,Castle",
+        "HP": "400",
+        "Faction": "The Black Guild",
+        "Exp": "10",
+        "Attack Type": "Ranged",
+        "DmgRange": "25",
+        "Dmg": "15",
+        "Armor": "Mask",
+        "DmgType": "Normal"
+      },
+      "icon": "icons/enemy/_etc/Bishop.png"
+    },
+    {
+      "name": "Black Guild Cardinal",
+      "page": "https://sulfur.wiki.gg/wiki/Black_Guild_Cardinal",
+      "image": "Black Guild Cardinal.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "400",
+        "Armor": "Mask",
+        "Attack Type": "Ranged",
+        "Dmg": "15",
+        "DmgType": "Normal",
+        "DmgRange": "100",
+        "Faction": "The Black Guild",
+        "Exp": "10",
+        "Charm": "100%"
+      },
+      "icon": "icons/enemy/_etc/Black_Guild_Cardinal.png"
+    },
+    {
+      "name": "Bruiser",
+      "page": "https://sulfur.wiki.gg/wiki/Bruiser",
+      "image": "Bruiser.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "200",
+        "Faction": "The Black Guild",
+        "Dmg": "17",
+        "Attack Type": "Melee",
+        "DmgRange": "2",
+        "DmgType": "Normal",
+        "Exp": "5"
+      },
+      "icon": "icons/enemy/_etc/Bruiser.png"
+    },
+    {
+      "name": "Corrupted Amalgamation",
+      "page": "https://sulfur.wiki.gg/wiki/Corrupted_Amalgamation",
+      "image": "Corrupted Amalgamation.png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Hedge Maze",
+        "HP": "99999",
+        "Faction": "The Corrupted",
+        "Dmg": "15",
+        "Exp": "20",
+        "Attack Type": "Melee",
+        "DmgRange": "2.5",
+        "DmgType": "Normal",
+        "Poison": "100%",
+        "Frost": "100%",
+        "Electric": "100%",
+        "Fire": "100%"
+      },
+      "icon": "icons/enemy/_etc/Corrupted_Amalgamation.png"
+    },
+    {
+      "name": "Corrupted Archer",
+      "page": "https://sulfur.wiki.gg/wiki/Corrupted_Archer",
+      "image": "Corrupted Archer.png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Sewers, Forest",
+        "HP": "240",
+        "Faction": "The Corrupted",
+        "Attack Type": "Ranged",
+        "Dmg": "20",
+        "DmgType": "Normal",
+        "DmgRange": "25",
+        "Poison": "100%",
+        "LungCapacity": "10,000",
+        "Exp": "2"
+      },
+      "icon": "icons/enemy/_etc/Corrupted_Archer.png"
+    },
+    {
+      "name": "Corrupted Guildsman",
+      "page": "https://sulfur.wiki.gg/wiki/Corrupted_Guildsman",
+      "image": "Corrupted Guildsman.png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Sewers",
+        "Faction": "The Corrupted",
+        "HP": "400",
+        "Poison": "100%",
+        "LungCapacity": "10,000",
+        "Attack Type": "Melee",
+        "DmgType": "Normal",
+        "DmgRange": "1.5",
+        "Dmg": "25",
+        "Exp": "8"
+      },
+      "icon": "icons/enemy/_etc/Corrupted_Guildsman.png"
+    },
+    {
+      "name": "Corrupted Guildsman (Ranged)",
+      "page": "https://sulfur.wiki.gg/wiki/Corrupted_Guildsman_%28Ranged%29",
+      "image": "Corrupted Guildsman (Ranged).png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Sewers",
+        "Faction": "The Corrupted",
+        "HP": "400",
+        "Poison": "100%",
+        "LungCapacity": "10,000",
+        "Attack Type": "Ranged",
+        "DmgType": "Normal",
+        "DmgRange": "25",
+        "Dmg": "20",
+        "Exp": "8"
+      },
+      "icon": "icons/enemy/_etc/Corrupted_Guildsman_(Ranged).png"
+    },
+    {
+      "name": "Corrupted Lurk",
+      "page": "https://sulfur.wiki.gg/wiki/Corrupted_Lurk",
+      "image": "Corrupted Lurk.png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Sewers",
+        "HP": "120",
+        "Faction": "The Corrupted",
+        "Dmg": "25 (Swimming), 15 (Leap)",
+        "Exp": "2",
+        "Attack Type": "Melee",
+        "DmgType": "Normal",
+        "Poison": "100%"
+      },
+      "icon": "icons/enemy/_etc/Corrupted_Lurk.png"
+    },
+    {
+      "name": "Corrupted Spearman",
+      "page": "https://sulfur.wiki.gg/wiki/Corrupted_Spearman",
+      "image": "Corrupted Spearman.png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Sewers, Forest",
+        "Faction": "The Corrupted",
+        "HP": "240",
+        "Attack Type": "Melee",
+        "Dmg": "25",
+        "DmgRange": "3",
+        "DmgType": "Normal",
+        "Poison": "100%",
+        "LungCapacity": "10,000",
+        "Exp": "2"
+      },
+      "icon": "icons/enemy/_etc/Corrupted_Spearman.png"
+    },
+    {
+      "name": "Cousin",
+      "page": "https://sulfur.wiki.gg/wiki/Cousin",
+      "image": "Cousin.png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Boss"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "5000",
+        "Armor": "Sludge",
+        "Exp": "30",
+        "Attack Type": "Ranged",
+        "Dmg": "25",
+        "DmgRange": "30",
+        "DmgType": "Normal",
+        "Frost": "95%",
+        "Fire": "75%",
+        "Light": "75%",
+        "Dark": "75%",
+        "Poison": "75%",
+        "Electric": "100%",
+        "Explosion": "75%",
+        "Earth": "75%",
+        "Charm": "100%"
+      },
+      "icon": "icons/enemy/_etc/Cousin.png"
+    },
+    {
+      "name": "Desert Claus",
+      "page": "https://sulfur.wiki.gg/wiki/Desert_Claus",
+      "image": "Desert Claus.png",
+      "groups": {
+        "faction": "Hellshrews",
+        "role": "Boss"
+      },
+      "fields": {
+        "Areas": "Desert",
+        "Faction": "Hellshrew",
+        "HP": "8000",
+        "Exp": "130",
+        "Armor": "3"
+      },
+      "icon": "icons/enemy/_etc/Desert_Claus.png"
+    },
+    {
+      "name": "Goblin Archer",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Archer",
+      "image": "Goblin Archer.png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "130",
+        "Dmg": "20",
+        "DmgType": "Normal",
+        "Attack Type": "Ranged",
+        "DmgRange": "25",
+        "Exp": "5"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Archer.png"
+    },
+    {
+      "name": "Goblin Barrel Boy",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Barrel_Boy",
+      "image": "Goblin Barrel Boy.png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "800",
+        "Armor": "Plank",
+        "DmgType": "Explosion",
+        "Attack Type": "Special",
+        "Exp": "10"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Barrel_Boy.png"
+    },
+    {
+      "name": "Goblin Civilian",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Civilian",
+      "image": "Goblin Civilian.png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "The Goblins",
+        "HP": "100",
+        "Exp": "0",
+        "Attack Type": "None"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Civilian.png"
+    },
+    {
+      "name": "Goblin Spearman",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Spearman",
+      "image": "Goblin Spearman.png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "180",
+        "Dmg": "20",
+        "Attack Type": "Melee",
+        "DmgType": "Normal",
+        "DmgRange": "3",
+        "Exp": "4"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Spearman.png"
+    },
+    {
+      "name": "Goblin Wizard (Electricity)",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Electricity%29",
+      "image": "Goblin Wizard (Electricity).png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "200",
+        "Attack Type": "Ranged",
+        "DmgType": "Eletricity",
+        "Electric": "100%"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Electricity).png"
+    },
+    {
+      "name": "Goblin Wizard (Fire)",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Fire%29",
+      "image": "Goblin Wizard (Fire).png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "200",
+        "Attack Type": "Ranged",
+        "DmgType": "Fire",
+        "Fire": "100%"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Fire).png"
+    },
+    {
+      "name": "Goblin Wizard (Frost)",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Frost%29",
+      "image": "Goblin Wizard (Frost).png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "200",
+        "Attack Type": "Ranged",
+        "DmgType": "Frost",
+        "Frost": "100%"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Frost).png"
+    },
+    {
+      "name": "Goblin Wizard (Poison)",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Wizard_%28Poison%29",
+      "image": "Goblin Wizard (Poison).png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "200",
+        "Attack Type": "Ranged",
+        "DmgType": "Poison",
+        "Poison": "100%"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Wizard_(Poison).png"
+    },
+    {
+      "name": "Goblin Young",
+      "page": "https://sulfur.wiki.gg/wiki/Goblin_Young",
+      "image": "Goblin Young.png",
+      "groups": {
+        "faction": "Goblins",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "Faction": "Goblins",
+        "HP": "80",
+        "Dmg": "15",
+        "Attack Type": "Melee",
+        "Exp": "2"
+      },
+      "icon": "icons/enemy/_etc/Goblin_Young.png"
+    },
+    {
+      "name": "Grenadier",
+      "page": "https://sulfur.wiki.gg/wiki/Grenadier",
+      "image": "Grenadier.png",
+      "groups": {
+        "faction": "Shav'Wa",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Fortress",
+        "Faction": "Shav'Wa",
+        "HP": "400",
+        "Exp": "9",
+        "Dmg": "40"
+      },
+      "icon": "icons/enemy/_etc/Grenadier.png"
+    },
+    {
+      "name": "Guard Dog",
+      "page": "https://sulfur.wiki.gg/wiki/Guard_Dog",
+      "image": "Guard Dog.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves, Town",
+        "HP": "180",
+        "Faction": "The Black Guild",
+        "Attack Type": "Melee",
+        "Dmg": "20",
+        "DmgType": "Normal",
+        "DmgRange": "5",
+        "Exp": "4"
+      },
+      "icon": "icons/enemy/_etc/Guard_Dog.png"
+    },
+    {
+      "name": "Guttercliffian Chicken",
+      "page": "https://sulfur.wiki.gg/wiki/Guttercliffian_Chicken",
+      "image": "Guttercliffian Chicken.png",
+      "groups": {
+        "faction": "Guttercliffian",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "25",
+        "Faction": "Guttercliffian",
+        "Dmg": "0",
+        "Attack Type": "None",
+        "Exp": "2",
+        "DmgRange": "0",
+        "DmgType": "0"
+      },
+      "icon": "icons/enemy/_etc/Guttercliffian_Chicken.png"
+    },
+    {
+      "name": "Guttercliffian Kid",
+      "page": "https://sulfur.wiki.gg/wiki/Guttercliffian_Kid",
+      "image": "Guttercliffian Kid.png",
+      "groups": {
+        "faction": "Guttercliffian",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "25",
+        "Faction": "Guttercliffian",
+        "Dmg": "0",
+        "Attack Type": "None",
+        "Exp": "0",
+        "DmgRange": "0",
+        "DmgType": "0"
+      },
+      "icon": "icons/enemy/_etc/Guttercliffian_Kid.png"
+    },
+    {
+      "name": "Guttercliffian Man",
+      "page": "https://sulfur.wiki.gg/wiki/Guttercliffian_Man",
+      "image": "Guttercliffian Man.png",
+      "groups": {
+        "faction": "Guttercliffian",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "50",
+        "Faction": "Guttercliffian",
+        "Dmg": "0",
+        "Attack Type": "None",
+        "Exp": "0",
+        "DmgRange": "0",
+        "DmgType": "0"
+      },
+      "icon": "icons/enemy/_etc/Guttercliffian_Man.png"
+    },
+    {
+      "name": "Guttercliffian Woman",
+      "page": "https://sulfur.wiki.gg/wiki/Guttercliffian_Woman",
+      "image": "Guttercliffian Woman.png",
+      "groups": {
+        "faction": "Guttercliffian",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "25",
+        "Faction": "Guttercliffian",
+        "Dmg": "0",
+        "Attack Type": "None",
+        "Exp": "0",
+        "DmgRange": "0",
+        "DmgType": "0"
+      },
+      "icon": "icons/enemy/_etc/Guttercliffian_Woman.png"
+    },
+    {
+      "name": "Haradrian Enforcer",
+      "page": "https://sulfur.wiki.gg/wiki/Haradrian_Enforcer",
+      "image": "Haradrian Enforcer (Female Mask).png",
+      "groups": {
+        "faction": "The Haradrians",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town, Caves, Sewers, Desert",
+        "Armor": "Mask",
+        "HP": "650",
+        "Dmg": "20",
+        "Exp": "30",
+        "DmgType": "Normal",
+        "Faction": "The Haradrians"
+      },
+      "icon": "icons/enemy/_etc/Haradrian_Enforcer_(Female_Mask).png"
+    },
+    {
+      "name": "Hellshrew Dig Dig",
+      "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Dig_Dig",
+      "image": "Hellshrew Dig Dig.png",
+      "groups": {
+        "faction": "Hellshrews",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Desert",
+        "Faction": "Hellshrew",
+        "HP": "460",
+        "Exp": "16",
+        "Dmg": "20"
+      },
+      "icon": "icons/enemy/_etc/Hellshrew_Dig_Dig.png"
+    },
+    {
+      "name": "Hellshrew Pike Riders",
+      "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Pike_Riders",
+      "image": "Hellshrew Pike Riders.png",
+      "groups": {
+        "faction": "Hellshrews",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Desert",
+        "Faction": "Hellshrews",
+        "HP": "400",
+        "Exp": "16"
+      },
+      "icon": "icons/enemy/_etc/Hellshrew_Pike_Riders.png"
+    },
+    {
+      "name": "Hellshrew Shoota",
+      "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Shoota",
+      "image": "Hellshrew Shoota.png",
+      "groups": {
+        "faction": "Hellshrews",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Desert",
+        "Faction": "Hellshrews",
+        "HP": "400",
+        "Exp": "12",
+        "Dmg": "25 (Rifle), 15 (Melee)"
+      },
+      "icon": "icons/enemy/_etc/Hellshrew_Shoota.png"
+    },
+    {
+      "name": "Hellshrew Snipa",
+      "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Snipa",
+      "image": "Hellshrew Snipa.png",
+      "groups": {
+        "faction": "Hellshrews",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Desert",
+        "Faction": "Hellshrews",
+        "HP": "320",
+        "Exp": "20",
+        "Dmg": "25 (Rifle), 5 (SMG)"
+      },
+      "icon": "icons/enemy/_etc/Hellshrew_Snipa.png"
+    },
+    {
+      "name": "Hellshrew Sticka",
+      "page": "https://sulfur.wiki.gg/wiki/Hellshrew_Sticka",
+      "image": "Hellshrew Sticka.png",
+      "groups": {
+        "faction": "Hellshrews",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Desert",
+        "Faction": "Hellshrews",
+        "HP": "400",
+        "Exp": "10",
+        "Dmg": "20 (no spin), 8 (spin)"
+      },
+      "icon": "icons/enemy/_etc/Hellshrew_Sticka.png"
+    },
+    {
+      "name": "Lurk",
+      "page": "https://sulfur.wiki.gg/wiki/Lurk",
+      "image": "Lurk.png",
+      "groups": {
+        "faction": "Shav'Wa",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Fortress",
+        "Faction": "Shav'Wa",
+        "HP": "300",
+        "Exp": "8",
+        "Dmg": "25",
+        "DmgRange": "4"
+      },
+      "icon": "icons/enemy/_etc/Lurk.png"
+    },
+    {
+      "name": "Novanian Guard",
+      "page": "https://sulfur.wiki.gg/wiki/Novanian_Guard",
+      "image": "Nonvanian Guard.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Dungeon,Castle",
+        "HP": "2000",
+        "Armor": "Helmet",
+        "Attack Type": "Ranged",
+        "Dmg": "25",
+        "DmgType": "Normal",
+        "DmgRange": "150",
+        "Faction": "The Black Guild",
+        "Exp": "10"
+      },
+      "icon": null
+    },
+    {
+      "name": "Rifleman",
+      "page": "https://sulfur.wiki.gg/wiki/Rifleman",
+      "image": "Rifleman.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "Armor": "Mask",
+        "Attack Type": "Ranged",
+        "HP": "200",
+        "Dmg": "5",
+        "DmgType": "Normal",
+        "DmgRange": "25",
+        "Faction": "The Black Guild",
+        "Exp": "7"
+      },
+      "icon": "icons/enemy/_etc/Rifleman.png"
+    },
+    {
+      "name": "Samurai",
+      "page": "https://sulfur.wiki.gg/wiki/Samurai",
+      "image": "Samurai.png",
+      "groups": {
+        "faction": "Shav'Wa",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Fortress",
+        "Faction": "Shav'Wa",
+        "HP": "400",
+        "Exp": "9",
+        "Dmg": "15"
+      },
+      "icon": "icons/enemy/_etc/Samurai.png"
+    },
+    {
+      "name": "Sapper",
+      "page": "https://sulfur.wiki.gg/wiki/Sapper",
+      "image": "Sapper.png",
+      "groups": {
+        "faction": "Other",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Town",
+        "HP": "600",
+        "Armor": "Mask"
+      },
+      "icon": "icons/enemy/_etc/Sapper.png"
+    },
+    {
+      "name": "Sentinel",
+      "page": "https://sulfur.wiki.gg/wiki/Sentinel",
+      "image": "Sentinel.png",
+      "groups": {
+        "faction": "The Craw",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Forest",
+        "Faction": "The Craw",
+        "HP": "600",
+        "Exp": "18",
+        "Dmg": "20"
+      },
+      "icon": "icons/enemy/_etc/Sentinel.png"
+    },
+    {
+      "name": "Skeleton",
+      "page": "https://sulfur.wiki.gg/wiki/Skeleton",
+      "image": "Skeleton.png",
+      "groups": {
+        "faction": "Ghosts",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves",
+        "HP": "120",
+        "Faction": "Ghosts",
+        "Dmg": "4",
+        "Attack Type": "Melee",
+        "Exp": "1",
+        "DmgRange": "1.25",
+        "DmgType": "Normal",
+        "Electric": "100%",
+        "Frost": "100%",
+        "Poison": "100%"
+      },
+      "icon": "icons/enemy/_etc/Skeleton.png"
+    },
+    {
+      "name": "St. Lucia",
+      "page": "https://sulfur.wiki.gg/wiki/St._Lucia",
+      "image": "St. Lucia.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Boss"
+      },
+      "fields": {
+        "Areas": "Castle",
+        "Faction": "The Black Guild",
+        "HP": "8000",
+        "Exp": "60",
+        "Fire": "100%",
+        "Frostbite": "100%",
+        "Charm": "100%",
+        "Petrify": "100%",
+        "Earth": "100%",
+        "Bleed": "100%"
+      },
+      "icon": "icons/enemy/_etc/St._Lucia.png"
+    },
+    {
+      "name": "Terrorbaum",
+      "page": "https://sulfur.wiki.gg/wiki/Terrorbaum",
+      "image": "Terrorbaum.png",
+      "groups": {
+        "faction": "The Craw",
+        "role": "Boss"
+      },
+      "fields": {
+        "Areas": "Forest",
+        "Faction": "The Craw",
+        "HP": "13000",
+        "Exp": "80",
+        "Frost": "100%",
+        "Fire": "-20%",
+        "Earth": "100%",
+        "Charm": "100%",
+        "Bleed": "100%",
+        "Petrify": "100%"
+      },
+      "icon": "icons/enemy/_etc/Terrorbaum.png"
+    },
+    {
+      "name": "The Emperor",
+      "page": "https://sulfur.wiki.gg/wiki/The_Emperor",
+      "image": "The Emperor.png",
+      "groups": {
+        "faction": "Shav'Wa",
+        "role": "Boss"
+      },
+      "fields": {
+        "Areas": "Fortress",
+        "Faction": "Shav'Wa",
+        "HP": "8000",
+        "Exp": "100"
+      },
+      "icon": "icons/enemy/_etc/The_Emperor.png"
+    },
+    {
+      "name": "The Witch",
+      "page": "https://sulfur.wiki.gg/wiki/The_Witch",
+      "image": "The Witch.png",
+      "groups": {
+        "faction": "The Corrupted",
+        "role": "Boss"
+      },
+      "fields": {
+        "tabs": "Witch Phase 1 & 2, Witch Phase 3, Witch Phase 4, Witch Phase 6",
+        "Areas": "Beyond the Veil",
+        "Faction": "The Corrupted",
+        "HP": "100000",
+        "Exp": "100"
+      },
+      "icon": null
+    },
+    {
+      "name": "Tracker",
+      "page": "https://sulfur.wiki.gg/wiki/Tracker",
+      "image": "Tracker.png",
+      "groups": {
+        "faction": "The Black Guild",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves, Town",
+        "HP": "200",
+        "Armor": "Mask",
+        "Attack Type": "Ranged",
+        "Dmg": "25",
+        "DmgType": "Normal",
+        "DmgRange": "100",
+        "Faction": "The Black Guild",
+        "Exp": "5"
+      },
+      "icon": "icons/enemy/_etc/Tracker.png"
+    },
+    {
+      "name": "Twerker",
+      "page": "https://sulfur.wiki.gg/wiki/Twerker",
+      "image": "Twerker.png",
+      "groups": {
+        "faction": "Shav'Wa",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Fortress",
+        "Faction": "Shav'Wa",
+        "HP": "600",
+        "Exp": "15",
+        "Dmg": "40"
+      },
+      "icon": "icons/enemy/_etc/Twerker.png"
+    },
+    {
+      "name": "Warden",
+      "page": "https://sulfur.wiki.gg/wiki/Warden",
+      "image": "Warden.png",
+      "groups": {
+        "faction": "Shav'Wa",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Fortress",
+        "Faction": "Shav'Wa",
+        "HP": "300",
+        "Exp": "9",
+        "Dmg": "16"
+      },
+      "icon": "icons/enemy/_etc/Warden.png"
+    },
+    {
+      "name": "Watcher",
+      "page": "https://sulfur.wiki.gg/wiki/Watcher",
+      "image": "Watcher.png",
+      "groups": {
+        "faction": "The Craw",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Forest",
+        "Faction": "The Craw",
+        "HP": "10",
+        "Exp": "2",
+        "Dmg": "10"
+      },
+      "icon": "icons/enemy/_etc/Watcher.png"
+    },
+    {
+      "name": "Wraith",
+      "page": "https://sulfur.wiki.gg/wiki/Wraith",
+      "image": "Wraith.png",
+      "groups": {
+        "faction": "Ghosts",
+        "role": "Normal"
+      },
+      "fields": {
+        "Areas": "Caves, Town, Sewers",
+        "HP": "250",
+        "Faction": "Ghosts",
+        "Dmg": "0",
+        "DmgType": "Frost",
+        "DmgRange": "3",
+        "Exp": "4",
+        "Charm": "100%",
+        "Frost": "100%",
+        "Explosion": "100%",
+        "Fire": "100%",
+        "Poison": "100%",
+        "Dark": "100%",
+        "Punish": "100%"
+      },
+      "icon": "icons/enemy/_etc/Wraith.png"
+    }
+  ]
+}

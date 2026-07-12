@@ -103,6 +103,7 @@ function valueTone(raw) {
 
 function ItemCell({ it, lang }) {
   const ko = nameKo(it.name, lang)
+  const isBoss = it.groups?.role === 'Boss'
   return (
     <a className="item-link" href={it.page} target="_blank" rel="noreferrer">
       {imageUrl(it.icon) && (
@@ -119,6 +120,7 @@ function ItemCell({ it, lang }) {
         />
       )}
       <span>
+        {isBoss && <span className="boss-badge">{lang === 'ko' ? '보스' : 'BOSS'}</span>}
         {it.name}
         {ko && <span className="item-name-ko"> ({ko})</span>}
       </span>

@@ -1023,6 +1023,19 @@ tbody tr:hover .sticky-col {
   font-weight: 400;
 }
 
+.boss-badge {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  background: #7a1f1f;
+  color: #ffd7d7;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
 .item-icon {
   width: 32px;
   height: 32px;

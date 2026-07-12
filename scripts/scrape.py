@@ -39,7 +39,7 @@ ICON_WIDTH = 64
 
 # Kinds we generate a page/table for, in the requested display order.
 TARGET_KINDS = ["weapon", "oil", "attachment", "equipment", "consumable",
-                "scroll", "passive", "misc", "chisel"]
+                "scroll", "passive", "misc", "chisel", "enemy"]
 
 # Ordered stat columns per kind, taken from Template:Item Infobox.
 # The frontend only shows columns that at least one item actually populates.
@@ -119,6 +119,9 @@ KIND_COLUMNS: dict[str, list[str]] = {
         "GridSize", "ChamberAmmo",
         "SellVal", "BuyVal", "SoldBy",
     ],
+    "enemy": [
+        "Faction", "HP", "Dmg", "DmgType", "Attack Type", "DmgRange", "Areas", "Exp",
+    ],
 }
 
 # Human-readable labels for parameter keys, from Template:Item Infobox.
@@ -140,6 +143,22 @@ LABELS: dict[str, str] = {
     "Area": "Effect Radius",
     "Frag": "Fragmentation",
     "ChamberAmmo": "Chamber into",
+    "Faction": "Faction",
+    "HP": "Health",
+    "DmgType": "Damage Type",
+    "Attack Type": "Attack Type",
+    "DmgRange": "Damage Range",
+    "Areas": "Areas Found In",
+    "Exp": "Experience Given",
+    "Bleed": "Bleed Resist",
+    "Dark": "Dark Resist",
+    "Earth": "Earth Resist",
+    "Electric": "Electric Resist",
+    "Frostbite": "Frostbite Resist",
+    "Light": "Light Resist",
+    "LungCapacity": "Lung Capacity",
+    "Punish": "Punish Resist",
+    "tabs": "Phases",
     "SilFire": "Silences Fire",
     "HSDmg": "Headshot Damage",
     "Dmg": "Damage",
@@ -267,15 +286,15 @@ def api_get(params: dict) -> dict:
         return json.load(resp)
 
 
-def get_infobox_pages() -> list[str]:
-    """Return all main-namespace page titles that transclude Item Infobox."""
+def get_infobox_pages(template: str = "Template:Item Infobox") -> list[str]:
+    """Return all main-namespace page titles that transclude the given template."""
     titles: list[str] = []
     cont: dict = {}
     while True:
         data = api_get({
             "action": "query",
             "list": "embeddedin",
-            "eititle": "Template:Item Infobox",
+            "eititle": template,
             "einamespace": "0",
             "eilimit": "max",
             **cont,
@@ -315,15 +334,17 @@ def fetch_wikitext_batch(titles: list[str]) -> dict[str, str]:
 
 
 INFOBOX_START_RE = re.compile(r"\{\{\s*Item[ _]Infobox")
+ENEMY_INFOBOX_START_RE = re.compile(r"\{\{\s*Enemy[ _]Infobox")
 
 
-def extract_infobox(wikitext: str) -> str | None:
+def extract_infobox(wikitext: str, start_re: "re.Pattern[str]" = INFOBOX_START_RE) -> str | None:
     """Return the raw contents of the first {{Item Infobox ...}} block.
 
     Matches both `{{Item Infobox}}` and `{{Item_Infobox}}` (MediaWiki treats
-    spaces and underscores in template names as equivalent).
+    spaces and underscores in template names as equivalent). Pass
+    ENEMY_INFOBOX_START_RE to extract an {{Enemy Infobox ...}} block instead.
     """
-    m = INFOBOX_START_RE.search(wikitext)
+    m = start_re.search(wikitext)
     if m is None:
         return None
     start = m.start()
@@ -450,8 +471,11 @@ def clean_value(raw: str) -> str:
 
 
 # Some pages spell a few parameters inconsistently; normalize to canonical keys.
+# "Lung" is renamed because it would otherwise collide with the "Lung" organ
+# item's own display name in the Korean translation table.
 KEY_ALIASES = {
     "Grid Size": "GridSize",
+    "Lung": "LungCapacity",
 }
 
 # A few pages omit the infobox "kind" parameter entirely (a wiki typo, not
@@ -1099,6 +1123,7 @@ AXIS_KEYS_BY_KIND = {
     "equipment": ["type"],
     "consumable": ["type", "craftable"],
     "misc": ["type", "organSource"],
+    "enemy": ["faction", "role"],
 }
 
 AXIS_LABELS = {
@@ -1110,6 +1135,8 @@ AXIS_LABELS = {
     "stage": "Stage",
     "craftable": "Acquisition",
     "organSource": "Organ Source",
+    "faction": "Faction",
+    "role": "Role",
 }
 
 CRAFTABLE_LABELS = {"craftable": "Craftable", "farmed": "Found / Farmed"}
@@ -1275,6 +1302,18 @@ ORGAN_SOURCE_BY_TITLE = {
     "Cultist Heart": "Cultist", "Shav'Wa Bladder": "Shav'Wa",
 }
 
+# Enemy pages don't carry a structured "is this a boss" field — it's only
+# conveyed by a [[Category:Bosses]] tag at the bottom of the page.
+ENEMY_BOSS_RE = re.compile(r"\[\[\s*Category\s*:\s*Bosses\s*\]\]", re.IGNORECASE)
+
+# A handful of pages spell their own faction inconsistently (plural vs
+# singular, with/without a leading "The") — normalize so they group together
+# instead of splintering into near-duplicate faction buckets.
+FACTION_ALIASES = {
+    "The Goblins": "Goblins",
+    "Hellshrew": "Hellshrews",
+}
+
 
 def item_groups(
     kind: str, fields: dict[str, str], title: str, wikitext: str,
@@ -1303,6 +1342,13 @@ def item_groups(
         if is_organ:
             groups["organSource"] = ORGAN_SOURCE_BY_TITLE.get(title, "Common")
         return groups
+    if kind == "enemy":
+        faction = fields.get("Faction") or "Other"
+        faction = FACTION_ALIASES.get(faction, faction)
+        return {
+            "faction": faction,
+            "role": "Boss" if ENEMY_BOSS_RE.search(wikitext) else "Normal",
+        }
     return {"type": label}
 
 
@@ -1348,47 +1394,63 @@ def compute_axes(kind: str, items: list[dict]) -> list[dict]:
     return axes
 
 
-def load_pages(refresh: bool) -> dict[str, str]:
-    """Return {title: wikitext} for all Item Infobox pages, using a local cache.
-
-    Passing refresh=True (CLI --refresh) refetches everything from the wiki and
-    rewrites the cache; otherwise the cached wikitext is reused with no network.
-    """
-    if CACHE_FILE.exists() and not refresh:
-        cache = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
-        pages = cache.get("pages", {})
-        print(f"Loaded {len(pages)} pages from cache "
-              f"({cache.get('fetched', '?')}). Use --refresh to refetch.")
-        return pages
-
-    print("Fetching page list from wiki...")
-    titles = get_infobox_pages()
-    print(f"  {len(titles)} pages use Item Infobox")
-    pages: dict[str, str] = {}
+def _fetch_all(titles: list[str]) -> dict[str, str]:
+    out: dict[str, str] = {}
     for i in range(0, len(titles), 50):
         batch = titles[i:i + 50]
         texts = fetch_wikitext_batch(batch)
         for title in batch:
             if texts.get(title):
-                pages[title] = texts[title]
+                out[title] = texts[title]
         print(f"  fetched {min(i + 50, len(titles))}/{len(titles)}")
         time.sleep(0.3)
+    return out
+
+
+def load_pages(refresh: bool) -> tuple[dict[str, str], dict[str, str]]:
+    """Return ({title: wikitext} for Item Infobox pages, same for Enemy
+    Infobox pages), using a local cache.
+
+    Passing refresh=True (CLI --refresh) refetches everything from the wiki
+    and rewrites the cache; otherwise cached wikitext is reused with no
+    network. A cache saved before enemies were added is missing
+    "enemy_pages" — that's fetched on its own (without redoing the much
+    larger item fetch) rather than forcing a full --refresh.
+    """
+    cache: dict = {}
+    if CACHE_FILE.exists() and not refresh:
+        cache = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        pages = cache.get("pages", {})
+        print(f"Loaded {len(pages)} pages from cache "
+              f"({cache.get('fetched', '?')}). Use --refresh to refetch.")
+    else:
+        print("Fetching page list from wiki...")
+        titles = get_infobox_pages()
+        print(f"  {len(titles)} pages use Item Infobox")
+        pages = _fetch_all(titles)
+
+    enemy_pages = cache.get("enemy_pages", {})
+    if not enemy_pages or refresh:
+        print("Fetching enemy page list from wiki...")
+        enemy_titles = get_infobox_pages("Template:Enemy Infobox")
+        print(f"  {len(enemy_titles)} pages use Enemy Infobox")
+        enemy_pages = _fetch_all(enemy_titles)
 
     CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     CACHE_FILE.write_text(
         json.dumps({"fetched": datetime.now(timezone.utc).isoformat(),
-                    "pages": pages}, ensure_ascii=False),
+                    "pages": pages, "enemy_pages": enemy_pages}, ensure_ascii=False),
         encoding="utf-8",
     )
-    print(f"  cached {len(pages)} pages to {CACHE_FILE.name}")
-    return pages
+    print(f"  cached {len(pages)} item pages + {len(enemy_pages)} enemy pages to {CACHE_FILE.name}")
+    return pages, enemy_pages
 
 
 CUT_CONTENT_RE = re.compile(r"\[\[\s*Category\s*:\s*Cut[ _]Content\s*\]\]", re.IGNORECASE)
 
 
 def build(refresh: bool = False) -> None:
-    pages = load_pages(refresh)
+    pages, enemy_pages = load_pages(refresh)
 
     buckets: dict[str, list[dict]] = {k: [] for k in TARGET_KINDS}
 
@@ -1414,7 +1476,7 @@ def build(refresh: bool = False) -> None:
         if kind == "consumable":
             for prose_key, prose_val in consumable_prose_effects(wikitext).items():
                 fields.setdefault(prose_key, prose_val)
-        image = fields.get("image", f"{title}.png")
+        image = fields.get("image") or fields.get("Image") or f"{title}.png"
         recipe = consumable_recipe(wikitext) if kind == "consumable" else None
         item = {
             "name": title,
@@ -1422,7 +1484,7 @@ def build(refresh: bool = False) -> None:
             "image": image,
             "groups": item_groups(kind, fields, title, wikitext, recipe),
             "fields": {k: v for k, v in fields.items()
-                       if k not in ("kind", "image", "title")},
+                       if k not in ("kind", "image", "Image", "title")},
         }
         if recipe:
             item["recipe"] = recipe
@@ -1434,6 +1496,24 @@ def build(refresh: bool = False) -> None:
             if caliber_modding:
                 item["caliberModding"] = caliber_modding
         buckets[kind].append(item)
+
+    for title, wikitext in enemy_pages.items():
+        if CUT_CONTENT_RE.search(wikitext):
+            continue
+        body = extract_infobox(wikitext, ENEMY_INFOBOX_START_RE)
+        if body is None:
+            continue
+        fields = parse_infobox(body)
+        image = fields.get("image") or fields.get("Image") or f"{title}.png"
+        item = {
+            "name": title,
+            "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
+            "image": image,
+            "groups": item_groups("enemy", fields, title, wikitext),
+            "fields": {k: v for k, v in fields.items()
+                       if k not in ("kind", "image", "Image", "title")},
+        }
+        buckets["enemy"].append(item)
 
     download_icons(buckets)
     resolve_recipe_icons(buckets)

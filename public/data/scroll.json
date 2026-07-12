@@ -1,6 +1,6 @@
 {
   "kind": "scroll",
-  "generated": "2026-07-10T07:32:44.835219+00:00",
+  "generated": "2026-07-12T11:13:29.265418+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "columns": [
@@ -607,7 +607,7 @@
       "fields": {
         "GridSize": "1×2",
         "Petrify": "🝁",
-        "Proc": "5%",
+        "Proc": "10%",
         "SellVal": "2000",
         "SoldBy": "Blond Magus"
       },

@@ -14,6 +14,7 @@ export const CATEGORIES = [
   { kind: 'passive', en: 'Passives', ko: '패시브' },
   { kind: 'consumable', en: 'Consumables', ko: '소비품' },
   { kind: 'misc', en: 'Materials', ko: '잡화' },
+  { kind: 'enemy', en: 'Enemies', ko: '적' },
 ]
 
 export const UI = {
@@ -91,6 +92,8 @@ export const AXIS_KO = {
   stage: '단계',
   craftable: '획득 방법',
   organSource: '장기 출처',
+  faction: '진영',
+  role: '분류',
 }
 
 // Korean labels for sub-group values. Missing values fall back to English.
@@ -176,6 +179,18 @@ export const GROUP_KO = {
   compensator: '소염기/컴펜세이터',
   silencer: '소음기',
   barrel: '총열 연장',
+  // enemy faction
+  Goblins: '고블린',
+  'The Black Guild': '블랙 길드',
+  'The Corrupted': '타락한 자들',
+  Hellshrews: '헬슈루',
+  Guttercliffian: '거터클리프인',
+  'The Craw': '크로우',
+  Ghosts: '유령',
+  'The Haradrians': '하라드리안',
+  // enemy role
+  Boss: '보스',
+  Normal: '일반',
 }
 
 export function groupLabel(value, label, lang) {
@@ -251,6 +266,23 @@ export const COLUMN_KO = {
   SellVal: '판매 가격',
   BuyVal: '구매 가격',
   SoldBy: '판매처',
+  // enemy
+  Faction: '진영',
+  HP: '체력',
+  DmgType: '피해 유형',
+  'Attack Type': '공격 방식',
+  DmgRange: '공격 사거리',
+  Areas: '출현 지역',
+  Exp: '경험치',
+  Bleed: '출혈 저항',
+  Dark: '암흑 저항',
+  Earth: '대지 저항',
+  Electric: '전기 저항',
+  Frostbite: '동상 저항',
+  Light: '빛 저항',
+  LungCapacity: '폐활량',
+  Punish: '천벌 저항',
+  tabs: '단계',
   // oil / weapon effect abilities
   NoMoney: '돈 미획득',
   NoOrgans: '장기 미획득',
