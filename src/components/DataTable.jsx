@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { UI, COLUMN_KO, t, groupLabel, axisLabel, nameKo } from '../i18n.js'
+import EliteEnemies from './EliteEnemies.jsx'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -584,6 +585,8 @@ export default function DataTable({ data, lang }) {
           {shownCount} {t(UI.count, lang)}
         </span>
       </div>
+
+      {data.kind === 'enemy' && <EliteEnemies lang={lang} />}
 
       {currentAxis && (
         <div className="subnav">

@@ -1036,6 +1036,58 @@ tbody tr:hover .sticky-col {
   vertical-align: middle;
 }
 
+.elite-enemies {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.elite-enemies summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.elite-intro {
+  margin: 0.6rem 0 0.8rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.elite-table-scroll {
+  overflow-x: auto;
+}
+
+.elite-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.elite-table th {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.elite-table td {
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.elite-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
 .item-icon {
   width: 32px;
   height: 32px;
