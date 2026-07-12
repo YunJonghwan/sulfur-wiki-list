@@ -1,14 +1,73 @@
 {
   "kind": "location",
-  "generated": "2026-07-12T12:13:14.510206+00:00",
+  "generated": "2026-07-12T12:18:50.701765+00:00",
   "source": "https://sulfur.wiki.gg",
   "license": "CC BY-SA 4.0",
   "locations": [
     {
+      "name": "The Church",
+      "page": "https://sulfur.wiki.gg/wiki/The_Church",
+      "act": null,
+      "hub": true,
+      "step": null,
+      "special": false,
+      "stages": null,
+      "description": "The Church is called The Original Sin as a reminder that all of its members are sinners in some way or another. The Original Sin is open to everyone regardless of their past which is why most of the Congregation members are \"innocence-impaired\". The saloon doors are meant to symbolize that \"the door is always open\" for anyone to join. However, it is this same open-door policy that doomed them.",
+      "enemies": [],
+      "vendors": [
+        {
+          "name": "Arthur",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Arthur"
+        },
+        {
+          "name": "Father",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Father"
+        },
+        {
+          "name": "Gravedigger",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Gravedigger"
+        },
+        {
+          "name": "Ralphie",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
+        },
+        {
+          "name": "Scholar",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Scholar"
+        },
+        {
+          "name": "Stiffleg",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
+        },
+        {
+          "name": "Telia",
+          "icon": null,
+          "page": "https://sulfur.wiki.gg/wiki/Telia"
+        }
+      ],
+      "loot": [],
+      "subareas": [],
+      "pois": [],
+      "tips": []
+    },
+    {
       "name": "Caves",
       "page": "https://sulfur.wiki.gg/wiki/Caves",
       "act": "I",
+      "hub": false,
+      "step": 1,
       "special": false,
+      "stages": {
+        "stages": 7,
+        "checkpointStage": 4,
+        "bossStage": 7
+      },
       "description": "The Caves are the starting area of SULFUR and can be entered through the cave entrance located to the left of the Church.\n\nThe Caves contain seven stages. Stage four always contains a checkpoint to refill The Amulet, and Stage seven contains the area boss, Cousin. Defeating Cousin unlocks The Town.\n\nThis area features large rooms with high ceilings, narrow bridges, and cliff ledges. The cliff ledges do significant damage to the player if they fall into one, and can outright kill the player if their health is low.",
       "enemies": [
         {
@@ -69,7 +128,8 @@
         {
           "name": "Cousin",
           "icon": "icons/enemy/_etc/Cousin.png",
-          "page": "https://sulfur.wiki.gg/wiki/Cousin"
+          "page": "https://sulfur.wiki.gg/wiki/Cousin",
+          "boss": true
         },
         {
           "name": "Bruiser",
@@ -163,59 +223,13 @@
       ]
     },
     {
-      "name": "The Church",
-      "page": "https://sulfur.wiki.gg/wiki/The_Church",
-      "act": "I",
-      "special": false,
-      "description": "The Church is called The Original Sin as a reminder that all of its members are sinners in some way or another. The Original Sin is open to everyone regardless of their past which is why most of the Congregation members are \"innocence-impaired\". The saloon doors are meant to symbolize that \"the door is always open\" for anyone to join. However, it is this same open-door policy that doomed them.",
-      "enemies": [],
-      "vendors": [
-        {
-          "name": "Arthur",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Arthur"
-        },
-        {
-          "name": "Father",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Father"
-        },
-        {
-          "name": "Gravedigger",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Gravedigger"
-        },
-        {
-          "name": "Ralphie",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Ralphie"
-        },
-        {
-          "name": "Scholar",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Scholar"
-        },
-        {
-          "name": "Stiffleg",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Stiffleg"
-        },
-        {
-          "name": "Telia",
-          "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/Telia"
-        }
-      ],
-      "loot": [],
-      "subareas": [],
-      "pois": [],
-      "tips": []
-    },
-    {
       "name": "Town",
       "page": "https://sulfur.wiki.gg/wiki/Town",
       "act": "II",
+      "hub": false,
+      "step": 2,
       "special": false,
+      "stages": null,
       "description": "The Town is the second area of SULFUR and can be entered through the Town entrance located to the left of the Church after defeating Cousin in the Caves.",
       "enemies": [
         {
@@ -241,7 +255,8 @@
         {
           "name": "Black Guild Cardinal",
           "icon": "icons/enemy/_etc/Black_Guild_Cardinal.png",
-          "page": "https://sulfur.wiki.gg/wiki/Black_Guild_Cardinal"
+          "page": "https://sulfur.wiki.gg/wiki/Black_Guild_Cardinal",
+          "areaBoss": true
         }
       ],
       "vendors": [
@@ -287,7 +302,10 @@
       "name": "Sewers",
       "page": "https://sulfur.wiki.gg/wiki/Sewers",
       "act": "II",
+      "hub": false,
+      "step": 3,
       "special": false,
+      "stages": null,
       "description": "The Sewer is the third area of SULFUR and can be entered through the entrance located to the right of the Town entrance after defeating Black Guild Cardinals in the Town area.\n\nThe Sewer is a network of winding hallways and submerged corridors in which enemies spawn abundantly. Many areas can only be traversed by swimming, making gear and equipment that improve swimming or visibility underwater extremely helpful.",
       "enemies": [
         {
@@ -402,7 +420,10 @@
       "name": "Hedge Maze",
       "page": "https://sulfur.wiki.gg/wiki/Hedge_Maze",
       "act": "II",
+      "hub": false,
+      "step": 4,
       "special": false,
+      "stages": null,
       "description": "The Hedge Maze is the fourth area of SULFUR. The entrance to Hedge Maze will open after completing The Sewers once.\n\nThe Hedge Maze leads to the entrance to The Dungeon, and a shortcut to The Castle, once it has been entered at least once. The exit of Hedge Maze also has a dead tree, under which 0-3 Craw Guano can be found.",
       "enemies": [
         {
@@ -423,7 +444,10 @@
       "name": "Dungeon",
       "page": "https://sulfur.wiki.gg/wiki/Dungeon",
       "act": "II",
+      "hub": false,
+      "step": 5,
       "special": false,
+      "stages": null,
       "description": "The Dungeon is the fifth area and can only be entered by completing the Hedge Maze.\n\nThe Church has no direct access to the Dungeon, however the Hedge Maze is the closest area leading to the Dungeon.",
       "enemies": [
         {
@@ -524,7 +548,10 @@
       "name": "Castle",
       "page": "https://sulfur.wiki.gg/wiki/Castle",
       "act": "II",
+      "hub": false,
+      "step": 6,
       "special": false,
+      "stages": null,
       "description": "The Castle is the sixth area and can only be entered by completing the Dungeon.\n\nThe Church has no direct access to the Castle; the Hedge Maze is the closest area leading to the Castle from The Church.\n\nA shortcut to the Castle will open after entering it for the first time, accessible not from The Church, but from the end of the Hedge Maze.",
       "enemies": [
         {
@@ -555,7 +582,8 @@
         {
           "name": "St. Lucia",
           "icon": "icons/enemy/_etc/St._Lucia.png",
-          "page": "https://sulfur.wiki.gg/wiki/St._Lucia"
+          "page": "https://sulfur.wiki.gg/wiki/St._Lucia",
+          "boss": true
         }
       ],
       "vendors": [
@@ -579,7 +607,10 @@
       "name": "Forest",
       "page": "https://sulfur.wiki.gg/wiki/Forest",
       "act": "III",
+      "hub": false,
+      "step": 7,
       "special": false,
+      "stages": null,
       "description": "",
       "enemies": [
         {
@@ -610,7 +641,8 @@
         {
           "name": "Terrorbaum",
           "icon": "icons/enemy/_etc/Terrorbaum.png",
-          "page": "https://sulfur.wiki.gg/wiki/Terrorbaum"
+          "page": "https://sulfur.wiki.gg/wiki/Terrorbaum",
+          "boss": true
         }
       ],
       "vendors": [
@@ -727,7 +759,10 @@
       "name": "Shav'Wani Bridge",
       "page": "https://sulfur.wiki.gg/wiki/Bridge",
       "act": "III",
+      "hub": false,
+      "step": null,
       "special": false,
+      "stages": null,
       "description": "The Shav'Wani Bridge is the interconnecting zone between The Forest and The Fortress. It will open after completing the Forest once, and leads to the Fortress from The Church.\n\nThe area starts as a Forest map, and ends with a large bridge that continues straight into the Fortress proper",
       "enemies": [
         {
@@ -829,7 +864,10 @@
       "name": "Shav'Wani Fortress",
       "page": "https://sulfur.wiki.gg/wiki/Fortress",
       "act": "III",
+      "hub": false,
+      "step": 8,
       "special": false,
+      "stages": null,
       "description": "",
       "enemies": [
         {
@@ -860,7 +898,8 @@
         {
           "name": "The Emperor",
           "icon": "icons/enemy/_etc/The_Emperor.png",
-          "page": "https://sulfur.wiki.gg/wiki/The_Emperor"
+          "page": "https://sulfur.wiki.gg/wiki/The_Emperor",
+          "boss": true
         }
       ],
       "vendors": [
@@ -936,7 +975,10 @@
       "name": "Desert",
       "page": "https://sulfur.wiki.gg/wiki/Desert",
       "act": "IV",
+      "hub": false,
+      "step": 9,
       "special": false,
+      "stages": null,
       "description": "The Desert is the first released location of Chapter IV",
       "enemies": [
         {
@@ -962,7 +1004,8 @@
         {
           "name": "Desert Claus",
           "icon": "icons/enemy/_etc/Desert_Claus.png",
-          "page": "https://sulfur.wiki.gg/wiki/Desert_Claus"
+          "page": "https://sulfur.wiki.gg/wiki/Desert_Claus",
+          "boss": true
         }
       ],
       "vendors": [
@@ -1024,7 +1067,10 @@
       "name": "Trial of the Spirit",
       "page": "https://sulfur.wiki.gg/wiki/Trial_of_the_Spirit",
       "act": "IV",
+      "hub": false,
+      "step": null,
       "special": true,
+      "stages": null,
       "description": "Trial of the Spirit is an optional sub-level of the desert location, one spawns in every(?) level of the desert except for Ⅰ where the entrance is always(?) collapsed, and Ⅴ where you fight the desert boss\n\nA Crypt key is needed to access the trial. Take note that some of the challenges are very difficult, and failing will result in death.",
       "enemies": [],
       "vendors": [],
@@ -1037,13 +1083,17 @@
       "name": "Beyond the Veil",
       "page": "https://sulfur.wiki.gg/wiki/Beyond_the_Veil",
       "act": "IV",
+      "hub": false,
+      "step": 10,
       "special": false,
+      "stages": null,
       "description": "Beyond the Veil is the last area in the game, and loops back into Caves after a brief driving section.",
       "enemies": [
         {
           "name": "The Witch",
           "icon": null,
-          "page": "https://sulfur.wiki.gg/wiki/The_Witch"
+          "page": "https://sulfur.wiki.gg/wiki/The_Witch",
+          "boss": true
         }
       ],
       "vendors": [],

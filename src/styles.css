@@ -1176,6 +1176,55 @@ td.empty {
   margin-right: 0.5rem;
 }
 
+.loc-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.35rem;
+  margin-right: 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.loc-hub-badge {
+  border-radius: 4px;
+  min-width: 0;
+  background: #2c4a4a;
+  color: #a8e0e0;
+  font-size: 0.7rem;
+  padding: 0.05rem 0.4rem;
+}
+
+.area-boss-badge {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  background: #7a5a1f;
+  color: #ffe7c2;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.loc-chip-badge {
+  margin-right: 0;
+}
+
+.loc-stage-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin-top: 0.5rem;
+}
+
 .loc-desc {
   color: var(--text);
   font-size: 0.92rem;

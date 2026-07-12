@@ -940,24 +940,40 @@ def attach_organ_drops(buckets: dict[str, list[dict]]) -> None:
 # headings. Parsed by splitting on top-level headings and pattern-matching
 # within each section rather than a structured template.
 
-# Act grouping + display order isn't tagged anywhere on the pages themselves
-# (only implied by the Locations index page's own ordering), so it's hand-
-# mapped here. "special" locations are challenge/sub-areas that don't follow
-# the normal Enemies/Vendors/Notable Loot shape.
+# Act grouping + display order isn't tagged anywhere on the pages themselves,
+# so it's hand-mapped here from what each page's own prose states ("The Town
+# is the second area of SULFUR", "The Castle ... can only be entered by
+# completing the Dungeon", etc. — confirms Hedge Maze -> Dungeon -> Castle is
+# a strict sequential chain, not a branch). Forest/Fortress don't state their
+# own ordinal, but Bridge's text ("opens after completing the Forest once")
+# confirms they follow Castle. The Church is the persistent hub between runs,
+# not a numbered progression step, so it gets "hub" instead of "step". Bridge
+# and Trial of the Spirit are in-between/optional sub-areas with no step
+# number of their own. "special" locations are challenge/sub-areas that don't
+# follow the normal Enemies/Vendors/Notable Loot shape.
 LOCATION_META = {
-    "Caves": {"act": "I", "order": 1},
-    "The Church": {"act": "I", "order": 2},
-    "Town": {"act": "II", "order": 3},
-    "Sewers": {"act": "II", "order": 4},
-    "Hedge Maze": {"act": "II", "order": 5},
-    "Dungeon": {"act": "II", "order": 6},
-    "Castle": {"act": "II", "order": 7},
-    "Forest": {"act": "III", "order": 8},
-    "Bridge": {"act": "III", "order": 9},
-    "Fortress": {"act": "III", "order": 10},
-    "Desert": {"act": "IV", "order": 11},
-    "Trial of the Spirit": {"act": "IV", "order": 12, "special": True},
-    "Beyond the Veil": {"act": "IV", "order": 13},
+    "The Church": {"act": None, "order": 0, "hub": True},
+    "Caves": {"act": "I", "order": 1, "step": 1},
+    "Town": {"act": "II", "order": 2, "step": 2},
+    "Sewers": {"act": "II", "order": 3, "step": 3},
+    "Hedge Maze": {"act": "II", "order": 4, "step": 4},
+    "Dungeon": {"act": "II", "order": 5, "step": 5},
+    "Castle": {"act": "II", "order": 6, "step": 6},
+    "Forest": {"act": "III", "order": 7, "step": 7},
+    "Bridge": {"act": "III", "order": 8},
+    "Fortress": {"act": "III", "order": 9, "step": 8},
+    "Desert": {"act": "IV", "order": 10, "step": 9},
+    "Trial of the Spirit": {"act": "IV", "order": 11, "special": True},
+    "Beyond the Veil": {"act": "IV", "order": 12, "step": 10},
+}
+
+# Only Caves' own page documents an explicit stage count / checkpoint /
+# boss-stage breakdown ("The Caves contain seven stages. Stage four always
+# contains a checkpoint to refill The Amulet, and Stage seven contains the
+# area boss"). No other location page states this, so it isn't guessed for
+# the rest rather than inventing numbers the wiki doesn't provide.
+LOCATION_STAGES = {
+    "Caves": {"stages": 7, "checkpointStage": 4, "bossStage": 7},
 }
 
 # "Sulfur (Location)" is a meta/lore page about the game world itself (with
@@ -972,6 +988,15 @@ ENEMY_LINK_ALIASES = {"Goblin Cousin": "Cousin"}
 # Nicer card titles for a couple of pages whose bare title is generic/terse
 # compared to the bolded name actually used in their own prose.
 LOCATION_DISPLAY_NAME = {"Bridge": "Shav'Wani Bridge", "Fortress": "Shav'Wani Fortress"}
+
+# A location's real end-of-area boss is usually just whichever of its enemies
+# carries the enemy-side [[Category:Bosses]] tag (Cousin, Desert Claus, St.
+# Lucia, Terrorbaum, The Emperor, The Witch). A few pages additionally
+# annotate a tougher (but not Category:Bosses-tagged) enemy inline as
+# "(Area Boss)" right in the Enemies list — e.g. Town's Black Guild Cardinal
+# — which is picked up separately since it's a different, weaker notion of
+# "boss" than the named unique bosses.
+AREA_BOSS_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]*)?\]\]\s*\(\s*Area\s*Boss\s*\)", re.IGNORECASE)
 
 SECTION_SPLIT_RE = re.compile(r"(?m)^(?<!=)==(?!=)\s*(.+?)\s*==(?!=)\s*$")
 SPOILER_RE = re.compile(r"\{\{\s*Spoiler\s*\|(.*?)\}\}", re.IGNORECASE | re.DOTALL)
@@ -1091,11 +1116,14 @@ def build_locations(location_pages: dict[str, str], buckets: dict[str, list[dict
 
     def link_ref(title: str, source: dict[str, dict] | None = None, display: str | None = None) -> dict:
         found = source.get(title) if source else None
-        return {
+        ref = {
             "name": display or title,
             "icon": found.get("icon") if found else None,
             "page": found["page"] if found else WIKI + urllib.parse.quote(title.replace(" ", "_")),
         }
+        if found and found.get("groups", {}).get("role") == "Boss":
+            ref["boss"] = True
+        return ref
 
     locations = []
     for title, wikitext in location_pages.items():
@@ -1104,18 +1132,31 @@ def build_locations(location_pages: dict[str, str], buckets: dict[str, list[dict
         meta = LOCATION_META.get(title, {})
         intro, sections = split_location_sections(wikitext)
 
-        enemy_titles = [ENEMY_LINK_ALIASES.get(t, t) for t in extract_link_titles(sections.get("enemies", ""))]
+        enemies_section = sections.get("enemies", "")
+        enemy_titles = [ENEMY_LINK_ALIASES.get(t, t) for t in extract_link_titles(enemies_section)]
+        area_boss_titles = {ENEMY_LINK_ALIASES.get(m.group(1).strip(), m.group(1).strip())
+                             for m in AREA_BOSS_RE.finditer(enemies_section)}
         vendor_titles = extract_link_titles(sections.get("vendors", "") or sections.get("characters", ""))
         loot_names = parse_loot_names(sections.get("notable loot", ""))
         subarea_titles = extract_link_titles(sections.get("subarea", ""))
+
+        enemy_refs = []
+        for t in enemy_titles:
+            ref = link_ref(t, enemy_by_name)
+            if t in area_boss_titles:
+                ref["areaBoss"] = True
+            enemy_refs.append(ref)
 
         locations.append((meta.get("order", 999), {
             "name": LOCATION_DISPLAY_NAME.get(title, title),
             "page": WIKI + urllib.parse.quote(title.replace(" ", "_")),
             "act": meta.get("act"),
+            "hub": meta.get("hub", False),
+            "step": meta.get("step"),
             "special": meta.get("special", False),
+            "stages": LOCATION_STAGES.get(title),
             "description": intro,
-            "enemies": [link_ref(t, enemy_by_name) for t in enemy_titles],
+            "enemies": enemy_refs,
             "vendors": [link_ref(t) for t in vendor_titles],
             "loot": [link_ref(t, item_by_name) for t in loot_names],
             "subareas": [link_ref(t, display=LOCATION_DISPLAY_NAME.get(t, t)) for t in subarea_titles],

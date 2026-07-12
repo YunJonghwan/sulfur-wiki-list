@@ -24,9 +24,22 @@ const HEADINGS = {
   tips: { en: 'Tips', ko: '팁' },
 }
 
+const STAGES_LABEL = { en: 'Stages', ko: '스테이지 수' }
+const CHECKPOINT_LABEL = { en: 'Amulet checkpoint', ko: '아뮬렛 충전' }
+const BOSS_STAGE_LABEL = { en: 'Boss stage', ko: '보스 스테이지' }
+const STAGE_OF = { en: 'stage {n}', ko: '{n}번째' }
+
+function stageOf(n, lang) {
+  return t(STAGE_OF, lang).replace('{n}', n)
+}
+
 function LinkChip({ item, lang, withIcon }) {
   return (
     <a className="loc-chip" href={item.page} target="_blank" rel="noreferrer">
+      {item.boss && <span className="boss-badge loc-chip-badge">{lang === 'ko' ? '보스' : 'BOSS'}</span>}
+      {item.areaBoss && !item.boss && (
+        <span className="area-boss-badge loc-chip-badge">{lang === 'ko' ? '지역 보스' : 'AREA BOSS'}</span>
+      )}
       {withIcon && imageUrl(item.icon) && (
         <img className="item-icon recipe-icon" src={imageUrl(item.icon)} alt="" width="20" height="20" />
       )}
@@ -45,6 +58,8 @@ function LocationCard({ loc, lang }) {
   return (
     <section className="loc-card">
       <h3 className="loc-card-title">
+        {loc.hub && <span className="loc-step-badge loc-hub-badge">{lang === 'ko' ? '허브' : 'HUB'}</span>}
+        {loc.step != null && <span className="loc-step-badge">{loc.step}</span>}
         {loc.special && <span className="boss-badge loc-special-badge">{lang === 'ko' ? '도전' : 'CHALLENGE'}</span>}
         <a href={loc.page} target="_blank" rel="noreferrer">
           {loc.name}
@@ -55,6 +70,20 @@ function LocationCard({ loc, lang }) {
           {desc.split('\n').filter(Boolean).map((para, i) => (
             <p key={i}>{para}</p>
           ))}
+        </div>
+      )}
+
+      {loc.stages && (
+        <div className="loc-stage-info">
+          <span className="loc-chip">
+            {t(STAGES_LABEL, lang)}: {loc.stages.stages}
+          </span>
+          <span className="loc-chip">
+            {t(CHECKPOINT_LABEL, lang)}: {stageOf(loc.stages.checkpointStage, lang)}
+          </span>
+          <span className="loc-chip">
+            {t(BOSS_STAGE_LABEL, lang)}: {stageOf(loc.stages.bossStage, lang)}
+          </span>
         </div>
       )}
 
