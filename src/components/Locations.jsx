@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { UI, t, nameKo } from '../i18n.js'
+import { LOCATION_KO } from '../locationText.js'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -54,7 +55,10 @@ function LinkChip({ item, lang, withIcon }) {
 }
 
 function LocationCard({ loc, lang }) {
-  const desc = loc.description?.trim()
+  const ko = lang === 'ko' ? LOCATION_KO[loc.name] : null
+  const desc = (ko?.description ?? loc.description)?.trim()
+  const pois = ko?.pois ?? loc.pois
+  const tips = ko?.tips ?? loc.tips
   return (
     <section className="loc-card">
       <h3 className="loc-card-title">
@@ -131,22 +135,22 @@ function LocationCard({ loc, lang }) {
         </div>
       )}
 
-      {loc.pois.length > 0 && (
+      {pois.length > 0 && (
         <div className="loc-section">
           <div className="loc-section-label">{t(HEADINGS.pois, lang)}</div>
           <ul className="loc-notes">
-            {loc.pois.map((p, i) => (
+            {pois.map((p, i) => (
               <li key={i}>{p}</li>
             ))}
           </ul>
         </div>
       )}
 
-      {loc.tips.length > 0 && (
+      {tips.length > 0 && (
         <div className="loc-section">
           <div className="loc-section-label">{t(HEADINGS.tips, lang)}</div>
           <ul className="loc-notes">
-            {loc.tips.map((tip, i) => (
+            {tips.map((tip, i) => (
               <li key={i}>{tip}</li>
             ))}
           </ul>
