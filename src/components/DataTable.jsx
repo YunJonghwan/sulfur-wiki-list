@@ -336,10 +336,17 @@ export default function DataTable({ data, lang }) {
 
   const [search, setSearch] = useState('')
   // Enemies default to sorting by HP ascending (weak -> strong) since that
-  // reads as a natural difficulty curve within each faction/area group;
-  // every other kind keeps the plain alphabetical default.
-  const [abilityKey, setAbilityKey] = useState(() => (data.kind === 'enemy' ? 'HP' : '')) // selected stat for sort/filter
-  const [abilityDir, setAbilityDir] = useState(() => (data.kind === 'enemy' ? 'asc' : 'desc'))
+  // reads as a natural difficulty curve within each faction/area group.
+  // Attachments default to sorting by Zoom ascending — only Sights actually
+  // have a Zoom value, so this only visibly reorders the 조준경 group (low
+  // magnification first) while every other attachment type (with no Zoom
+  // field at all) just keeps its original alphabetical order, ties intact.
+  // Every other kind keeps the plain alphabetical default.
+  const defaultAbilityKey = data.kind === 'enemy' ? 'HP' : data.kind === 'attachment' ? 'Zoom' : ''
+  const [abilityKey, setAbilityKey] = useState(defaultAbilityKey) // selected stat for sort/filter
+  const [abilityDir, setAbilityDir] = useState(() =>
+    data.kind === 'enemy' || data.kind === 'attachment' ? 'asc' : 'desc',
+  )
   const [onlyWith, setOnlyWith] = useState(false)
   const [gridSortKey, setGridSortKey] = useState('__name')
   const [gridSortDir, setGridSortDir] = useState('asc')
